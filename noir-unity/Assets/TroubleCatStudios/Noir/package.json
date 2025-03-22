@@ -1,0 +1,22 @@
+{
+  "name": "com.troublecat.noir",
+  "version": "1.0.0",
+  "displayName": "Noir Library",
+  "description": "Noir is a library full of practical code for your Unity game.",
+  "unity": "2021.3",
+  "dependencies": {},
+  "changelogUrl": "https://github.com/troublecatstudios/noir/blob/1.0.0/CHANGELOG.md",
+  "documentationUrl": "https://docs.troublecat.io/Noir/1.0.0",
+  "licensesUrl": "https://github.com/troublecatstudios/noir/blob/1.0.0/LICENSE.md",
+  "keywords": [
+    "Tools",
+    "Utilities"
+  ],
+  "author": {
+    "name": "TroubleCat Studios",
+    "url": "https://troublecat.io"
+  },
+  "private": true,
+  "hideInEditor": false,
+  "type": "library"
+}
