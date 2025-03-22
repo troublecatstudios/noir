@@ -10,8 +10,19 @@ using UnityEngine;
 
 namespace Noir.Unity.Attributes {
     public enum GetComponentSearchArea {
-        Self,
+        /// <summary>
+        /// Search for the component type only on the current GameObject.
+        /// </summary>
+        SelfOnly,
+
+        /// <summary>
+        /// Search for the component type within the parents of the current GameObject before searching on the current GameObject.
+        /// </summary>
         ParentFirst,
+
+        /// <summary>
+        /// Search for the component type within the children of the current GameObject before searching on the current GameObject.
+        /// </summary>
         ChildrenFirst
     }
 
@@ -26,7 +37,7 @@ namespace Noir.Unity.Attributes {
     public class GetComponentAttribute : PropertyAttribute {
         public GetComponentSearchArea SearchArea { get; private set; }
 
-        public GetComponentAttribute(GetComponentSearchArea searchArea = GetComponentSearchArea.Self) {
+        public GetComponentAttribute(GetComponentSearchArea searchArea = GetComponentSearchArea.SelfOnly) {
             SearchArea = searchArea;
         }
     }

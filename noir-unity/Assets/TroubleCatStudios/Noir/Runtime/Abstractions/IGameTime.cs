@@ -1,4 +1,4 @@
-namespace Noir.Unity.Abstractions {
+namespace Noir.Abstractions {
     public interface IGameTime {
         /// <inheritdoc cref="UnityEngine.Time.deltaTime"/>
         float deltaTime { get; }
