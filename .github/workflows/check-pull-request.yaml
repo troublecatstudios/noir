@@ -30,7 +30,7 @@ jobs:
           filterOutClosed: true
           # Only return if PR is not in draft state
           filterOutDraft: 1
-      
+
       # Find any previous bot comments so we can update them
       # -----------------------------
       - name: Find Comment
@@ -39,10 +39,10 @@ jobs:
         with:
           issue-number: ${{ steps.PR.outputs.number }}
           body-includes: Pull Request Lint Results
-      
+
       # Validate PR
       # -----------------------------
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Validate Pull Request
         id: Validation
         if: success() && steps.PR.outputs.number
@@ -52,7 +52,7 @@ jobs:
             const pr = ${{ steps.PR.outputs.pr }};
             const script = require('./.github/scripts/check-pr.js');
             await script({github, context, core, pr});
-        
+
       # Post status back
       # -----------------------------
       - name: Post Comment (Passed)
@@ -67,7 +67,7 @@ jobs:
             ${{ steps.Validation.outputs.warnings }}
           edit-mode: replace
           reactions: hooray
-      
+
       - name: Post Comment (Failed)
         if: failure()
         uses: peter-evans/create-or-update-comment@v2
@@ -80,4 +80,4 @@ jobs:
             ${{ steps.Validation.outputs.reasons }}
             ${{ steps.Validation.outputs.warnings }}
           edit-mode: replace
-            
+
