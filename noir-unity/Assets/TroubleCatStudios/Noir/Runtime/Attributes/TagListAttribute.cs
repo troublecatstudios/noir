@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Noir.Unity.Attributes {
+namespace Noir.Attributes {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public class TagListAttribute : PropertyAttribute {
     }

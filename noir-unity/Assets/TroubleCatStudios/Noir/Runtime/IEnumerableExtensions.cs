@@ -10,6 +10,19 @@ namespace Noir {
             return sequence.Any((s) => s.Equals(element, comparisonType));
         }
 
+        public static int IndexWhere<T>(this IEnumerable<T> source, Func<T, bool> predicate) {
+            int index = 0;
+            var e = source.GetEnumerator();
+            while (e.MoveNext()) {
+                if (predicate(e.Current)) {
+                    return index;
+                }
+                index++;
+            }
+
+            return -1;
+        }
+
         public static T RandomElementByWeight<T>(this IEnumerable<T> sequence, Func<T, float> weightSelector) {
             float totalWeight = sequence.Sum(weightSelector);
             // The weight we are after...

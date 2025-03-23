@@ -16,6 +16,9 @@ namespace Noir.Logging {
             }
         }
 
+        // Used during testing
+        internal static void SetWriter(INoirLogger logWriter) => _writer = logWriter;
+
         private static readonly Dictionary<string, float> _sampleTimes = new Dictionary<string, float>();
         public void Sample(string token, float rate, string message) {
             var shouldLog = false;

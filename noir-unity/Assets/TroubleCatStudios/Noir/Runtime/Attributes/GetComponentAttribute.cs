@@ -8,7 +8,7 @@ using UnityEngine;
 // Follow them on Twitter: https://twitter.com/LotteMakesStuff
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-namespace Noir.Unity.Attributes {
+namespace Noir.Attributes {
     public enum GetComponentSearchArea {
         /// <summary>
         /// Search for the component type only on the current GameObject.
