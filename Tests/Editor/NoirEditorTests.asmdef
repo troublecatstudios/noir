@@ -1,0 +1,30 @@
+{
+    "name": "NoirEditorTests",
+    "rootNamespace": "NoirEditorTests",
+    "references": [
+        "GUID:5ebb14b6c50f1404795c484c3c61ae5c",
+        "GUID:26483be75fa52a94f8e4ef86d74213aa",
+        "GUID:10384c5868f3fe44eab4bae93eeee418"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Castle.Core.dll",
+        "Moq.dll",
+        "Newtonsoft.Json.dll",
+        "NExpect.dll",
+        "YamlDotNet.dll",
+        "ExCSS.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
