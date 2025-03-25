@@ -1,16 +1,14 @@
 {
-    "name": "NoirEditorTests",
+    "name": "Noir.Editor.Tests",
     "rootNamespace": "NoirEditorTests",
     "references": [
         "GUID:5ebb14b6c50f1404795c484c3c61ae5c",
-        "GUID:26483be75fa52a94f8e4ef86d74213aa",
-        "GUID:10384c5868f3fe44eab4bae93eeee418"
+        "GUID:10384c5868f3fe44eab4bae93eeee418",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3"
     ],
     "includePlatforms": [
         "Editor"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -21,10 +19,13 @@
         "Newtonsoft.Json.dll",
         "NExpect.dll",
         "YamlDotNet.dll",
-        "ExCSS.dll"
+        "ExCSS.dll",
+        "nunit.framework.dll"
     ],
     "autoReferenced": false,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }

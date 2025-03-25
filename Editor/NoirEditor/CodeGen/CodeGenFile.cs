@@ -6,8 +6,8 @@ using System.Text.RegularExpressions;
 
 namespace NoirEditor.CodeGen {
     public static class CodeGenFile {
-        public static string GetClassWrapper(string @namespace, string className, string contents, string[] usings = null) {
-            string output = $"namespace {@namespace} {{\n";
+        public static string GetClassWrapper(string @namespace, string className, string contents, string[] usings = null, string header = null, string footer = null) {
+            var output = $"namespace {@namespace} {{\n";
             output += "    using System.Collections.Generic;\n";
             if (usings != null) {
                 foreach (var ns in usings) {
@@ -18,7 +18,11 @@ namespace NoirEditor.CodeGen {
             output += contents;
             output += "\n    }\n";
             output += "}";
-            return output;
+
+            if (header == null) header = "";
+            if (footer == null) footer = "";
+
+            return $"{header}\n{output}\n{footer}";
         }
 
         public static string GetClassContent(string[] labelsArray) {

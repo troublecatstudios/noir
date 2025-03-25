@@ -37,7 +37,11 @@ namespace NoirEditor {
         /// <param name="path">The path to evaluate.</param>
         /// <returns><c>true</c> if the path was able to be created and <c>false</c> otherwise.</returns>
         public static bool Mkdirp(string path) {
-            var parts = path.Split('/');
+            path = PlatformHelper.Instance.NormalizePath(path);
+            if (path.StartsWith("Assets/")) {
+                path = path.Substring(7);
+            }
+            var parts = path.Split("/");
             var builtPath = "Assets";
             var result = false;
             Debug.Log($"[ {nameof(AssetDB)} ]  - Ensuring that 'Assets/{path}' exists.");

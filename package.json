@@ -18,5 +18,8 @@
   },
   "private": true,
   "hideInEditor": false,
-  "type": "library"
+  "type": "library",
+  "testables": [
+    "io.troublecat.noir"
+  ]
 }

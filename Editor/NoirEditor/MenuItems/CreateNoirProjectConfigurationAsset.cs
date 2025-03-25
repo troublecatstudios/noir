@@ -8,10 +8,10 @@ namespace NoirEditor.TroubleCatStudios.Noir.Editor.MenuItems {
 
         [MenuItem(MENU_PATH, priority = 100)]
         public static void CreateAsset() {
-            var settings = AssetDatabase.LoadAssetAtPath<NoirProjectConfiguration>(NoirProjectSettings.SettingsPath);
+            var settings = AssetDatabase.LoadAssetAtPath<NoirProjectConfiguration>(NoirProjectConfiguration.SettingsPath);
             if (settings == null) {
-                settings = ScriptableObject.CreateInstance<NoirProjectSettings>();
-                AssetDatabase.CreateAsset(settings, NoirProjectSettings.SettingsPath);
+                settings = ScriptableObject.CreateInstance<NoirProjectConfiguration>();
+                AssetDatabase.CreateAsset(settings, NoirProjectConfiguration.SettingsPath);
                 AssetDatabase.SaveAssets();
             }
         }
