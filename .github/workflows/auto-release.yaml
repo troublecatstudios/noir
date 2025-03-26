@@ -16,7 +16,7 @@ on:
     - stable
 
 env:
-  PACKAGEJSON_LOCATION: "noir-unity/Assets/TroubleCatStudios/Noir/"
+  PACKAGEJSON_LOCATION: "."
 
 jobs:
   release:
