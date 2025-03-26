@@ -18,6 +18,13 @@
   },
   "private": true,
   "hideInEditor": false,
+  "samples": [
+    {
+      "displayName": "Basic Examples",
+      "description": "Contains examples of how to use various Noir features",
+      "path": "Samples~/Basic"
+    }
+  ],
   "type": "library",
   "testables": [
     "io.troublecat.noir"
