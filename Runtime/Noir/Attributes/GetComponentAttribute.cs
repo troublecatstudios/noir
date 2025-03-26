@@ -33,6 +33,7 @@ namespace Noir.Attributes {
     /// Wiring is done at edit time so there is no startup cost.
     /// </remarks>
     /// <seealso cref="UnityEngine.PropertyAttribute" />
+    /// <seealso href="https://gist.github.com/LotteMakesStuff/d6a9a4944fc667e557083108606b7d22">Original implementation of AutohookAttribute by Lotte</seealso>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public class GetComponentAttribute : PropertyAttribute {
         public GetComponentSearchArea SearchArea { get; private set; }

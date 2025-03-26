@@ -11,6 +11,28 @@ using System.Reflection;
 using UnityEngine;
 
 namespace Noir {
+    /// <summary>
+    /// Initializes core features of the Noir Library
+    /// </summary>
+    /// <remarks>
+    /// <para>
+    /// The Noir engine can invoke methods within developer's game code at specific points during the startup lifecycle.
+    /// </para>
+    /// <para>
+    /// Initialize is invoked during the <see cref="RuntimeInitializeLoadType.SubsystemRegistration">SubSystemRegistration</see> phase of the UnityEngine initialization lifecycle.
+    /// </para>
+    /// <para>
+    /// ConfigureServices is invoked after all the assemblies have been loaded by the UnityEngine. Developer's can utilize
+    /// this callback to register types and instances with Noir's <see cref="ServiceLocator"/>.
+    /// </para>
+    /// <para>
+    /// Start is invoked after all the first Scene has been loaded by Unity.
+    /// </para>
+    /// <para>
+    /// Noir engine callbacks are global, the library performs a scan of the loaded assemblies at startup, looking for
+    /// all the static members that are decorated with a <see cref="EngineCallbackAttribute"/>.
+    /// </para>
+    /// </remarks>
     public sealed class Engine {
         private static readonly List<MethodInfo> _callbackMethods = new();
         static Engine() {
