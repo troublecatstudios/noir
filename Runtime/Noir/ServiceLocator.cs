@@ -2,31 +2,114 @@
 using System.Collections.Generic;
 
 namespace Noir {
+    /// <summary>
+    /// Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.
+    /// </summary>
+    /// <remarks>
+    ///     <list type="bullet">
+    ///         <item>It's best to limit calls to ServiceLocator methods the startup of your components: <c>Awake()</c>, <c>Start()</c>, <c>OnEnable()</c> are all good points to register and get services.</item>
+    ///         <item>Avoid calling the service locator within loops or <c>Update()</c> and <c>LateUpdate()</c>.</item>
+    ///         <item>When registering with the service locator, it's best to register an interface or abstract class as the lookup type.</item>
+    ///     </list>
+    /// </remarks>
     public sealed class ServiceLocator : IServiceLocator {
         private static readonly IServiceLocator _instance = new ServiceLocator();
 
-        public static T GetService<T>() => _instance.GetService<T>();
-        public static bool IsServiceRegistered<T>() => _instance.IsServiceRegistered<T>();
+        /// <summary>
+        /// Gets an implementation for the given type from the service registry.
+        /// </summary>
+        /// <typeparam name="TServiceType">The type to use when looking up the implementation.</typeparam>
+        /// <returns>An implementation of the type within the service registry.</returns>
+        /// <exception cref="NullReferenceException">Thrown if no implementation for the TServiceType can be found in the service registry.</exception>
+        public static TServiceType GetService<TServiceType>() => _instance.GetService<TServiceType>();
 
-        public static void RegisterService<T>(T instance) => _instance.RegisterService(instance);
-        public static void RegisterService<T, TImplementation>() where TImplementation : T, new() => _instance.RegisterService<T>(new TImplementation());
-        public static void RegisterService<T>(Func<T> factory) => _instance.RegisterService(factory);
-        public static bool TryGetService<T>(out T instance) => _instance.TryGetService(out instance);
-        public static void UnregisterService<T>() => _instance.UnregisterService<T>();
+        /// <summary>
+        /// Returns a value indicating whether the given service type has an implementation in the service registry.
+        /// </summary>
+        /// <typeparam name="TServiceType">The type to use when looking up the implementation.</typeparam>
+        /// <returns><c>true</c> if the given service type has an implementation in the service registry, <c>false</c> otherwise.</returns>
+        public static bool IsServiceRegistered<TServiceType>() => _instance.IsServiceRegistered<TServiceType>();
 
-        public static IServiceLocator GetProvider() => _instance;
+        /// <summary>
+        /// Registers a service implementation in the service registry.
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <typeparam name="TServiceType">The type to use when storing the implementation.</typeparam>
+        /// <remarks>
+        /// This should be avoided unless absolutely necessary as it can force the parent scope to avoid garbage collection until the implementation is removed from the service registry.
+        /// </remarks>
+        /// <example>
+        /// Registering an already created implementation.
+        ///     <code>
+        ///     <![CDATA[
+        ///         var implementation = new ImplementationType(any, constructor, arguments);
+        ///         ServiceLocator.RegisterService<InterfaceType>(implementation);
+        ///     ]]>
+        ///     </code>
+        /// </example>
+        public static void RegisterService<TServiceType>(TServiceType instance) => _instance.RegisterService(instance);
+
+        /// <summary>
+        /// Registers a service type and its implementation in the service registry.
+        /// </summary>
+        /// <typeparam name="TServiceType">The type to use when storing the implementation.</typeparam>
+        /// <typeparam name="TImplementationType">The type that will be instantiated when the service is first retrieved.</typeparam>
+        /// <remarks>
+        /// The TImplementationType must be able to instantiated via an empty constructor, e.g. new TImplementationType()
+        /// </remarks>
+        /// <example>
+        /// Registering a service.
+        ///     <code>
+        ///     <![CDATA[
+        ///         ServiceLocator.RegisterService<TServiceType, TImplementationType>();
+        ///     ]]>
+        ///     </code>
+        /// </example>
+        public static void RegisterService<TServiceType, TImplementationType>() where TImplementationType : TServiceType, new() => _instance.RegisterService<TServiceType>(new TImplementationType());
+
+        /// <summary>
+        /// Registers a service type and its factory in the service registry.
+        /// </summary>
+        /// <param name="factory">A function that returns a new instance of the service type. Will be called once, when the service is first retrieved from the registry.</param>
+        /// <typeparam name="TServiceType">The type to use when storing the implementation.</typeparam>
+        /// <remarks>
+        /// The passed factory function will be invoked when the service is first requested.
+        /// </remarks>
+        /// <example>
+        /// Registering a service with a factory function.
+        ///     <code>
+        ///     <![CDATA[
+        ///         ServiceLocator.RegisterService<InterfaceType>(() => new ImplementationType(any, constructor, arguments));
+        ///     ]]>
+        ///     </code>
+        /// </example>
+        public static void RegisterService<TServiceType>(Func<TServiceType> factory) => _instance.RegisterService(factory);
+
+        /// <summary>
+        /// Tries to return an implementation for the given service type.
+        /// </summary>
+        /// <param name="instance">The service implementation, if one exists within the service registry.</param>
+        /// <typeparam name="TServiceType">The type to use when looking up the implementation.</typeparam>
+        /// <returns><c>true</c> if an implementation was found in the service registry, <c>false</c> otherwise.</returns>
+        public static bool TryGetService<TServiceType>(out TServiceType instance) => _instance.TryGetService(out instance);
+
+        /// <summary>
+        /// Removes a service implementation from the service registry.
+        /// </summary>
+        /// <typeparam name="TServiceType">The type to use when looking up the implementation.</typeparam>
+        public static void UnregisterService<TServiceType>() => _instance.UnregisterService<TServiceType>();
 
         internal static ServiceLocator InternalInstance => _instance as ServiceLocator;
 
 #if UNITY_EDITOR
-        public static void Clear() => _instance.Registry.Clear();
+        public static void Clear() => InternalInstance.Registry.Clear();
 #endif
 
 
         private readonly Dictionary<Type, object> _serviceRegistry = new();
         private readonly Dictionary<Type, Func<object>> _factories = new();
 
-        public Dictionary<Type, object> Registry => _serviceRegistry;
+        internal Dictionary<Type, object> Registry => _serviceRegistry;
 
         internal IEnumerable<(Type, Type)> RegisteredTypes() {
             foreach (var (interfaceType, concrete) in _serviceRegistry) {
