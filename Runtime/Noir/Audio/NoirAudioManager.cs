@@ -8,18 +8,27 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 namespace Noir.Audio {
-    public class NoirAudioManager : NoirSingletonBehaviour<NoirAudioManager>, INoirAudioManager, INoirEventListener<PlaySoundEffectEvent>, INoirEventListener<PlayDetachedSoundEffectEvent> {
+    public class NoirAudioManager :
+        NoirSingletonBehaviour<NoirAudioManager>,
+        INoirAudioManager,
+        INoirEventListener<PlayAudioClipEvent>,
+        INoirEventListener<PlaySoundEffectEvent> {
         [SerializeField]
         [GetComponent]
         private AudioSourcePool _soundEffectPool;
 
-        [SerializeField] private AudioMixerGroup _defaultEffectMixerGroup;
+        private AudioMixerGroup _playbackMixerGroup;
 
         protected override void SingletonAwake() {
             base.SingletonAwake();
             ServiceLocator.RegisterService<INoirAudioManager>(this);
-            ServiceLocator.GetService<INoirEventRegistry>().Register<PlaySoundEffectEvent>(gameObject);
-            ServiceLocator.GetService<INoirEventRegistry>().Register<PlayDetachedSoundEffectEvent>(gameObject);
+            RegisterListener<PlaySoundEffectEvent>();
+            RegisterListener<PlayAudioClipEvent>();
+        }
+
+        protected override void SingletonStart() {
+            base.SingletonStart();
+            _playbackMixerGroup = NoirProjectConfiguration.Instance.DefaultAudioMixerGroup;
         }
 
         public bool TryPlaySoundEffect(string effectName, Transform sourceObject = null, float delay = 0f, float volume = 1, float pitch = 1, bool loop = false, AudioMixerGroup mixerGroup = null) {
@@ -33,31 +42,22 @@ namespace Noir.Audio {
         }
 
         public bool TryPlaySoundEffect(SoundEffect effect, Transform sourceObject = null, float delay = 0f, float volume = 1, float pitch = 1, bool loop = false, AudioMixerGroup mixerGroup = null) {
-
             return TryPlaySoundEffect(effect, sourceObject?.transform.position ?? transform.position, delay, volume, pitch, loop, mixerGroup);
         }
 
         public bool TryPlaySoundEffect(SoundEffect effect, Vector3? origin = null, float delay = 0f, float volume = 1, float pitch = 1, bool loop = false, AudioMixerGroup mixerGroup = null) {
-
-#if UNITY_EDITOR
-            if (!Application.isPlaying) return false;
-#endif
-            if (!effect) return false;
+            var clip = effect.GetClip();
+            var position = transform.position;
             var listener = GameObject.FindObjectOfType<AudioListener>();
-            int id = effect.GetInstanceID();
-            if (!_soundEffectPool.TryGetItemFromPool(out var source)) {
-                Logger.Warn($"Unable to find an available audio source for effect. effect={effect.name}, effectId={id}");
-                return false;
+            if (effect.DelayStart) {
+                delay = Mathf.Max(delay, effect.Delay);
             }
+
+            mixerGroup = mixerGroup ?? effect.MixerGroup ?? _playbackMixerGroup;
 
             // account for volume setting on SoundEffect
             volume *= effect.VolumeScale;
             pitch *= effect.Pitch;
-            var position = transform.position;
-            if (origin != null) position = origin.Value;
-
-            var clip = effect.GetClip();
-            mixerGroup = mixerGroup ?? effect.MixerGroup ?? _defaultEffectMixerGroup;
 
             var maxDist = 100f;
             if (listener && origin != null) {
@@ -71,11 +71,27 @@ namespace Noir.Audio {
                 }
             }
 
+            return TryPlayClip(clip, origin ?? position, delay, volume, pitch, loop, mixerGroup, effect.SpatialBlend);
+        }
+
+        public bool TryPlayClip(AudioClip clip, Vector3? origin = null, float delay = 0f, float volume = 1, float pitch = 1, bool loop = false, AudioMixerGroup mixerGroup = null, float spatialBlend = 0f) {
+#if UNITY_EDITOR
+            if (!Application.isPlaying) return false;
+#endif
+            if (!clip) return false;
+
+            var clipPosition = origin ?? transform.position;
+            var maxDist = 100f;
+
+            if (!_soundEffectPool.TryGetItemFromPool(out var source)) {
+                Logger.Warn($"Unable to find an available audio source for effect. clip={clip}");
+                return false;
+            }
+
             Action playAction = () => {
-                PlayClip(clip, source, mixerGroup, position, volume, pitch, pan: 0, spatialBlend: effect.SpatialBlend, minDist: 0, maxDist: maxDist, loop: loop);
+                PlayClip(clip, source, mixerGroup, clipPosition, volume, pitch, pan: 0, spatialBlend: spatialBlend, minDist: 0, maxDist: maxDist, loop: loop);
             };
-            if (delay > 0f || effect.DelayStart) {
-                delay = Mathf.Max(delay, effect.Delay);
+            if (delay > 0f) {
                 StartCoroutine(Delay(delay, () => {
                     playAction();
                 }));
@@ -132,12 +148,12 @@ namespace Noir.Audio {
             source.Play();
         }
 
-        void INoirEventListener<PlaySoundEffectEvent>.EventReceived(PlaySoundEffectEvent eventData) {
-            TryPlaySoundEffect(eventData.SoundEffectName, origin: eventData.WorldPosition, delay: eventData.Delay, volume: eventData.Volume,  pitch: eventData.Pitch, loop: eventData.Loop, mixerGroup: eventData.MixerGroup);
+        void INoirEventListener<PlayAudioClipEvent>.EventReceived(PlayAudioClipEvent eventData) {
+            TryPlayClip(eventData.Clip, origin: eventData.WorldPosition, delay: eventData.Delay, volume: eventData.Volume,  pitch: eventData.Pitch, loop: eventData.Loop, mixerGroup: eventData.MixerGroup);
         }
 
-        void INoirEventListener<PlayDetachedSoundEffectEvent>.EventReceived(PlayDetachedSoundEffectEvent eventData) {
-            TryPlaySoundEffect(eventData.SoundEffectName, sourceObject: null, delay: eventData.Delay, volume: eventData.Volume,  pitch: eventData.Pitch, loop: eventData.Loop, mixerGroup: eventData.MixerGroup);
+        void INoirEventListener<PlaySoundEffectEvent>.EventReceived(PlaySoundEffectEvent eventData) {
+            TryPlaySoundEffect(eventData.SoundEffectName, origin: eventData.WorldPosition, delay: eventData.Delay, volume: eventData.Volume,  pitch: eventData.Pitch, loop: eventData.Loop, mixerGroup: eventData.MixerGroup);
         }
     }
 }

@@ -1,8 +1,10 @@
-﻿using UnityEngine.Audio;
+﻿using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Noir.Audio.Events {
-    public class PlayDetachedSoundEffectEvent {
-        public string SoundEffectName { get; set; }
+    public class PlayAudioClipEvent {
+        public AudioClip Clip { get; set; }
+        public Vector3? WorldPosition { get; set; }
         public float Delay { get; set; } = 0f;
         public float Volume { get; set; } = 1f;
         public float Pitch { get; set; } = 1f;
