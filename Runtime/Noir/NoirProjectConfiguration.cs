@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Noir {
     public class NoirProjectConfiguration : ScriptableObject {
@@ -37,6 +38,8 @@ namespace Noir {
 
 #if ODIN_INSPECTOR
         [ShowIf("@_selectedParent == \"Editor\"")]
+#else
+        [Header("Editor")]
 #endif
         [SerializeField]
         private bool _enableCodeGeneration = true;
@@ -44,33 +47,50 @@ namespace Noir {
 #if ODIN_INSPECTOR
         [AssetsOnly]
         [ShowIf("@_selectedParent == \"Gameplay\"")]
+#else
+        [Header("Gameplay")]
 #endif
         [SerializeField]
         private NoirGameManager _gameManagerPrefab;
 
 #if ODIN_INSPECTOR
         [ShowIf("@_selectedParent == \"Gameplay\"")]
+#else
+        [Header("Gameplay")]
 #endif
         [SerializeField]
         private bool _lockFrameRate = true;
 
 #if ODIN_INSPECTOR
         [ShowIf("@_selectedParent == \"Gameplay\" && _lockFrameRate")]
+#else
+        [Header("Gameplay")]
 #endif
         [SerializeField]
         private int _lockedFrameRate = 60;
 
 #if ODIN_INSPECTOR
         [ShowIf("@_selectedParent == \"Gameplay\"")]
+#else
+        [Header("Gameplay")]
 #endif
         [SerializeField]
         private bool _automaticallySpawnGameManagers = true;
+
+#if ODIN_INSPECTOR
+        [ShowIf("@_selectedParent == \"Gameplay\"")]
+#else
+        [Header("Audio")]
+#endif
+        [SerializeField]
+        private AudioMixerGroup _defaultAudioMixerGroup;
 
         public int LockedFrameRate => _lockedFrameRate;
         public bool IsFramerateLocked => _lockFrameRate;
         public bool IsAutomaticSpawnEnabled => _automaticallySpawnGameManagers;
         public bool IsCodeGenerationEnabled => _enableCodeGeneration;
         public NoirGameManager GameManagerPrefab => _gameManagerPrefab;
+        public AudioMixerGroup DefaultAudioMixerGroup => _defaultAudioMixerGroup;
 
 #if UNITY_EDITOR
         private void OnValidate() {
