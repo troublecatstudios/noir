@@ -1,5 +1,7 @@
 ## How to contribute to Noir?
 
+[Getting Started Guide](./package/Docs~/developing.md) | [Samples Documentation](./package/Docs~/samples.md)
+
 #### **Did you find a bug?**
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/troublecatstudios/noir/issues).
