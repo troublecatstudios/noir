@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Noir</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="$(CiCommons)unityreferences.targets" />
+
+  <ItemGroup>
+    <Compile Include="$(RepoRoot)package/Runtime/Noir/**/*.cs" />
+  </ItemGroup>
+</Project>
