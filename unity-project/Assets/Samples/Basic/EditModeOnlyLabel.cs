@@ -7,9 +7,13 @@ namespace Samples {
         public Vector2 LabelPosition;
         public string LabelText;
 
+
+#if UNITY_EDITOR
         private void OnDrawGizmos() {
             if (Application.isPlaying) return;
             UnityEditor.Handles.Label(LabelPosition, LabelText, SamplesGUI.EditModeLabelStyle());
         }
+#endif
+
     }
 }
