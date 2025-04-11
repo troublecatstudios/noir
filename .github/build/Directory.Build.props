@@ -12,7 +12,7 @@
         <TargetUnityVersion Condition=" '$(TargetUnityVersion)' == '' ">2021.3.22f1</TargetUnityVersion>
 
         <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\'))</RepoRoot>
-        <RepoBuildPath>$(RepoRoot)build\</RepoBuildPath>
+        <RepoBuildPath>$(RepoRoot).build\</RepoBuildPath>
         <RepoBinPath>$(RepoBuildPath)bin\</RepoBinPath>
         <RepoObjPath>$(RepoBuildPath)obj\</RepoObjPath>
         <CiDir>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</CiDir>

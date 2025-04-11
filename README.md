@@ -1,10 +1,12 @@
 # Noir Library
 Noir is our helper library for unity-based games.
 
-[Docs](./package/Docs~/README.md) | [Changelog](./package/CHANGELOG.md) | [Package README](./package/README.md)
+[Docs](./docs/index.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/License)
 
 > [!Note]
 > This library includes DLLs for several open source libraries. Their license information as well as instructions for removing them if you encounter conflicts when installing can be found in the [Package README](./package/README.md).
+
+**Supported Unity Versions**: v2021.3+
 
 ## Installation
 

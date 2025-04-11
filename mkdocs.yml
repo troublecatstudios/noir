@@ -1,10 +1,44 @@
 site_name: Noir Library Documentation
+site_author: Trouble Cat Studios
+site_description: >-
+  A library designed to make game development in Unity easier.
+
+# Repository
+repo_name: troublecatstudios/noir
+repo_url: https://github.com/troublecatstudios/noir
+
+# Copyright
+copyright: Copyright &copy; 2024 - 2025 Trouble Cat Studios
+
 theme:
   name: material
   palette:
     scheme: slate
+  features:
+    - navigation.top
+    - navigation.sections
+    - navigation.tabs
+    - content.code.annotate
+    - content.code.copy
+    - toc.follow
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - search
+  - include_dir_to_nav
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
@@ -20,3 +54,17 @@ markdown_extensions:
       hardbreak: true
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation: getting_started/installing.md
+      - License: getting_started/license.md
+      - Changelog: getting_started/changelog.md
+      - Third party libraries: getting_started/third_party.md
+  - Contributing:
+      - Building: contributing/building.md
+      - Developing: contributing/developing.md
+  - Reference:
+      - reference/index.md
+      - Noir: reference/Noir
+      - NoirEditor: reference/NoirEditor

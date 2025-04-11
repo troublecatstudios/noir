@@ -1,7 +1,0 @@
-services:
-  mkdocs:
-    build:
-      context: ../../
-      dockerfile: .github/scripts/mkdocs.dockerfile
-    ports:
-      - "8000:8000"
