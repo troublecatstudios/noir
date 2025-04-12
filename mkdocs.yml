@@ -55,7 +55,7 @@ markdown_extensions:
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
 nav:
-  - Home: index.md
+  - Home: README.md
   - Getting started:
       - Installation: getting_started/installing.md
       - License: getting_started/license.md
@@ -65,6 +65,10 @@ nav:
       - Building: contributing/building.md
       - Developing: contributing/developing.md
   - Reference:
-      - reference/index.md
+      - reference/README.md
       - Noir: reference/Noir
       - NoirEditor: reference/NoirEditor
+  - Tutorials:
+      - tutorials/README.md
+      - Automatic ScriptableObjects: tutorials/automatic-scriptableobject-creation.md
+      - Included samples: tutorials/samples.md

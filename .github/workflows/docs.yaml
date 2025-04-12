@@ -60,4 +60,5 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-macros-plugin
           pip install mkdocs-glightbox
+          pip install mkdocs-include-dir-to-nav
       - run: mkdocs gh-deploy --force
