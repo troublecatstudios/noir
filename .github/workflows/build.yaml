@@ -8,18 +8,23 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  prep:
     runs-on: ubuntu-latest
+    outputs:
+      unity_version: ${{ steps.unity-get-version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
       - uses: akiojin/unity-get-version-github-action@v1.1.4
         id: unity-get-version
         with:
           project-directory: ./unity-project
-      - name: Setup Unity
-        uses: app-craft/setup-unity@v2
-        with:
-          unity-version: ${{ steps.unity-get-version.outputs.version }}
+  build:
+    runs-on: ubuntu-latest
+    needs: ['prep']
+    container:
+      image: unityci/editor:editor-${{ needs.prep.outputs.unity_version }}-3.1.0
+    steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
       - name: Build Code
         run: |
