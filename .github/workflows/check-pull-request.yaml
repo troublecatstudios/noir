@@ -65,6 +65,7 @@ jobs:
             ## Pull Request Lint Results
             :tada: This PR has been automatically checked and passes our linting, congrats! If any warnings were noticed they'll be included below.
             ${{ steps.Validation.outputs.warnings }}
+            ${{ steps.Validation.outputs.remarks }}
           edit-mode: replace
           reactions: hooray
 
@@ -79,5 +80,6 @@ jobs:
             :grimacing: Oops, looks like this PR needs some changes before merging.
             ${{ steps.Validation.outputs.reasons }}
             ${{ steps.Validation.outputs.warnings }}
+            ${{ steps.Validation.outputs.remarks }}
           edit-mode: replace
 
