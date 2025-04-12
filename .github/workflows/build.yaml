@@ -12,6 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: akiojin/unity-get-version-github-action@v1.1.4
+        id: unity-get-version
+        with:
+          project-directory: ./unity-project
+      - name: Setup Unity
+        uses: kuler90/setup-unity@v1
+        with:
+          unity-version: ${{ steps.unity-get-version.outputs.version }}
       - uses: actions/setup-dotnet@v4
       - name: Build Code
         run: |
