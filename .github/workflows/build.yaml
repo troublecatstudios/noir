@@ -17,7 +17,7 @@ jobs:
         with:
           project-directory: ./unity-project
       - name: Setup Unity
-        uses: kuler90/setup-unity@v1
+        uses: app-craft/setup-unity@v2
         with:
           unity-version: ${{ steps.unity-get-version.outputs.version }}
       - uses: actions/setup-dotnet@v4
