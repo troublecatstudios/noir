@@ -8,13 +8,13 @@ public static class FloatAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### IsApproximately(ICustomAssertionContext<T>, float, float, string)
+#### IsApproximately(IAssertionContext<T>, float, float, string)
 ```csharp
-public void IsApproximately(ICustomAssertionContext<T> context, float value, float epsilon, string message)
+public void IsApproximately(IAssertionContext<T> context, float value, float epsilon, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `value` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `epsilon` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

@@ -1,7 +1,7 @@
 ﻿namespace Noir.Testing {
-    public class CustomAssertionContext<T> : ICustomAssertionContext<T> {
-        public CustomAssertionContext() { }
-        public CustomAssertionContext(T target, params object[] additionalContexts) {
+    public class AssertionContext<T> : IAssertionContext<T> {
+        public AssertionContext() { }
+        public AssertionContext(T target, params object[] additionalContexts) {
             Target = target;
             AdditionalContexts = additionalContexts;
         }

@@ -8,30 +8,30 @@ public static class EnumerableAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### Contains(ICustomAssertionContext<T>, T)
+#### Contains(IAssertionContext<T>, T)
 ```csharp
-public void Contains(ICustomAssertionContext<T> context, T item)
+public void Contains(IAssertionContext<T> context, T item)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `item` [T](../../../) <br>
 
-#### HasLength(ICustomAssertionContext<T>, int)
+#### HasLength(IAssertionContext<T>, int)
 ```csharp
-public void HasLength(ICustomAssertionContext<T> context, int length)
+public void HasLength(IAssertionContext<T> context, int length)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-#### HasSameContents(ICustomAssertionContext<T>, IEnumerable)
+#### HasSameContents(IAssertionContext<T>, IEnumerable)
 ```csharp
-public void HasSameContents(ICustomAssertionContext<T> context, IEnumerable expected)
+public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `expected` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
 

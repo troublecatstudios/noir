@@ -8,42 +8,42 @@ public static class GameObjectAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### HasComponent(ICustomAssertionContext<T>, string)
+#### HasComponent(IAssertionContext<T>, string)
 ```csharp
-public ICustomAssertionContext<T> HasComponent(ICustomAssertionContext<T> context, string message)
+public IAssertionContext<T> HasComponent(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 **Returns** <br>
-[ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+[IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 
-#### IsActive(ICustomAssertionContext<T>, string)
+#### IsActive(IAssertionContext<T>, string)
 ```csharp
-public void IsActive(ICustomAssertionContext<T> context, string message)
+public void IsActive(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsEnabled(ICustomAssertionContext<T>, string)
+#### IsEnabled(IAssertionContext<T>, string)
 ```csharp
-public void IsEnabled(ICustomAssertionContext<T> context, string message)
+public void IsEnabled(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsNotActive(ICustomAssertionContext<T>, string)
+#### IsNotActive(IAssertionContext<T>, string)
 ```csharp
-public void IsNotActive(ICustomAssertionContext<T> context, string message)
+public void IsNotActive(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

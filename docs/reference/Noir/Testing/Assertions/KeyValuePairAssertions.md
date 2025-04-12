@@ -8,25 +8,25 @@ public static class KeyValuePairAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### Key(ICustomAssertionContext<T>)
+#### Key(IAssertionContext<T>)
 ```csharp
-public ICustomAssertionContext<T> Key(ICustomAssertionContext<T> context)
+public IAssertionContext<T> Key(IAssertionContext<T> context)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 
 **Returns** <br>
-[ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+[IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 
-#### Value(ICustomAssertionContext<T>)
+#### Value(IAssertionContext<T>)
 ```csharp
-public ICustomAssertionContext<T> Value(ICustomAssertionContext<T> context)
+public IAssertionContext<T> Value(IAssertionContext<T> context)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 
 **Returns** <br>
-[ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+[IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 

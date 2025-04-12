@@ -8,39 +8,39 @@ public static class StringAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### Contains(ICustomAssertionContext<T>, string)
+#### Contains(IAssertionContext<T>, string)
 ```csharp
-public void Contains(ICustomAssertionContext<T> context, string expected)
+public void Contains(IAssertionContext<T> context, string expected)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### EndsWith(ICustomAssertionContext<T>, string)
+#### EndsWith(IAssertionContext<T>, string)
 ```csharp
-public void EndsWith(ICustomAssertionContext<T> context, string expected)
+public void EndsWith(IAssertionContext<T> context, string expected)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsExactly(ICustomAssertionContext<T>, string)
+#### IsExactly(IAssertionContext<T>, string)
 ```csharp
-public void IsExactly(ICustomAssertionContext<T> context, string expected)
+public void IsExactly(IAssertionContext<T> context, string expected)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### StartsWith(ICustomAssertionContext<T>, string)
+#### StartsWith(IAssertionContext<T>, string)
 ```csharp
-public void StartsWith(ICustomAssertionContext<T> context, string expected)
+public void StartsWith(IAssertionContext<T> context, string expected)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

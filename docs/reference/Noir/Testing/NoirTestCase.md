@@ -15,11 +15,11 @@ protected NoirTestCase()
 ### 📦 Properties
 #### Asserts
 ```csharp
-public readonly CustomAssertions Asserts;
+public readonly NoirAssertions Asserts;
 ```
 
 **Returns** <br>
-[CustomAssertions](../../Noir/Testing/CustomAssertions.html) <br>
+[NoirAssertions](../../Noir/Testing/NoirAssertions.html) <br>
 ### ⛹️‍♀️ Methods
 #### Setup()
 ```csharp

@@ -8,12 +8,12 @@ public static class VectorAssertions
 ```
 
 ### ⛹️‍♀️ Methods
-#### IsZero(ICustomAssertionContext<T>, string)
+#### IsZero(IAssertionContext<T>, string)
 ```csharp
-public void IsZero(ICustomAssertionContext<T> context, string message)
+public void IsZero(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [ICustomAssertionContext\<T\>](../../../Noir/Testing/ICustomAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

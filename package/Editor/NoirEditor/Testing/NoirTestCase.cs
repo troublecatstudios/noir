@@ -2,7 +2,7 @@
 
 namespace Noir.Testing {
     public abstract class NoirTestCase {
-        public readonly CustomAssertions Asserts = new();
+        public readonly NoirAssertions Asserts = new();
 
         [OneTimeSetUp]
         public virtual void SetupAll() {
