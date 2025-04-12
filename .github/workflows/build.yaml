@@ -26,6 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: .github/build/global.json
       - name: Build Code
         run: |
           cd ./.github/build
