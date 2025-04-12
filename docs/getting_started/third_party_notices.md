@@ -1,6 +1,10 @@
 ﻿## Runtime Dependencies
 
-Noir does not currently require any third-party libraries within the runtime code.
+The following third-party libraries are included in this project.
+
+### FastNoise
+
+FastNoise is Copyright (c) 2023 Jordan Peck (jordan.me2@gmail.com), licensed under the MIT license https://github.com/Auburn/FastNoiseLite/blob/master/LICENSE.
 
 ## Editor Only Dependencies
 
