@@ -10,4 +10,9 @@
   <ItemGroup>
     <Compile Include="$(RepoRoot)package/Runtime/Noir/**/*.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(RepoRoot)package/Vendor/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
