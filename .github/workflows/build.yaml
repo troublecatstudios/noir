@@ -78,6 +78,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-${{ github.sha }}-${{ github.run_number }}
+          path: .build/
       - name: Output full repository structure
         shell: bash
         run: ls -lasR
