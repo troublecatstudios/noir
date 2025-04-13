@@ -11,7 +11,7 @@
     <HubDefaultEditor Condition="'$(HubDefaultEditor)' == ''"></HubDefaultEditor>
     <WhatOS Condition="Exists('\Applications') and !Exists('c:\Windows')">mac</WhatOS>
     <WhatOS Condition="$([MSBuild]::IsOSPlatform('Linux'))">nix</WhatOS>
-    <WhatOS Condition="'$(WhatOS)' != 'mac' ans '$(WhatOS)' != 'nix'">win</WhatOS>
+    <WhatOS Condition="'$(WhatOS)' != 'mac' and '$(WhatOS)' != 'nix'">win</WhatOS>
     <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'nix'">\opt\unity\Editor</HubInstallDir>
     <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'win'">C:\Program Files\Unity\Hub\Editor</HubInstallDir>
     <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'mac'">\Applications\Unity\Hub\Editor</HubInstallDir>
