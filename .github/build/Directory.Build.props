@@ -33,10 +33,10 @@
 
     <ItemGroup>
       <Reference Include="UnityEditor.UI">
-        <HintPath>$(UnityProjectDir)Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>$(CiDir)\lib\$(TargetUnityVersion)\UnityEditor.UI.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.UI">
-        <HintPath>$(UnityProjectDir)Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>$(CiDir)\lib\$(TargetUnityVersion)\UnityEngine.UI.dll</HintPath>
       </Reference>
     </ItemGroup>
 </Project>
