@@ -68,6 +68,8 @@ jobs:
     needs: ['build']
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
       - name: Mark repository as safe
         shell: bash
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
