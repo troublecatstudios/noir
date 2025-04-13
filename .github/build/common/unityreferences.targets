@@ -10,13 +10,16 @@
     <HubDefaultEditorFile>$(AppData)\UnityHub\defaultEditor.json</HubDefaultEditorFile>
     <HubDefaultEditor Condition="'$(HubDefaultEditor)' == ''"></HubDefaultEditor>
     <WhatOS Condition="Exists('\Applications') and !Exists('c:\Windows')">mac</WhatOS>
-    <WhatOS Condition="'$(WhatOS)' != 'mac'">win</WhatOS>
+    <WhatOS Condition="$([MSBuild]::IsOSPlatform('Linux'))">nix</WhatOS>
+    <WhatOS Condition="'$(WhatOS)' != 'mac' ans '$(WhatOS)' != 'nix'">win</WhatOS>
+    <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'nix'">\opt\unity\Editor</HubInstallDir>
     <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'win'">C:\Program Files\Unity\Hub\Editor</HubInstallDir>
     <HubInstallDir Condition="'$(HubInstallDir)' == '' and '$(WhatOS)' == 'mac'">\Applications\Unity\Hub\Editor</HubInstallDir>
     <HubInstallDir Condition="!Exists('$(HubInstallDir)')"></HubInstallDir>
     <UnityDir Condition="$(UnityDir) == '' and Exists('$(RootDir)\script\lib\Managed\UnityEditor.dll')">$(RootDir)script\lib\</UnityDir>
     <UnityDir Condition="$(UnityDir) == '' and Exists('$(RootDir)\lib\Managed\UnityEditor.dll')">$(RootDir)lib\</UnityDir>
     <UnityDir Condition="$(UnityDir) == '' and Exists('\Applications\Unity\Unity.app\Contents\Managed\UnityEditor.dll')">\Applications\Unity\Unity.app\Contents\</UnityDir>
+    <UnityDir Condition="$(UnityDir) == '' and Exists('\opt\unity\Editor\Data\Managed\UnityEditor.dll')">\opt\unity\Editor\Data\</UnityDir>
     <UnityDir Condition="$(UnityDir) == '' and Exists('C:\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll')">C:\Program Files\Unity\Editor\Data\</UnityDir>
     <UnityDir Condition="$(UnityDir) == '' and Exists('C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.dll')">C:\Program Files (x86)\Unity\Editor\Data\</UnityDir>
   </PropertyGroup>
