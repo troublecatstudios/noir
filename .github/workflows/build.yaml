@@ -82,7 +82,7 @@ jobs:
         shell: bash
         run: |
           cd ./.github/scripts
-          dotnet ./dotnet2md/Parser.exe ./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../docs/ Noir NoirEditor
+          dotnet ./dotnet2md/Parser.dll ./../../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../../docs/ Noir NoirEditor
       - name: Check for git changes
         id: check_changes
         run: |
