@@ -54,8 +54,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-${{ github.sha }}-${{ github.run_number }}
-          path: |
-            .build
+          if-no-files-found: error
+          include-hidden-files: true
+          path: .build/
   # Docs
   # --------------------------------------------------------------------------------
   # docs automatically updates the api documentation using the build outputs. If any
