@@ -8,6 +8,13 @@ permissions:
   contents: write
 
 jobs:
+  #
+  # Prep
+  # --------------------------------------------------------------------------------
+  # prep does the following work so that the other jobs can execute successfully.
+  #
+  # - Determine the unity version currently used in unity-project/
+  #
   prep:
     runs-on: ubuntu-latest
     outputs:
@@ -18,6 +25,12 @@ jobs:
         id: unity-get-version
         with:
           project-directory: ./unity-project
+  #
+  # Build
+  # --------------------------------------------------------------------------------
+  # build handles building the project libraries via dotnet and uploads the output
+  # via actions/upload-artifact so that it can be used by later jobs
+  #
   build:
     runs-on: ubuntu-latest
     needs: ['prep']
@@ -26,12 +39,63 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Mark repository as safe
+        shell: bash
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: .github/build/global.json
       - name: Build Code
+        shell: bash
         run: |
           cd ./.github/build
           dotnet build ./Noir.csproj
           dotnet build ./NoirEditor.csproj
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ github.sha }}-${{ github.run_number }}
+          path: |
+            .build
+  # Docs
+  # --------------------------------------------------------------------------------
+  # docs automatically updates the api documentation using the build outputs. If any
+  # documentation has been changed, the results will be committed to the pull request
+  # so documentation updates can be reviewed alongside the code changes.
+  #
+  docs:
+    runs-on: ubuntu-latest
+    needs: ['build']
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mark repository as safe
+        shell: bash
+        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: .github/build/global.json
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-${{ github.sha }}-${{ github.run_number }}
+      - name: Run dotnet2md to generate updated docs
+        shell: bash
+        run: |
+          cd ./.github/scripts
+          dotnet ./dotnet2md/Parser.exe ./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../docs/ Noir NoirEditor
+      - name: Check for git changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+              echo "changes=true" >> "$GITHUB_OUTPUT";
+          fi
+      - name: Configure git credentials
+        if: steps.check_changes.outputs.changes
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Commit documentation updates
+        if: steps.check_changes.outputs.changes
+        run: |
+          git add -A
+          git commit -m 'auto(docs): updates documentation'
+          git push

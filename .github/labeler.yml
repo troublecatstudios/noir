@@ -1,0 +1,27 @@
+documentation:
+- changed-files:
+  - any-glob-to-any-file: ['docs/**/*', 'package/**/*.md', '*.md', 'mkdocs.yml']
+
+ci:
+- changed-files:
+  - any-glob-to-any-file: ['.github/*']
+
+unity:
+- changed-files:
+  - any-glob-to-any-file: ['.vscode/**/*', 'unity-project/**/*', 'package/Resources/**/*']
+
+dependencies:
+- changed-files:
+  - any-glob-to-any-file: ['package/**/Vendor/**/*', '.github/build/lib/**/*']
+
+tests:
+- changed-files:
+  - any-glob-to-any-file: ['package/Tests/**/*']
+
+noir:
+- changed-files:
+  - any-glob-to-any-file: 'package/Runtime/Noir/**/*'
+
+noir-editor:
+- changed-files:
+  - any-glob-to-any-file: 'package/Editor/NoirEditor/**/*'
