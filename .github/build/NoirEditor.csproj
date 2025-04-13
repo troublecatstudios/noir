@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>$(UnityProjectDir)Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+      <HintPath>>$(CiDir)\lib\$(TargetUnityVersion)\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="ExCSS">
       <HintPath>$(RepoRoot)package\Vendor\ExCSS.dll</HintPath>
