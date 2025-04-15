@@ -84,7 +84,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: nuget
+          name: nuget-${{ github.sha }}-${{ github.run_number }}
           path: ${{ env.NuGetDirectory }}
       - uses: actions/setup-dotnet@v4
         with:
