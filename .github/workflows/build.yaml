@@ -51,12 +51,13 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: .github/build/global.json
-      - name: Build Code
+      - name: Build code and create NuGet packages
         shell: bash
         run: |
           cd ./.github/build
           dotnet build ./Noir.csproj
           dotnet build ./NoirEditor.csproj
+          dotnet pack --configuration Release Noir.csproj
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -64,7 +65,6 @@ jobs:
           if-no-files-found: error
           include-hidden-files: true
           path: .build/
-      - run: dotnet pack --configuration Release
       - uses: actions/upload-artifact@v4
         with:
           name: nuget-${{ github.sha }}-${{ github.run_number }}
