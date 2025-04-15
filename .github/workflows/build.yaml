@@ -87,8 +87,6 @@ jobs:
           name: nuget-${{ github.sha }}-${{ github.run_number }}
           path: ${{ env.NuGetDirectory }}
       - uses: actions/setup-dotnet@v4
-        with:
-          global-json-file: .github/build/global.json
       - name: Publish NuGet packages
         shell: pwsh
         env:
