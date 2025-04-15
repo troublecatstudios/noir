@@ -89,11 +89,9 @@ jobs:
       - uses: actions/setup-dotnet@v4
       - name: Publish NuGet packages
         shell: pwsh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
-            dotnet nuget push $file --source https://nuget.pkg.github.com/troublecatstudios/index.json --api-key ${GITHUB_TOKEN}
+            dotnet nuget push $file --source https://nuget.pkg.github.com/troublecatstudios/index.json --api-key "${{ secrets.GITHUB_TOKEN }}"
           }
 
   # Docs
