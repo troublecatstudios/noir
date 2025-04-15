@@ -3,7 +3,7 @@
     <AssemblyName>NoirEditor</AssemblyName>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net471;netcoreapp3.1</TargetFrameworks>
-
+    <IsPackable>false</IsPackable>
     <NoConfig>true</NoConfig>
     <NoStdLib>true</NoStdLib>
     <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>

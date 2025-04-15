@@ -21,6 +21,7 @@
 
         <BaseIntermediateOutputPath>$(RepoObjPath)$(MSBuildProjectName)\</BaseIntermediateOutputPath>
         <BaseOutputPath Condition=" '$(BaseOutputPath)' == '' ">$(RepoBinPath)$(MSBuildProjectName)\</BaseOutputPath>
+        <PackageOutputPath Condition=" '$(PackageOutputPath)' == '' ">$(RepoBuildPath)nuget/$(MSBuildProjectName)/</PackageOutputPath>
 
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
