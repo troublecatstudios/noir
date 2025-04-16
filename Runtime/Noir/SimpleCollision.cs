@@ -1,0 +1,85 @@
+﻿using UnityEngine;
+
+namespace Noir {
+    public enum CollisionCheckMethod {
+        TwoDimensional,
+        ThreeDimensional,
+    }
+    public static class SimpleCollision {
+
+        private static readonly RaycastHit2D[] _hits2d = new RaycastHit2D[10];
+        private static readonly RaycastHit[] _hits3d = new RaycastHit[10];
+
+        /// <summary>
+        /// Performs a 2D or 3D collision check via raycast within the Unity Physics Engine.
+        /// </summary>
+        /// <param name="origin">The starting position of the ray.</param>
+        /// <param name="direction">The unnormalized direction that the ray will be cast in.</param>
+        /// <param name="length">The length of the ray, in world units.</param>
+        /// <param name="mask">The collision mask to use.</param>
+        /// <param name="method">Whether the 2D or 3D physics system should be checked</param>
+        /// <param name="hitThreshold">The minimum number of hits that must be returned in order for the check to be successful.</param>
+        /// <returns><c>true</c> if the hit threshold was met, <c>false</c> otherwise.</returns>
+        public static bool Check(Vector3 origin, Vector3 direction, float length, LayerMask mask, CollisionCheckMethod method = CollisionCheckMethod.ThreeDimensional, int hitThreshold = 0) {
+            if (method == CollisionCheckMethod.TwoDimensional) {
+                var hits = Physics2D.RaycastNonAlloc(origin, direction.normalized, _hits2d, length, mask);
+                if (hits > hitThreshold) {
+                    var other = _hits2d[hitThreshold];
+                    if (other.collider.enabled && other.collider.gameObject.activeInHierarchy) {
+                        return true;
+                    }
+                }
+            }
+
+            if (method == CollisionCheckMethod.ThreeDimensional) {
+                var hits = Physics.RaycastNonAlloc(origin, direction.normalized, _hits3d, length, mask);
+                if (hits > hitThreshold) {
+                    var other = _hits3d[hitThreshold];
+                    if (other.collider.enabled && other.collider.gameObject.activeInHierarchy) {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static bool TryGetHit(Vector3 origin, Vector3 direction, float length, LayerMask mask, CollisionCheckMethod method, out Vector3 hitPosition) {
+            hitPosition = Vector3.zero;
+            if (method == CollisionCheckMethod.TwoDimensional) {
+                var hits = Physics2D.RaycastNonAlloc(origin, direction.normalized, _hits2d, length, mask);
+                hitPosition = _hits2d[0].point;
+                return hits > 0;
+            }
+
+            if (method == CollisionCheckMethod.ThreeDimensional) {
+                var hits = Physics.RaycastNonAlloc(origin, direction.normalized, _hits3d, length, mask);
+                hitPosition = _hits3d[0].point;
+                return hits > 0;
+            }
+
+            return false;
+        }
+
+        public static Vector2 GetContactPointFast(Bounds attackBounds, Bounds defenseBounds) {
+            return attackBounds.center + (defenseBounds.center - attackBounds.center) / 2;
+        }
+
+        public static bool CheckPosition(Collider2D collider, Vector2 position) {
+            return collider.bounds.Contains(position);
+        }
+
+        public static Vector2 GetRandomPointWithinCollider(BoxCollider2D collider) {
+            Vector2 colliderPos = (Vector2)collider.transform.position + collider.offset;
+            float randomPosX = Random.Range(colliderPos.x - collider.size.x / 2, colliderPos.x + collider.size.x / 2);
+            float randomPosY = Random.Range(colliderPos.y - collider.size.y / 2, colliderPos.y + collider.size.y / 2);
+
+            return new Vector2(randomPosX, randomPosY);
+        }
+
+        public static Vector2 GetRandomPointWithinCollider(CircleCollider2D collider) {
+            Vector2 colliderPos = (Vector2)collider.transform.position + collider.offset;
+            return colliderPos + (Random.insideUnitCircle * collider.radius);
+        }
+    }
+}
