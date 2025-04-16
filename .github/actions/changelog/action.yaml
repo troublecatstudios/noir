@@ -1,0 +1,33 @@
+name: 'Update CHANGELOG'
+description: 'updates the CHANGELOG, moving the Unreleased content under the specified version'
+inputs:
+  version:
+    description: 'The version to use as the new changelog header'
+    required: true
+outputs:
+  content:
+    description: "The CHANGELOG contents for the unreleased changes"
+    value: ${{ steps.changelog_contents.outputs.result }}
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+    - name: Install dependencies
+      shell: bash
+      run: cd .github/actions/version && npm install
+    - name: Update CHANGELOG contents
+      uses: actions/github-script@v7
+      id: changelog_contents
+      with:
+        script: |
+          const updateChangelog = require('./.github/actions/changelog/update-changelog');
+          return await updateChangelog("${{ inputs.version }}");
+        result-encoding: string

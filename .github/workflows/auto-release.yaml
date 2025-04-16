@@ -1,4 +1,4 @@
-name: Auto Release
+name: Release Automation
 
 on:
   workflow_dispatch:
@@ -15,8 +15,8 @@ on:
     branches:
     - stable
 
-env:
-  PACKAGEJSON_LOCATION: "./package"
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -70,67 +70,48 @@ jobs:
     # -----------------------------
     # note: this uses either the release type from the actions-ecosystem/action-release-label
     # step or the type chosen in the workflow_dispatch
-    - uses: actions-ecosystem/action-bump-semver@v1
-      id: bump-semver
+    - uses: ./.github/actions/version
+      id: versioning
       if: steps.release-label.outputs.level != null || github.event.inputs.release_type != null
       with:
-        current_version: ${{ steps.get-latest-tag.outputs.tag }}
-        level: ${{ steps.release-label.outputs.level && steps.release-label.outputs.level || github.event.inputs.release_type }}
+        release_type: ${{ steps.release-label.outputs.level && steps.release-label.outputs.level || github.event.inputs.release_type }}
 
-    # Apply the version update to the package.json file
-    # -----------------------------
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-    - name: Bump package.json version
-      run: |
-        cd ${PACKAGEJSON_LOCATION}
-        npm --no-git-tag-version --allow-same-version version ${{ steps.bump-semver.outputs.new_version }}
-
-    # Extract the release notes from the PR body
-    # -----------------------------
-    - uses: actions-ecosystem/action-regex-match@v2
-      id: regex-match
-      if: ${{ steps.bump-semver.outputs.new_version != null }}
-      with:
-        text: ${{ steps.get-merged-pull-request.outputs.body }}
-        regex: '```release_note([\s\S]*)```'
 
     # Update the changelog
     # -----------------------------
-    - name: Update Changelog
-      if: ${{ steps.bump-semver.outputs.new_version != null }}
-      run: |
-        changelog="##${{ steps.bump-semver.outputs.new_version }}\n${{ steps.regex-match.outputs.group1 }}"
-        sed -i "s/<!--NEW_CHANGELOG-->/$changelog/" CHANGELOG.md
-
-    - name: Commit new version changes
-      if: ${{ steps.bump-semver.outputs.new_version != null }}
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add .
-        { git commit -m "${{ steps.bump-semver.outputs.new_version }} CHANGELOG" && git push || true
+    - uses: ./.github/actions/changloe
+      id: changelog
+      if: steps.release-label.outputs.level != null || github.event.inputs.release_type != null
+      with:
+        version: ${{ steps.versioning.outputs.new_version }}
 
     # Push version tag
     # -----------------------------
     - uses: actions-ecosystem/action-push-tag@v1
-      if: ${{ steps.bump-semver.outputs.new_version != null }}
+      if: ${{ steps.versioning.outputs.new_version != null }}
       with:
-        tag: ${{ steps.bump-semver.outputs.new_version }}
-        message: "${{ steps.bump-semver.outputs.new_version }}: PR #${{ steps.get-merged-pull-request.outputs.number }} ${{ steps.get-merged-pull-request.outputs.title }}"
+        tag: ${{ steps.versioning.outputs.new_version }}
+        message: "${{ steps.versioning.outputs.new_version }}: PR #${{ steps.get-merged-pull-request.outputs.number }} ${{ steps.get-merged-pull-request.outputs.title }}"
 
     # Create GitHub Release
     # -----------------------------
     - uses: actions/create-release@v1
-      if: ${{ steps.bump-semver.outputs.new_version != null }}
+      if: ${{ steps.versioning.outputs.new_version != null }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.bump-semver.outputs.new_version }}
-        release_name: ${{ steps.bump-semver.outputs.new_version }}
-        body: ${{ steps.regex-match.outputs.group1 }}
+        tag_name: v${{ steps.versioning.outputs.new_version }}
+        release_name: v${{ steps.versioning.outputs.new_version }}
+        body: ${{ steps.changelog.outputs.content }}
+
+    # Create/Update the upm branch
+    # -----------------------------
+    - name: update upm branch
+      if: ${{ steps.versioning.outputs.new_version != null }}
+      shell: bash
+      run: |
+        git subtree split -P "./package" -b upm
+        git push -u origin upm
 
     # Post comment back to PR with release information
     # -----------------------------
@@ -140,4 +121,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         number: ${{ steps.get-merged-pull-request.outputs.number }}
         body: |
-          The new version [${{ steps.bump-semver.outputs.new_version }}](https://github.com/${{ github.repository }}/releases/tag/${{ steps.bump-semver.outputs.new_version }}) has been released
+          The new version [${{ steps.versioning.outputs.new_version }}](https://github.com/${{ github.repository }}/releases/tag/${{ steps.versioning.outputs.new_version }}) has been released

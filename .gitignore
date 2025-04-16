@@ -7,3 +7,4 @@ package/Samples~/*/*.meta
 unity-project/build/
 .data/
 .build/
+node_modules/
