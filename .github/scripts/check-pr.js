@@ -3,16 +3,13 @@ module.exports = async ({github, context, core, pr}) => {
   const {body} = pr;
   let reasons = [];
   let warnings = [];
-  
+  let remarks = [];
+
   // check that the PR has a release_notes section
   const hasReleaseNotes = releaseNotesRegex.test(body);
   // check for release label
   const releaseLabels = pr.labels.map(l => l.name).filter(l => l.startsWith('release/'));
-  
-  if (!hasReleaseNotes) {
-    warnings.push('* Missing release notes section.');
-    core.warning('Missing release notes section');
-  }
+
   if (releaseLabels.length > 0) {
     if (releaseLabels.length > 1) {
       reasons.push('* Too many release labels. Please remove one of the release/* labels from this PR.');
@@ -26,12 +23,29 @@ module.exports = async ({github, context, core, pr}) => {
     if (hasReleaseNotes) {
       warnings.push('* You\'ve added some release notes but haven\'t added a release/* label.');
       core.warning('Missing release labels.');
+    } else {
+      remarks.push('This pull request will not update the release, it is a develop-only pull request.');
     }
   }
-  
-  core.setOutput('reasons', '### :no_entry: Lint Failures\n' + reasons.join('\n'));
-  core.setOutput('warnings', '### :warning: Lint Warnings \n' + warnings.join('\n'));
-    
+
+  if (reasons.length > 0) {
+    core.setOutput('reasons', '### :no_entry: Lint Failures\n' + reasons.join('\n'));
+  } else {
+    core.setOutput('reasons', '');
+  }
+
+  if (warnings.length > 0) {
+    core.setOutput('warnings', '### :warning: Lint Warnings \n' + warnings.join('\n'));
+  } else {
+    core.setOutput('warnings', '');
+  }
+
+  if (remarks.length > 0) {
+    core.setOutput('remarks', '### :memo: Lint Remarks \n' + remarks.join('\n'));
+  } else {
+    core.setOutput('remarks', '');
+  }
+
   if (reasons.length > 0) {
     core.setFailed('Pull request failed to pass validation.');
   }

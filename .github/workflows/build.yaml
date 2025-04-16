@@ -1,0 +1,147 @@
+name: Build Projects
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  NuGetDirectory: ${{ github.workspace}}/.build/nuget
+
+jobs:
+  #
+  # Prep
+  # --------------------------------------------------------------------------------
+  # prep does the following work so that the other jobs can execute successfully.
+  #
+  # - Determine the unity version currently used in unity-project/
+  #
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      unity_version: ${{ steps.unity-get-version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: akiojin/unity-get-version-github-action@v1.1.4
+        id: unity-get-version
+        with:
+          project-directory: ./unity-project
+  #
+  # Build
+  # --------------------------------------------------------------------------------
+  # build handles building the project libraries via dotnet and uploads the output
+  # via actions/upload-artifact so that it can be used by later jobs
+  #
+  build:
+    runs-on: ubuntu-latest
+    needs: [ prep ]
+    container:
+      image: unityci/editor:ubuntu-${{ needs.prep.outputs.unity_version }}-base-3.1.0
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Nerdbank.GitVersioning requires a full clone to correctly calculate the version height
+      - name: Mark repository as safe
+        shell: bash
+        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: .github/build/global.json
+      - name: Build code and create NuGet packages
+        shell: bash
+        run: |
+          cd ./.github/build
+          dotnet build ./Noir.csproj
+          dotnet build ./NoirEditor.csproj
+          dotnet pack --configuration Release Noir.csproj
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ github.sha }}-${{ github.run_number }}
+          if-no-files-found: error
+          include-hidden-files: true
+          path: .build/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nuget-${{ github.sha }}-${{ github.run_number }}
+          if-no-files-found: error
+          retention-days: 7
+          path: ${{ env.NuGetDirectory }}/**/*.nupkg
+
+  # Deploy NuGet
+  # --------------------------------------------------------------------------------
+  # publishes any generated *.nupkg files to the Trouble Cat Studios GitHub account
+  #
+  deploy_nuget:
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: nuget-${{ github.sha }}-${{ github.run_number }}
+          path: ${{ env.NuGetDirectory }}
+      - uses: actions/setup-dotnet@v4
+      - name: Publish NuGet packages
+        shell: pwsh
+        run: |
+          foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
+            dotnet nuget push $file --source https://nuget.pkg.github.com/troublecatstudios/index.json --api-key "${{ secrets.GITHUB_TOKEN }}"
+          }
+
+  # Docs
+  # --------------------------------------------------------------------------------
+  # docs automatically updates the api documentation using the build outputs. If any
+  # documentation has been changed, the results will be committed to the pull request
+  # so documentation updates can be reviewed alongside the code changes.
+  #
+  docs:
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # we need to checkout the ref so we're not in a detached head state
+          # when we go to make new commits to the repository
+          ref: ${{ github.head_ref }}
+      - name: Mark repository as safe
+        shell: bash
+        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: .github/build/global.json
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-${{ github.sha }}-${{ github.run_number }}
+          path: .build/
+      - name: Output full repository structure
+        shell: bash
+        run: ls -lasR
+      - name: Run dotnet2md to generate updated docs
+        shell: bash
+        run: |
+          cd ./.github/scripts
+          dotnet ./dotnet2md/Parser.dll ./../../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../../docs/reference/ Noir NoirEditor
+      - name: Check for git changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+              echo "changes=true" >> "$GITHUB_OUTPUT";
+          fi
+      - name: Configure git credentials
+        if: steps.check_changes.outputs.changes
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Commit documentation updates
+        if: steps.check_changes.outputs.changes
+        run: |
+          git add -A
+          git commit -m 'auto(docs): updates documentation'
+          git push

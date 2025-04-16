@@ -20,7 +20,7 @@ jobs:
     steps:
       # Retrieve the current PR number and body
       # -----------------------------
-      - uses: 8BitJonny/gh-get-current-pr@2.0.0
+      - uses: 8BitJonny/gh-get-current-pr@3.0.0
         id: PR
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -29,20 +29,20 @@ jobs:
           # Only return if PR is still open
           filterOutClosed: true
           # Only return if PR is not in draft state
-          filterOutDraft: 1
-      
+          filterOutDraft: false
+
       # Find any previous bot comments so we can update them
       # -----------------------------
       - name: Find Comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         id: FindComment
         with:
           issue-number: ${{ steps.PR.outputs.number }}
           body-includes: Pull Request Lint Results
-      
+
       # Validate PR
       # -----------------------------
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Validate Pull Request
         id: Validation
         if: success() && steps.PR.outputs.number
@@ -52,7 +52,7 @@ jobs:
             const pr = ${{ steps.PR.outputs.pr }};
             const script = require('./.github/scripts/check-pr.js');
             await script({github, context, core, pr});
-        
+
       # Post status back
       # -----------------------------
       - name: Post Comment (Passed)
@@ -65,9 +65,10 @@ jobs:
             ## Pull Request Lint Results
             :tada: This PR has been automatically checked and passes our linting, congrats! If any warnings were noticed they'll be included below.
             ${{ steps.Validation.outputs.warnings }}
+            ${{ steps.Validation.outputs.remarks }}
           edit-mode: replace
           reactions: hooray
-      
+
       - name: Post Comment (Failed)
         if: failure()
         uses: peter-evans/create-or-update-comment@v2
@@ -79,5 +80,6 @@ jobs:
             :grimacing: Oops, looks like this PR needs some changes before merging.
             ${{ steps.Validation.outputs.reasons }}
             ${{ steps.Validation.outputs.warnings }}
+            ${{ steps.Validation.outputs.remarks }}
           edit-mode: replace
-            
+

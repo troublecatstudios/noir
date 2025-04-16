@@ -1,0 +1,43 @@
+<Project>
+    <Target Name="GetGitRoot" BeforeTargets="BeforeBuild">
+        <Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true">
+            <Output TaskParameter="ConsoleOutput" PropertyName="GitRootDirectory"/>
+        </Exec>
+    </Target>
+
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+        <LangVersion>9.0</LangVersion>
+
+        <TargetUnityVersion Condition=" '$(TargetUnityVersion)' == '' ">2021.3.22f1</TargetUnityVersion>
+
+        <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\'))</RepoRoot>
+        <RepoBuildPath>$(RepoRoot).build\</RepoBuildPath>
+        <RepoBinPath>$(RepoBuildPath)bin\</RepoBinPath>
+        <RepoObjPath>$(RepoBuildPath)obj\</RepoObjPath>
+        <CiDir>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</CiDir>
+        <CiCommons>$(CiDir)common\</CiCommons>
+        <UnityProjectDir>$(RepoRoot)\unity-project\</UnityProjectDir>
+
+        <BaseIntermediateOutputPath>$(RepoObjPath)$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+        <BaseOutputPath Condition=" '$(BaseOutputPath)' == '' ">$(RepoBinPath)$(MSBuildProjectName)\</BaseOutputPath>
+        <PackageOutputPath Condition=" '$(PackageOutputPath)' == '' ">$(RepoBuildPath)nuget/$(MSBuildProjectName)/</PackageOutputPath>
+
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net471" Version="[1.0.3, )" PrivateAssets="All" IncludeAssets="runtime; build; native; contentfiles; analyzers" Condition=" '$(TargetFramework)' == 'net471' " />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="UnityEditor.UI">
+        <HintPath>$(CiDir)\lib\$(TargetUnityVersion)\UnityEditor.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>$(CiDir)\lib\$(TargetUnityVersion)\UnityEngine.UI.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>

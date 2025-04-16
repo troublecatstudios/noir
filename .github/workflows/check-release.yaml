@@ -9,8 +9,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v4
+
       # Retrieve the current PR number and body
       # -----------------------------
       - uses: 8BitJonny/gh-get-current-pr@2.0.0
@@ -23,7 +23,7 @@ jobs:
           filterOutClosed: true
           # Only return if PR is not in draft state
           filterOutDraft: 1
-      
+
       # Find any previous bot comments so we can update them
       # -----------------------------
       - name: Find Comment
@@ -49,7 +49,7 @@ jobs:
         with:
           current_version: ${{ steps.get-latest-tag.outputs.tag }}
           level: ${{ steps.release-label.outputs.level }}
-          
+
       # Post status back
       # -----------------------------
       - name: Post Comment (Passed)
