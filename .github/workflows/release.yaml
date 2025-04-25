@@ -1,0 +1,121 @@
+name: Create a release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        type: choice
+        default: dev
+        options:
+          - alpha
+          - beta
+          - rc
+          - dev
+          - stable
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.versioning.outputs.new_version_tag }}
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.ref_name }}
+        fetch-depth: 0
+
+    # Increment the version according to the semver release type
+    # -----------------------------
+    # note: this uses either the release type from the actions-ecosystem/action-release-label
+    # step or the type chosen in the workflow_dispatch
+    - uses: ./.github/actions/version
+      id: versioning
+      with:
+        release_type: ${{ inputs.release_type }}
+
+    - name: Commit version change - ${{ steps.versioning.outputs.new_version_tag }}
+      if: steps.versioning.outcome == 'success'
+      shell: bash
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git add -A
+        git commit -m 'auto(ci): update package version ${{ steps.versioning.outputs.new_version_tag }}'
+
+    - name: Push version updates
+      if: inputs.release_type == 'stable' && steps.versioning.outcome == 'success'
+      shell: bash
+      run: git push
+
+    # Update the changelog
+    # -----------------------------
+    - uses: ./.github/actions/changelog
+      id: changelog
+      if: steps.versioning.outcome == 'success'
+      with:
+        version: ${{ steps.versioning.outputs.new_version_tag }}
+
+    - name: Commit changelog updates
+      if: steps.versioning.outcome == 'success'
+      shell: bash
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git add -A
+        git commit -m 'auto(docs): update changelog ${{ steps.versioning.outputs.new_version_tag }}'
+
+    - name: Push changelog updates
+      if: inputs.release_type == 'stable' && steps.versioning.outcome == 'success'
+      shell: bash
+      run: git push
+
+    # Push version tag
+    # -----------------------------
+    - name: Push version tags - ${{ steps.versioning.outputs.new_version_tag }}
+      if: steps.versioning.outcome == 'success'
+      env:
+        TAG: ${{ steps.versioning.outputs.new_version_tag }}
+        MESSAGE: "${{ steps.versioning.outputs.new_version_tag }}"
+        ORIGINAL_BRANCH: ${{ github.ref_name }}
+      shell: bash
+      run: |
+        git tag -a "${TAG}" -m "${MESSAGE}"
+        git push origin "${TAG}"
+        git subtree split -P "package" -b upm_${TAG}
+        git checkout upm_${TAG}
+        git tag -a "upm/${TAG}" -m "releasing ${TAG} for open upm"
+        git push origin "upm/${TAG}"
+        git checkout $ORIGINAL_BRANCH
+
+
+    # Create GitHub Release
+    # -----------------------------
+    - uses: actions/create-release@v1
+      if: steps.versioning.outcome == 'success'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.versioning.outputs.new_version_tag }}
+        release_name: ${{ steps.versioning.outputs.new_version_tag }}
+        body: ${{ steps.changelog.outputs.content }}
+
+  docs:
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: ./.github/actions/docs
+        id: docs
+        with:
+          version: ${{ needs.release.outputs.version }}
+          update_latest: true

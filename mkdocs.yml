@@ -7,60 +7,96 @@ site_description: >-
 repo_name: troublecatstudios/noir
 repo_url: https://github.com/troublecatstudios/noir
 
+site_url: 'https://troublecat.io/noir/'
+
 # Copyright
 copyright: Copyright &copy; 2024 - 2025 Trouble Cat Studios
 
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/troublecatgames
+    - icon: fontawesome/brands/github
+      link: https://github.com/troublecatstudios
+
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
-    scheme: slate
+    scheme: troublecat
   features:
+    - search.highlight
+    - search.suggest
     - navigation.top
     - navigation.sections
     - navigation.tabs
     - content.code.annotate
     - content.code.copy
+    - content.action.edit
+    - content.action.view
     - toc.follow
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Noto Sans
+    code: Anonymous Pro
 plugins:
   - search
   - include_dir_to_nav
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - git-committers:
+      repository: troublecatstudios/noir
+      branch: develop
+      exclude:
+        - reference/**
 markdown_extensions:
   - admonition
   - attr_list
+  - callouts
+  - def_list
+  - github-callouts
   - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.details
-  - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - pymdownx.escapeall:
+      hardbreak: true
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
       pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         # Mermaid diagrams
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.inlinehilite
-  - pymdownx.escapeall:
-      hardbreak: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+extra_css:
+  - stylesheets/troublecat.css
 nav:
   - Home: README.md
   - Getting started:
       - Installation: getting_started/installing.md
       - License: getting_started/license.md
       - Changelog: getting_started/changelog.md
-      - Third party libraries: getting_started/third_party.md
+      - Third party libraries:
+        - getting_started/third_party.md
+        - Notices: getting_started/third_party_notices.md
   - Contributing:
       - Building: contributing/building.md
       - Developing: contributing/developing.md

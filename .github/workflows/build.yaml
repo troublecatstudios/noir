@@ -3,6 +3,14 @@ name: Build Projects
 on:
   workflow_dispatch:
   pull_request:
+    branches-ignore:
+      - stable
+    paths:
+      - package/Editor/**
+      - package/Runtime/**
+      - .github/workflows/build.yaml
+      - .github/build/**
+      - unity-project/**
 
 permissions:
   contents: write

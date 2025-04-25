@@ -4,7 +4,7 @@ Noir is our helper library for unity-based games.
 [![release][release-badge]][release]
 [![license][license-badge]][license]
 
-[Docs](./docs/index.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/License.md)
+[Docs](./docs/index.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/LICENSE.md)
 
 > [!Note]
 > This library includes DLLs for several open source libraries. Their license information as well as instructions for removing them if you encounter conflicts when installing can be found in the [Package README](./package/README.md).

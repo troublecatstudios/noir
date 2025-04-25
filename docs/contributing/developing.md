@@ -1,6 +1,14 @@
----
-title: Getting started with development in Noir
----
+# Developing
+
+## Setup
+
+In order to work on the Noir source code you'll need the following software installed on your computer.
+
+- [Unity](https://unity.com/) 2021.3.22f1 or greater
+- [Visual Studio Code](https://code.visualstudio.com/) or [Rider](https://www.jetbrains.com/rider/)
+- [mise en place](https://mise.jdx.dev/) :material-checkbox-marked-circle-auto-outline:{ title="Used for developer tasks" }
+- [Docker desktop](https://www.docker.com/products/docker-desktop/) :material-checkbox-marked-circle-auto-outline:{ title="Used for developer tasks" }
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download) :material-checkbox-marked-circle-auto-outline:{ title="Used for developer tasks" }
 
 ## Development process overview
 
@@ -35,16 +43,3 @@ This is definitely a valid strategy. We prefer to follow a pull request oriented
 > Does the `develop` branch cause long delays in shipping smaller releases?
 
 We haven't noticed much delay in getting minor or patch versions released with this model, but it's a risk if maintainers aren't properly keeping up with the repository changes. If a change you've made hasn't been released in a timely manner please do raise an issue and let us know!
-
-
-## Local environment setup
-
-- Unity 2021.3.22f1 or greater
-- VSCode or Rider
-
-### Open the unity-project
-
-1. Open Unity Hub, select "Add Project" and then "Add from disk"
-2. In the dialog window, navigate to where you've checked out the noir repository and select the `unity-project` folder.
-3. Click "Open Project"
-4. You're now all setup to start making changes to the Noir source!

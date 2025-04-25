@@ -5,12 +5,9 @@ const semver = require('semver');
 const { log, err, warn } = require('../../scripts/utils');
 const repositoryRootPath = path.resolve(__dirname, '../../../');
 const packageDirectory = path.resolve(repositoryRootPath, './package');
-const nerdbankVersionFile = path.resolve(repositoryRootPath, './version.json');
-
+const packageJsonFile = path.resolve(packageDirectory, './package.json');
+const versionFile = path.resolve(repositoryRootPath, './version.json');
 const args = process.argv.slice(2);
-
-const validReleaseTypes = ['major', 'minor', 'patch'];
-const versionRegex = /^v\d{1,}\.\d{1,}\.\d{1,}-?/i;
 
 (async function main(releaseType) {
   try {
@@ -19,32 +16,33 @@ const versionRegex = /^v\d{1,}\.\d{1,}\.\d{1,}-?/i;
       await nbgv.resetPackageVersionPlaceholder(packageDirectory);
       return;
     }
-    if (versionRegex.test(releaseType)) {
-      log(`specific version passed. will set version to ${releaseType}`);
-    } else if (!validReleaseTypes.includes(releaseType)) {
-      err(`error while updating package version. invalid release type: '${releaseType}'`);
-      process.exit(1);
-    }
-    const nbVersion = require(nerdbankVersionFile);
-    const [prereleaseLabel, prerelease] = semver.prerelease(nbVersion.version) || [];
-    let newVersion = semver.inc(nbVersion.version, releaseType);
-    if (prereleaseLabel) {
-      // special handling of cases where we want to bump the major/minor/patch
-      // component but we've set the nerdbank version to a prerelease
-      log(`detected prerelease base version`, { version: nbVersion.version });
-      releaseType = `pre${releaseType}`;
-      newVersion = semver.inc(nbVersion.version, releaseType, false, prereleaseLabel);
+
+    const { version } = require(versionFile);
+    const { GITHUB_SHA, GITHUB_RUN_ID, GITHUB_REF, GITHUB_HEAD_REF } = process.env;
+    let versionSuffix = [];
+
+    if (['dev', 'alpha', 'beta', 'rc'].includes(releaseType)) {
+      versionSuffix = [
+        releaseType,
+        GITHUB_SHA.substring(0, 8),
+        GITHUB_RUN_ID
+      ];
     }
 
-    log(`updating base version ${releaseType} component`, {
-      oldVersion: nbVersion.version,
-      newVersion,
-    });
-    nbVersion.version = newVersion;
-    log(`updating nerdbank version file`, { newVersion });
-    await fs.writeFile(nerdbankVersionFile, JSON.stringify(nbVersion, null, 2));
-    log(`updating package version`)
-    await nbgv.setPackageVersion(packageDirectory, repositoryRootPath);
+    let newVersion = [
+      semver.major(version),
+      semver.minor(version),
+      semver.patch(version),
+    ].join('.');
+
+    if (versionSuffix.length > 0) {
+      newVersion = `${newVersion}-${versionSuffix.join('.')}`;
+    }
+
+    log(`updating package version`, { newVersion })
+    const pkg = require(packageJsonFile);
+    pkg.version = newVersion;
+    await fs.writeFile(packageJsonFile, JSON.stringify(pkg, null, 2));
   } catch (e) {
     err(`error while updating package version`, e);
     console.error(e);

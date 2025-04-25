@@ -1,0 +1,28 @@
+[settings]
+asdf = false
+vfox = true
+
+[tasks."build:runtime"]
+dir = './.github/build'
+description = 'Build the Runtime code'
+run = [
+    'dotnet build Noir.csproj'
+]
+
+[tasks."build:editor"]
+dir = './.github/build'
+description = 'Build the Editor code'
+wait_for = ['build:runtime']                 # wait for runtime build to finish if its running
+run = [
+    'dotnet build NoirEditor.csproj'
+]
+
+[tasks.build]
+depends = ['build:runtime', 'build:editor']
+
+[tasks."docs:docker:build"]
+run = 'docker build -t mkdocs:local -f ./.github/scripts/mkdocs.dockerfile .'
+
+[tasks."docs:preview"]
+depends = ['docs:docker:build']
+run = "docker run -it --env-file ./.env.dev --rm -p 8000:8000 -v {{cwd}}:/docs mkdocs:local"

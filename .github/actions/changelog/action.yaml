@@ -4,6 +4,10 @@ inputs:
   version:
     description: 'The version to use as the new changelog header'
     required: true
+  checkout:
+    description: '"true" if the action should checkout the repository before running'
+    default: ''
+    required: false
 outputs:
   content:
     description: "The CHANGELOG contents for the unreleased changes"
@@ -12,6 +16,7 @@ runs:
   using: "composite"
   steps:
     - uses: actions/checkout@v4
+      if: inputs.checkout == 'true'
     - name: Setup dotnet
       uses: actions/setup-dotnet@v4
       with:
@@ -28,6 +33,6 @@ runs:
       id: changelog_contents
       with:
         script: |
-          const updateChangelog = require('./.github/actions/changelog/update-changelog');
+          const { updateChangelog } = require('./.github/actions/changelog/update-changelog');
           return await updateChangelog("${{ inputs.version }}");
         result-encoding: string

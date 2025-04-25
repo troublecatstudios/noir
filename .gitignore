@@ -1,10 +1,11 @@
 # Noir Additions
 #=========================
 unity-project/.data/
-unity-project/Packages/*.json
 package/Docs~/html/
 package/Samples~/*/*.meta
 unity-project/build/
 .data/
 .build/
 node_modules/
+site/
+.env.dev
