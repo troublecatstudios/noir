@@ -44,9 +44,11 @@ plugins:
   - search
   - include_dir_to_nav
   - git-revision-date-localized:
+      enabled: !ENV [GITHUB_ACTIONS, false]
       enable_creation_date: true
       type: timeago
   - git-committers:
+      enabled: !ENV [GITHUB_ACTIONS, false]
       repository: troublecatstudios/noir
       branch: develop
       exclude:
@@ -98,8 +100,9 @@ nav:
         - getting_started/third_party.md
         - Notices: getting_started/third_party_notices.md
   - Contributing:
+      - contributing/developing.md
       - Building: contributing/building.md
-      - Developing: contributing/developing.md
+      - Development tasks: contributing/development_tasks.md
   - Reference:
       - reference/README.md
       - Noir: reference/Noir

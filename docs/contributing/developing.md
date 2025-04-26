@@ -1,4 +1,6 @@
-# Developing
+# Contibuting to Noir
+
+Noir is built off of our own [Unity Package Example](https://github.com/troublecatstudios/unity-package-example).
 
 ## Setup
 
@@ -12,28 +14,38 @@ In order to work on the Noir source code you'll need the following software inst
 
 ## Development process overview
 
-Development on Noir uses a mainline branching scheme with release tagging. All development occurs off of the `develop` branch. The `stable` branch is used as a merge point to generate new release tags.
+# Developing your package
 
-The diagram below shows how the git workflow looks as a new feature is started, worked on and then merged into `develop` with a follow-up minor version release.
+Package development within Unity is, like a lot of things involving Unity, a
+bit of a headache if you've not put time into structuring your project. The
+Unity Package Project is configured out of the box to make development as
+easy as possible.
+
+## Development git flow
+
+Development in Noir uses a mainline branching scheme with
+release tagging. All development occurs off of the `develop` branch. Release
+tags are created off of the `develop` branch via a GitHub Action. See
+[the release guide](./contributing/create_a_release.md) for instructions on how to use
+the action to publish a new release.
+
+The diagram below shows how the git workflow looks as a new feature is started,
+worked on and then merged into `develop` with a follow-up minor version release.
 
 ```mermaid
-%%{init: { 'gitGraph': {'mainBranchName': 'stable'}} }%%
+%%{init: { 'theme': 'dark', 'gitGraph': {'mainBranchName': 'develop'}} }%%
 gitGraph
     commit tag:"v0.0.1"
-    branch develop
-    checkout develop
     commit
     commit
     commit
-    branch feat/my-feature
-    checkout feat/my-feature
+    branch dev/my-feature
+    checkout dev/my-feature
     commit
     commit
     checkout develop
-    merge feat/my-feature id: "pull request"
-    commit
-    checkout stable
-    merge develop id: "official release" tag:"v0.1.0"
+    merge dev/my-feature id: "pull request"
+    commit id: "official release" tag:"v0.1.0"
 ```
 
 > Why not create release tags directly off of the `develop` branch?
