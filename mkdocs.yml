@@ -86,6 +86,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - tables
+  - toc:
+      title: On this page
+      permalink: true
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
 extra_css:
@@ -99,6 +102,13 @@ nav:
       - Third party libraries:
         - getting_started/third_party.md
         - Notices: getting_started/third_party_notices.md
+  - Features:
+      - features/index.md
+      - Gameplay:
+        - features/procedural_generation.md
+      - Editor:
+        - features/variables.md
+        - features/attributes.md
   - Contributing:
       - contributing/developing.md
       - Building: contributing/building.md
