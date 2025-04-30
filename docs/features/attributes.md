@@ -23,4 +23,4 @@ Allows more control over the logic used when searching for matching component ty
 * `ParentFirst` - Search for the component type within the parents of the current GameObject before searching on the current GameObject.
 * `ChildrenFirst` - Search for the component type within the children of the current GameObject before searching on the current GameObject.
 
-[View the full reference documentation](/noir/reference/Noir/Attributes/GetComponentAttribute/){ .md-button }
+[View the full reference documentation](/noir/reference/Noir/Attributes/GetComponentAttribute/)
