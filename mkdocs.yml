@@ -58,6 +58,7 @@ markdown_extensions:
   - attr_list
   - callouts
   - def_list
+  - footnotes
   - github-callouts
   - md_in_html
   - pymdownx.blocks.caption
@@ -99,9 +100,7 @@ nav:
       - Installation: getting_started/installing.md
       - License: getting_started/license.md
       - Changelog: getting_started/changelog.md
-      - Third party libraries:
-        - getting_started/third_party.md
-        - Notices: getting_started/third_party_notices.md
+      - Third party libraries: getting_started/third_party.md
   - Features:
       - features/index.md
       - Gameplay:
