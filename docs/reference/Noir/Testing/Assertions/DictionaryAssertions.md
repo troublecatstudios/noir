@@ -1,14 +1,20 @@
 # DictionaryAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class DictionaryAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### Entry(IAssertionContext<T>, TKey)
+## Methods
+
+### `Entry(IAssertionContext<T>, TKey)`
+<!-- tc:scope public -->
+<!-- tc:return_type IAssertionContext\<T\> ../../../Noir/Testing/IAssertionContext-1.html -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public IAssertionContext<T> Entry(IAssertionContext<T> context, TKey key)
 ```
@@ -16,7 +22,4 @@ public IAssertionContext<T> Entry(IAssertionContext<T> context, TKey key)
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `key` [TKey](../../../) <br>
-
-**Returns** <br>
-[IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 

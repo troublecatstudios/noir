@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace Noir {
     [Serializable]
+    /// <summary>
+    /// Used to create a set of discrete "control points" that define a smooth,
+    /// continuous curve by means of a formula.
+    /// </summary>
+    /// <seealso href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curve on Wikipedia</seealso>
     public struct BezierCurve {
         public Vector3 Start { get; set; }
         public Vector3 End { get; set; }

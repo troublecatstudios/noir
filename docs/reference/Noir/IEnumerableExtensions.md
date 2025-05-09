@@ -1,14 +1,20 @@
 # IEnumerableExtensions
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class IEnumerableExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### ContainsAny(IEnumerable<T>, string, StringComparison)
+## Methods
+
+### `ContainsAny(IEnumerable<T>, string, StringComparison)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool ContainsAny(IEnumerable<T> sequence, string element, StringComparison comparisonType)
 ```
@@ -18,25 +24,26 @@ public bool ContainsAny(IEnumerable<T> sequence, string element, StringCompariso
 `element` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `comparisonType` [StringComparison](https://learn.microsoft.com/en-us/dotnet/api/System.StringComparison?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsEmptySafe(IEnumerable)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Determines if the enumerable has any items without throwing a NullReferenceException.
 
-#### IsEmptySafe(IEnumerable)
+
 ```csharp
 public bool IsEmptySafe(IEnumerable enumerable)
 ```
-
-Determines if the enumerable has any items without throwing a NullReferenceException.
 
 **Parameters** <br>
 `enumerable` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
+### `IndexWhere(IEnumerable<T>, Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### IndexWhere(IEnumerable<T>, Func<T, TResult>)
 ```csharp
 public int IndexWhere(IEnumerable<T> source, Func<T, TResult> predicate)
 ```
@@ -45,10 +52,11 @@ public int IndexWhere(IEnumerable<T> source, Func<T, TResult> predicate)
 `source` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Random(IEnumerable<T>)`
+<!-- tc:scope public -->
+<!-- tc:return_type T _na_ -->
+<!-- tc:version 1.0.0 -->
 
-#### Random(IEnumerable<T>)
 ```csharp
 public T Random(IEnumerable<T> sequence)
 ```
@@ -56,10 +64,11 @@ public T Random(IEnumerable<T> sequence)
 **Parameters** <br>
 `sequence` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 
-**Returns** <br>
-[T](../) <br>
+### `RandomElementByWeight(IEnumerable<T>, Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type T _na_ -->
+<!-- tc:version 1.0.0 -->
 
-#### RandomElementByWeight(IEnumerable<T>, Func<T, TResult>)
 ```csharp
 public T RandomElementByWeight(IEnumerable<T> sequence, Func<T, TResult> weightSelector)
 ```
@@ -67,7 +76,4 @@ public T RandomElementByWeight(IEnumerable<T> sequence, Func<T, TResult> weightS
 **Parameters** <br>
 `sequence` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 `weightSelector` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
-
-**Returns** <br>
-[T](../) <br>
 

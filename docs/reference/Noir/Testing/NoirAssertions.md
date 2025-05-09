@@ -1,26 +1,34 @@
 # NoirAssertions
 
-**Namespace:** Noir.Testing <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public class NoirAssertions
 ```
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public NoirAssertions()
 ```
 
-### ⛹️‍♀️ Methods
-#### That(T)
+## Methods
+
+### `That(T)`
+<!-- tc:scope public -->
+<!-- tc:return_type IAssertionContext\<T\> ../../Noir/Testing/IAssertionContext-1.html -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public IAssertionContext<T> That(T context)
 ```
 
 **Parameters** <br>
 `context` [T](../../) <br>
-
-**Returns** <br>
-[IAssertionContext\<T\>](../../Noir/Testing/IAssertionContext-1.html) <br>
 

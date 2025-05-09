@@ -1,7 +1,8 @@
 # Vector4Converter
 
-**Namespace:** Noir.Serialization.Json.Converters <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Serialization.Json.Converters -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class Vector4Converter : PartialConverter<T>
@@ -9,49 +10,70 @@ public class Vector4Converter : PartialConverter<T>
 
 **Implements:** _[PartialConverter\<T\>](../../../../Noir/Serialization/Json/Converters/PartialConverter-1.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector4Converter()
 ```
 
-### 📦 Properties
-#### CanRead
+## Properties
+
+### `CanRead`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanRead { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### CanWrite
+### `CanWrite`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanWrite { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### ReadValue(Vector4&, string, JsonReader, JsonSerializer)
+## Methods
+
+### `ReadValue(Vector4&, string, JsonReader, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual void ReadValue(Vector4& value, string name, JsonReader reader, JsonSerializer serializer)
 ```
 
 **Parameters** <br>
-`value` [Vector4&](../../../../) <br>
+`value` [Vector4&](https://docs.unity3d.com/ScriptReference/Vector4.html) <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `reader` [JsonReader](../../../../) <br>
 `serializer` [JsonSerializer](../../../../) <br>
 
-#### WriteJsonProperties(JsonWriter, Vector4, JsonSerializer)
+### `WriteJsonProperties(JsonWriter, Vector4, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual void WriteJsonProperties(JsonWriter writer, Vector4 value, JsonSerializer serializer)
 ```
 
 **Parameters** <br>
 `writer` [JsonWriter](../../../../) <br>
-`value` [Vector4](../../../../) <br>
+`value` [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) <br>
 `serializer` [JsonSerializer](../../../../) <br>
 
-#### CanConvert(Type)
+### `CanConvert(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanConvert(Type objectType)
 ```
@@ -59,10 +81,11 @@ public virtual bool CanConvert(Type objectType)
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### ReadJson(JsonReader, Type, Object, JsonSerializer)
 ```csharp
 public virtual Object ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
 ```
@@ -73,10 +96,10 @@ public virtual Object ReadJson(JsonReader reader, Type objectType, Object existi
 `existingValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `serializer` [JsonSerializer](../../../../) <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `WriteJson(JsonWriter, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### WriteJson(JsonWriter, Object, JsonSerializer)
 ```csharp
 public virtual void WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
 ```

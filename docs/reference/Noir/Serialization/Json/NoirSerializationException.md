@@ -1,7 +1,8 @@
 # NoirSerializationException
 
-**Namespace:** Noir.Serialization.Json <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Serialization.Json -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class NoirSerializationException : JsonSerializationException, ISerializable
@@ -9,91 +10,124 @@ public class NoirSerializationException : JsonSerializationException, ISerializa
 
 **Implements:** _[JsonSerializationException](../../../), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NoirSerializationException()
 ```
 
-### 📦 Properties
-#### Data
+## Properties
+
+### `Data`
+<!-- tc:scope public -->
+<!-- tc:return_type IDictionary https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual IDictionary Data { get; }
 ```
 
-**Returns** <br>
-[IDictionary](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary?view=net-7.0) <br>
-#### HelpLink
+### `HelpLink`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string HelpLink { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### HResult
+### `HResult`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int HResult { get; public set; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### InnerException
+### `InnerException`
+<!-- tc:scope public -->
+<!-- tc:return_type Exception https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Exception InnerException { get; }
 ```
 
-**Returns** <br>
-[Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
-#### LineNumber
+### `LineNumber`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int LineNumber { get; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### LinePosition
+### `LinePosition`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int LinePosition { get; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Message
+### `Message`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string Message { get; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Path
+### `Path`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string Path { get; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Source
+### `Source`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string Source { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### StackTrace
+### `StackTrace`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string StackTrace { get; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TargetSite
+### `TargetSite`
+<!-- tc:scope public -->
+<!-- tc:return_type MethodBase https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodBase?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public MethodBase TargetSite { get; }
 ```
 
-**Returns** <br>
-[MethodBase](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodBase?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### CreateSerializationException(JsonReader, string, Exception)
+## Methods
+
+### `CreateSerializationException(JsonReader, string, Exception)`
+<!-- tc:scope public -->
+<!-- tc:return_type NoirSerializationException ../../../Noir/Serialization/Json/NoirSerializationException.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NoirSerializationException CreateSerializationException(JsonReader reader, string message, Exception innerException)
 ```
@@ -103,34 +137,37 @@ public NoirSerializationException CreateSerializationException(JsonReader reader
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `innerException` [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
 
-**Returns** <br>
-[NoirSerializationException](../../../Noir/Serialization/Json/NoirSerializationException.html) <br>
+### `GetType()`
+<!-- tc:scope public -->
+<!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### GetType()
 ```csharp
 public Type GetType()
 ```
 
-**Returns** <br>
-[Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+### `GetBaseException()`
+<!-- tc:scope public -->
+<!-- tc:return_type Exception https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### GetBaseException()
 ```csharp
 public virtual Exception GetBaseException()
 ```
 
-**Returns** <br>
-[Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `GetObjectData(SerializationInfo, StreamingContext)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### GetObjectData(SerializationInfo, StreamingContext)
 ```csharp
 public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
 ```

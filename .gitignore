@@ -10,3 +10,4 @@ node_modules/
 site/
 .env.dev
 .cache/
+docs/hooks/__pycache__

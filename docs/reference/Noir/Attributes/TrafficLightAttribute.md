@@ -1,73 +1,96 @@
 # TrafficLightAttribute
 
-**Namespace:** Noir.Attributes <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Attributes -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract class TrafficLightAttribute : PropertyAttribute
 ```
 
-**Implements:** _[PropertyAttribute](../../)_
+**Implements:** _[PropertyAttribute](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected TrafficLightAttribute()
 ```
 
-### 📦 Properties
-#### AlsoDrawDefault
+## Properties
+
+### `AlsoDrawDefault`
+<!-- tc:scope private -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool AlsoDrawDefault;
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### Colors
+### `Colors`
+<!-- tc:scope private -->
+<!-- tc:return_type TrafficLightColor[] ../../Noir/Attributes/TrafficLightColor.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public TrafficLightColor[] Colors;
 ```
 
-**Returns** <br>
-[TrafficLightColor[]](../../Noir/Attributes/TrafficLightColor.html) <br>
-#### CustomLabel
+### `CustomLabel`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string CustomLabel;
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### DrawLabel
+### `DrawLabel`
+<!-- tc:scope private -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool DrawLabel;
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### FillLights
+### `FillLights`
+<!-- tc:scope private -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool FillLights;
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### LightCount
+### `LightCount`
+<!-- tc:scope private -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int LightCount;
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### order
+### `order`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int order { get; public set; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### TypeId
+### `TypeId`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual Object TypeId { get; }
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>

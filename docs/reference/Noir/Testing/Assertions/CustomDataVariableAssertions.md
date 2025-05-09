@@ -1,14 +1,19 @@
 # CustomDataVariableAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class CustomDataVariableAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### HasValue(IAssertionContext<T>, T, string)
+## Methods
+
+### `HasValue(IAssertionContext<T>, T, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void HasValue(IAssertionContext<T> context, T value, string message)
 ```

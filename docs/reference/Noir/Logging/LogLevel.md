@@ -1,7 +1,8 @@
 # LogLevel
 
-**Namespace:** Noir.Logging <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Logging -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed enum LogLevel : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible
@@ -9,39 +10,50 @@ public sealed enum LogLevel : Enum, IComparable, ISpanFormattable, IFormattable,
 
 **Implements:** _[Enum](https://learn.microsoft.com/en-us/dotnet/api/System.Enum?view=net-7.0), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/System.IComparable?view=net-7.0), [ISpanFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.ISpanFormattable?view=net-7.0), [IFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.IFormattable?view=net-7.0), [IConvertible](https://learn.microsoft.com/en-us/dotnet/api/System.IConvertible?view=net-7.0)_
 
-### 📦 Properties
-#### Debug
+## Properties
+
+### `Debug`
+<!-- tc:scope private -->
+<!-- tc:return_type LogLevel ../../Noir/Logging/LogLevel.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const LogLevel Debug;
 ```
 
-**Returns** <br>
-[LogLevel](../../Noir/Logging/LogLevel.html) <br>
-#### Error
+### `Error`
+<!-- tc:scope private -->
+<!-- tc:return_type LogLevel ../../Noir/Logging/LogLevel.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const LogLevel Error;
 ```
 
-**Returns** <br>
-[LogLevel](../../Noir/Logging/LogLevel.html) <br>
-#### Info
+### `Info`
+<!-- tc:scope private -->
+<!-- tc:return_type LogLevel ../../Noir/Logging/LogLevel.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const LogLevel Info;
 ```
 
-**Returns** <br>
-[LogLevel](../../Noir/Logging/LogLevel.html) <br>
-#### Verbose
+### `Verbose`
+<!-- tc:scope private -->
+<!-- tc:return_type LogLevel ../../Noir/Logging/LogLevel.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const LogLevel Verbose;
 ```
 
-**Returns** <br>
-[LogLevel](../../Noir/Logging/LogLevel.html) <br>
-#### Warn
+### `Warn`
+<!-- tc:scope private -->
+<!-- tc:return_type LogLevel ../../Noir/Logging/LogLevel.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const LogLevel Warn;
 ```
 
-**Returns** <br>
-[LogLevel](../../Noir/Logging/LogLevel.html) <br>

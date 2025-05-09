@@ -14,14 +14,12 @@ In order to work on the Noir source code you'll need the following software inst
 
 ## Development process overview
 
-# Developing your package
-
 Package development within Unity is, like a lot of things involving Unity, a
 bit of a headache if you've not put time into structuring your project. The
 Unity Package Project is configured out of the box to make development as
 easy as possible.
 
-## Development git flow
+### Development git flow
 
 Development in Noir uses a mainline branching scheme with
 release tagging. All development occurs off of the `develop` branch. Release

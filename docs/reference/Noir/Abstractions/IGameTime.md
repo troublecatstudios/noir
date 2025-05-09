@@ -1,45 +1,57 @@
 # IGameTime
 
-**Namespace:** Noir.Abstractions <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Abstractions -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract IGameTime
 ```
 
-### 📦 Properties
-#### deltaTime
+## Properties
+
+### `deltaTime`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual float deltaTime { get; }
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### fixedDeltaTime
+### `fixedDeltaTime`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual float fixedDeltaTime { get; }
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### frameCount
+### `frameCount`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual int frameCount { get; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### realtimeSinceStartup
+### `realtimeSinceStartup`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual float realtimeSinceStartup { get; }
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### time
+### `time`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual float time { get; }
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

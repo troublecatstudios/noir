@@ -1,13 +1,19 @@
 # CodeGenerator
 
-**Namespace:** NoirEditor.CodeGen <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.CodeGen -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public class CodeGenerator
 ```
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public CodeGenerator(string outputFolder)
 ```
@@ -15,8 +21,13 @@ public CodeGenerator(string outputFolder)
 **Parameters** <br>
 `outputFolder` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-### ⛹️‍♀️ Methods
-#### Generate(bool, bool)
+## Methods
+
+### `Generate(bool, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type CodeGenReport ../../NoirEditor/CodeGen/CodeGenReport.html -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public CodeGenReport Generate(bool force, bool dryRun)
 ```
@@ -25,10 +36,10 @@ public CodeGenReport Generate(bool force, bool dryRun)
 `force` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `dryRun` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[CodeGenReport](../../NoirEditor/CodeGen/CodeGenReport.html) <br>
+### `AddTask(CodeGenTask)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 
-#### AddTask(CodeGenTask)
 ```csharp
 public void AddTask(CodeGenTask task)
 ```
@@ -36,7 +47,10 @@ public void AddTask(CodeGenTask task)
 **Parameters** <br>
 `task` [CodeGenTask](../../NoirEditor/CodeGen/CodeGenTask.html) <br>
 
-#### AddTasks(IEnumerable<T>)
+### `AddTasks(IEnumerable<T>)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void AddTasks(IEnumerable<T> tasks)
 ```

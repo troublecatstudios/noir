@@ -1,14 +1,19 @@
 # BooleanAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class BooleanAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsFalse(IAssertionContext<T>, string)
+## Methods
+
+### `IsFalse(IAssertionContext<T>, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsFalse(IAssertionContext<T> context, string message)
 ```
@@ -17,7 +22,10 @@ public void IsFalse(IAssertionContext<T> context, string message)
 `context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsTrue(IAssertionContext<T>, string)
+### `IsTrue(IAssertionContext<T>, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsTrue(IAssertionContext<T> context, string message)
 ```

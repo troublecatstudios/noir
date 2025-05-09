@@ -1,37 +1,56 @@
 # NoirTestCase
 
-**Namespace:** Noir.Testing <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public abstract class NoirTestCase
 ```
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope private -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 protected NoirTestCase()
 ```
 
-### 📦 Properties
-#### Asserts
+## Properties
+
+### `Asserts`
+<!-- tc:scope private -->
+<!-- tc:return_type NoirAssertions ../../Noir/Testing/NoirAssertions.html -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public readonly NoirAssertions Asserts;
 ```
 
-**Returns** <br>
-[NoirAssertions](../../Noir/Testing/NoirAssertions.html) <br>
-### ⛹️‍♀️ Methods
-#### Setup()
+## Methods
+
+### `Setup()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public virtual void Setup()
 ```
 
-#### SetupAll()
+### `SetupAll()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public virtual void SetupAll()
 ```
 
-#### TearDownAll()
+### `TearDownAll()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public virtual void TearDownAll()
 ```

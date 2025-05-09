@@ -1,7 +1,8 @@
 # ColorVariable
 
-**Namespace:** Noir.Variables <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Variables -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class ColorVariable : DataVariable<T>, IDataVariable, IEquatable<T>
@@ -9,85 +10,116 @@ public class ColorVariable : DataVariable<T>, IDataVariable, IEquatable<T>
 
 **Implements:** _[DataVariable\<T\>](../../Noir/Variables/DataVariable-1.html), [IDataVariable](../../Noir/Variables/IDataVariable.html), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public ColorVariable()
 ```
 
-### 📦 Properties
-#### Description
+## Properties
+
+### `Description`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string Description { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### FriendlyName
+### `FriendlyName`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string FriendlyName { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### hideFlags
+### `hideFlags`
+<!-- tc:scope public -->
+<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public HideFlags hideFlags { get; public set; }
 ```
 
-**Returns** <br>
-[HideFlags](../../) <br>
-#### IsPersistant
+### `IsPersistant`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IsPersistant { get; public set; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### name
+### `name`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string name { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Name
+### `Name`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string Name { get; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Value
+### `Value`
+<!-- tc:scope public -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual Color Value { get; public set; }
 ```
 
-**Returns** <br>
-[Color](../../) <br>
-### ⚡ Events
-#### OnAfterVariableChanged
+## Events
+
+### `OnAfterVariableChanged`
+<!-- tc:scope private -->
+<!-- tc:return_type OnAfterChange ../../Noir/Variables/OnAfterChange.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnAfterChange OnAfterVariableChanged;
 ```
 
-**Returns** <br>
-[OnAfterChange](../../Noir/Variables/OnAfterChange.html) <br>
-#### OnBeforeVariableChanged
+### `OnBeforeVariableChanged`
+<!-- tc:scope private -->
+<!-- tc:return_type OnBeforeChange ../../Noir/Variables/OnBeforeChange.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnBeforeChange OnBeforeVariableChanged;
 ```
 
-**Returns** <br>
-[OnBeforeChange](../../Noir/Variables/OnBeforeChange.html) <br>
-#### OnDataVariableChanged
+### `OnDataVariableChanged`
+<!-- tc:scope private -->
+<!-- tc:return_type DataVariableChanged\<T\> ../../Noir/Variables/DataVariableChanged-1.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event DataVariableChanged<T> OnDataVariableChanged;
 ```
 
-**Returns** <br>
-[DataVariableChanged\<T\>](../../Noir/Variables/DataVariableChanged-1.html) <br>
-### ⛹️‍♀️ Methods
-#### OnAfterSave(Object, Object)
+## Methods
+
+### `OnAfterSave(Object, Object)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual void OnAfterSave(Object previousValue, Object newValue)
 ```
@@ -96,20 +128,28 @@ protected virtual void OnAfterSave(Object previousValue, Object newValue)
 `previousValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `newValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-#### OnBeforeChange()
+### `OnBeforeChange()`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual void OnBeforeChange()
 ```
 
-#### GetInstanceID()
+### `GetInstanceID()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int GetInstanceID()
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object other)
 ```
@@ -117,10 +157,11 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `TrySetValue(Object, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### TrySetValue(Object, bool)
 ```csharp
 public virtual bool TrySetValue(Object value, bool silently)
 ```
@@ -129,34 +170,37 @@ public virtual bool TrySetValue(Object value, bool silently)
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `silently` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `ToObject()`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### ToObject()
 ```csharp
 public virtual Object ToObject()
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `SetDirty()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### SetDirty()
 ```csharp
 public void SetDirty()
 ```

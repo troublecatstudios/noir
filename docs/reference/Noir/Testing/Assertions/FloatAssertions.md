@@ -1,14 +1,19 @@
 # FloatAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class FloatAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsApproximately(IAssertionContext<T>, float, float, string)
+## Methods
+
+### `IsApproximately(IAssertionContext<T>, float, float, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsApproximately(IAssertionContext<T> context, float value, float epsilon, string message)
 ```

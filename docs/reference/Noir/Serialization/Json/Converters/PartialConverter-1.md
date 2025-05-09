@@ -1,7 +1,8 @@
 # PartialConverter\<T\>
 
-**Namespace:** Noir.Serialization.Json.Converters <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Serialization.Json.Converters -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract class PartialConverter<T> : JsonConverter
@@ -9,28 +10,42 @@ public abstract class PartialConverter<T> : JsonConverter
 
 **Implements:** _[JsonConverter](../../../../)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected PartialConverter<T>()
 ```
 
-### 📦 Properties
-#### CanRead
+## Properties
+
+### `CanRead`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanRead { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### CanWrite
+### `CanWrite`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanWrite { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### ReadValue(T&, string, JsonReader, JsonSerializer)
+## Methods
+
+### `ReadValue(T&, string, JsonReader, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected abstract void ReadValue(T& value, string name, JsonReader reader, JsonSerializer serializer)
 ```
@@ -41,7 +56,10 @@ protected abstract void ReadValue(T& value, string name, JsonReader reader, Json
 `reader` [JsonReader](../../../../) <br>
 `serializer` [JsonSerializer](../../../../) <br>
 
-#### WriteJsonProperties(JsonWriter, T, JsonSerializer)
+### `WriteJsonProperties(JsonWriter, T, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected abstract void WriteJsonProperties(JsonWriter writer, T value, JsonSerializer serializer)
 ```
@@ -51,27 +69,31 @@ protected abstract void WriteJsonProperties(JsonWriter writer, T value, JsonSeri
 `value` [T](../../../../) <br>
 `serializer` [JsonSerializer](../../../../) <br>
 
-#### CanConvert(Type)
+### `CanConvert(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Determine if the object type is <typeparamref name="T" />
+
+
 ```csharp
 public virtual bool CanConvert(Type objectType)
 ```
-
-Determine if the object type is <typeparamref name="T" />
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
+### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Read the specified properties to the object.
 
-#### ReadJson(JsonReader, Type, Object, JsonSerializer)
+
 ```csharp
 public virtual Object ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
 ```
-
-Read the specified properties to the object.
 
 **Parameters** <br>
 `reader` [JsonReader](../../../../) <br>
@@ -83,16 +105,15 @@ Read the specified properties to the object.
 `serializer` [JsonSerializer](../../../../) <br>
  <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
+### `WriteJson(JsonWriter, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Write the specified properties of the object.
 
-#### WriteJson(JsonWriter, Object, JsonSerializer)
+
 ```csharp
 public virtual void WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
 ```
-
-Write the specified properties of the object.
 
 **Parameters** <br>
 `writer` [JsonWriter](../../../../) <br>

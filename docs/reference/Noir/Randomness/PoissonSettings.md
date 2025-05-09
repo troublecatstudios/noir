@@ -1,87 +1,111 @@
 # PoissonSettings
 
-**Namespace:** Noir.Randomness <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Randomness -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed struct PoissonSettings
 ```
 
-### 📦 Properties
-#### BottomLeft
+## Properties
+
+### `BottomLeft`
+<!-- tc:scope private -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector2 BottomLeft;
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### CellSize
+### `CellSize`
+<!-- tc:scope private -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float CellSize;
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Center
+### `Center`
+<!-- tc:scope private -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector2 Center;
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### Dimension
+### `Dimension`
+<!-- tc:scope private -->
+<!-- tc:return_type Rect https://docs.unity3d.com/ScriptReference/Rect.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Rect Dimension;
 ```
 
-**Returns** <br>
-[Rect](../../) <br>
-#### GridHeight
+### `GridHeight`
+<!-- tc:scope private -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int GridHeight;
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### GridWidth
+### `GridWidth`
+<!-- tc:scope private -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int GridWidth;
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### IterationsPerPoint
+### `IterationsPerPoint`
+<!-- tc:scope private -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int IterationsPerPoint;
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### MinimumDistance
+### `MinimumDistance`
+<!-- tc:scope private -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float MinimumDistance;
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### RandomSeed
+### `RandomSeed`
+<!-- tc:scope private -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int RandomSeed;
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### StartingPoint
+### `StartingPoint`
+<!-- tc:scope private -->
+<!-- tc:return_type T? https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public T? StartingPoint;
 ```
 
-**Returns** <br>
-[T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
-#### TopRight
+### `TopRight`
+<!-- tc:scope private -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector2 TopRight;
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>

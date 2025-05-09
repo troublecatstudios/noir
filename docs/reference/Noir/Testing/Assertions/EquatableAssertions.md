@@ -1,14 +1,19 @@
 # EquatableAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class EquatableAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsEquatableTo(IAssertionContext<T>, T)
+## Methods
+
+### `IsEquatableTo(IAssertionContext<T>, T)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsEquatableTo(IAssertionContext<T> context, T expectedValue)
 ```

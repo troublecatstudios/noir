@@ -1,7 +1,8 @@
 # AutomaticallyCreateAttribute
 
-**Namespace:** Noir.Attributes <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Attributes -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class AutomaticallyCreateAttribute : Attribute
@@ -9,12 +10,17 @@ public class AutomaticallyCreateAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Declare that this ScriptableObject should be automatically created at build time.
+
+
 ```csharp
 public AutomaticallyCreateAttribute(string customPathPrefix, string assetNameOverride)
 ```
-
-Declare that this ScriptableObject should be automatically created at build time.
 
 **Parameters** <br>
 `customPathPrefix` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
@@ -22,27 +28,34 @@ Declare that this ScriptableObject should be automatically created at build time
 `assetNameOverride` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-### 📦 Properties
-#### AssetNameOverride
+## Properties
+
+### `AssetNameOverride`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string AssetNameOverride { get; private set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### CreatePathPrefix
+### `CreatePathPrefix`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Gets the custom folder path to store the created asset. Is automatically prefixed with "Assets/".
+
+
 ```csharp
 public string CreatePathPrefix { get; private set; }
 ```
 
-Gets the custom folder path to store the created asset. Is automatically prefixed with "Assets/".
+### `TypeId`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TypeId
 ```csharp
 public virtual Object TypeId { get; }
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>

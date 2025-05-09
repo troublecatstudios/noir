@@ -1,51 +1,54 @@
 # AudioExtensions
 
-**Namespace:** Noir.Audio <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Audio -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class AudioExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsAudioPaused(AudioSource)
+## Methods
+
+### `IsAudioPaused(AudioSource)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Returns a value indicating whether the [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) is stopped with any play time remaining.
+
+
 ```csharp
 public bool IsAudioPaused(AudioSource source)
 ```
 
-Returns a value indicating whether the [AudioSource](../../) is stopped with any play time remaining.
-
 **Parameters** <br>
-`source` [AudioSource](../../) <br>
+`source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
+### `IsClipReadyToPlay(AudioClip)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Returns a value indicating whether the [AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html) is ready to be played.
 
-#### IsClipReadyToPlay(AudioClip)
+
 ```csharp
 public bool IsClipReadyToPlay(AudioClip clip)
 ```
 
-Returns a value indicating whether the [AudioClip](../../) is ready to be played.
-
 **Parameters** <br>
-`clip` [AudioClip](../../) <br>
+`clip` [AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
+### `GetAudioPlayedPercentage(AudioSource)`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### GetAudioPlayedPercentage(AudioSource)
 ```csharp
 public float GetAudioPlayedPercentage(AudioSource source)
 ```
 
 **Parameters** <br>
-`source` [AudioSource](../../) <br>
-
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+`source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
 

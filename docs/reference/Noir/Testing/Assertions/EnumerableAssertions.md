@@ -1,14 +1,19 @@
 # EnumerableAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class EnumerableAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### Contains(IAssertionContext<T>, T)
+## Methods
+
+### `Contains(IAssertionContext<T>, T)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void Contains(IAssertionContext<T> context, T item)
 ```
@@ -17,7 +22,10 @@ public void Contains(IAssertionContext<T> context, T item)
 `context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `item` [T](../../../) <br>
 
-#### HasLength(IAssertionContext<T>, int)
+### `HasLength(IAssertionContext<T>, int)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void HasLength(IAssertionContext<T> context, int length)
 ```
@@ -26,7 +34,10 @@ public void HasLength(IAssertionContext<T> context, int length)
 `context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-#### HasSameContents(IAssertionContext<T>, IEnumerable)
+### `HasSameContents(IAssertionContext<T>, IEnumerable)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
 ```

@@ -1,43 +1,46 @@
 # Primitives
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class Primitives
 ```
 
-### ⛹️‍♀️ Methods
-#### RectFromSane3DValues(Vector3, Vector3)
+## Methods
+
+### `RectFromSane3DValues(Vector3, Vector3)`
+<!-- tc:scope public -->
+<!-- tc:return_type Rect https://docs.unity3d.com/ScriptReference/Rect.html -->
+<!-- tc:version 1.0.0 -->
+Creates a [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) offset down and to the left by half the size, so it can use the same values we use for literally
+            every other position calculation within unity.
+
+
 ```csharp
 public Rect RectFromSane3DValues(Vector3 center, Vector3 size)
 ```
 
-Creates a [Rect](../) offset down and to the left by half the size, so it can use the same values we use for literally
+**Parameters** <br>
+`center` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+`size` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+
+### `RectFromSaneValues(Vector2, Vector2)`
+<!-- tc:scope public -->
+<!-- tc:return_type Rect https://docs.unity3d.com/ScriptReference/Rect.html -->
+<!-- tc:version 1.0.0 -->
+Creates a [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) offset down and to the left by half the size, so it can use the same values we use for literally
             every other position calculation within unity.
 
-**Parameters** <br>
-`center` [Vector3](../) <br>
-`size` [Vector3](../) <br>
 
-**Returns** <br>
-[Rect](../) <br>
-
-#### RectFromSaneValues(Vector2, Vector2)
 ```csharp
 public Rect RectFromSaneValues(Vector2 center, Vector2 size)
 ```
 
-Creates a [Rect](../) offset down and to the left by half the size, so it can use the same values we use for literally
-            every other position calculation within unity.
-
 **Parameters** <br>
-`center` [Vector2](../) <br>
+`center` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
  <br>
-`size` [Vector2](../) <br>
- <br>
-
-**Returns** <br>
-[Rect](../) <br>
+`size` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
  <br>
 

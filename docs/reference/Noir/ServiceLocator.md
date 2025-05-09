@@ -1,34 +1,45 @@
 # ServiceLocator
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+<!-- tc:assembly Noir.dll -->
+
+Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.
+
 
 ```csharp
 public sealed class ServiceLocator : IServiceLocator
 ```
 
-Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.
-
 **Implements:** _[IServiceLocator](../Noir/IServiceLocator.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public ServiceLocator()
 ```
 
-### ⛹️‍♀️ Methods
-#### IsServiceRegistered()
+## Methods
+
+### `IsServiceRegistered()`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Returns a value indicating whether the given service type has an implementation in the service registry.
+
+
 ```csharp
 public bool IsServiceRegistered()
 ```
 
-Returns a value indicating whether the given service type has an implementation in the service registry.
+### `TryGetService(out TServiceType&)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
-
-#### TryGetService(out TServiceType&)
 ```csharp
 public bool TryGetService(TServiceType& instance)
 ```
@@ -36,31 +47,34 @@ public bool TryGetService(TServiceType& instance)
 **Parameters** <br>
 `instance` [TServiceType&](../) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetService()`
+<!-- tc:scope public -->
+<!-- tc:return_type TServiceType _na_ -->
+<!-- tc:version 1.0.0 -->
+Gets an implementation for the given type from the service registry.
 
-#### GetService()
+
 ```csharp
 public TServiceType GetService()
 ```
 
-Gets an implementation for the given type from the service registry.
-
-**Returns** <br>
-[TServiceType](../) <br>
- <br>
-
 **Exceptions** <br>
 [NullReferenceException](https://learn.microsoft.com/en-us/dotnet/api/System.NullReferenceException?view=net-7.0) <br>
  <br>
-#### RegisterService()
+### `RegisterService()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Registers a service type and its implementation in the service registry.
+
+
 ```csharp
 public void RegisterService()
 ```
 
-Registers a service type and its implementation in the service registry.
+### `RegisterService(Func<TResult>)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### RegisterService(Func<TResult>)
 ```csharp
 public void RegisterService(Func<TResult> factory)
 ```
@@ -68,7 +82,10 @@ public void RegisterService(Func<TResult> factory)
 **Parameters** <br>
 `factory` [Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
 
-#### RegisterService(TServiceType)
+### `RegisterService(TServiceType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void RegisterService(TServiceType instance)
 ```
@@ -76,10 +93,13 @@ public void RegisterService(TServiceType instance)
 **Parameters** <br>
 `instance` [TServiceType](../) <br>
 
-#### UnregisterService()
+### `UnregisterService()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Removes a service implementation from the service registry.
+
+
 ```csharp
 public void UnregisterService()
 ```
-
-Removes a service implementation from the service registry.
 

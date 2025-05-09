@@ -1,22 +1,28 @@
 # CreateNoirProjectConfigurationAsset
 
-**Namespace:** NoirEditor.TroubleCatStudios.Noir.Editor.MenuItems <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.TroubleCatStudios.Noir.Editor.MenuItems -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class CreateNoirProjectConfigurationAsset
 ```
 
-### ⛹️‍♀️ Methods
-#### CreateAssetValidation()
+## Methods
+
+### `CreateAssetValidation()`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public bool CreateAssetValidation()
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `CreateAsset()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 
-#### CreateAsset()
 ```csharp
 public void CreateAsset()
 ```

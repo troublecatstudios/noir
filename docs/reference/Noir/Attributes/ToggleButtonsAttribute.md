@@ -1,7 +1,8 @@
 # ToggleButtonsAttribute
 
-**Namespace:** Noir.Attributes <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Attributes -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class ToggleButtonsAttribute : Attribute
@@ -9,12 +10,17 @@ public class ToggleButtonsAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(string, string, bool, float, string, string, string, string, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Attribute to draw boolean as buttons
+
+
 ```csharp
 public ToggleButtonsAttribute(string trueText, string falseText, bool singleButton, float sizeCompensation, string trueTooltip, string falseTooltip, string trueColor, string falseColor, string trueIcon, string falseIcon)
 ```
-
-Attribute to draw boolean as buttons
 
 **Parameters** <br>
 `trueText` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
@@ -38,103 +44,126 @@ Attribute to draw boolean as buttons
 `falseIcon` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-### 📦 Properties
-#### FalseColor
+## Properties
+
+### `FalseColor`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Color of false button
+
+
 ```csharp
 public string FalseColor;
 ```
 
-Color of false button
+### `FalseIcon`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Icon for false button
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### FalseIcon
+
 ```csharp
 public string FalseIcon;
 ```
 
-Icon for false button
+### `FalseText`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Text for false button. Can be resolved string
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### FalseText
+
 ```csharp
 public string FalseText;
 ```
 
-Text for false button. Can be resolved string
+### `FalseTooltip`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Tooltip for false button. Can be resolved string
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### FalseTooltip
+
 ```csharp
 public string FalseTooltip;
 ```
 
-Tooltip for false button. Can be resolved string
+### `IsSingleButton`
+<!-- tc:scope private -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+If set to true, only one button matching bool value will be shown
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### IsSingleButton
+
 ```csharp
 public bool IsSingleButton;
 ```
 
-If set to true, only one button matching bool value will be shown
-
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### SizeCompensation
-```csharp
-public float SizeCompensation;
-```
-
+### `SizeCompensation`
+<!-- tc:scope private -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 Amount by which smaller button size is lerped to match bigger button.
             0 - original size of smaller button (takes the least space).
             1 - matches size of bigger button.
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### TrueColor
+
+```csharp
+public float SizeCompensation;
+```
+
+### `TrueColor`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Color of true button
+
+
 ```csharp
 public string TrueColor;
 ```
 
-Color of true button
+### `TrueIcon`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Icon for true button
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TrueIcon
+
 ```csharp
 public string TrueIcon;
 ```
 
-Icon for true button
+### `TrueText`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Text for true button. Can be resolved string
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TrueText
+
 ```csharp
 public string TrueText;
 ```
 
-Text for true button. Can be resolved string
+### `TrueTooltip`
+<!-- tc:scope private -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Tooltip for true button. Can be resolved string
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TrueTooltip
+
 ```csharp
 public string TrueTooltip;
 ```
 
-Tooltip for true button. Can be resolved string
+### `TypeId`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### TypeId
 ```csharp
 public virtual Object TypeId { get; }
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>

@@ -1,57 +1,76 @@
 # CodeGenTask
 
-**Namespace:** NoirEditor.CodeGen <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.CodeGen -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public class CodeGenTask
 ```
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public CodeGenTask()
 ```
 
-### 📦 Properties
-#### CodeClassName
+## Properties
+
+### `CodeClassName`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public string CodeClassName { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### CodeNamespace
+### `CodeNamespace`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public string CodeNamespace { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### ContentBuilder
+### `ContentBuilder`
+<!-- tc:scope public -->
+<!-- tc:return_type Func\<TResult\> https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public Func<TResult> ContentBuilder { get; public set; }
 ```
 
-**Returns** <br>
-[Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
-#### FileExtension
+### `FileExtension`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public string FileExtension { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### HashTargetBuilder
+### `HashTargetBuilder`
+<!-- tc:scope public -->
+<!-- tc:return_type Func\<TResult\> https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public Func<TResult> HashTargetBuilder { get; public set; }
 ```
 
-**Returns** <br>
-[Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
-#### ImportNamespaces
+### `ImportNamespaces`
+<!-- tc:scope public -->
+<!-- tc:return_type string[] https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public String[] ImportNamespaces { get; public set; }
 ```
 
-**Returns** <br>
-[string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

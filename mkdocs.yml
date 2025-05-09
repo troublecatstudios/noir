@@ -40,6 +40,8 @@ theme:
   font:
     text: Noto Sans
     code: Anonymous Pro
+hooks:
+  - docs/hooks/tc_shortcodes.py
 plugins:
   - search
   - include_dir_to_nav
@@ -114,6 +116,7 @@ nav:
       - Development tasks: contributing/development_tasks.md
   - Reference:
       - reference/README.md
+      - reference/conventions.md
       - Noir: reference/Noir
       - NoirEditor: reference/NoirEditor
   - Tutorials:

@@ -1,43 +1,58 @@
 # BezierCurve
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed struct BezierCurve
 ```
 
-### 📦 Properties
-#### ArcHeight
+## Properties
+
+### `ArcHeight`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float ArcHeight { get; public set; }
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### ControlPoint
+### `ControlPoint`
+<!-- tc:scope public -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector3 ControlPoint { get; }
 ```
 
-**Returns** <br>
-[Vector3](../) <br>
-#### End
+### `End`
+<!-- tc:scope public -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector3 End { get; public set; }
 ```
 
-**Returns** <br>
-[Vector3](../) <br>
-#### Start
+### `Start`
+<!-- tc:scope public -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector3 Start { get; public set; }
 ```
 
-**Returns** <br>
-[Vector3](../) <br>
-### ⛹️‍♀️ Methods
-#### Create(int, int)
+## Methods
+
+### `Create(int, int)`
+<!-- tc:scope public -->
+<!-- tc:return_type BezierCurve ../Noir/BezierCurve.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public BezierCurve Create(int distance, int height)
 ```
@@ -46,10 +61,11 @@ public BezierCurve Create(int distance, int height)
 `distance` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `height` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-**Returns** <br>
-[BezierCurve](../Noir/BezierCurve.html) <br>
+### `CreateMovement(int, int, float, float)`
+<!-- tc:scope public -->
+<!-- tc:return_type BezierCurveMovement[] ../Noir/BezierCurveMovement.html -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateMovement(int, int, float, float)
 ```csharp
 public BezierCurveMovement[] CreateMovement(int initialDistance, int initialArcHeight, float initialDuration, float bounciness)
 ```
@@ -59,7 +75,4 @@ public BezierCurveMovement[] CreateMovement(int initialDistance, int initialArcH
 `initialArcHeight` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `initialDuration` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `bounciness` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-
-**Returns** <br>
-[BezierCurveMovement[]](../Noir/BezierCurveMovement.html) <br>
 

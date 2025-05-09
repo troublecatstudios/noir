@@ -1,104 +1,135 @@
 # NoirProjectConfiguration
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class NoirProjectConfiguration : ScriptableObject
 ```
 
-**Implements:** _[ScriptableObject](../)_
+**Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NoirProjectConfiguration()
 ```
 
-### 📦 Properties
-#### DefaultAudioMixerGroup
+## Properties
+
+### `DefaultAudioMixerGroup`
+<!-- tc:scope public -->
+<!-- tc:return_type AudioMixerGroup https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public AudioMixerGroup DefaultAudioMixerGroup { get; }
 ```
 
-**Returns** <br>
-[AudioMixerGroup](../) <br>
-#### GameManagerPrefab
+### `GameManagerPrefab`
+<!-- tc:scope public -->
+<!-- tc:return_type NoirGameManager ../Noir/NoirGameManager.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NoirGameManager GameManagerPrefab { get; }
 ```
 
-**Returns** <br>
-[NoirGameManager](../Noir/NoirGameManager.html) <br>
-#### hideFlags
+### `hideFlags`
+<!-- tc:scope public -->
+<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public HideFlags hideFlags { get; public set; }
 ```
 
-**Returns** <br>
-[HideFlags](../) <br>
-#### Instance
+### `Instance`
+<!-- tc:scope public -->
+<!-- tc:return_type NoirProjectConfiguration ../Noir/NoirProjectConfiguration.html -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static NoirProjectConfiguration Instance { get; }
 ```
 
-**Returns** <br>
-[NoirProjectConfiguration](../Noir/NoirProjectConfiguration.html) <br>
-#### IsAutomaticSpawnEnabled
+### `IsAutomaticSpawnEnabled`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IsAutomaticSpawnEnabled { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IsCodeGenerationEnabled
+### `IsCodeGenerationEnabled`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IsCodeGenerationEnabled { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IsFramerateLocked
+### `IsFramerateLocked`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IsFramerateLocked { get; }
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### LockedFrameRate
+### `LockedFrameRate`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int LockedFrameRate { get; }
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### name
+### `name`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string name { get; public set; }
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### CheckFirstTimeSetupComplete()
+## Methods
+
+### `CheckFirstTimeSetupComplete()`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+Returns a value indicating whether the first-time setup of the noir library has been completed or not.
+
+
 ```csharp
 public bool CheckFirstTimeSetupComplete()
 ```
 
-Returns a value indicating whether the first-time setup of the noir library has been completed or not.
+### `GetInstanceID()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
-
-#### GetInstanceID()
 ```csharp
 public int GetInstanceID()
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object other)
 ```
@@ -106,26 +137,28 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `SetDirty()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### SetDirty()
 ```csharp
 public void SetDirty()
 ```

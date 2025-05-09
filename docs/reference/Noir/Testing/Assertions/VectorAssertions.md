@@ -1,14 +1,19 @@
 # VectorAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class VectorAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsZero(IAssertionContext<T>, string)
+## Methods
+
+### `IsZero(IAssertionContext<T>, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsZero(IAssertionContext<T> context, string message)
 ```

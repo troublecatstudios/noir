@@ -1,22 +1,31 @@
 # Reflector
 
-**Namespace:** NoirEditor.Reflection <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.Reflection -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class Reflector
 ```
 
-### 📦 Properties
-#### DefaultFlags
+## Properties
+
+### `DefaultFlags`
+<!-- tc:scope private -->
+<!-- tc:return_type BindingFlags https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public static const BindingFlags DefaultFlags;
 ```
 
-**Returns** <br>
-[BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### IsDecoratedWithAttribute(Type)
+## Methods
+
+### `IsDecoratedWithAttribute(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public bool IsDecoratedWithAttribute(Type type)
 ```
@@ -24,10 +33,11 @@ public bool IsDecoratedWithAttribute(Type type)
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsListType(Type, bool, out Type&)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsListType(Type, bool, out Type&)
 ```csharp
 public bool IsListType(Type tp, bool ignoreAsInterface, Type& innerType)
 ```
@@ -37,10 +47,11 @@ public bool IsListType(Type tp, bool ignoreAsInterface, Type& innerType)
 `ignoreAsInterface` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `innerType` [Type&](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsListType(Type, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsListType(Type, bool)
 ```csharp
 public bool IsListType(Type tp, bool ignoreAsInterface)
 ```
@@ -49,10 +60,11 @@ public bool IsListType(Type tp, bool ignoreAsInterface)
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `ignoreAsInterface` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsListType(Type, out Type&)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsListType(Type, out Type&)
 ```csharp
 public bool IsListType(Type tp, Type& innerType)
 ```
@@ -61,10 +73,11 @@ public bool IsListType(Type tp, Type& innerType)
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `innerType` [Type&](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsListType(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsListType(Type)
 ```csharp
 public bool IsListType(Type tp)
 ```
@@ -72,10 +85,11 @@ public bool IsListType(Type tp)
 **Parameters** <br>
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsType(Type, Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsType(Type, Type)
 ```csharp
 public bool IsType(Type tp, Type assignableType)
 ```
@@ -84,10 +98,11 @@ public bool IsType(Type tp, Type assignableType)
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `assignableType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `IsType(Type, Type[])`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### IsType(Type, Type[])
 ```csharp
 public bool IsType(Type tp, Type[] assignableTypes)
 ```
@@ -96,22 +111,24 @@ public bool IsType(Type tp, Type[] assignableTypes)
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `assignableTypes` [Type[]](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `SetValue(SerializedProperty, T)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### SetValue(SerializedProperty, T)
 ```csharp
 public bool SetValue(SerializedProperty property, T value)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 `value` [T](../../) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetField(Object, string)`
+<!-- tc:scope public -->
+<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetField(Object, string)
 ```csharp
 public FieldInfo GetField(Object target, string fieldName)
 ```
@@ -120,10 +137,11 @@ public FieldInfo GetField(Object target, string fieldName)
 `target` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `fieldName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[FieldInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0) <br>
+### `GetField(Type, string)`
+<!-- tc:scope public -->
+<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetField(Type, string)
 ```csharp
 public FieldInfo GetField(Type type, string fieldName)
 ```
@@ -132,10 +150,11 @@ public FieldInfo GetField(Type type, string fieldName)
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `fieldName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[FieldInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0) <br>
+### `GetAllFields(Object, Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllFields(Object, Func<T, TResult>)
 ```csharp
 public IEnumerable<T> GetAllFields(Object target, Func<T, TResult> predicate)
 ```
@@ -144,10 +163,11 @@ public IEnumerable<T> GetAllFields(Object target, Func<T, TResult> predicate)
 `target` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetAllFields(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllFields(Object)
 ```csharp
 public IEnumerable<T> GetAllFields(Object target)
 ```
@@ -155,10 +175,11 @@ public IEnumerable<T> GetAllFields(Object target)
 **Parameters** <br>
 `target` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetAllFields(Type, Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllFields(Type, Func<T, TResult>)
 ```csharp
 public IEnumerable<T> GetAllFields(Type type, Func<T, TResult> predicate)
 ```
@@ -167,10 +188,11 @@ public IEnumerable<T> GetAllFields(Type type, Func<T, TResult> predicate)
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetAllFields(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllFields(Type)
 ```csharp
 public IEnumerable<T> GetAllFields(Type type)
 ```
@@ -178,10 +200,11 @@ public IEnumerable<T> GetAllFields(Type type)
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetAllMethods(Object, Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllMethods(Object, Func<T, TResult>)
 ```csharp
 public IEnumerable<T> GetAllMethods(Object target, Func<T, TResult> predicate)
 ```
@@ -190,10 +213,11 @@ public IEnumerable<T> GetAllMethods(Object target, Func<T, TResult> predicate)
 `target` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetAllProperties(Object, Func<T, TResult>, BindingFlags)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAllProperties(Object, Func<T, TResult>, BindingFlags)
 ```csharp
 public IEnumerable<T> GetAllProperties(Object target, Func<T, TResult> predicate, BindingFlags flags)
 ```
@@ -203,10 +227,11 @@ public IEnumerable<T> GetAllProperties(Object target, Func<T, TResult> predicate
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `flags` [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetTypes(Func<T, TResult>)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTypes(Func<T, TResult>)
 ```csharp
 public IEnumerable<T> GetTypes(Func<T, TResult> predicate)
 ```
@@ -214,10 +239,11 @@ public IEnumerable<T> GetTypes(Func<T, TResult> predicate)
 **Parameters** <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetTypesAssignableFrom(Assembly, Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTypesAssignableFrom(Assembly, Type)
 ```csharp
 public IEnumerable<T> GetTypesAssignableFrom(Assembly assemb, Type rootType)
 ```
@@ -226,10 +252,11 @@ public IEnumerable<T> GetTypesAssignableFrom(Assembly assemb, Type rootType)
 `assemb` [Assembly](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.Assembly?view=net-7.0) <br>
 `rootType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetTypesAssignableFrom(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTypesAssignableFrom(Type)
 ```csharp
 public IEnumerable<T> GetTypesAssignableFrom(Type rootType)
 ```
@@ -237,18 +264,20 @@ public IEnumerable<T> GetTypesAssignableFrom(Type rootType)
 **Parameters** <br>
 `rootType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetTypesInAppDomain()`
+<!-- tc:scope public -->
+<!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTypesInAppDomain()
 ```csharp
 public IEnumerable<T> GetTypesInAppDomain()
 ```
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+### `GetMethod(Object, string)`
+<!-- tc:scope public -->
+<!-- tc:return_type MethodInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetMethod(Object, string)
 ```csharp
 public MethodInfo GetMethod(Object target, string methodName)
 ```
@@ -257,10 +286,11 @@ public MethodInfo GetMethod(Object target, string methodName)
 `target` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) <br>
+### `GetPropertyValue(Object, string, BindingFlags)`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetPropertyValue(Object, string, BindingFlags)
 ```csharp
 public Object GetPropertyValue(Object obj, string name, BindingFlags flags)
 ```
@@ -270,36 +300,38 @@ public Object GetPropertyValue(Object obj, string name, BindingFlags flags)
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `flags` [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `GetTargetObject(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://docs.unity3d.com/ScriptReference/Object.html -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTargetObject(SerializedProperty)
 ```csharp
 public Object GetTargetObject(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[Object](../../) <br>
+### `GetTargetObjectOfProperty(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+Gets the object the property represents.
 
-#### GetTargetObjectOfProperty(SerializedProperty)
+
 ```csharp
 public Object GetTargetObjectOfProperty(SerializedProperty property)
 ```
 
-Gets the object the property represents.
-
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
  <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
+### `GetProperty(Object, string, BindingFlags)`
+<!-- tc:scope public -->
+<!-- tc:return_type PropertyInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.PropertyInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetProperty(Object, string, BindingFlags)
 ```csharp
 public PropertyInfo GetProperty(Object target, string propertyName, BindingFlags flags)
 ```
@@ -309,10 +341,11 @@ public PropertyInfo GetProperty(Object target, string propertyName, BindingFlags
 `propertyName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `flags` [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
 
-**Returns** <br>
-[PropertyInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.PropertyInfo?view=net-7.0) <br>
+### `ToLogString(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### ToLogString(Type)
 ```csharp
 public string ToLogString(Type type)
 ```
@@ -320,21 +353,23 @@ public string ToLogString(Type type)
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `GetAttribute(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type T _na_ -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAttribute(SerializedProperty)
 ```csharp
 public T GetAttribute(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[T](../../) <br>
+### `GetPropertyValue(Object, string, BindingFlags)`
+<!-- tc:scope public -->
+<!-- tc:return_type T _na_ -->
+<!-- tc:version 0.0.0 -->
 
-#### GetPropertyValue(Object, string, BindingFlags)
 ```csharp
 public T GetPropertyValue(Object obj, string name, BindingFlags flags)
 ```
@@ -344,32 +379,35 @@ public T GetPropertyValue(Object obj, string name, BindingFlags flags)
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `flags` [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
 
-**Returns** <br>
-[T](../../) <br>
+### `GetValue(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type T _na_ -->
+<!-- tc:version 0.0.0 -->
 
-#### GetValue(SerializedProperty)
 ```csharp
 public T GetValue(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[T](../../) <br>
+### `GetAttributes(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type T[] _na_ -->
+<!-- tc:version 0.0.0 -->
 
-#### GetAttributes(SerializedProperty)
 ```csharp
 public T[] GetAttributes(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[T[]](../../) <br>
+### `FindType(string, bool, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### FindType(string, bool, bool)
 ```csharp
 public Type FindType(string typeName, bool useFullName, bool ignoreCase)
 ```
@@ -379,10 +417,11 @@ public Type FindType(string typeName, bool useFullName, bool ignoreCase)
 `useFullName` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `ignoreCase` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+### `FindType(string, Type, bool, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### FindType(string, Type, bool, bool)
 ```csharp
 public Type FindType(string typeName, Type baseType, bool useFullName, bool ignoreCase)
 ```
@@ -393,10 +432,11 @@ public Type FindType(string typeName, Type baseType, bool useFullName, bool igno
 `useFullName` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `ignoreCase` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+### `GetElementTypeOfListType(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetElementTypeOfListType(Type)
 ```csharp
 public Type GetElementTypeOfListType(Type tp)
 ```
@@ -404,10 +444,11 @@ public Type GetElementTypeOfListType(Type tp)
 **Parameters** <br>
 `tp` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+### `ParseType(string, string)`
+<!-- tc:scope public -->
+<!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### ParseType(string, string)
 ```csharp
 public Type ParseType(string assembName, string typeName)
 ```
@@ -416,35 +457,37 @@ public Type ParseType(string assembName, string typeName)
 `assembName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `typeName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+### `GetTypesWithAttribute()`
+<!-- tc:scope public -->
+<!-- tc:return_type ValueTuple\<T1, T2\>[] https://learn.microsoft.com/en-us/dotnet/api/System.ValueTuple-2?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetTypesWithAttribute()
 ```csharp
 public ValueTuple`2[] GetTypesWithAttribute()
 ```
 
-**Returns** <br>
-[ValueTuple\<T1, T2\>[]](https://learn.microsoft.com/en-us/dotnet/api/System.ValueTuple-2?view=net-7.0) <br>
+### `GetVectorValue(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
+<!-- tc:version 0.0.0 -->
 
-#### GetVectorValue(SerializedProperty)
 ```csharp
 public Vector3 GetVectorValue(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[Vector3](../../) <br>
+### `SetVectorValue(SerializedProperty, float, float, float)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 
-#### SetVectorValue(SerializedProperty, float, float, float)
 ```csharp
 public void SetVectorValue(SerializedProperty property, float x, float y, float z)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 `x` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `y` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `z` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

@@ -1,76 +1,94 @@
 # Vector4IntPropertyDrawer
 
-**Namespace:** NoirEditor.Editors.PropertyDrawers <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.Editors.PropertyDrawers -->
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public class Vector4IntPropertyDrawer : PropertyDrawer
 ```
 
-**Implements:** _[PropertyDrawer](../../../)_
+**Implements:** _[PropertyDrawer](https://docs.unity3d.com/ScriptReference/PropertyDrawer.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public Vector4IntPropertyDrawer()
 ```
 
-### 📦 Properties
-#### attribute
+## Properties
+
+### `attribute`
+<!-- tc:scope public -->
+<!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public PropertyAttribute attribute { get; }
 ```
 
-**Returns** <br>
-[PropertyAttribute](../../../) <br>
-#### fieldInfo
+### `fieldInfo`
+<!-- tc:scope public -->
+<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public FieldInfo fieldInfo { get; }
 ```
 
-**Returns** <br>
-[FieldInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### CanCacheInspectorGUI(SerializedProperty)
+## Methods
+
+### `CanCacheInspectorGUI(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public virtual bool CanCacheInspectorGUI(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetPropertyHeight(SerializedProperty, GUIContent)`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
 
-#### GetPropertyHeight(SerializedProperty, GUIContent)
 ```csharp
 public virtual float GetPropertyHeight(SerializedProperty property, GUIContent label)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../../) <br>
-`label` [GUIContent](../../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+`label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+### `CreatePropertyGUI(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
+<!-- tc:version 0.0.0 -->
 
-#### CreatePropertyGUI(SerializedProperty)
 ```csharp
 public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
 ```
 
 **Parameters** <br>
-`property` [SerializedProperty](../../../) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
-**Returns** <br>
-[VisualElement](../../../) <br>
+### `OnGUI(Rect, SerializedProperty, GUIContent)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 
-#### OnGUI(Rect, SerializedProperty, GUIContent)
 ```csharp
 public virtual void OnGUI(Rect position, SerializedProperty property, GUIContent label)
 ```
 
 **Parameters** <br>
-`position` [Rect](../../../) <br>
-`property` [SerializedProperty](../../../) <br>
-`label` [GUIContent](../../../) <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+`label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
 
