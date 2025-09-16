@@ -1,6 +1,6 @@
 ## How to contribute to Noir?
 
-[Getting Started Guide](./package/Docs~/developing.md) | [Samples Documentation](./package/Docs~/samples.md)
+[Getting Started Guide](./docs/contributing/developing.md) | [Samples Documentation](./docs/tutorials/samples.md)
 
 #### **Did you find a bug?**
 
