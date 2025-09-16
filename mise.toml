@@ -19,10 +19,15 @@ run = [
 
 [tasks.build]
 depends = ['build:runtime', 'build:editor']
+description = 'Compiles the runtime and editor source code libraries'
+alias = 'b'
 
 [tasks."docs:docker:build"]
 run = 'docker build -t mkdocs:local -f ./.github/scripts/mkdocs.dockerfile .'
+description = 'builds the documentation site within docker'
 
 [tasks."docs:preview"]
 depends = ['docs:docker:build']
 run = "docker run -it --env-file ./.env.dev --rm -p 8000:8000 -v {{cwd}}:/docs mkdocs:local"
+description = 'runs the documentation site within docker on port 8000'
+alias = 'pd'
