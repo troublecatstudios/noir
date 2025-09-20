@@ -1,6 +1,7 @@
 # NoirEvent
 
 <!-- tc:namespace Noir.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class NoirEvent : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class NoirEvent : ScriptableObject
 public NoirEvent()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -67,7 +68,7 @@ public string Name { get; }
 public int SubscriberCount { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->

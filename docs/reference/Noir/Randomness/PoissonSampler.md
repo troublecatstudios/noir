@@ -1,6 +1,7 @@
 # PoissonSampler
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PoissonSampler
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(PoissonSettings, PoissonBags)`
 <!-- tc:scope public -->
@@ -19,10 +20,10 @@ public PoissonSampler(PoissonSettings settings, PoissonBags bags)
 ```
 
 **Parameters** <br>
-`settings` [PoissonSettings](../../Noir/Randomness/PoissonSettings.html) <br>
-`bags` [PoissonBags](../../Noir/Randomness/PoissonBags.html) <br>
+`settings` [PoissonSettings](/noir/reference//noir/reference/Noir/Randomness/PoissonSettings/) <br>
+`bags` [PoissonBags](/noir/reference//noir/reference/Noir/Randomness/PoissonBags/) <br>
 
-## Properties
+## 📦 Properties
 
 ### `ActivePoints`
 <!-- tc:scope public -->
@@ -51,7 +52,7 @@ public List<T> Points { get; }
 public T? StartingPoint { get; private set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Next(out Int32&)`
 <!-- tc:scope public -->

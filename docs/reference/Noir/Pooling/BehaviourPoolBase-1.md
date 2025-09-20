@@ -1,6 +1,7 @@
 # BehaviourPoolBase\<T\>
 
 <!-- tc:namespace Noir.Pooling -->
+
 <!-- tc:assembly Noir.dll -->
 
 Allows easy, cached reuse of MonoBehaviours
@@ -10,9 +11,9 @@ Allows easy, cached reuse of MonoBehaviours
 public abstract class BehaviourPoolBase<T> : NoirBehaviour
 ```
 
-**Implements:** _[NoirBehaviour](../../Noir/NoirBehaviour.html)_
+**Implements:** _[NoirBehaviour](/noir/reference//noir/reference/Noir/NoirBehaviour/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -22,7 +23,7 @@ public abstract class BehaviourPoolBase<T> : NoirBehaviour
 protected BehaviourPoolBase<T>()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `ActiveItems`
 <!-- tc:scope public -->
@@ -89,6 +90,33 @@ public Component collider2D { get; }
 public Component constantForce { get; }
 ```
 
+### `destroyCancellationToken`
+<!-- tc:scope public -->
+<!-- tc:return_type CancellationToken https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public CancellationToken destroyCancellationToken { get; }
+```
+
+### `didAwake`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool didAwake { get; }
+```
+
+### `didStart`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool didStart { get; }
+```
+
 ### `enabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -109,7 +137,7 @@ public GameObject gameObject { get; }
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type GameTime ../../Noir/GameTime.html -->
+<!-- tc:return_type GameTime /noir/reference//noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -158,7 +186,7 @@ public bool isActiveAndEnabled { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Gets a value that indicates whether the pool should pre-warm during its [BehaviourPoolBase<T>.Start](../../Noir/Pooling/BehaviourPoolBase-1.html) lifecycle.
+Gets a value that indicates whether the pool should pre-warm during its [BehaviourPoolBase<T>.Start](/noir/reference//noir/reference/Noir/Pooling/BehaviourPoolBase-1/) lifecycle.
 
 
 ```csharp
@@ -176,7 +204,7 @@ public Component light { get; }
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type BehaviourLogger ../../Noir/Logging/BehaviourLogger.html -->
+<!-- tc:return_type BehaviourLogger /noir/reference//noir/reference/Noir/Logging/BehaviourLogger/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -270,7 +298,7 @@ public bool runInEditMode { get; public set; }
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type ComponentServiceLocator ../../Noir/DependencyInjection/ComponentServiceLocator.html -->
+<!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -290,7 +318,7 @@ public string tag { get; public set; }
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Gets the sum of [BehaviourPoolBase<T>.ActiveItems](../../Noir/Pooling/BehaviourPoolBase-1.html#activeitems).
+Gets the sum of [BehaviourPoolBase<T>.ActiveItems](/noir/reference//noir/reference/Noir/Pooling/BehaviourPoolBase-1/#activeitems).
 
 
 ```csharp
@@ -315,11 +343,11 @@ public Transform transform { get; }
 public bool useGUILayout { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateNewPoolItem()`
 <!-- tc:scope private -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -328,7 +356,7 @@ protected abstract T CreateNewPoolItem()
 
 ### `ResetItemToDefaults(T)`
 <!-- tc:scope private -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -336,7 +364,7 @@ protected virtual T ResetItemToDefaults(T item)
 ```
 
 **Parameters** <br>
-`item` [T](../../) <br>
+`item` [T](/noir/reference//noir/reference/) <br>
 
 ### `OnRetrieveItemFromPool(T)`
 <!-- tc:scope private -->
@@ -347,7 +375,7 @@ protected virtual void OnRetrieveItemFromPool(T item)
 ```
 
 **Parameters** <br>
-`item` [T](../../) <br>
+`item` [T](/noir/reference//noir/reference/) <br>
 
 ### `OnReturnItemToPool(T)`
 <!-- tc:scope private -->
@@ -358,7 +386,7 @@ protected virtual void OnReturnItemToPool(T item)
 ```
 
 **Parameters** <br>
-`item` [T](../../) <br>
+`item` [T](/noir/reference//noir/reference/) <br>
 
 ### `OnStart()`
 <!-- tc:scope private -->
@@ -373,7 +401,7 @@ protected virtual void OnStart()
 ### `PreWarmPool()`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
-Called when the object pool starts, if [BehaviourPoolBase<T>.IsPreWarmEnabled](../../Noir/Pooling/BehaviourPoolBase-1.html#isprewarmenabled) is <c>true</c>.
+Called when the object pool starts, if [BehaviourPoolBase<T>.IsPreWarmEnabled](/noir/reference//noir/reference/Noir/Pooling/BehaviourPoolBase-1/#isprewarmenabled) is <c>true</c>.
 
 
 ```csharp
@@ -389,7 +417,7 @@ protected void DispatchEvent(T eventInfo)
 ```
 
 **Parameters** <br>
-`eventInfo` [T](../../) <br>
+`eventInfo` [T](/noir/reference//noir/reference/) <br>
 
 ### `RegisterListener()`
 <!-- tc:scope private -->
@@ -418,6 +446,18 @@ public bool CompareTag(string tag)
 
 **Parameters** <br>
 `tag` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+### `CompareTag(TagHandle)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool CompareTag(TagHandle tag)
+```
+
+**Parameters** <br>
+`tag` [TagHandle](https://docs.unity3d.com/ScriptReference/TagHandle.html) <br>
 
 ### `IsInvoking()`
 <!-- tc:scope public -->
@@ -463,7 +503,7 @@ public bool TryGetComponent(T& component)
 ```
 
 **Parameters** <br>
-`component` [T&](../../) <br>
+`component` [T&](/noir/reference//noir/reference/) <br>
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
@@ -661,6 +701,15 @@ Returns an [Component](https://docs.unity3d.com/ScriptReference/Component.html) 
 public IEnumerable<T> GetActiveItems()
 ```
 
+### `GetComponentIndex()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public int GetComponentIndex()
+```
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -672,7 +721,7 @@ public int GetInstanceID()
 
 ### `GetComponent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -681,7 +730,7 @@ public T GetComponent()
 
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -690,7 +739,7 @@ public T GetComponentInChildren()
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -702,7 +751,7 @@ public T GetComponentInChildren(bool includeInactive)
 
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -711,7 +760,7 @@ public T GetComponentInParent()
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -723,7 +772,7 @@ public T GetComponentInParent(bool includeInactive)
 
 ### `GetComponents()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -732,7 +781,7 @@ public T[] GetComponents()
 
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -741,7 +790,7 @@ public T[] GetComponentsInChildren()
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -753,7 +802,7 @@ public T[] GetComponentsInChildren(bool includeInactive)
 
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -762,7 +811,7 @@ public T[] GetComponentsInParent()
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -794,7 +843,7 @@ public virtual bool TryGetItemFromPool(T& item)
 ```
 
 **Parameters** <br>
-`item` [T&](../../) <br>
+`item` [T&](/noir/reference//noir/reference/) <br>
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
@@ -823,7 +872,7 @@ public virtual void ReturnItemToPool(T item)
 ```
 
 **Parameters** <br>
-`item` [T](../../) <br>
+`item` [T](/noir/reference//noir/reference/) <br>
 
 ### `BroadcastMessage(string, Object, SendMessageOptions)`
 <!-- tc:scope public -->

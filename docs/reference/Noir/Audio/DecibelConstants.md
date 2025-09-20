@@ -1,6 +1,7 @@
 # DecibelConstants
 
 <!-- tc:namespace Noir.Audio -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class DecibelConstants
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Concert`
 <!-- tc:scope private -->
@@ -94,7 +95,7 @@ Ambient noise of a perfectly quiet night in the countryside
 public static const int Whisper;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `DecibelToDistance(float)`
 <!-- tc:scope public -->

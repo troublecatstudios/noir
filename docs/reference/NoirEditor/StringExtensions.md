@@ -1,6 +1,7 @@
 # StringExtensions
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class StringExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToCamelCase(string)`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # ScriptableObjectExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class ScriptableObjectExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToLogStringSafe(ScriptableObject)`
 <!-- tc:scope public -->

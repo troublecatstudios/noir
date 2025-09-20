@@ -1,6 +1,7 @@
 # TypeExtensions
 
 <!-- tc:namespace NoirEditor.Reflection -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class TypeExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetAllMembers(Type, string, BindingFlags)`
 <!-- tc:scope public -->

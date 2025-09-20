@@ -1,6 +1,7 @@
 # INoirAudioManager
 
 <!-- tc:namespace Noir.Audio -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract INoirAudioManager
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `TryPlayClip(AudioClip, T?, float, float, float, bool, AudioMixerGroup, float)`
 <!-- tc:scope public -->
@@ -39,7 +40,7 @@ public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin, float del
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](../../Noir/Audio/SoundEffect.html) <br>
+`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
 `origin` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

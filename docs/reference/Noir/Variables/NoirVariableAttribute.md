@@ -1,6 +1,7 @@
 # NoirVariableAttribute
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 Declares that this variable field should be bound automatically to a named variable in the asset library.
@@ -12,7 +13,7 @@ public class NoirVariableAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(string)`
 <!-- tc:scope public -->
@@ -28,7 +29,7 @@ public NoirVariableAttribute(string variableName)
 `variableName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-## Properties
+## 📦 Properties
 
 ### `TypeId`
 <!-- tc:scope public -->

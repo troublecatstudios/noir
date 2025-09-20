@@ -1,6 +1,7 @@
 # IGameTime
 
 <!-- tc:namespace Noir.Abstractions -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract IGameTime
 ```
 
-## Properties
+## 📦 Properties
 
 ### `deltaTime`
 <!-- tc:scope public -->

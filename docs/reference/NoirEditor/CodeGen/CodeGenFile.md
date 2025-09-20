@@ -1,6 +1,7 @@
 # CodeGenFile
 
 <!-- tc:namespace NoirEditor.CodeGen -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class CodeGenFile
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `BuildConstIntegerVariable(string, int, string)`
 <!-- tc:scope public -->

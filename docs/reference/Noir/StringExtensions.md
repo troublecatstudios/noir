@@ -1,6 +1,7 @@
 # StringExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class StringExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CountOccurrences(string, char)`
 <!-- tc:scope public -->

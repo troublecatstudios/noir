@@ -1,6 +1,7 @@
 # EditorWaitForSeconds
 
 <!-- tc:namespace NoirEditor.EditorCoroutines -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> execution for the given amount of seconds, using unscaled time.
@@ -31,7 +32,7 @@ Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCor
 public class EditorWaitForSeconds
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(float)`
 <!-- tc:scope public -->
@@ -47,7 +48,7 @@ public EditorWaitForSeconds(float time)
 `time` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>
 
-## Properties
+## 📦 Properties
 
 ### `WaitTime`
 <!-- tc:scope public -->

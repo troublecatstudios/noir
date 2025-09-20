@@ -1,6 +1,7 @@
 # ObjectExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class ObjectExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToStringSafe(Object, Func<T, TResult>)`
 <!-- tc:scope public -->

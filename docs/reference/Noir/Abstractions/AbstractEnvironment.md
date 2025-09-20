@@ -1,6 +1,7 @@
 # AbstractEnvironment
 
 <!-- tc:namespace Noir.Abstractions -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract class AbstractEnvironment
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -18,7 +19,7 @@ public abstract class AbstractEnvironment
 protected AbstractEnvironment()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetEnvironmentVariable(string)`
 <!-- tc:scope public -->

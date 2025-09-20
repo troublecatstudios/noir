@@ -1,6 +1,7 @@
 # SerializedPropertyExtensions
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class SerializedPropertyExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetValue(SerializedProperty)`
 <!-- tc:scope public -->

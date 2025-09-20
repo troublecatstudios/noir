@@ -1,6 +1,7 @@
 # VectorExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class VectorExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToLogString(Vector2)`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # CreateNoirProjectConfigurationAsset
 
 <!-- tc:namespace NoirEditor.TroubleCatStudios.Noir.Editor.MenuItems -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class CreateNoirProjectConfigurationAsset
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateAssetValidation()`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # IPlatformPaths
 
 <!-- tc:namespace Noir.IO.Paths -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract IPlatformPaths
 ```
 
-## Properties
+## 📦 Properties
 
 ### `ConfigurationDirectory`
 <!-- tc:scope public -->

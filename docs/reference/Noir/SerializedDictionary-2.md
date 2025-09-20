@@ -1,6 +1,7 @@
 # SerializedDictionary\<TKey, TValue\>
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 An [IDictionary<TKey, TValue>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0) that can be serialized as
@@ -13,7 +14,7 @@ public class SerializedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICo
 
 **Implements:** _[IDictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0), [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0), [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0), [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0), [ISerializationCallbackReceiver](https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -23,7 +24,7 @@ public class SerializedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICo
 public SerializedDictionary<TKey, TValue>()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Count`
 <!-- tc:scope public -->
@@ -45,7 +46,7 @@ public virtual bool IsReadOnly { get; }
 
 ### `Item`
 <!-- tc:scope public -->
-<!-- tc:return_type TValue _na_ -->
+<!-- tc:return_type TValue /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -70,11 +71,11 @@ public virtual ICollection<T> Keys { get; }
 public virtual ICollection<T> Values { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `From(Dictionary<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type SerializedDictionary\<TKey, TValue\> ../Noir/SerializedDictionary-2.html -->
+<!-- tc:return_type SerializedDictionary\<TKey, TValue\> /noir/reference/Noir/SerializedDictionary-2/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -106,7 +107,7 @@ public virtual bool ContainsKey(TKey key)
 ```
 
 **Parameters** <br>
-`key` [TKey](../) <br>
+`key` [TKey](/noir/reference/) <br>
 
 ### `Remove(KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
@@ -130,7 +131,7 @@ public virtual bool Remove(TKey key)
 ```
 
 **Parameters** <br>
-`key` [TKey](../) <br>
+`key` [TKey](/noir/reference/) <br>
 
 ### `TryGetValue(TKey, out TValue&)`
 <!-- tc:scope public -->
@@ -142,8 +143,8 @@ public virtual bool TryGetValue(TKey key, TValue& value)
 ```
 
 **Parameters** <br>
-`key` [TKey](../) <br>
-`value` [TValue&](../) <br>
+`key` [TKey](/noir/reference/) <br>
+`value` [TValue&](/noir/reference/) <br>
 
 ### `GetEnumerator()`
 <!-- tc:scope public -->
@@ -174,8 +175,8 @@ public virtual void Add(TKey key, TValue value)
 ```
 
 **Parameters** <br>
-`key` [TKey](../) <br>
-`value` [TValue](../) <br>
+`key` [TKey](/noir/reference/) <br>
+`value` [TValue](/noir/reference/) <br>
 
 ### `Clear()`
 <!-- tc:scope public -->

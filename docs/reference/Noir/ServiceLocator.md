@@ -1,6 +1,7 @@
 # ServiceLocator
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.
@@ -10,9 +11,9 @@ Provides access to services by finding an appropriate provider while hiding both
 public sealed class ServiceLocator : IServiceLocator
 ```
 
-**Implements:** _[IServiceLocator](../Noir/IServiceLocator.html)_
+**Implements:** _[IServiceLocator](/noir/reference/Noir/IServiceLocator/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public sealed class ServiceLocator : IServiceLocator
 public ServiceLocator()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
@@ -45,11 +46,11 @@ public bool TryGetService(TServiceType& instance)
 ```
 
 **Parameters** <br>
-`instance` [TServiceType&](../) <br>
+`instance` [TServiceType&](/noir/reference/) <br>
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type TServiceType _na_ -->
+<!-- tc:return_type TServiceType /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 Gets an implementation for the given type from the service registry.
 
@@ -91,7 +92,7 @@ public void RegisterService(TServiceType instance)
 ```
 
 **Parameters** <br>
-`instance` [TServiceType](../) <br>
+`instance` [TServiceType](/noir/reference/) <br>
 
 ### `UnregisterService()`
 <!-- tc:scope public -->

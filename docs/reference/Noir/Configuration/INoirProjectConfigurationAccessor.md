@@ -1,6 +1,7 @@
 # INoirProjectConfigurationAccessor
 
 <!-- tc:namespace Noir.Configuration -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,11 +9,11 @@
 public abstract INoirProjectConfigurationAccessor
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetProjectConfiguration()`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirProjectConfiguration ../../Noir/NoirProjectConfiguration.html -->
+<!-- tc:return_type NoirProjectConfiguration /noir/reference//noir/reference/Noir/NoirProjectConfiguration/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

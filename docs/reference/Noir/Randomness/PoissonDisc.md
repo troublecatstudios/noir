@@ -1,6 +1,7 @@
 # PoissonDisc
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PoissonDisc
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class PoissonDisc
 public PoissonDisc()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `DefaultIterationPerPoint`
 <!-- tc:scope private -->
@@ -38,11 +39,11 @@ public static const int DefaultIterationPerPoint;
 public static const float InvertRootTwo;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateSettings(Vector2, Vector2, float, T?, int, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type PoissonSettings ../../Noir/Randomness/PoissonSettings.html -->
+<!-- tc:return_type PoissonSettings /noir/reference//noir/reference/Noir/Randomness/PoissonSettings/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -68,5 +69,5 @@ public Vector2Int GetGridIndex(Vector2 point, PoissonSettings set)
 
 **Parameters** <br>
 `point` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
-`set` [PoissonSettings](../../Noir/Randomness/PoissonSettings.html) <br>
+`set` [PoissonSettings](/noir/reference//noir/reference/Noir/Randomness/PoissonSettings/) <br>
 

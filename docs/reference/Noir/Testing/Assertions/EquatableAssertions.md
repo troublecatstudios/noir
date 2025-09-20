@@ -1,6 +1,7 @@
 # EquatableAssertions
 
 <!-- tc:namespace Noir.Testing.Assertions -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class EquatableAssertions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsEquatableTo(IAssertionContext<T>, T)`
 <!-- tc:scope public -->
@@ -19,6 +20,6 @@ public void IsEquatableTo(IAssertionContext<T> context, T expectedValue)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 

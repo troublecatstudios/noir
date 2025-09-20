@@ -1,6 +1,7 @@
 # TransformExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class TransformExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `TryFind(Transform, string, out T&)`
 <!-- tc:scope public -->
@@ -22,5 +23,5 @@ public bool TryFind(Transform transform, string name, T& component)
 **Parameters** <br>
 `transform` [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`component` [T&](../) <br>
+`component` [T&](/noir/reference/) <br>
 

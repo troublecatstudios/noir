@@ -1,6 +1,7 @@
 # PlayAudioClipEvent
 
 <!-- tc:namespace Noir.Audio.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PlayAudioClipEvent
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class PlayAudioClipEvent
 public PlayAudioClipEvent()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Clip`
 <!-- tc:scope public -->

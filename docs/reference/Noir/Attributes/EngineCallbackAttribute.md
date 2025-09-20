@@ -1,6 +1,7 @@
 # EngineCallbackAttribute
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 Allows static methods to be invoked at specific points during the Noir Library startup lifecycle.
@@ -12,7 +13,7 @@ public class EngineCallbackAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(EngineCallbackType)`
 <!-- tc:scope public -->
@@ -23,13 +24,13 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 ```
 
 **Parameters** <br>
-`callbackType` [EngineCallbackType](../../Noir/Attributes/EngineCallbackType.html) <br>
+`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/) <br>
 
-## Properties
+## 📦 Properties
 
 ### `CallbackType`
 <!-- tc:scope public -->
-<!-- tc:return_type EngineCallbackType ../../Noir/Attributes/EngineCallbackType.html -->
+<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

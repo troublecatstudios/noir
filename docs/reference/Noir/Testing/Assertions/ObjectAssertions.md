@@ -1,6 +1,7 @@
 # ObjectAssertions
 
 <!-- tc:namespace Noir.Testing.Assertions -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class ObjectAssertions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsNotNull(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
@@ -19,7 +20,7 @@ public void IsNotNull(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsNull(IAssertionContext<T>, string)`
@@ -31,7 +32,7 @@ public void IsNull(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsSameAs(IAssertionContext<T>, T, string)`
@@ -43,7 +44,7 @@ public void IsSameAs(IAssertionContext<T> context, T expectedValue, string messa
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

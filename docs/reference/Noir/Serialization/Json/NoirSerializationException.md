@@ -1,6 +1,7 @@
 # NoirSerializationException
 
 <!-- tc:namespace Noir.Serialization.Json -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class NoirSerializationException : JsonSerializationException, ISerializable
 ```
 
-**Implements:** _[JsonSerializationException](../../../), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
+**Implements:** _[JsonSerializationException](/noir/reference//noir/reference//noir/reference/), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class NoirSerializationException : JsonSerializationException, ISerializa
 public NoirSerializationException()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Data`
 <!-- tc:scope public -->
@@ -121,11 +122,11 @@ public virtual string StackTrace { get; }
 public MethodBase TargetSite { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateSerializationException(JsonReader, string, Exception)`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirSerializationException ../../../Noir/Serialization/Json/NoirSerializationException.html -->
+<!-- tc:return_type NoirSerializationException /noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/NoirSerializationException/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -133,7 +134,7 @@ public NoirSerializationException CreateSerializationException(JsonReader reader
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](../../../) <br>
+`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `innerException` [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
 

@@ -1,6 +1,7 @@
 # INoirEventDispatcher
 
 <!-- tc:namespace Noir.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract INoirEventDispatcher
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `DispatchEvent(T)`
 <!-- tc:scope public -->
@@ -20,5 +21,5 @@ public abstract bool DispatchEvent(T eventData)
 ```
 
 **Parameters** <br>
-`eventData` [T](../../) <br>
+`eventData` [T](/noir/reference//noir/reference/) <br>
 

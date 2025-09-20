@@ -1,6 +1,7 @@
 # NoirConfigurationSystem
 
 <!-- tc:namespace Noir.Configuration -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class NoirConfigurationSystem : INoirProjectConfigurationAccessor
 ```
 
-**Implements:** _[INoirProjectConfigurationAccessor](../../Noir/Configuration/INoirProjectConfigurationAccessor.html)_
+**Implements:** _[INoirProjectConfigurationAccessor](/noir/reference//noir/reference/Noir/Configuration/INoirProjectConfigurationAccessor/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,11 +21,11 @@ public class NoirConfigurationSystem : INoirProjectConfigurationAccessor
 public NoirConfigurationSystem()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetProjectConfiguration()`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirProjectConfiguration ../../Noir/NoirProjectConfiguration.html -->
+<!-- tc:return_type NoirProjectConfiguration /noir/reference//noir/reference/Noir/NoirProjectConfiguration/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

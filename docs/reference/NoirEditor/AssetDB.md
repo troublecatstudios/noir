@@ -1,6 +1,7 @@
 # AssetDB
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 Useful utility methods for interacting with the Unity AssetDatabase.
@@ -10,7 +11,7 @@ Useful utility methods for interacting with the Unity AssetDatabase.
 public static class AssetDB
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Mkdirp(string)`
 <!-- tc:scope public -->
@@ -106,7 +107,7 @@ public Object LoadSingle(Type objectType, Func<T, TResult> filter, String[] sear
 
 ### `LoadSingle(string, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

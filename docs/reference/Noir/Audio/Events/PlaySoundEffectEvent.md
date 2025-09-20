@@ -1,6 +1,7 @@
 # PlaySoundEffectEvent
 
 <!-- tc:namespace Noir.Audio.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PlaySoundEffectEvent
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class PlaySoundEffectEvent
 public PlaySoundEffectEvent()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Delay`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # BehaviourLogger
 
 <!-- tc:namespace Noir.Logging -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class BehaviourLogger : ILogWriter
 ```
 
-**Implements:** _[ILogWriter](../../Noir/Logging/ILogWriter.html)_
+**Implements:** _[ILogWriter](/noir/reference//noir/reference/Noir/Logging/ILogWriter/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(MonoBehaviour)`
 <!-- tc:scope public -->
@@ -23,7 +24,7 @@ public BehaviourLogger(MonoBehaviour context)
 **Parameters** <br>
 `context` [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Debug(string, string)`
 <!-- tc:scope public -->
@@ -122,7 +123,7 @@ public virtual void WriteLog(string message, LogLevel level, string subsystem, s
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

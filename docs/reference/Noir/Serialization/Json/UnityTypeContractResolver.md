@@ -1,6 +1,7 @@
 # UnityTypeContractResolver
 
 <!-- tc:namespace Noir.Serialization.Json -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class UnityTypeContractResolver : DefaultContractResolver, IContractResolver
 ```
 
-**Implements:** _[DefaultContractResolver](../../../), [IContractResolver](../../../)_
+**Implements:** _[DefaultContractResolver](/noir/reference//noir/reference//noir/reference/), [IContractResolver](/noir/reference//noir/reference//noir/reference/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class UnityTypeContractResolver : DefaultContractResolver, IContractResol
 public UnityTypeContractResolver()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `DefaultMembersSearchFlags`
 <!-- tc:scope public -->
@@ -78,7 +79,7 @@ public bool IgnoreShouldSerializeMembers { get; public set; }
 
 ### `NamingStrategy`
 <!-- tc:scope public -->
-<!-- tc:return_type NamingStrategy _na_ -->
+<!-- tc:return_type NamingStrategy /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -94,7 +95,7 @@ public NamingStrategy NamingStrategy { get; public set; }
 public bool SerializeCompilerGeneratedMembers { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateConstructorParameters(ConstructorInfo, JsonPropertyCollection)`
 <!-- tc:scope private -->
@@ -107,7 +108,7 @@ protected virtual IList<T> CreateConstructorParameters(ConstructorInfo construct
 
 **Parameters** <br>
 `constructor` [ConstructorInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.ConstructorInfo?view=net-7.0) <br>
-`memberProperties` [JsonPropertyCollection](../../../) <br>
+`memberProperties` [JsonPropertyCollection](/noir/reference//noir/reference//noir/reference/) <br>
 
 ### `CreateProperties(Type, MemberSerialization)`
 <!-- tc:scope private -->
@@ -120,11 +121,11 @@ protected virtual IList<T> CreateProperties(Type type, MemberSerialization membe
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
-`memberSerialization` [MemberSerialization](../../../) <br>
+`memberSerialization` [MemberSerialization](/noir/reference//noir/reference//noir/reference/) <br>
 
 ### `CreateMemberValueProvider(MemberInfo)`
 <!-- tc:scope private -->
-<!-- tc:return_type IValueProvider _na_ -->
+<!-- tc:return_type IValueProvider /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -136,7 +137,7 @@ protected virtual IValueProvider CreateMemberValueProvider(MemberInfo member)
 
 ### `CreateArrayContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonArrayContract _na_ -->
+<!-- tc:return_type JsonArrayContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -148,7 +149,7 @@ protected virtual JsonArrayContract CreateArrayContract(Type objectType)
 
 ### `CreateContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonContract _na_ -->
+<!-- tc:return_type JsonContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -160,7 +161,7 @@ protected virtual JsonContract CreateContract(Type objectType)
 
 ### `ResolveContractConverter(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonConverter _na_ -->
+<!-- tc:return_type JsonConverter /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -172,7 +173,7 @@ protected virtual JsonConverter ResolveContractConverter(Type objectType)
 
 ### `CreateDictionaryContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonDictionaryContract _na_ -->
+<!-- tc:return_type JsonDictionaryContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -184,7 +185,7 @@ protected virtual JsonDictionaryContract CreateDictionaryContract(Type objectTyp
 
 ### `CreateDynamicContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonDynamicContract _na_ -->
+<!-- tc:return_type JsonDynamicContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -196,7 +197,7 @@ protected virtual JsonDynamicContract CreateDynamicContract(Type objectType)
 
 ### `CreateISerializableContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonISerializableContract _na_ -->
+<!-- tc:return_type JsonISerializableContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -208,7 +209,7 @@ protected virtual JsonISerializableContract CreateISerializableContract(Type obj
 
 ### `CreateLinqContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonLinqContract _na_ -->
+<!-- tc:return_type JsonLinqContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -220,7 +221,7 @@ protected virtual JsonLinqContract CreateLinqContract(Type objectType)
 
 ### `CreateObjectContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonObjectContract _na_ -->
+<!-- tc:return_type JsonObjectContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -232,7 +233,7 @@ protected virtual JsonObjectContract CreateObjectContract(Type objectType)
 
 ### `CreatePrimitiveContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonPrimitiveContract _na_ -->
+<!-- tc:return_type JsonPrimitiveContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -244,7 +245,7 @@ protected virtual JsonPrimitiveContract CreatePrimitiveContract(Type objectType)
 
 ### `CreateProperty(MemberInfo, MemberSerialization)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonProperty _na_ -->
+<!-- tc:return_type JsonProperty /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -253,11 +254,11 @@ protected virtual JsonProperty CreateProperty(MemberInfo member, MemberSerializa
 
 **Parameters** <br>
 `member` [MemberInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MemberInfo?view=net-7.0) <br>
-`memberSerialization` [MemberSerialization](../../../) <br>
+`memberSerialization` [MemberSerialization](/noir/reference//noir/reference//noir/reference/) <br>
 
 ### `CreatePropertyFromConstructorParameter(JsonProperty, ParameterInfo)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonProperty _na_ -->
+<!-- tc:return_type JsonProperty /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -265,12 +266,12 @@ protected virtual JsonProperty CreatePropertyFromConstructorParameter(JsonProper
 ```
 
 **Parameters** <br>
-`matchingMemberProperty` [JsonProperty](../../../) <br>
+`matchingMemberProperty` [JsonProperty](/noir/reference//noir/reference//noir/reference/) <br>
 `parameterInfo` [ParameterInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.ParameterInfo?view=net-7.0) <br>
 
 ### `CreateStringContract(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type JsonStringContract _na_ -->
+<!-- tc:return_type JsonStringContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -342,7 +343,7 @@ public string GetResolvedPropertyName(string propertyName)
 
 ### `ResolveContract(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type JsonContract _na_ -->
+<!-- tc:return_type JsonContract /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

@@ -1,6 +1,7 @@
 # QuadTrafficLight
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class QuadTrafficLight : TrafficLightAttribute
 ```
 
-**Implements:** _[TrafficLightAttribute](../../Noir/Attributes/TrafficLightAttribute.html)_
+**Implements:** _[TrafficLightAttribute](/noir/reference//noir/reference/Noir/Attributes/TrafficLightAttribute/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -29,12 +30,12 @@ public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b, TrafficLightCo
 ```
 
 **Parameters** <br>
-`a` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`b` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`c` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`d` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`a` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`b` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`c` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`d` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
-## Properties
+## 📦 Properties
 
 ### `AlsoDrawDefault`
 <!-- tc:scope private -->
@@ -45,9 +46,18 @@ public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b, TrafficLightCo
 public bool AlsoDrawDefault;
 ```
 
+### `applyToCollection`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool applyToCollection { get; }
+```
+
 ### `Colors`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightColor[] ../../Noir/Attributes/TrafficLightColor.html -->
+<!-- tc:return_type TrafficLightColor[] /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

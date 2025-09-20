@@ -1,6 +1,7 @@
 # DataVariableCollection
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class DataVariableCollection : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class DataVariableCollection : ScriptableObject
 public DataVariableCollection()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -49,7 +50,7 @@ public string name { get; public set; }
 public List<T> Variables;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->

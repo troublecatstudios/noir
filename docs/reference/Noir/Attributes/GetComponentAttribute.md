@@ -1,6 +1,7 @@
 # GetComponentAttribute
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 Automatically wires up the first component that matches the annotated field type.
@@ -12,7 +13,7 @@ public class GetComponentAttribute : PropertyAttribute
 
 **Implements:** _[PropertyAttribute](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(GetComponentSearchArea)`
 <!-- tc:scope public -->
@@ -23,9 +24,18 @@ public GetComponentAttribute(GetComponentSearchArea searchArea)
 ```
 
 **Parameters** <br>
-`searchArea` [GetComponentSearchArea](../../Noir/Attributes/GetComponentSearchArea.html) <br>
+`searchArea` [GetComponentSearchArea](/noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/) <br>
 
-## Properties
+## 📦 Properties
+
+### `applyToCollection`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool applyToCollection { get; }
+```
 
 ### `order`
 <!-- tc:scope public -->
@@ -38,7 +48,7 @@ public int order { get; public set; }
 
 ### `SearchArea`
 <!-- tc:scope public -->
-<!-- tc:return_type GetComponentSearchArea ../../Noir/Attributes/GetComponentSearchArea.html -->
+<!-- tc:return_type GetComponentSearchArea /noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

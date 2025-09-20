@@ -1,6 +1,7 @@
 # Vector2Converter
 
 <!-- tc:namespace Noir.Serialization.Json.Converters -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class Vector2Converter : PartialConverter<T>
 ```
 
-**Implements:** _[PartialConverter\<T\>](../../../../Noir/Serialization/Json/Converters/PartialConverter-1.html)_
+**Implements:** _[PartialConverter\<T\>](/noir/reference//noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/Converters/PartialConverter-1/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class Vector2Converter : PartialConverter<T>
 public Vector2Converter()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `CanRead`
 <!-- tc:scope public -->
@@ -40,7 +41,7 @@ public virtual bool CanRead { get; }
 public virtual bool CanWrite { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ReadValue(Vector2&, string, JsonReader, JsonSerializer)`
 <!-- tc:scope private -->
@@ -53,8 +54,8 @@ protected virtual void ReadValue(Vector2& value, string name, JsonReader reader,
 **Parameters** <br>
 `value` [Vector2&](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`reader` [JsonReader](../../../../) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
 ### `WriteJsonProperties(JsonWriter, Vector2, JsonSerializer)`
 <!-- tc:scope private -->
@@ -65,9 +66,9 @@ protected virtual void WriteJsonProperties(JsonWriter writer, Vector2 value, Jso
 ```
 
 **Parameters** <br>
-`writer` [JsonWriter](../../../../) <br>
+`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `value` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
 ### `CanConvert(Type)`
 <!-- tc:scope public -->
@@ -91,10 +92,10 @@ public virtual Object ReadJson(JsonReader reader, Type objectType, Object existi
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](../../../../) <br>
+`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `existingValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
 ### `WriteJson(JsonWriter, Object, JsonSerializer)`
 <!-- tc:scope public -->
@@ -105,7 +106,7 @@ public virtual void WriteJson(JsonWriter writer, Object value, JsonSerializer se
 ```
 
 **Parameters** <br>
-`writer` [JsonWriter](../../../../) <br>
+`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 

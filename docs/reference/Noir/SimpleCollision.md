@@ -1,6 +1,7 @@
 # SimpleCollision
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class SimpleCollision
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Check(Vector3, Vector3, float, LayerMask, CollisionCheckMethod, int)`
 <!-- tc:scope public -->
@@ -30,7 +31,7 @@ public bool Check(Vector3 origin, Vector3 direction, float length, LayerMask mas
  <br>
 `mask` [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html) <br>
  <br>
-`method` [CollisionCheckMethod](../Noir/CollisionCheckMethod.html) <br>
+`method` [CollisionCheckMethod](/noir/reference/Noir/CollisionCheckMethod/) <br>
  <br>
 `hitThreshold` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
  <br>
@@ -62,7 +63,7 @@ public bool TryGetHit(Vector3 origin, Vector3 direction, float length, LayerMask
 `direction` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `length` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `mask` [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html) <br>
-`method` [CollisionCheckMethod](../Noir/CollisionCheckMethod.html) <br>
+`method` [CollisionCheckMethod](/noir/reference/Noir/CollisionCheckMethod/) <br>
 `hitPosition` [Vector3&](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 
 ### `GetContactPointFast(Bounds, Bounds)`

@@ -1,6 +1,7 @@
 # Vector4Int
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public sealed struct Vector4Int : IEquatable<T>
 
 **Implements:** _[IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(int, int, int, int)`
 <!-- tc:scope public -->
@@ -26,11 +27,11 @@ public Vector4Int(int x, int y, int z, int w)
 `z` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `w` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-## Properties
+## 📦 Properties
 
 ### `down`
 <!-- tc:scope private -->
-<!-- tc:return_type Vector4Int ../Noir/Vector4Int.html -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -39,7 +40,7 @@ public readonly static Vector4Int down;
 
 ### `left`
 <!-- tc:scope private -->
-<!-- tc:return_type Vector4Int ../Noir/Vector4Int.html -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -48,7 +49,7 @@ public readonly static Vector4Int left;
 
 ### `right`
 <!-- tc:scope private -->
-<!-- tc:return_type Vector4Int ../Noir/Vector4Int.html -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -66,7 +67,7 @@ public int sqrMagnitude { get; }
 
 ### `up`
 <!-- tc:scope private -->
-<!-- tc:return_type Vector4Int ../Noir/Vector4Int.html -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -111,14 +112,14 @@ public int z;
 
 ### `zero`
 <!-- tc:scope private -->
-<!-- tc:return_type Vector4Int ../Noir/Vector4Int.html -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public readonly static Vector4Int zero;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Equals(Vector4Int)`
 <!-- tc:scope public -->
@@ -130,7 +131,7 @@ public virtual bool Equals(Vector4Int other)
 ```
 
 **Parameters** <br>
-`other` [Vector4Int](../Noir/Vector4Int.html) <br>
+`other` [Vector4Int](/noir/reference/Noir/Vector4Int/) <br>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->

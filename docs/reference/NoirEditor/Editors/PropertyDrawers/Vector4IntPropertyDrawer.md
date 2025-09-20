@@ -1,6 +1,7 @@
 # Vector4IntPropertyDrawer
 
 <!-- tc:namespace NoirEditor.Editors.PropertyDrawers -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -10,7 +11,7 @@ public class Vector4IntPropertyDrawer : PropertyDrawer
 
 **Implements:** _[PropertyDrawer](https://docs.unity3d.com/ScriptReference/PropertyDrawer.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class Vector4IntPropertyDrawer : PropertyDrawer
 public Vector4IntPropertyDrawer()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `attribute`
 <!-- tc:scope public -->
@@ -40,7 +41,16 @@ public PropertyAttribute attribute { get; }
 public FieldInfo fieldInfo { get; }
 ```
 
-## Methods
+### `preferredLabel`
+<!-- tc:scope public -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public string preferredLabel { get; }
+```
+
+## ⛹️‍♀️ Methods
 
 ### `CanCacheInspectorGUI(SerializedProperty)`
 <!-- tc:scope public -->

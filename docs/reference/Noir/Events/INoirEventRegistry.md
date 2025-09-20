@@ -1,6 +1,7 @@
 # INoirEventRegistry
 
 <!-- tc:namespace Noir.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract INoirEventRegistry
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Register(GameObject, Type)`
 <!-- tc:scope public -->

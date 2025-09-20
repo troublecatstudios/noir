@@ -1,6 +1,7 @@
 # Collider2DExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class Collider2DExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `SetDimensions(Collider2D, Vector2)`
 <!-- tc:scope public -->

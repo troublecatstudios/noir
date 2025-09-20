@@ -1,6 +1,7 @@
 # IServiceLocator
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract IServiceLocator
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
@@ -29,11 +30,11 @@ public abstract bool TryGetService(T& instance)
 ```
 
 **Parameters** <br>
-`instance` [T&](../) <br>
+`instance` [T&](/noir/reference/) <br>
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -60,7 +61,7 @@ public abstract void RegisterService(T instance)
 ```
 
 **Parameters** <br>
-`instance` [T](../) <br>
+`instance` [T](/noir/reference/) <br>
 
 ### `UnregisterService()`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # Chance
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 Helper class for achieving random outcomes.
@@ -10,7 +11,7 @@ Helper class for achieving random outcomes.
 public static class Chance
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CoinFlip()`
 <!-- tc:scope public -->

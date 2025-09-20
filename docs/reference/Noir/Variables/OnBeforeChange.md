@@ -1,6 +1,7 @@
 # OnBeforeChange
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public sealed class OnBeforeChange : MulticastDelegate, ICloneable, ISerializabl
 
 **Implements:** _[MulticastDelegate](https://learn.microsoft.com/en-us/dotnet/api/System.MulticastDelegate?view=net-7.0), [ICloneable](https://learn.microsoft.com/en-us/dotnet/api/System.ICloneable?view=net-7.0), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(Object, IntPtr)`
 <!-- tc:scope public -->
@@ -24,7 +25,7 @@ public OnBeforeChange(Object object, IntPtr method)
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `method` [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/System.IntPtr?view=net-7.0) <br>
 
-## Properties
+## 📦 Properties
 
 ### `Method`
 <!-- tc:scope public -->
@@ -44,7 +45,7 @@ public MethodInfo Method { get; }
 public Object Target { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CombineImpl(Delegate)`
 <!-- tc:scope private -->

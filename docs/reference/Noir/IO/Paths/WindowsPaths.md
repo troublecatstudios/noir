@@ -1,6 +1,7 @@
 # WindowsPaths
 
 <!-- tc:namespace Noir.IO.Paths -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class WindowsPaths : PathsBase, IPlatformPaths
 ```
 
-**Implements:** _[PathsBase](../../../Noir/IO/Paths/PathsBase.html), [IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html)_
+**Implements:** _[PathsBase](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/PathsBase/), [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class WindowsPaths : PathsBase, IPlatformPaths
 public WindowsPaths()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `ConfigurationDirectory`
 <!-- tc:scope public -->

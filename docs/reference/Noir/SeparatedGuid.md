@@ -1,6 +1,7 @@
 # SeparatedGuid
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public sealed struct SeparatedGuid
 ```
 
-## Properties
+## 📦 Properties
 
 ### `A`
 <!-- tc:scope private -->

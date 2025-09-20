@@ -1,6 +1,7 @@
 # FakeGameTime
 
 <!-- tc:namespace Noir.Testing -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,9 +9,9 @@
 public class FakeGameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](../../Noir/Abstractions/IGameTime.html)_
+**Implements:** _[IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class FakeGameTime : IGameTime
 public FakeGameTime()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `deltaTime`
 <!-- tc:scope public -->
@@ -67,7 +68,7 @@ public virtual float realtimeSinceStartup { get; public set; }
 public virtual float time { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `StepFrame()`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # NoirColor
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class NoirColor
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `FromHex(string)`
 <!-- tc:scope public -->

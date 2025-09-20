@@ -1,6 +1,7 @@
 # AutomaticallyCreateAttribute
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class AutomaticallyCreateAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(string, string)`
 <!-- tc:scope public -->
@@ -28,7 +29,7 @@ public AutomaticallyCreateAttribute(string customPathPrefix, string assetNameOve
 `assetNameOverride` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-## Properties
+## 📦 Properties
 
 ### `AssetNameOverride`
 <!-- tc:scope public -->

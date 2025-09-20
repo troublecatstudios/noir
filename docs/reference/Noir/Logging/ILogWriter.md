@@ -1,6 +1,7 @@
 # ILogWriter
 
 <!-- tc:namespace Noir.Logging -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract ILogWriter
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Debug(string, string)`
 <!-- tc:scope public -->
@@ -107,7 +108,7 @@ public abstract void WriteLog(string message, LogLevel level, string subsystem, 
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

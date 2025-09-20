@@ -1,6 +1,7 @@
 # INoirEventListener
 
 <!-- tc:namespace Noir.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract INoirEventListener
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `RaiseEvent(Object)`
 <!-- tc:scope public -->

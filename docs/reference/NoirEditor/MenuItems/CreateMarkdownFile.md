@@ -1,6 +1,7 @@
 # CreateMarkdownFile
 
 <!-- tc:namespace NoirEditor.MenuItems -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public class CreateMarkdownFile
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class CreateMarkdownFile
 public CreateMarkdownFile()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateMarkdown()`
 <!-- tc:scope public -->

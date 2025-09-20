@@ -1,6 +1,7 @@
 # NoiseMaker
 
 <!-- tc:namespace Noir.Randomness.Noise -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class NoiseMaker
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(NoiseSettings)`
 <!-- tc:scope public -->
@@ -19,9 +20,9 @@ public NoiseMaker(NoiseSettings settings)
 ```
 
 **Parameters** <br>
-`settings` [NoiseSettings](../../../Noir/Randomness/Noise/NoiseSettings.html) <br>
+`settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetNoise(float, float)`
 <!-- tc:scope public -->

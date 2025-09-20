@@ -1,6 +1,7 @@
 # ColorExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class ColorExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `BlendWith(Color, Color, ColorBlendMode)`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public Color BlendWith(Color a, Color b, ColorBlendMode mode)
 **Parameters** <br>
 `a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
-`mode` [ColorBlendMode](../Noir/ColorBlendMode.html) <br>
+`mode` [ColorBlendMode](/noir/reference/Noir/ColorBlendMode/) <br>
 
 ### `Darken(Color, Color)`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # NoirEventManager
 
 <!-- tc:namespace Noir.Events -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 ```
 
-**Implements:** _[INoirEventDispatcher](../../Noir/Events/INoirEventDispatcher.html), [INoirEventRegistry](../../Noir/Events/INoirEventRegistry.html)_
+**Implements:** _[INoirEventDispatcher](/noir/reference//noir/reference/Noir/Events/INoirEventDispatcher/), [INoirEventRegistry](/noir/reference//noir/reference/Noir/Events/INoirEventRegistry/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 public NoirEventManager()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `DispatchEvent(T)`
 <!-- tc:scope public -->
@@ -32,7 +33,7 @@ public virtual bool DispatchEvent(T eventData)
 ```
 
 **Parameters** <br>
-`eventData` [T](../../) <br>
+`eventData` [T](/noir/reference//noir/reference/) <br>
 
 ### `Register(GameObject, Type)`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # Maths
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class Maths
 ```
 
-## Properties
+## 📦 Properties
 
 ### `MaxVector2`
 <!-- tc:scope private -->
@@ -28,7 +29,7 @@ public static Vector2 MaxVector2;
 public static Vector2 MinVector2;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Scale(float, float)`
 <!-- tc:scope public -->

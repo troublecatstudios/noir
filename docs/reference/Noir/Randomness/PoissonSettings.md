@@ -1,6 +1,7 @@
 # PoissonSettings
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public sealed struct PoissonSettings
 ```
 
-## Properties
+## 📦 Properties
 
 ### `BottomLeft`
 <!-- tc:scope private -->

@@ -1,6 +1,7 @@
 # FirstTimeSetup
 
 <!-- tc:namespace NoirEditor.MenuItems -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class FirstTimeSetup
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `SetupValidation()`
 <!-- tc:scope public -->

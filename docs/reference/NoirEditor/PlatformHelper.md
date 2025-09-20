@@ -1,6 +1,7 @@
 # PlatformHelper
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,18 +9,18 @@
 public class PlatformHelper
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Instance`
 <!-- tc:scope private -->
-<!-- tc:return_type PlatformHelper ../NoirEditor/PlatformHelper.html -->
+<!-- tc:return_type PlatformHelper /noir/reference/NoirEditor/PlatformHelper/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public readonly static PlatformHelper Instance;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `NormalizePath(string)`
 <!-- tc:scope public -->

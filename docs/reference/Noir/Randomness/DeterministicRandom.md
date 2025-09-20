@@ -1,6 +1,7 @@
 # DeterministicRandom
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class DeterministicRandom
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `InRange(int, int)`
 <!-- tc:scope public -->

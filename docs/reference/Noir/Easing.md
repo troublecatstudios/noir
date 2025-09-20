@@ -1,6 +1,7 @@
 # Easing
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 Easing functions to be used for interpolation
@@ -10,7 +11,7 @@ Easing functions to be used for interpolation
 public static class Easing
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Ease(EaseType, Color, Color, float)`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public Color Ease(EaseType type, Color from, Color to, float t)
 ```
 
 **Parameters** <br>
-`type` [EaseType](../Noir/EaseType.html) <br>
+`type` [EaseType](/noir/reference/Noir/EaseType/) <br>
 `from` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `to` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
@@ -181,7 +182,7 @@ public float Ease(EaseType type, float from, float to, float t)
 ```
 
 **Parameters** <br>
-`type` [EaseType](../Noir/EaseType.html) <br>
+`type` [EaseType](/noir/reference/Noir/EaseType/) <br>
 `from` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `to` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
@@ -424,7 +425,7 @@ public Func<T, TResult> Function(EaseType type)
 ```
 
 **Parameters** <br>
-`type` [EaseType](../Noir/EaseType.html) <br>
+`type` [EaseType](/noir/reference/Noir/EaseType/) <br>
 
 ### `Ease(EaseType, Quaternion, Quaternion, float)`
 <!-- tc:scope public -->
@@ -436,7 +437,7 @@ public Quaternion Ease(EaseType type, Quaternion from, Quaternion to, float t)
 ```
 
 **Parameters** <br>
-`type` [EaseType](../Noir/EaseType.html) <br>
+`type` [EaseType](/noir/reference/Noir/EaseType/) <br>
 `from` [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html) <br>
 `to` [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html) <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
@@ -451,7 +452,7 @@ public Vector3 Ease(EaseType type, Vector3 from, Vector3 to, float t)
 ```
 
 **Parameters** <br>
-`type` [EaseType](../Noir/EaseType.html) <br>
+`type` [EaseType](/noir/reference/Noir/EaseType/) <br>
 `from` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `to` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

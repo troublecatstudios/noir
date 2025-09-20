@@ -1,6 +1,7 @@
 # NoirGizmos
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class NoirGizmos
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `DrawArrow(Vector3, Vector3, float, float)`
 <!-- tc:scope public -->
@@ -49,7 +50,7 @@ public void DrawBezierCurve(Vector3 origin, BezierCurve curve, int numberOfPoint
 
 **Parameters** <br>
 `origin` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
-`curve` [BezierCurve](../Noir/BezierCurve.html) <br>
+`curve` [BezierCurve](/noir/reference/Noir/BezierCurve/) <br>
 `numberOfPoints` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `pointRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `direction` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>

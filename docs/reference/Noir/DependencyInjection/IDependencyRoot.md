@@ -1,6 +1,7 @@
 # IDependencyRoot
 
 <!-- tc:namespace Noir.DependencyInjection -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract IDependencyRoot
 ```
 
-## Properties
+## 📦 Properties
 
 ### `gameObject`
 <!-- tc:scope public -->

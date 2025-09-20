@@ -1,6 +1,7 @@
 # ToggleButtonsAttribute
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class ToggleButtonsAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(string, string, bool, float, string, string, string, string, string, string)`
 <!-- tc:scope public -->
@@ -44,7 +45,7 @@ public ToggleButtonsAttribute(string trueText, string falseText, bool singleButt
 `falseIcon` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-## Properties
+## 📦 Properties
 
 ### `FalseColor`
 <!-- tc:scope private -->

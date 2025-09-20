@@ -1,6 +1,7 @@
 # NoirLogger\<T\>
 
 <!-- tc:namespace Noir.Logging -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class NoirLogger<T>
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class NoirLogger<T>
 public NoirLogger<T>()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Debug(string, string)`
 <!-- tc:scope public -->

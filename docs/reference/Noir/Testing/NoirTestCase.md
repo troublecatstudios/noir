@@ -1,6 +1,7 @@
 # NoirTestCase
 
 <!-- tc:namespace Noir.Testing -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract class NoirTestCase
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -18,18 +19,18 @@ public abstract class NoirTestCase
 protected NoirTestCase()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Asserts`
 <!-- tc:scope private -->
-<!-- tc:return_type NoirAssertions ../../Noir/Testing/NoirAssertions.html -->
+<!-- tc:return_type NoirAssertions /noir/reference//noir/reference/Noir/Testing/NoirAssertions/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public readonly NoirAssertions Asserts;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Setup()`
 <!-- tc:scope public -->

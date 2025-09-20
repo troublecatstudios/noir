@@ -1,18 +1,19 @@
 # ObjectPoolSystem
 
 <!-- tc:namespace Noir.Pooling -->
+
 <!-- tc:assembly Noir.dll -->
 
-Provides the ability to create, and manage the lifetime of a [ObjectPool](../../Noir/Pooling/ObjectPool.html).
+Provides the ability to create, and manage the lifetime of a [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/).
 
 
 ```csharp
 public class ObjectPoolSystem : NoirBehaviour
 ```
 
-**Implements:** _[NoirBehaviour](../../Noir/NoirBehaviour.html)_
+**Implements:** _[NoirBehaviour](/noir/reference//noir/reference/Noir/NoirBehaviour/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public class ObjectPoolSystem : NoirBehaviour
 public ObjectPoolSystem()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `ActiveItems`
 <!-- tc:scope public -->
@@ -89,6 +90,33 @@ public Component collider2D { get; }
 public Component constantForce { get; }
 ```
 
+### `destroyCancellationToken`
+<!-- tc:scope public -->
+<!-- tc:return_type CancellationToken https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public CancellationToken destroyCancellationToken { get; }
+```
+
+### `didAwake`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool didAwake { get; }
+```
+
+### `didStart`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool didStart { get; }
+```
+
 ### `enabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -109,7 +137,7 @@ public GameObject gameObject { get; }
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type GameTime ../../Noir/GameTime.html -->
+<!-- tc:return_type GameTime /noir/reference//noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -165,7 +193,7 @@ public Component light { get; }
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type BehaviourLogger ../../Noir/Logging/BehaviourLogger.html -->
+<!-- tc:return_type BehaviourLogger /noir/reference//noir/reference/Noir/Logging/BehaviourLogger/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -237,7 +265,7 @@ public bool runInEditMode { get; public set; }
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type ComponentServiceLocator ../../Noir/DependencyInjection/ComponentServiceLocator.html -->
+<!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -293,11 +321,11 @@ Gets the pool utilization.
 public float Utilization { get; }
 ```
 
-## Events
+## ⚡ Events
 
 ### `OnPoolItemCreated`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemCreatedEvent ../../Noir/Pooling/OnPoolItemCreatedEvent.html -->
+<!-- tc:return_type OnPoolItemCreatedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemCreatedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -306,7 +334,7 @@ public event OnPoolItemCreatedEvent OnPoolItemCreated;
 
 ### `OnPoolItemRerieved`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemRetrievedEvent ../../Noir/Pooling/OnPoolItemRetrievedEvent.html -->
+<!-- tc:return_type OnPoolItemRetrievedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -315,7 +343,7 @@ public event OnPoolItemRetrievedEvent OnPoolItemRerieved;
 
 ### `OnPoolItemResetToDefaults`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemResetToDefaultsEvent ../../Noir/Pooling/OnPoolItemResetToDefaultsEvent.html -->
+<!-- tc:return_type OnPoolItemResetToDefaultsEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemResetToDefaultsEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -324,20 +352,20 @@ public event OnPoolItemResetToDefaultsEvent OnPoolItemResetToDefaults;
 
 ### `OnPoolItemReturned`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemReturnedEvent ../../Noir/Pooling/OnPoolItemReturnedEvent.html -->
+<!-- tc:return_type OnPoolItemReturnedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemReturnedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event OnPoolItemReturnedEvent OnPoolItemReturned;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CreateObjectPool(ObjectPoolItemSystem, uint)`
 <!-- tc:scope private -->
-<!-- tc:return_type ObjectPool ../../Noir/Pooling/ObjectPool.html -->
+<!-- tc:return_type ObjectPool /noir/reference//noir/reference/Noir/Pooling/ObjectPool/ -->
 <!-- tc:version 1.0.0 -->
-A [ObjectPool](../../Noir/Pooling/ObjectPool.html).
+A [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/).
 
 
 ```csharp
@@ -345,7 +373,7 @@ protected virtual ObjectPool CreateObjectPool(ObjectPoolItemSystem prefab, uint 
 ```
 
 **Parameters** <br>
-`prefab` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`prefab` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
  <br>
 `capacity` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
@@ -359,7 +387,7 @@ protected void DispatchEvent(T eventInfo)
 ```
 
 **Parameters** <br>
-`eventInfo` [T](../../) <br>
+`eventInfo` [T](/noir/reference//noir/reference/) <br>
 
 ### `RegisterListener()`
 <!-- tc:scope private -->
@@ -388,6 +416,18 @@ public bool CompareTag(string tag)
 
 **Parameters** <br>
 `tag` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+### `CompareTag(TagHandle)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool CompareTag(TagHandle tag)
+```
+
+**Parameters** <br>
+`tag` [TagHandle](https://docs.unity3d.com/ScriptReference/TagHandle.html) <br>
 
 ### `IsInvoking()`
 <!-- tc:scope public -->
@@ -433,7 +473,7 @@ public bool TryGetComponent(T& component)
 ```
 
 **Parameters** <br>
-`component` [T&](../../) <br>
+`component` [T&](/noir/reference//noir/reference/) <br>
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
@@ -629,6 +669,15 @@ public Coroutine StartCoroutine(string methodName)
 public IEnumerable<T> GetActiveItems()
 ```
 
+### `GetComponentIndex()`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public int GetComponentIndex()
+```
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -640,7 +689,7 @@ public int GetInstanceID()
 
 ### `GetComponent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -649,7 +698,7 @@ public T GetComponent()
 
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -658,7 +707,7 @@ public T GetComponentInChildren()
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -670,7 +719,7 @@ public T GetComponentInChildren(bool includeInactive)
 
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -679,7 +728,7 @@ public T GetComponentInParent()
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -691,7 +740,7 @@ public T GetComponentInParent(bool includeInactive)
 
 ### `GetComponents()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -700,7 +749,7 @@ public T[] GetComponents()
 
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -709,7 +758,7 @@ public T[] GetComponentsInChildren()
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -721,7 +770,7 @@ public T[] GetComponentsInChildren(bool includeInactive)
 
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -730,7 +779,7 @@ public T[] GetComponentsInParent()
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -762,7 +811,7 @@ public virtual bool TryGet(ObjectPoolItemSystem& item)
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem&](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem&](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
@@ -791,7 +840,7 @@ public virtual void Return(ObjectPoolItemSystem item)
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 
 ### `ReturnAll()`
 <!-- tc:scope public -->

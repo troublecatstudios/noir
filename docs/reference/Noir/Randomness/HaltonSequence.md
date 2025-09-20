@@ -1,6 +1,7 @@
 # HaltonSequence
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 Helper methods for generating numbers/points based on the Halton Sequence algorithm.
@@ -10,7 +11,7 @@ Helper methods for generating numbers/points based on the Halton Sequence algori
 public static class HaltonSequence
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetIndex(int, int)`
 <!-- tc:scope public -->

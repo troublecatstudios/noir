@@ -1,6 +1,7 @@
 # OnPoolItemCreatedEvent
 
 <!-- tc:namespace Noir.Pooling -->
+
 <!-- tc:assembly Noir.dll -->
 
 Occurs when an item is first created within the pool
@@ -12,7 +13,7 @@ public sealed class OnPoolItemCreatedEvent : MulticastDelegate, ICloneable, ISer
 
 **Implements:** _[MulticastDelegate](https://learn.microsoft.com/en-us/dotnet/api/System.MulticastDelegate?view=net-7.0), [ICloneable](https://learn.microsoft.com/en-us/dotnet/api/System.ICloneable?view=net-7.0), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(Object, IntPtr)`
 <!-- tc:scope public -->
@@ -26,7 +27,7 @@ public OnPoolItemCreatedEvent(Object object, IntPtr method)
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `method` [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/System.IntPtr?view=net-7.0) <br>
 
-## Properties
+## 📦 Properties
 
 ### `Method`
 <!-- tc:scope public -->
@@ -46,7 +47,7 @@ public MethodInfo Method { get; }
 public Object Target { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CombineImpl(Delegate)`
 <!-- tc:scope private -->
@@ -136,7 +137,7 @@ public virtual IAsyncResult BeginInvoke(ObjectPoolItemSystem objectPoolItem, Asy
 ```
 
 **Parameters** <br>
-`objectPoolItem` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`objectPoolItem` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 `callback` [AsyncCallback](https://learn.microsoft.com/en-us/dotnet/api/System.AsyncCallback?view=net-7.0) <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
@@ -190,5 +191,5 @@ public virtual void Invoke(ObjectPoolItemSystem objectPoolItem)
 ```
 
 **Parameters** <br>
-`objectPoolItem` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`objectPoolItem` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 

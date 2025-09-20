@@ -1,6 +1,7 @@
 # VectorAssertions
 
 <!-- tc:namespace Noir.Testing.Assertions -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class VectorAssertions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsZero(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
@@ -19,6 +20,6 @@ public void IsZero(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

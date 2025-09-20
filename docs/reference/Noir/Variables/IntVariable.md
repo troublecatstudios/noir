@@ -1,6 +1,7 @@
 # IntVariable
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class IntVariable : DataVariable<T>, IDataVariable, IEquatable<T>, IEquatable<T>, IEquatable<T>, IEquatable<T>, IEquatable<T>
 ```
 
-**Implements:** _[DataVariable\<T\>](../../Noir/Variables/DataVariable-1.html), [IDataVariable](../../Noir/Variables/IDataVariable.html), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
+**Implements:** _[DataVariable\<T\>](/noir/reference//noir/reference/Noir/Variables/DataVariable-1/), [IDataVariable](/noir/reference//noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class IntVariable : DataVariable<T>, IDataVariable, IEquatable<T>, IEquat
 public IntVariable()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Description`
 <!-- tc:scope public -->
@@ -85,11 +86,11 @@ public string Name { get; }
 public virtual int Value { get; public set; }
 ```
 
-## Events
+## ⚡ Events
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange ../../Noir/Variables/OnAfterChange.html -->
+<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -98,7 +99,7 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange ../../Noir/Variables/OnBeforeChange.html -->
+<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -107,14 +108,14 @@ public event OnBeforeChange OnBeforeVariableChanged;
 
 ### `OnDataVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type DataVariableChanged\<T\> ../../Noir/Variables/DataVariableChanged-1.html -->
+<!-- tc:return_type DataVariableChanged\<T\> /noir/reference//noir/reference/Noir/Variables/DataVariableChanged-1/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event DataVariableChanged<T> OnDataVariableChanged;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `OnAfterSave(Object, Object)`
 <!-- tc:scope private -->

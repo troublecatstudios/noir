@@ -1,6 +1,7 @@
 # NoirDataLibrary
 
 <!-- tc:namespace Noir.DataObjects -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class NoirDataLibrary : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class NoirDataLibrary : ScriptableObject
 public NoirDataLibrary()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -33,7 +34,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirDataLibrary ../../Noir/DataObjects/NoirDataLibrary.html -->
+<!-- tc:return_type NoirDataLibrary /noir/reference//noir/reference/Noir/DataObjects/NoirDataLibrary/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -67,7 +68,7 @@ public List<T> SoundEffects;
 public List<T> Variables;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
@@ -80,7 +81,7 @@ public int GetInstanceID()
 
 ### `GetSoundEffectByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type SoundEffect ../../Noir/Audio/SoundEffect.html -->
+<!-- tc:return_type SoundEffect /noir/reference//noir/reference/Noir/Audio/SoundEffect/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -92,7 +93,7 @@ public SoundEffect GetSoundEffectByName(string name)
 
 ### `GetVariableByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 Gets a variable by name.
 

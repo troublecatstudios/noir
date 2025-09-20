@@ -1,6 +1,7 @@
 # UnityConverterInitializer
 
 <!-- tc:namespace Noir.Serialization.Json -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,11 +9,11 @@
 public static class UnityConverterInitializer
 ```
 
-## Properties
+## 📦 Properties
 
 ### `defaultUnityConvertersSettings`
 <!-- tc:scope public -->
-<!-- tc:return_type JsonSerializerSettings _na_ -->
+<!-- tc:return_type JsonSerializerSettings /noir/reference//noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

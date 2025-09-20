@@ -1,6 +1,7 @@
 # UnityRectExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class UnityRectExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetRandomPositionInside(Rect, Vector2)`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # Collections
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,11 +9,11 @@
 public static class Collections
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Sort(T[], int)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] _na_ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -20,6 +21,6 @@ public T[] Sort(T[] array, int length)
 ```
 
 **Parameters** <br>
-`array` [T[]](../) <br>
+`array` [T[]](/noir/reference/) <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 

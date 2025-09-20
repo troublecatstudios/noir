@@ -1,6 +1,7 @@
 # PoissonPointSet
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PoissonPointSet
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class PoissonPointSet
 public PoissonPointSet()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Points`
 <!-- tc:scope public -->

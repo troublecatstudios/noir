@@ -1,6 +1,7 @@
 # GuidExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class GuidExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToInt(Guid)`
 <!-- tc:scope public -->

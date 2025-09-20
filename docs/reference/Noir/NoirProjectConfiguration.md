@@ -1,6 +1,7 @@
 # NoirProjectConfiguration
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class NoirProjectConfiguration : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class NoirProjectConfiguration : ScriptableObject
 public NoirProjectConfiguration()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `DefaultAudioMixerGroup`
 <!-- tc:scope public -->
@@ -33,7 +34,7 @@ public AudioMixerGroup DefaultAudioMixerGroup { get; }
 
 ### `GameManagerPrefab`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirGameManager ../Noir/NoirGameManager.html -->
+<!-- tc:return_type NoirGameManager /noir/reference/Noir/NoirGameManager/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -51,7 +52,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirProjectConfiguration ../Noir/NoirProjectConfiguration.html -->
+<!-- tc:return_type NoirProjectConfiguration /noir/reference/Noir/NoirProjectConfiguration/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -103,7 +104,7 @@ public int LockedFrameRate { get; }
 public string name { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CheckFirstTimeSetupComplete()`
 <!-- tc:scope public -->

@@ -1,6 +1,7 @@
 # Vector2Extensions
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class Vector2Extensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Random(Vector2)`
 <!-- tc:scope public -->

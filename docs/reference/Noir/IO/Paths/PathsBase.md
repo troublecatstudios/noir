@@ -1,6 +1,7 @@
 # PathsBase
 
 <!-- tc:namespace Noir.IO.Paths -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract class PathsBase
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -18,7 +19,7 @@ public abstract class PathsBase
 protected PathsBase()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `AppendDirectory(string, string)`
 <!-- tc:scope private -->

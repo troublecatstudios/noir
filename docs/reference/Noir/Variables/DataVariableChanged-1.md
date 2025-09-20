@@ -1,6 +1,7 @@
 # DataVariableChanged\<T\>
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public sealed class DataVariableChanged<T> : MulticastDelegate, ICloneable, ISer
 
 **Implements:** _[MulticastDelegate](https://learn.microsoft.com/en-us/dotnet/api/System.MulticastDelegate?view=net-7.0), [ICloneable](https://learn.microsoft.com/en-us/dotnet/api/System.ICloneable?view=net-7.0), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(Object, IntPtr)`
 <!-- tc:scope public -->
@@ -24,7 +25,7 @@ public DataVariableChanged<T>(Object object, IntPtr method)
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `method` [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/System.IntPtr?view=net-7.0) <br>
 
-## Properties
+## 📦 Properties
 
 ### `Method`
 <!-- tc:scope public -->
@@ -44,7 +45,7 @@ public MethodInfo Method { get; }
 public Object Target { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `CombineImpl(Delegate)`
 <!-- tc:scope private -->
@@ -134,8 +135,8 @@ public virtual IAsyncResult BeginInvoke(T oldValue, T newValue, AsyncCallback ca
 ```
 
 **Parameters** <br>
-`oldValue` [T](../../) <br>
-`newValue` [T](../../) <br>
+`oldValue` [T](/noir/reference//noir/reference/) <br>
+`newValue` [T](/noir/reference//noir/reference/) <br>
 `callback` [AsyncCallback](https://learn.microsoft.com/en-us/dotnet/api/System.AsyncCallback?view=net-7.0) <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
@@ -189,6 +190,6 @@ public virtual void Invoke(T oldValue, T newValue)
 ```
 
 **Parameters** <br>
-`oldValue` [T](../../) <br>
-`newValue` [T](../../) <br>
+`oldValue` [T](/noir/reference//noir/reference/) <br>
+`newValue` [T](/noir/reference//noir/reference/) <br>
 

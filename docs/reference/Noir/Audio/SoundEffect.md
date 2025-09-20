@@ -1,6 +1,7 @@
 # SoundEffect
 
 <!-- tc:namespace Noir.Audio -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class SoundEffect : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class SoundEffect : ScriptableObject
 public SoundEffect()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `AudioClips`
 <!-- tc:scope private -->
@@ -123,7 +124,7 @@ public float SpatialBlend { get; }
 
 ### `Style`
 <!-- tc:scope private -->
-<!-- tc:return_type SoundEffectPlayStyle ../../Noir/Audio/SoundEffectPlayStyle.html -->
+<!-- tc:return_type SoundEffectPlayStyle /noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -139,7 +140,7 @@ public SoundEffectPlayStyle Style;
 public float VolumeScale { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetClip()`
 <!-- tc:scope public -->
@@ -198,7 +199,7 @@ public void Play(SoundEffect effect, AudioSource source, T? volumeScale, bool in
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](../../Noir/Audio/SoundEffect.html) <br>
+`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
 `volumeScale` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `interrupt` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>

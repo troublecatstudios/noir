@@ -1,6 +1,7 @@
 # PoissonBags
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class PoissonBags
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class PoissonBags
 public PoissonBags()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `ActivePoints`
 <!-- tc:scope private -->

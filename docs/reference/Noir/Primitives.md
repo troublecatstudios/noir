@@ -1,6 +1,7 @@
 # Primitives
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class Primitives
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `RectFromSane3DValues(Vector3, Vector3)`
 <!-- tc:scope public -->

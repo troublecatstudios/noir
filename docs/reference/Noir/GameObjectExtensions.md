@@ -1,6 +1,7 @@
 # GameObjectExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class GameObjectExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetGameObjectHierarchy(GameObject)`
 <!-- tc:scope public -->

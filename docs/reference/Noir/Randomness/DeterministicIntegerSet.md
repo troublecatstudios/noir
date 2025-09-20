@@ -1,6 +1,7 @@
 # DeterministicIntegerSet
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class DeterministicIntegerSet
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(uint, Int32[])`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public DeterministicIntegerSet(uint seed, Int32[] numbers)
 `seed` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
 `numbers` [int[]](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Next()`
 <!-- tc:scope public -->

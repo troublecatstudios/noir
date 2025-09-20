@@ -1,6 +1,7 @@
 # Noise
 
 <!-- tc:namespace Noir.Audio -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class Noise
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `DecibelToLinear(float)`
 <!-- tc:scope public -->

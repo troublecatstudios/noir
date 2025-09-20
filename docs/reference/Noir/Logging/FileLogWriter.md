@@ -1,6 +1,7 @@
 # FileLogWriter
 
 <!-- tc:namespace Noir.Logging -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class FileLogWriter : INoirLogger
 ```
 
-**Implements:** _[INoirLogger](../../Noir/Logging/INoirLogger.html)_
+**Implements:** _[INoirLogger](/noir/reference//noir/reference/Noir/Logging/INoirLogger/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(IPlatformPaths)`
 <!-- tc:scope public -->
@@ -21,9 +22,9 @@ public FileLogWriter(IPlatformPaths paths)
 ```
 
 **Parameters** <br>
-`paths` [IPlatformPaths](../../Noir/IO/Paths/IPlatformPaths.html) <br>
+`paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -181,7 +182,7 @@ public virtual void WriteLog(string message, LogLevel level, Object context, str
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

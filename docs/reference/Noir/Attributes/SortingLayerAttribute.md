@@ -1,6 +1,7 @@
 # SortingLayerAttribute
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public class SortingLayerAttribute : PropertyAttribute
 
 **Implements:** _[PropertyAttribute](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,16 @@ public class SortingLayerAttribute : PropertyAttribute
 public SortingLayerAttribute()
 ```
 
-## Properties
+## 📦 Properties
+
+### `applyToCollection`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool applyToCollection { get; }
+```
 
 ### `order`
 <!-- tc:scope public -->

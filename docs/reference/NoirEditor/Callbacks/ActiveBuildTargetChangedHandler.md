@@ -1,6 +1,7 @@
 # ActiveBuildTargetChangedHandler
 
 <!-- tc:namespace NoirEditor.Callbacks -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -10,7 +11,7 @@ public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged, IOrder
 
 **Implements:** _[IActiveBuildTargetChanged](https://docs.unity3d.com/ScriptReference/Build.IActiveBuildTargetChanged.html), [IOrderedCallback](https://docs.unity3d.com/ScriptReference/Build.IOrderedCallback.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged, IOrder
 public ActiveBuildTargetChangedHandler()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `callbackOrder`
 <!-- tc:scope public -->
@@ -31,7 +32,7 @@ public ActiveBuildTargetChangedHandler()
 public virtual int callbackOrder { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `OnActiveBuildTargetChanged(BuildTarget, BuildTarget)`
 <!-- tc:scope public -->

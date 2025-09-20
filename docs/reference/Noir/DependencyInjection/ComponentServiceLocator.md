@@ -1,6 +1,7 @@
 # ComponentServiceLocator
 
 <!-- tc:namespace Noir.DependencyInjection -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class ComponentServiceLocator
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(GameObject)`
 <!-- tc:scope public -->
@@ -21,7 +22,7 @@ public ComponentServiceLocator(GameObject container)
 **Parameters** <br>
 `container` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `TryGetService(out T&)`
 <!-- tc:scope public -->
@@ -33,11 +34,11 @@ public bool TryGetService(T& instance)
 ```
 
 **Parameters** <br>
-`instance` [T&](../../) <br>
+`instance` [T&](/noir/reference//noir/reference/) <br>
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

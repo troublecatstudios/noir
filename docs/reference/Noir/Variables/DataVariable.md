@@ -1,6 +1,7 @@
 # DataVariable
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -10,7 +11,7 @@ public abstract class DataVariable : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -20,7 +21,7 @@ public abstract class DataVariable : ScriptableObject
 protected DataVariable()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Description`
 <!-- tc:scope public -->
@@ -84,11 +85,11 @@ The variable name.
 public string Name { get; }
 ```
 
-## Events
+## ⚡ Events
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange ../../Noir/Variables/OnAfterChange.html -->
+<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -97,14 +98,14 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange ../../Noir/Variables/OnBeforeChange.html -->
+<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event OnBeforeChange OnBeforeVariableChanged;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `OnAfterSave(Object, Object)`
 <!-- tc:scope private -->

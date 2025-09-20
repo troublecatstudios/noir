@@ -1,6 +1,7 @@
 # CodeGenTask
 
 <!-- tc:namespace NoirEditor.CodeGen -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public class CodeGenTask
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class CodeGenTask
 public CodeGenTask()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `CodeClassName`
 <!-- tc:scope public -->

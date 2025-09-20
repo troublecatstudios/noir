@@ -1,6 +1,7 @@
 # EnvironmentVariablePaths
 
 <!-- tc:namespace Noir.IO.Paths -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class EnvironmentVariablePaths : IPlatformPaths
 ```
 
-**Implements:** _[IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html)_
+**Implements:** _[IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor(IPlatformPaths, AbstractEnvironment)`
 <!-- tc:scope public -->
@@ -21,10 +22,10 @@ public EnvironmentVariablePaths(IPlatformPaths fallback, AbstractEnvironment env
 ```
 
 **Parameters** <br>
-`fallback` [IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html) <br>
-`environment` [AbstractEnvironment](../../../Noir/Abstractions/AbstractEnvironment.html) <br>
+`fallback` [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
+`environment` [AbstractEnvironment](/noir/reference//noir/reference//noir/reference/Noir/Abstractions/AbstractEnvironment/) <br>
 
-## Properties
+## 📦 Properties
 
 ### `ConfigurationDirectory`
 <!-- tc:scope public -->

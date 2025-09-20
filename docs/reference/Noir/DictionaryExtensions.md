@@ -1,6 +1,7 @@
 # DictionaryExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class DictionaryExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Upsert(Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
@@ -32,8 +33,8 @@ public void Upsert(Dictionary<TKey, TValue> dict, T key, K value)
 
 **Parameters** <br>
 `dict` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
-`key` [T](../) <br>
-`value` [K](../) <br>
+`key` [T](/noir/reference/) <br>
+`value` [K](/noir/reference/) <br>
 
 ### `Upsert(Dictionary<TKey, TValue>, IDictionary<TKey, TValue>)`
 <!-- tc:scope public -->

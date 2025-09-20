@@ -1,6 +1,7 @@
 # NoirFile
 
 <!-- tc:namespace Noir.IO -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class NoirFile
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class NoirFile
 public NoirFile()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Write(string, string)`
 <!-- tc:scope public -->

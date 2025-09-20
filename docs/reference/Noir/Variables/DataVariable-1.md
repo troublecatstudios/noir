@@ -1,6 +1,7 @@
 # DataVariable\<T\>
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class DataVariable<T> : DataVariable, IDataVariable, IEquatable<T>
 ```
 
-**Implements:** _[DataVariable](../../Noir/Variables/DataVariable.html), [IDataVariable](../../Noir/Variables/IDataVariable.html), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
+**Implements:** _[DataVariable](/noir/reference//noir/reference/Noir/Variables/DataVariable/), [IDataVariable](/noir/reference//noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class DataVariable<T> : DataVariable, IDataVariable, IEquatable<T>
 public DataVariable<T>()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Description`
 <!-- tc:scope public -->
@@ -78,7 +79,7 @@ public string Name { get; }
 
 ### `Value`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 The value for the current variable.
 
@@ -87,11 +88,11 @@ The value for the current variable.
 public virtual T Value { get; public set; }
 ```
 
-## Events
+## ⚡ Events
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange ../../Noir/Variables/OnAfterChange.html -->
+<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -100,7 +101,7 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange ../../Noir/Variables/OnBeforeChange.html -->
+<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -109,14 +110,14 @@ public event OnBeforeChange OnBeforeVariableChanged;
 
 ### `OnDataVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type DataVariableChanged\<T\> ../../Noir/Variables/DataVariableChanged-1.html -->
+<!-- tc:return_type DataVariableChanged\<T\> /noir/reference//noir/reference/Noir/Variables/DataVariableChanged-1/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event DataVariableChanged<T> OnDataVariableChanged;
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `OnAfterSave(Object, Object)`
 <!-- tc:scope private -->

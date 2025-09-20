@@ -1,6 +1,7 @@
 # SerializedObjectExtensions
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class SerializedObjectExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `TryFindProperty(SerializedObject, string, out SerializedProperty&)`
 <!-- tc:scope public -->

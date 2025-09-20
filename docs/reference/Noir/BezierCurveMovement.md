@@ -1,6 +1,7 @@
 # BezierCurveMovement
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class BezierCurveMovement
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,11 +19,11 @@ public class BezierCurveMovement
 public BezierCurveMovement()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Curve`
 <!-- tc:scope public -->
-<!-- tc:return_type BezierCurve ../Noir/BezierCurve.html -->
+<!-- tc:return_type BezierCurve /noir/reference/Noir/BezierCurve/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

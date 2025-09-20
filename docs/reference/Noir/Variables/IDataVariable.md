@@ -1,6 +1,7 @@
 # IDataVariable
 
 <!-- tc:namespace Noir.Variables -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public abstract IDataVariable
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToObject()`
 <!-- tc:scope public -->

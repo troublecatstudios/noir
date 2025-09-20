@@ -1,6 +1,7 @@
 # NoirEnum
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class NoirEnum
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `AllValuesFor()`
 <!-- tc:scope public -->

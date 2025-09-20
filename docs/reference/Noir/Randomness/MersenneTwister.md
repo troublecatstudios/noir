@@ -1,6 +1,7 @@
 # MersenneTwister
 
 <!-- tc:namespace Noir.Randomness -->
+
 <!-- tc:assembly Noir.dll -->
 
 Pseudo-number generator based on the Mersenne Twister algorithm.
@@ -10,7 +11,7 @@ Pseudo-number generator based on the Mersenne Twister algorithm.
 public class MersenneTwister
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -36,7 +37,7 @@ public MersenneTwister(uint seed)
 `seed` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `NextDouble()`
 <!-- tc:scope public -->

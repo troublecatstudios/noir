@@ -1,6 +1,7 @@
 # CodeGenReport
 
 <!-- tc:namespace NoirEditor.CodeGen -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public class CodeGenReport
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class CodeGenReport
 public CodeGenReport()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `GeneratedFiles`
 <!-- tc:scope public -->
@@ -47,7 +48,7 @@ public DateTime StartTime { get; public set; }
 public TimeSpan TimeTaken { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ToString()`
 <!-- tc:scope public -->

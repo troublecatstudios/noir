@@ -1,6 +1,7 @@
 # GameTime
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class GameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](../Noir/Abstractions/IGameTime.html)_
+**Implements:** _[IGameTime](/noir/reference/Noir/Abstractions/IGameTime/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -20,7 +21,7 @@ public class GameTime : IGameTime
 public GameTime()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `deltaTime`
 <!-- tc:scope public -->
@@ -123,7 +124,7 @@ public virtual int frameCount { get; }
 
 ### `Instance`
 <!-- tc:scope private -->
-<!-- tc:return_type GameTime ../Noir/GameTime.html -->
+<!-- tc:return_type GameTime /noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

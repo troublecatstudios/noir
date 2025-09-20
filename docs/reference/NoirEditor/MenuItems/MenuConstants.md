@@ -1,6 +1,7 @@
 # MenuConstants
 
 <!-- tc:namespace NoirEditor.MenuItems -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class MenuConstants
 ```
 
-## Properties
+## 📦 Properties
 
 ### `BASE_MENU_PATH_TOOLS`
 <!-- tc:scope private -->

@@ -1,6 +1,7 @@
 # UnityScene
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public class UnityScene
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -18,7 +19,7 @@ public class UnityScene
 public UnityScene()
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Find(List<T>)`
 <!-- tc:scope public -->

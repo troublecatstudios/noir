@@ -1,6 +1,7 @@
 # TrafficLightGUI
 
 <!-- tc:namespace NoirEditor.Editors -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class TrafficLightGUI
 ```
 
-## Properties
+## 📦 Properties
 
 ### `DoubleLightSize`
 <!-- tc:scope public -->
@@ -46,7 +47,7 @@ public static Vector2 SingleLightSize { get; }
 public static Vector2 TripleLightSize { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetTrafficLightSize(TrafficLightSize)`
 <!-- tc:scope public -->
@@ -58,7 +59,7 @@ public Vector2 GetTrafficLightSize(TrafficLightSize size)
 ```
 
 **Parameters** <br>
-`size` [TrafficLightSize](../../NoirEditor/Editors/TrafficLightSize.html) <br>
+`size` [TrafficLightSize](/noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/) <br>
 
 ### `DrawTrafficLightDouble(Rect, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -70,8 +71,8 @@ public void DrawTrafficLightDouble(Rect position, TrafficLightColor typeA, Traff
 
 **Parameters** <br>
 `position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 ### `DrawTrafficLightQuad(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -83,10 +84,10 @@ public void DrawTrafficLightQuad(Rect position, TrafficLightColor typeA, Traffic
 
 **Parameters** <br>
 `position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeC` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeD` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeD` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 ### `DrawTrafficLightSingle(Rect, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -98,7 +99,7 @@ public void DrawTrafficLightSingle(Rect position, TrafficLightColor type)
 
 **Parameters** <br>
 `position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
-`type` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`type` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 ### `DrawTrafficLightTriple(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -110,7 +111,7 @@ public void DrawTrafficLightTriple(Rect position, TrafficLightColor typeA, Traff
 
 **Parameters** <br>
 `position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeC` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`typeC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 

@@ -1,6 +1,7 @@
 # LogCompileTimes
 
 <!-- tc:namespace NoirEditor.Building -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 Logs the time taken to perform script compilations and domain reloads.
@@ -10,9 +11,9 @@ Logs the time taken to perform script compilations and domain reloads.
 public sealed class LogCompileTimes : EditorSingleton<T>
 ```
 
-**Implements:** _[EditorSingleton\<T\>](../../NoirEditor/EditorSingleton-1.html)_
+**Implements:** _[EditorSingleton\<T\>](/noir/reference//noir/reference/NoirEditor/EditorSingleton-1/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -22,7 +23,7 @@ public sealed class LogCompileTimes : EditorSingleton<T>
 public LogCompileTimes()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -42,7 +43,7 @@ public HideFlags hideFlags { get; public set; }
 public string name { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Awake()`
 <!-- tc:scope private -->

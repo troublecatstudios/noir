@@ -1,6 +1,7 @@
 # LoggerSingleton
 
 <!-- tc:namespace Noir.Logging -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,18 +9,18 @@
 public sealed class LoggerSingleton
 ```
 
-## Properties
+## 📦 Properties
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type LoggerSingleton ../../Noir/Logging/LoggerSingleton.html -->
+<!-- tc:return_type LoggerSingleton /noir/reference//noir/reference/Noir/Logging/LoggerSingleton/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static LoggerSingleton Instance { get; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -277,7 +278,7 @@ public void WriteLog(string message, LogLevel level, Object context, string subs
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

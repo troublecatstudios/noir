@@ -1,6 +1,7 @@
 # EditorSingleton\<T\>
 
 <!-- tc:namespace NoirEditor -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 ScriptableObject-based singleton for GUI-less editor plug-ins.
@@ -12,7 +13,7 @@ public abstract class EditorSingleton<T> : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -22,7 +23,7 @@ public abstract class EditorSingleton<T> : ScriptableObject
 protected EditorSingleton<T>()
 ```
 
-## Properties
+## 📦 Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -35,7 +36,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `instance`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -51,11 +52,11 @@ public static T instance { get; }
 public string name { get; public set; }
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `Initialize()`
 <!-- tc:scope private -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 Finds or creates the singleton instance and stores it in _instance.
 

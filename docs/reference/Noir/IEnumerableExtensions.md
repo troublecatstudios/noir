@@ -1,6 +1,7 @@
 # IEnumerableExtensions
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class IEnumerableExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `ContainsAny(IEnumerable<T>, string, StringComparison)`
 <!-- tc:scope public -->
@@ -54,7 +55,7 @@ public int IndexWhere(IEnumerable<T> source, Func<T, TResult> predicate)
 
 ### `Random(IEnumerable<T>)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -66,7 +67,7 @@ public T Random(IEnumerable<T> sequence)
 
 ### `RandomElementByWeight(IEnumerable<T>, Func<T, TResult>)`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

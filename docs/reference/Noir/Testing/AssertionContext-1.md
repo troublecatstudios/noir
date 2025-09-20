@@ -1,6 +1,7 @@
 # AssertionContext\<T\>
 
 <!-- tc:namespace Noir.Testing -->
+
 <!-- tc:assembly NoirEditor.dll -->
 
 
@@ -8,9 +9,9 @@
 public class AssertionContext<T> : IAssertionContext<T>
 ```
 
-**Implements:** _[IAssertionContext\<T\>](../../Noir/Testing/IAssertionContext-1.html)_
+**Implements:** _[IAssertionContext\<T\>](/noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -29,10 +30,10 @@ public AssertionContext<T>(T target, Object[] additionalContexts)
 ```
 
 **Parameters** <br>
-`target` [T](../../) <br>
+`target` [T](/noir/reference//noir/reference/) <br>
 `additionalContexts` [Object[]](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-## Properties
+## 📦 Properties
 
 ### `AdditionalContexts`
 <!-- tc:scope public -->
@@ -45,7 +46,7 @@ public virtual Object[] AdditionalContexts { get; internal set; }
 
 ### `Target`
 <!-- tc:scope public -->
-<!-- tc:return_type T _na_ -->
+<!-- tc:return_type T /noir/reference//noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

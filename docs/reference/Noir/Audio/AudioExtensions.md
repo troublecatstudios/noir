@@ -1,6 +1,7 @@
 # AudioExtensions
 
 <!-- tc:namespace Noir.Audio -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,7 +9,7 @@
 public static class AudioExtensions
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `IsAudioPaused(AudioSource)`
 <!-- tc:scope public -->

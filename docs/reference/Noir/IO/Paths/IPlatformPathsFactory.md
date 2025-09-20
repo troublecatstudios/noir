@@ -1,6 +1,7 @@
 # IPlatformPathsFactory
 
 <!-- tc:namespace Noir.IO.Paths -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,11 +9,11 @@
 public abstract IPlatformPathsFactory
 ```
 
-## Methods
+## ⛹️‍♀️ Methods
 
 ### `GetPlatformPaths()`
 <!-- tc:scope public -->
-<!-- tc:return_type IPlatformPaths ../../../Noir/IO/Paths/IPlatformPaths.html -->
+<!-- tc:return_type IPlatformPaths /noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

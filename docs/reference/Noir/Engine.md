@@ -1,6 +1,7 @@
 # Engine
 
 <!-- tc:namespace Noir -->
+
 <!-- tc:assembly Noir.dll -->
 
 Initializes core features of the Noir Library
@@ -10,7 +11,7 @@ Initializes core features of the Noir Library
 public sealed class Engine
 ```
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->

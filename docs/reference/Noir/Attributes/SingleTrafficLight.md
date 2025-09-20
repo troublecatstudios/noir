@@ -1,6 +1,7 @@
 # SingleTrafficLight
 
 <!-- tc:namespace Noir.Attributes -->
+
 <!-- tc:assembly Noir.dll -->
 
 
@@ -8,9 +9,9 @@
 public class SingleTrafficLight : TrafficLightAttribute
 ```
 
-**Implements:** _[TrafficLightAttribute](../../Noir/Attributes/TrafficLightAttribute.html)_
+**Implements:** _[TrafficLightAttribute](/noir/reference//noir/reference/Noir/Attributes/TrafficLightAttribute/)_
 
-## Constructors
+## 🛠 Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -29,9 +30,9 @@ public SingleTrafficLight(TrafficLightColor a)
 ```
 
 **Parameters** <br>
-`a` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`a` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
-## Properties
+## 📦 Properties
 
 ### `AlsoDrawDefault`
 <!-- tc:scope private -->
@@ -42,9 +43,18 @@ public SingleTrafficLight(TrafficLightColor a)
 public bool AlsoDrawDefault;
 ```
 
+### `applyToCollection`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public bool applyToCollection { get; }
+```
+
 ### `Colors`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightColor[] ../../Noir/Attributes/TrafficLightColor.html -->
+<!-- tc:return_type TrafficLightColor[] /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
