@@ -124,7 +124,7 @@ public float SpatialBlend { get; }
 
 ### `Style`
 <!-- tc:scope private -->
-<!-- tc:return_type SoundEffectPlayStyle /noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
+<!-- tc:return_type SoundEffectPlayStyle /noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -199,7 +199,7 @@ public void Play(SoundEffect effect, AudioSource source, T? volumeScale, bool in
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
+`effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
 `volumeScale` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `interrupt` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>

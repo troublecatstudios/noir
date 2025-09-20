@@ -9,7 +9,7 @@
 public class NoirSerializationException : JsonSerializationException, ISerializable
 ```
 
-**Implements:** _[JsonSerializationException](/noir/reference//noir/reference//noir/reference/), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
+**Implements:** _[JsonSerializationException](/noir/reference/), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
 ## 🛠 Constructors
 
@@ -126,7 +126,7 @@ public MethodBase TargetSite { get; }
 
 ### `CreateSerializationException(JsonReader, string, Exception)`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirSerializationException /noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/NoirSerializationException/ -->
+<!-- tc:return_type NoirSerializationException /noir/reference/Noir/Serialization/Json/NoirSerializationException/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -134,7 +134,7 @@ public NoirSerializationException CreateSerializationException(JsonReader reader
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `innerException` [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
 

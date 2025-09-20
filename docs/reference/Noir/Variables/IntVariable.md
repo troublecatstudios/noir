@@ -9,7 +9,7 @@
 public class IntVariable : DataVariable<T>, IDataVariable, IEquatable<T>, IEquatable<T>, IEquatable<T>, IEquatable<T>, IEquatable<T>
 ```
 
-**Implements:** _[DataVariable\<T\>](/noir/reference//noir/reference/Noir/Variables/DataVariable-1/), [IDataVariable](/noir/reference//noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
+**Implements:** _[DataVariable\<T\>](/noir/reference/Noir/Variables/DataVariable-1/), [IDataVariable](/noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
 ## 🛠 Constructors
 
@@ -90,7 +90,7 @@ public virtual int Value { get; public set; }
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
+<!-- tc:return_type OnAfterChange /noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -99,7 +99,7 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
+<!-- tc:return_type OnBeforeChange /noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -108,7 +108,7 @@ public event OnBeforeChange OnBeforeVariableChanged;
 
 ### `OnDataVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type DataVariableChanged\<T\> /noir/reference//noir/reference/Noir/Variables/DataVariableChanged-1/ -->
+<!-- tc:return_type DataVariableChanged\<T\> /noir/reference/Noir/Variables/DataVariableChanged-1/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

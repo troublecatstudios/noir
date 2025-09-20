@@ -22,7 +22,7 @@ public abstract virtual Object[] AdditionalContexts { get; }
 
 ### `Target`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

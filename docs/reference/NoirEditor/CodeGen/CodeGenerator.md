@@ -26,7 +26,7 @@ public CodeGenerator(string outputFolder)
 
 ### `Generate(bool, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type CodeGenReport /noir/reference//noir/reference/NoirEditor/CodeGen/CodeGenReport/ -->
+<!-- tc:return_type CodeGenReport /noir/reference/NoirEditor/CodeGen/CodeGenReport/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -46,7 +46,7 @@ public void AddTask(CodeGenTask task)
 ```
 
 **Parameters** <br>
-`task` [CodeGenTask](/noir/reference//noir/reference/NoirEditor/CodeGen/CodeGenTask/) <br>
+`task` [CodeGenTask](/noir/reference/NoirEditor/CodeGen/CodeGenTask/) <br>
 
 ### `AddTasks(IEnumerable<T>)`
 <!-- tc:scope public -->

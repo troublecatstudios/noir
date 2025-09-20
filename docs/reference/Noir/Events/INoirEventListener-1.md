@@ -22,5 +22,5 @@ public abstract void EventReceived(T eventInfo)
 ```
 
 **Parameters** <br>
-`eventInfo` [T](/noir/reference//noir/reference/) <br>
+`eventInfo` [T](/noir/reference/) <br>
 

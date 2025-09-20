@@ -15,7 +15,7 @@ sealed enum CellularReturnType : Enum, IComparable, ISpanFormattable, IFormattab
 
 ### `CellValue`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -24,7 +24,7 @@ public static const CellularReturnType CellValue;
 
 ### `Distance`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -33,7 +33,7 @@ public static const CellularReturnType Distance;
 
 ### `Distance2`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -42,7 +42,7 @@ public static const CellularReturnType Distance2;
 
 ### `Distance2Add`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -51,7 +51,7 @@ public static const CellularReturnType Distance2Add;
 
 ### `Distance2Div`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -60,7 +60,7 @@ public static const CellularReturnType Distance2Div;
 
 ### `Distance2Mul`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -69,7 +69,7 @@ public static const CellularReturnType Distance2Mul;
 
 ### `Distance2Sub`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

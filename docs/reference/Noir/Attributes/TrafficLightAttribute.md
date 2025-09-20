@@ -43,7 +43,7 @@ public bool applyToCollection { get; }
 
 ### `Colors`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightColor[] /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
+<!-- tc:return_type TrafficLightColor[] /noir/reference/Noir/Attributes/TrafficLightColor/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

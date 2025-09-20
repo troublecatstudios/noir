@@ -34,11 +34,11 @@ public bool TryGetService(T& instance)
 ```
 
 **Parameters** <br>
-`instance` [T&](/noir/reference//noir/reference/) <br>
+`instance` [T&](/noir/reference/) <br>
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

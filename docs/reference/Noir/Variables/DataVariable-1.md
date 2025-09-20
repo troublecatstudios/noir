@@ -9,7 +9,7 @@
 public class DataVariable<T> : DataVariable, IDataVariable, IEquatable<T>
 ```
 
-**Implements:** _[DataVariable](/noir/reference//noir/reference/Noir/Variables/DataVariable/), [IDataVariable](/noir/reference//noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
+**Implements:** _[DataVariable](/noir/reference/Noir/Variables/DataVariable/), [IDataVariable](/noir/reference/Noir/Variables/IDataVariable/), [IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
 ## 🛠 Constructors
 
@@ -79,7 +79,7 @@ public string Name { get; }
 
 ### `Value`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 The value for the current variable.
 
@@ -92,7 +92,7 @@ public virtual T Value { get; public set; }
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
+<!-- tc:return_type OnAfterChange /noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -101,7 +101,7 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
+<!-- tc:return_type OnBeforeChange /noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -110,7 +110,7 @@ public event OnBeforeChange OnBeforeVariableChanged;
 
 ### `OnDataVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type DataVariableChanged\<T\> /noir/reference//noir/reference/Noir/Variables/DataVariableChanged-1/ -->
+<!-- tc:return_type DataVariableChanged\<T\> /noir/reference/Noir/Variables/DataVariableChanged-1/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

@@ -24,13 +24,13 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 ```
 
 **Parameters** <br>
-`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/) <br>
+`callbackType` [EngineCallbackType](/noir/reference/Noir/Attributes/EngineCallbackType/) <br>
 
 ## 📦 Properties
 
 ### `CallbackType`
 <!-- tc:scope public -->
-<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
+<!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

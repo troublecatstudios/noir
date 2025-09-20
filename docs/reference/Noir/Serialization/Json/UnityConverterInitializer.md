@@ -13,7 +13,7 @@ public static class UnityConverterInitializer
 
 ### `defaultUnityConvertersSettings`
 <!-- tc:scope public -->
-<!-- tc:return_type JsonSerializerSettings /noir/reference//noir/reference//noir/reference/ -->
+<!-- tc:return_type JsonSerializerSettings /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

@@ -135,8 +135,8 @@ public virtual IAsyncResult BeginInvoke(T oldValue, T newValue, AsyncCallback ca
 ```
 
 **Parameters** <br>
-`oldValue` [T](/noir/reference//noir/reference/) <br>
-`newValue` [T](/noir/reference//noir/reference/) <br>
+`oldValue` [T](/noir/reference/) <br>
+`newValue` [T](/noir/reference/) <br>
 `callback` [AsyncCallback](https://learn.microsoft.com/en-us/dotnet/api/System.AsyncCallback?view=net-7.0) <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
@@ -190,6 +190,6 @@ public virtual void Invoke(T oldValue, T newValue)
 ```
 
 **Parameters** <br>
-`oldValue` [T](/noir/reference//noir/reference/) <br>
-`newValue` [T](/noir/reference//noir/reference/) <br>
+`oldValue` [T](/noir/reference/) <br>
+`newValue` [T](/noir/reference/) <br>
 

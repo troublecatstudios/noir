@@ -10,4 +10,4 @@ dotnet build ./NoirEditor.csproj
 
 cd $SCRIPT_DIR
 
-dotnet ./dotnet2md/dotnet2md.dll ./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../docs/ Noir NoirEditor
+dotnet ./dotnet2md/dotnet2md.dll ./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../docs/reference/ Noir NoirEditor

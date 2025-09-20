@@ -24,7 +24,7 @@ public GetComponentAttribute(GetComponentSearchArea searchArea)
 ```
 
 **Parameters** <br>
-`searchArea` [GetComponentSearchArea](/noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/) <br>
+`searchArea` [GetComponentSearchArea](/noir/reference/Noir/Attributes/GetComponentSearchArea/) <br>
 
 ## 📦 Properties
 
@@ -48,7 +48,7 @@ public int order { get; public set; }
 
 ### `SearchArea`
 <!-- tc:scope public -->
-<!-- tc:return_type GetComponentSearchArea /noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
+<!-- tc:return_type GetComponentSearchArea /noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

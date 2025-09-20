@@ -13,7 +13,7 @@ public static class GameObjectAssertions
 
 ### `HasComponent(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
-<!-- tc:return_type IAssertionContext\<T\> /noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/ -->
+<!-- tc:return_type IAssertionContext\<T\> /noir/reference/Noir/Testing/IAssertionContext-1/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -21,7 +21,7 @@ public IAssertionContext<T> HasComponent(IAssertionContext<T> context, string me
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsActive(IAssertionContext<T>, string)`
@@ -33,7 +33,7 @@ public void IsActive(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsEnabled(IAssertionContext<T>, string)`
@@ -45,7 +45,7 @@ public void IsEnabled(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsNotActive(IAssertionContext<T>, string)`
@@ -57,6 +57,6 @@ public void IsNotActive(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

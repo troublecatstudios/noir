@@ -15,7 +15,7 @@ public sealed enum TrafficLightSize : Enum, IComparable, ISpanFormattable, IForm
 
 ### `Double`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
+<!-- tc:return_type TrafficLightSize /noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -24,7 +24,7 @@ public static const TrafficLightSize Double;
 
 ### `Quad`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
+<!-- tc:return_type TrafficLightSize /noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -33,7 +33,7 @@ public static const TrafficLightSize Quad;
 
 ### `Single`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
+<!-- tc:return_type TrafficLightSize /noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -42,7 +42,7 @@ public static const TrafficLightSize Single;
 
 ### `Triple`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
+<!-- tc:return_type TrafficLightSize /noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

@@ -9,7 +9,7 @@
 public class Vector3Converter : PartialConverter<T>
 ```
 
-**Implements:** _[PartialConverter\<T\>](/noir/reference//noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/Converters/PartialConverter-1/)_
+**Implements:** _[PartialConverter\<T\>](/noir/reference/Noir/Serialization/Json/Converters/PartialConverter-1/)_
 
 ## 🛠 Constructors
 
@@ -54,8 +54,8 @@ protected virtual void ReadValue(Vector3& value, string name, JsonReader reader,
 **Parameters** <br>
 `value` [Vector3&](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 
 ### `WriteJsonProperties(JsonWriter, Vector3, JsonSerializer)`
 <!-- tc:scope private -->
@@ -66,9 +66,9 @@ protected virtual void WriteJsonProperties(JsonWriter writer, Vector3 value, Jso
 ```
 
 **Parameters** <br>
-`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`writer` [JsonWriter](/noir/reference/) <br>
 `value` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 
 ### `CanConvert(Type)`
 <!-- tc:scope public -->
@@ -92,10 +92,10 @@ public virtual Object ReadJson(JsonReader reader, Type objectType, Object existi
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `existingValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 
 ### `WriteJson(JsonWriter, Object, JsonSerializer)`
 <!-- tc:scope public -->
@@ -106,7 +106,7 @@ public virtual void WriteJson(JsonWriter writer, Object value, JsonSerializer se
 ```
 
 **Parameters** <br>
-`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`writer` [JsonWriter](/noir/reference/) <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 

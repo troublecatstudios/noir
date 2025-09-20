@@ -9,7 +9,7 @@
 public class AudioSourcePool : BehaviourPoolBase<T>
 ```
 
-**Implements:** _[BehaviourPoolBase\<T\>](/noir/reference//noir/reference/Noir/Pooling/BehaviourPoolBase-1/)_
+**Implements:** _[BehaviourPoolBase\<T\>](/noir/reference/Noir/Pooling/BehaviourPoolBase-1/)_
 
 ## 🛠 Constructors
 
@@ -133,7 +133,7 @@ public GameObject gameObject { get; }
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type GameTime /noir/reference//noir/reference/Noir/GameTime/ -->
+<!-- tc:return_type GameTime /noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -196,7 +196,7 @@ public Component light { get; }
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type BehaviourLogger /noir/reference//noir/reference/Noir/Logging/BehaviourLogger/ -->
+<!-- tc:return_type BehaviourLogger /noir/reference/Noir/Logging/BehaviourLogger/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -286,7 +286,7 @@ public bool runInEditMode { get; public set; }
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
+<!-- tc:return_type ComponentServiceLocator /noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -399,7 +399,7 @@ protected void DispatchEvent(T eventInfo)
 ```
 
 **Parameters** <br>
-`eventInfo` [T](/noir/reference//noir/reference/) <br>
+`eventInfo` [T](/noir/reference/) <br>
 
 ### `RegisterListener()`
 <!-- tc:scope private -->
@@ -485,7 +485,7 @@ public bool TryGetComponent(T& component)
 ```
 
 **Parameters** <br>
-`component` [T&](/noir/reference//noir/reference/) <br>
+`component` [T&](/noir/reference/) <br>
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
@@ -701,7 +701,7 @@ public int GetInstanceID()
 
 ### `GetComponent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -710,7 +710,7 @@ public T GetComponent()
 
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -719,7 +719,7 @@ public T GetComponentInChildren()
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -731,7 +731,7 @@ public T GetComponentInChildren(bool includeInactive)
 
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -740,7 +740,7 @@ public T GetComponentInParent()
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -752,7 +752,7 @@ public T GetComponentInParent(bool includeInactive)
 
 ### `GetComponents()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -761,7 +761,7 @@ public T[] GetComponents()
 
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -770,7 +770,7 @@ public T[] GetComponentsInChildren()
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -782,7 +782,7 @@ public T[] GetComponentsInChildren(bool includeInactive)
 
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -791,7 +791,7 @@ public T[] GetComponentsInParent()
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

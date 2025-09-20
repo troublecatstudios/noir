@@ -9,7 +9,7 @@
 public class FakeGameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/)_
+**Implements:** _[IGameTime](/noir/reference/Noir/Abstractions/IGameTime/)_
 
 ## 🛠 Constructors
 

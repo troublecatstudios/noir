@@ -34,7 +34,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirDataLibrary /noir/reference//noir/reference/Noir/DataObjects/NoirDataLibrary/ -->
+<!-- tc:return_type NoirDataLibrary /noir/reference/Noir/DataObjects/NoirDataLibrary/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -81,7 +81,7 @@ public int GetInstanceID()
 
 ### `GetSoundEffectByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type SoundEffect /noir/reference//noir/reference/Noir/Audio/SoundEffect/ -->
+<!-- tc:return_type SoundEffect /noir/reference/Noir/Audio/SoundEffect/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -93,7 +93,7 @@ public SoundEffect GetSoundEffectByName(string name)
 
 ### `GetVariableByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 Gets a variable by name.
 

@@ -13,7 +13,7 @@ public static class DictionaryAssertions
 
 ### `Entry(IAssertionContext<T>, TKey)`
 <!-- tc:scope public -->
-<!-- tc:return_type IAssertionContext\<T\> /noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/ -->
+<!-- tc:return_type IAssertionContext\<T\> /noir/reference/Noir/Testing/IAssertionContext-1/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -21,6 +21,6 @@ public IAssertionContext<T> Entry(IAssertionContext<T> context, TKey key)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`key` [TKey](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`key` [TKey](/noir/reference/) <br>
 

@@ -137,7 +137,7 @@ public virtual IAsyncResult BeginInvoke(ObjectPoolItemSystem objectPoolItem, Asy
 ```
 
 **Parameters** <br>
-`objectPoolItem` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
+`objectPoolItem` [ObjectPoolItemSystem](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 `callback` [AsyncCallback](https://learn.microsoft.com/en-us/dotnet/api/System.AsyncCallback?view=net-7.0) <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
@@ -191,5 +191,5 @@ public virtual void Invoke(ObjectPoolItemSystem objectPoolItem)
 ```
 
 **Parameters** <br>
-`objectPoolItem` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
+`objectPoolItem` [ObjectPoolItemSystem](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 

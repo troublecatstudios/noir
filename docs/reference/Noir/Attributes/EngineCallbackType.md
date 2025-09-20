@@ -17,7 +17,7 @@ public sealed enum EngineCallbackType : Enum, IComparable, ISpanFormattable, IFo
 
 ### `ConfigureServices`
 <!-- tc:scope private -->
-<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
+<!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 ConfigureServices is called after the engine configures its own internal dependency injection.
 
@@ -28,7 +28,7 @@ public static const EngineCallbackType ConfigureServices;
 
 ### `Initialize`
 <!-- tc:scope private -->
-<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
+<!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 Initialize occurs as soon as the engine starts up.
 
@@ -39,7 +39,7 @@ public static const EngineCallbackType Initialize;
 
 ### `Start`
 <!-- tc:scope private -->
-<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
+<!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 Start is called after all Noir library setup is finished.
 

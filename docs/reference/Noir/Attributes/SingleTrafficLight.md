@@ -9,7 +9,7 @@
 public class SingleTrafficLight : TrafficLightAttribute
 ```
 
-**Implements:** _[TrafficLightAttribute](/noir/reference//noir/reference/Noir/Attributes/TrafficLightAttribute/)_
+**Implements:** _[TrafficLightAttribute](/noir/reference/Noir/Attributes/TrafficLightAttribute/)_
 
 ## 🛠 Constructors
 
@@ -30,7 +30,7 @@ public SingleTrafficLight(TrafficLightColor a)
 ```
 
 **Parameters** <br>
-`a` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`a` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 ## 📦 Properties
 
@@ -54,7 +54,7 @@ public bool applyToCollection { get; }
 
 ### `Colors`
 <!-- tc:scope private -->
-<!-- tc:return_type TrafficLightColor[] /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
+<!-- tc:return_type TrafficLightColor[] /noir/reference/Noir/Attributes/TrafficLightColor/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

@@ -4,7 +4,7 @@
 
 <!-- tc:assembly Noir.dll -->
 
-Represents the current state of a [ObjectPoolSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolSystem/).
+Represents the current state of a [ObjectPoolSystem](/noir/reference/Noir/Pooling/ObjectPoolSystem/).
 
 
 ```csharp
@@ -17,7 +17,7 @@ public sealed enum ObjectPoolItemState : Enum, IComparable, ISpanFormattable, IF
 
 ### `Active`
 <!-- tc:scope private -->
-<!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
+<!-- tc:return_type ObjectPoolItemState /noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
 <!-- tc:version 1.0.0 -->
 The item is currently in use by the game
 
@@ -28,7 +28,7 @@ public static const ObjectPoolItemState Active;
 
 ### `Inactive`
 <!-- tc:scope private -->
-<!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
+<!-- tc:return_type ObjectPoolItemState /noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
 <!-- tc:version 1.0.0 -->
 The item is not currently in use
 
@@ -39,7 +39,7 @@ public static const ObjectPoolItemState Inactive;
 
 ### `Returning`
 <!-- tc:scope private -->
-<!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
+<!-- tc:return_type ObjectPoolItemState /noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
 <!-- tc:version 1.0.0 -->
 The item is currently being returned to the pool
 

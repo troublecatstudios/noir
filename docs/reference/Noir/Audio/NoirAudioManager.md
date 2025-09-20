@@ -9,7 +9,7 @@
 public class NoirAudioManager : NoirSingletonBehaviour<T>, INoirAudioManager, INoirEventListener<T>, IEventSystemHandler, INoirEventListener<T>
 ```
 
-**Implements:** _[NoirSingletonBehaviour\<T\>](/noir/reference//noir/reference/Noir/NoirSingletonBehaviour-1/), [INoirAudioManager](/noir/reference//noir/reference/Noir/Audio/INoirAudioManager/), [INoirEventListener\<T\>](/noir/reference//noir/reference/Noir/Events/INoirEventListener-1/), [IEventSystemHandler](https://docs.unity3d.com/ScriptReference/EventSystems.IEventSystemHandler.html), [INoirEventListener\<T\>](/noir/reference//noir/reference/Noir/Events/INoirEventListener-1/)_
+**Implements:** _[NoirSingletonBehaviour\<T\>](/noir/reference/Noir/NoirSingletonBehaviour-1/), [INoirAudioManager](/noir/reference/Noir/Audio/INoirAudioManager/), [INoirEventListener\<T\>](/noir/reference/Noir/Events/INoirEventListener-1/), [IEventSystemHandler](https://docs.unity3d.com/ScriptReference/EventSystems.IEventSystemHandler.html), [INoirEventListener\<T\>](/noir/reference/Noir/Events/INoirEventListener-1/)_
 
 ## 🛠 Constructors
 
@@ -124,7 +124,7 @@ public GameObject gameObject { get; }
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type GameTime /noir/reference//noir/reference/Noir/GameTime/ -->
+<!-- tc:return_type GameTime /noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -169,7 +169,7 @@ public Component light { get; }
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type BehaviourLogger /noir/reference//noir/reference/Noir/Logging/BehaviourLogger/ -->
+<!-- tc:return_type BehaviourLogger /noir/reference/Noir/Logging/BehaviourLogger/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -241,7 +241,7 @@ public bool runInEditMode { get; public set; }
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
+<!-- tc:return_type ComponentServiceLocator /noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -321,7 +321,7 @@ protected void DispatchEvent(T eventInfo)
 ```
 
 **Parameters** <br>
-`eventInfo` [T](/noir/reference//noir/reference/) <br>
+`eventInfo` [T](/noir/reference/) <br>
 
 ### `RegisterListener()`
 <!-- tc:scope private -->
@@ -407,7 +407,7 @@ public bool TryGetComponent(T& component)
 ```
 
 **Parameters** <br>
-`component` [T&](/noir/reference//noir/reference/) <br>
+`component` [T&](/noir/reference/) <br>
 
 ### `TryPlaySoundEffect(SoundEffect, Transform, float, float, float, bool, AudioMixerGroup)`
 <!-- tc:scope public -->
@@ -419,7 +419,7 @@ public bool TryPlaySoundEffect(SoundEffect effect, Transform sourceObject, float
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
+`effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
 `sourceObject` [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
@@ -650,7 +650,7 @@ public int GetInstanceID()
 
 ### `GetComponent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -659,7 +659,7 @@ public T GetComponent()
 
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -668,7 +668,7 @@ public T GetComponentInChildren()
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -680,7 +680,7 @@ public T GetComponentInChildren(bool includeInactive)
 
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -689,7 +689,7 @@ public T GetComponentInParent()
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -701,7 +701,7 @@ public T GetComponentInParent(bool includeInactive)
 
 ### `GetComponents()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -710,7 +710,7 @@ public T[] GetComponents()
 
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -719,7 +719,7 @@ public T[] GetComponentsInChildren()
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -731,7 +731,7 @@ public T[] GetComponentsInChildren(bool includeInactive)
 
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -740,7 +740,7 @@ public T[] GetComponentsInParent()
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -791,7 +791,7 @@ public virtual bool TryPlaySoundEffect(SoundEffect effect, T? origin, float dela
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
+`effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
 `origin` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

@@ -13,7 +13,7 @@ public static class JsonReaderExtensions
 
 ### `ReadViaSerializer(JsonReader, JsonSerializer)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -21,8 +21,8 @@ public T ReadViaSerializer(JsonReader reader, JsonSerializer serializer)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 
 ### `ReadAsFloat(JsonReader)`
 <!-- tc:scope public -->
@@ -34,7 +34,7 @@ public T? ReadAsFloat(JsonReader reader)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 
 ### `ReadAsInt8(JsonReader)`
 <!-- tc:scope public -->
@@ -46,5 +46,5 @@ public T? ReadAsInt8(JsonReader reader)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 

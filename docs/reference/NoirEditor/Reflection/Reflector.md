@@ -123,7 +123,7 @@ public bool SetValue(SerializedProperty property, T value)
 
 **Parameters** <br>
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
-`value` [T](/noir/reference//noir/reference/) <br>
+`value` [T](/noir/reference/) <br>
 
 ### `GetField(Object, string)`
 <!-- tc:scope public -->
@@ -356,7 +356,7 @@ public string ToLogString(Type type)
 
 ### `GetAttribute(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -368,7 +368,7 @@ public T GetAttribute(SerializedProperty property)
 
 ### `GetPropertyValue(Object, string, BindingFlags)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -382,7 +382,7 @@ public T GetPropertyValue(Object obj, string name, BindingFlags flags)
 
 ### `GetValue(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference//noir/reference/ -->
+<!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -394,7 +394,7 @@ public T GetValue(SerializedProperty property)
 
 ### `GetAttributes(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference//noir/reference/ -->
+<!-- tc:return_type T[] /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

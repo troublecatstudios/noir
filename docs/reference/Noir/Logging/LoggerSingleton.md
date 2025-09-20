@@ -13,7 +13,7 @@ public sealed class LoggerSingleton
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type LoggerSingleton /noir/reference//noir/reference/Noir/Logging/LoggerSingleton/ -->
+<!-- tc:return_type LoggerSingleton /noir/reference/Noir/Logging/LoggerSingleton/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -278,7 +278,7 @@ public void WriteLog(string message, LogLevel level, Object context, string subs
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

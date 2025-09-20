@@ -9,7 +9,7 @@
 public class UnknownPaths : IPlatformPaths
 ```
 
-**Implements:** _[IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/)_
+**Implements:** _[IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/)_
 
 ## 🛠 Constructors
 

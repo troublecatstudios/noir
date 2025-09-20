@@ -21,5 +21,5 @@ public abstract bool DispatchEvent(T eventData)
 ```
 
 **Parameters** <br>
-`eventData` [T](/noir/reference//noir/reference/) <br>
+`eventData` [T](/noir/reference/) <br>
 

@@ -89,7 +89,7 @@ public string Name { get; }
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange /noir/reference//noir/reference/Noir/Variables/OnAfterChange/ -->
+<!-- tc:return_type OnAfterChange /noir/reference/Noir/Variables/OnAfterChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -98,7 +98,7 @@ public event OnAfterChange OnAfterVariableChanged;
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange /noir/reference//noir/reference/Noir/Variables/OnBeforeChange/ -->
+<!-- tc:return_type OnBeforeChange /noir/reference/Noir/Variables/OnBeforeChange/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

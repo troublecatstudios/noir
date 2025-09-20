@@ -20,8 +20,8 @@ public PoissonSampler(PoissonSettings settings, PoissonBags bags)
 ```
 
 **Parameters** <br>
-`settings` [PoissonSettings](/noir/reference//noir/reference/Noir/Randomness/PoissonSettings/) <br>
-`bags` [PoissonBags](/noir/reference//noir/reference/Noir/Randomness/PoissonBags/) <br>
+`settings` [PoissonSettings](/noir/reference/Noir/Randomness/PoissonSettings/) <br>
+`bags` [PoissonBags](/noir/reference/Noir/Randomness/PoissonBags/) <br>
 
 ## 📦 Properties
 

@@ -20,8 +20,8 @@ public void HasFlag(IAssertionContext<T> context, T flag, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`flag` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`flag` [T](/noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ### `IsFlag(IAssertionContext<T>, string)`
@@ -33,6 +33,6 @@ public void IsFlag(IAssertionContext<T> context, string message)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

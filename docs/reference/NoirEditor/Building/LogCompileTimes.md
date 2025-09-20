@@ -11,7 +11,7 @@ Logs the time taken to perform script compilations and domain reloads.
 public sealed class LogCompileTimes : EditorSingleton<T>
 ```
 
-**Implements:** _[EditorSingleton\<T\>](/noir/reference//noir/reference/NoirEditor/EditorSingleton-1/)_
+**Implements:** _[EditorSingleton\<T\>](/noir/reference/NoirEditor/EditorSingleton-1/)_
 
 ## 🛠 Constructors
 

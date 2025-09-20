@@ -9,7 +9,7 @@
 public class WindowsPaths : PathsBase, IPlatformPaths
 ```
 
-**Implements:** _[PathsBase](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/PathsBase/), [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/)_
+**Implements:** _[PathsBase](/noir/reference/Noir/IO/Paths/PathsBase/), [IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/)_
 
 ## 🛠 Constructors
 

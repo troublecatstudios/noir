@@ -23,7 +23,7 @@ protected NoirTestCase()
 
 ### `Asserts`
 <!-- tc:scope private -->
-<!-- tc:return_type NoirAssertions /noir/reference//noir/reference/Noir/Testing/NoirAssertions/ -->
+<!-- tc:return_type NoirAssertions /noir/reference/Noir/Testing/NoirAssertions/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

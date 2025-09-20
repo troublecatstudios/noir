@@ -9,7 +9,7 @@
 public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 ```
 
-**Implements:** _[INoirEventDispatcher](/noir/reference//noir/reference/Noir/Events/INoirEventDispatcher/), [INoirEventRegistry](/noir/reference//noir/reference/Noir/Events/INoirEventRegistry/)_
+**Implements:** _[INoirEventDispatcher](/noir/reference/Noir/Events/INoirEventDispatcher/), [INoirEventRegistry](/noir/reference/Noir/Events/INoirEventRegistry/)_
 
 ## 🛠 Constructors
 
@@ -33,7 +33,7 @@ public virtual bool DispatchEvent(T eventData)
 ```
 
 **Parameters** <br>
-`eventData` [T](/noir/reference//noir/reference/) <br>
+`eventData` [T](/noir/reference/) <br>
 
 ### `Register(GameObject, Type)`
 <!-- tc:scope public -->
