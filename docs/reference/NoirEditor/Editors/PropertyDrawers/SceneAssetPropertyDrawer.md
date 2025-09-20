@@ -41,15 +41,6 @@ public PropertyAttribute attribute { get; }
 public FieldInfo fieldInfo { get; }
 ```
 
-### `preferredLabel`
-<!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
-<!-- tc:version 0.0.0 -->
-
-```csharp
-public string preferredLabel { get; }
-```
-
 ## ⛹️‍♀️ Methods
 
 ### `GetSceneAsset(SerializedProperty)`

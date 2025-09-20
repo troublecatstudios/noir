@@ -23,15 +23,6 @@ public SortingLayerAttribute()
 
 ## 📦 Properties
 
-### `applyToCollection`
-<!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public bool applyToCollection { get; }
-```
-
 ### `order`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->

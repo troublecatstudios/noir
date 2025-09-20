@@ -90,33 +90,6 @@ public Component collider2D { get; }
 public Component constantForce { get; }
 ```
 
-### `destroyCancellationToken`
-<!-- tc:scope public -->
-<!-- tc:return_type CancellationToken https://learn.microsoft.com/en-us/dotnet/api/System.Threading.CancellationToken?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public CancellationToken destroyCancellationToken { get; }
-```
-
-### `didAwake`
-<!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public bool didAwake { get; }
-```
-
-### `didStart`
-<!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public bool didStart { get; }
-```
-
 ### `enabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -447,18 +420,6 @@ public bool CompareTag(string tag)
 **Parameters** <br>
 `tag` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-### `CompareTag(TagHandle)`
-<!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public bool CompareTag(TagHandle tag)
-```
-
-**Parameters** <br>
-`tag` [TagHandle](https://docs.unity3d.com/ScriptReference/TagHandle.html) <br>
-
 ### `IsInvoking()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -699,15 +660,6 @@ Returns an [Component](https://docs.unity3d.com/ScriptReference/Component.html) 
 
 ```csharp
 public IEnumerable<T> GetActiveItems()
-```
-
-### `GetComponentIndex()`
-<!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public int GetComponentIndex()
 ```
 
 ### `GetInstanceID()`
