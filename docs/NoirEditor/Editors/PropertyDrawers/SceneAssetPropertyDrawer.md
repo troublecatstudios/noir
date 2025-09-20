@@ -1,0 +1,107 @@
+# SceneAssetPropertyDrawer
+
+<!-- tc:namespace NoirEditor.Editors.PropertyDrawers -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
+
+```csharp
+public class SceneAssetPropertyDrawer : PropertyDrawer
+```
+
+**Implements:** _[PropertyDrawer](https://docs.unity3d.com/ScriptReference/PropertyDrawer.html)_
+
+## 🛠 Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public SceneAssetPropertyDrawer()
+```
+
+## 📦 Properties
+
+### `attribute`
+<!-- tc:scope public -->
+<!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public PropertyAttribute attribute { get; }
+```
+
+### `fieldInfo`
+<!-- tc:scope public -->
+<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public FieldInfo fieldInfo { get; }
+```
+
+## ⛹️‍♀️ Methods
+
+### `GetSceneAsset(SerializedProperty)`
+<!-- tc:scope private -->
+<!-- tc:return_type SceneAsset https://docs.unity3d.com/ScriptReference/SceneAsset.html -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+protected SceneAsset GetSceneAsset(SerializedProperty prop)
+```
+
+**Parameters** <br>
+`prop` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+
+### `CanCacheInspectorGUI(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public virtual bool CanCacheInspectorGUI(SerializedProperty property)
+```
+
+**Parameters** <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+
+### `GetPropertyHeight(SerializedProperty, GUIContent)`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public virtual float GetPropertyHeight(SerializedProperty property, GUIContent label)
+```
+
+**Parameters** <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+`label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
+
+### `CreatePropertyGUI(SerializedProperty)`
+<!-- tc:scope public -->
+<!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
+```
+
+**Parameters** <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+
+### `OnGUI(Rect, SerializedProperty, GUIContent)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
+```csharp
+public virtual void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+```
+
+**Parameters** <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+`label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
+
