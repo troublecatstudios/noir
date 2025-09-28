@@ -16,6 +16,8 @@ public class AssertionContext<T> : IAssertionContext<T>
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Creates a new assertion context.
+
 
 ```csharp
 public AssertionContext<T>()

@@ -15,6 +15,8 @@ public static class GameObjectAssertions
 <!-- tc:scope public -->
 <!-- tc:return_type IAssertionContext\<T\> /noir/reference/Noir/Testing/IAssertionContext-1/ -->
 <!-- tc:version 0.0.0 -->
+Asserts that the game object has the given component.
+
 
 ```csharp
 public IAssertionContext<T> HasComponent(IAssertionContext<T> context, string message)
@@ -22,11 +24,15 @@ public IAssertionContext<T> HasComponent(IAssertionContext<T> context, string me
 
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+ <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 ### `IsActive(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Asserts that the game object is active within the scene hierarchy.
+
 
 ```csharp
 public void IsActive(IAssertionContext<T> context, string message)
@@ -34,7 +40,9 @@ public void IsActive(IAssertionContext<T> context, string message)
 
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+ <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 ### `IsEnabled(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
@@ -51,6 +59,8 @@ public void IsEnabled(IAssertionContext<T> context, string message)
 ### `IsNotActive(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Asserts that the game object is not active within the scene hierarchy.
+
 
 ```csharp
 public void IsNotActive(IAssertionContext<T> context, string message)
@@ -58,5 +68,7 @@ public void IsNotActive(IAssertionContext<T> context, string message)
 
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+ <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 

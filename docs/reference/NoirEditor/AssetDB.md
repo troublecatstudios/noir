@@ -109,6 +109,8 @@ public Object LoadSingle(Type objectType, Func<T, TResult> filter, String[] sear
 <!-- tc:scope public -->
 <!-- tc:return_type T /noir/reference/ -->
 <!-- tc:version 0.0.0 -->
+Gets a single asset from the Unity [AssetDatabase](https://docs.unity3d.com/ScriptReference/AssetDatabase.html).
+
 
 ```csharp
 public T LoadSingle(string query, Func<T, TResult> criteria, String[] searchPaths)
@@ -116,6 +118,9 @@ public T LoadSingle(string query, Func<T, TResult> criteria, String[] searchPath
 
 **Parameters** <br>
 `query` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `criteria` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
+ <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 

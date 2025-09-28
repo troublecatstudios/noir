@@ -26,6 +26,8 @@ public void Contains(IAssertionContext<T> context, T item)
 ### `HasLength(IAssertionContext<T>, int)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Asserts that the enumerable has the expected length.
+
 
 ```csharp
 public void HasLength(IAssertionContext<T> context, int length)
@@ -33,11 +35,15 @@ public void HasLength(IAssertionContext<T> context, int length)
 
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+ <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 
 ### `HasSameContents(IAssertionContext<T>, IEnumerable)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Asserts that the enumerable has the same contents as the expected enumerable.
+
 
 ```csharp
 public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
@@ -45,5 +51,7 @@ public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
 
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+ <br>
 `expected` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
+ <br>
 
