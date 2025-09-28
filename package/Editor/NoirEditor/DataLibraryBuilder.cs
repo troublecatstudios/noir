@@ -4,7 +4,7 @@ using Noir.Variables;
 using UnityEditor;
 
 namespace NoirEditor {
-    internal class DataLibraryBuilder {
+    internal static class DataLibraryBuilder {
         private const string DataDirectory = "Assets/Data";
         private const string TexturesDirectory = "Assets/Textures";
 

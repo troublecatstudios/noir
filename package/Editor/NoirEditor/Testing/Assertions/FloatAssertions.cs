@@ -3,6 +3,13 @@ using UnityEngine;
 
 namespace Noir.Testing.Assertions {
     public static class FloatAssertions {
+        /// <summary>
+        /// Asserts that the given float value is within the given epsilon of an expected float value.
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="value"></param>
+        /// <param name="epsilon"></param>
+        /// <param name="message"></param>
         public static void IsApproximately(this IAssertionContext<float> context, float value, float epsilon = float.Epsilon, string message = null) {
             var a = context.Target;
             var b = value;

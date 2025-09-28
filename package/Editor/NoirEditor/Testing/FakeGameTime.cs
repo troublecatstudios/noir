@@ -1,6 +1,9 @@
 ﻿using Noir.Abstractions;
 
 namespace Noir.Testing {
+    /// <summary>
+    /// A fake or stubbed instance of <see cref="IGameTime"/> for use within tests.
+    /// </summary>
     public class FakeGameTime : IGameTime {
         public float deltaTime { get; set; } = 0.0166667f;
         public float fixedDeltaTime { get; set; } = 0.0333333f;

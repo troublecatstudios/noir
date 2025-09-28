@@ -1,6 +1,6 @@
 ﻿namespace NoirEditor {
-    internal class NoirEditorContants {
-        public const string EDITOR_OBJECT_PICKER_UPDATED = "ObjectSelectorUpdated";
-        public const string EDITOR_OBJECT_PICKER_CANCELED = "ObjectSelectorClosed";
+    internal class NoirEditorConstants {
+        public const string EditorObjectPickerUpdated = "ObjectSelectorUpdated";
+        public const string EditorObjectPickerCanceled = "ObjectSelectorClosed";
     }
 }
