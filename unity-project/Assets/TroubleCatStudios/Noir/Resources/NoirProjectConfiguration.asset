@@ -17,3 +17,4 @@ MonoBehaviour:
   _lockFrameRate: 1
   _lockedFrameRate: 60
   _automaticallySpawnGameManagers: 1
+  _defaultAudioMixerGroup: {fileID: 0}

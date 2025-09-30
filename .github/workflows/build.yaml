@@ -66,6 +66,16 @@ jobs:
           dotnet build ./Noir.csproj
           dotnet build ./NoirEditor.csproj
           dotnet pack --configuration Release Noir.csproj
+      - name: Run Unity Tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: ./unity-project/
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          unityVersion: ${{ needs.prep.outputs.unity_version }}
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:

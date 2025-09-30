@@ -23,6 +23,14 @@ Noir has been updated to follow the new patterns and practices for Unity Package
 - editor: NoirEditor is designed to work with or without [Odin Inspector](https://odininspector.com/), allowing you to take advantage of Noirs key features regardless of your editor setup.
 - editor: NoirEditor includes code to make writing unit tests in Unity easier.
 - editor: NoirEditor automatically generates C# code files for Tags, Scenes, Layers, SortingLayers, Unity StyleSheets and Noir Variables, allowing you to reference them via code easily and know when changes break functionality.
+- tests: Adds unit tests for basic `DataVariable<T>` event behaviors
+- tests: Adds unit tests for `GameTime`
+- ci: Unity tests are run when pull requests are opened.
+
+
+### Changed
+
+- dev: The Unity Test Framework in the development Unity project has been upgraded to v1.4.6, see the [Changelog](https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/changelog/CHANGELOG.html) for details.
 
 
 <!--begin_changelog-->
