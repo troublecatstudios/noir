@@ -66,16 +66,6 @@ jobs:
           dotnet build ./Noir.csproj
           dotnet build ./NoirEditor.csproj
           dotnet pack --configuration Release Noir.csproj
-      - name: Run Unity Tests
-        uses: game-ci/unity-test-runner@v4
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          projectPath: ./unity-project/
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          unityVersion: ${{ needs.prep.outputs.unity_version }}
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -89,6 +79,49 @@ jobs:
           if-no-files-found: error
           retention-days: 7
           path: ${{ env.NuGetDirectory }}/**/*.nupkg
+
+  unity_tests:
+    name: Test in ${{ matrix.testMode }}
+    runs-on: ubuntu-latest
+    needs: [ prep ]
+    strategy:
+      fail-fast: false
+      matrix:
+        projectPath:
+          - unity-project
+        testMode:
+          - playmode
+          - editmode
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/cache@v3
+        with:
+          path: ${{ matrix.projectPath }}/Library
+          key: Library-${{ matrix.projectPath }}
+          restore-keys: |
+            Library-
+      - name: Run Unity Tests
+        uses: game-ci/unity-test-runner@v4
+        id: tests
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          testMode: ${{ matrix.testMode }}
+          artifactsPath: ${{ matrix.testMode }}-artifacts
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          checkName: ${{ matrix.testMode }} Test Results
+          unityVersion: ${{ needs.prep.outputs.unity_version }}
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+Noir*'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Test results for ${{ matrix.testMode }}
+          path: ${{ steps.tests.outputs.artifactsPath }}
 
   # Deploy NuGet
   # --------------------------------------------------------------------------------

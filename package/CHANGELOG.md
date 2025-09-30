@@ -26,6 +26,7 @@ Noir has been updated to follow the new patterns and practices for Unity Package
 - tests: Adds unit tests for basic `DataVariable<T>` event behaviors
 - tests: Adds unit tests for `GameTime`
 - ci: Unity tests are run when pull requests are opened.
+- ci: Unity tests are run in a separate GHA job
 
 
 ### Changed
