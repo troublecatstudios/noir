@@ -9,7 +9,7 @@
 public class NoiseMaker
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(NoiseSettings)`
 <!-- tc:scope public -->
@@ -17,20 +17,22 @@ public class NoiseMaker
 
 ```csharp
 public NoiseMaker(NoiseSettings settings)
+
 ```
 
 **Parameters** <br>
-`settings` [NoiseSettings](/noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
+`settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings.html) <br>
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetNoise(float, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public float GetNoise(float x, float y)
+
 ```
 
 **Parameters** <br>

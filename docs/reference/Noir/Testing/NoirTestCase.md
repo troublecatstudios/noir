@@ -11,7 +11,7 @@ Base class for all Noir unit test classes.
 public abstract class NoirTestCase
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -19,22 +19,24 @@ public abstract class NoirTestCase
 
 ```csharp
 protected NoirTestCase()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `Asserts`
 <!-- tc:scope private -->
-<!-- tc:return_type NoirAssertions /noir/reference/Noir/Testing/NoirAssertions/ -->
+<!-- tc:return_type [NoirAssertions](/noir/reference//noir/reference/Noir/Testing/NoirAssertions.html) -->
 <!-- tc:version 0.0.0 -->
-Gets the [NoirAssertions](/noir/reference/Noir/Testing/NoirAssertions/) instance for this test class.
+Gets the [NoirAssertions](/noir/reference//noir/reference/Noir/Testing/NoirAssertions.html) instance for this test class.
 
 
 ```csharp
 public readonly NoirAssertions Asserts;
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Setup()`
 <!-- tc:scope public -->
@@ -44,6 +46,7 @@ Performed before each test within the class is run.
 
 ```csharp
 public virtual void Setup()
+
 ```
 
 ### `SetupAll()`
@@ -54,6 +57,7 @@ Performed once before all the tests within the class are run.
 
 ```csharp
 public virtual void SetupAll()
+
 ```
 
 ### `TearDownAll()`
@@ -64,5 +68,6 @@ Performed once after all tests within the class have been run.
 
 ```csharp
 public virtual void TearDownAll()
+
 ```
 

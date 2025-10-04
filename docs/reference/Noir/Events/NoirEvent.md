@@ -11,7 +11,7 @@ public class NoirEvent : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,73 +19,81 @@ public class NoirEvent : ScriptableObject
 
 ```csharp
 public NoirEvent()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
 ### `IsSubscribed`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool IsSubscribed { get; }
+
 ```
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string name { get; public set; }
+
 ```
 
 ### `Name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string Name { get; }
+
 ```
 
 ### `SubscriberCount`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public int SubscriberCount { get; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public int GetInstanceID()
+
 ```
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
@@ -93,20 +101,22 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual string ToString()
+
 ```
 
 ### `Invoke()`
@@ -115,6 +125,7 @@ public virtual string ToString()
 
 ```csharp
 public void Invoke()
+
 ```
 
 ### `Invoke(Object)`
@@ -123,6 +134,7 @@ public void Invoke()
 
 ```csharp
 public void Invoke(Object context)
+
 ```
 
 **Parameters** <br>
@@ -134,6 +146,7 @@ public void Invoke(Object context)
 
 ```csharp
 public void Register(MonoBehaviour behaviour, Action callback)
+
 ```
 
 **Parameters** <br>
@@ -146,6 +159,7 @@ public void Register(MonoBehaviour behaviour, Action callback)
 
 ```csharp
 public void Register(MonoBehaviour behaviour, Action<T> callback)
+
 ```
 
 **Parameters** <br>
@@ -158,6 +172,7 @@ public void Register(MonoBehaviour behaviour, Action<T> callback)
 
 ```csharp
 public void SetDirty()
+
 ```
 
 ### `Unregister(MonoBehaviour, Action)`
@@ -166,6 +181,7 @@ public void SetDirty()
 
 ```csharp
 public void Unregister(MonoBehaviour behaviour, Action callback)
+
 ```
 
 **Parameters** <br>
@@ -178,6 +194,7 @@ public void Unregister(MonoBehaviour behaviour, Action callback)
 
 ```csharp
 public void Unregister(MonoBehaviour behaviour, Action<T> callback)
+
 ```
 
 **Parameters** <br>

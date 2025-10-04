@@ -9,7 +9,7 @@
 public abstract INoirLogger
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -17,6 +17,7 @@ public abstract INoirLogger
 
 ```csharp
 public abstract void Debug(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -30,6 +31,7 @@ public abstract void Debug(string message, Object context, string subsystem)
 
 ```csharp
 public abstract void DisableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -41,6 +43,7 @@ public abstract void DisableSubsystem(string system)
 
 ```csharp
 public abstract void EnableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -52,6 +55,7 @@ public abstract void EnableSubsystem(string system)
 
 ```csharp
 public abstract void EndAllTraces()
+
 ```
 
 ### `EndTrace(string)`
@@ -60,6 +64,7 @@ public abstract void EndAllTraces()
 
 ```csharp
 public abstract void EndTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -71,6 +76,7 @@ public abstract void EndTrace(string traceName)
 
 ```csharp
 public abstract void Error(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -84,6 +90,7 @@ public abstract void Error(string message, Object context, string subsystem)
 
 ```csharp
 public abstract void Info(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -97,6 +104,7 @@ public abstract void Info(string message, Object context, string subsystem)
 
 ```csharp
 public abstract void StartTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -107,7 +115,10 @@ public abstract void StartTrace(string traceName)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract void Trace(string trace, string message, Object context, string subsystem)
+public abstract void Trace(string trace, string message, Object context,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -121,7 +132,10 @@ public abstract void Trace(string trace, string message, Object context, string 
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract void Verify(bool condition, string label, Object context, string subsystem)
+public abstract void Verify(bool condition, string label, Object context,
+                             string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -135,7 +149,10 @@ public abstract void Verify(bool condition, string label, Object context, string
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract void Verify(Func<TResult> condition, string label, Object context, string subsystem)
+public abstract void Verify(Func<TResult> condition, string label,
+                             Object context, string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -150,6 +167,7 @@ public abstract void Verify(Func<TResult> condition, string label, Object contex
 
 ```csharp
 public abstract void Warn(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -162,12 +180,15 @@ public abstract void Warn(string message, Object context, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract void WriteLog(string message, LogLevel level, Object context, string subsystem, string trace)
+public abstract void WriteLog(string message, LogLevel level, Object context,
+                               string subsystem, string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

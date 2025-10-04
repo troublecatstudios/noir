@@ -9,7 +9,7 @@
 public abstract INoirEventRegistry
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Register(GameObject, Type)`
 <!-- tc:scope public -->
@@ -17,6 +17,7 @@ public abstract INoirEventRegistry
 
 ```csharp
 public abstract void Register(GameObject handler, Type eventDataType)
+
 ```
 
 **Parameters** <br>
@@ -29,6 +30,7 @@ public abstract void Register(GameObject handler, Type eventDataType)
 
 ```csharp
 public abstract void Register(GameObject handler)
+
 ```
 
 **Parameters** <br>
@@ -40,6 +42,7 @@ public abstract void Register(GameObject handler)
 
 ```csharp
 public abstract void Unregister(GameObject handler, Type eventDataType)
+
 ```
 
 **Parameters** <br>
@@ -52,6 +55,7 @@ public abstract void Unregister(GameObject handler, Type eventDataType)
 
 ```csharp
 public abstract void Unregister(GameObject handler)
+
 ```
 
 **Parameters** <br>

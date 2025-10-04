@@ -9,7 +9,7 @@
 public class CodeGenerator
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(string)`
 <!-- tc:scope public -->
@@ -17,20 +17,22 @@ public class CodeGenerator
 
 ```csharp
 public CodeGenerator(string outputFolder)
+
 ```
 
 **Parameters** <br>
 `outputFolder` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Generate(bool, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type CodeGenReport /noir/reference/NoirEditor/CodeGen/CodeGenReport/ -->
+<!-- tc:return_type [CodeGenReport](/noir/reference//noir/reference/NoirEditor/CodeGen/CodeGenReport.html) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public CodeGenReport Generate(bool force, bool dryRun)
+
 ```
 
 **Parameters** <br>
@@ -43,10 +45,11 @@ public CodeGenReport Generate(bool force, bool dryRun)
 
 ```csharp
 public void AddTask(CodeGenTask task)
+
 ```
 
 **Parameters** <br>
-`task` [CodeGenTask](/noir/reference/NoirEditor/CodeGen/CodeGenTask/) <br>
+`task` [CodeGenTask](/noir/reference//noir/reference/NoirEditor/CodeGen/CodeGenTask.html) <br>
 
 ### `AddTasks(IEnumerable<T>)`
 <!-- tc:scope public -->
@@ -54,6 +57,7 @@ public void AddTask(CodeGenTask task)
 
 ```csharp
 public void AddTasks(IEnumerable<T> tasks)
+
 ```
 
 **Parameters** <br>

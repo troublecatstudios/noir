@@ -9,7 +9,7 @@
 public static class ColliderExtensions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `SetDimensions(Collider, Vector2)`
 <!-- tc:scope public -->
@@ -17,6 +17,7 @@ public static class ColliderExtensions
 
 ```csharp
 public void SetDimensions(Collider collider, Vector2 size)
+
 ```
 
 **Parameters** <br>

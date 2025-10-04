@@ -11,23 +11,25 @@ sealed enum SoundEffectPlayStyle : Enum, IComparable, ISpanFormattable, IFormatt
 
 **Implements:** _[Enum](https://learn.microsoft.com/en-us/dotnet/api/System.Enum?view=net-7.0), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/System.IComparable?view=net-7.0), [ISpanFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.ISpanFormattable?view=net-7.0), [IFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.IFormattable?view=net-7.0), [IConvertible](https://learn.microsoft.com/en-us/dotnet/api/System.IConvertible?view=net-7.0)_
 
-## 📦 Properties
+## Properties
 
 ### `Random`
 <!-- tc:scope private -->
-<!-- tc:return_type SoundEffectPlayStyle /noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
+<!-- tc:return_type [SoundEffectPlayStyle](/noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static const SoundEffectPlayStyle Random;
+
 ```
 
 ### `Sequential`
 <!-- tc:scope private -->
-<!-- tc:return_type SoundEffectPlayStyle /noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
+<!-- tc:return_type [SoundEffectPlayStyle](/noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static const SoundEffectPlayStyle Sequential;
+
 ```
 

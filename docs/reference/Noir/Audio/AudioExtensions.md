@@ -9,17 +9,18 @@
 public static class AudioExtensions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `IsAudioPaused(AudioSource)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 Returns a value indicating whether the [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) is stopped with any play time remaining.
 
 
 ```csharp
 public bool IsAudioPaused(AudioSource source)
+
 ```
 
 **Parameters** <br>
@@ -28,13 +29,14 @@ public bool IsAudioPaused(AudioSource source)
 
 ### `IsClipReadyToPlay(AudioClip)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 Returns a value indicating whether the [AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html) is ready to be played.
 
 
 ```csharp
 public bool IsClipReadyToPlay(AudioClip clip)
+
 ```
 
 **Parameters** <br>
@@ -43,11 +45,12 @@ public bool IsClipReadyToPlay(AudioClip clip)
 
 ### `GetAudioPlayedPercentage(AudioSource)`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public float GetAudioPlayedPercentage(AudioSource source)
+
 ```
 
 **Parameters** <br>

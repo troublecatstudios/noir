@@ -11,7 +11,7 @@ public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged, IOrder
 
 **Implements:** _[IActiveBuildTargetChanged](https://docs.unity3d.com/ScriptReference/Build.IActiveBuildTargetChanged.html), [IOrderedCallback](https://docs.unity3d.com/ScriptReference/Build.IOrderedCallback.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,27 +19,32 @@ public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged, IOrder
 
 ```csharp
 public ActiveBuildTargetChangedHandler()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `callbackOrder`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual int callbackOrder { get; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `OnActiveBuildTargetChanged(BuildTarget, BuildTarget)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
-public virtual void OnActiveBuildTargetChanged(BuildTarget previousTarget, BuildTarget newTarget)
+public virtual void OnActiveBuildTargetChanged(BuildTarget previousTarget,
+                                                BuildTarget newTarget)
+
+
 ```
 
 **Parameters** <br>

@@ -11,7 +11,7 @@ public class Vector4IntPropertyDrawer : PropertyDrawer
 
 **Implements:** _[PropertyDrawer](https://docs.unity3d.com/ScriptReference/PropertyDrawer.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,37 +19,41 @@ public class Vector4IntPropertyDrawer : PropertyDrawer
 
 ```csharp
 public Vector4IntPropertyDrawer()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `attribute`
 <!-- tc:scope public -->
-<!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
+<!-- tc:return_type [PropertyAttribute](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public PropertyAttribute attribute { get; }
+
 ```
 
 ### `fieldInfo`
 <!-- tc:scope public -->
-<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
+<!-- tc:return_type [FieldInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public FieldInfo fieldInfo { get; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `CanCacheInspectorGUI(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual bool CanCacheInspectorGUI(SerializedProperty property)
+
 ```
 
 **Parameters** <br>
@@ -57,11 +61,14 @@ public virtual bool CanCacheInspectorGUI(SerializedProperty property)
 
 ### `GetPropertyHeight(SerializedProperty, GUIContent)`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
-public virtual float GetPropertyHeight(SerializedProperty property, GUIContent label)
+public virtual float GetPropertyHeight(SerializedProperty property,
+                                        GUIContent label)
+
+
 ```
 
 **Parameters** <br>
@@ -70,11 +77,12 @@ public virtual float GetPropertyHeight(SerializedProperty property, GUIContent l
 
 ### `CreatePropertyGUI(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
+<!-- tc:return_type [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
+
 ```
 
 **Parameters** <br>
@@ -85,7 +93,10 @@ public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
 <!-- tc:version 0.0.0 -->
 
 ```csharp
-public virtual void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+public virtual void OnGUI(Rect position, SerializedProperty property,
+                           GUIContent label)
+
+
 ```
 
 **Parameters** <br>

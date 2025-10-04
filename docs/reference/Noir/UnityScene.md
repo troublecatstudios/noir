@@ -9,7 +9,7 @@
 public class UnityScene
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -17,9 +17,10 @@ public class UnityScene
 
 ```csharp
 public UnityScene()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Find(List<T>)`
 <!-- tc:scope public -->
@@ -27,6 +28,7 @@ public UnityScene()
 
 ```csharp
 public void Find(List<T> result)
+
 ```
 
 **Parameters** <br>

@@ -9,7 +9,7 @@
 public static class FloatAssertions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `IsApproximately(IAssertionContext<T>, float, float, string)`
 <!-- tc:scope public -->
@@ -18,11 +18,14 @@ Asserts that the given float value is within the given epsilon of an expected fl
 
 
 ```csharp
-public void IsApproximately(IAssertionContext<T> context, float value, float epsilon, string message)
+public void IsApproximately(IAssertionContext<T> context, float value,
+                             float epsilon, string message)
+
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
  <br>
 `value` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>

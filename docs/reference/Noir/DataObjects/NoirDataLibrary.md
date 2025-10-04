@@ -11,7 +11,7 @@ public class NoirDataLibrary : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,73 +19,81 @@ public class NoirDataLibrary : ScriptableObject
 
 ```csharp
 public NoirDataLibrary()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirDataLibrary /noir/reference/Noir/DataObjects/NoirDataLibrary/ -->
+<!-- tc:return_type [NoirDataLibrary](/noir/reference//noir/reference/Noir/DataObjects/NoirDataLibrary.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static NoirDataLibrary Instance { get; }
+
 ```
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string name { get; public set; }
+
 ```
 
 ### `SoundEffects`
 <!-- tc:scope private -->
-<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public List<T> SoundEffects;
+
 ```
 
 ### `Variables`
 <!-- tc:scope private -->
-<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public List<T> Variables;
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public int GetInstanceID()
+
 ```
 
 ### `GetSoundEffectByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type SoundEffect /noir/reference/Noir/Audio/SoundEffect/ -->
+<!-- tc:return_type [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public SoundEffect GetSoundEffectByName(string name)
+
 ```
 
 **Parameters** <br>
@@ -93,13 +101,14 @@ public SoundEffect GetSoundEffectByName(string name)
 
 ### `GetVariableByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 Gets a variable by name.
 
 
 ```csharp
 public T GetVariableByName(string name)
+
 ```
 
 **Parameters** <br>
@@ -108,11 +117,12 @@ public T GetVariableByName(string name)
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
@@ -120,20 +130,22 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual string ToString()
+
 ```
 
 ### `SetDirty()`
@@ -142,5 +154,6 @@ public virtual string ToString()
 
 ```csharp
 public void SetDirty()
+
 ```
 

@@ -14,7 +14,7 @@ public class SerializedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICo
 
 **Implements:** _[IDictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0), [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0), [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0), [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0), [ISerializationCallbackReceiver](https://docs.unity3d.com/ScriptReference/ISerializationCallbackReceiver.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -22,64 +22,73 @@ public class SerializedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICo
 
 ```csharp
 public SerializedDictionary<TKey, TValue>()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `Count`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual int Count { get; }
+
 ```
 
 ### `IsReadOnly`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool IsReadOnly { get; }
+
 ```
 
 ### `Item`
 <!-- tc:scope public -->
-<!-- tc:return_type TValue /noir/reference/ -->
+<!-- tc:return_type TValue -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual TValue Item { get; public set; }
+
 ```
 
 ### `Keys`
 <!-- tc:scope public -->
-<!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
+<!-- tc:return_type [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual ICollection<T> Keys { get; }
+
 ```
 
 ### `Values`
 <!-- tc:scope public -->
-<!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
+<!-- tc:return_type [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual ICollection<T> Values { get; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `From(Dictionary<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type SerializedDictionary\<TKey, TValue\> /noir/reference/Noir/SerializedDictionary-2/ -->
+<!-- tc:return_type [SerializedDictionary\<TKey, TValue\>](/noir/reference/Noir/SerializedDictionary-2.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public SerializedDictionary<TKey, TValue> From(Dictionary<TKey, TValue> dictionary)
+public SerializedDictionary<TKey, TValue> From(Dictionary<TKey,
+                                                TValue> dictionary)
+
+
 ```
 
 **Parameters** <br>
@@ -87,11 +96,12 @@ public SerializedDictionary<TKey, TValue> From(Dictionary<TKey, TValue> dictiona
 
 ### `Contains(KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Contains(KeyValuePair<TKey, TValue> item)
+
 ```
 
 **Parameters** <br>
@@ -99,11 +109,12 @@ public virtual bool Contains(KeyValuePair<TKey, TValue> item)
 
 ### `ContainsKey(TKey)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool ContainsKey(TKey key)
+
 ```
 
 **Parameters** <br>
@@ -111,11 +122,12 @@ public virtual bool ContainsKey(TKey key)
 
 ### `Remove(KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Remove(KeyValuePair<TKey, TValue> item)
+
 ```
 
 **Parameters** <br>
@@ -123,11 +135,12 @@ public virtual bool Remove(KeyValuePair<TKey, TValue> item)
 
 ### `Remove(TKey)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Remove(TKey key)
+
 ```
 
 **Parameters** <br>
@@ -135,11 +148,12 @@ public virtual bool Remove(TKey key)
 
 ### `TryGetValue(TKey, out TValue&)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool TryGetValue(TKey key, TValue& value)
+
 ```
 
 **Parameters** <br>
@@ -148,11 +162,12 @@ public virtual bool TryGetValue(TKey key, TValue& value)
 
 ### `GetEnumerator()`
 <!-- tc:scope public -->
-<!-- tc:return_type IEnumerator\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1?view=net-7.0 -->
+<!-- tc:return_type [IEnumerator\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual IEnumerator<T> GetEnumerator()
+
 ```
 
 ### `Add(KeyValuePair<TKey, TValue>)`
@@ -161,6 +176,7 @@ public virtual IEnumerator<T> GetEnumerator()
 
 ```csharp
 public virtual void Add(KeyValuePair<TKey, TValue> item)
+
 ```
 
 **Parameters** <br>
@@ -172,6 +188,7 @@ public virtual void Add(KeyValuePair<TKey, TValue> item)
 
 ```csharp
 public virtual void Add(TKey key, TValue value)
+
 ```
 
 **Parameters** <br>
@@ -184,6 +201,7 @@ public virtual void Add(TKey key, TValue value)
 
 ```csharp
 public virtual void Clear()
+
 ```
 
 ### `CopyTo(KeyValuePair`2[], int)`
@@ -192,6 +210,7 @@ public virtual void Clear()
 
 ```csharp
 public virtual void CopyTo(KeyValuePair`2[] array, int arrayIndex)
+
 ```
 
 **Parameters** <br>

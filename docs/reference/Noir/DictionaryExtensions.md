@@ -9,14 +9,17 @@
 public static class DictionaryExtensions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Upsert(Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey, TValue> kvp)
+public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey,
+                    TValue> kvp)
+
+
 ```
 
 **Parameters** <br>
@@ -29,6 +32,7 @@ public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey, TValue> kvp
 
 ```csharp
 public void Upsert(Dictionary<TKey, TValue> dict, T key, K value)
+
 ```
 
 **Parameters** <br>
@@ -41,7 +45,10 @@ public void Upsert(Dictionary<TKey, TValue> dict, T key, K value)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void Upsert(Dictionary<TKey, TValue> target, IDictionary<TKey, TValue> source)
+public void Upsert(Dictionary<TKey, TValue> target, IDictionary<TKey,
+                    TValue> source)
+
+
 ```
 
 **Parameters** <br>

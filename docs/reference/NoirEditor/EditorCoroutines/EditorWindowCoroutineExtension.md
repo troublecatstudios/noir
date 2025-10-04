@@ -9,11 +9,11 @@
 public static class EditorWindowCoroutineExtension
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `StartCoroutine(EditorWindow, IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type EditorCoroutine /noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/ -->
+<!-- tc:return_type [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine.html) -->
 <!-- tc:version 0.0.0 -->
 Start an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see>, owned by the calling <see cref="T:UnityEditor.EditorWindow">EditorWindow</see> instance.
              <code>
@@ -43,6 +43,7 @@ Start an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCorouti
 
 ```csharp
 public EditorCoroutine StartCoroutine(EditorWindow window, IEnumerator routine)
+
 ```
 
 **Parameters** <br>
@@ -87,10 +88,11 @@ Immediately stop an [EditorWindow](https://docs.unity3d.com/ScriptReference/Edit
 
 ```csharp
 public void StopCoroutine(EditorWindow window, EditorCoroutine coroutine)
+
 ```
 
 **Parameters** <br>
 `window` [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) <br>
-`coroutine` [EditorCoroutine](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/) <br>
+`coroutine` [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine.html) <br>
  <br>
 

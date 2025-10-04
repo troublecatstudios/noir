@@ -9,7 +9,7 @@
 public static class EquatableAssertions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `IsEquatableTo(IAssertionContext<T>, T)`
 <!-- tc:scope public -->
@@ -17,9 +17,10 @@ public static class EquatableAssertions
 
 ```csharp
 public void IsEquatableTo(IAssertionContext<T> context, T expectedValue)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`expectedValue` [T](/noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 

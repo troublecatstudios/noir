@@ -9,18 +9,19 @@
 public sealed class LoggerSingleton
 ```
 
-## 📦 Properties
+## Properties
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type LoggerSingleton /noir/reference/Noir/Logging/LoggerSingleton/ -->
+<!-- tc:return_type [LoggerSingleton](/noir/reference//noir/reference/Noir/Logging/LoggerSingleton.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static LoggerSingleton Instance { get; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -28,6 +29,7 @@ public static LoggerSingleton Instance { get; }
 
 ```csharp
 public void Debug(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -41,6 +43,7 @@ public void Debug(string message, Object context, string subsystem)
 
 ```csharp
 public void Debug(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -53,6 +56,7 @@ public void Debug(string message, string subsystem)
 
 ```csharp
 public void DisableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -64,6 +68,7 @@ public void DisableSubsystem(string system)
 
 ```csharp
 public void EnableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -75,6 +80,7 @@ public void EnableSubsystem(string system)
 
 ```csharp
 public void EndAllTraces()
+
 ```
 
 ### `EndTrace(string)`
@@ -83,6 +89,7 @@ public void EndAllTraces()
 
 ```csharp
 public void EndTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -94,6 +101,7 @@ public void EndTrace(string traceName)
 
 ```csharp
 public void Error(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -107,6 +115,7 @@ public void Error(string message, Object context, string subsystem)
 
 ```csharp
 public void Error(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -119,6 +128,7 @@ public void Error(string message, string subsystem)
 
 ```csharp
 public void Info(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -132,6 +142,7 @@ public void Info(string message, Object context, string subsystem)
 
 ```csharp
 public void Info(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -144,6 +155,7 @@ public void Info(string message, string subsystem)
 
 ```csharp
 public void Sample(string token, float rate, string message)
+
 ```
 
 **Parameters** <br>
@@ -157,6 +169,7 @@ public void Sample(string token, float rate, string message)
 
 ```csharp
 public void StartTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -167,7 +180,10 @@ public void StartTrace(string traceName)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void Trace(string trace, string message, Object context, string subsystem)
+public void Trace(string trace, string message, Object context,
+                   string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -182,6 +198,7 @@ public void Trace(string trace, string message, Object context, string subsystem
 
 ```csharp
 public void Trace(string trace, string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -194,7 +211,10 @@ public void Trace(string trace, string message, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void Verify(bool condition, string label, Object context, string subsystem)
+public void Verify(bool condition, string label, Object context,
+                    string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -209,6 +229,7 @@ public void Verify(bool condition, string label, Object context, string subsyste
 
 ```csharp
 public void Verify(bool condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -221,7 +242,10 @@ public void Verify(bool condition, string label, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void Verify(Func<TResult> condition, string label, Object context, string subsystem)
+public void Verify(Func<TResult> condition, string label, Object context,
+                    string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -236,6 +260,7 @@ public void Verify(Func<TResult> condition, string label, Object context, string
 
 ```csharp
 public void Verify(Func<TResult> condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -249,6 +274,7 @@ public void Verify(Func<TResult> condition, string label, string subsystem)
 
 ```csharp
 public void Warn(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -262,6 +288,7 @@ public void Warn(string message, Object context, string subsystem)
 
 ```csharp
 public void Warn(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -273,12 +300,15 @@ public void Warn(string message, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void WriteLog(string message, LogLevel level, Object context, string subsystem, string trace)
+public void WriteLog(string message, LogLevel level, Object context,
+                      string subsystem, string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

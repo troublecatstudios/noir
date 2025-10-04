@@ -9,9 +9,9 @@
 public class PathsFactory : IPlatformPathsFactory
 ```
 
-**Implements:** _[IPlatformPathsFactory](/noir/reference/Noir/IO/Paths/IPlatformPathsFactory/)_
+**Implements:** _[IPlatformPathsFactory](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPathsFactory.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,16 +19,18 @@ public class PathsFactory : IPlatformPathsFactory
 
 ```csharp
 public PathsFactory()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetPlatformPaths()`
 <!-- tc:scope public -->
-<!-- tc:return_type IPlatformPaths /noir/reference/Noir/IO/Paths/IPlatformPaths/ -->
+<!-- tc:return_type [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual IPlatformPaths GetPlatformPaths()
+
 ```
 

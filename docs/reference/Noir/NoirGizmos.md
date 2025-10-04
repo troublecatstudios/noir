@@ -9,14 +9,17 @@
 public static class NoirGizmos
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `DrawArrow(Vector3, Vector3, float, float)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void DrawArrow(Vector3 pos, Vector3 direction, float arrowHeadLength, float arrowHeadAngle)
+public void DrawArrow(Vector3 pos, Vector3 direction, float arrowHeadLength,
+                       float arrowHeadAngle)
+
+
 ```
 
 **Parameters** <br>
@@ -30,7 +33,10 @@ public void DrawArrow(Vector3 pos, Vector3 direction, float arrowHeadLength, flo
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void DrawArrow(Vector3 pos, Vector3 direction, Color color, float arrowHeadLength, float arrowHeadAngle)
+public void DrawArrow(Vector3 pos, Vector3 direction, Color color,
+                       float arrowHeadLength, float arrowHeadAngle)
+
+
 ```
 
 **Parameters** <br>
@@ -45,12 +51,16 @@ public void DrawArrow(Vector3 pos, Vector3 direction, Color color, float arrowHe
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void DrawBezierCurve(Vector3 origin, BezierCurve curve, int numberOfPoints, float pointRadius, T? direction)
+public void DrawBezierCurve(Vector3 origin, BezierCurve curve,
+                             int numberOfPoints, float pointRadius,
+                             T? direction)
+
+
 ```
 
 **Parameters** <br>
 `origin` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
-`curve` [BezierCurve](/noir/reference/Noir/BezierCurve/) <br>
+`curve` [BezierCurve](/noir/reference/Noir/BezierCurve.html) <br>
 `numberOfPoints` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `pointRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `direction` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
@@ -61,6 +71,7 @@ public void DrawBezierCurve(Vector3 origin, BezierCurve curve, int numberOfPoint
 
 ```csharp
 public void DrawLinesToTargets(GameObject parent, UnityEvent ev, Vector3 offset)
+
 ```
 
 **Parameters** <br>
@@ -74,6 +85,7 @@ public void DrawLinesToTargets(GameObject parent, UnityEvent ev, Vector3 offset)
 
 ```csharp
 public void DrawTypeIcon(Vector3 position, string label, float iconSize)
+
 ```
 
 **Parameters** <br>
@@ -88,7 +100,10 @@ Draws a wire arc.
 
 
 ```csharp
-public void DrawWireArc(Vector3 position, Vector3 dir, float anglesRange, float radius, float maxSteps)
+public void DrawWireArc(Vector3 position, Vector3 dir, float anglesRange,
+                         float radius, float maxSteps)
+
+
 ```
 
 **Parameters** <br>
@@ -108,7 +123,10 @@ public void DrawWireArc(Vector3 position, Vector3 dir, float anglesRange, float 
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void DrawWireCircle(Vector3 circleCenter, float circleRadius, int segments)
+public void DrawWireCircle(Vector3 circleCenter, float circleRadius,
+                            int segments)
+
+
 ```
 
 **Parameters** <br>
@@ -121,7 +139,10 @@ public void DrawWireCircle(Vector3 circleCenter, float circleRadius, int segment
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void DrawWireCircle(Vector3 circleCenter, float circleRadius, Vector3 circleNormal, int segments)
+public void DrawWireCircle(Vector3 circleCenter, float circleRadius,
+                            Vector3 circleNormal, int segments)
+
+
 ```
 
 **Parameters** <br>
@@ -136,6 +157,7 @@ public void DrawWireCircle(Vector3 circleCenter, float circleRadius, Vector3 cir
 
 ```csharp
 public void DrawX(Vector2 point, float size)
+
 ```
 
 **Parameters** <br>

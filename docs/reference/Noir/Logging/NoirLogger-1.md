@@ -9,7 +9,7 @@
 public class NoirLogger<T>
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -17,9 +17,10 @@ public class NoirLogger<T>
 
 ```csharp
 public NoirLogger<T>()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Debug(string, string)`
 <!-- tc:scope public -->
@@ -27,6 +28,7 @@ public NoirLogger<T>()
 
 ```csharp
 public void Debug(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -39,6 +41,7 @@ public void Debug(string message, string subsystem)
 
 ```csharp
 public void Error(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -51,6 +54,7 @@ public void Error(string message, string subsystem)
 
 ```csharp
 public void Info(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -63,6 +67,7 @@ public void Info(string message, string subsystem)
 
 ```csharp
 public void Trace(string trace, string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -76,6 +81,7 @@ public void Trace(string trace, string message, string subsystem)
 
 ```csharp
 public void Verify(bool condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -89,6 +95,7 @@ public void Verify(bool condition, string label, string subsystem)
 
 ```csharp
 public void Verify(Func<TResult> condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -102,6 +109,7 @@ public void Verify(Func<TResult> condition, string label, string subsystem)
 
 ```csharp
 public void Warn(string message, string subsystem)
+
 ```
 
 **Parameters** <br>

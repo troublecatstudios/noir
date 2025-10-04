@@ -9,7 +9,7 @@
 public class CreateMarkdownFile
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -17,9 +17,10 @@ public class CreateMarkdownFile
 
 ```csharp
 public CreateMarkdownFile()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `CreateMarkdown()`
 <!-- tc:scope public -->
@@ -27,5 +28,6 @@ public CreateMarkdownFile()
 
 ```csharp
 public void CreateMarkdown()
+
 ```
 

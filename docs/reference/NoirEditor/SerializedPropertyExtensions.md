@@ -9,17 +9,18 @@
 public static class SerializedPropertyExtensions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetValue(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 Retrieves the value of the specified SerializedProperty.
 
 
 ```csharp
 public Object GetValue(SerializedProperty property)
+
 ```
 
 **Parameters** <br>
@@ -34,6 +35,7 @@ Sets the value of the specified SerializedProperty.
 
 ```csharp
 public void SetValue(SerializedProperty property, Object value)
+
 ```
 
 **Parameters** <br>
@@ -50,6 +52,7 @@ Sets the value of the specified SerializedProperty.
 
 ```csharp
 public void SetValueNoRecord(SerializedProperty property, Object value)
+
 ```
 
 **Parameters** <br>

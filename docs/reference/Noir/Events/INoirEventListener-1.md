@@ -11,7 +11,7 @@ public abstract INoirEventListener<T> : IEventSystemHandler
 
 **Implements:** _[IEventSystemHandler](https://docs.unity3d.com/ScriptReference/EventSystems.IEventSystemHandler.html)_
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `EventReceived(T)`
 <!-- tc:scope public -->
@@ -19,8 +19,9 @@ public abstract INoirEventListener<T> : IEventSystemHandler
 
 ```csharp
 public abstract void EventReceived(T eventInfo)
+
 ```
 
 **Parameters** <br>
-`eventInfo` [T](/noir/reference/) <br>
+`eventInfo` [T](/noir/reference//noir/reference/) <br>
 

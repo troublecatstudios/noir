@@ -9,9 +9,9 @@
 public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 ```
 
-**Implements:** _[INoirEventDispatcher](/noir/reference/Noir/Events/INoirEventDispatcher/), [INoirEventRegistry](/noir/reference/Noir/Events/INoirEventRegistry/)_
+**Implements:** _[INoirEventDispatcher](/noir/reference//noir/reference/Noir/Events/INoirEventDispatcher.html), [INoirEventRegistry](/noir/reference//noir/reference/Noir/Events/INoirEventRegistry.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,21 +19,23 @@ public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 
 ```csharp
 public NoirEventManager()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `DispatchEvent(T)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool DispatchEvent(T eventData)
+
 ```
 
 **Parameters** <br>
-`eventData` [T](/noir/reference/) <br>
+`eventData` [T](/noir/reference//noir/reference/) <br>
 
 ### `Register(GameObject, Type)`
 <!-- tc:scope public -->
@@ -41,6 +43,7 @@ public virtual bool DispatchEvent(T eventData)
 
 ```csharp
 public virtual void Register(GameObject handler, Type eventDataType)
+
 ```
 
 **Parameters** <br>
@@ -53,6 +56,7 @@ public virtual void Register(GameObject handler, Type eventDataType)
 
 ```csharp
 public virtual void Register(GameObject handler)
+
 ```
 
 **Parameters** <br>
@@ -64,6 +68,7 @@ public virtual void Register(GameObject handler)
 
 ```csharp
 public virtual void Unregister(GameObject handler, Type eventDataType)
+
 ```
 
 **Parameters** <br>
@@ -76,6 +81,7 @@ public virtual void Unregister(GameObject handler, Type eventDataType)
 
 ```csharp
 public virtual void Unregister(GameObject handler)
+
 ```
 
 **Parameters** <br>

@@ -9,9 +9,9 @@
 public class UniqueIdComponent : NoirBehaviour
 ```
 
-**Implements:** _[NoirBehaviour](/noir/reference/Noir/NoirBehaviour/)_
+**Implements:** _[NoirBehaviour](/noir/reference//noir/reference/Noir/NoirBehaviour.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,274 +19,304 @@ public class UniqueIdComponent : NoirBehaviour
 
 ```csharp
 public UniqueIdComponent()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `animation`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component animation { get; }
+
 ```
 
 ### `audio`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component audio { get; }
+
 ```
 
 ### `camera`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component camera { get; }
+
 ```
 
 ### `collider`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component collider { get; }
+
 ```
 
 ### `collider2D`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component collider2D { get; }
+
 ```
 
 ### `constantForce`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component constantForce { get; }
+
 ```
 
 ### `enabled`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool enabled { get; public set; }
+
 ```
 
 ### `gameObject`
 <!-- tc:scope public -->
-<!-- tc:return_type GameObject https://docs.unity3d.com/ScriptReference/GameObject.html -->
+<!-- tc:return_type [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public GameObject gameObject { get; }
+
 ```
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type GameTime /noir/reference/Noir/GameTime/ -->
+<!-- tc:return_type [GameTime](/noir/reference//noir/reference/Noir/GameTime.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected GameTime GameTime { get; }
+
 ```
 
 ### `Guid`
 <!-- tc:scope public -->
-<!-- tc:return_type Guid https://learn.microsoft.com/en-us/dotnet/api/System.Guid?view=net-7.0 -->
+<!-- tc:return_type [Guid](https://learn.microsoft.com/en-us/dotnet/api/System.Guid?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Guid Guid { get; }
+
 ```
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
 ### `hingeJoint`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component hingeJoint { get; }
+
 ```
 
 ### `isActiveAndEnabled`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool isActiveAndEnabled { get; }
+
 ```
 
 ### `light`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component light { get; }
+
 ```
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type BehaviourLogger /noir/reference/Noir/Logging/BehaviourLogger/ -->
+<!-- tc:return_type [BehaviourLogger](/noir/reference//noir/reference/Noir/Logging/BehaviourLogger.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected BehaviourLogger Logger { get; }
+
 ```
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string name { get; public set; }
+
 ```
 
 ### `networkView`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component networkView { get; }
+
 ```
 
 ### `particleSystem`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component particleSystem { get; }
+
 ```
 
 ### `renderer`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component renderer { get; }
+
 ```
 
 ### `rigidbody`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component rigidbody { get; }
+
 ```
 
 ### `rigidbody2D`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component rigidbody2D { get; }
+
 ```
 
 ### `runInEditMode`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool runInEditMode { get; public set; }
+
 ```
 
 ### `Separated`
 <!-- tc:scope public -->
-<!-- tc:return_type SeparatedGuid /noir/reference/Noir/SeparatedGuid/ -->
+<!-- tc:return_type [SeparatedGuid](/noir/reference//noir/reference/Noir/SeparatedGuid.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public SeparatedGuid Separated { get; }
+
 ```
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type ComponentServiceLocator /noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
+<!-- tc:return_type [ComponentServiceLocator](/noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected ComponentServiceLocator Services { get; }
+
 ```
 
 ### `ShortId`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string ShortId { get; }
+
 ```
 
 ### `tag`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string tag { get; public set; }
+
 ```
 
 ### `transform`
 <!-- tc:scope public -->
-<!-- tc:return_type Transform https://docs.unity3d.com/ScriptReference/Transform.html -->
+<!-- tc:return_type [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Transform transform { get; }
+
 ```
 
 ### `UID`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 A generated GUID that uniquely identifies this entity in the game.
 
 
 ```csharp
 public string UID { get; }
+
 ```
 
 ### `useGUILayout`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool useGUILayout { get; public set; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `DispatchEvent(T)`
 <!-- tc:scope private -->
@@ -294,10 +324,11 @@ public bool useGUILayout { get; public set; }
 
 ```csharp
 protected void DispatchEvent(T eventInfo)
+
 ```
 
 **Parameters** <br>
-`eventInfo` [T](/noir/reference/) <br>
+`eventInfo` [T](/noir/reference//noir/reference/) <br>
 
 ### `RegisterListener()`
 <!-- tc:scope private -->
@@ -305,6 +336,7 @@ protected void DispatchEvent(T eventInfo)
 
 ```csharp
 protected void RegisterListener()
+
 ```
 
 ### `UnregisterListener()`
@@ -313,15 +345,17 @@ protected void RegisterListener()
 
 ```csharp
 protected void UnregisterListener()
+
 ```
 
 ### `CompareTag(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool CompareTag(string tag)
+
 ```
 
 **Parameters** <br>
@@ -329,20 +363,22 @@ public bool CompareTag(string tag)
 
 ### `IsInvoking()`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool IsInvoking()
+
 ```
 
 ### `IsInvoking(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool IsInvoking(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -350,11 +386,12 @@ public bool IsInvoking(string methodName)
 
 ### `TryGetComponent(Type, out Component&)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool TryGetComponent(Type type, Component& component)
+
 ```
 
 **Parameters** <br>
@@ -363,23 +400,25 @@ public bool TryGetComponent(Type type, Component& component)
 
 ### `TryGetComponent(out T&)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool TryGetComponent(T& component)
+
 ```
 
 **Parameters** <br>
-`component` [T&](/noir/reference/) <br>
+`component` [T&](/noir/reference//noir/reference/) <br>
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponent(string type)
+
 ```
 
 **Parameters** <br>
@@ -387,11 +426,12 @@ public Component GetComponent(string type)
 
 ### `GetComponent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponent(Type type)
+
 ```
 
 **Parameters** <br>
@@ -399,11 +439,12 @@ public Component GetComponent(Type type)
 
 ### `GetComponentInChildren(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponentInChildren(Type t, bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -412,11 +453,12 @@ public Component GetComponentInChildren(Type t, bool includeInactive)
 
 ### `GetComponentInChildren(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponentInChildren(Type t)
+
 ```
 
 **Parameters** <br>
@@ -424,11 +466,12 @@ public Component GetComponentInChildren(Type t)
 
 ### `GetComponentInParent(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponentInParent(Type t, bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -437,11 +480,12 @@ public Component GetComponentInParent(Type t, bool includeInactive)
 
 ### `GetComponentInParent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component GetComponentInParent(Type t)
+
 ```
 
 **Parameters** <br>
@@ -449,11 +493,12 @@ public Component GetComponentInParent(Type t)
 
 ### `GetComponents(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component[] GetComponents(Type type)
+
 ```
 
 **Parameters** <br>
@@ -461,11 +506,12 @@ public Component[] GetComponents(Type type)
 
 ### `GetComponentsInChildren(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component[] GetComponentsInChildren(Type t, bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -474,11 +520,12 @@ public Component[] GetComponentsInChildren(Type t, bool includeInactive)
 
 ### `GetComponentsInChildren(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component[] GetComponentsInChildren(Type t)
+
 ```
 
 **Parameters** <br>
@@ -486,11 +533,12 @@ public Component[] GetComponentsInChildren(Type t)
 
 ### `GetComponentsInParent(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component[] GetComponentsInParent(Type t, bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -499,11 +547,12 @@ public Component[] GetComponentsInParent(Type t, bool includeInactive)
 
 ### `GetComponentsInParent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
+<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Component[] GetComponentsInParent(Type t)
+
 ```
 
 **Parameters** <br>
@@ -511,11 +560,12 @@ public Component[] GetComponentsInParent(Type t)
 
 ### `StartCoroutine_Auto(IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
+<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Coroutine StartCoroutine_Auto(IEnumerator routine)
+
 ```
 
 **Parameters** <br>
@@ -523,11 +573,12 @@ public Coroutine StartCoroutine_Auto(IEnumerator routine)
 
 ### `StartCoroutine(IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
+<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Coroutine StartCoroutine(IEnumerator routine)
+
 ```
 
 **Parameters** <br>
@@ -535,11 +586,12 @@ public Coroutine StartCoroutine(IEnumerator routine)
 
 ### `StartCoroutine(string, Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
+<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Coroutine StartCoroutine(string methodName, Object value)
+
 ```
 
 **Parameters** <br>
@@ -548,11 +600,12 @@ public Coroutine StartCoroutine(string methodName, Object value)
 
 ### `StartCoroutine(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
+<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Coroutine StartCoroutine(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -560,38 +613,42 @@ public Coroutine StartCoroutine(string methodName)
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public int GetInstanceID()
+
 ```
 
 ### `GetComponent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T GetComponent()
+
 ```
 
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T GetComponentInChildren()
+
 ```
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T GetComponentInChildren(bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -599,20 +656,22 @@ public T GetComponentInChildren(bool includeInactive)
 
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T GetComponentInParent()
+
 ```
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T GetComponentInParent(bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -620,29 +679,32 @@ public T GetComponentInParent(bool includeInactive)
 
 ### `GetComponents()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] GetComponents()
+
 ```
 
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] GetComponentsInChildren()
+
 ```
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] GetComponentsInChildren(bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -650,20 +712,22 @@ public T[] GetComponentsInChildren(bool includeInactive)
 
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] GetComponentsInParent()
+
 ```
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] GetComponentsInParent(bool includeInactive)
+
 ```
 
 **Parameters** <br>
@@ -671,11 +735,12 @@ public T[] GetComponentsInParent(bool includeInactive)
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
@@ -683,20 +748,22 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual string ToString()
+
 ```
 
 ### `BroadcastMessage(string, Object, SendMessageOptions)`
@@ -704,7 +771,10 @@ public virtual string ToString()
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void BroadcastMessage(string methodName, Object parameter, SendMessageOptions options)
+public void BroadcastMessage(string methodName, Object parameter,
+                              SendMessageOptions options)
+
+
 ```
 
 **Parameters** <br>
@@ -718,6 +788,7 @@ public void BroadcastMessage(string methodName, Object parameter, SendMessageOpt
 
 ```csharp
 public void BroadcastMessage(string methodName, Object parameter)
+
 ```
 
 **Parameters** <br>
@@ -730,6 +801,7 @@ public void BroadcastMessage(string methodName, Object parameter)
 
 ```csharp
 public void BroadcastMessage(string methodName, SendMessageOptions options)
+
 ```
 
 **Parameters** <br>
@@ -742,6 +814,7 @@ public void BroadcastMessage(string methodName, SendMessageOptions options)
 
 ```csharp
 public void BroadcastMessage(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -753,6 +826,7 @@ public void BroadcastMessage(string methodName)
 
 ```csharp
 public void CancelInvoke()
+
 ```
 
 ### `CancelInvoke(string)`
@@ -761,6 +835,7 @@ public void CancelInvoke()
 
 ```csharp
 public void CancelInvoke(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -772,6 +847,7 @@ public void CancelInvoke(string methodName)
 
 ```csharp
 public void GenerateUUID()
+
 ```
 
 ### `GetComponents(List<T>)`
@@ -780,6 +856,7 @@ public void GenerateUUID()
 
 ```csharp
 public void GetComponents(List<T> results)
+
 ```
 
 **Parameters** <br>
@@ -791,6 +868,7 @@ public void GetComponents(List<T> results)
 
 ```csharp
 public void GetComponents(Type type, List<T> results)
+
 ```
 
 **Parameters** <br>
@@ -803,6 +881,7 @@ public void GetComponents(Type type, List<T> results)
 
 ```csharp
 public void GetComponentsInChildren(bool includeInactive, List<T> result)
+
 ```
 
 **Parameters** <br>
@@ -815,6 +894,7 @@ public void GetComponentsInChildren(bool includeInactive, List<T> result)
 
 ```csharp
 public void GetComponentsInChildren(List<T> results)
+
 ```
 
 **Parameters** <br>
@@ -826,6 +906,7 @@ public void GetComponentsInChildren(List<T> results)
 
 ```csharp
 public void GetComponentsInParent(bool includeInactive, List<T> results)
+
 ```
 
 **Parameters** <br>
@@ -838,6 +919,7 @@ public void GetComponentsInParent(bool includeInactive, List<T> results)
 
 ```csharp
 public void Invoke(string methodName, float time)
+
 ```
 
 **Parameters** <br>
@@ -850,6 +932,7 @@ public void Invoke(string methodName, float time)
 
 ```csharp
 public void InvokeRepeating(string methodName, float time, float repeatRate)
+
 ```
 
 **Parameters** <br>
@@ -862,7 +945,10 @@ public void InvokeRepeating(string methodName, float time, float repeatRate)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void SendMessage(string methodName, Object value, SendMessageOptions options)
+public void SendMessage(string methodName, Object value,
+                         SendMessageOptions options)
+
+
 ```
 
 **Parameters** <br>
@@ -876,6 +962,7 @@ public void SendMessage(string methodName, Object value, SendMessageOptions opti
 
 ```csharp
 public void SendMessage(string methodName, Object value)
+
 ```
 
 **Parameters** <br>
@@ -888,6 +975,7 @@ public void SendMessage(string methodName, Object value)
 
 ```csharp
 public void SendMessage(string methodName, SendMessageOptions options)
+
 ```
 
 **Parameters** <br>
@@ -900,6 +988,7 @@ public void SendMessage(string methodName, SendMessageOptions options)
 
 ```csharp
 public void SendMessage(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -910,7 +999,10 @@ public void SendMessage(string methodName)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public void SendMessageUpwards(string methodName, Object value, SendMessageOptions options)
+public void SendMessageUpwards(string methodName, Object value,
+                                SendMessageOptions options)
+
+
 ```
 
 **Parameters** <br>
@@ -924,6 +1016,7 @@ public void SendMessageUpwards(string methodName, Object value, SendMessageOptio
 
 ```csharp
 public void SendMessageUpwards(string methodName, Object value)
+
 ```
 
 **Parameters** <br>
@@ -936,6 +1029,7 @@ public void SendMessageUpwards(string methodName, Object value)
 
 ```csharp
 public void SendMessageUpwards(string methodName, SendMessageOptions options)
+
 ```
 
 **Parameters** <br>
@@ -948,6 +1042,7 @@ public void SendMessageUpwards(string methodName, SendMessageOptions options)
 
 ```csharp
 public void SendMessageUpwards(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -959,6 +1054,7 @@ public void SendMessageUpwards(string methodName)
 
 ```csharp
 public void StopAllCoroutines()
+
 ```
 
 ### `StopCoroutine(IEnumerator)`
@@ -967,6 +1063,7 @@ public void StopAllCoroutines()
 
 ```csharp
 public void StopCoroutine(IEnumerator routine)
+
 ```
 
 **Parameters** <br>
@@ -978,6 +1075,7 @@ public void StopCoroutine(IEnumerator routine)
 
 ```csharp
 public void StopCoroutine(string methodName)
+
 ```
 
 **Parameters** <br>
@@ -989,6 +1087,7 @@ public void StopCoroutine(string methodName)
 
 ```csharp
 public void StopCoroutine(Coroutine routine)
+
 ```
 
 **Parameters** <br>

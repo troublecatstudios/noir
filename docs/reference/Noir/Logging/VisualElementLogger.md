@@ -9,9 +9,9 @@
 public class VisualElementLogger : ILogWriter
 ```
 
-**Implements:** _[ILogWriter](/noir/reference/Noir/Logging/ILogWriter/)_
+**Implements:** _[ILogWriter](/noir/reference//noir/reference/Noir/Logging/ILogWriter.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(VisualElement)`
 <!-- tc:scope public -->
@@ -19,12 +19,13 @@ public class VisualElementLogger : ILogWriter
 
 ```csharp
 public VisualElementLogger(VisualElement context)
+
 ```
 
 **Parameters** <br>
 `context` [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) <br>
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Debug(string, string)`
 <!-- tc:scope public -->
@@ -32,6 +33,7 @@ public VisualElementLogger(VisualElement context)
 
 ```csharp
 public virtual void Debug(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -44,6 +46,7 @@ public virtual void Debug(string message, string subsystem)
 
 ```csharp
 public virtual void Error(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -56,6 +59,7 @@ public virtual void Error(string message, string subsystem)
 
 ```csharp
 public virtual void Info(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -68,6 +72,7 @@ public virtual void Info(string message, string subsystem)
 
 ```csharp
 public virtual void Trace(string trace, string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -81,6 +86,7 @@ public virtual void Trace(string trace, string message, string subsystem)
 
 ```csharp
 public virtual void Verify(bool condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -93,7 +99,10 @@ public virtual void Verify(bool condition, string label, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void Verify(Func<TResult> condition, string label, string subsystem)
+public virtual void Verify(Func<TResult> condition, string label,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -107,6 +116,7 @@ public virtual void Verify(Func<TResult> condition, string label, string subsyst
 
 ```csharp
 public virtual void Warn(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -118,12 +128,15 @@ public virtual void Warn(string message, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void WriteLog(string message, LogLevel level, string subsystem, string trace)
+public virtual void WriteLog(string message, LogLevel level, string subsystem,
+                              string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

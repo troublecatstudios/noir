@@ -9,15 +9,20 @@
 public abstract INoirAudioManager
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `TryPlayClip(AudioClip, T?, float, float, float, bool, AudioMixerGroup, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract bool TryPlayClip(AudioClip clip, T? origin, float delay, float volume, float pitch, bool loop, AudioMixerGroup mixerGroup, float spatialBlend)
+public abstract bool TryPlayClip(AudioClip clip, T? origin, float delay,
+                                  float volume, float pitch, bool loop,
+                                  AudioMixerGroup mixerGroup,
+                                  float spatialBlend)
+
+
 ```
 
 **Parameters** <br>
@@ -32,15 +37,19 @@ public abstract bool TryPlayClip(AudioClip clip, T? origin, float delay, float v
 
 ### `TryPlaySoundEffect(SoundEffect, T?, float, float, float, bool, AudioMixerGroup)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin, float delay, float volume, float pitch, bool loop, AudioMixerGroup mixerGroup)
+public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin,
+                                         float delay, float volume, float pitch,
+                                         bool loop, AudioMixerGroup mixerGroup)
+
+
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
+`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect.html) <br>
 `origin` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
@@ -50,11 +59,16 @@ public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin, float del
 
 ### `TryPlaySoundEffect(string, Transform, float, float, float, bool, AudioMixerGroup)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public abstract bool TryPlaySoundEffect(string effectName, Transform sourceObject, float delay, float volume, float pitch, bool loop, AudioMixerGroup mixerGroup)
+public abstract bool TryPlaySoundEffect(string effectName,
+                                         Transform sourceObject, float delay,
+                                         float volume, float pitch, bool loop,
+                                         AudioMixerGroup mixerGroup)
+
+
 ```
 
 **Parameters** <br>
@@ -72,6 +86,7 @@ public abstract bool TryPlaySoundEffect(string effectName, Transform sourceObjec
 
 ```csharp
 public abstract void StopAllEffects()
+
 ```
 
 ### `StopEffect(string)`
@@ -80,6 +95,7 @@ public abstract void StopAllEffects()
 
 ```csharp
 public abstract void StopEffect(string name)
+
 ```
 
 **Parameters** <br>

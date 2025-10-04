@@ -9,24 +9,26 @@
 public abstract IServiceLocator
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract bool IsServiceRegistered()
+
 ```
 
 ### `TryGetService(out T&)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract bool TryGetService(T& instance)
+
 ```
 
 **Parameters** <br>
@@ -34,11 +36,12 @@ public abstract bool TryGetService(T& instance)
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type T /noir/reference/ -->
+<!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract T GetService()
+
 ```
 
 ### `RegisterService(Func<TResult>)`
@@ -47,6 +50,7 @@ public abstract T GetService()
 
 ```csharp
 public abstract void RegisterService(Func<TResult> factory)
+
 ```
 
 **Parameters** <br>
@@ -58,6 +62,7 @@ public abstract void RegisterService(Func<TResult> factory)
 
 ```csharp
 public abstract void RegisterService(T instance)
+
 ```
 
 **Parameters** <br>
@@ -69,5 +74,6 @@ public abstract void RegisterService(T instance)
 
 ```csharp
 public abstract void UnregisterService()
+
 ```
 

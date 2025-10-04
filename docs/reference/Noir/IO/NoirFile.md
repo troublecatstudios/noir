@@ -9,7 +9,7 @@
 public class NoirFile
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -17,9 +17,10 @@ public class NoirFile
 
 ```csharp
 public NoirFile()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Write(string, string)`
 <!-- tc:scope public -->
@@ -27,6 +28,7 @@ public NoirFile()
 
 ```csharp
 public void Write(string contents, string filePath)
+
 ```
 
 **Parameters** <br>

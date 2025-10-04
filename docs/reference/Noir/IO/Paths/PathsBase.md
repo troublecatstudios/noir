@@ -9,7 +9,7 @@
 public abstract class PathsBase
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -17,17 +17,19 @@ public abstract class PathsBase
 
 ```csharp
 protected PathsBase()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `AppendDirectory(string, string)`
 <!-- tc:scope private -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected string AppendDirectory(string path, string dir)
+
 ```
 
 **Parameters** <br>
@@ -36,11 +38,12 @@ protected string AppendDirectory(string path, string dir)
 
 ### `AppendProductPath(string, bool)`
 <!-- tc:scope private -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected string AppendProductPath(string path, bool includeCompanyName)
+
 ```
 
 **Parameters** <br>
@@ -49,11 +52,12 @@ protected string AppendProductPath(string path, bool includeCompanyName)
 
 ### `CleanForPath(string)`
 <!-- tc:scope private -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 protected string CleanForPath(string str)
+
 ```
 
 **Parameters** <br>

@@ -9,15 +9,16 @@
 public static class NoirColor
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `FromHex(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Color FromHex(string color)
+
 ```
 
 **Parameters** <br>

@@ -9,7 +9,7 @@
 public class PoissonDisc
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -17,37 +17,44 @@ public class PoissonDisc
 
 ```csharp
 public PoissonDisc()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `DefaultIterationPerPoint`
 <!-- tc:scope private -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static const int DefaultIterationPerPoint;
+
 ```
 
 ### `InvertRootTwo`
 <!-- tc:scope private -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static const float InvertRootTwo;
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `CreateSettings(Vector2, Vector2, float, T?, int, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type PoissonSettings /noir/reference/Noir/Randomness/PoissonSettings/ -->
+<!-- tc:return_type [PoissonSettings](/noir/reference//noir/reference/Noir/Randomness/PoissonSettings.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public PoissonSettings CreateSettings(Vector2 bottomLeft, Vector2 topRight, float min, T? startingPoint, int seed, int iterations)
+public PoissonSettings CreateSettings(Vector2 bottomLeft, Vector2 topRight,
+                                       float min, T? startingPoint, int seed,
+                                       int iterations)
+
+
 ```
 
 **Parameters** <br>
@@ -60,14 +67,15 @@ public PoissonSettings CreateSettings(Vector2 bottomLeft, Vector2 topRight, floa
 
 ### `GetGridIndex(Vector2, PoissonSettings)`
 <!-- tc:scope public -->
-<!-- tc:return_type Vector2Int https://docs.unity3d.com/ScriptReference/Vector2Int.html -->
+<!-- tc:return_type [Vector2Int](https://docs.unity3d.com/ScriptReference/Vector2Int.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public Vector2Int GetGridIndex(Vector2 point, PoissonSettings set)
+
 ```
 
 **Parameters** <br>
 `point` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
-`set` [PoissonSettings](/noir/reference/Noir/Randomness/PoissonSettings/) <br>
+`set` [PoissonSettings](/noir/reference//noir/reference/Noir/Randomness/PoissonSettings.html) <br>
 

@@ -24,6 +24,7 @@ alias = 'b'
 
 [tasks."docs:src:clean"]
 run = 'rm -rf ./docs/reference/Noir && rm -rf ./docs/reference/NoirEditor'
+run_windows = 'powershell -command "if (Test-Path ./docs/reference/Noir) { Remove-Item -Recurse -Force -Path ./docs/reference/Noir }"; powershell -command "if (Test-Path ./docs/reference/NoirEditor) { Remove-Item -Recurse -Force -Path ./docs/reference/NoirEditor }"'
 description = 'removes the generated source code documentation'
 
 [tasks."docs:src"]

@@ -9,14 +9,15 @@
 public abstract IPlatformPathsFactory
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetPlatformPaths()`
 <!-- tc:scope public -->
-<!-- tc:return_type IPlatformPaths /noir/reference/Noir/IO/Paths/IPlatformPaths/ -->
+<!-- tc:return_type [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract IPlatformPaths GetPlatformPaths()
+
 ```
 

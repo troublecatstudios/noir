@@ -11,9 +11,9 @@ Provides access to services by finding an appropriate provider while hiding both
 public sealed class ServiceLocator : IServiceLocator
 ```
 
-**Implements:** _[IServiceLocator](/noir/reference/Noir/IServiceLocator/)_
+**Implements:** _[IServiceLocator](/noir/reference/Noir/IServiceLocator.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -21,28 +21,31 @@ public sealed class ServiceLocator : IServiceLocator
 
 ```csharp
 public ServiceLocator()
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 Returns a value indicating whether the given service type has an implementation in the service registry.
 
 
 ```csharp
 public bool IsServiceRegistered()
+
 ```
 
 ### `TryGetService(out TServiceType&)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public bool TryGetService(TServiceType& instance)
+
 ```
 
 **Parameters** <br>
@@ -50,13 +53,14 @@ public bool TryGetService(TServiceType& instance)
 
 ### `GetService()`
 <!-- tc:scope public -->
-<!-- tc:return_type TServiceType /noir/reference/ -->
+<!-- tc:return_type TServiceType -->
 <!-- tc:version 1.0.0 -->
 Gets an implementation for the given type from the service registry.
 
 
 ```csharp
 public TServiceType GetService()
+
 ```
 
 **Exceptions** <br>
@@ -70,6 +74,7 @@ Registers a service type and its implementation in the service registry.
 
 ```csharp
 public void RegisterService()
+
 ```
 
 ### `RegisterService(Func<TResult>)`
@@ -78,6 +83,7 @@ public void RegisterService()
 
 ```csharp
 public void RegisterService(Func<TResult> factory)
+
 ```
 
 **Parameters** <br>
@@ -89,6 +95,7 @@ public void RegisterService(Func<TResult> factory)
 
 ```csharp
 public void RegisterService(TServiceType instance)
+
 ```
 
 **Parameters** <br>
@@ -102,5 +109,6 @@ Removes a service implementation from the service registry.
 
 ```csharp
 public void UnregisterService()
+
 ```
 

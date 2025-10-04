@@ -9,14 +9,15 @@
 public static class UnityConverterInitializer
 ```
 
-## 📦 Properties
+## Properties
 
 ### `defaultUnityConvertersSettings`
 <!-- tc:scope public -->
-<!-- tc:return_type JsonSerializerSettings /noir/reference/ -->
+<!-- tc:return_type JsonSerializerSettings -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public static JsonSerializerSettings defaultUnityConvertersSettings { get; public set; }
+
 ```
 

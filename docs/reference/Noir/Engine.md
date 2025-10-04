@@ -11,7 +11,7 @@ Initializes core features of the Noir Library
 public sealed class Engine
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -19,6 +19,7 @@ public sealed class Engine
 
 ```csharp
 public Engine()
+
 ```
 
 ## More information

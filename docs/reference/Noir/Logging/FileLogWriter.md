@@ -9,9 +9,9 @@
 public class FileLogWriter : INoirLogger
 ```
 
-**Implements:** _[INoirLogger](/noir/reference/Noir/Logging/INoirLogger/)_
+**Implements:** _[INoirLogger](/noir/reference//noir/reference/Noir/Logging/INoirLogger.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(IPlatformPaths)`
 <!-- tc:scope public -->
@@ -19,12 +19,13 @@ public class FileLogWriter : INoirLogger
 
 ```csharp
 public FileLogWriter(IPlatformPaths paths)
+
 ```
 
 **Parameters** <br>
-`paths` [IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
+`paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) <br>
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -32,6 +33,7 @@ public FileLogWriter(IPlatformPaths paths)
 
 ```csharp
 public virtual void Debug(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -45,6 +47,7 @@ public virtual void Debug(string message, Object context, string subsystem)
 
 ```csharp
 public virtual void DisableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -56,6 +59,7 @@ public virtual void DisableSubsystem(string system)
 
 ```csharp
 public virtual void EnableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
@@ -67,6 +71,7 @@ public virtual void EnableSubsystem(string system)
 
 ```csharp
 public virtual void EndAllTraces()
+
 ```
 
 ### `EndTrace(string)`
@@ -75,6 +80,7 @@ public virtual void EndAllTraces()
 
 ```csharp
 public virtual void EndTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -86,6 +92,7 @@ public virtual void EndTrace(string traceName)
 
 ```csharp
 public virtual void Error(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -99,6 +106,7 @@ public virtual void Error(string message, Object context, string subsystem)
 
 ```csharp
 public virtual void Info(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -112,6 +120,7 @@ public virtual void Info(string message, Object context, string subsystem)
 
 ```csharp
 public virtual void StartTrace(string traceName)
+
 ```
 
 **Parameters** <br>
@@ -122,7 +131,10 @@ public virtual void StartTrace(string traceName)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void Trace(string trace, string message, Object context, string subsystem)
+public virtual void Trace(string trace, string message, Object context,
+                           string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -136,7 +148,10 @@ public virtual void Trace(string trace, string message, Object context, string s
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void Verify(bool condition, string label, Object context, string subsystem)
+public virtual void Verify(bool condition, string label, Object context,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -150,7 +165,10 @@ public virtual void Verify(bool condition, string label, Object context, string 
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void Verify(Func<TResult> condition, string label, Object context, string subsystem)
+public virtual void Verify(Func<TResult> condition, string label, Object context,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -165,6 +183,7 @@ public virtual void Verify(Func<TResult> condition, string label, Object context
 
 ```csharp
 public virtual void Warn(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -177,12 +196,15 @@ public virtual void Warn(string message, Object context, string subsystem)
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual void WriteLog(string message, LogLevel level, Object context, string subsystem, string trace)
+public virtual void WriteLog(string message, LogLevel level, Object context,
+                              string subsystem, string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

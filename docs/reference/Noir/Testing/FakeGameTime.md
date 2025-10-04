@@ -4,16 +4,16 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
-A fake or stubbed instance of [IGameTime](/noir/reference/Noir/Abstractions/IGameTime/) for use within tests.
+A fake or stubbed instance of [IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime.html) for use within tests.
 
 
 ```csharp
 public class FakeGameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](/noir/reference/Noir/Abstractions/IGameTime/)_
+**Implements:** _[IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope public -->
@@ -21,56 +21,62 @@ public class FakeGameTime : IGameTime
 
 ```csharp
 public FakeGameTime()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `deltaTime`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual float deltaTime { get; public set; }
+
 ```
 
 ### `fixedDeltaTime`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual float fixedDeltaTime { get; public set; }
+
 ```
 
 ### `frameCount`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual int frameCount { get; public set; }
+
 ```
 
 ### `realtimeSinceStartup`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual float realtimeSinceStartup { get; public set; }
+
 ```
 
 ### `time`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
 public virtual float time { get; public set; }
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `StepFrame()`
 <!-- tc:scope public -->
@@ -78,6 +84,7 @@ public virtual float time { get; public set; }
 
 ```csharp
 public void StepFrame()
+
 ```
 
 ### `StepFrames(int)`
@@ -86,6 +93,7 @@ public void StepFrame()
 
 ```csharp
 public void StepFrames(int frames)
+
 ```
 
 **Parameters** <br>

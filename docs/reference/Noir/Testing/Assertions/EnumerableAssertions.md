@@ -9,7 +9,7 @@
 public static class EnumerableAssertions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Contains(IAssertionContext<T>, T)`
 <!-- tc:scope public -->
@@ -17,11 +17,12 @@ public static class EnumerableAssertions
 
 ```csharp
 public void Contains(IAssertionContext<T> context, T item)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`item` [T](/noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`item` [T](/noir/reference//noir/reference//noir/reference/) <br>
 
 ### `HasLength(IAssertionContext<T>, int)`
 <!-- tc:scope public -->
@@ -31,10 +32,11 @@ Asserts that the enumerable has the expected length.
 
 ```csharp
 public void HasLength(IAssertionContext<T> context, int length)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
  <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
  <br>
@@ -47,10 +49,11 @@ Asserts that the enumerable has the same contents as the expected enumerable.
 
 ```csharp
 public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
  <br>
 `expected` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
  <br>

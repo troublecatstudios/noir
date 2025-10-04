@@ -13,7 +13,7 @@ public class EngineCallbackAttribute : Attribute
 
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(EngineCallbackType)`
 <!-- tc:scope public -->
@@ -21,28 +21,31 @@ public class EngineCallbackAttribute : Attribute
 
 ```csharp
 public EngineCallbackAttribute(EngineCallbackType callbackType)
+
 ```
 
 **Parameters** <br>
-`callbackType` [EngineCallbackType](/noir/reference/Noir/Attributes/EngineCallbackType/) <br>
+`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) <br>
 
-## 📦 Properties
+## Properties
 
 ### `CallbackType`
 <!-- tc:scope public -->
-<!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
+<!-- tc:return_type [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public EngineCallbackType CallbackType { get; public set; }
+
 ```
 
 ### `TypeId`
 <!-- tc:scope public -->
-<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual Object TypeId { get; }
+
 ```
 

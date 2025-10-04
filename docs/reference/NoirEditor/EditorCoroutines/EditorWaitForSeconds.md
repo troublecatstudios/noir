@@ -32,7 +32,7 @@ Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCor
 public class EditorWaitForSeconds
 ```
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor(float)`
 <!-- tc:scope public -->
@@ -42,23 +42,25 @@ Creates a instruction object for yielding inside a generator function.
 
 ```csharp
 public EditorWaitForSeconds(float time)
+
 ```
 
 **Parameters** <br>
 `time` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>
 
-## 📦 Properties
+## Properties
 
 ### `WaitTime`
 <!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
 <!-- tc:version 0.0.0 -->
 The time to wait in seconds.
 
 
 ```csharp
 public float WaitTime { get; }
+
 ```
 
 ## More information

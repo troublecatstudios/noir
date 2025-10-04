@@ -9,7 +9,7 @@
 public static class CustomDataVariableAssertions
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `HasValue(IAssertionContext<T>, T, string)`
 <!-- tc:scope public -->
@@ -17,10 +17,11 @@ public static class CustomDataVariableAssertions
 
 ```csharp
 public void HasValue(IAssertionContext<T> context, T value, string message)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`value` [T](/noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`value` [T](/noir/reference//noir/reference//noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

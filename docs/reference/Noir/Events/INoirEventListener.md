@@ -9,7 +9,7 @@
 public abstract INoirEventListener
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `RaiseEvent(Object)`
 <!-- tc:scope public -->
@@ -17,6 +17,7 @@ public abstract INoirEventListener
 
 ```csharp
 public abstract void RaiseEvent(Object o)
+
 ```
 
 **Parameters** <br>

@@ -9,14 +9,15 @@
 public abstract INoirProjectConfigurationAccessor
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `GetProjectConfiguration()`
 <!-- tc:scope public -->
-<!-- tc:return_type NoirProjectConfiguration /noir/reference/Noir/NoirProjectConfiguration/ -->
+<!-- tc:return_type [NoirProjectConfiguration](/noir/reference//noir/reference/Noir/NoirProjectConfiguration.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract NoirProjectConfiguration GetProjectConfiguration()
+
 ```
 

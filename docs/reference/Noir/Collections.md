@@ -9,15 +9,16 @@
 public static class Collections
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `Sort(T[], int)`
 <!-- tc:scope public -->
-<!-- tc:return_type T[] /noir/reference/ -->
+<!-- tc:return_type T[] -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public T[] Sort(T[] array, int length)
+
 ```
 
 **Parameters** <br>

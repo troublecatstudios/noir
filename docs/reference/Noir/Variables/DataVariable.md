@@ -11,7 +11,7 @@ public abstract class DataVariable : ScriptableObject
 
 **Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-## 🛠 Constructors
+## Constructors
 
 ### `.ctor()`
 <!-- tc:scope private -->
@@ -19,93 +19,102 @@ public abstract class DataVariable : ScriptableObject
 
 ```csharp
 protected DataVariable()
+
 ```
 
-## 📦 Properties
+## Properties
 
 ### `Description`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 The description of the variable.
 
 
 ```csharp
 public string Description { get; public set; }
+
 ```
 
 ### `FriendlyName`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 The friendly name of the variable.
 
 
 ```csharp
 public string FriendlyName { get; public set; }
+
 ```
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
 ### `IsPersistant`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 Gets or sets a value indicating whether this instance is persisted to disk when changed.
 
 
 ```csharp
 public bool IsPersistant { get; public set; }
+
 ```
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public string name { get; public set; }
+
 ```
 
 ### `Name`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 The variable name.
 
 
 ```csharp
 public string Name { get; }
+
 ```
 
-## ⚡ Events
+## Events
 
 ### `OnAfterVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnAfterChange /noir/reference/Noir/Variables/OnAfterChange/ -->
+<!-- tc:return_type [OnAfterChange](/noir/reference//noir/reference/Noir/Variables/OnAfterChange.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event OnAfterChange OnAfterVariableChanged;
+
 ```
 
 ### `OnBeforeVariableChanged`
 <!-- tc:scope private -->
-<!-- tc:return_type OnBeforeChange /noir/reference/Noir/Variables/OnBeforeChange/ -->
+<!-- tc:return_type [OnBeforeChange](/noir/reference//noir/reference/Noir/Variables/OnBeforeChange.html) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public event OnBeforeChange OnBeforeVariableChanged;
+
 ```
 
-## ⛹️‍♀️ Methods
+## Methods
 
 ### `OnAfterSave(Object, Object)`
 <!-- tc:scope private -->
@@ -113,6 +122,7 @@ public event OnBeforeChange OnBeforeVariableChanged;
 
 ```csharp
 protected virtual void OnAfterSave(Object previousValue, Object newValue)
+
 ```
 
 **Parameters** <br>
@@ -125,17 +135,19 @@ protected virtual void OnAfterSave(Object previousValue, Object newValue)
 
 ```csharp
 protected virtual void OnBeforeChange()
+
 ```
 
 ### `TrySetValue(Object, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 Tries to set the given [value]() into the variable.
 
 
 ```csharp
 public abstract bool TrySetValue(Object value, bool silently)
+
 ```
 
 **Parameters** <br>
@@ -146,29 +158,32 @@ public abstract bool TrySetValue(Object value, bool silently)
 
 ### `ToObject()`
 <!-- tc:scope public -->
-<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public abstract Object ToObject()
+
 ```
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public int GetInstanceID()
+
 ```
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
@@ -176,20 +191,22 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public virtual string ToString()
+
 ```
 
 ### `SetDirty()`
@@ -198,5 +215,6 @@ public virtual string ToString()
 
 ```csharp
 public void SetDirty()
+
 ```
 
