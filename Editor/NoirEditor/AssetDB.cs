@@ -97,6 +97,14 @@ namespace NoirEditor {
             return false;
         }
 
+        /// <summary>
+        /// Gets a single asset from the Unity <see cref="AssetDatabase"/>.
+        /// </summary>
+        /// <param name="query">The search query to use when locating the asset.</param>
+        /// <param name="criteria">A predicate to use to further filter assets from the results.</param>
+        /// <param name="searchPaths">The list of file system paths to search within.</param>
+        /// <typeparam name="T">The type of asset to return.</typeparam>
+        /// <returns>The first matched asset, if any are found. Otherwise, null.</returns>
         public static T LoadSingle<T>(string query = null, Func<string, bool> criteria = null, params string[] searchPaths) where T : UnityEngine.Object {
             var results = Load<T>(query, criteria, searchPaths);
             if (results != null && results.Count > 0) {
@@ -105,6 +113,13 @@ namespace NoirEditor {
             return default(T);
         }
 
+        /// <summary>
+        /// Gets a single <see cref="UnityEngine.Object"/> from the Unity <see cref="AssetDatabase"/>.
+        /// </summary>
+        /// <param name="objectType">The type of object to search for.</param>
+        /// <param name="filter">A predicate to use to further filter assets from the results.</param>
+        /// <param name="searchPaths">The list of file system paths to search within.</param>
+        /// <returns>The first matched asset, if any are found. Otherwise, null.</returns>
         public static UnityEngine.Object LoadSingle(Type objectType, Func<UnityEngine.Object, bool> filter = null, params string[] searchPaths) {
             var results = Load(objectType, filter, searchPaths);
             if (results != null && results.Count > 0) {
