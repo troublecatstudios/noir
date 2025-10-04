@@ -30,7 +30,7 @@ public OnAfterChange(Object object, IntPtr method)
 
 ### `Method`
 <!-- tc:scope public -->
-<!-- tc:return_type [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) -->
+<!-- tc:return_type MethodInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -40,7 +40,7 @@ public MethodInfo Method { get; }
 
 ### `Target`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -52,7 +52,7 @@ public Object Target { get; }
 
 ### `CombineImpl(Delegate)`
 <!-- tc:scope private -->
-<!-- tc:return_type [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:return_type Delegate https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -65,7 +65,7 @@ protected virtual Delegate CombineImpl(Delegate follow)
 
 ### `RemoveImpl(Delegate)`
 <!-- tc:scope private -->
-<!-- tc:return_type [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:return_type Delegate https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -78,7 +78,7 @@ protected virtual Delegate RemoveImpl(Delegate value)
 
 ### `GetMethodImpl()`
 <!-- tc:scope private -->
-<!-- tc:return_type [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) -->
+<!-- tc:return_type MethodInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -88,7 +88,7 @@ protected virtual MethodInfo GetMethodImpl()
 
 ### `DynamicInvokeImpl(Object[])`
 <!-- tc:scope private -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -101,7 +101,7 @@ protected virtual Object DynamicInvokeImpl(Object[] args)
 
 ### `DynamicInvoke(Object[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -114,7 +114,7 @@ public Object DynamicInvoke(Object[] args)
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -127,7 +127,7 @@ public virtual bool Equals(Object obj)
 
 ### `GetInvocationList()`
 <!-- tc:scope public -->
-<!-- tc:return_type [Delegate[]](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:return_type Delegate[] https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -137,7 +137,7 @@ public virtual Delegate[] GetInvocationList()
 
 ### `BeginInvoke(AsyncCallback, Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [IAsyncResult](https://learn.microsoft.com/en-us/dotnet/api/System.IAsyncResult?view=net-7.0) -->
+<!-- tc:return_type IAsyncResult https://learn.microsoft.com/en-us/dotnet/api/System.IAsyncResult?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -151,7 +151,7 @@ public virtual IAsyncResult BeginInvoke(AsyncCallback callback, Object object)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -161,7 +161,7 @@ public virtual int GetHashCode()
 
 ### `Clone()`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

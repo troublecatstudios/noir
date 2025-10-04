@@ -27,7 +27,7 @@ public T ReadViaSerializer(JsonReader reader, JsonSerializer serializer)
 
 ### `ReadAsFloat(JsonReader)`
 <!-- tc:scope public -->
-<!-- tc:return_type [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) -->
+<!-- tc:return_type T? https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -40,7 +40,7 @@ public T? ReadAsFloat(JsonReader reader)
 
 ### `ReadAsInt8(JsonReader)`
 <!-- tc:scope public -->
-<!-- tc:return_type [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) -->
+<!-- tc:return_type T? https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

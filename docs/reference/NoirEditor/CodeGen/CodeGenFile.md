@@ -13,7 +13,7 @@ public static class CodeGenFile
 
 ### `BuildConstIntegerVariable(string, int, string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -30,7 +30,7 @@ public string BuildConstIntegerVariable(string varName, int varValue,
 
 ### `BuildConstStringVariable(string, string, string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -47,7 +47,7 @@ public string BuildConstStringVariable(string varName, string varValue,
 
 ### `GetClassContent(IEnumerable<T>)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -60,7 +60,7 @@ public string GetClassContent(IEnumerable<T> items)
 
 ### `GetClassContent(String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -73,7 +73,7 @@ public string GetClassContent(String[] labelsArray)
 
 ### `GetClassWrapper(string, string, string, String[], string, string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -94,7 +94,7 @@ public string GetClassWrapper(string namespace, string className,
 
 ### `GetHashFromSourceFile(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -107,7 +107,7 @@ public string GetHashFromSourceFile(string sourceFilePath)
 
 ### `UppercaseVariableName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

@@ -26,7 +26,7 @@ public UnityTypeContractResolver()
 
 ### `DefaultMembersSearchFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) -->
+<!-- tc:return_type BindingFlags https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -36,7 +36,7 @@ public BindingFlags DefaultMembersSearchFlags { get; public set; }
 
 ### `DynamicCodeGeneration`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -46,7 +46,7 @@ public bool DynamicCodeGeneration { get; }
 
 ### `IgnoreIsSpecifiedMembers`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -56,7 +56,7 @@ public bool IgnoreIsSpecifiedMembers { get; public set; }
 
 ### `IgnoreSerializableAttribute`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -66,7 +66,7 @@ public bool IgnoreSerializableAttribute { get; public set; }
 
 ### `IgnoreSerializableInterface`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -76,7 +76,7 @@ public bool IgnoreSerializableInterface { get; public set; }
 
 ### `IgnoreShouldSerializeMembers`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -96,7 +96,7 @@ public NamingStrategy NamingStrategy { get; public set; }
 
 ### `SerializeCompilerGeneratedMembers`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -108,7 +108,7 @@ public bool SerializeCompilerGeneratedMembers { get; public set; }
 
 ### `CreateConstructorParameters(ConstructorInfo, JsonPropertyCollection)`
 <!-- tc:scope private -->
-<!-- tc:return_type [IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) -->
+<!-- tc:return_type IList\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -124,7 +124,7 @@ protected virtual IList<T> CreateConstructorParameters(ConstructorInfo construct
 
 ### `CreateProperties(Type, MemberSerialization)`
 <!-- tc:scope private -->
-<!-- tc:return_type [IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) -->
+<!-- tc:return_type IList\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -317,7 +317,7 @@ protected virtual JsonStringContract CreateStringContract(Type objectType)
 
 ### `GetSerializableMembers(Type)`
 <!-- tc:scope private -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -330,7 +330,7 @@ protected virtual List<T> GetSerializableMembers(Type objectType)
 
 ### `ResolveDictionaryKey(string)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -343,7 +343,7 @@ protected virtual string ResolveDictionaryKey(string dictionaryKey)
 
 ### `ResolveExtensionDataName(string)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -356,7 +356,7 @@ protected virtual string ResolveExtensionDataName(string extensionDataName)
 
 ### `ResolvePropertyName(string)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -369,7 +369,7 @@ protected virtual string ResolvePropertyName(string propertyName)
 
 ### `GetResolvedPropertyName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

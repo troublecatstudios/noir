@@ -9,7 +9,7 @@
 public class Vector3Converter : PartialConverter<T>
 ```
 
-**Implements:** _[PartialConverter\<T\>](/noir/reference//noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/Converters/PartialConverter-1.html)_
+**Implements:** _[PartialConverter\<T\>](/noir/reference//noir/reference//noir/reference//noir/reference/Noir/Serialization/Json/Converters/PartialConverter-1/)_
 
 ## Constructors
 
@@ -26,7 +26,7 @@ public Vector3Converter()
 
 ### `CanRead`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -36,7 +36,7 @@ public virtual bool CanRead { get; }
 
 ### `CanWrite`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -81,7 +81,7 @@ protected virtual void WriteJsonProperties(JsonWriter writer, Vector3 value,
 
 ### `CanConvert(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -94,7 +94,7 @@ public virtual bool CanConvert(Type objectType)
 
 ### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

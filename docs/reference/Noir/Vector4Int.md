@@ -32,7 +32,7 @@ public Vector4Int(int x, int y, int z, int w)
 
 ### `down`
 <!-- tc:scope private -->
-<!-- tc:return_type [Vector4Int](/noir/reference/Noir/Vector4Int.html) -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -42,7 +42,7 @@ public readonly static Vector4Int down;
 
 ### `left`
 <!-- tc:scope private -->
-<!-- tc:return_type [Vector4Int](/noir/reference/Noir/Vector4Int.html) -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -52,7 +52,7 @@ public readonly static Vector4Int left;
 
 ### `right`
 <!-- tc:scope private -->
-<!-- tc:return_type [Vector4Int](/noir/reference/Noir/Vector4Int.html) -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -62,7 +62,7 @@ public readonly static Vector4Int right;
 
 ### `sqrMagnitude`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -72,7 +72,7 @@ public int sqrMagnitude { get; }
 
 ### `up`
 <!-- tc:scope private -->
-<!-- tc:return_type [Vector4Int](/noir/reference/Noir/Vector4Int.html) -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -82,7 +82,7 @@ public readonly static Vector4Int up;
 
 ### `w`
 <!-- tc:scope private -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -92,7 +92,7 @@ public int w;
 
 ### `x`
 <!-- tc:scope private -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -102,7 +102,7 @@ public int x;
 
 ### `y`
 <!-- tc:scope private -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -112,7 +112,7 @@ public int y;
 
 ### `z`
 <!-- tc:scope private -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -122,7 +122,7 @@ public int z;
 
 ### `zero`
 <!-- tc:scope private -->
-<!-- tc:return_type [Vector4Int](/noir/reference/Noir/Vector4Int.html) -->
+<!-- tc:return_type Vector4Int /noir/reference/Noir/Vector4Int/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -134,7 +134,7 @@ public readonly static Vector4Int zero;
 
 ### `Equals(Vector4Int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -143,11 +143,11 @@ public virtual bool Equals(Vector4Int other)
 ```
 
 **Parameters** <br>
-`other` [Vector4Int](/noir/reference/Noir/Vector4Int.html) <br>
+`other` [Vector4Int](/noir/reference/Noir/Vector4Int/) <br>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -160,7 +160,7 @@ public virtual bool Equals(Object obj)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -170,7 +170,7 @@ public virtual int GetHashCode()
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

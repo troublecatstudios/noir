@@ -26,7 +26,7 @@ public SceneAssetPropertyDrawer()
 
 ### `attribute`
 <!-- tc:scope public -->
-<!-- tc:return_type [PropertyAttribute](https://docs.unity3d.com/ScriptReference/PropertyAttribute.html) -->
+<!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -36,7 +36,7 @@ public PropertyAttribute attribute { get; }
 
 ### `fieldInfo`
 <!-- tc:scope public -->
-<!-- tc:return_type [FieldInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0) -->
+<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -48,7 +48,7 @@ public FieldInfo fieldInfo { get; }
 
 ### `GetSceneAsset(SerializedProperty)`
 <!-- tc:scope private -->
-<!-- tc:return_type [SceneAsset](https://docs.unity3d.com/ScriptReference/SceneAsset.html) -->
+<!-- tc:return_type SceneAsset https://docs.unity3d.com/ScriptReference/SceneAsset.html -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -61,7 +61,7 @@ protected SceneAsset GetSceneAsset(SerializedProperty prop)
 
 ### `CanCacheInspectorGUI(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -74,7 +74,7 @@ public virtual bool CanCacheInspectorGUI(SerializedProperty property)
 
 ### `GetPropertyHeight(SerializedProperty, GUIContent)`
 <!-- tc:scope public -->
-<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -90,7 +90,7 @@ public virtual float GetPropertyHeight(SerializedProperty property,
 
 ### `CreatePropertyGUI(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) -->
+<!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

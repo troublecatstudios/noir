@@ -15,7 +15,7 @@ public static class HaltonSequence
 
 ### `GetIndex(int, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -29,7 +29,7 @@ public float GetIndex(int index, int baseNum)
 
 ### `GeneratePoints(int, int, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2[]](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2[] https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 Returns an array of points based on the Halton Sequence algorithm.
 

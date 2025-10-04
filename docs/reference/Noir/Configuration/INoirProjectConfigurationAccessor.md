@@ -13,7 +13,7 @@ public abstract INoirProjectConfigurationAccessor
 
 ### `GetProjectConfiguration()`
 <!-- tc:scope public -->
-<!-- tc:return_type [NoirProjectConfiguration](/noir/reference//noir/reference/Noir/NoirProjectConfiguration.html) -->
+<!-- tc:return_type NoirProjectConfiguration /noir/reference//noir/reference/Noir/NoirProjectConfiguration/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

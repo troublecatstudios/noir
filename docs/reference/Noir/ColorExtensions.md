@@ -13,7 +13,7 @@ public static class ColorExtensions
 
 ### `BlendWith(Color, Color, ColorBlendMode)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -24,11 +24,11 @@ public Color BlendWith(Color a, Color b, ColorBlendMode mode)
 **Parameters** <br>
 `a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
-`mode` [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) <br>
+`mode` [ColorBlendMode](/noir/reference/Noir/ColorBlendMode/) <br>
 
 ### `Darken(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -42,7 +42,7 @@ public Color Darken(Color a, Color b)
 
 ### `Darken(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -55,7 +55,7 @@ public Color Darken(Color a)
 
 ### `Difference(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -69,7 +69,7 @@ public Color Difference(Color a, Color b)
 
 ### `Exclusion(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -83,7 +83,7 @@ public Color Exclusion(Color a, Color b)
 
 ### `HardLight(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -97,7 +97,7 @@ public Color HardLight(Color a, Color b)
 
 ### `Lighten(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -111,7 +111,7 @@ public Color Lighten(Color a, Color b)
 
 ### `Lighten(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -124,7 +124,7 @@ public Color Lighten(Color a)
 
 ### `MaxWith(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -138,7 +138,7 @@ public Color MaxWith(Color c1, Color c2)
 
 ### `MinWith(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -152,7 +152,7 @@ public Color MinWith(Color c1, Color c2)
 
 ### `Overlay(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -166,7 +166,7 @@ public Color Overlay(Color a, Color b)
 
 ### `SoftLight(Color, Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -180,7 +180,7 @@ public Color SoftLight(Color a, Color b)
 
 ### `ToColor(Vector4)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -193,7 +193,7 @@ public Color ToColor(Vector4 vector)
 
 ### `WithAlpha(Color, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -207,7 +207,7 @@ public Color WithAlpha(Color color, float alpha)
 
 ### `FadeTo(Color, Color, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) -->
+<!-- tc:return_type IEnumerator https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -222,7 +222,7 @@ public IEnumerator FadeTo(Color color, Color colorb, float duration)
 
 ### `XW(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -235,7 +235,7 @@ public Vector2 XW(Color c)
 
 ### `XX(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -248,7 +248,7 @@ public Vector2 XX(Color c)
 
 ### `XY(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -261,7 +261,7 @@ public Vector2 XY(Color c)
 
 ### `XZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -274,7 +274,7 @@ public Vector2 XZ(Color c)
 
 ### `YW(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -287,7 +287,7 @@ public Vector2 YW(Color c)
 
 ### `YX(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -300,7 +300,7 @@ public Vector2 YX(Color c)
 
 ### `YY(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -313,7 +313,7 @@ public Vector2 YY(Color c)
 
 ### `YZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -326,7 +326,7 @@ public Vector2 YZ(Color c)
 
 ### `ZW(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -339,7 +339,7 @@ public Vector2 ZW(Color c)
 
 ### `ZX(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -352,7 +352,7 @@ public Vector2 ZX(Color c)
 
 ### `ZY(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -365,7 +365,7 @@ public Vector2 ZY(Color c)
 
 ### `ZZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -378,7 +378,7 @@ public Vector2 ZZ(Color c)
 
 ### `ToVector3(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -391,7 +391,7 @@ public Vector3 ToVector3(Color c)
 
 ### `XXX(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -404,7 +404,7 @@ public Vector3 XXX(Color c)
 
 ### `XYZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -417,7 +417,7 @@ public Vector3 XYZ(Color c)
 
 ### `YYY(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -430,7 +430,7 @@ public Vector3 YYY(Color c)
 
 ### `ZZZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -443,7 +443,7 @@ public Vector3 ZZZ(Color c)
 
 ### `ToVector4(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:return_type Vector4 https://docs.unity3d.com/ScriptReference/Vector4.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -456,7 +456,7 @@ public Vector4 ToVector4(Color color)
 
 ### `XXXX(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:return_type Vector4 https://docs.unity3d.com/ScriptReference/Vector4.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -469,7 +469,7 @@ public Vector4 XXXX(Color c)
 
 ### `YYYY(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:return_type Vector4 https://docs.unity3d.com/ScriptReference/Vector4.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -482,7 +482,7 @@ public Vector4 YYYY(Color c)
 
 ### `ZZZZ(Color)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:return_type Vector4 https://docs.unity3d.com/ScriptReference/Vector4.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

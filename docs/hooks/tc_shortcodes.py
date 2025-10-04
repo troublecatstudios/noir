@@ -29,6 +29,15 @@ from mkdocs.structure.pages import Page
 from re import Match
 
 # -----------------------------------------------------------------------------
+# Helpers
+# -----------------------------------------------------------------------------
+
+def fit(mystring, expected_length, replacement_value):
+    while len(mystring)<expected_length:
+        mystring +=replacement_value
+    return mystring
+
+# -----------------------------------------------------------------------------
 # Hooks
 # -----------------------------------------------------------------------------
 
@@ -119,15 +128,17 @@ def _badge_for_scope(args: str, page: Page, files: Files):
     icon = "material-lock-open-variant"
     if mod == "" or mod == "private" or mod == "protected":
         icon = "material-lock"
-    href = f"https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/{mod}"
+    href = _resolve_path("reference/conventions.md#scope", page, files)
+    mod_href = f"https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/{mod}"
+    text = f"[`{mod}`]({mod_href})"
     return _badge(
         icon = f"[:{icon}:]({href} 'access modifier')",
-        text = mod
+        text = text
     )
 
 # Create a linkable return type
 def _badge_for_return_type(args: str, page: Page, files: Files):
-    return_type_name, return_type_href, *_ = args.split(" ", 2)
+    return_type_name, return_type_href, *_ = fit(args.split(" "), 2, '_na_')
     icon = "material-keyboard-return"
     href = _resolve_path("reference/conventions.md#return_type", page, files)
     text = f"[`{return_type_name}`]({return_type_href})"

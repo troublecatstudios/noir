@@ -9,7 +9,7 @@
 public class AssertionContext<T> : IAssertionContext<T>
 ```
 
-**Implements:** _[IAssertionContext\<T\>](/noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html)_
+**Implements:** _[IAssertionContext\<T\>](/noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/)_
 
 ## Constructors
 
@@ -41,7 +41,7 @@ public AssertionContext<T>(T target, Object[] additionalContexts)
 
 ### `AdditionalContexts`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object[]](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object[] https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

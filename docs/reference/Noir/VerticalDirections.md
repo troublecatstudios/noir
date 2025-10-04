@@ -17,7 +17,7 @@ public sealed enum VerticalDirections : Enum, IComparable, ISpanFormattable, IFo
 
 ### `Down`
 <!-- tc:scope private -->
-<!-- tc:return_type [VerticalDirections](/noir/reference/Noir/VerticalDirections.html) -->
+<!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -27,7 +27,7 @@ public static const VerticalDirections Down;
 
 ### `None`
 <!-- tc:scope private -->
-<!-- tc:return_type [VerticalDirections](/noir/reference/Noir/VerticalDirections.html) -->
+<!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -37,7 +37,7 @@ public static const VerticalDirections None;
 
 ### `Up`
 <!-- tc:scope private -->
-<!-- tc:return_type [VerticalDirections](/noir/reference/Noir/VerticalDirections.html) -->
+<!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

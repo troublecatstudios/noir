@@ -13,7 +13,7 @@ public static class VectorExtensions
 
 ### `ToLogString(Vector2)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -26,7 +26,7 @@ public string ToLogString(Vector2 vector)
 
 ### `ToLogString(Vector2Int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -39,7 +39,7 @@ public string ToLogString(Vector2Int vector)
 
 ### `ToLogString(Vector3)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -52,7 +52,7 @@ public string ToLogString(Vector3 vector)
 
 ### `ToLogString(Vector3Int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -65,7 +65,7 @@ public string ToLogString(Vector3Int vector)
 
 ### `Abs(Vector2)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -78,7 +78,7 @@ public Vector2 Abs(Vector2 vector)
 
 ### `DirectionTo(Vector2, Vector2, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 Returns the direction vector between this Vector2 and another.
 
@@ -98,7 +98,7 @@ public Vector2 DirectionTo(Vector2 vector, Vector2 other, bool normalize)
 
 ### `Sign(Vector2, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -112,7 +112,7 @@ public Vector2 Sign(Vector2 vector, bool ignoreZeros)
 
 ### `Abs(Vector3)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -125,7 +125,7 @@ public Vector3 Abs(Vector3 vector)
 
 ### `DirectionTo(Vector3, Vector3, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 Returns the direction vector between this Vector3 and another.
 
@@ -145,7 +145,7 @@ public Vector3 DirectionTo(Vector3 vector, Vector3 other, bool normalize)
 
 ### `Sign(Vector3, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

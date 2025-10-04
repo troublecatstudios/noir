@@ -135,7 +135,7 @@ jobs:
         shell: bash
         run: |
           cd ./.github/scripts
-          dotnet ./dotnet2md/dotnet2md.dll ./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ ./../../docs/reference/ Noir NoirEditor
+          dotnet ./dotnet2md/dotnet2md.dll --source=./../../.build/bin/NoirEditor/Release/netcoreapp3.1/ --output=./../../docs/reference/ --reference-link-style=Directories Noir NoirEditor
       - name: Check for git changes
         id: check_changes
         run: |

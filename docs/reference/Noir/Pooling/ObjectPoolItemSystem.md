@@ -4,14 +4,14 @@
 
 <!-- tc:assembly Noir.dll -->
 
-Represents an object that is owned by a [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool.html).
+Represents an object that is owned by a [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/).
 
 
 ```csharp
 public class ObjectPoolItemSystem : NoirBehaviour
 ```
 
-**Implements:** _[NoirBehaviour](/noir/reference//noir/reference/Noir/NoirBehaviour.html)_
+**Implements:** _[NoirBehaviour](/noir/reference//noir/reference/Noir/NoirBehaviour/)_
 
 ## Constructors
 
@@ -28,7 +28,7 @@ public ObjectPoolItemSystem()
 
 ### `animation`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -38,7 +38,7 @@ public Component animation { get; }
 
 ### `audio`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -48,7 +48,7 @@ public Component audio { get; }
 
 ### `camera`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -58,7 +58,7 @@ public Component camera { get; }
 
 ### `collider`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -68,7 +68,7 @@ public Component collider { get; }
 
 ### `collider2D`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -78,7 +78,7 @@ public Component collider2D { get; }
 
 ### `constantForce`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -88,7 +88,7 @@ public Component constantForce { get; }
 
 ### `enabled`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -98,7 +98,7 @@ public bool enabled { get; public set; }
 
 ### `gameObject`
 <!-- tc:scope public -->
-<!-- tc:return_type [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) -->
+<!-- tc:return_type GameObject https://docs.unity3d.com/ScriptReference/GameObject.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -108,7 +108,7 @@ public GameObject gameObject { get; }
 
 ### `GameTime`
 <!-- tc:scope protected -->
-<!-- tc:return_type [GameTime](/noir/reference//noir/reference/Noir/GameTime.html) -->
+<!-- tc:return_type GameTime /noir/reference//noir/reference/Noir/GameTime/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -118,7 +118,7 @@ protected GameTime GameTime { get; }
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
+<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -128,7 +128,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `hingeJoint`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -138,7 +138,7 @@ public Component hingeJoint { get; }
 
 ### `Id`
 <!-- tc:scope public -->
-<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:return_type uint https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -148,7 +148,7 @@ public uint Id { get; }
 
 ### `isActiveAndEnabled`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -158,7 +158,7 @@ public bool isActiveAndEnabled { get; }
 
 ### `IsReturned`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -168,7 +168,7 @@ public bool IsReturned { get; }
 
 ### `light`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -178,7 +178,7 @@ public Component light { get; }
 
 ### `Logger`
 <!-- tc:scope protected -->
-<!-- tc:return_type [BehaviourLogger](/noir/reference//noir/reference/Noir/Logging/BehaviourLogger.html) -->
+<!-- tc:return_type BehaviourLogger /noir/reference//noir/reference/Noir/Logging/BehaviourLogger/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -188,7 +188,7 @@ protected BehaviourLogger Logger { get; }
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -198,7 +198,7 @@ public string name { get; public set; }
 
 ### `networkView`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -208,7 +208,7 @@ public Component networkView { get; }
 
 ### `particleSystem`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -218,7 +218,7 @@ public Component particleSystem { get; }
 
 ### `renderer`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -228,7 +228,7 @@ public Component renderer { get; }
 
 ### `rigidbody`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -238,7 +238,7 @@ public Component rigidbody { get; }
 
 ### `rigidbody2D`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -248,7 +248,7 @@ public Component rigidbody2D { get; }
 
 ### `runInEditMode`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -258,7 +258,7 @@ public bool runInEditMode { get; public set; }
 
 ### `Services`
 <!-- tc:scope protected -->
-<!-- tc:return_type [ComponentServiceLocator](/noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator.html) -->
+<!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -268,7 +268,7 @@ protected ComponentServiceLocator Services { get; }
 
 ### `State`
 <!-- tc:scope public -->
-<!-- tc:return_type [ObjectPoolItemState](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState.html) -->
+<!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -278,7 +278,7 @@ public ObjectPoolItemState State { get; }
 
 ### `tag`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -288,7 +288,7 @@ public string tag { get; public set; }
 
 ### `transform`
 <!-- tc:scope public -->
-<!-- tc:return_type [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) -->
+<!-- tc:return_type Transform https://docs.unity3d.com/ScriptReference/Transform.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -298,7 +298,7 @@ public Transform transform { get; }
 
 ### `useGUILayout`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -310,7 +310,7 @@ public bool useGUILayout { get; public set; }
 
 ### `OnCreated`
 <!-- tc:scope private -->
-<!-- tc:return_type [OnPoolItemCreatedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemCreatedEvent.html) -->
+<!-- tc:return_type OnPoolItemCreatedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemCreatedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -320,7 +320,7 @@ public event OnPoolItemCreatedEvent OnCreated;
 
 ### `OnRerievedFromPool`
 <!-- tc:scope private -->
-<!-- tc:return_type [OnPoolItemRetrievedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent.html) -->
+<!-- tc:return_type OnPoolItemRetrievedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -330,7 +330,7 @@ public event OnPoolItemRetrievedEvent OnRerievedFromPool;
 
 ### `OnReturnedToPool`
 <!-- tc:scope private -->
-<!-- tc:return_type [OnPoolItemReturnedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemReturnedEvent.html) -->
+<!-- tc:return_type OnPoolItemReturnedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemReturnedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -390,7 +390,7 @@ protected void UnregisterListener()
 
 ### `CompareTag(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -403,7 +403,7 @@ public bool CompareTag(string tag)
 
 ### `IsInvoking()`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -413,7 +413,7 @@ public bool IsInvoking()
 
 ### `IsInvoking(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -426,7 +426,7 @@ public bool IsInvoking(string methodName)
 
 ### `TryGetComponent(Type, out Component&)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -440,7 +440,7 @@ public bool TryGetComponent(Type type, Component& component)
 
 ### `TryGetComponent(out T&)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -453,7 +453,7 @@ public bool TryGetComponent(T& component)
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -466,7 +466,7 @@ public Component GetComponent(string type)
 
 ### `GetComponent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -479,7 +479,7 @@ public Component GetComponent(Type type)
 
 ### `GetComponentInChildren(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -493,7 +493,7 @@ public Component GetComponentInChildren(Type t, bool includeInactive)
 
 ### `GetComponentInChildren(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -506,7 +506,7 @@ public Component GetComponentInChildren(Type t)
 
 ### `GetComponentInParent(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -520,7 +520,7 @@ public Component GetComponentInParent(Type t, bool includeInactive)
 
 ### `GetComponentInParent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -533,7 +533,7 @@ public Component GetComponentInParent(Type t)
 
 ### `GetComponents(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -546,7 +546,7 @@ public Component[] GetComponents(Type type)
 
 ### `GetComponentsInChildren(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -560,7 +560,7 @@ public Component[] GetComponentsInChildren(Type t, bool includeInactive)
 
 ### `GetComponentsInChildren(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -573,7 +573,7 @@ public Component[] GetComponentsInChildren(Type t)
 
 ### `GetComponentsInParent(Type, bool)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -587,7 +587,7 @@ public Component[] GetComponentsInParent(Type t, bool includeInactive)
 
 ### `GetComponentsInParent(Type)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Component[]](https://docs.unity3d.com/ScriptReference/Component.html) -->
+<!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -600,7 +600,7 @@ public Component[] GetComponentsInParent(Type t)
 
 ### `StartCoroutine_Auto(IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
+<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -613,7 +613,7 @@ public Coroutine StartCoroutine_Auto(IEnumerator routine)
 
 ### `StartCoroutine(IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
+<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -626,7 +626,7 @@ public Coroutine StartCoroutine(IEnumerator routine)
 
 ### `StartCoroutine(string, Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
+<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -640,7 +640,7 @@ public Coroutine StartCoroutine(string methodName, Object value)
 
 ### `StartCoroutine(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Coroutine](https://docs.unity3d.com/ScriptReference/Coroutine.html) -->
+<!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -653,7 +653,7 @@ public Coroutine StartCoroutine(string methodName)
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -775,7 +775,7 @@ public T[] GetComponentsInParent(bool includeInactive)
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -788,7 +788,7 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -798,7 +798,7 @@ public virtual int GetHashCode()
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

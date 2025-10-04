@@ -13,7 +13,7 @@ public static class MenuConstants
 
 ### `BASE_MENU_PATH_TOOLS`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

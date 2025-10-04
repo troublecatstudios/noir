@@ -24,7 +24,7 @@ protected PathsBase()
 
 ### `AppendDirectory(string, string)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -38,7 +38,7 @@ protected string AppendDirectory(string path, string dir)
 
 ### `AppendProductPath(string, bool)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -52,7 +52,7 @@ protected string AppendProductPath(string path, bool includeCompanyName)
 
 ### `CleanForPath(string)`
 <!-- tc:scope private -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

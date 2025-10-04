@@ -13,7 +13,7 @@ public static class IEnumerableExtensions
 
 ### `ContainsAny(IEnumerable<T>, string, StringComparison)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -30,7 +30,7 @@ public bool ContainsAny(IEnumerable<T> sequence, string element,
 
 ### `IsEmptySafe(IEnumerable)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Determines if the enumerable has any items without throwing a NullReferenceException.
 
@@ -46,7 +46,7 @@ public bool IsEmptySafe(IEnumerable enumerable)
 
 ### `IndexWhere(IEnumerable<T>, Func<T, TResult>)`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

@@ -43,7 +43,7 @@ public MersenneTwister(uint seed)
 
 ### `NextDouble()`
 <!-- tc:scope public -->
-<!-- tc:return_type [double](https://learn.microsoft.com/en-us/dotnet/api/System.Double?view=net-7.0) -->
+<!-- tc:return_type double https://learn.microsoft.com/en-us/dotnet/api/System.Double?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Returns a random floating-point number that is greater than or equal to 0.0, and less than 1.0.
 
@@ -55,7 +55,7 @@ public double NextDouble()
 
 ### `Next()`
 <!-- tc:scope public -->
-<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:return_type uint https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Returns a non-negative random integer.
 
@@ -67,7 +67,7 @@ public uint Next()
 
 ### `Next(uint)`
 <!-- tc:scope public -->
-<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:return_type uint https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Returns a non-negative random integer that is less than the specified maximum.
 

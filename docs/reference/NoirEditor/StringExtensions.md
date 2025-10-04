@@ -13,7 +13,7 @@ public static class StringExtensions
 
 ### `ToCamelCase(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Converts the string casing using a [CamelCaseNamingStrategy](/noir/reference/).
 
@@ -29,7 +29,7 @@ public string ToCamelCase(string source)
 
 ### `ToSnakeCase(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Converts the string casing using a [SnakeCaseNamingStrategy](/noir/reference/).
 

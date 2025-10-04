@@ -15,7 +15,7 @@ sealed enum ColorBlendMode : Enum, IComparable, ISpanFormattable, IFormattable, 
 
 ### `Additive`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -25,7 +25,7 @@ public static const ColorBlendMode Additive;
 
 ### `Darken`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -35,7 +35,7 @@ public static const ColorBlendMode Darken;
 
 ### `Divide`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -45,7 +45,7 @@ public static const ColorBlendMode Divide;
 
 ### `Lighten`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -55,7 +55,7 @@ public static const ColorBlendMode Lighten;
 
 ### `Multiply`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -65,7 +65,7 @@ public static const ColorBlendMode Multiply;
 
 ### `Overlay`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -75,7 +75,7 @@ public static const ColorBlendMode Overlay;
 
 ### `Subtract`
 <!-- tc:scope private -->
-<!-- tc:return_type [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) -->
+<!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

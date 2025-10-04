@@ -9,7 +9,7 @@
 public class FileLogWriter : INoirLogger
 ```
 
-**Implements:** _[INoirLogger](/noir/reference//noir/reference/Noir/Logging/INoirLogger.html)_
+**Implements:** _[INoirLogger](/noir/reference//noir/reference/Noir/Logging/INoirLogger/)_
 
 ## Constructors
 
@@ -23,7 +23,7 @@ public FileLogWriter(IPlatformPaths paths)
 ```
 
 **Parameters** <br>
-`paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) <br>
+`paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
 
 ## Methods
 
@@ -204,7 +204,7 @@ public virtual void WriteLog(string message, LogLevel level, Object context,
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

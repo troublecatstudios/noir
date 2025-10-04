@@ -5,7 +5,7 @@
 <!-- tc:assembly Noir.dll -->
 
 Represents a direction in two-dimensional or three-dimensional space. The horizontal and vertical axis are
-            separated out into easier to read properties [Direction.Vertical](/noir/reference/Noir/Direction.html#vertical) respectively.
+            separated out into easier to read properties [Direction.Vertical](/noir/reference/Noir/Direction/#vertical) respectively.
 
 
 ```csharp
@@ -19,7 +19,7 @@ public sealed struct Direction : IEquatable<T>
 ### `.ctor(Vector2)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the [Direction](/noir/reference/Noir/Direction.html) struct.
+Initializes a new instance of the [Direction](/noir/reference/Noir/Direction/) struct.
 
 
 ```csharp
@@ -34,7 +34,7 @@ public Direction(Vector2 vector)
 ### `.ctor(Vector3)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the [Direction](/noir/reference/Noir/Direction.html) struct.
+Initializes a new instance of the [Direction](/noir/reference/Noir/Direction/) struct.
 
 
 ```csharp
@@ -50,7 +50,7 @@ public Direction(Vector3 vector)
 
 ### `Horizontal`
 <!-- tc:scope public -->
-<!-- tc:return_type [HorizontalDirections](/noir/reference/Noir/HorizontalDirections.html) -->
+<!-- tc:return_type HorizontalDirections /noir/reference/Noir/HorizontalDirections/ -->
 <!-- tc:version 1.0.0 -->
 Gets the horizontal axis.
 
@@ -62,7 +62,7 @@ public HorizontalDirections Horizontal { get; private set; }
 
 ### `None`
 <!-- tc:scope private -->
-<!-- tc:return_type [Direction](/noir/reference/Noir/Direction.html) -->
+<!-- tc:return_type Direction /noir/reference/Noir/Direction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -72,7 +72,7 @@ public readonly static Direction None;
 
 ### `Perpendicular`
 <!-- tc:scope public -->
-<!-- tc:return_type [PerpendicularDirections](/noir/reference/Noir/PerpendicularDirections.html) -->
+<!-- tc:return_type PerpendicularDirections /noir/reference/Noir/PerpendicularDirections/ -->
 <!-- tc:version 1.0.0 -->
 Gets the perpendicular axis.
 
@@ -84,7 +84,7 @@ public PerpendicularDirections Perpendicular { get; private set; }
 
 ### `Vertical`
 <!-- tc:scope public -->
-<!-- tc:return_type [VerticalDirections](/noir/reference/Noir/VerticalDirections.html) -->
+<!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
 <!-- tc:version 1.0.0 -->
 Gets the vertical axis.
 
@@ -98,7 +98,7 @@ public VerticalDirections Vertical { get; private set; }
 
 ### `Equals(Direction)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -107,11 +107,11 @@ public virtual bool Equals(Direction other)
 ```
 
 **Parameters** <br>
-`other` [Direction](/noir/reference/Noir/Direction.html) <br>
+`other` [Direction](/noir/reference/Noir/Direction/) <br>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -124,7 +124,7 @@ public virtual bool Equals(Object obj)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

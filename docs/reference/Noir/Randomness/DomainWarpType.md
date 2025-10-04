@@ -15,7 +15,7 @@ sealed enum DomainWarpType : Enum, IComparable, ISpanFormattable, IFormattable, 
 
 ### `BasicGrid`
 <!-- tc:scope private -->
-<!-- tc:return_type [DomainWarpType](/noir/reference//noir/reference/Noir/Randomness/DomainWarpType.html) -->
+<!-- tc:return_type DomainWarpType /noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -25,7 +25,7 @@ public static const DomainWarpType BasicGrid;
 
 ### `OpenSimplex2`
 <!-- tc:scope private -->
-<!-- tc:return_type [DomainWarpType](/noir/reference//noir/reference/Noir/Randomness/DomainWarpType.html) -->
+<!-- tc:return_type DomainWarpType /noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -35,7 +35,7 @@ public static const DomainWarpType OpenSimplex2;
 
 ### `OpenSimplex2Reduced`
 <!-- tc:scope private -->
-<!-- tc:return_type [DomainWarpType](/noir/reference//noir/reference/Noir/Randomness/DomainWarpType.html) -->
+<!-- tc:return_type DomainWarpType /noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

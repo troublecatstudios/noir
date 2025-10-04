@@ -34,7 +34,7 @@ public NoirVariableAttribute(string variableName)
 
 ### `TypeId`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -44,7 +44,7 @@ public virtual Object TypeId { get; }
 
 ### `VariableName`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 The variable name to use when looking up the event asset in the asset library.
 

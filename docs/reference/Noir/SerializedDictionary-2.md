@@ -29,7 +29,7 @@ public SerializedDictionary<TKey, TValue>()
 
 ### `Count`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -39,7 +39,7 @@ public virtual int Count { get; }
 
 ### `IsReadOnly`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -59,7 +59,7 @@ public virtual TValue Item { get; public set; }
 
 ### `Keys`
 <!-- tc:scope public -->
-<!-- tc:return_type [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0) -->
+<!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -69,7 +69,7 @@ public virtual ICollection<T> Keys { get; }
 
 ### `Values`
 <!-- tc:scope public -->
-<!-- tc:return_type [ICollection\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0) -->
+<!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -81,7 +81,7 @@ public virtual ICollection<T> Values { get; }
 
 ### `From(Dictionary<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type [SerializedDictionary\<TKey, TValue\>](/noir/reference/Noir/SerializedDictionary-2.html) -->
+<!-- tc:return_type SerializedDictionary\<TKey, TValue\> /noir/reference/Noir/SerializedDictionary-2/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -96,7 +96,7 @@ public SerializedDictionary<TKey, TValue> From(Dictionary<TKey,
 
 ### `Contains(KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -109,7 +109,7 @@ public virtual bool Contains(KeyValuePair<TKey, TValue> item)
 
 ### `ContainsKey(TKey)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -122,7 +122,7 @@ public virtual bool ContainsKey(TKey key)
 
 ### `Remove(KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -135,7 +135,7 @@ public virtual bool Remove(KeyValuePair<TKey, TValue> item)
 
 ### `Remove(TKey)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -148,7 +148,7 @@ public virtual bool Remove(TKey key)
 
 ### `TryGetValue(TKey, out TValue&)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -162,7 +162,7 @@ public virtual bool TryGetValue(TKey key, TValue& value)
 
 ### `GetEnumerator()`
 <!-- tc:scope public -->
-<!-- tc:return_type [IEnumerator\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1?view=net-7.0) -->
+<!-- tc:return_type IEnumerator\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

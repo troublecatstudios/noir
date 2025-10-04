@@ -13,7 +13,7 @@ public static class FirstTimeSetup
 
 ### `SetupValidation()`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

@@ -15,7 +15,7 @@ public sealed enum CollisionCheckMethod : Enum, IComparable, ISpanFormattable, I
 
 ### `ThreeDimensional`
 <!-- tc:scope private -->
-<!-- tc:return_type [CollisionCheckMethod](/noir/reference/Noir/CollisionCheckMethod.html) -->
+<!-- tc:return_type CollisionCheckMethod /noir/reference/Noir/CollisionCheckMethod/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -25,7 +25,7 @@ public static const CollisionCheckMethod ThreeDimensional;
 
 ### `TwoDimensional`
 <!-- tc:scope private -->
-<!-- tc:return_type [CollisionCheckMethod](/noir/reference/Noir/CollisionCheckMethod.html) -->
+<!-- tc:return_type CollisionCheckMethod /noir/reference/Noir/CollisionCheckMethod/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

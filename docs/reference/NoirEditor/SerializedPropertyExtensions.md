@@ -13,7 +13,7 @@ public static class SerializedPropertyExtensions
 
 ### `GetValue(SerializedProperty)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Retrieves the value of the specified SerializedProperty.
 

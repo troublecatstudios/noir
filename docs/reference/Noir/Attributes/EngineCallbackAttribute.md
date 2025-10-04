@@ -25,13 +25,13 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 ```
 
 **Parameters** <br>
-`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) <br>
+`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/) <br>
 
 ## Properties
 
 ### `CallbackType`
 <!-- tc:scope public -->
-<!-- tc:return_type [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) -->
+<!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -41,7 +41,7 @@ public EngineCallbackType CallbackType { get; public set; }
 
 ### `TypeId`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

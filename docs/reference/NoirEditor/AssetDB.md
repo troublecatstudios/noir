@@ -15,7 +15,7 @@ public static class AssetDB
 
 ### `Mkdirp(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Walks a directory path ensuring each directory exists.
 
@@ -31,7 +31,7 @@ public bool Mkdirp(string path)
 
 ### `TryGetReferencesToObject(Object, out IEnumerable`1&)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -45,7 +45,7 @@ public bool TryGetReferencesToObject(Object asset, IEnumerable`1& assetPaths)
 
 ### `Load(Func<T, TResult>, String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp
@@ -59,7 +59,7 @@ public List<T> Load(Func<T, TResult> filter, String[] searchPaths)
 
 ### `Load(string, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Loads all assets from the [AssetDatabase](https://docs.unity3d.com/ScriptReference/AssetDatabase.html) that match the given type paramter.
 
@@ -78,7 +78,7 @@ public List<T> Load(string query, Func<T, TResult> filter, String[] searchPaths)
 
 ### `Load(Type, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Loads all assets from the [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0).
 
@@ -98,7 +98,7 @@ public List<T> Load(Type type, Func<T, TResult> criteria, String[] searchPaths)
 
 ### `LoadSingle(Type, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
-<!-- tc:return_type [Object](https://docs.unity3d.com/ScriptReference/Object.html) -->
+<!-- tc:return_type Object https://docs.unity3d.com/ScriptReference/Object.html -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

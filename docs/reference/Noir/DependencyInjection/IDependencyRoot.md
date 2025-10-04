@@ -13,7 +13,7 @@ public abstract IDependencyRoot
 
 ### `gameObject`
 <!-- tc:scope public -->
-<!-- tc:return_type [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) -->
+<!-- tc:return_type GameObject https://docs.unity3d.com/ScriptReference/GameObject.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

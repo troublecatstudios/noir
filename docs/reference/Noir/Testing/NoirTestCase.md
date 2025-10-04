@@ -26,9 +26,9 @@ protected NoirTestCase()
 
 ### `Asserts`
 <!-- tc:scope private -->
-<!-- tc:return_type [NoirAssertions](/noir/reference//noir/reference/Noir/Testing/NoirAssertions.html) -->
+<!-- tc:return_type NoirAssertions /noir/reference//noir/reference/Noir/Testing/NoirAssertions/ -->
 <!-- tc:version 0.0.0 -->
-Gets the [NoirAssertions](/noir/reference//noir/reference/Noir/Testing/NoirAssertions.html) instance for this test class.
+Gets the [NoirAssertions](/noir/reference//noir/reference/Noir/Testing/NoirAssertions/) instance for this test class.
 
 
 ```csharp

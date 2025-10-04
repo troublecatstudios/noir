@@ -15,7 +15,7 @@ sealed enum CellularDistanceFunction : Enum, IComparable, ISpanFormattable, IFor
 
 ### `Euclidean`
 <!-- tc:scope private -->
-<!-- tc:return_type [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) -->
+<!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -25,7 +25,7 @@ public static const CellularDistanceFunction Euclidean;
 
 ### `EuclideanSq`
 <!-- tc:scope private -->
-<!-- tc:return_type [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) -->
+<!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -35,7 +35,7 @@ public static const CellularDistanceFunction EuclideanSq;
 
 ### `Hybrid`
 <!-- tc:scope private -->
-<!-- tc:return_type [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) -->
+<!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -45,7 +45,7 @@ public static const CellularDistanceFunction Hybrid;
 
 ### `Manhattan`
 <!-- tc:scope private -->
-<!-- tc:return_type [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) -->
+<!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

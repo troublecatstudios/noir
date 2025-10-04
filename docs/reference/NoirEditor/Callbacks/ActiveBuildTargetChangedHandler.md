@@ -26,7 +26,7 @@ public ActiveBuildTargetChangedHandler()
 
 ### `callbackOrder`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

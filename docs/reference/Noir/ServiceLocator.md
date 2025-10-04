@@ -11,7 +11,7 @@ Provides access to services by finding an appropriate provider while hiding both
 public sealed class ServiceLocator : IServiceLocator
 ```
 
-**Implements:** _[IServiceLocator](/noir/reference/Noir/IServiceLocator.html)_
+**Implements:** _[IServiceLocator](/noir/reference/Noir/IServiceLocator/)_
 
 ## Constructors
 
@@ -28,7 +28,7 @@ public ServiceLocator()
 
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Returns a value indicating whether the given service type has an implementation in the service registry.
 
@@ -40,7 +40,7 @@ public bool IsServiceRegistered()
 
 ### `TryGetService(out TServiceType&)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

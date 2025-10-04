@@ -9,7 +9,7 @@
 public class NoirEventManager : INoirEventDispatcher, INoirEventRegistry
 ```
 
-**Implements:** _[INoirEventDispatcher](/noir/reference//noir/reference/Noir/Events/INoirEventDispatcher.html), [INoirEventRegistry](/noir/reference//noir/reference/Noir/Events/INoirEventRegistry.html)_
+**Implements:** _[INoirEventDispatcher](/noir/reference//noir/reference/Noir/Events/INoirEventDispatcher/), [INoirEventRegistry](/noir/reference//noir/reference/Noir/Events/INoirEventRegistry/)_
 
 ## Constructors
 
@@ -26,7 +26,7 @@ public NoirEventManager()
 
 ### `DispatchEvent(T)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

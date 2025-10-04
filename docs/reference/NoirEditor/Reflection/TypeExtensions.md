@@ -13,7 +13,7 @@ public static class TypeExtensions
 
 ### `GetAllMembers(Type, string, BindingFlags)`
 <!-- tc:scope public -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 Retrieves all members (fields and properties) of a specified type that match a given name and binding flags.
 

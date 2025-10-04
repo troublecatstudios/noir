@@ -21,13 +21,13 @@ public NoiseMaker(NoiseSettings settings)
 ```
 
 **Parameters** <br>
-`settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings.html) <br>
+`settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
 ## Methods
 
 ### `GetNoise(float, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

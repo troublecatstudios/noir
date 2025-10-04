@@ -60,7 +60,7 @@ public void DrawBezierCurve(Vector3 origin, BezierCurve curve,
 
 **Parameters** <br>
 `origin` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
-`curve` [BezierCurve](/noir/reference/Noir/BezierCurve.html) <br>
+`curve` [BezierCurve](/noir/reference/Noir/BezierCurve/) <br>
 `numberOfPoints` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `pointRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `direction` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>

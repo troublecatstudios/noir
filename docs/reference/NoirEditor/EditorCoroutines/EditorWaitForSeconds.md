@@ -53,7 +53,7 @@ public EditorWaitForSeconds(float time)
 
 ### `WaitTime`
 <!-- tc:scope public -->
-<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 0.0.0 -->
 The time to wait in seconds.
 

@@ -26,7 +26,7 @@ public NoirDataLibrary()
 
 ### `hideFlags`
 <!-- tc:scope public -->
-<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
+<!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -36,7 +36,7 @@ public HideFlags hideFlags { get; public set; }
 
 ### `Instance`
 <!-- tc:scope public -->
-<!-- tc:return_type [NoirDataLibrary](/noir/reference//noir/reference/Noir/DataObjects/NoirDataLibrary.html) -->
+<!-- tc:return_type NoirDataLibrary /noir/reference//noir/reference/Noir/DataObjects/NoirDataLibrary/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -46,7 +46,7 @@ public static NoirDataLibrary Instance { get; }
 
 ### `name`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -56,7 +56,7 @@ public string name { get; public set; }
 
 ### `SoundEffects`
 <!-- tc:scope private -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -66,7 +66,7 @@ public List<T> SoundEffects;
 
 ### `Variables`
 <!-- tc:scope private -->
-<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -78,7 +78,7 @@ public List<T> Variables;
 
 ### `GetInstanceID()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -88,7 +88,7 @@ public int GetInstanceID()
 
 ### `GetSoundEffectByName(string)`
 <!-- tc:scope public -->
-<!-- tc:return_type [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect.html) -->
+<!-- tc:return_type SoundEffect /noir/reference//noir/reference/Noir/Audio/SoundEffect/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -117,7 +117,7 @@ public T GetVariableByName(string name)
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -130,7 +130,7 @@ public virtual bool Equals(Object other)
 
 ### `GetHashCode()`
 <!-- tc:scope public -->
-<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -140,7 +140,7 @@ public virtual int GetHashCode()
 
 ### `ToString()`
 <!-- tc:scope public -->
-<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp

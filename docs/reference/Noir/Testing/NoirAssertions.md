@@ -24,7 +24,7 @@ public NoirAssertions()
 
 ### `That(T)`
 <!-- tc:scope public -->
-<!-- tc:return_type [IAssertionContext\<T\>](/noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) -->
+<!-- tc:return_type IAssertionContext\<T\> /noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/ -->
 <!-- tc:version 0.0.0 -->
 
 ```csharp

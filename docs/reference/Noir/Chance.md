@@ -15,7 +15,7 @@ public static class Chance
 
 ### `CoinFlip()`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Shortcut for 50/50 chance.
 
@@ -27,7 +27,7 @@ public bool CoinFlip()
 
 ### `Odds(float, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Generates a number between 0.0 and 1.0, inclusive and returns <c>true</c> if that number is less than or equal to the given odds.
 
@@ -48,7 +48,7 @@ public bool Odds(float odds, int attempts)
  <br>
 ### `Odds(float)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Generates a number between 0.0 and 1.0, inclusive and returns <c>true</c> if that number is less than or equal to the given odds.
 
@@ -67,7 +67,7 @@ public bool Odds(float odds)
  <br>
 ### `Odds(int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 Generates a number between 0 and 100, inclusive and returns <c>true</c> if that number is less than or equal to the given odds.
 

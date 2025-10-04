@@ -16,7 +16,7 @@ public sealed struct BezierCurve
 
 ### `ArcHeight`
 <!-- tc:scope public -->
-<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
 The height of the arc for the curve.
 
@@ -28,7 +28,7 @@ public float ArcHeight { get; public set; }
 
 ### `ControlPoint`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 Gets the computed control point for the curve.
 
@@ -40,7 +40,7 @@ public Vector3 ControlPoint { get; }
 
 ### `End`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 The ending point of the curve.
 
@@ -52,7 +52,7 @@ public Vector3 End { get; public set; }
 
 ### `Start`
 <!-- tc:scope public -->
-<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
 The starting point of the curve.
 
@@ -66,7 +66,7 @@ public Vector3 Start { get; public set; }
 
 ### `Create(int, int)`
 <!-- tc:scope public -->
-<!-- tc:return_type [BezierCurve](/noir/reference/Noir/BezierCurve.html) -->
+<!-- tc:return_type BezierCurve /noir/reference/Noir/BezierCurve/ -->
 <!-- tc:version 1.0.0 -->
 Creates a new <c>BezierCurve</c> that starts from <c>Vector3.zero</c>.
 
@@ -84,9 +84,9 @@ public BezierCurve Create(int distance, int height)
 
 ### `CreateMovement(int, int, float, float)`
 <!-- tc:scope public -->
-<!-- tc:return_type [BezierCurveMovement[]](/noir/reference/Noir/BezierCurveMovement.html) -->
+<!-- tc:return_type BezierCurveMovement[] /noir/reference/Noir/BezierCurveMovement/ -->
 <!-- tc:version 1.0.0 -->
-Creates a [BezierCurveMovement](/noir/reference/Noir/BezierCurveMovement.html) that starts from <c>Vector3.zero</c>.
+Creates a [BezierCurveMovement](/noir/reference/Noir/BezierCurveMovement/) that starts from <c>Vector3.zero</c>.
 
 
 ```csharp

@@ -13,7 +13,7 @@ public static class Primitives
 
 ### `RectFromSane3DValues(Vector3, Vector3)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) -->
+<!-- tc:return_type Rect https://docs.unity3d.com/ScriptReference/Rect.html -->
 <!-- tc:version 1.0.0 -->
 Creates a [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) offset down and to the left by half the size, so it can use the same values we use for literally
             every other position calculation within unity.
@@ -30,7 +30,7 @@ public Rect RectFromSane3DValues(Vector3 center, Vector3 size)
 
 ### `RectFromSaneValues(Vector2, Vector2)`
 <!-- tc:scope public -->
-<!-- tc:return_type [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) -->
+<!-- tc:return_type Rect https://docs.unity3d.com/ScriptReference/Rect.html -->
 <!-- tc:version 1.0.0 -->
 Creates a [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) offset down and to the left by half the size, so it can use the same values we use for literally
             every other position calculation within unity.

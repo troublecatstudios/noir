@@ -15,7 +15,7 @@ sealed enum FractalType : Enum, IComparable, ISpanFormattable, IFormattable, ICo
 
 ### `DomainWarpIndependent`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -25,7 +25,7 @@ public static const FractalType DomainWarpIndependent;
 
 ### `DomainWarpProgressive`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -35,7 +35,7 @@ public static const FractalType DomainWarpProgressive;
 
 ### `FBm`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -45,7 +45,7 @@ public static const FractalType FBm;
 
 ### `None`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -55,7 +55,7 @@ public static const FractalType None;
 
 ### `PingPong`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -65,7 +65,7 @@ public static const FractalType PingPong;
 
 ### `Ridged`
 <!-- tc:scope private -->
-<!-- tc:return_type [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
