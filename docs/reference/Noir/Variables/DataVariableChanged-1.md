@@ -1,7 +1,9 @@
 # DataVariableChanged\<T\>
 
-**Namespace:** Noir.Variables <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Variables -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed class DataVariableChanged<T> : MulticastDelegate, ICloneable, ISerializable
@@ -9,155 +11,205 @@ public sealed class DataVariableChanged<T> : MulticastDelegate, ICloneable, ISer
 
 **Implements:** _[MulticastDelegate](https://learn.microsoft.com/en-us/dotnet/api/System.MulticastDelegate?view=net-7.0), [ICloneable](https://learn.microsoft.com/en-us/dotnet/api/System.ICloneable?view=net-7.0), [ISerializable](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.ISerializable?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(Object, IntPtr)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public DataVariableChanged<T>(Object object, IntPtr method)
+
 ```
 
 **Parameters** <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `method` [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/System.IntPtr?view=net-7.0) <br>
 
-### 📦 Properties
-#### Method
+## Properties
+
+### `Method`
+<!-- tc:scope public -->
+<!-- tc:return_type [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public MethodInfo Method { get; }
+
 ```
 
-**Returns** <br>
-[MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) <br>
-#### Target
+### `Target`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Object Target { get; }
+
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### CombineImpl(Delegate)
+## Methods
+
+### `CombineImpl(Delegate)`
+<!-- tc:scope private -->
+<!-- tc:return_type [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual Delegate CombineImpl(Delegate follow)
+
 ```
 
 **Parameters** <br>
 `follow` [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) <br>
 
-**Returns** <br>
-[Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) <br>
+### `RemoveImpl(Delegate)`
+<!-- tc:scope private -->
+<!-- tc:return_type [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### RemoveImpl(Delegate)
 ```csharp
 protected virtual Delegate RemoveImpl(Delegate value)
+
 ```
 
 **Parameters** <br>
 `value` [Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) <br>
 
-**Returns** <br>
-[Delegate](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) <br>
+### `GetMethodImpl()`
+<!-- tc:scope private -->
+<!-- tc:return_type [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetMethodImpl()
 ```csharp
 protected virtual MethodInfo GetMethodImpl()
+
 ```
 
-**Returns** <br>
-[MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MethodInfo?view=net-7.0) <br>
+### `DynamicInvokeImpl(Object[])`
+<!-- tc:scope private -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### DynamicInvokeImpl(Object[])
 ```csharp
 protected virtual Object DynamicInvokeImpl(Object[] args)
+
 ```
 
 **Parameters** <br>
 `args` [Object[]](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `DynamicInvoke(Object[])`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### DynamicInvoke(Object[])
 ```csharp
 public Object DynamicInvoke(Object[] args)
+
 ```
 
 **Parameters** <br>
 `args` [Object[]](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object obj)
+
 ```
 
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetInvocationList()`
+<!-- tc:scope public -->
+<!-- tc:return_type [Delegate[]](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetInvocationList()
 ```csharp
 public virtual Delegate[] GetInvocationList()
+
 ```
 
-**Returns** <br>
-[Delegate[]](https://learn.microsoft.com/en-us/dotnet/api/System.Delegate?view=net-7.0) <br>
+### `BeginInvoke(T, T, AsyncCallback, Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [IAsyncResult](https://learn.microsoft.com/en-us/dotnet/api/System.IAsyncResult?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### BeginInvoke(T, T, AsyncCallback, Object)
 ```csharp
-public virtual IAsyncResult BeginInvoke(T oldValue, T newValue, AsyncCallback callback, Object object)
+public virtual IAsyncResult BeginInvoke(T oldValue, T newValue,
+                                         AsyncCallback callback, Object object)
+
+
 ```
 
 **Parameters** <br>
-`oldValue` [T](../../) <br>
-`newValue` [T](../../) <br>
+`oldValue` [T](/noir/reference//noir/reference/) <br>
+`newValue` [T](/noir/reference//noir/reference/) <br>
 `callback` [AsyncCallback](https://learn.microsoft.com/en-us/dotnet/api/System.AsyncCallback?view=net-7.0) <br>
 `object` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[IAsyncResult](https://learn.microsoft.com/en-us/dotnet/api/System.IAsyncResult?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Clone()`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Clone()
 ```csharp
 public virtual Object Clone()
+
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+### `EndInvoke(IAsyncResult)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### EndInvoke(IAsyncResult)
 ```csharp
 public virtual void EndInvoke(IAsyncResult result)
+
 ```
 
 **Parameters** <br>
 `result` [IAsyncResult](https://learn.microsoft.com/en-us/dotnet/api/System.IAsyncResult?view=net-7.0) <br>
 
-#### GetObjectData(SerializationInfo, StreamingContext)
+### `GetObjectData(SerializationInfo, StreamingContext)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+public virtual void GetObjectData(SerializationInfo info,
+                                   StreamingContext context)
+
+
 ```
 
 **Parameters** <br>
 `info` [SerializationInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.SerializationInfo?view=net-7.0) <br>
 `context` [StreamingContext](https://learn.microsoft.com/en-us/dotnet/api/System.Runtime.Serialization.StreamingContext?view=net-7.0) <br>
 
-#### Invoke(T, T)
+### `Invoke(T, T)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void Invoke(T oldValue, T newValue)
+
 ```
 
 **Parameters** <br>
-`oldValue` [T](../../) <br>
-`newValue` [T](../../) <br>
+`oldValue` [T](/noir/reference//noir/reference/) <br>
+`newValue` [T](/noir/reference//noir/reference/) <br>
 

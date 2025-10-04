@@ -1,420 +1,495 @@
 # ColorExtensions
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class ColorExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### BlendWith(Color, Color, ColorBlendMode)
+## Methods
+
+### `BlendWith(Color, Color, ColorBlendMode)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Color BlendWith(Color a, Color b, ColorBlendMode mode)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
-`mode` [ColorBlendMode](../Noir/ColorBlendMode.html) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`mode` [ColorBlendMode](/noir/reference/Noir/ColorBlendMode.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Darken(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Darken(Color, Color)
 ```csharp
 public Color Darken(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Darken(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Darken(Color)
 ```csharp
 public Color Darken(Color a)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Difference(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Difference(Color, Color)
 ```csharp
 public Color Difference(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Exclusion(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Exclusion(Color, Color)
 ```csharp
 public Color Exclusion(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `HardLight(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### HardLight(Color, Color)
 ```csharp
 public Color HardLight(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Lighten(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Lighten(Color, Color)
 ```csharp
 public Color Lighten(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Lighten(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Lighten(Color)
 ```csharp
 public Color Lighten(Color a)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `MaxWith(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### MaxWith(Color, Color)
 ```csharp
 public Color MaxWith(Color c1, Color c2)
+
 ```
 
 **Parameters** <br>
-`c1` [Color](../) <br>
-`c2` [Color](../) <br>
+`c1` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`c2` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `MinWith(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### MinWith(Color, Color)
 ```csharp
 public Color MinWith(Color c1, Color c2)
+
 ```
 
 **Parameters** <br>
-`c1` [Color](../) <br>
-`c2` [Color](../) <br>
+`c1` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`c2` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `Overlay(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Overlay(Color, Color)
 ```csharp
 public Color Overlay(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `SoftLight(Color, Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### SoftLight(Color, Color)
 ```csharp
 public Color SoftLight(Color a, Color b)
+
 ```
 
 **Parameters** <br>
-`a` [Color](../) <br>
-`b` [Color](../) <br>
+`a` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`b` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `ToColor(Vector4)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToColor(Vector4)
 ```csharp
 public Color ToColor(Vector4 vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector4](../) <br>
+`vector` [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `WithAlpha(Color, float)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Color](https://docs.unity3d.com/ScriptReference/Color.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### WithAlpha(Color, float)
 ```csharp
 public Color WithAlpha(Color color, float alpha)
+
 ```
 
 **Parameters** <br>
-`color` [Color](../) <br>
+`color` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `alpha` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-**Returns** <br>
-[Color](../) <br>
+### `FadeTo(Color, Color, float)`
+<!-- tc:scope public -->
+<!-- tc:return_type [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### FadeTo(Color, Color, float)
 ```csharp
 public IEnumerator FadeTo(Color color, Color colorb, float duration)
+
 ```
 
 **Parameters** <br>
-`color` [Color](../) <br>
-`colorb` [Color](../) <br>
+`color` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+`colorb` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `duration` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-**Returns** <br>
-[IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
+### `XW(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XW(Color)
 ```csharp
 public Vector2 XW(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `XX(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XX(Color)
 ```csharp
 public Vector2 XX(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `XY(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XY(Color)
 ```csharp
 public Vector2 XY(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `XZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XZ(Color)
 ```csharp
 public Vector2 XZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `YW(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YW(Color)
 ```csharp
 public Vector2 YW(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `YX(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YX(Color)
 ```csharp
 public Vector2 YX(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `YY(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YY(Color)
 ```csharp
 public Vector2 YY(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `YZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YZ(Color)
 ```csharp
 public Vector2 YZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `ZW(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZW(Color)
 ```csharp
 public Vector2 ZW(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `ZX(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZX(Color)
 ```csharp
 public Vector2 ZX(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `ZY(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZY(Color)
 ```csharp
 public Vector2 ZY(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `ZZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZZ(Color)
 ```csharp
 public Vector2 ZZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `ToVector3(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToVector3(Color)
 ```csharp
 public Vector3 ToVector3(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
+### `XXX(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XXX(Color)
 ```csharp
 public Vector3 XXX(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
+### `XYZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XYZ(Color)
 ```csharp
 public Vector3 XYZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
+### `YYY(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YYY(Color)
 ```csharp
 public Vector3 YYY(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
+### `ZZZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZZZ(Color)
 ```csharp
 public Vector3 ZZZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
+### `ToVector4(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToVector4(Color)
 ```csharp
 public Vector4 ToVector4(Color color)
+
 ```
 
 **Parameters** <br>
-`color` [Color](../) <br>
+`color` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector4](../) <br>
+### `XXXX(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### XXXX(Color)
 ```csharp
 public Vector4 XXXX(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector4](../) <br>
+### `YYYY(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### YYYY(Color)
 ```csharp
 public Vector4 YYYY(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 
-**Returns** <br>
-[Vector4](../) <br>
+### `ZZZZ(Color)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### ZZZZ(Color)
 ```csharp
 public Vector4 ZZZZ(Color c)
+
 ```
 
 **Parameters** <br>
-`c` [Color](../) <br>
-
-**Returns** <br>
-[Vector4](../) <br>
+`c` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 

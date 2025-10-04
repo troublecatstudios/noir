@@ -1,0 +1,12 @@
+{
+  "name": "noir-ci-version",
+  "private": true,
+  "description": "ci scripts for updating the version of the noir library",
+  "scripts": {
+    "update-version": "npm i && node set-package-version.js"
+  },
+  "dependencies": {
+    "nerdbank-gitversioning": "3.7.115",
+    "semver": "7.7.1"
+  }
+}

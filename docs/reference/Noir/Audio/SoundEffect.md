@@ -1,168 +1,237 @@
 # SoundEffect
 
-**Namespace:** Noir.Audio <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Audio -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class SoundEffect : ScriptableObject
 ```
 
-**Implements:** _[ScriptableObject](../../)_
+**Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public SoundEffect()
+
 ```
 
-### 📦 Properties
-#### AudioClips
+## Properties
+
+### `AudioClips`
+<!-- tc:scope private -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public List<T> AudioClips;
+
 ```
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
-#### ConcurrentLimit
+### `ConcurrentLimit`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int ConcurrentLimit;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Delay
+### `Delay`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float Delay { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### DelayRange
+### `DelayRange`
+<!-- tc:scope private -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public Vector2 DelayRange;
+
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### DelayStart
+### `DelayStart`
+<!-- tc:scope private -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool DelayStart;
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### hideFlags
+### `hideFlags`
+<!-- tc:scope public -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
-**Returns** <br>
-[HideFlags](../../) <br>
-#### MaxAudibleDistance
+### `MaxAudibleDistance`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float MaxAudibleDistance { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### MixerGroup
+### `MixerGroup`
+<!-- tc:scope private -->
+<!-- tc:return_type [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public AudioMixerGroup MixerGroup;
+
 ```
 
-**Returns** <br>
-[AudioMixerGroup](../../) <br>
-#### name
+### `name`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string name { get; public set; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Pitch
+### `Pitch`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float Pitch { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### SpatialBlend
+### `SpatialBlend`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float SpatialBlend { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Style
+### `Style`
+<!-- tc:scope private -->
+<!-- tc:return_type [SoundEffectPlayStyle](/noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public SoundEffectPlayStyle Style;
+
 ```
 
-**Returns** <br>
-[SoundEffectPlayStyle](../../Noir/Audio/SoundEffectPlayStyle.html) <br>
-#### VolumeScale
+### `VolumeScale`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float VolumeScale { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### GetClip()
+## Methods
+
+### `GetClip()`
+<!-- tc:scope public -->
+<!-- tc:return_type [AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public AudioClip GetClip()
+
 ```
 
-**Returns** <br>
-[AudioClip](../../) <br>
+### `GetInstanceID()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetInstanceID()
 ```csharp
 public int GetInstanceID()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `Play(SoundEffect, AudioSource, T?, bool)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### Play(SoundEffect, AudioSource, T?, bool)
 ```csharp
-public void Play(SoundEffect effect, AudioSource source, T? volumeScale, bool interrupt)
+public void Play(SoundEffect effect, AudioSource source, T? volumeScale,
+                  bool interrupt)
+
+
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](../../Noir/Audio/SoundEffect.html) <br>
-`source` [AudioSource](../../) <br>
+`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect.html) <br>
+`source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
 `volumeScale` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `interrupt` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-#### SetDirty()
+### `SetDirty()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetDirty()
+
 ```
 

@@ -1,58 +1,79 @@
 # IServiceLocator
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract IServiceLocator
 ```
 
-### ⛹️‍♀️ Methods
-#### IsServiceRegistered()
+## Methods
+
+### `IsServiceRegistered()`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract bool IsServiceRegistered()
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `TryGetService(out T&)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### TryGetService(out T&)
 ```csharp
 public abstract bool TryGetService(T& instance)
+
 ```
 
 **Parameters** <br>
-`instance` [T&](../) <br>
+`instance` [T&](/noir/reference/) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetService()`
+<!-- tc:scope public -->
+<!-- tc:return_type T -->
+<!-- tc:version 1.0.0 -->
 
-#### GetService()
 ```csharp
 public abstract T GetService()
+
 ```
 
-**Returns** <br>
-[T](../) <br>
+### `RegisterService(Func<TResult>)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### RegisterService(Func<TResult>)
 ```csharp
 public abstract void RegisterService(Func<TResult> factory)
+
 ```
 
 **Parameters** <br>
 `factory` [Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
 
-#### RegisterService(T)
+### `RegisterService(T)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void RegisterService(T instance)
+
 ```
 
 **Parameters** <br>
-`instance` [T](../) <br>
+`instance` [T](/noir/reference/) <br>
 
-#### UnregisterService()
+### `UnregisterService()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void UnregisterService()
+
 ```
 

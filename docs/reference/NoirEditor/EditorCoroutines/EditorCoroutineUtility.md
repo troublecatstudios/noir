@@ -1,18 +1,20 @@
 # EditorCoroutineUtility
 
-**Namespace:** NoirEditor.EditorCoroutines <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.EditorCoroutines -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class EditorCoroutineUtility
 ```
 
-### ⛹️‍♀️ Methods
-#### StartCoroutine(IEnumerator, Object)
-```csharp
-public EditorCoroutine StartCoroutine(IEnumerator routine, Object owner)
-```
+## Methods
 
+### `StartCoroutine(IEnumerator, Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine.html) -->
+<!-- tc:version 0.0.0 -->
 Starts an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> with the specified owner object.
              If the garbage collector collects the owner object, while the resulting coroutine is still executing, the coroutine will stop running.
              <code>
@@ -39,21 +41,22 @@ Starts an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCorout
              }
              </code>
 
+
+```csharp
+public EditorCoroutine StartCoroutine(IEnumerator routine, Object owner)
+
+```
+
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
  <br>
 `owner` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[EditorCoroutine](../../NoirEditor/EditorCoroutines/EditorCoroutine.html) <br>
- <br>
-
-#### StartCoroutineOwnerless(IEnumerator)
-```csharp
-public EditorCoroutine StartCoroutineOwnerless(IEnumerator routine)
-```
-
+### `StartCoroutineOwnerless(IEnumerator)`
+<!-- tc:scope public -->
+<!-- tc:return_type [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine.html) -->
+<!-- tc:version 0.0.0 -->
 This method starts an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> without an owning object. The <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> runs until it completes or is canceled using <see cref="M:NoirEditor.EditorCoroutines.EditorCoroutineUtility.StopCoroutine(NoirEditor.EditorCoroutines.EditorCoroutine)">StopCoroutine</see>.
              <code>
              using System.Collections;
@@ -79,19 +82,19 @@ This method starts an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">
              }
              </code>
 
+
+```csharp
+public EditorCoroutine StartCoroutineOwnerless(IEnumerator routine)
+
+```
+
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[EditorCoroutine](../../NoirEditor/EditorCoroutines/EditorCoroutine.html) <br>
- <br>
-
-#### StopCoroutine(EditorCoroutine)
-```csharp
-public void StopCoroutine(EditorCoroutine coroutine)
-```
-
+### `StopCoroutine(EditorCoroutine)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 Immediately stop an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see>. This method is safe to call on an already completed <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see>.
              <code>
              using System.Collections;
@@ -123,7 +126,13 @@ Immediately stop an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">Ed
              }
              </code>
 
+
+```csharp
+public void StopCoroutine(EditorCoroutine coroutine)
+
+```
+
 **Parameters** <br>
-`coroutine` [EditorCoroutine](../../NoirEditor/EditorCoroutines/EditorCoroutine.html) <br>
+`coroutine` [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine.html) <br>
  <br>
 

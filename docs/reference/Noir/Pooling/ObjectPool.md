@@ -1,25 +1,33 @@
 # ObjectPool
 
-**Namespace:** Noir.Pooling <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Pooling -->
+
+<!-- tc:assembly Noir.dll -->
+
+Allows easy reuse of Unity objects.
+
 
 ```csharp
 public class ObjectPool : IDisposable
 ```
 
-Allows easy reuse of Unity objects.
-
 **Implements:** _[IDisposable](https://learn.microsoft.com/en-us/dotnet/api/System.IDisposable?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(ObjectPoolItemSystem, uint)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Initializes a new instance of the [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool.html) class.
+
+
 ```csharp
 public ObjectPool(ObjectPoolItemSystem prefab, uint capacity)
+
 ```
 
-Initializes a new instance of the [ObjectPool](../../Noir/Pooling/ObjectPool.html) class.
-
 **Parameters** <br>
-`prefab` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`prefab` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
  <br>
 `capacity` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
@@ -27,14 +35,19 @@ Initializes a new instance of the [ObjectPool](../../Noir/Pooling/ObjectPool.htm
 **Exceptions** <br>
 [ArgumentNullException](https://learn.microsoft.com/en-us/dotnet/api/System.ArgumentNullException?view=net-7.0) <br>
  <br>
+### `.ctor(GameObject, uint)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Initializes a new instance of the [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool.html) class.
+
+
 ```csharp
 public ObjectPool(GameObject prefab, uint capacity)
+
 ```
 
-Initializes a new instance of the [ObjectPool](../../Noir/Pooling/ObjectPool.html) class.
-
 **Parameters** <br>
-`prefab` [GameObject](../../) <br>
+`prefab` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
  <br>
 `capacity` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
@@ -42,251 +55,346 @@ Initializes a new instance of the [ObjectPool](../../Noir/Pooling/ObjectPool.htm
 **Exceptions** <br>
 [ArgumentNullException](https://learn.microsoft.com/en-us/dotnet/api/System.ArgumentNullException?view=net-7.0) <br>
  <br>
-### 📦 Properties
-#### _disposedValue
+## Properties
+
+### `_disposedValue`
+<!-- tc:scope private -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected bool _disposedValue;
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### _prefab
+### `_prefab`
+<!-- tc:scope private -->
+<!-- tc:return_type [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected readonly ObjectPoolItemSystem _prefab;
+
 ```
 
-**Returns** <br>
-[ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
-#### ActiveCount
-```csharp
-public uint ActiveCount { get; }
-```
-
+### `ActiveCount`
+<!-- tc:scope public -->
+<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets the active count.
 
-**Returns** <br>
-[uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
-#### InactiveCount
+
 ```csharp
-public uint InactiveCount { get; }
+public uint ActiveCount { get; }
+
 ```
 
+### `InactiveCount`
+<!-- tc:scope public -->
+<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets the inactive count.
 
-**Returns** <br>
-[uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
-#### IsPreWarmed
+
 ```csharp
-public bool IsPreWarmed { get; private set; }
+public uint InactiveCount { get; }
+
 ```
 
+### `IsPreWarmed`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets whether or not the pool has been pre-warmed.
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### MaxCapacity
+
 ```csharp
-public uint MaxCapacity { get; private set; }
+public bool IsPreWarmed { get; private set; }
+
 ```
 
+### `MaxCapacity`
+<!-- tc:scope public -->
+<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets the maximum capacity.
 
-**Returns** <br>
-[uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
-#### PoolUtilization
+
 ```csharp
-public float PoolUtilization { get; }
+public uint MaxCapacity { get; private set; }
+
 ```
 
+### `PoolUtilization`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets the pool utilization.
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### TotalItems
+
 ```csharp
-public uint TotalItems { get; }
+public float PoolUtilization { get; }
+
 ```
 
+### `TotalItems`
+<!-- tc:scope public -->
+<!-- tc:return_type [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Gets the total items.
 
-**Returns** <br>
-[uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
-### ⚡ Events
-#### OnPoolItemCreated
+
+```csharp
+public uint TotalItems { get; }
+
+```
+
+## Events
+
+### `OnPoolItemCreated`
+<!-- tc:scope private -->
+<!-- tc:return_type [OnPoolItemCreatedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemCreatedEvent.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnPoolItemCreatedEvent OnPoolItemCreated;
+
 ```
 
-**Returns** <br>
-[OnPoolItemCreatedEvent](../../Noir/Pooling/OnPoolItemCreatedEvent.html) <br>
-#### OnPoolItemRerieved
+### `OnPoolItemRerieved`
+<!-- tc:scope private -->
+<!-- tc:return_type [OnPoolItemRetrievedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnPoolItemRetrievedEvent OnPoolItemRerieved;
+
 ```
 
-**Returns** <br>
-[OnPoolItemRetrievedEvent](../../Noir/Pooling/OnPoolItemRetrievedEvent.html) <br>
-#### OnPoolItemResetToDefaults
+### `OnPoolItemResetToDefaults`
+<!-- tc:scope private -->
+<!-- tc:return_type [OnPoolItemResetToDefaultsEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemResetToDefaultsEvent.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnPoolItemResetToDefaultsEvent OnPoolItemResetToDefaults;
+
 ```
 
-**Returns** <br>
-[OnPoolItemResetToDefaultsEvent](../../Noir/Pooling/OnPoolItemResetToDefaultsEvent.html) <br>
-#### OnPoolItemReturned
+### `OnPoolItemReturned`
+<!-- tc:scope private -->
+<!-- tc:return_type [OnPoolItemReturnedEvent](/noir/reference//noir/reference/Noir/Pooling/OnPoolItemReturnedEvent.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public event OnPoolItemReturnedEvent OnPoolItemReturned;
+
 ```
 
-**Returns** <br>
-[OnPoolItemReturnedEvent](../../Noir/Pooling/OnPoolItemReturnedEvent.html) <br>
-### ⛹️‍♀️ Methods
-#### CreateNewPoolItem()
+## Methods
+
+### `CreateNewPoolItem()`
+<!-- tc:scope private -->
+<!-- tc:return_type [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual ObjectPoolItemSystem CreateNewPoolItem()
+
 ```
 
-**Returns** <br>
-[ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+### `Dispose(bool)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
 
-#### Dispose(bool)
 ```csharp
 protected virtual void Dispose(bool disposing)
+
 ```
 
 **Parameters** <br>
 `disposing` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-#### OnItemCreated(ObjectPoolItemSystem, bool)
-```csharp
-protected virtual void OnItemCreated(ObjectPoolItemSystem item, bool isPreWarm)
-```
-
+### `OnItemCreated(ObjectPoolItemSystem, bool)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
 Called when an item has been created for the first time.
 
+
+```csharp
+protected virtual void OnItemCreated(ObjectPoolItemSystem item, bool isPreWarm)
+
+```
+
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
  <br>
 `isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
 
-#### OnItemRetrieved(ObjectPoolItemSystem)
-```csharp
-protected virtual void OnItemRetrieved(ObjectPoolItemSystem item)
-```
-
+### `OnItemRetrieved(ObjectPoolItemSystem)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
 Called when an inactive item is retrieved from the pool.
 
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
- <br>
 
-#### OnItemReturned(ObjectPoolItemSystem, bool)
 ```csharp
-protected virtual void OnItemReturned(ObjectPoolItemSystem item, bool isPreWarm)
+protected virtual void OnItemRetrieved(ObjectPoolItemSystem item)
+
 ```
 
+**Parameters** <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
+ <br>
+
+### `OnItemReturned(ObjectPoolItemSystem, bool)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
 Called when an active item is returned to the pool.
 
+
+```csharp
+protected virtual void OnItemReturned(ObjectPoolItemSystem item, bool isPreWarm)
+
+```
+
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
  <br>
 `isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
 
-#### OnResetToDefaults(ObjectPoolItemSystem)
-```csharp
-protected virtual void OnResetToDefaults(ObjectPoolItemSystem item)
-```
-
+### `OnResetToDefaults(ObjectPoolItemSystem)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
 Called when the item should be reset to its default state.
 
+
+```csharp
+protected virtual void OnResetToDefaults(ObjectPoolItemSystem item)
+
+```
+
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
  <br>
 
-#### ReturnToPool(ObjectPoolItemSystem, bool)
+### `ReturnToPool(ObjectPoolItemSystem, bool)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected virtual void ReturnToPool(ObjectPoolItemSystem item, bool isPreWarm)
+
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
 `isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-#### TryGet(out ObjectPoolItemSystem&)
+### `TryGet(out ObjectPoolItemSystem&)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool TryGet(ObjectPoolItemSystem& item)
+
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem&](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem&](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetActiveItems()`
+<!-- tc:scope public -->
+<!-- tc:return_type [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+Returns an [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) objects in the pool.
 
-#### GetActiveItems()
+
 ```csharp
 public IEnumerable<T> GetActiveItems()
+
 ```
 
-Returns an [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) objects in the pool.
-
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
- <br>
-
-#### Dispose()
-```csharp
-public virtual void Dispose()
-```
-
+### `Dispose()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 Releases unmanaged and managed resources.
 
-#### PreWarm()
+
 ```csharp
-public void PreWarm()
+public virtual void Dispose()
+
 ```
 
+### `PreWarm()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 Prewarms the object pool.
 
-#### Return(ObjectPoolItemSystem)
+
 ```csharp
-public void Return(ObjectPoolItemSystem item)
+public void PreWarm()
+
 ```
 
+### `Return(ObjectPoolItemSystem)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 Returns the specified item to the pool.
 
+
+```csharp
+public void Return(ObjectPoolItemSystem item)
+
+```
+
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](../../Noir/Pooling/ObjectPoolItemSystem.html) <br>
+`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html) <br>
  <br>
 
-#### ReturnAll()
+### `ReturnAll()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Iterates through all the active objects, calling [ObjectPoolItemSystem.ReturnToPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem.html#returntopool) on each.
+
+
 ```csharp
 public void ReturnAll()
+
 ```
 
-Iterates through all the active objects, calling [ObjectPoolItemSystem.ReturnToPool](../../Noir/Pooling/ObjectPoolItemSystem.html#returntopool) on each.
+### `SetParent(GameObject)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets the parent.
 
-#### SetParent(GameObject)
+
 ```csharp
 public void SetParent(GameObject gameObject)
+
 ```
 
-Sets the parent.
-
 **Parameters** <br>
-`gameObject` [GameObject](../../) <br>
+`gameObject` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
  <br>
 
-#### SetParent(Transform)
+### `SetParent(Transform)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets the parent.
+
+
 ```csharp
 public void SetParent(Transform transform)
+
 ```
 
-Sets the parent.
-
 **Parameters** <br>
-`transform` [Transform](../../) <br>
+`transform` [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) <br>
  <br>
 
+## More information
+
+* [](T:System.IDisposable)

@@ -1,29 +1,43 @@
 # PlatformHelper
 
-**Namespace:** NoirEditor <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public class PlatformHelper
 ```
 
-### 📦 Properties
-#### Instance
+## Properties
+
+### `Instance`
+<!-- tc:scope private -->
+<!-- tc:return_type [PlatformHelper](/noir/reference/NoirEditor/PlatformHelper.html) -->
+<!-- tc:version 0.0.0 -->
+Gets a singleton instance of the [PlatformHelper](/noir/reference/NoirEditor/PlatformHelper.html).
+
+
 ```csharp
 public readonly static PlatformHelper Instance;
+
 ```
 
-**Returns** <br>
-[PlatformHelper](../NoirEditor/PlatformHelper.html) <br>
-### ⛹️‍♀️ Methods
-#### NormalizePath(string)
+## Methods
+
+### `NormalizePath(string)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
+Converts a path that uses <c>\</c> as its path separator to a path that uses <c>/</c>.
+
+
 ```csharp
 public string NormalizePath(string fileSystemPath)
+
 ```
 
 **Parameters** <br>
 `fileSystemPath` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 

@@ -1,35 +1,54 @@
 # DictionaryExtensions
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class DictionaryExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### Upsert(Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)
+## Methods
+
+### `Upsert(Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey, TValue> kvp)
+public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey,
+                    TValue> kvp)
+
+
 ```
 
 **Parameters** <br>
 `dict` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
 `kvp` [KeyValuePair\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=net-7.0) <br>
 
-#### Upsert(Dictionary<TKey, TValue>, T, K)
+### `Upsert(Dictionary<TKey, TValue>, T, K)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void Upsert(Dictionary<TKey, TValue> dict, T key, K value)
+
 ```
 
 **Parameters** <br>
 `dict` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
-`key` [T](../) <br>
-`value` [K](../) <br>
+`key` [T](/noir/reference/) <br>
+`value` [K](/noir/reference/) <br>
 
-#### Upsert(Dictionary<TKey, TValue>, IDictionary<TKey, TValue>)
+### `Upsert(Dictionary<TKey, TValue>, IDictionary<TKey, TValue>)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public void Upsert(Dictionary<TKey, TValue> target, IDictionary<TKey, TValue> source)
+public void Upsert(Dictionary<TKey, TValue> target, IDictionary<TKey,
+                    TValue> source)
+
+
 ```
 
 **Parameters** <br>

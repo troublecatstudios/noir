@@ -1,42 +1,62 @@
 # EnvironmentVariablePaths
 
-**Namespace:** Noir.IO.Paths <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.IO.Paths -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class EnvironmentVariablePaths : IPlatformPaths
 ```
 
-**Implements:** _[IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html)_
+**Implements:** _[IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(IPlatformPaths, AbstractEnvironment)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public EnvironmentVariablePaths(IPlatformPaths fallback, AbstractEnvironment environment)
+public EnvironmentVariablePaths(IPlatformPaths fallback,
+                                 AbstractEnvironment environment)
+
+
 ```
 
 **Parameters** <br>
-`fallback` [IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html) <br>
-`environment` [AbstractEnvironment](../../../Noir/Abstractions/AbstractEnvironment.html) <br>
+`fallback` [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) <br>
+`environment` [AbstractEnvironment](/noir/reference//noir/reference//noir/reference/Noir/Abstractions/AbstractEnvironment.html) <br>
 
-### 📦 Properties
-#### ConfigurationDirectory
+## Properties
+
+### `ConfigurationDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string ConfigurationDirectory { get; private set; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### LogDirectory
+### `LogDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string LogDirectory { get; private set; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### SaveFileDirectory
+### `SaveFileDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual string SaveFileDirectory { get; private set; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

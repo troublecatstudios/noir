@@ -1,60 +1,73 @@
 # AssetDB
 
-**Namespace:** NoirEditor <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
+Useful utility methods for interacting with the Unity AssetDatabase.
+
 
 ```csharp
 public static class AssetDB
 ```
 
-Useful utility methods for interacting with the Unity AssetDatabase.
+## Methods
 
-### ⛹️‍♀️ Methods
-#### Mkdirp(string)
+### `Mkdirp(string)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
+Walks a directory path ensuring each directory exists.
+
+
 ```csharp
 public bool Mkdirp(string path)
-```
 
-Walks a directory path ensuring each directory exists.
+```
 
 **Parameters** <br>
 `path` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
+### `TryGetReferencesToObject(Object, out IEnumerable`1&)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
 
-#### TryGetReferencesToObject(Object, out IEnumerable`1&)
 ```csharp
 public bool TryGetReferencesToObject(Object asset, IEnumerable`1& assetPaths)
+
 ```
 
 **Parameters** <br>
-`asset` [Object](../) <br>
+`asset` [Object](https://docs.unity3d.com/ScriptReference/Object.html) <br>
 `assetPaths` [IEnumerable\<T\>&](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `Load(Func<T, TResult>, String[])`
+<!-- tc:scope public -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
 
-#### Load(Func<T, TResult>, String[])
 ```csharp
 public List<T> Load(Func<T, TResult> filter, String[] searchPaths)
+
 ```
 
 **Parameters** <br>
 `filter` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
+### `Load(string, Func<T, TResult>, String[])`
+<!-- tc:scope public -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
+Loads all assets from the [AssetDatabase](https://docs.unity3d.com/ScriptReference/AssetDatabase.html) that match the given type paramter.
 
-#### Load(string, Func<T, TResult>, String[])
+
 ```csharp
 public List<T> Load(string query, Func<T, TResult> filter, String[] searchPaths)
-```
 
-Loads all assets from the [AssetDatabase](../) that match the given type paramter.
+```
 
 **Parameters** <br>
 `query` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
@@ -63,16 +76,17 @@ Loads all assets from the [AssetDatabase](../) that match the given type paramte
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
- <br>
+### `Load(Type, Func<T, TResult>, String[])`
+<!-- tc:scope public -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
+Loads all assets from the [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0).
 
-#### Load(Type, Func<T, TResult>, String[])
+
 ```csharp
 public List<T> Load(Type type, Func<T, TResult> criteria, String[] searchPaths)
-```
 
-Loads all assets from the [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0).
+```
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
@@ -82,13 +96,16 @@ Loads all assets from the [Type](https://learn.microsoft.com/en-us/dotnet/api/Sy
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
- <br>
+### `LoadSingle(Type, Func<T, TResult>, String[])`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://docs.unity3d.com/ScriptReference/Object.html) -->
+<!-- tc:version 0.0.0 -->
 
-#### LoadSingle(Type, Func<T, TResult>, String[])
 ```csharp
-public Object LoadSingle(Type objectType, Func<T, TResult> filter, String[] searchPaths)
+public Object LoadSingle(Type objectType, Func<T, TResult> filter,
+                          String[] searchPaths)
+
+
 ```
 
 **Parameters** <br>
@@ -96,19 +113,25 @@ public Object LoadSingle(Type objectType, Func<T, TResult> filter, String[] sear
 `filter` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[Object](../) <br>
+### `LoadSingle(string, Func<T, TResult>, String[])`
+<!-- tc:scope public -->
+<!-- tc:return_type T -->
+<!-- tc:version 0.0.0 -->
+Gets a single asset from the Unity [AssetDatabase](https://docs.unity3d.com/ScriptReference/AssetDatabase.html).
 
-#### LoadSingle(string, Func<T, TResult>, String[])
+
 ```csharp
-public T LoadSingle(string query, Func<T, TResult> criteria, String[] searchPaths)
+public T LoadSingle(string query, Func<T, TResult> criteria,
+                     String[] searchPaths)
+
+
 ```
 
 **Parameters** <br>
 `query` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `criteria` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
+ <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-
-**Returns** <br>
-[T](../) <br>
+ <br>
 

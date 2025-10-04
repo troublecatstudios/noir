@@ -8,6 +8,26 @@
 const fs = require('fs');
 const path = require('path');
 
+const timestamp = () => new Date().toISOString();
+
+const log = (message, ...datas) => {
+  const data = Object.assign({ timestamp: timestamp(), message, level: 'INFO' }, ...datas);
+  const json = JSON.stringify(data);
+  process.stdout.write(`noir-ci: ${json}\n`);
+};
+
+const err = (message, ...datas) => {
+  const data = Object.assign({ timestamp: timestamp(), message, level: 'ERROR' }, ...datas);
+  const json = JSON.stringify(data);
+  process.stderr.write(`noir-ci: ${json}\n`);
+};
+
+const warn = (message, ...datas)  => {
+  const data = Object.assign({ timestamp: timestamp(), message, level: 'WARN' }, ...datas);
+  const json = JSON.stringify(data);
+  process.stdout.write(`noir-ci: ${json}\n`);
+};
+
 const hasAnyDirs = (parentDirectory, ...directoryNames) => {
   return directoryNames
     .map(d => path.resolve(parentDirectory, dir))
@@ -42,5 +62,8 @@ const walkDirSync = (dir, filelist) => {
 module.exports = {
   walkDirSync,
   hasAnyDirs,
-  hasDirs
+  hasDirs,
+  log,
+  warn,
+  err,
 };

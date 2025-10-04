@@ -1,36 +1,51 @@
 # EngineCallbackAttribute
 
-**Namespace:** Noir.Attributes <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Attributes -->
+
+<!-- tc:assembly Noir.dll -->
+
+Allows static methods to be invoked at specific points during the Noir Library startup lifecycle.
+
 
 ```csharp
 public class EngineCallbackAttribute : Attribute
 ```
 
-Allows static methods to be invoked at specific points during the Noir Library startup lifecycle.
-
 **Implements:** _[Attribute](https://learn.microsoft.com/en-us/dotnet/api/System.Attribute?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(EngineCallbackType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public EngineCallbackAttribute(EngineCallbackType callbackType)
+
 ```
 
 **Parameters** <br>
-`callbackType` [EngineCallbackType](../../Noir/Attributes/EngineCallbackType.html) <br>
+`callbackType` [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) <br>
 
-### 📦 Properties
-#### CallbackType
+## Properties
+
+### `CallbackType`
+<!-- tc:scope public -->
+<!-- tc:return_type [EngineCallbackType](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public EngineCallbackType CallbackType { get; public set; }
+
 ```
 
-**Returns** <br>
-[EngineCallbackType](../../Noir/Attributes/EngineCallbackType.html) <br>
-#### TypeId
+### `TypeId`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual Object TypeId { get; }
+
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>

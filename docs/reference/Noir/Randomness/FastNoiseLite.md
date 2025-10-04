@@ -1,57 +1,72 @@
 # FastNoiseLite
 
-**Namespace:** Noir.Randomness <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Randomness -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class FastNoiseLite
 ```
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(int)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Create new FastNoise object with optional seed
+
+
 ```csharp
 public FastNoiseLite(int seed)
-```
 
-Create new FastNoise object with optional seed
+```
 
 **Parameters** <br>
 `seed` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-### ⛹️‍♀️ Methods
-#### GetNoise(float, float, float)
+## Methods
+
+### `GetNoise(float, float, float)`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+3D noise at given position using current settings
+
+
 ```csharp
 public float GetNoise(float x, float y, float z)
-```
 
-3D noise at given position using current settings
+```
 
 **Parameters** <br>
 `x` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `y` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `z` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
- <br>
+### `GetNoise(float, float)`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+2D noise at given position using current settings
 
-#### GetNoise(float, float)
+
 ```csharp
 public float GetNoise(float x, float y)
-```
 
-2D noise at given position using current settings
+```
 
 **Parameters** <br>
 `x` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `y` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
- <br>
+### `DomainWarp(Single&, Single&, Single&)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### DomainWarp(Single&, Single&, Single&)
 ```csharp
 public void DomainWarp(Single& x, Single& y, Single& z)
+
 ```
 
 **Parameters** <br>
@@ -59,149 +74,214 @@ public void DomainWarp(Single& x, Single& y, Single& z)
 `y` [float&](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `z` [float&](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### DomainWarp(Single&, Single&)
+### `DomainWarp(Single&, Single&)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void DomainWarp(Single& x, Single& y)
+
 ```
 
 **Parameters** <br>
 `x` [float&](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `y` [float&](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetCellularDistanceFunction(CellularDistanceFunction)
+### `SetCellularDistanceFunction(CellularDistanceFunction)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetCellularDistanceFunction(CellularDistanceFunction cellularDistanceFunction)
+
+
 ```
 
 **Parameters** <br>
-`cellularDistanceFunction` [CellularDistanceFunction](../../Noir/Randomness/CellularDistanceFunction.html) <br>
+`cellularDistanceFunction` [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) <br>
 
-#### SetCellularJitter(float)
+### `SetCellularJitter(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets the maximum distance a cellular point can move from it's grid position
+
+
 ```csharp
 public void SetCellularJitter(float cellularJitter)
-```
 
-Sets the maximum distance a cellular point can move from it's grid position
+```
 
 **Parameters** <br>
 `cellularJitter` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetCellularReturnType(CellularReturnType)
+### `SetCellularReturnType(CellularReturnType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetCellularReturnType(CellularReturnType cellularReturnType)
+
 ```
 
 **Parameters** <br>
-`cellularReturnType` [CellularReturnType](../../Noir/Randomness/CellularReturnType.html) <br>
+`cellularReturnType` [CellularReturnType](/noir/reference//noir/reference/Noir/Randomness/CellularReturnType.html) <br>
 
-#### SetDomainWarpAmp(float)
+### `SetDomainWarpAmp(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets the maximum warp distance from original position when using DomainWarp(...)
+
+
 ```csharp
 public void SetDomainWarpAmp(float domainWarpAmp)
-```
 
-Sets the maximum warp distance from original position when using DomainWarp(...)
+```
 
 **Parameters** <br>
 `domainWarpAmp` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetDomainWarpType(DomainWarpType)
+### `SetDomainWarpType(DomainWarpType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetDomainWarpType(DomainWarpType domainWarpType)
+
 ```
 
 **Parameters** <br>
-`domainWarpType` [DomainWarpType](../../Noir/Randomness/DomainWarpType.html) <br>
+`domainWarpType` [DomainWarpType](/noir/reference//noir/reference/Noir/Randomness/DomainWarpType.html) <br>
 
-#### SetFractalGain(float)
+### `SetFractalGain(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets octave gain for all fractal noise types
+
+
 ```csharp
 public void SetFractalGain(float gain)
-```
 
-Sets octave gain for all fractal noise types
+```
 
 **Parameters** <br>
 `gain` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetFractalLacunarity(float)
+### `SetFractalLacunarity(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets octave lacunarity for all fractal noise types
+
+
 ```csharp
 public void SetFractalLacunarity(float lacunarity)
-```
 
-Sets octave lacunarity for all fractal noise types
+```
 
 **Parameters** <br>
 `lacunarity` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetFractalOctaves(int)
+### `SetFractalOctaves(int)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets octave count for all fractal noise types
+
+
 ```csharp
 public void SetFractalOctaves(int octaves)
-```
 
-Sets octave count for all fractal noise types
+```
 
 **Parameters** <br>
 `octaves` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-#### SetFractalPingPongStrength(float)
+### `SetFractalPingPongStrength(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets strength of the fractal ping pong effect
+
+
 ```csharp
 public void SetFractalPingPongStrength(float pingPongStrength)
-```
 
-Sets strength of the fractal ping pong effect
+```
 
 **Parameters** <br>
 `pingPongStrength` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetFractalType(FractalType)
+### `SetFractalType(FractalType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetFractalType(FractalType fractalType)
+
 ```
 
 **Parameters** <br>
-`fractalType` [FractalType](../../Noir/Randomness/FractalType.html) <br>
+`fractalType` [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType.html) <br>
 
-#### SetFractalWeightedStrength(float)
+### `SetFractalWeightedStrength(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets octave weighting for all none DomainWarp fratal types
+
+
 ```csharp
 public void SetFractalWeightedStrength(float weightedStrength)
-```
 
-Sets octave weighting for all none DomainWarp fratal types
+```
 
 **Parameters** <br>
 `weightedStrength` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetFrequency(float)
+### `SetFrequency(float)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets frequency for all noise types
+
+
 ```csharp
 public void SetFrequency(float frequency)
-```
 
-Sets frequency for all noise types
+```
 
 **Parameters** <br>
 `frequency` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
-#### SetNoiseType(NoiseType)
+### `SetNoiseType(NoiseType)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetNoiseType(NoiseType noiseType)
+
 ```
 
 **Parameters** <br>
-`noiseType` [NoiseType](../../Noir/Randomness/NoiseType.html) <br>
+`noiseType` [NoiseType](/noir/reference//noir/reference/Noir/Randomness/NoiseType.html) <br>
 
-#### SetRotationType3D(RotationType3D)
+### `SetRotationType3D(RotationType3D)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public void SetRotationType3D(RotationType3D rotationType3D)
+
 ```
 
 **Parameters** <br>
-`rotationType3D` [RotationType3D](../../Noir/Randomness/RotationType3D.html) <br>
+`rotationType3D` [RotationType3D](/noir/reference//noir/reference/Noir/Randomness/RotationType3D.html) <br>
 
-#### SetSeed(int)
+### `SetSeed(int)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Sets seed used for all noise types
+
+
 ```csharp
 public void SetSeed(int seed)
-```
 
-Sets seed used for all noise types
+```
 
 **Parameters** <br>
 `seed` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>

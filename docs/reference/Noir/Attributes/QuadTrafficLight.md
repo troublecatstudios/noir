@@ -1,83 +1,123 @@
 # QuadTrafficLight
 
-**Namespace:** Noir.Attributes <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Attributes -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class QuadTrafficLight : TrafficLightAttribute
 ```
 
-**Implements:** _[TrafficLightAttribute](../../Noir/Attributes/TrafficLightAttribute.html)_
+**Implements:** _[TrafficLightAttribute](/noir/reference//noir/reference/Noir/Attributes/TrafficLightAttribute.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public QuadTrafficLight()
+
 ```
 
+### `.ctor(TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b, TrafficLightColor c, TrafficLightColor d)
+public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b,
+                         TrafficLightColor c, TrafficLightColor d)
+
+
 ```
 
 **Parameters** <br>
-`a` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`b` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`c` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`d` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`a` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`b` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`c` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`d` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
 
-### 📦 Properties
-#### AlsoDrawDefault
+## Properties
+
+### `AlsoDrawDefault`
+<!-- tc:scope private -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool AlsoDrawDefault;
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### Colors
+### `Colors`
+<!-- tc:scope private -->
+<!-- tc:return_type [TrafficLightColor[]](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public TrafficLightColor[] Colors;
+
 ```
 
-**Returns** <br>
-[TrafficLightColor[]](../../Noir/Attributes/TrafficLightColor.html) <br>
-#### CustomLabel
+### `CustomLabel`
+<!-- tc:scope private -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string CustomLabel;
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### DrawLabel
+### `DrawLabel`
+<!-- tc:scope private -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool DrawLabel;
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### FillLights
+### `FillLights`
+<!-- tc:scope private -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool FillLights;
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### LightCount
+### `LightCount`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int LightCount;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### order
+### `order`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int order { get; public set; }
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### TypeId
+### `TypeId`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual Object TypeId { get; }
+
 ```
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>

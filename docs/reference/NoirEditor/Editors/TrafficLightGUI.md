@@ -1,92 +1,135 @@
 # TrafficLightGUI
 
-**Namespace:** NoirEditor.Editors <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.Editors -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class TrafficLightGUI
 ```
 
-### 📦 Properties
-#### DoubleLightSize
+## Properties
+
+### `DoubleLightSize`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public static Vector2 DoubleLightSize { get; }
+
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### QuadLightSize
+### `QuadLightSize`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public static Vector2 QuadLightSize { get; }
+
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### SingleLightSize
+### `SingleLightSize`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public static Vector2 SingleLightSize { get; }
+
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-#### TripleLightSize
+### `TripleLightSize`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public static Vector2 TripleLightSize { get; }
+
 ```
 
-**Returns** <br>
-[Vector2](../../) <br>
-### ⛹️‍♀️ Methods
-#### GetTrafficLightSize(TrafficLightSize)
+## Methods
+
+### `GetTrafficLightSize(TrafficLightSize)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public Vector2 GetTrafficLightSize(TrafficLightSize size)
+
 ```
 
 **Parameters** <br>
-`size` [TrafficLightSize](../../NoirEditor/Editors/TrafficLightSize.html) <br>
+`size` [TrafficLightSize](/noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize.html) <br>
 
-**Returns** <br>
-[Vector2](../../) <br>
+### `DrawTrafficLightDouble(Rect, TrafficLightColor, TrafficLightColor)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 
-#### DrawTrafficLightDouble(Rect, TrafficLightColor, TrafficLightColor)
 ```csharp
-public void DrawTrafficLightDouble(Rect position, TrafficLightColor typeA, TrafficLightColor typeB)
+public void DrawTrafficLightDouble(Rect position, TrafficLightColor typeA,
+                                    TrafficLightColor typeB)
+
+
 ```
 
 **Parameters** <br>
-`position` [Rect](../../) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
 
-#### DrawTrafficLightQuad(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)
+### `DrawTrafficLightQuad(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
-public void DrawTrafficLightQuad(Rect position, TrafficLightColor typeA, TrafficLightColor typeB, TrafficLightColor typeC, TrafficLightColor typeD)
+public void DrawTrafficLightQuad(Rect position, TrafficLightColor typeA,
+                                  TrafficLightColor typeB,
+                                  TrafficLightColor typeC,
+                                  TrafficLightColor typeD)
+
+
 ```
 
 **Parameters** <br>
-`position` [Rect](../../) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeC` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeD` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeD` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
 
-#### DrawTrafficLightSingle(Rect, TrafficLightColor)
+### `DrawTrafficLightSingle(Rect, TrafficLightColor)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void DrawTrafficLightSingle(Rect position, TrafficLightColor type)
+
 ```
 
 **Parameters** <br>
-`position` [Rect](../../) <br>
-`type` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`type` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
 
-#### DrawTrafficLightTriple(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor)
+### `DrawTrafficLightTriple(Rect, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
-public void DrawTrafficLightTriple(Rect position, TrafficLightColor typeA, TrafficLightColor typeB, TrafficLightColor typeC)
+public void DrawTrafficLightTriple(Rect position, TrafficLightColor typeA,
+                                    TrafficLightColor typeB,
+                                    TrafficLightColor typeC)
+
+
 ```
 
 **Parameters** <br>
-`position` [Rect](../../) <br>
-`typeA` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeB` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
-`typeC` [TrafficLightColor](../../Noir/Attributes/TrafficLightColor.html) <br>
+`position` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+`typeA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
+`typeC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor.html) <br>
 

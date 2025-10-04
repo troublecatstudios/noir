@@ -1,79 +1,110 @@
 # DataVariableCollection
 
-**Namespace:** Noir.Variables <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Variables -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class DataVariableCollection : ScriptableObject
 ```
 
-**Implements:** _[ScriptableObject](../../)_
+**Implements:** _[ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public DataVariableCollection()
+
 ```
 
-### 📦 Properties
-#### hideFlags
+## Properties
+
+### `hideFlags`
+<!-- tc:scope public -->
+<!-- tc:return_type [HideFlags](https://docs.unity3d.com/ScriptReference/HideFlags.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public HideFlags hideFlags { get; public set; }
+
 ```
 
-**Returns** <br>
-[HideFlags](../../) <br>
-#### name
+### `name`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string name { get; public set; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### Variables
+### `Variables`
+<!-- tc:scope private -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public List<T> Variables;
+
 ```
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### GetInstanceID()
+## Methods
+
+### `GetInstanceID()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int GetInstanceID()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object other)
+
 ```
 
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `SetDirty()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 
-#### SetDirty()
 ```csharp
 public void SetDirty()
+
 ```
 

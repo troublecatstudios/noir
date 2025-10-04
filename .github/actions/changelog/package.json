@@ -1,0 +1,14 @@
+{
+  "name": "noir-ci-changelog",
+  "private": true,
+  "description": "ci scripts for updating the changelog of the noir library",
+  "engines": {
+    "node": "20.*"
+  },
+  "scripts": {
+    "update-changelog": "npm i && node update-changelog.js"
+  },
+  "dependencies": {
+
+  }
+}

@@ -1,115 +1,166 @@
 # GameTime
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class GameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](../Noir/Abstractions/IGameTime.html)_
+**Implements:** _[IGameTime](/noir/reference/Noir/Abstractions/IGameTime.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public GameTime()
+
 ```
 
-### 📦 Properties
-#### deltaTime
+## Properties
+
+### `deltaTime`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual float deltaTime { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### fixedDeltaTime
+### `fixedDeltaTime`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual float fixedDeltaTime { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FPS12
+### `FPS12`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const float FPS12;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FPS12L
+### `FPS12L`
+<!-- tc:scope private -->
+<!-- tc:return_type [long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const long FPS12L;
+
 ```
 
-**Returns** <br>
-[long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) <br>
-#### FPS24
+### `FPS24`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const float FPS24;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FPS24L
+### `FPS24L`
+<!-- tc:scope private -->
+<!-- tc:return_type [long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const long FPS24L;
+
 ```
 
-**Returns** <br>
-[long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) <br>
-#### FPS30
+### `FPS30`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const float FPS30;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FPS30L
+### `FPS30L`
+<!-- tc:scope private -->
+<!-- tc:return_type [long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const long FPS30L;
+
 ```
 
-**Returns** <br>
-[long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) <br>
-#### FPS60
+### `FPS60`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const float FPS60;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FPS60L
+### `FPS60L`
+<!-- tc:scope private -->
+<!-- tc:return_type [long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const long FPS60L;
+
 ```
 
-**Returns** <br>
-[long](https://learn.microsoft.com/en-us/dotnet/api/System.Int64?view=net-7.0) <br>
-#### frameCount
+### `frameCount`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual int frameCount { get; }
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Instance
+### `Instance`
+<!-- tc:scope private -->
+<!-- tc:return_type [GameTime](/noir/reference/Noir/GameTime.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public readonly static GameTime Instance;
+
 ```
 
-**Returns** <br>
-[GameTime](../Noir/GameTime.html) <br>
-#### realtimeSinceStartup
+### `realtimeSinceStartup`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual float realtimeSinceStartup { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### time
+### `time`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual float time { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

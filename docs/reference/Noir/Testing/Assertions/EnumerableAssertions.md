@@ -1,37 +1,60 @@
 # EnumerableAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class EnumerableAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### Contains(IAssertionContext<T>, T)
+## Methods
+
+### `Contains(IAssertionContext<T>, T)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void Contains(IAssertionContext<T> context, T item)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`item` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`item` [T](/noir/reference//noir/reference//noir/reference/) <br>
 
-#### HasLength(IAssertionContext<T>, int)
+### `HasLength(IAssertionContext<T>, int)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+Asserts that the enumerable has the expected length.
+
+
 ```csharp
 public void HasLength(IAssertionContext<T> context, int length)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+ <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 
-#### HasSameContents(IAssertionContext<T>, IEnumerable)
+### `HasSameContents(IAssertionContext<T>, IEnumerable)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+Asserts that the enumerable has the same contents as the expected enumerable.
+
+
 ```csharp
 public void HasSameContents(IAssertionContext<T> context, IEnumerable expected)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+ <br>
 `expected` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
+ <br>
 

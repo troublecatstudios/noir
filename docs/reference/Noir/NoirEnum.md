@@ -1,18 +1,23 @@
 # NoirEnum
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class NoirEnum
 ```
 
-### ⛹️‍♀️ Methods
-#### AllValuesFor()
+## Methods
+
+### `AllValuesFor()`
+<!-- tc:scope public -->
+<!-- tc:return_type [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public IEnumerable<T> AllValuesFor()
-```
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+```
 

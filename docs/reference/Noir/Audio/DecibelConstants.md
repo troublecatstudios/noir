@@ -1,94 +1,123 @@
 # DecibelConstants
 
-**Namespace:** Noir.Audio <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Audio -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class DecibelConstants
 ```
 
-### 📦 Properties
-#### Concert
-```csharp
-public static const int Concert;
-```
+## Properties
 
+### `Concert`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Also: jet aircraft engine during takeoff from 200ft
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Conversation
+
 ```csharp
-public static const int Conversation;
+public static const int Concert;
+
 ```
 
+### `Conversation`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Conversation at 3ft distance
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Discomfort
+
+```csharp
+public static const int Conversation;
+
+```
+
+### `Discomfort`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const int Discomfort;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### LoudRadio
-```csharp
-public static const int LoudRadio;
-```
-
+### `LoudRadio`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Also: A jackhammer at 50ft
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Pain
+
+```csharp
+public static const int LoudRadio;
+
+```
+
+### `Pain`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const int Pain;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Rain
-```csharp
-public static const int Rain;
-```
-
+### `Rain`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Ambient noise of a perfectly quiet night, in a suburban neighborhood
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### SubwayTrain
+
 ```csharp
-public static const int SubwayTrain;
+public static const int Rain;
+
 ```
 
+### `SubwayTrain`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Also: construction site
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Whisper
+
 ```csharp
-public static const int Whisper;
+public static const int SubwayTrain;
+
 ```
 
+### `Whisper`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Ambient noise of a perfectly quiet night in the countryside
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### DecibelToDistance(float)
+
 ```csharp
-public float DecibelToDistance(float db)
+public static const int Whisper;
+
 ```
 
+## Methods
+
+### `DecibelToDistance(float)`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Estimates the distance based on the principle that sound intensity decreases by 6 decibels each time the distance from the source doubles
+
+
+```csharp
+public float DecibelToDistance(float db)
+
+```
 
 **Parameters** <br>
 `db` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
- <br>
-
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>
 

@@ -1,16 +1,23 @@
 # INoirEventListener
 
-**Namespace:** Noir.Events <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Events -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract INoirEventListener
 ```
 
-### ⛹️‍♀️ Methods
-#### RaiseEvent(Object)
+## Methods
+
+### `RaiseEvent(Object)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void RaiseEvent(Object o)
+
 ```
 
 **Parameters** <br>

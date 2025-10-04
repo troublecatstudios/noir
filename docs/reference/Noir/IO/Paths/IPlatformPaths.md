@@ -1,31 +1,43 @@
 # IPlatformPaths
 
-**Namespace:** Noir.IO.Paths <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.IO.Paths -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract IPlatformPaths
 ```
 
-### 📦 Properties
-#### ConfigurationDirectory
+## Properties
+
+### `ConfigurationDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual string ConfigurationDirectory { get; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### LogDirectory
+### `LogDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual string LogDirectory { get; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-#### SaveFileDirectory
+### `SaveFileDirectory`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract virtual string SaveFileDirectory { get; }
+
 ```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

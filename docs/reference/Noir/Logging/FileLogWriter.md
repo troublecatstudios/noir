@@ -1,26 +1,39 @@
 # FileLogWriter
 
-**Namespace:** Noir.Logging <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Logging -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class FileLogWriter : INoirLogger
 ```
 
-**Implements:** _[INoirLogger](../../Noir/Logging/INoirLogger.html)_
+**Implements:** _[INoirLogger](/noir/reference//noir/reference/Noir/Logging/INoirLogger.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(IPlatformPaths)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public FileLogWriter(IPlatformPaths paths)
+
 ```
 
 **Parameters** <br>
-`paths` [IPlatformPaths](../../Noir/IO/Paths/IPlatformPaths.html) <br>
+`paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) <br>
 
-### ⛹️‍♀️ Methods
-#### Debug(string, Object, string)
+## Methods
+
+### `Debug(string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void Debug(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -28,38 +41,58 @@ public virtual void Debug(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### DisableSubsystem(string)
+### `DisableSubsystem(string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void DisableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### EnableSubsystem(string)
+### `EnableSubsystem(string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void EnableSubsystem(string system)
+
 ```
 
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### EndAllTraces()
+### `EndAllTraces()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void EndAllTraces()
+
 ```
 
-#### EndTrace(string)
+### `EndTrace(string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void EndTrace(string traceName)
+
 ```
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Error(string, Object, string)
+### `Error(string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void Error(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -67,9 +100,13 @@ public virtual void Error(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Info(string, Object, string)
+### `Info(string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void Info(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -77,17 +114,27 @@ public virtual void Info(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### StartTrace(string)
+### `StartTrace(string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void StartTrace(string traceName)
+
 ```
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Trace(string, string, Object, string)
+### `Trace(string, string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public virtual void Trace(string trace, string message, Object context, string subsystem)
+public virtual void Trace(string trace, string message, Object context,
+                           string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -96,9 +143,15 @@ public virtual void Trace(string trace, string message, Object context, string s
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Verify(bool, string, Object, string)
+### `Verify(bool, string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public virtual void Verify(bool condition, string label, Object context, string subsystem)
+public virtual void Verify(bool condition, string label, Object context,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -107,9 +160,15 @@ public virtual void Verify(bool condition, string label, Object context, string 
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Verify(Func<TResult>, string, Object, string)
+### `Verify(Func<TResult>, string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public virtual void Verify(Func<TResult> condition, string label, Object context, string subsystem)
+public virtual void Verify(Func<TResult> condition, string label, Object context,
+                            string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -118,9 +177,13 @@ public virtual void Verify(Func<TResult> condition, string label, Object context
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Warn(string, Object, string)
+### `Warn(string, Object, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual void Warn(string message, Object context, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -128,14 +191,20 @@ public virtual void Warn(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### WriteLog(string, LogLevel, Object, string, string)
+### `WriteLog(string, LogLevel, Object, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public virtual void WriteLog(string message, LogLevel level, Object context, string subsystem, string trace)
+public virtual void WriteLog(string message, LogLevel level, Object context,
+                              string subsystem, string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>

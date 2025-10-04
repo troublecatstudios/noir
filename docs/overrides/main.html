@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <header class="md-header-pre">
+        <nav class="md-header__inner md-grid">
+            <div class="md-header__title">
+                <a class="brand" href="/">Trouble Cat Studios<b>.</b></a>
+            </div>
+            <ul class="md-tabs__list">
+                <li class="md-tabs__item">
+                    <a class="md-tabs__link" href="/">Home</a>
+                </li>
+                <li class="md-tabs__item">
+                    <a class="md-tabs__link" href="/index.html#about">About Us</a>
+                </li>
+                <li class="md-tabs__item">
+                    <a class="md-tabs__link" href="/index.html#gallery">Gallery</a>
+                </li>
+                <li class="md-tabs__item">
+                    <a class="md-tabs__link" href="/index.html#product">Products</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {{ super() }}
+{% endblock %}
+
+{% block outdated %}
+  You're not viewing the latest version.
+  <a href="{{ '../' ~ base_url }}">
+    <strong>Click here to go to latest.</strong>
+  </a>
+{% endblock %}

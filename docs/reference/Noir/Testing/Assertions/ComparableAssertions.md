@@ -1,59 +1,88 @@
 # ComparableAssertions
 
-**Namespace:** Noir.Testing.Assertions <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace Noir.Testing.Assertions -->
+
+<!-- tc:assembly NoirEditor.dll -->
+
 
 ```csharp
 public static class ComparableAssertions
 ```
 
-### ⛹️‍♀️ Methods
-#### IsEqualTo(IAssertionContext<T>, T, string)
+## Methods
+
+### `IsEqualTo(IAssertionContext<T>, T, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
-public void IsEqualTo(IAssertionContext<T> context, T expectedValue, string message)
+public void IsEqualTo(IAssertionContext<T> context, T expectedValue,
+                       string message)
+
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsGreaterThan(IAssertionContext<T>, T)
+### `IsGreaterThan(IAssertionContext<T>, T)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsGreaterThan(IAssertionContext<T> context, T expectedValue)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 
-#### IsLessThan(IAssertionContext<T>, T)
+### `IsLessThan(IAssertionContext<T>, T)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
 public void IsLessThan(IAssertionContext<T> context, T expectedValue)
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 
-#### IsNotEqualTo(IAssertionContext<T>, T, string)
+### `IsNotEqualTo(IAssertionContext<T>, T, string)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
-public void IsNotEqualTo(IAssertionContext<T> context, T expectedValue, string message)
+public void IsNotEqualTo(IAssertionContext<T> context, T expectedValue,
+                          string message)
+
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`expectedValue` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### IsWithinRange(IAssertionContext<T>, T, T, bool)
+### `IsWithinRange(IAssertionContext<T>, T, T, bool)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
+
 ```csharp
-public void IsWithinRange(IAssertionContext<T> context, T min, T max, bool inclusive)
+public void IsWithinRange(IAssertionContext<T> context, T min, T max,
+                           bool inclusive)
+
+
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](../../../Noir/Testing/IAssertionContext-1.html) <br>
-`min` [T](../../../) <br>
-`max` [T](../../../) <br>
+`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1.html) <br>
+`min` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`max` [T](/noir/reference//noir/reference//noir/reference/) <br>
 `inclusive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 

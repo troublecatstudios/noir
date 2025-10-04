@@ -1,309 +1,395 @@
 # UnityTypeContractResolver
 
-**Namespace:** Noir.Serialization.Json <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Serialization.Json -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class UnityTypeContractResolver : DefaultContractResolver, IContractResolver
 ```
 
-**Implements:** _[DefaultContractResolver](../../../), [IContractResolver](../../../)_
+**Implements:** _[DefaultContractResolver](/noir/reference//noir/reference//noir/reference/), [IContractResolver](/noir/reference//noir/reference//noir/reference/)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public UnityTypeContractResolver()
+
 ```
 
-### 📦 Properties
-#### DefaultMembersSearchFlags
+## Properties
+
+### `DefaultMembersSearchFlags`
+<!-- tc:scope public -->
+<!-- tc:return_type [BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public BindingFlags DefaultMembersSearchFlags { get; public set; }
+
 ```
 
-**Returns** <br>
-[BindingFlags](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.BindingFlags?view=net-7.0) <br>
-#### DynamicCodeGeneration
+### `DynamicCodeGeneration`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool DynamicCodeGeneration { get; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IgnoreIsSpecifiedMembers
+### `IgnoreIsSpecifiedMembers`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IgnoreIsSpecifiedMembers { get; public set; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IgnoreSerializableAttribute
+### `IgnoreSerializableAttribute`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IgnoreSerializableAttribute { get; public set; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IgnoreSerializableInterface
+### `IgnoreSerializableInterface`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IgnoreSerializableInterface { get; public set; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### IgnoreShouldSerializeMembers
+### `IgnoreShouldSerializeMembers`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool IgnoreShouldSerializeMembers { get; public set; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### NamingStrategy
+### `NamingStrategy`
+<!-- tc:scope public -->
+<!-- tc:return_type NamingStrategy -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NamingStrategy NamingStrategy { get; public set; }
+
 ```
 
-**Returns** <br>
-[NamingStrategy](../../../) <br>
-#### SerializeCompilerGeneratedMembers
+### `SerializeCompilerGeneratedMembers`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public bool SerializeCompilerGeneratedMembers { get; public set; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### CreateConstructorParameters(ConstructorInfo, JsonPropertyCollection)
+## Methods
+
+### `CreateConstructorParameters(ConstructorInfo, JsonPropertyCollection)`
+<!-- tc:scope private -->
+<!-- tc:return_type [IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-protected virtual IList<T> CreateConstructorParameters(ConstructorInfo constructor, JsonPropertyCollection memberProperties)
+protected virtual IList<T> CreateConstructorParameters(ConstructorInfo constructor,
+                                                        JsonPropertyCollection memberProperties)
+
+
 ```
 
 **Parameters** <br>
 `constructor` [ConstructorInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.ConstructorInfo?view=net-7.0) <br>
-`memberProperties` [JsonPropertyCollection](../../../) <br>
+`memberProperties` [JsonPropertyCollection](/noir/reference//noir/reference//noir/reference/) <br>
 
-**Returns** <br>
-[IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) <br>
+### `CreateProperties(Type, MemberSerialization)`
+<!-- tc:scope private -->
+<!-- tc:return_type [IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateProperties(Type, MemberSerialization)
 ```csharp
-protected virtual IList<T> CreateProperties(Type type, MemberSerialization memberSerialization)
+protected virtual IList<T> CreateProperties(Type type,
+                                             MemberSerialization memberSerialization)
+
+
 ```
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
-`memberSerialization` [MemberSerialization](../../../) <br>
+`memberSerialization` [MemberSerialization](/noir/reference//noir/reference//noir/reference/) <br>
 
-**Returns** <br>
-[IList\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1?view=net-7.0) <br>
+### `CreateMemberValueProvider(MemberInfo)`
+<!-- tc:scope private -->
+<!-- tc:return_type IValueProvider -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateMemberValueProvider(MemberInfo)
 ```csharp
 protected virtual IValueProvider CreateMemberValueProvider(MemberInfo member)
+
 ```
 
 **Parameters** <br>
 `member` [MemberInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MemberInfo?view=net-7.0) <br>
 
-**Returns** <br>
-[IValueProvider](../../../) <br>
+### `CreateArrayContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonArrayContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateArrayContract(Type)
 ```csharp
 protected virtual JsonArrayContract CreateArrayContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonArrayContract](../../../) <br>
+### `CreateContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateContract(Type)
 ```csharp
 protected virtual JsonContract CreateContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonContract](../../../) <br>
+### `ResolveContractConverter(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonConverter -->
+<!-- tc:version 1.0.0 -->
 
-#### ResolveContractConverter(Type)
 ```csharp
 protected virtual JsonConverter ResolveContractConverter(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonConverter](../../../) <br>
+### `CreateDictionaryContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonDictionaryContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateDictionaryContract(Type)
 ```csharp
 protected virtual JsonDictionaryContract CreateDictionaryContract(Type objectType)
+
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonDictionaryContract](../../../) <br>
+### `CreateDynamicContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonDynamicContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateDynamicContract(Type)
 ```csharp
 protected virtual JsonDynamicContract CreateDynamicContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonDynamicContract](../../../) <br>
+### `CreateISerializableContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonISerializableContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateISerializableContract(Type)
 ```csharp
 protected virtual JsonISerializableContract CreateISerializableContract(Type objectType)
+
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonISerializableContract](../../../) <br>
+### `CreateLinqContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonLinqContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateLinqContract(Type)
 ```csharp
 protected virtual JsonLinqContract CreateLinqContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonLinqContract](../../../) <br>
+### `CreateObjectContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonObjectContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateObjectContract(Type)
 ```csharp
 protected virtual JsonObjectContract CreateObjectContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonObjectContract](../../../) <br>
+### `CreatePrimitiveContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonPrimitiveContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreatePrimitiveContract(Type)
 ```csharp
 protected virtual JsonPrimitiveContract CreatePrimitiveContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonPrimitiveContract](../../../) <br>
+### `CreateProperty(MemberInfo, MemberSerialization)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonProperty -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateProperty(MemberInfo, MemberSerialization)
 ```csharp
-protected virtual JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
+protected virtual JsonProperty CreateProperty(MemberInfo member,
+                                               MemberSerialization memberSerialization)
+
+
 ```
 
 **Parameters** <br>
 `member` [MemberInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.MemberInfo?view=net-7.0) <br>
-`memberSerialization` [MemberSerialization](../../../) <br>
+`memberSerialization` [MemberSerialization](/noir/reference//noir/reference//noir/reference/) <br>
 
-**Returns** <br>
-[JsonProperty](../../../) <br>
+### `CreatePropertyFromConstructorParameter(JsonProperty, ParameterInfo)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonProperty -->
+<!-- tc:version 1.0.0 -->
 
-#### CreatePropertyFromConstructorParameter(JsonProperty, ParameterInfo)
 ```csharp
-protected virtual JsonProperty CreatePropertyFromConstructorParameter(JsonProperty matchingMemberProperty, ParameterInfo parameterInfo)
+protected virtual JsonProperty CreatePropertyFromConstructorParameter(JsonProperty matchingMemberProperty,
+                                                                       ParameterInfo parameterInfo)
+
+
 ```
 
 **Parameters** <br>
-`matchingMemberProperty` [JsonProperty](../../../) <br>
+`matchingMemberProperty` [JsonProperty](/noir/reference//noir/reference//noir/reference/) <br>
 `parameterInfo` [ParameterInfo](https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.ParameterInfo?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonProperty](../../../) <br>
+### `CreateStringContract(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type JsonStringContract -->
+<!-- tc:version 1.0.0 -->
 
-#### CreateStringContract(Type)
 ```csharp
 protected virtual JsonStringContract CreateStringContract(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[JsonStringContract](../../../) <br>
+### `GetSerializableMembers(Type)`
+<!-- tc:scope private -->
+<!-- tc:return_type [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetSerializableMembers(Type)
 ```csharp
 protected virtual List<T> GetSerializableMembers(Type objectType)
+
 ```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
-**Returns** <br>
-[List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
+### `ResolveDictionaryKey(string)`
+<!-- tc:scope private -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ResolveDictionaryKey(string)
 ```csharp
 protected virtual string ResolveDictionaryKey(string dictionaryKey)
+
 ```
 
 **Parameters** <br>
 `dictionaryKey` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ResolveExtensionDataName(string)`
+<!-- tc:scope private -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ResolveExtensionDataName(string)
 ```csharp
 protected virtual string ResolveExtensionDataName(string extensionDataName)
+
 ```
 
 **Parameters** <br>
 `extensionDataName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ResolvePropertyName(string)`
+<!-- tc:scope private -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ResolvePropertyName(string)
 ```csharp
 protected virtual string ResolvePropertyName(string propertyName)
+
 ```
 
 **Parameters** <br>
 `propertyName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `GetResolvedPropertyName(string)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetResolvedPropertyName(string)
 ```csharp
 public string GetResolvedPropertyName(string propertyName)
+
 ```
 
 **Parameters** <br>
 `propertyName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ResolveContract(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type JsonContract -->
+<!-- tc:version 1.0.0 -->
 
-#### ResolveContract(Type)
 ```csharp
 public virtual JsonContract ResolveContract(Type type)
+
 ```
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
-
-**Returns** <br>
-[JsonContract](../../../) <br>
 

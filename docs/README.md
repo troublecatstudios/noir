@@ -1,7 +1,5 @@
-# Noir Developer Documentation
+---
+title: Home
+---
 
-The documentation within this folder is intended for use by persons who are making changes to the Noir library, its build process or other development related areas. If you're looking for documentation on using the library, please see the [tutorial documentation](./tutorials/README.md).
-
-- [Getting started](./getting_started/installing.md)
-- [Contributing](./contributing/building.md)
-
+Noir is a library that contains various helper classes and solutions that allow game developers to add deep and complex features to their game without requiring a lot of work up front.

@@ -1,0 +1,43 @@
+[settings]
+asdf = false
+vfox = true
+
+[tasks."build:runtime"]
+dir = './.github/build'
+description = 'Build the Runtime code'
+run = [
+    'dotnet build Noir.csproj'
+]
+
+[tasks."build:editor"]
+dir = './.github/build'
+description = 'Build the Editor code'
+wait_for = ['build:runtime']                 # wait for runtime build to finish if its running
+run = [
+    'dotnet build NoirEditor.csproj'
+]
+
+[tasks.build]
+depends = ['build:runtime', 'build:editor']
+description = 'Compiles the runtime and editor source code libraries'
+alias = 'b'
+
+[tasks."docs:src:clean"]
+run = 'rm -rf ./docs/reference/Noir && rm -rf ./docs/reference/NoirEditor'
+run_windows = 'powershell -command "if (Test-Path ./docs/reference/Noir) { Remove-Item -Recurse -Force -Path ./docs/reference/Noir }"; powershell -command "if (Test-Path ./docs/reference/NoirEditor) { Remove-Item -Recurse -Force -Path ./docs/reference/NoirEditor }"'
+description = 'removes the generated source code documentation'
+
+[tasks."docs:src"]
+depends = ['build', 'docs:src:clean']
+description = 'Generates the markdown documentation for the source code libraries.'
+run = 'dotnet ./.github/scripts/dotnet2md/dotnet2md.dll ./.build/bin/NoirEditor/Release/netcoreapp3.1/ ./docs/reference/ Noir NoirEditor'
+
+[tasks."docs:docker:build"]
+run = 'docker build -t mkdocs:local -f ./.github/scripts/mkdocs.dockerfile .'
+description = 'builds the documentation site within docker'
+
+[tasks."docs:preview"]
+depends = ['docs:docker:build', 'docs:src']
+run = "docker run --env-file ./.env.dev --rm -p 8000:8000 -v {{cwd}}:/docs mkdocs:local"
+description = 'runs the documentation site within docker on port 8000'
+alias = 'pd'

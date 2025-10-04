@@ -1,11 +1,8 @@
 # EditorWaitForSeconds
 
-**Namespace:** NoirEditor.EditorCoroutines <br>
-**Assembly:** NoirEditor.dll
+<!-- tc:namespace NoirEditor.EditorCoroutines -->
 
-```csharp
-public class EditorWaitForSeconds
-```
+<!-- tc:assembly NoirEditor.dll -->
 
 Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> execution for the given amount of seconds, using unscaled time.
              The coroutine execution continues after the specified time has elapsed.
@@ -30,24 +27,42 @@ Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCor
              }
              </code>
 
-### 🛠 Constructors
+
 ```csharp
-public EditorWaitForSeconds(float time)
+public class EditorWaitForSeconds
 ```
 
+## Constructors
+
+### `.ctor(float)`
+<!-- tc:scope public -->
+<!-- tc:version 0.0.0 -->
 Creates a instruction object for yielding inside a generator function.
+
+
+```csharp
+public EditorWaitForSeconds(float time)
+
+```
 
 **Parameters** <br>
 `time` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>
 
-### 📦 Properties
-#### WaitTime
-```csharp
-public float WaitTime { get; }
-```
+## Properties
 
+### `WaitTime`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 0.0.0 -->
 The time to wait in seconds.
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+```csharp
+public float WaitTime { get; }
+
+```
+
+## More information
+
+* [EditorCoroutine](T:NoirEditor.EditorCoroutines.EditorCoroutine)

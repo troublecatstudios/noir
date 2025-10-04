@@ -1,101 +1,139 @@
 # Direction
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
+Represents a direction in two-dimensional or three-dimensional space. The horizontal and vertical axis are
+            separated out into easier to read properties [Direction.Vertical](/noir/reference/Noir/Direction.html#vertical) respectively.
+
 
 ```csharp
 public sealed struct Direction : IEquatable<T>
 ```
 
-Represents a direction in two-dimensional or three-dimensional space. The horizontal and vertical axis are
-            separated out into easier to read properties [Direction.Vertical](../Noir/Direction.html#vertical) respectively.
-
 **Implements:** _[IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor(Vector2)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Initializes a new instance of the [Direction](/noir/reference/Noir/Direction.html) struct.
+
+
 ```csharp
 public Direction(Vector2 vector)
+
 ```
 
-Initializes a new instance of the [Direction](../Noir/Direction.html) struct.
-
 **Parameters** <br>
-`vector` [Vector2](../) <br>
+`vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
  <br>
+
+### `.ctor(Vector3)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Initializes a new instance of the [Direction](/noir/reference/Noir/Direction.html) struct.
+
 
 ```csharp
 public Direction(Vector3 vector)
+
 ```
 
-Initializes a new instance of the [Direction](../Noir/Direction.html) struct.
-
 **Parameters** <br>
-`vector` [Vector3](../) <br>
+`vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
  <br>
 
-### 📦 Properties
-#### Horizontal
-```csharp
-public HorizontalDirections Horizontal { get; private set; }
-```
+## Properties
 
+### `Horizontal`
+<!-- tc:scope public -->
+<!-- tc:return_type [HorizontalDirections](/noir/reference/Noir/HorizontalDirections.html) -->
+<!-- tc:version 1.0.0 -->
 Gets the horizontal axis.
 
-**Returns** <br>
-[HorizontalDirections](../Noir/HorizontalDirections.html) <br>
-#### None
+
+```csharp
+public HorizontalDirections Horizontal { get; private set; }
+
+```
+
+### `None`
+<!-- tc:scope private -->
+<!-- tc:return_type [Direction](/noir/reference/Noir/Direction.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public readonly static Direction None;
+
 ```
 
-**Returns** <br>
-[Direction](../Noir/Direction.html) <br>
-#### Perpendicular
-```csharp
-public PerpendicularDirections Perpendicular { get; private set; }
-```
-
+### `Perpendicular`
+<!-- tc:scope public -->
+<!-- tc:return_type [PerpendicularDirections](/noir/reference/Noir/PerpendicularDirections.html) -->
+<!-- tc:version 1.0.0 -->
 Gets the perpendicular axis.
 
-**Returns** <br>
-[PerpendicularDirections](../Noir/PerpendicularDirections.html) <br>
-#### Vertical
+
 ```csharp
-public VerticalDirections Vertical { get; private set; }
+public PerpendicularDirections Perpendicular { get; private set; }
+
 ```
 
+### `Vertical`
+<!-- tc:scope public -->
+<!-- tc:return_type [VerticalDirections](/noir/reference/Noir/VerticalDirections.html) -->
+<!-- tc:version 1.0.0 -->
 Gets the vertical axis.
 
-**Returns** <br>
-[VerticalDirections](../Noir/VerticalDirections.html) <br>
-### ⛹️‍♀️ Methods
-#### Equals(Direction)
+
+```csharp
+public VerticalDirections Vertical { get; private set; }
+
+```
+
+## Methods
+
+### `Equals(Direction)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool Equals(Direction other)
+
 ```
 
 **Parameters** <br>
-`other` [Direction](../Noir/Direction.html) <br>
+`other` [Direction](/noir/reference/Noir/Direction.html) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object obj)
+
 ```
 
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+## More information
 
+* [](P:Noir.Direction.Horizontal)
+* [](P:Noir.Direction.Vertical)
+* [](T:UnityEngine.Vector2)

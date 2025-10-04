@@ -3,7 +3,7 @@ using System.IO;
 using UnityEditor;
 
 namespace NoirEditor {
-    internal class PackageHelper {
+    internal static class PackageHelper {
         public static string GetPackageDirectoryRoot() {
             var folder = NoirProjectConfiguration.PackageFolder;
             return Path.GetFullPath(folder);

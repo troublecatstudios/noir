@@ -1,43 +1,62 @@
 # ILogWriter
 
-**Namespace:** Noir.Logging <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Logging -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract ILogWriter
 ```
 
-### ⛹️‍♀️ Methods
-#### Debug(string, string)
+## Methods
+
+### `Debug(string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Debug(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Error(string, string)
+### `Error(string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Error(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Info(string, string)
+### `Info(string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Info(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Trace(string, string, string)
+### `Trace(string, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Trace(string trace, string message, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -45,9 +64,13 @@ public abstract void Trace(string trace, string message, string subsystem)
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Verify(bool, string, string)
+### `Verify(bool, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Verify(bool condition, string label, string subsystem)
+
 ```
 
 **Parameters** <br>
@@ -55,9 +78,15 @@ public abstract void Verify(bool condition, string label, string subsystem)
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Verify(Func<TResult>, string, string)
+### `Verify(Func<TResult>, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public abstract void Verify(Func<TResult> condition, string label, string subsystem)
+public abstract void Verify(Func<TResult> condition, string label,
+                             string subsystem)
+
+
 ```
 
 **Parameters** <br>
@@ -65,23 +94,33 @@ public abstract void Verify(Func<TResult> condition, string label, string subsys
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### Warn(string, string)
+### `Warn(string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public abstract void Warn(string message, string subsystem)
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
-#### WriteLog(string, LogLevel, string, string)
+### `WriteLog(string, LogLevel, string, string)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-public abstract void WriteLog(string message, LogLevel level, string subsystem, string trace)
+public abstract void WriteLog(string message, LogLevel level, string subsystem,
+                               string trace)
+
+
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](../../Noir/Logging/LogLevel.html) <br>
+`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel.html) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

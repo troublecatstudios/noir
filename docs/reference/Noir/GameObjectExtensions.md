@@ -1,40 +1,45 @@
 # GameObjectExtensions
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class GameObjectExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### GetGameObjectHierarchy(GameObject)
-```csharp
-public IEnumerable<T> GetGameObjectHierarchy(GameObject gameObject)
-```
+## Methods
 
+### `GetGameObjectHierarchy(GameObject)`
+<!-- tc:scope public -->
+<!-- tc:return_type [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Walks the current GameObjects hierarchy back out to the root, yielding each parent GameObject along the way.
 
-**Parameters** <br>
-`gameObject` [GameObject](../) <br>
- <br>
 
-**Returns** <br>
-[IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
- <br>
-
-#### GetGameObjectHierarchyPath(GameObject)
 ```csharp
-public string GetGameObjectHierarchyPath(GameObject gameObject)
+public IEnumerable<T> GetGameObjectHierarchy(GameObject gameObject)
+
 ```
 
-Gets the current GameObjects hierarchy as a path expression.
-
 **Parameters** <br>
-`gameObject` [GameObject](../) <br>
+`gameObject` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
  <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `GetGameObjectHierarchyPath(GameObject)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+Gets the current GameObjects hierarchy as a path expression.
+
+
+```csharp
+public string GetGameObjectHierarchyPath(GameObject gameObject)
+
+```
+
+**Parameters** <br>
+`gameObject` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
  <br>
 

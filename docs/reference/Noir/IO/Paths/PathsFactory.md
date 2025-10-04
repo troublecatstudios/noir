@@ -1,25 +1,36 @@
 # PathsFactory
 
-**Namespace:** Noir.IO.Paths <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.IO.Paths -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public class PathsFactory : IPlatformPathsFactory
 ```
 
-**Implements:** _[IPlatformPathsFactory](../../../Noir/IO/Paths/IPlatformPathsFactory.html)_
+**Implements:** _[IPlatformPathsFactory](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPathsFactory.html)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public PathsFactory()
+
 ```
 
-### ⛹️‍♀️ Methods
-#### GetPlatformPaths()
+## Methods
+
+### `GetPlatformPaths()`
+<!-- tc:scope public -->
+<!-- tc:return_type [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual IPlatformPaths GetPlatformPaths()
-```
 
-**Returns** <br>
-[IPlatformPaths](../../../Noir/IO/Paths/IPlatformPaths.html) <br>
+```
 

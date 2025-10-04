@@ -1,7 +1,9 @@
 # NoiseSettings
 
-**Namespace:** Noir.Randomness.Noise <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Randomness.Noise -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed struct NoiseSettings : IEquatable<T>
@@ -9,176 +11,243 @@ public sealed struct NoiseSettings : IEquatable<T>
 
 **Implements:** _[IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-### 📦 Properties
-#### CellularDistance
+## Properties
+
+### `CellularDistance`
+<!-- tc:scope private -->
+<!-- tc:return_type [CellularDistanceFunction](/noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public CellularDistanceFunction CellularDistance;
+
 ```
 
-**Returns** <br>
-[CellularDistanceFunction](../../../Noir/Randomness/CellularDistanceFunction.html) <br>
-#### CellularJitter
+### `CellularJitter`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float CellularJitter;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### CellularReturnType
+### `CellularReturnType`
+<!-- tc:scope private -->
+<!-- tc:return_type [CellularReturnType](/noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularReturnType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public CellularReturnType CellularReturnType;
+
 ```
 
-**Returns** <br>
-[CellularReturnType](../../../Noir/Randomness/CellularReturnType.html) <br>
-#### DomainWarp
+### `DomainWarp`
+<!-- tc:scope private -->
+<!-- tc:return_type [DomainWarpType](/noir/reference//noir/reference//noir/reference/Noir/Randomness/DomainWarpType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public DomainWarpType DomainWarp;
+
 ```
 
-**Returns** <br>
-[DomainWarpType](../../../Noir/Randomness/DomainWarpType.html) <br>
-#### DomainWarpAmplitude
+### `DomainWarpAmplitude`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float DomainWarpAmplitude;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Empty
+### `Empty`
+<!-- tc:scope private -->
+<!-- tc:return_type [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public readonly static NoiseSettings Empty;
+
 ```
 
-**Returns** <br>
-[NoiseSettings](../../../Noir/Randomness/Noise/NoiseSettings.html) <br>
-#### FractalGain
+### `FractalGain`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float FractalGain;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FractalLacunarity
+### `FractalLacunarity`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float FractalLacunarity;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FractalOctaves
+### `FractalOctaves`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int FractalOctaves;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### FractalPingPongStrength
+### `FractalPingPongStrength`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float FractalPingPongStrength;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### FractalType
+### `FractalType`
+<!-- tc:scope private -->
+<!-- tc:return_type [FractalType](/noir/reference//noir/reference//noir/reference/Noir/Randomness/FractalType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public FractalType FractalType;
+
 ```
 
-**Returns** <br>
-[FractalType](../../../Noir/Randomness/FractalType.html) <br>
-#### FractalWeightedStrength
+### `FractalWeightedStrength`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float FractalWeightedStrength;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Frequency
+### `Frequency`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int Frequency;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### FrequencyCalc
+### `FrequencyCalc`
+<!-- tc:scope public -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float FrequencyCalc { get; }
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### NoiseType
+### `NoiseType`
+<!-- tc:scope private -->
+<!-- tc:return_type [NoiseType](/noir/reference//noir/reference//noir/reference/Noir/Randomness/NoiseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public NoiseType NoiseType;
+
 ```
 
-**Returns** <br>
-[NoiseType](../../../Noir/Randomness/NoiseType.html) <br>
-#### Offset
+### `Offset`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float Offset;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Scale
+### `Scale`
+<!-- tc:scope private -->
+<!-- tc:return_type [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public float Scale;
+
 ```
 
-**Returns** <br>
-[float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
-#### Seed
+### `Seed`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int Seed;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-#### Weight
+### `Weight`
+<!-- tc:scope private -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public int Weight;
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### Equals(NoiseSettings)
+## Methods
+
+### `Equals(NoiseSettings)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool Equals(NoiseSettings other)
+
 ```
 
 **Parameters** <br>
-`other` [NoiseSettings](../../../Noir/Randomness/Noise/NoiseSettings.html) <br>
+`other` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings.html) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `Equals(Object)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### Equals(Object)
 ```csharp
 public virtual bool Equals(Object obj)
+
 ```
 
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+### `GetHashCode()`
+<!-- tc:scope public -->
+<!-- tc:return_type [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### GetHashCode()
 ```csharp
 public virtual int GetHashCode()
+
 ```
 
-**Returns** <br>
-[int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+### `ToString()`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToString()
 ```csharp
 public virtual string ToString()
-```
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+```
 

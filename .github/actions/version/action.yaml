@@ -1,0 +1,54 @@
+name: 'Update package version'
+description: 'updates the package version using the release type and nerdbank.gitversioning'
+inputs:
+  release_type:
+    description: "The type of release"
+    default: dev
+  checkout:
+    description: '"true" if the action should checkout the repository before running'
+    default: ''
+    required: false
+outputs:
+  new_version:
+    description: "The updated version"
+    value: ${{ steps.package_version.outputs.result }}
+  new_version_tag:
+    description: "The git tag to use for the version"
+    value: ${{ steps.package_version_tag.outputs.result }}
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+      if: inputs.checkout == 'true'
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+    - name: Install dependencies
+      shell: bash
+      run: cd .github/actions/version && npm install
+    - name: Update version
+      id: versioning
+      shell: bash
+      run: |
+        cd .github/actions/version
+        npm run update-version ${{ inputs.release_type }} || exit 1
+    - uses: actions/github-script@v7
+      id: package_version
+      with:
+        script: |
+          const pkg = require('./package/package.json');
+          return pkg.version;
+        result-encoding: string
+    - uses: actions/github-script@v7
+      id: package_version_tag
+      with:
+        script: |
+          const pkg = require('./package/package.json');
+          return `v${pkg.version}`;
+        result-encoding: string

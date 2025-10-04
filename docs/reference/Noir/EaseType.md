@@ -1,7 +1,9 @@
 # EaseType
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public sealed enum EaseType : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible
@@ -9,221 +11,315 @@ public sealed enum EaseType : Enum, IComparable, ISpanFormattable, IFormattable,
 
 **Implements:** _[Enum](https://learn.microsoft.com/en-us/dotnet/api/System.Enum?view=net-7.0), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/System.IComparable?view=net-7.0), [ISpanFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.ISpanFormattable?view=net-7.0), [IFormattable](https://learn.microsoft.com/en-us/dotnet/api/System.IFormattable?view=net-7.0), [IConvertible](https://learn.microsoft.com/en-us/dotnet/api/System.IConvertible?view=net-7.0)_
 
-### 📦 Properties
-#### BackIn
+## Properties
+
+### `BackIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BackIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### BackInOut
+### `BackInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BackInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### BackOut
+### `BackOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BackOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### BounceIn
+### `BounceIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BounceIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### BounceInOut
+### `BounceInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BounceInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### BounceOut
+### `BounceOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType BounceOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CircularIn
+### `CircularIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CircularIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CircularInOut
+### `CircularInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CircularInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CircularOut
+### `CircularOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CircularOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CubicIn
+### `CubicIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CubicIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CubicInOut
+### `CubicInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CubicInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### CubicOut
+### `CubicOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType CubicOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ElasticIn
+### `ElasticIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ElasticIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ElasticInOut
+### `ElasticInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ElasticInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ElasticOut
+### `ElasticOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ElasticOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ExponentialIn
+### `ExponentialIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ExponentialIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ExponentialInOut
+### `ExponentialInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ExponentialInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### ExponentialOut
+### `ExponentialOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType ExponentialOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### Linear
+### `Linear`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType Linear;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuadraticIn
+### `QuadraticIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuadraticIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuadraticInOut
+### `QuadraticInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuadraticInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuadraticOut
+### `QuadraticOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuadraticOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuarticIn
+### `QuarticIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuarticIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuarticInOut
+### `QuarticInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuarticInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuarticOut
+### `QuarticOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuarticOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuinticIn
+### `QuinticIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuinticIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuinticInOut
+### `QuinticInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuinticInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### QuinticOut
+### `QuinticOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType QuinticOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### SinusoidalIn
+### `SinusoidalIn`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType SinusoidalIn;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### SinusoidalInOut
+### `SinusoidalInOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType SinusoidalInOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>
-#### SinusoidalOut
+### `SinusoidalOut`
+<!-- tc:scope private -->
+<!-- tc:return_type [EaseType](/noir/reference/Noir/EaseType.html) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public static const EaseType SinusoidalOut;
+
 ```
 
-**Returns** <br>
-[EaseType](../Noir/EaseType.html) <br>

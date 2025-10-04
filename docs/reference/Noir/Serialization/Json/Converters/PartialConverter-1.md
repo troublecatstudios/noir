@@ -1,104 +1,142 @@
 # PartialConverter\<T\>
 
-**Namespace:** Noir.Serialization.Json.Converters <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir.Serialization.Json.Converters -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public abstract class PartialConverter<T> : JsonConverter
 ```
 
-**Implements:** _[JsonConverter](../../../../)_
+**Implements:** _[JsonConverter](/noir/reference//noir/reference//noir/reference//noir/reference/)_
 
-### 🛠 Constructors
+## Constructors
+
+### `.ctor()`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 protected PartialConverter<T>()
+
 ```
 
-### 📦 Properties
-#### CanRead
+## Properties
+
+### `CanRead`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanRead { get; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-#### CanWrite
+### `CanWrite`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public virtual bool CanWrite { get; }
+
 ```
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-### ⛹️‍♀️ Methods
-#### ReadValue(T&, string, JsonReader, JsonSerializer)
+## Methods
+
+### `ReadValue(T&, string, JsonReader, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-protected abstract void ReadValue(T& value, string name, JsonReader reader, JsonSerializer serializer)
+protected abstract void ReadValue(T& value, string name, JsonReader reader,
+                                   JsonSerializer serializer)
+
+
 ```
 
 **Parameters** <br>
-`value` [T&](../../../../) <br>
+`value` [T&](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`reader` [JsonReader](../../../../) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
-#### WriteJsonProperties(JsonWriter, T, JsonSerializer)
+### `WriteJsonProperties(JsonWriter, T, JsonSerializer)`
+<!-- tc:scope private -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
-protected abstract void WriteJsonProperties(JsonWriter writer, T value, JsonSerializer serializer)
+protected abstract void WriteJsonProperties(JsonWriter writer, T value,
+                                             JsonSerializer serializer)
+
+
 ```
 
 **Parameters** <br>
-`writer` [JsonWriter](../../../../) <br>
-`value` [T](../../../../) <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`value` [T](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
-#### CanConvert(Type)
+### `CanConvert(Type)`
+<!-- tc:scope public -->
+<!-- tc:return_type [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+Determine if the object type is <typeparamref name="T" />
+
+
 ```csharp
 public virtual bool CanConvert(Type objectType)
-```
 
-Determine if the object type is <typeparamref name="T" />
+```
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
-
-#### ReadJson(JsonReader, Type, Object, JsonSerializer)
-```csharp
-public virtual Object ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
-```
-
+### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 Read the specified properties to the object.
 
+
+```csharp
+public virtual Object ReadJson(JsonReader reader, Type objectType,
+                                Object existingValue, JsonSerializer serializer)
+
+
+```
+
 **Parameters** <br>
-`reader` [JsonReader](../../../../) <br>
+`reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
  <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
  <br>
 `existingValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
  <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
  <br>
 
-**Returns** <br>
-[Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
-
-#### WriteJson(JsonWriter, Object, JsonSerializer)
-```csharp
-public virtual void WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
-```
-
+### `WriteJson(JsonWriter, Object, JsonSerializer)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
 Write the specified properties of the object.
 
+
+```csharp
+public virtual void WriteJson(JsonWriter writer, Object value,
+                               JsonSerializer serializer)
+
+
+```
+
 **Parameters** <br>
-`writer` [JsonWriter](../../../../) <br>
+`writer` [JsonWriter](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
  <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
  <br>
-`serializer` [JsonSerializer](../../../../) <br>
+`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
  <br>
 

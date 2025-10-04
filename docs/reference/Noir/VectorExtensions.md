@@ -1,138 +1,159 @@
 # VectorExtensions
 
-**Namespace:** Noir <br>
-**Assembly:** Noir.dll
+<!-- tc:namespace Noir -->
+
+<!-- tc:assembly Noir.dll -->
+
 
 ```csharp
 public static class VectorExtensions
 ```
 
-### ⛹️‍♀️ Methods
-#### ToLogString(Vector2)
+## Methods
+
+### `ToLogString(Vector2)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
+
 ```csharp
 public string ToLogString(Vector2 vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector2](../) <br>
+`vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ToLogString(Vector2Int)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToLogString(Vector2Int)
 ```csharp
 public string ToLogString(Vector2Int vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector2Int](../) <br>
+`vector` [Vector2Int](https://docs.unity3d.com/ScriptReference/Vector2Int.html) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ToLogString(Vector3)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToLogString(Vector3)
 ```csharp
 public string ToLogString(Vector3 vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector3](../) <br>
+`vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `ToLogString(Vector3Int)`
+<!-- tc:scope public -->
+<!-- tc:return_type [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) -->
+<!-- tc:version 1.0.0 -->
 
-#### ToLogString(Vector3Int)
 ```csharp
 public string ToLogString(Vector3Int vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector3Int](../) <br>
+`vector` [Vector3Int](https://docs.unity3d.com/ScriptReference/Vector3Int.html) <br>
 
-**Returns** <br>
-[string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+### `Abs(Vector2)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Abs(Vector2)
 ```csharp
 public Vector2 Abs(Vector2 vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector2](../) <br>
+`vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
-
-#### DirectionTo(Vector2, Vector2, bool)
-```csharp
-public Vector2 DirectionTo(Vector2 vector, Vector2 other, bool normalize)
-```
-
+### `DirectionTo(Vector2, Vector2, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 Returns the direction vector between this Vector2 and another.
 
+
+```csharp
+public Vector2 DirectionTo(Vector2 vector, Vector2 other, bool normalize)
+
+```
+
 **Parameters** <br>
-`vector` [Vector2](../) <br>
+`vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
  <br>
-`other` [Vector2](../) <br>
+`other` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
  <br>
 `normalize` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[Vector2](../) <br>
- <br>
+### `Sign(Vector2, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Sign(Vector2, bool)
 ```csharp
 public Vector2 Sign(Vector2 vector, bool ignoreZeros)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector2](../) <br>
+`vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 `ignoreZeros` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
-**Returns** <br>
-[Vector2](../) <br>
+### `Abs(Vector3)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Abs(Vector3)
 ```csharp
 public Vector3 Abs(Vector3 vector)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector3](../) <br>
+`vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 
-**Returns** <br>
-[Vector3](../) <br>
-
-#### DirectionTo(Vector3, Vector3, bool)
-```csharp
-public Vector3 DirectionTo(Vector3 vector, Vector3 other, bool normalize)
-```
-
+### `DirectionTo(Vector3, Vector3, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 Returns the direction vector between this Vector3 and another.
 
+
+```csharp
+public Vector3 DirectionTo(Vector3 vector, Vector3 other, bool normalize)
+
+```
+
 **Parameters** <br>
-`vector` [Vector3](../) <br>
+`vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
  <br>
-`other` [Vector3](../) <br>
+`other` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
  <br>
 `normalize` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
 
-**Returns** <br>
-[Vector3](../) <br>
- <br>
+### `Sign(Vector3, bool)`
+<!-- tc:scope public -->
+<!-- tc:return_type [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) -->
+<!-- tc:version 1.0.0 -->
 
-#### Sign(Vector3, bool)
 ```csharp
 public Vector3 Sign(Vector3 vector, bool ignoreZeros)
+
 ```
 
 **Parameters** <br>
-`vector` [Vector3](../) <br>
+`vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `ignoreZeros` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-
-**Returns** <br>
-[Vector3](../) <br>
 

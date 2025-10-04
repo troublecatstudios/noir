@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Parser/1.0.0": {
+      "dotnet2md/1.0.0": {
         "runtime": {
-          "Parser.dll": {}
+          "dotnet2md.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Parser/1.0.0": {
+    "dotnet2md/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

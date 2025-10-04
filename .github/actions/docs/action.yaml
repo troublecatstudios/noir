@@ -1,0 +1,56 @@
+name: 'Deploy Documentation Site'
+description: 'deploys a new version of the documentation site'
+inputs:
+  version:
+    description: 'The version tag or branch to use when deploying the site'
+    required: true
+  update_latest:
+    description: '"true" if the action should update the "latest" alias to point to this release'
+    default: ''
+    required: false
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Configure Git Credentials
+      shell: bash
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - name: Configure cache
+      shell: bash
+      run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+    - uses: actions/cache@v4
+      with:
+        key: mkdocs-material-${{ env.cache_id }}
+        path: .cache
+        restore-keys: |
+          mkdocs-material-
+    - name: Install dependencies
+      shell: bash
+      run: |
+        pip install mkdocs-material
+        pip install mkdocs-macros-plugin
+        pip install mkdocs-glightbox
+        pip install mkdocs-include-dir-to-nav
+        pip install mkdocs-git-revision-date-localized-plugin
+        pip install mkdocs-git-committers-plugin-2
+        pip install markdown-callouts
+        pip install pillow cairosvg mike
+    - name: Build documentation site (latest)
+      if: inputs.update_latest == 'true'
+      env:
+        MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
+      shell: bash
+      run: mike deploy --push --update-aliases ${{ inputs.version }} latest
+    - name: Build documentation site - ${{ inputs.version }}
+      if: inputs.update_latest != 'true'
+      env:
+        MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
+      shell: bash
+      run: mike deploy --push ${{ inputs.version }}
