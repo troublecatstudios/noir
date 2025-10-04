@@ -119,3 +119,4 @@ jobs:
         with:
           version: ${{ needs.release.outputs.version }}
           update_latest: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
