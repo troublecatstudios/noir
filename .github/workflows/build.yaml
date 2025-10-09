@@ -90,6 +90,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     needs: [ prep ]
+    permissions:
+      contents: write
+      issues: write
+      checks: write
+      statuses: write
     steps:
       - uses: actions/checkout@v4
         with:
