@@ -1,3 +1,7 @@
+# Ignore temporaries from GameCI
+/[Aa]rtifacts/
+/[Cc]odeCoverage/
+
 # Noir Additions
 #=========================
 unity-project/.data/
