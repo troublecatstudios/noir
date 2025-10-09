@@ -52,6 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          lfs: true
           fetch-depth: 0 # Nerdbank.GitVersioning requires a full clone to correctly calculate the version height
       - name: Mark repository as safe
         shell: bash
@@ -79,6 +80,30 @@ jobs:
           if-no-files-found: error
           retention-days: 7
           path: ${{ env.NuGetDirectory }}/**/*.nupkg
+
+  #
+  # Test
+  # --------------------------------------------------------------------------------
+  # test handles running the playmode and editmode tests within Unity. This is done
+  # via the game-ci/unity-test-runner action
+  #
+  test:
+    runs-on: ubuntu-latest
+    needs: [ prep ]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+      - uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.FOSS_UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.FOSS_UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.FOSS_UNITY_PASSWORD }}
+        with:
+          projectPath: unity-project
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          unityVersion: ${{ needs.prep.outputs.unity_version }}
 
   # Deploy NuGet
   # --------------------------------------------------------------------------------
