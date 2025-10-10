@@ -1980,6 +1980,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#code-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#registerservicefunctresult" class="md-nav__link">
     <span class="md-ellipsis">
       RegisterService(Func&lt;TResult&gt;)
@@ -7272,6 +7281,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#code-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#registerservicefunctresult" class="md-nav__link">
     <span class="md-ellipsis">
       RegisterService(Func&lt;TResult&gt;)
@@ -7338,17 +7356,24 @@
 <h1 id="servicelocator">ServiceLocator<a class="headerlink" href="#servicelocator" title="Permanent link">&para;</a></h1>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#namespace" title="namespace"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3a2 2 0 0 0-2 2h2m2-2v2h2V3m2 0v2h2V3m2 0v2h2V3m2 0v2h2a2 2 0 0 0-2-2M3 7v2h2V7m2 0v4h4V7m2 0v4h4V7m2 0v2h2V7M3 11v2h2v-2m14 0v2h2v-2M7 13v4h4v-4m2 0v4h4v-4M3 15v2h2v-2m14 0v2h2v-2M3 19a2 2 0 0 0 2 2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2a2 2 0 0 0 2-2Z"/></svg></span></a></span><span class="tcx-badge__text">Noir</span></span></p>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#package_name" title="package name"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span></a></span><span class="tcx-badge__text">Noir.dll</span></span></p>
-<p>Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.</p>
+<p>Provides access to services by finding an appropriate provider while hiding both the provider’s concrete type and the process used to locate it.
+<list type="bullet">
+    <item>It's best to limit calls to ServiceLocator methods the startup of your components: <c>Awake()</c>, <c>Start()</c>, <c>OnEnable()</c> are all good points to register and get services.</item>
+    <item>Avoid calling the service locator within loops or <c>Update()</c> and <c>LateUpdate()</c>.</item>
+    <item>When registering with the service locator, it's best to register an interface or abstract class as the lookup type.</item>
+  </list></p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ServiceLocator</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IServiceLocator</span>
 </code></pre></div>
 <p><strong>Implements:</strong> <em><a href="/noir/reference/Noir/IServiceLocator/">IServiceLocator</a></em></p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
+<p><a name=".ctor"></a></p>
 <h3 id="ctor"><code>.ctor()</code><a class="headerlink" href="#ctor" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="nf">ServiceLocator</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<p><a name="IsServiceRegistered"></a></p>
 <h3 id="isserviceregistered"><code>IsServiceRegistered()</code><a class="headerlink" href="#isserviceregistered" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
@@ -7356,6 +7381,7 @@
 Returns a value indicating whether the given service type has an implementation in the service registry.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">IsServiceRegistered</span><span class="p">()</span>
 </code></pre></div>
+<p><a name="TryGetService"></a></p>
 <h3 id="trygetserviceout-tservicetype"><code>TryGetService(out TServiceType&amp;)</code><a class="headerlink" href="#trygetserviceout-tservicetype" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
@@ -7364,6 +7390,7 @@ Returns a value indicating whether the given service type has an implementation 
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>instance</code> <a href="/noir/reference/">TServiceType&amp;</a> <br></p>
+<p><a name="GetService"></a></p>
 <h3 id="getservice"><code>GetService()</code><a class="headerlink" href="#getservice" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="_"><code>TServiceType</code></a></span></span>
@@ -7373,32 +7400,45 @@ Gets an implementation for the given type from the service registry.</p>
 </code></pre></div>
 <p><strong>Exceptions</strong> <br>
 <a href="https://learn.microsoft.com/en-us/dotnet/api/System.NullReferenceException?view=net-7.0">NullReferenceException</a> <br>
- <br></p>
+ <br>
+<a name="RegisterService"></a></p>
 <h3 id="registerservice"><code>RegisterService()</code><a class="headerlink" href="#registerservice" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
-Registers a service type and its implementation in the service registry.</p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">()</span>
+Registers a service type and its implementation in the service registry.
+The TImplementationType must be able to instantiated via an empty constructor, e.g. new TImplementationType()</p>
+<h3 id="code-example">Code example<a class="headerlink" href="#code-example" title="Permanent link">&para;</a></h3>
+<p><example>
+            Registering a service.</p>
+<p><div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&lt;!</span><span class="p">[</span><span class="n">CDATA</span><span class="p">[</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">                    </span><span class="n">ServiceLocator</span><span class="p">.</span><span class="n">RegisterService</span><span class="o">&lt;</span><span class="n">TServiceType</span><span class="p">,</span><span class="w"> </span><span class="n">TImplementationType</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">                </span><span class="p">]]</span><span class="o">&gt;</span>
 </code></pre></div>
+</example></p>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">()</span>
+</code></pre></div>
+<p><a name="RegisterService"></a></p>
 <h3 id="registerservicefunctresult"><code>RegisterService(Func&lt;TResult&gt;)</code><a class="headerlink" href="#registerservicefunctresult" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">(</span><span class="n">Func</span><span class="o">&lt;</span><span class="n">TResult</span><span class="o">&gt;</span><span class="w"> </span><span class="n">factory</span><span class="p">)</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">(</span><span class="n">Func</span><span class="o">&lt;</span><span class="n">TResult</span><span class="o">&gt;</span><span class="w"> </span><span class="n">factory</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>factory</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0">Func&lt;TResult&gt;</a> <br></p>
+<p><a name="RegisterService"></a></p>
 <h3 id="registerservicetservicetype"><code>RegisterService(TServiceType)</code><a class="headerlink" href="#registerservicetservicetype" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">(</span><span class="n">TServiceType</span><span class="w"> </span><span class="n">instance</span><span class="p">)</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RegisterService</span><span class="p">(</span><span class="n">TServiceType</span><span class="w"> </span><span class="n">instance</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>instance</code> <a href="/noir/reference/">TServiceType</a> <br></p>
+<p><a name="UnregisterService"></a></p>
 <h3 id="unregisterservice"><code>UnregisterService()</code><a class="headerlink" href="#unregisterservice" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
 Removes a service implementation from the service registry.</p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">UnregisterService</span><span class="p">()</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">UnregisterService</span><span class="p">()</span>
 </code></pre></div>
 
 
@@ -7422,7 +7462,7 @@ Removes a service implementation from the service registry.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 4, 2025 14:12:19 UTC"><span class="timeago" datetime="2025-10-04T14:12:19+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 4, 2025 14:12:19 UTC">2025-10-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 10, 2025 11:31:16 UTC"><span class="timeago" datetime="2025-10-10T11:31:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 10, 2025 11:31:16 UTC">2025-10-10</span>
   </span>
 
     
