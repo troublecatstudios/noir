@@ -13,6 +13,8 @@ public class Vector2Converter : PartialConverter<T>
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public Vector2Converter()
 
 ## Properties
 
+<a name="CanRead"></a>
+
 ### `CanRead`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -33,6 +37,8 @@ public Vector2Converter()
 public virtual bool CanRead { get; }
 
 ```
+
+<a name="CanWrite"></a>
 
 ### `CanWrite`
 <!-- tc:scope public -->
@@ -45,6 +51,8 @@ public virtual bool CanWrite { get; }
 ```
 
 ## Methods
+
+<a name="ReadValue"></a>
 
 ### `ReadValue(Vector2&, string, JsonReader, JsonSerializer)`
 <!-- tc:scope private -->
@@ -63,6 +71,8 @@ protected virtual void ReadValue(Vector2& value, string name, JsonReader reader,
 `reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
+<a name="WriteJsonProperties"></a>
+
 ### `WriteJsonProperties(JsonWriter, Vector2, JsonSerializer)`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -79,6 +89,8 @@ protected virtual void WriteJsonProperties(JsonWriter writer, Vector2 value,
 `value` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
+<a name="CanConvert"></a>
+
 ### `CanConvert(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -91,6 +103,8 @@ public virtual bool CanConvert(Type objectType)
 
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="ReadJson"></a>
 
 ### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
 <!-- tc:scope public -->
@@ -109,6 +123,8 @@ public virtual Object ReadJson(JsonReader reader, Type objectType,
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `existingValue` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
+
+<a name="WriteJson"></a>
 
 ### `WriteJson(JsonWriter, Object, JsonSerializer)`
 <!-- tc:scope public -->

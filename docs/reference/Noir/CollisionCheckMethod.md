@@ -13,6 +13,8 @@ public sealed enum CollisionCheckMethod : Enum, IComparable, ISpanFormattable, I
 
 ## Properties
 
+<a name="ThreeDimensional"></a>
+
 ### `ThreeDimensional`
 <!-- tc:scope private -->
 <!-- tc:return_type CollisionCheckMethod /noir/reference/Noir/CollisionCheckMethod/ -->
@@ -22,6 +24,8 @@ public sealed enum CollisionCheckMethod : Enum, IComparable, ISpanFormattable, I
 public static const CollisionCheckMethod ThreeDimensional;
 
 ```
+
+<a name="TwoDimensional"></a>
 
 ### `TwoDimensional`
 <!-- tc:scope private -->

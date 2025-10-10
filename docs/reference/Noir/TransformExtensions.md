@@ -11,6 +11,8 @@ public static class TransformExtensions
 
 ## Methods
 
+<a name="TryFind"></a>
+
 ### `TryFind(Transform, string, out T&)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->

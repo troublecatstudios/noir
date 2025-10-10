@@ -13,6 +13,8 @@ public class Vector4IntPropertyDrawer : PropertyDrawer
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -24,6 +26,8 @@ public Vector4IntPropertyDrawer()
 
 ## Properties
 
+<a name="attribute"></a>
+
 ### `attribute`
 <!-- tc:scope public -->
 <!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
@@ -33,6 +37,8 @@ public Vector4IntPropertyDrawer()
 public PropertyAttribute attribute { get; }
 
 ```
+
+<a name="fieldInfo"></a>
 
 ### `fieldInfo`
 <!-- tc:scope public -->
@@ -46,6 +52,8 @@ public FieldInfo fieldInfo { get; }
 
 ## Methods
 
+<a name="CanCacheInspectorGUI"></a>
+
 ### `CanCacheInspectorGUI(SerializedProperty)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -58,6 +66,8 @@ public virtual bool CanCacheInspectorGUI(SerializedProperty property)
 
 **Parameters** <br>
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+
+<a name="GetPropertyHeight"></a>
 
 ### `GetPropertyHeight(SerializedProperty, GUIContent)`
 <!-- tc:scope public -->
@@ -75,6 +85,8 @@ public virtual float GetPropertyHeight(SerializedProperty property,
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 `label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
 
+<a name="CreatePropertyGUI"></a>
+
 ### `CreatePropertyGUI(SerializedProperty)`
 <!-- tc:scope public -->
 <!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
@@ -87,6 +99,8 @@ public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
 
 **Parameters** <br>
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
+
+<a name="OnGUI"></a>
 
 ### `OnGUI(Rect, SerializedProperty, GUIContent)`
 <!-- tc:scope public -->

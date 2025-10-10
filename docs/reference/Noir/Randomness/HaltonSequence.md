@@ -5,6 +5,12 @@
 <!-- tc:assembly Noir.dll -->
 
 Helper methods for generating numbers/points based on the Halton Sequence algorithm.
+In statistics, Halton sequences are sequences used to generate points in space for numerical methods such as
+             Monte Carlo simulations. Although these sequences are deterministic, they are of low discrepancy, that is,
+             appear to be random for many purposes. They were first introduced in 1960 and are an example of a quasi-random
+             number sequence. They generalize the one-dimensional van der Corput sequences.
+            
+             See https://en.wikipedia.org/wiki/Halton_sequence for more information.
 
 
 ```csharp
@@ -12,6 +18,8 @@ public static class HaltonSequence
 ```
 
 ## Methods
+
+<a name="GetIndex"></a>
 
 ### `GetIndex(int, int)`
 <!-- tc:scope public -->
@@ -26,6 +34,8 @@ public float GetIndex(int index, int baseNum)
 **Parameters** <br>
 `index` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `baseNum` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+
+<a name="GeneratePoints"></a>
 
 ### `GeneratePoints(int, int, int)`
 <!-- tc:scope public -->

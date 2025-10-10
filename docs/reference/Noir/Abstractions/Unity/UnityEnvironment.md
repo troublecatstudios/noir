@@ -13,6 +13,8 @@ public class UnityEnvironment : AbstractEnvironment
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -23,6 +25,8 @@ public UnityEnvironment()
 ```
 
 ## Methods
+
+<a name="GetEnvironmentVariable"></a>
 
 ### `GetEnvironmentVariable(string)`
 <!-- tc:scope public -->

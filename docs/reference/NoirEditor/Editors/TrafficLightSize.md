@@ -13,6 +13,8 @@ public sealed enum TrafficLightSize : Enum, IComparable, ISpanFormattable, IForm
 
 ## Properties
 
+<a name="Double"></a>
+
 ### `Double`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
@@ -22,6 +24,8 @@ public sealed enum TrafficLightSize : Enum, IComparable, ISpanFormattable, IForm
 public static const TrafficLightSize Double;
 
 ```
+
+<a name="Quad"></a>
 
 ### `Quad`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const TrafficLightSize Quad;
 
 ```
 
+<a name="Single"></a>
+
 ### `Single`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightSize /noir/reference//noir/reference/NoirEditor/Editors/TrafficLightSize/ -->
@@ -42,6 +48,8 @@ public static const TrafficLightSize Quad;
 public static const TrafficLightSize Single;
 
 ```
+
+<a name="Triple"></a>
 
 ### `Triple`
 <!-- tc:scope private -->

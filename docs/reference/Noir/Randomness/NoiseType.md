@@ -13,6 +13,8 @@ sealed enum NoiseType : Enum, IComparable, ISpanFormattable, IFormattable, IConv
 
 ## Properties
 
+<a name="Cellular"></a>
+
 ### `Cellular`
 <!-- tc:scope private -->
 <!-- tc:return_type NoiseType /noir/reference//noir/reference/Noir/Randomness/NoiseType/ -->
@@ -22,6 +24,8 @@ sealed enum NoiseType : Enum, IComparable, ISpanFormattable, IFormattable, IConv
 public static const NoiseType Cellular;
 
 ```
+
+<a name="OpenSimplex2"></a>
 
 ### `OpenSimplex2`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const NoiseType OpenSimplex2;
 
 ```
 
+<a name="OpenSimplex2S"></a>
+
 ### `OpenSimplex2S`
 <!-- tc:scope private -->
 <!-- tc:return_type NoiseType /noir/reference//noir/reference/Noir/Randomness/NoiseType/ -->
@@ -42,6 +48,8 @@ public static const NoiseType OpenSimplex2;
 public static const NoiseType OpenSimplex2S;
 
 ```
+
+<a name="Perlin"></a>
 
 ### `Perlin`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public static const NoiseType Perlin;
 
 ```
 
+<a name="Value"></a>
+
 ### `Value`
 <!-- tc:scope private -->
 <!-- tc:return_type NoiseType /noir/reference//noir/reference/Noir/Randomness/NoiseType/ -->
@@ -62,6 +72,8 @@ public static const NoiseType Perlin;
 public static const NoiseType Value;
 
 ```
+
+<a name="ValueCubic"></a>
 
 ### `ValueCubic`
 <!-- tc:scope private -->

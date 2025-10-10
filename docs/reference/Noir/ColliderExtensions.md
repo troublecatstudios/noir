@@ -11,6 +11,8 @@ public static class ColliderExtensions
 
 ## Methods
 
+<a name="SetDimensions"></a>
+
 ### `SetDimensions(Collider, Vector2)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->

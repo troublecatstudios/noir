@@ -11,6 +11,8 @@ public abstract class AbstractEnvironment
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -21,6 +23,8 @@ protected AbstractEnvironment()
 ```
 
 ## Methods
+
+<a name="GetEnvironmentVariable"></a>
 
 ### `GetEnvironmentVariable(string)`
 <!-- tc:scope public -->

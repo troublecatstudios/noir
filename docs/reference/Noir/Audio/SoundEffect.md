@@ -13,6 +13,8 @@ public class SoundEffect : ScriptableObject
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public SoundEffect()
 
 ## Properties
 
+<a name="AudioClips"></a>
+
 ### `AudioClips`
 <!-- tc:scope private -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
@@ -33,6 +37,8 @@ public SoundEffect()
 public List<T> AudioClips;
 
 ```
+
+<a name="ConcurrentLimit"></a>
 
 ### `ConcurrentLimit`
 <!-- tc:scope private -->
@@ -44,6 +50,8 @@ public int ConcurrentLimit;
 
 ```
 
+<a name="Delay"></a>
+
 ### `Delay`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -53,6 +61,8 @@ public int ConcurrentLimit;
 public float Delay { get; }
 
 ```
+
+<a name="DelayRange"></a>
 
 ### `DelayRange`
 <!-- tc:scope private -->
@@ -64,6 +74,8 @@ public Vector2 DelayRange;
 
 ```
 
+<a name="DelayStart"></a>
+
 ### `DelayStart`
 <!-- tc:scope private -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -73,6 +85,8 @@ public Vector2 DelayRange;
 public bool DelayStart;
 
 ```
+
+<a name="hideFlags"></a>
 
 ### `hideFlags`
 <!-- tc:scope public -->
@@ -84,6 +98,8 @@ public HideFlags hideFlags { get; public set; }
 
 ```
 
+<a name="MaxAudibleDistance"></a>
+
 ### `MaxAudibleDistance`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -93,6 +109,8 @@ public HideFlags hideFlags { get; public set; }
 public float MaxAudibleDistance { get; }
 
 ```
+
+<a name="MixerGroup"></a>
 
 ### `MixerGroup`
 <!-- tc:scope private -->
@@ -104,6 +122,8 @@ public AudioMixerGroup MixerGroup;
 
 ```
 
+<a name="name"></a>
+
 ### `name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -113,6 +133,8 @@ public AudioMixerGroup MixerGroup;
 public string name { get; public set; }
 
 ```
+
+<a name="Pitch"></a>
 
 ### `Pitch`
 <!-- tc:scope public -->
@@ -124,6 +146,8 @@ public float Pitch { get; }
 
 ```
 
+<a name="SpatialBlend"></a>
+
 ### `SpatialBlend`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -134,6 +158,8 @@ public float SpatialBlend { get; }
 
 ```
 
+<a name="Style"></a>
+
 ### `Style`
 <!-- tc:scope private -->
 <!-- tc:return_type SoundEffectPlayStyle /noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
@@ -143,6 +169,8 @@ public float SpatialBlend { get; }
 public SoundEffectPlayStyle Style;
 
 ```
+
+<a name="VolumeScale"></a>
 
 ### `VolumeScale`
 <!-- tc:scope public -->
@@ -156,6 +184,8 @@ public float VolumeScale { get; }
 
 ## Methods
 
+<a name="GetClip"></a>
+
 ### `GetClip()`
 <!-- tc:scope public -->
 <!-- tc:return_type AudioClip https://docs.unity3d.com/ScriptReference/AudioClip.html -->
@@ -166,6 +196,8 @@ public AudioClip GetClip()
 
 ```
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -175,6 +207,8 @@ public AudioClip GetClip()
 public int GetInstanceID()
 
 ```
+
+<a name="Equals"></a>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
@@ -189,6 +223,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -199,6 +235,8 @@ public virtual int GetHashCode()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -208,6 +246,8 @@ public virtual int GetHashCode()
 public virtual string ToString()
 
 ```
+
+<a name="Play"></a>
 
 ### `Play(SoundEffect, AudioSource, T?, bool)`
 <!-- tc:scope public -->
@@ -225,6 +265,8 @@ public void Play(SoundEffect effect, AudioSource source, T? volumeScale,
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
 `volumeScale` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `interrupt` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+
+<a name="SetDirty"></a>
 
 ### `SetDirty()`
 <!-- tc:scope public -->

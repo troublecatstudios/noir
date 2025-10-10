@@ -11,6 +11,8 @@ public static class VectorExtensions
 
 ## Methods
 
+<a name="ToLogString"></a>
+
 ### `ToLogString(Vector2)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -23,6 +25,8 @@ public string ToLogString(Vector2 vector)
 
 **Parameters** <br>
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+
+<a name="ToLogString"></a>
 
 ### `ToLogString(Vector2Int)`
 <!-- tc:scope public -->
@@ -37,6 +41,8 @@ public string ToLogString(Vector2Int vector)
 **Parameters** <br>
 `vector` [Vector2Int](https://docs.unity3d.com/ScriptReference/Vector2Int.html) <br>
 
+<a name="ToLogString"></a>
+
 ### `ToLogString(Vector3)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -49,6 +55,8 @@ public string ToLogString(Vector3 vector)
 
 **Parameters** <br>
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+
+<a name="ToLogString"></a>
 
 ### `ToLogString(Vector3Int)`
 <!-- tc:scope public -->
@@ -63,6 +71,8 @@ public string ToLogString(Vector3Int vector)
 **Parameters** <br>
 `vector` [Vector3Int](https://docs.unity3d.com/ScriptReference/Vector3Int.html) <br>
 
+<a name="Abs"></a>
+
 ### `Abs(Vector2)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -75,6 +85,8 @@ public Vector2 Abs(Vector2 vector)
 
 **Parameters** <br>
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+
+<a name="DirectionTo"></a>
 
 ### `DirectionTo(Vector2, Vector2, bool)`
 <!-- tc:scope public -->
@@ -96,6 +108,8 @@ public Vector2 DirectionTo(Vector2 vector, Vector2 other, bool normalize)
 `normalize` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
 
+<a name="Sign"></a>
+
 ### `Sign(Vector2, bool)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -110,6 +124,8 @@ public Vector2 Sign(Vector2 vector, bool ignoreZeros)
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 `ignoreZeros` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="Abs"></a>
+
 ### `Abs(Vector3)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
@@ -122,6 +138,8 @@ public Vector3 Abs(Vector3 vector)
 
 **Parameters** <br>
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+
+<a name="DirectionTo"></a>
 
 ### `DirectionTo(Vector3, Vector3, bool)`
 <!-- tc:scope public -->
@@ -142,6 +160,8 @@ public Vector3 DirectionTo(Vector3 vector, Vector3 other, bool normalize)
  <br>
 `normalize` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
  <br>
+
+<a name="Sign"></a>
 
 ### `Sign(Vector3, bool)`
 <!-- tc:scope public -->

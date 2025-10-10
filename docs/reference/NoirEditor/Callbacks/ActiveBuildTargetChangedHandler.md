@@ -13,6 +13,8 @@ public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged, IOrder
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -23,6 +25,8 @@ public ActiveBuildTargetChangedHandler()
 ```
 
 ## Properties
+
+<a name="callbackOrder"></a>
 
 ### `callbackOrder`
 <!-- tc:scope public -->
@@ -35,6 +39,8 @@ public virtual int callbackOrder { get; }
 ```
 
 ## Methods
+
+<a name="OnActiveBuildTargetChanged"></a>
 
 ### `OnActiveBuildTargetChanged(BuildTarget, BuildTarget)`
 <!-- tc:scope public -->

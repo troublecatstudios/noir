@@ -13,6 +13,8 @@ public sealed enum GetComponentSearchArea : Enum, IComparable, ISpanFormattable,
 
 ## Properties
 
+<a name="ChildrenFirst"></a>
+
 ### `ChildrenFirst`
 <!-- tc:scope private -->
 <!-- tc:return_type GetComponentSearchArea /noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
@@ -25,6 +27,8 @@ public static const GetComponentSearchArea ChildrenFirst;
 
 ```
 
+<a name="ParentFirst"></a>
+
 ### `ParentFirst`
 <!-- tc:scope private -->
 <!-- tc:return_type GetComponentSearchArea /noir/reference//noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
@@ -36,6 +40,8 @@ Search for the component type within the parents of the current GameObject befor
 public static const GetComponentSearchArea ParentFirst;
 
 ```
+
+<a name="SelfOnly"></a>
 
 ### `SelfOnly`
 <!-- tc:scope private -->

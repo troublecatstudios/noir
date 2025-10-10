@@ -11,6 +11,8 @@ public abstract INoirEventDispatcher
 
 ## Methods
 
+<a name="DispatchEvent"></a>
+
 ### `DispatchEvent(T)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->

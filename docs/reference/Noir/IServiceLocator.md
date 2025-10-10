@@ -11,6 +11,8 @@ public abstract IServiceLocator
 
 ## Methods
 
+<a name="IsServiceRegistered"></a>
+
 ### `IsServiceRegistered()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -20,6 +22,8 @@ public abstract IServiceLocator
 public abstract bool IsServiceRegistered()
 
 ```
+
+<a name="TryGetService"></a>
 
 ### `TryGetService(out T&)`
 <!-- tc:scope public -->
@@ -34,6 +38,8 @@ public abstract bool TryGetService(T& instance)
 **Parameters** <br>
 `instance` [T&](/noir/reference/) <br>
 
+<a name="GetService"></a>
+
 ### `GetService()`
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
@@ -43,6 +49,8 @@ public abstract bool TryGetService(T& instance)
 public abstract T GetService()
 
 ```
+
+<a name="RegisterService"></a>
 
 ### `RegisterService(Func<TResult>)`
 <!-- tc:scope public -->
@@ -56,6 +64,8 @@ public abstract void RegisterService(Func<TResult> factory)
 **Parameters** <br>
 `factory` [Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
 
+<a name="RegisterService"></a>
+
 ### `RegisterService(T)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -67,6 +77,8 @@ public abstract void RegisterService(T instance)
 
 **Parameters** <br>
 `instance` [T](/noir/reference/) <br>
+
+<a name="UnregisterService"></a>
 
 ### `UnregisterService()`
 <!-- tc:scope public -->

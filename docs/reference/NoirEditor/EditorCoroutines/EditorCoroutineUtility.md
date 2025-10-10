@@ -11,6 +11,8 @@ public static class EditorCoroutineUtility
 
 ## Methods
 
+<a name="StartCoroutine"></a>
+
 ### `StartCoroutine(IEnumerator, Object)`
 <!-- tc:scope public -->
 <!-- tc:return_type EditorCoroutine /noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/ -->
@@ -40,6 +42,7 @@ Starts an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCorout
                  }
              }
              </code>
+Only types that don't inherit from <see cref="T:UnityEngine.Object">UnityEngine.Object</see> will get collected the next time the GC runs instead of getting null-ed immediately.
 
 
 ```csharp
@@ -52,6 +55,8 @@ public EditorCoroutine StartCoroutine(IEnumerator routine, Object owner)
  <br>
 `owner` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
  <br>
+
+<a name="StartCoroutineOwnerless"></a>
 
 ### `StartCoroutineOwnerless(IEnumerator)`
 <!-- tc:scope public -->
@@ -91,6 +96,8 @@ public EditorCoroutine StartCoroutineOwnerless(IEnumerator routine)
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
  <br>
+
+<a name="StopCoroutine"></a>
 
 ### `StopCoroutine(EditorCoroutine)`
 <!-- tc:scope public -->

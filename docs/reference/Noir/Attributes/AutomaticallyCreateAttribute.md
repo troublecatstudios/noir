@@ -13,6 +13,8 @@ public class AutomaticallyCreateAttribute : Attribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -34,6 +36,8 @@ public AutomaticallyCreateAttribute(string customPathPrefix,
 
 ## Properties
 
+<a name="AssetNameOverride"></a>
+
 ### `AssetNameOverride`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -43,6 +47,8 @@ public AutomaticallyCreateAttribute(string customPathPrefix,
 public string AssetNameOverride { get; private set; }
 
 ```
+
+<a name="CreatePathPrefix"></a>
 
 ### `CreatePathPrefix`
 <!-- tc:scope public -->
@@ -55,6 +61,8 @@ Gets the custom folder path to store the created asset. Is automatically prefixe
 public string CreatePathPrefix { get; private set; }
 
 ```
+
+<a name="TypeId"></a>
 
 ### `TypeId`
 <!-- tc:scope public -->

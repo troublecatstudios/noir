@@ -15,6 +15,8 @@ public class ObjectPoolComponent : NoirBehaviour
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -26,6 +28,8 @@ public ObjectPoolComponent()
 
 ## Properties
 
+<a name="animation"></a>
+
 ### `animation`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -35,6 +39,8 @@ public ObjectPoolComponent()
 public Component animation { get; }
 
 ```
+
+<a name="audio"></a>
 
 ### `audio`
 <!-- tc:scope public -->
@@ -46,6 +52,8 @@ public Component audio { get; }
 
 ```
 
+<a name="camera"></a>
+
 ### `camera`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -55,6 +63,8 @@ public Component audio { get; }
 public Component camera { get; }
 
 ```
+
+<a name="Capacity"></a>
 
 ### `Capacity`
 <!-- tc:scope public -->
@@ -68,6 +78,8 @@ public uint Capacity { get; }
 
 ```
 
+<a name="collider"></a>
+
 ### `collider`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -77,6 +89,8 @@ public uint Capacity { get; }
 public Component collider { get; }
 
 ```
+
+<a name="collider2D"></a>
 
 ### `collider2D`
 <!-- tc:scope public -->
@@ -88,6 +102,8 @@ public Component collider2D { get; }
 
 ```
 
+<a name="constantForce"></a>
+
 ### `constantForce`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -97,6 +113,8 @@ public Component collider2D { get; }
 public Component constantForce { get; }
 
 ```
+
+<a name="enabled"></a>
 
 ### `enabled`
 <!-- tc:scope public -->
@@ -108,6 +126,8 @@ public bool enabled { get; public set; }
 
 ```
 
+<a name="gameObject"></a>
+
 ### `gameObject`
 <!-- tc:scope public -->
 <!-- tc:return_type GameObject https://docs.unity3d.com/ScriptReference/GameObject.html -->
@@ -117,6 +137,8 @@ public bool enabled { get; public set; }
 public GameObject gameObject { get; }
 
 ```
+
+<a name="GameTime"></a>
 
 ### `GameTime`
 <!-- tc:scope protected -->
@@ -128,6 +150,8 @@ protected GameTime GameTime { get; }
 
 ```
 
+<a name="hideFlags"></a>
+
 ### `hideFlags`
 <!-- tc:scope public -->
 <!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
@@ -137,6 +161,8 @@ protected GameTime GameTime { get; }
 public HideFlags hideFlags { get; public set; }
 
 ```
+
+<a name="hingeJoint"></a>
 
 ### `hingeJoint`
 <!-- tc:scope public -->
@@ -148,6 +174,8 @@ public Component hingeJoint { get; }
 
 ```
 
+<a name="isActiveAndEnabled"></a>
+
 ### `isActiveAndEnabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -157,6 +185,8 @@ public Component hingeJoint { get; }
 public bool isActiveAndEnabled { get; }
 
 ```
+
+<a name="IsParentForSpawnedObjects"></a>
 
 ### `IsParentForSpawnedObjects`
 <!-- tc:scope public -->
@@ -170,6 +200,8 @@ public bool IsParentForSpawnedObjects { get; }
 
 ```
 
+<a name="IsPreWarmEnabled"></a>
+
 ### `IsPreWarmEnabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -182,6 +214,8 @@ public bool IsPreWarmEnabled { get; }
 
 ```
 
+<a name="light"></a>
+
 ### `light`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -191,6 +225,8 @@ public bool IsPreWarmEnabled { get; }
 public Component light { get; }
 
 ```
+
+<a name="Logger"></a>
 
 ### `Logger`
 <!-- tc:scope protected -->
@@ -202,6 +238,8 @@ protected BehaviourLogger Logger { get; }
 
 ```
 
+<a name="name"></a>
+
 ### `name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -211,6 +249,8 @@ protected BehaviourLogger Logger { get; }
 public string name { get; public set; }
 
 ```
+
+<a name="networkView"></a>
 
 ### `networkView`
 <!-- tc:scope public -->
@@ -222,6 +262,8 @@ public Component networkView { get; }
 
 ```
 
+<a name="particleSystem"></a>
+
 ### `particleSystem`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -231,6 +273,8 @@ public Component networkView { get; }
 public Component particleSystem { get; }
 
 ```
+
+<a name="Prefab"></a>
 
 ### `Prefab`
 <!-- tc:scope public -->
@@ -244,6 +288,8 @@ public ObjectPoolItemSystem Prefab { get; }
 
 ```
 
+<a name="renderer"></a>
+
 ### `renderer`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -253,6 +299,8 @@ public ObjectPoolItemSystem Prefab { get; }
 public Component renderer { get; }
 
 ```
+
+<a name="rigidbody"></a>
 
 ### `rigidbody`
 <!-- tc:scope public -->
@@ -264,6 +312,8 @@ public Component rigidbody { get; }
 
 ```
 
+<a name="rigidbody2D"></a>
+
 ### `rigidbody2D`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -273,6 +323,8 @@ public Component rigidbody { get; }
 public Component rigidbody2D { get; }
 
 ```
+
+<a name="runInEditMode"></a>
 
 ### `runInEditMode`
 <!-- tc:scope public -->
@@ -284,6 +336,8 @@ public bool runInEditMode { get; public set; }
 
 ```
 
+<a name="Services"></a>
+
 ### `Services`
 <!-- tc:scope protected -->
 <!-- tc:return_type ComponentServiceLocator /noir/reference//noir/reference/Noir/DependencyInjection/ComponentServiceLocator/ -->
@@ -293,6 +347,8 @@ public bool runInEditMode { get; public set; }
 protected ComponentServiceLocator Services { get; }
 
 ```
+
+<a name="tag"></a>
 
 ### `tag`
 <!-- tc:scope public -->
@@ -304,6 +360,8 @@ public string tag { get; public set; }
 
 ```
 
+<a name="transform"></a>
+
 ### `transform`
 <!-- tc:scope public -->
 <!-- tc:return_type Transform https://docs.unity3d.com/ScriptReference/Transform.html -->
@@ -313,6 +371,8 @@ public string tag { get; public set; }
 public Transform transform { get; }
 
 ```
+
+<a name="useGUILayout"></a>
 
 ### `useGUILayout`
 <!-- tc:scope public -->
@@ -326,6 +386,8 @@ public bool useGUILayout { get; public set; }
 
 ## Methods
 
+<a name="DispatchEvent"></a>
+
 ### `DispatchEvent(T)`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -338,6 +400,8 @@ protected void DispatchEvent(T eventInfo)
 **Parameters** <br>
 `eventInfo` [T](/noir/reference//noir/reference/) <br>
 
+<a name="RegisterListener"></a>
+
 ### `RegisterListener()`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -347,6 +411,8 @@ protected void RegisterListener()
 
 ```
 
+<a name="UnregisterListener"></a>
+
 ### `UnregisterListener()`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -355,6 +421,8 @@ protected void RegisterListener()
 protected void UnregisterListener()
 
 ```
+
+<a name="CompareTag"></a>
 
 ### `CompareTag(string)`
 <!-- tc:scope public -->
@@ -369,6 +437,8 @@ public bool CompareTag(string tag)
 **Parameters** <br>
 `tag` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="IsInvoking"></a>
+
 ### `IsInvoking()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -378,6 +448,8 @@ public bool CompareTag(string tag)
 public bool IsInvoking()
 
 ```
+
+<a name="IsInvoking"></a>
 
 ### `IsInvoking(string)`
 <!-- tc:scope public -->
@@ -391,6 +463,8 @@ public bool IsInvoking(string methodName)
 
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="TryGetComponent"></a>
 
 ### `TryGetComponent(Type, out Component&)`
 <!-- tc:scope public -->
@@ -406,6 +480,8 @@ public bool TryGetComponent(Type type, Component& component)
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `component` [Component&](https://docs.unity3d.com/ScriptReference/Component.html) <br>
 
+<a name="TryGetComponent"></a>
+
 ### `TryGetComponent(out T&)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -418,6 +494,8 @@ public bool TryGetComponent(T& component)
 
 **Parameters** <br>
 `component` [T&](/noir/reference//noir/reference/) <br>
+
+<a name="GetComponent"></a>
 
 ### `GetComponent(string)`
 <!-- tc:scope public -->
@@ -432,6 +510,8 @@ public Component GetComponent(string type)
 **Parameters** <br>
 `type` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="GetComponent"></a>
+
 ### `GetComponent(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -444,6 +524,8 @@ public Component GetComponent(Type type)
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="GetComponentInChildren"></a>
 
 ### `GetComponentInChildren(Type, bool)`
 <!-- tc:scope public -->
@@ -459,6 +541,8 @@ public Component GetComponentInChildren(Type t, bool includeInactive)
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentInChildren"></a>
+
 ### `GetComponentInChildren(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -471,6 +555,8 @@ public Component GetComponentInChildren(Type t)
 
 **Parameters** <br>
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="GetComponentInParent"></a>
 
 ### `GetComponentInParent(Type, bool)`
 <!-- tc:scope public -->
@@ -486,6 +572,8 @@ public Component GetComponentInParent(Type t, bool includeInactive)
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentInParent"></a>
+
 ### `GetComponentInParent(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -499,6 +587,8 @@ public Component GetComponentInParent(Type t)
 **Parameters** <br>
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 
+<a name="GetComponents"></a>
+
 ### `GetComponents(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -511,6 +601,8 @@ public Component[] GetComponents(Type type)
 
 **Parameters** <br>
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="GetComponentsInChildren"></a>
 
 ### `GetComponentsInChildren(Type, bool)`
 <!-- tc:scope public -->
@@ -526,6 +618,8 @@ public Component[] GetComponentsInChildren(Type t, bool includeInactive)
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentsInChildren"></a>
+
 ### `GetComponentsInChildren(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -538,6 +632,8 @@ public Component[] GetComponentsInChildren(Type t)
 
 **Parameters** <br>
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="GetComponentsInParent"></a>
 
 ### `GetComponentsInParent(Type, bool)`
 <!-- tc:scope public -->
@@ -553,6 +649,8 @@ public Component[] GetComponentsInParent(Type t, bool includeInactive)
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentsInParent"></a>
+
 ### `GetComponentsInParent(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type Component[] https://docs.unity3d.com/ScriptReference/Component.html -->
@@ -565,6 +663,8 @@ public Component[] GetComponentsInParent(Type t)
 
 **Parameters** <br>
 `t` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
+
+<a name="StartCoroutine_Auto"></a>
 
 ### `StartCoroutine_Auto(IEnumerator)`
 <!-- tc:scope public -->
@@ -579,6 +679,8 @@ public Coroutine StartCoroutine_Auto(IEnumerator routine)
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
 
+<a name="StartCoroutine"></a>
+
 ### `StartCoroutine(IEnumerator)`
 <!-- tc:scope public -->
 <!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
@@ -591,6 +693,8 @@ public Coroutine StartCoroutine(IEnumerator routine)
 
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
+
+<a name="StartCoroutine"></a>
 
 ### `StartCoroutine(string, Object)`
 <!-- tc:scope public -->
@@ -606,6 +710,8 @@ public Coroutine StartCoroutine(string methodName, Object value)
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="StartCoroutine"></a>
+
 ### `StartCoroutine(string)`
 <!-- tc:scope public -->
 <!-- tc:return_type Coroutine https://docs.unity3d.com/ScriptReference/Coroutine.html -->
@@ -619,6 +725,8 @@ public Coroutine StartCoroutine(string methodName)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -628,6 +736,8 @@ public Coroutine StartCoroutine(string methodName)
 public int GetInstanceID()
 
 ```
+
+<a name="GetComponent"></a>
 
 ### `GetComponent()`
 <!-- tc:scope public -->
@@ -639,6 +749,8 @@ public T GetComponent()
 
 ```
 
+<a name="GetComponentInChildren"></a>
+
 ### `GetComponentInChildren()`
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
@@ -648,6 +760,8 @@ public T GetComponent()
 public T GetComponentInChildren()
 
 ```
+
+<a name="GetComponentInChildren"></a>
 
 ### `GetComponentInChildren(bool)`
 <!-- tc:scope public -->
@@ -662,6 +776,8 @@ public T GetComponentInChildren(bool includeInactive)
 **Parameters** <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentInParent"></a>
+
 ### `GetComponentInParent()`
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
@@ -671,6 +787,8 @@ public T GetComponentInChildren(bool includeInactive)
 public T GetComponentInParent()
 
 ```
+
+<a name="GetComponentInParent"></a>
 
 ### `GetComponentInParent(bool)`
 <!-- tc:scope public -->
@@ -685,6 +803,8 @@ public T GetComponentInParent(bool includeInactive)
 **Parameters** <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponents"></a>
+
 ### `GetComponents()`
 <!-- tc:scope public -->
 <!-- tc:return_type T[] -->
@@ -695,6 +815,8 @@ public T[] GetComponents()
 
 ```
 
+<a name="GetComponentsInChildren"></a>
+
 ### `GetComponentsInChildren()`
 <!-- tc:scope public -->
 <!-- tc:return_type T[] -->
@@ -704,6 +826,8 @@ public T[] GetComponents()
 public T[] GetComponentsInChildren()
 
 ```
+
+<a name="GetComponentsInChildren"></a>
 
 ### `GetComponentsInChildren(bool)`
 <!-- tc:scope public -->
@@ -718,6 +842,8 @@ public T[] GetComponentsInChildren(bool includeInactive)
 **Parameters** <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="GetComponentsInParent"></a>
+
 ### `GetComponentsInParent()`
 <!-- tc:scope public -->
 <!-- tc:return_type T[] -->
@@ -727,6 +853,8 @@ public T[] GetComponentsInChildren(bool includeInactive)
 public T[] GetComponentsInParent()
 
 ```
+
+<a name="GetComponentsInParent"></a>
 
 ### `GetComponentsInParent(bool)`
 <!-- tc:scope public -->
@@ -741,6 +869,8 @@ public T[] GetComponentsInParent(bool includeInactive)
 **Parameters** <br>
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="Equals"></a>
+
 ### `Equals(Object)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -754,6 +884,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -764,6 +896,8 @@ public virtual int GetHashCode()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -773,6 +907,8 @@ public virtual int GetHashCode()
 public virtual string ToString()
 
 ```
+
+<a name="BroadcastMessage"></a>
 
 ### `BroadcastMessage(string, Object, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -790,6 +926,8 @@ public void BroadcastMessage(string methodName, Object parameter,
 `parameter` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="BroadcastMessage"></a>
+
 ### `BroadcastMessage(string, Object)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -802,6 +940,8 @@ public void BroadcastMessage(string methodName, Object parameter)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `parameter` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+
+<a name="BroadcastMessage"></a>
 
 ### `BroadcastMessage(string, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -816,6 +956,8 @@ public void BroadcastMessage(string methodName, SendMessageOptions options)
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="BroadcastMessage"></a>
+
 ### `BroadcastMessage(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -828,6 +970,8 @@ public void BroadcastMessage(string methodName)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="CancelInvoke"></a>
+
 ### `CancelInvoke()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -836,6 +980,8 @@ public void BroadcastMessage(string methodName)
 public void CancelInvoke()
 
 ```
+
+<a name="CancelInvoke"></a>
 
 ### `CancelInvoke(string)`
 <!-- tc:scope public -->
@@ -849,6 +995,8 @@ public void CancelInvoke(string methodName)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="GetComponents"></a>
+
 ### `GetComponents(List<T>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -860,6 +1008,8 @@ public void GetComponents(List<T> results)
 
 **Parameters** <br>
 `results` [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
+
+<a name="GetComponents"></a>
 
 ### `GetComponents(Type, List<T>)`
 <!-- tc:scope public -->
@@ -874,6 +1024,8 @@ public void GetComponents(Type type, List<T> results)
 `type` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `results` [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
 
+<a name="GetComponentsInChildren"></a>
+
 ### `GetComponentsInChildren(bool, List<T>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -887,6 +1039,8 @@ public void GetComponentsInChildren(bool includeInactive, List<T> result)
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `result` [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
 
+<a name="GetComponentsInChildren"></a>
+
 ### `GetComponentsInChildren(List<T>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -898,6 +1052,8 @@ public void GetComponentsInChildren(List<T> results)
 
 **Parameters** <br>
 `results` [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
+
+<a name="GetComponentsInParent"></a>
 
 ### `GetComponentsInParent(bool, List<T>)`
 <!-- tc:scope public -->
@@ -912,6 +1068,8 @@ public void GetComponentsInParent(bool includeInactive, List<T> results)
 `includeInactive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `results` [List\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0) <br>
 
+<a name="Invoke"></a>
+
 ### `Invoke(string, float)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -924,6 +1082,8 @@ public void Invoke(string methodName, float time)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `time` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="InvokeRepeating"></a>
 
 ### `InvokeRepeating(string, float, float)`
 <!-- tc:scope public -->
@@ -938,6 +1098,8 @@ public void InvokeRepeating(string methodName, float time, float repeatRate)
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `time` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `repeatRate` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="SendMessage"></a>
 
 ### `SendMessage(string, Object, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -955,6 +1117,8 @@ public void SendMessage(string methodName, Object value,
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="SendMessage"></a>
+
 ### `SendMessage(string, Object)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -967,6 +1131,8 @@ public void SendMessage(string methodName, Object value)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+
+<a name="SendMessage"></a>
 
 ### `SendMessage(string, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -981,6 +1147,8 @@ public void SendMessage(string methodName, SendMessageOptions options)
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="SendMessage"></a>
+
 ### `SendMessage(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -992,6 +1160,8 @@ public void SendMessage(string methodName)
 
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="SendMessageUpwards"></a>
 
 ### `SendMessageUpwards(string, Object, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -1009,6 +1179,8 @@ public void SendMessageUpwards(string methodName, Object value,
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="SendMessageUpwards"></a>
+
 ### `SendMessageUpwards(string, Object)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -1021,6 +1193,8 @@ public void SendMessageUpwards(string methodName, Object value)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `value` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+
+<a name="SendMessageUpwards"></a>
 
 ### `SendMessageUpwards(string, SendMessageOptions)`
 <!-- tc:scope public -->
@@ -1035,6 +1209,8 @@ public void SendMessageUpwards(string methodName, SendMessageOptions options)
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `options` [SendMessageOptions](https://docs.unity3d.com/ScriptReference/SendMessageOptions.html) <br>
 
+<a name="SendMessageUpwards"></a>
+
 ### `SendMessageUpwards(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -1047,6 +1223,8 @@ public void SendMessageUpwards(string methodName)
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="StopAllCoroutines"></a>
+
 ### `StopAllCoroutines()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -1055,6 +1233,8 @@ public void SendMessageUpwards(string methodName)
 public void StopAllCoroutines()
 
 ```
+
+<a name="StopCoroutine"></a>
 
 ### `StopCoroutine(IEnumerator)`
 <!-- tc:scope public -->
@@ -1068,6 +1248,8 @@ public void StopCoroutine(IEnumerator routine)
 **Parameters** <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
 
+<a name="StopCoroutine"></a>
+
 ### `StopCoroutine(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -1079,6 +1261,8 @@ public void StopCoroutine(string methodName)
 
 **Parameters** <br>
 `methodName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="StopCoroutine"></a>
 
 ### `StopCoroutine(Coroutine)`
 <!-- tc:scope public -->
@@ -1094,4 +1278,4 @@ public void StopCoroutine(Coroutine routine)
 
 ## More information
 
-* [](T:Noir.Pooling.ObjectPoolSystem)
+* [Noir.Pooling.ObjectPoolSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolSystem/)

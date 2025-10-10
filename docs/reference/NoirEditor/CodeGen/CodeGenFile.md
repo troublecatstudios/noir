@@ -11,6 +11,8 @@ public static class CodeGenFile
 
 ## Methods
 
+<a name="BuildConstIntegerVariable"></a>
+
 ### `BuildConstIntegerVariable(string, int, string)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -27,6 +29,8 @@ public string BuildConstIntegerVariable(string varName, int varValue,
 `varName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `varValue` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `indent` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="BuildConstStringVariable"></a>
 
 ### `BuildConstStringVariable(string, string, string)`
 <!-- tc:scope public -->
@@ -45,6 +49,8 @@ public string BuildConstStringVariable(string varName, string varValue,
 `varValue` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `indent` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="GetClassContent"></a>
+
 ### `GetClassContent(IEnumerable<T>)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -58,6 +64,8 @@ public string GetClassContent(IEnumerable<T> items)
 **Parameters** <br>
 `items` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 
+<a name="GetClassContent"></a>
+
 ### `GetClassContent(String[])`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -70,6 +78,8 @@ public string GetClassContent(String[] labelsArray)
 
 **Parameters** <br>
 `labelsArray` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="GetClassWrapper"></a>
 
 ### `GetClassWrapper(string, string, string, String[], string, string)`
 <!-- tc:scope public -->
@@ -92,6 +102,8 @@ public string GetClassWrapper(string namespace, string className,
 `header` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `footer` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="GetHashFromSourceFile"></a>
+
 ### `GetHashFromSourceFile(string)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -104,6 +116,8 @@ public string GetHashFromSourceFile(string sourceFilePath)
 
 **Parameters** <br>
 `sourceFilePath` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="UppercaseVariableName"></a>
 
 ### `UppercaseVariableName(string)`
 <!-- tc:scope public -->

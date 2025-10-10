@@ -11,6 +11,8 @@ public abstract INoirAudioManager
 
 ## Methods
 
+<a name="TryPlayClip"></a>
+
 ### `TryPlayClip(AudioClip, T?, float, float, float, bool, AudioMixerGroup, float)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -35,6 +37,8 @@ public abstract bool TryPlayClip(AudioClip clip, T? origin, float delay,
 `mixerGroup` [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) <br>
 `spatialBlend` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 
+<a name="TryPlaySoundEffect"></a>
+
 ### `TryPlaySoundEffect(SoundEffect, T?, float, float, float, bool, AudioMixerGroup)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -56,6 +60,8 @@ public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin,
 `pitch` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `loop` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `mixerGroup` [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) <br>
+
+<a name="TryPlaySoundEffect"></a>
 
 ### `TryPlaySoundEffect(string, Transform, float, float, float, bool, AudioMixerGroup)`
 <!-- tc:scope public -->
@@ -80,6 +86,8 @@ public abstract bool TryPlaySoundEffect(string effectName,
 `loop` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `mixerGroup` [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) <br>
 
+<a name="StopAllEffects"></a>
+
 ### `StopAllEffects()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -88,6 +96,8 @@ public abstract bool TryPlaySoundEffect(string effectName,
 public abstract void StopAllEffects()
 
 ```
+
+<a name="StopEffect"></a>
 
 ### `StopEffect(string)`
 <!-- tc:scope public -->

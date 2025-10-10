@@ -13,6 +13,8 @@ public class NoirProjectConfiguration : ScriptableObject
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public NoirProjectConfiguration()
 
 ## Properties
 
+<a name="DefaultAudioMixerGroup"></a>
+
 ### `DefaultAudioMixerGroup`
 <!-- tc:scope public -->
 <!-- tc:return_type AudioMixerGroup https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html -->
@@ -33,6 +37,8 @@ public NoirProjectConfiguration()
 public AudioMixerGroup DefaultAudioMixerGroup { get; }
 
 ```
+
+<a name="GameManagerPrefab"></a>
 
 ### `GameManagerPrefab`
 <!-- tc:scope public -->
@@ -44,6 +50,8 @@ public NoirGameManager GameManagerPrefab { get; }
 
 ```
 
+<a name="hideFlags"></a>
+
 ### `hideFlags`
 <!-- tc:scope public -->
 <!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
@@ -53,6 +61,8 @@ public NoirGameManager GameManagerPrefab { get; }
 public HideFlags hideFlags { get; public set; }
 
 ```
+
+<a name="Instance"></a>
 
 ### `Instance`
 <!-- tc:scope public -->
@@ -64,6 +74,8 @@ public static NoirProjectConfiguration Instance { get; }
 
 ```
 
+<a name="IsAutomaticSpawnEnabled"></a>
+
 ### `IsAutomaticSpawnEnabled`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -73,6 +85,8 @@ public static NoirProjectConfiguration Instance { get; }
 public bool IsAutomaticSpawnEnabled { get; }
 
 ```
+
+<a name="IsCodeGenerationEnabled"></a>
 
 ### `IsCodeGenerationEnabled`
 <!-- tc:scope public -->
@@ -84,6 +98,8 @@ public bool IsCodeGenerationEnabled { get; }
 
 ```
 
+<a name="IsFramerateLocked"></a>
+
 ### `IsFramerateLocked`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -94,6 +110,8 @@ public bool IsFramerateLocked { get; }
 
 ```
 
+<a name="LockedFrameRate"></a>
+
 ### `LockedFrameRate`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -103,6 +121,8 @@ public bool IsFramerateLocked { get; }
 public int LockedFrameRate { get; }
 
 ```
+
+<a name="name"></a>
 
 ### `name`
 <!-- tc:scope public -->
@@ -116,6 +136,8 @@ public string name { get; public set; }
 
 ## Methods
 
+<a name="CheckFirstTimeSetupComplete"></a>
+
 ### `CheckFirstTimeSetupComplete()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -128,6 +150,8 @@ public bool CheckFirstTimeSetupComplete()
 
 ```
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -137,6 +161,8 @@ public bool CheckFirstTimeSetupComplete()
 public int GetInstanceID()
 
 ```
+
+<a name="Equals"></a>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
@@ -151,6 +177,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -161,6 +189,8 @@ public virtual int GetHashCode()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -170,6 +200,8 @@ public virtual int GetHashCode()
 public virtual string ToString()
 
 ```
+
+<a name="SetDirty"></a>
 
 ### `SetDirty()`
 <!-- tc:scope public -->

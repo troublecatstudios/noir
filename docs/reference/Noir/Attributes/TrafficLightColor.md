@@ -13,6 +13,8 @@ public sealed enum TrafficLightColor : Enum, IComparable, ISpanFormattable, IFor
 
 ## Properties
 
+<a name="Amber"></a>
+
 ### `Amber`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightColor /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
@@ -22,6 +24,8 @@ public sealed enum TrafficLightColor : Enum, IComparable, ISpanFormattable, IFor
 public static const TrafficLightColor Amber;
 
 ```
+
+<a name="Blue"></a>
 
 ### `Blue`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const TrafficLightColor Blue;
 
 ```
 
+<a name="Green"></a>
+
 ### `Green`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightColor /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
@@ -42,6 +48,8 @@ public static const TrafficLightColor Blue;
 public static const TrafficLightColor Green;
 
 ```
+
+<a name="Off"></a>
 
 ### `Off`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public static const TrafficLightColor Off;
 
 ```
 
+<a name="Pink"></a>
+
 ### `Pink`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightColor /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
@@ -63,6 +73,8 @@ public static const TrafficLightColor Pink;
 
 ```
 
+<a name="Red"></a>
+
 ### `Red`
 <!-- tc:scope private -->
 <!-- tc:return_type TrafficLightColor /noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/ -->
@@ -72,6 +84,8 @@ public static const TrafficLightColor Pink;
 public static const TrafficLightColor Red;
 
 ```
+
+<a name="Yellow"></a>
 
 ### `Yellow`
 <!-- tc:scope private -->

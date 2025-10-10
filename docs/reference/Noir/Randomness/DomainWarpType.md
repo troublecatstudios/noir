@@ -13,6 +13,8 @@ sealed enum DomainWarpType : Enum, IComparable, ISpanFormattable, IFormattable, 
 
 ## Properties
 
+<a name="BasicGrid"></a>
+
 ### `BasicGrid`
 <!-- tc:scope private -->
 <!-- tc:return_type DomainWarpType /noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
@@ -23,6 +25,8 @@ public static const DomainWarpType BasicGrid;
 
 ```
 
+<a name="OpenSimplex2"></a>
+
 ### `OpenSimplex2`
 <!-- tc:scope private -->
 <!-- tc:return_type DomainWarpType /noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
@@ -32,6 +36,8 @@ public static const DomainWarpType BasicGrid;
 public static const DomainWarpType OpenSimplex2;
 
 ```
+
+<a name="OpenSimplex2Reduced"></a>
 
 ### `OpenSimplex2Reduced`
 <!-- tc:scope private -->

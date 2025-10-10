@@ -11,6 +11,8 @@ public static class DecibelConstants
 
 ## Properties
 
+<a name="Concert"></a>
+
 ### `Concert`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -22,6 +24,8 @@ Also: jet aircraft engine during takeoff from 200ft
 public static const int Concert;
 
 ```
+
+<a name="Conversation"></a>
 
 ### `Conversation`
 <!-- tc:scope private -->
@@ -35,6 +39,8 @@ public static const int Conversation;
 
 ```
 
+<a name="Discomfort"></a>
+
 ### `Discomfort`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -44,6 +50,8 @@ public static const int Conversation;
 public static const int Discomfort;
 
 ```
+
+<a name="LoudRadio"></a>
 
 ### `LoudRadio`
 <!-- tc:scope private -->
@@ -57,6 +65,8 @@ public static const int LoudRadio;
 
 ```
 
+<a name="Pain"></a>
+
 ### `Pain`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -66,6 +76,8 @@ public static const int LoudRadio;
 public static const int Pain;
 
 ```
+
+<a name="Rain"></a>
 
 ### `Rain`
 <!-- tc:scope private -->
@@ -79,6 +91,8 @@ public static const int Rain;
 
 ```
 
+<a name="SubwayTrain"></a>
+
 ### `SubwayTrain`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -90,6 +104,8 @@ Also: construction site
 public static const int SubwayTrain;
 
 ```
+
+<a name="Whisper"></a>
 
 ### `Whisper`
 <!-- tc:scope private -->
@@ -104,6 +120,8 @@ public static const int Whisper;
 ```
 
 ## Methods
+
+<a name="DecibelToDistance"></a>
 
 ### `DecibelToDistance(float)`
 <!-- tc:scope public -->

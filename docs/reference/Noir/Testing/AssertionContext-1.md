@@ -13,6 +13,8 @@ public class AssertionContext<T> : IAssertionContext<T>
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -23,6 +25,8 @@ Creates a new assertion context.
 public AssertionContext<T>()
 
 ```
+
+<a name=".ctor"></a>
 
 ### `.ctor(T, Object[])`
 <!-- tc:scope public -->
@@ -39,6 +43,8 @@ public AssertionContext<T>(T target, Object[] additionalContexts)
 
 ## Properties
 
+<a name="AdditionalContexts"></a>
+
 ### `AdditionalContexts`
 <!-- tc:scope public -->
 <!-- tc:return_type Object[] https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
@@ -48,6 +54,8 @@ public AssertionContext<T>(T target, Object[] additionalContexts)
 public virtual Object[] AdditionalContexts { get; internal set; }
 
 ```
+
+<a name="Target"></a>
 
 ### `Target`
 <!-- tc:scope public -->

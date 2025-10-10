@@ -11,6 +11,8 @@ public sealed class LoggerSingleton
 
 ## Properties
 
+<a name="Instance"></a>
+
 ### `Instance`
 <!-- tc:scope public -->
 <!-- tc:return_type LoggerSingleton /noir/reference//noir/reference/Noir/Logging/LoggerSingleton/ -->
@@ -22,6 +24,8 @@ public static LoggerSingleton Instance { get; }
 ```
 
 ## Methods
+
+<a name="Debug"></a>
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -37,6 +41,8 @@ public void Debug(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Debug"></a>
+
 ### `Debug(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -50,6 +56,8 @@ public void Debug(string message, string subsystem)
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="DisableSubsystem"></a>
+
 ### `DisableSubsystem(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -61,6 +69,8 @@ public void DisableSubsystem(string system)
 
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="EnableSubsystem"></a>
 
 ### `EnableSubsystem(string)`
 <!-- tc:scope public -->
@@ -74,6 +84,8 @@ public void EnableSubsystem(string system)
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="EndAllTraces"></a>
+
 ### `EndAllTraces()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -82,6 +94,8 @@ public void EnableSubsystem(string system)
 public void EndAllTraces()
 
 ```
+
+<a name="EndTrace"></a>
 
 ### `EndTrace(string)`
 <!-- tc:scope public -->
@@ -94,6 +108,8 @@ public void EndTrace(string traceName)
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Error"></a>
 
 ### `Error(string, Object, string)`
 <!-- tc:scope public -->
@@ -109,6 +125,8 @@ public void Error(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Error"></a>
+
 ### `Error(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -121,6 +139,8 @@ public void Error(string message, string subsystem)
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Info"></a>
 
 ### `Info(string, Object, string)`
 <!-- tc:scope public -->
@@ -136,6 +156,8 @@ public void Info(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Info"></a>
+
 ### `Info(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -148,6 +170,8 @@ public void Info(string message, string subsystem)
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Sample"></a>
 
 ### `Sample(string, float, string)`
 <!-- tc:scope public -->
@@ -163,6 +187,8 @@ public void Sample(string token, float rate, string message)
 `rate` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="StartTrace"></a>
+
 ### `StartTrace(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -174,6 +200,8 @@ public void StartTrace(string traceName)
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Trace"></a>
 
 ### `Trace(string, string, Object, string)`
 <!-- tc:scope public -->
@@ -192,6 +220,8 @@ public void Trace(string trace, string message, Object context,
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Trace"></a>
+
 ### `Trace(string, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -205,6 +235,8 @@ public void Trace(string trace, string message, string subsystem)
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Verify"></a>
 
 ### `Verify(bool, string, Object, string)`
 <!-- tc:scope public -->
@@ -223,6 +255,8 @@ public void Verify(bool condition, string label, Object context,
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Verify"></a>
+
 ### `Verify(bool, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -236,6 +270,8 @@ public void Verify(bool condition, string label, string subsystem)
 `condition` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Verify"></a>
 
 ### `Verify(Func<TResult>, string, Object, string)`
 <!-- tc:scope public -->
@@ -254,6 +290,8 @@ public void Verify(Func<TResult> condition, string label, Object context,
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Verify"></a>
+
 ### `Verify(Func<TResult>, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -267,6 +305,8 @@ public void Verify(Func<TResult> condition, string label, string subsystem)
 `condition` [Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Warn"></a>
 
 ### `Warn(string, Object, string)`
 <!-- tc:scope public -->
@@ -282,6 +322,8 @@ public void Warn(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Warn"></a>
+
 ### `Warn(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -294,6 +336,8 @@ public void Warn(string message, string subsystem)
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="WriteLog"></a>
 
 ### `WriteLog(string, LogLevel, Object, string, string)`
 <!-- tc:scope public -->

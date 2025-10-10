@@ -11,6 +11,8 @@ public static class CustomDataVariableAssertions
 
 ## Methods
 
+<a name="HasValue"></a>
+
 ### `HasValue(IAssertionContext<T>, T, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->

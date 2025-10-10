@@ -11,6 +11,8 @@ public class CodeGenReport
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -22,6 +24,8 @@ public CodeGenReport()
 
 ## Properties
 
+<a name="GeneratedFiles"></a>
+
 ### `GeneratedFiles`
 <!-- tc:scope public -->
 <!-- tc:return_type ValueTuple\<T1, T2\>[] https://learn.microsoft.com/en-us/dotnet/api/System.ValueTuple-2?view=net-7.0 -->
@@ -32,6 +36,8 @@ public ValueTuple`2[] GeneratedFiles { get; public set; }
 
 ```
 
+<a name="StartTime"></a>
+
 ### `StartTime`
 <!-- tc:scope public -->
 <!-- tc:return_type DateTime https://learn.microsoft.com/en-us/dotnet/api/System.DateTime?view=net-7.0 -->
@@ -41,6 +47,8 @@ public ValueTuple`2[] GeneratedFiles { get; public set; }
 public DateTime StartTime { get; public set; }
 
 ```
+
+<a name="TimeTaken"></a>
 
 ### `TimeTaken`
 <!-- tc:scope public -->
@@ -53,6 +61,8 @@ public TimeSpan TimeTaken { get; public set; }
 ```
 
 ## Methods
+
+<a name="ToString"></a>
 
 ### `ToString()`
 <!-- tc:scope public -->

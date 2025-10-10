@@ -11,6 +11,8 @@ public class PlayAudioClipEvent
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -22,6 +24,8 @@ public PlayAudioClipEvent()
 
 ## Properties
 
+<a name="Clip"></a>
+
 ### `Clip`
 <!-- tc:scope public -->
 <!-- tc:return_type AudioClip https://docs.unity3d.com/ScriptReference/AudioClip.html -->
@@ -31,6 +35,8 @@ public PlayAudioClipEvent()
 public AudioClip Clip { get; public set; }
 
 ```
+
+<a name="Delay"></a>
 
 ### `Delay`
 <!-- tc:scope public -->
@@ -42,6 +48,8 @@ public float Delay { get; public set; }
 
 ```
 
+<a name="Loop"></a>
+
 ### `Loop`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -51,6 +59,8 @@ public float Delay { get; public set; }
 public bool Loop { get; public set; }
 
 ```
+
+<a name="MixerGroup"></a>
 
 ### `MixerGroup`
 <!-- tc:scope public -->
@@ -62,6 +72,8 @@ public AudioMixerGroup MixerGroup { get; public set; }
 
 ```
 
+<a name="Pitch"></a>
+
 ### `Pitch`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -72,6 +84,8 @@ public float Pitch { get; public set; }
 
 ```
 
+<a name="Volume"></a>
+
 ### `Volume`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -81,6 +95,8 @@ public float Pitch { get; public set; }
 public float Volume { get; public set; }
 
 ```
+
+<a name="WorldPosition"></a>
 
 ### `WorldPosition`
 <!-- tc:scope public -->

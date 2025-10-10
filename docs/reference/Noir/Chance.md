@@ -13,6 +13,8 @@ public static class Chance
 
 ## Methods
 
+<a name="CoinFlip"></a>
+
 ### `CoinFlip()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -24,6 +26,8 @@ Shortcut for 50/50 chance.
 public bool CoinFlip()
 
 ```
+
+<a name="Odds"></a>
 
 ### `Odds(float, int)`
 <!-- tc:scope public -->
@@ -46,6 +50,8 @@ public bool Odds(float odds, int attempts)
 **Exceptions** <br>
 [ArgumentException](https://learn.microsoft.com/en-us/dotnet/api/System.ArgumentException?view=net-7.0) <br>
  <br>
+<a name="Odds"></a>
+
 ### `Odds(float)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -65,6 +71,8 @@ public bool Odds(float odds)
 **Exceptions** <br>
 [ArgumentException](https://learn.microsoft.com/en-us/dotnet/api/System.ArgumentException?view=net-7.0) <br>
  <br>
+<a name="Odds"></a>
+
 ### `Odds(int)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->

@@ -13,6 +13,8 @@ sealed enum RotationType3D : Enum, IComparable, ISpanFormattable, IFormattable, 
 
 ## Properties
 
+<a name="ImproveXYPlanes"></a>
+
 ### `ImproveXYPlanes`
 <!-- tc:scope private -->
 <!-- tc:return_type RotationType3D /noir/reference//noir/reference/Noir/Randomness/RotationType3D/ -->
@@ -23,6 +25,8 @@ public static const RotationType3D ImproveXYPlanes;
 
 ```
 
+<a name="ImproveXZPlanes"></a>
+
 ### `ImproveXZPlanes`
 <!-- tc:scope private -->
 <!-- tc:return_type RotationType3D /noir/reference//noir/reference/Noir/Randomness/RotationType3D/ -->
@@ -32,6 +36,8 @@ public static const RotationType3D ImproveXYPlanes;
 public static const RotationType3D ImproveXZPlanes;
 
 ```
+
+<a name="None"></a>
 
 ### `None`
 <!-- tc:scope private -->

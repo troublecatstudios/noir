@@ -11,6 +11,8 @@ public static class EquatableAssertions
 
 ## Methods
 
+<a name="IsEquatableTo"></a>
+
 ### `IsEquatableTo(IAssertionContext<T>, T)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->

@@ -11,6 +11,8 @@ public abstract IPlatformPaths
 
 ## Properties
 
+<a name="ConfigurationDirectory"></a>
+
 ### `ConfigurationDirectory`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -21,6 +23,8 @@ public abstract virtual string ConfigurationDirectory { get; }
 
 ```
 
+<a name="LogDirectory"></a>
+
 ### `LogDirectory`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -30,6 +34,8 @@ public abstract virtual string ConfigurationDirectory { get; }
 public abstract virtual string LogDirectory { get; }
 
 ```
+
+<a name="SaveFileDirectory"></a>
 
 ### `SaveFileDirectory`
 <!-- tc:scope public -->

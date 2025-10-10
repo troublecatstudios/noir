@@ -13,6 +13,8 @@ public class SceneAttribute : PropertyAttribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public SceneAttribute()
 
 ## Properties
 
+<a name="order"></a>
+
 ### `order`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -33,6 +37,8 @@ public SceneAttribute()
 public int order { get; public set; }
 
 ```
+
+<a name="TypeId"></a>
 
 ### `TypeId`
 <!-- tc:scope public -->

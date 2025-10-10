@@ -13,6 +13,8 @@ public class PathsFactory : IPlatformPathsFactory
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -23,6 +25,8 @@ public PathsFactory()
 ```
 
 ## Methods
+
+<a name="GetPlatformPaths"></a>
 
 ### `GetPlatformPaths()`
 <!-- tc:scope public -->

@@ -11,6 +11,8 @@ public class NoirFile
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -21,6 +23,8 @@ public NoirFile()
 ```
 
 ## Methods
+
+<a name="Write"></a>
 
 ### `Write(string, string)`
 <!-- tc:scope public -->

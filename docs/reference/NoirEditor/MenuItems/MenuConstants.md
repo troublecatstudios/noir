@@ -11,6 +11,8 @@ public static class MenuConstants
 
 ## Properties
 
+<a name="BASE_MENU_PATH_TOOLS"></a>
+
 ### `BASE_MENU_PATH_TOOLS`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->

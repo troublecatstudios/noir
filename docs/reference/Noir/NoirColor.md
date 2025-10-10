@@ -11,6 +11,8 @@ public static class NoirColor
 
 ## Methods
 
+<a name="FromHex"></a>
+
 ### `FromHex(string)`
 <!-- tc:scope public -->
 <!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->

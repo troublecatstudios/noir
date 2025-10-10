@@ -15,6 +15,8 @@ public sealed enum HorizontalDirections : Enum, IComparable, ISpanFormattable, I
 
 ## Properties
 
+<a name="Left"></a>
+
 ### `Left`
 <!-- tc:scope private -->
 <!-- tc:return_type HorizontalDirections /noir/reference/Noir/HorizontalDirections/ -->
@@ -25,6 +27,8 @@ public static const HorizontalDirections Left;
 
 ```
 
+<a name="None"></a>
+
 ### `None`
 <!-- tc:scope private -->
 <!-- tc:return_type HorizontalDirections /noir/reference/Noir/HorizontalDirections/ -->
@@ -34,6 +38,8 @@ public static const HorizontalDirections Left;
 public static const HorizontalDirections None;
 
 ```
+
+<a name="Right"></a>
 
 ### `Right`
 <!-- tc:scope private -->

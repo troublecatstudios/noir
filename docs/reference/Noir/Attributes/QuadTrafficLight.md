@@ -13,6 +13,8 @@ public class QuadTrafficLight : TrafficLightAttribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -21,6 +23,8 @@ public class QuadTrafficLight : TrafficLightAttribute
 public QuadTrafficLight()
 
 ```
+
+<a name=".ctor"></a>
 
 ### `.ctor(TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -41,6 +45,8 @@ public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b,
 
 ## Properties
 
+<a name="AlsoDrawDefault"></a>
+
 ### `AlsoDrawDefault`
 <!-- tc:scope private -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -50,6 +56,8 @@ public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b,
 public bool AlsoDrawDefault;
 
 ```
+
+<a name="Colors"></a>
 
 ### `Colors`
 <!-- tc:scope private -->
@@ -61,6 +69,8 @@ public TrafficLightColor[] Colors;
 
 ```
 
+<a name="CustomLabel"></a>
+
 ### `CustomLabel`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -70,6 +80,8 @@ public TrafficLightColor[] Colors;
 public string CustomLabel;
 
 ```
+
+<a name="DrawLabel"></a>
 
 ### `DrawLabel`
 <!-- tc:scope private -->
@@ -81,6 +93,8 @@ public bool DrawLabel;
 
 ```
 
+<a name="FillLights"></a>
+
 ### `FillLights`
 <!-- tc:scope private -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -90,6 +104,8 @@ public bool DrawLabel;
 public bool FillLights;
 
 ```
+
+<a name="LightCount"></a>
 
 ### `LightCount`
 <!-- tc:scope private -->
@@ -101,6 +117,8 @@ public int LightCount;
 
 ```
 
+<a name="order"></a>
+
 ### `order`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -110,6 +128,8 @@ public int LightCount;
 public int order { get; public set; }
 
 ```
+
+<a name="TypeId"></a>
 
 ### `TypeId`
 <!-- tc:scope public -->

@@ -11,6 +11,8 @@ public static class Noise
 
 ## Methods
 
+<a name="DecibelToLinear"></a>
+
 ### `DecibelToLinear(float)`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -23,6 +25,8 @@ public float DecibelToLinear(float db)
 
 **Parameters** <br>
 `db` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="LinearToDecibel"></a>
 
 ### `LinearToDecibel(float)`
 <!-- tc:scope public -->

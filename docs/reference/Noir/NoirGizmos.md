@@ -11,6 +11,8 @@ public static class NoirGizmos
 
 ## Methods
 
+<a name="DrawArrow"></a>
+
 ### `DrawArrow(Vector3, Vector3, float, float)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -27,6 +29,8 @@ public void DrawArrow(Vector3 pos, Vector3 direction, float arrowHeadLength,
 `direction` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `arrowHeadLength` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `arrowHeadAngle` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="DrawArrow"></a>
 
 ### `DrawArrow(Vector3, Vector3, Color, float, float)`
 <!-- tc:scope public -->
@@ -45,6 +49,8 @@ public void DrawArrow(Vector3 pos, Vector3 direction, Color color,
 `color` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
 `arrowHeadLength` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `arrowHeadAngle` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="DrawBezierCurve"></a>
 
 ### `DrawBezierCurve(Vector3, BezierCurve, int, float, T?)`
 <!-- tc:scope public -->
@@ -65,6 +71,8 @@ public void DrawBezierCurve(Vector3 origin, BezierCurve curve,
 `pointRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `direction` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 
+<a name="DrawLinesToTargets"></a>
+
 ### `DrawLinesToTargets(GameObject, UnityEvent, Vector3)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -79,6 +87,8 @@ public void DrawLinesToTargets(GameObject parent, UnityEvent ev, Vector3 offset)
 `ev` [UnityEvent](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html) <br>
 `offset` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 
+<a name="DrawTypeIcon"></a>
+
 ### `DrawTypeIcon(Vector3, string, float)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -92,6 +102,8 @@ public void DrawTypeIcon(Vector3 position, string label, float iconSize)
 `position` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `iconSize` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+
+<a name="DrawWireArc"></a>
 
 ### `DrawWireArc(Vector3, Vector3, float, float, float)`
 <!-- tc:scope public -->
@@ -118,6 +130,8 @@ public void DrawWireArc(Vector3 position, Vector3 dir, float anglesRange,
 `maxSteps` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
  <br>
 
+<a name="DrawWireCircle"></a>
+
 ### `DrawWireCircle(Vector3, float, int)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -133,6 +147,8 @@ public void DrawWireCircle(Vector3 circleCenter, float circleRadius,
 `circleCenter` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `circleRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `segments` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+
+<a name="DrawWireCircle"></a>
 
 ### `DrawWireCircle(Vector3, float, Vector3, int)`
 <!-- tc:scope public -->
@@ -150,6 +166,8 @@ public void DrawWireCircle(Vector3 circleCenter, float circleRadius,
 `circleRadius` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `circleNormal` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 `segments` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+
+<a name="DrawX"></a>
 
 ### `DrawX(Vector2, float)`
 <!-- tc:scope public -->

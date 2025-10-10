@@ -11,6 +11,8 @@ public class NoiseMaker
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(NoiseSettings)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public NoiseMaker(NoiseSettings settings)
 `settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
 ## Methods
+
+<a name="GetNoise"></a>
 
 ### `GetNoise(float, float)`
 <!-- tc:scope public -->

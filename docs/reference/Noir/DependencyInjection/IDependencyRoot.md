@@ -11,6 +11,8 @@ public abstract IDependencyRoot
 
 ## Properties
 
+<a name="gameObject"></a>
+
 ### `gameObject`
 <!-- tc:scope public -->
 <!-- tc:return_type GameObject https://docs.unity3d.com/ScriptReference/GameObject.html -->

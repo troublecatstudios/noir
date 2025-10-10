@@ -11,6 +11,8 @@ public static class DictionaryExtensions
 
 ## Methods
 
+<a name="Upsert"></a>
+
 ### `Upsert(Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -26,6 +28,8 @@ public void Upsert(Dictionary<TKey, TValue> dict, KeyValuePair<TKey,
 `dict` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
 `kvp` [KeyValuePair\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=net-7.0) <br>
 
+<a name="Upsert"></a>
+
 ### `Upsert(Dictionary<TKey, TValue>, T, K)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -39,6 +43,8 @@ public void Upsert(Dictionary<TKey, TValue> dict, T key, K value)
 `dict` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
 `key` [T](/noir/reference/) <br>
 `value` [K](/noir/reference/) <br>
+
+<a name="Upsert"></a>
 
 ### `Upsert(Dictionary<TKey, TValue>, IDictionary<TKey, TValue>)`
 <!-- tc:scope public -->

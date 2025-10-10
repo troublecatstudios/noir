@@ -11,6 +11,8 @@ public class DeterministicIntegerSet
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(uint, Int32[])`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -25,6 +27,8 @@ public DeterministicIntegerSet(uint seed, Int32[] numbers)
 `numbers` [int[]](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
 ## Methods
+
+<a name="Next"></a>
 
 ### `Next()`
 <!-- tc:scope public -->

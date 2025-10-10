@@ -14,6 +14,8 @@ public sealed struct BezierCurve
 
 ## Properties
 
+<a name="ArcHeight"></a>
+
 ### `ArcHeight`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -25,6 +27,8 @@ The height of the arc for the curve.
 public float ArcHeight { get; public set; }
 
 ```
+
+<a name="ControlPoint"></a>
 
 ### `ControlPoint`
 <!-- tc:scope public -->
@@ -38,6 +42,8 @@ public Vector3 ControlPoint { get; }
 
 ```
 
+<a name="End"></a>
+
 ### `End`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
@@ -49,6 +55,8 @@ The ending point of the curve.
 public Vector3 End { get; public set; }
 
 ```
+
+<a name="Start"></a>
 
 ### `Start`
 <!-- tc:scope public -->
@@ -63,6 +71,8 @@ public Vector3 Start { get; public set; }
 ```
 
 ## Methods
+
+<a name="Create"></a>
 
 ### `Create(int, int)`
 <!-- tc:scope public -->
@@ -81,6 +91,8 @@ public BezierCurve Create(int distance, int height)
  <br>
 `height` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
  <br>
+
+<a name="CreateMovement"></a>
 
 ### `CreateMovement(int, int, float, float)`
 <!-- tc:scope public -->

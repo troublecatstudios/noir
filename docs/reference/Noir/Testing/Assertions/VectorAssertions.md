@@ -11,6 +11,8 @@ public static class VectorAssertions
 
 ## Methods
 
+<a name="IsZero"></a>
+
 ### `IsZero(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->

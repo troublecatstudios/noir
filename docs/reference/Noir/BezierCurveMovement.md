@@ -11,6 +11,8 @@ public class BezierCurveMovement
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -22,6 +24,8 @@ public BezierCurveMovement()
 
 ## Properties
 
+<a name="Curve"></a>
+
 ### `Curve`
 <!-- tc:scope public -->
 <!-- tc:return_type BezierCurve /noir/reference/Noir/BezierCurve/ -->
@@ -31,6 +35,8 @@ public BezierCurveMovement()
 public BezierCurve Curve { get; public set; }
 
 ```
+
+<a name="Duration"></a>
 
 ### `Duration`
 <!-- tc:scope public -->

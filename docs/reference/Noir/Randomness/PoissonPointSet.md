@@ -11,6 +11,8 @@ public class PoissonPointSet
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -21,6 +23,8 @@ public PoissonPointSet()
 ```
 
 ## Properties
+
+<a name="Points"></a>
 
 ### `Points`
 <!-- tc:scope public -->

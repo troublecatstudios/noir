@@ -11,6 +11,8 @@ public class PlatformHelper
 
 ## Properties
 
+<a name="Instance"></a>
+
 ### `Instance`
 <!-- tc:scope private -->
 <!-- tc:return_type PlatformHelper /noir/reference/NoirEditor/PlatformHelper/ -->
@@ -24,6 +26,8 @@ public readonly static PlatformHelper Instance;
 ```
 
 ## Methods
+
+<a name="NormalizePath"></a>
 
 ### `NormalizePath(string)`
 <!-- tc:scope public -->

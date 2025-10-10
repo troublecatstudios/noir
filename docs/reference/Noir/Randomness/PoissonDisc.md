@@ -11,6 +11,8 @@ public class PoissonDisc
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -22,6 +24,8 @@ public PoissonDisc()
 
 ## Properties
 
+<a name="DefaultIterationPerPoint"></a>
+
 ### `DefaultIterationPerPoint`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -31,6 +35,8 @@ public PoissonDisc()
 public static const int DefaultIterationPerPoint;
 
 ```
+
+<a name="InvertRootTwo"></a>
 
 ### `InvertRootTwo`
 <!-- tc:scope private -->
@@ -43,6 +49,8 @@ public static const float InvertRootTwo;
 ```
 
 ## Methods
+
+<a name="CreateSettings"></a>
 
 ### `CreateSettings(Vector2, Vector2, float, T?, int, int)`
 <!-- tc:scope public -->
@@ -64,6 +72,8 @@ public PoissonSettings CreateSettings(Vector2 bottomLeft, Vector2 topRight,
 `startingPoint` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `seed` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `iterations` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+
+<a name="GetGridIndex"></a>
 
 ### `GetGridIndex(Vector2, PoissonSettings)`
 <!-- tc:scope public -->

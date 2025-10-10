@@ -11,6 +11,8 @@ public static class FloatAssertions
 
 ## Methods
 
+<a name="IsApproximately"></a>
+
 ### `IsApproximately(IAssertionContext<T>, float, float, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->

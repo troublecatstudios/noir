@@ -11,6 +11,8 @@ public static class SimpleCollision
 
 ## Methods
 
+<a name="Check"></a>
+
 ### `Check(Vector3, Vector3, float, LayerMask, CollisionCheckMethod, int)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -40,6 +42,8 @@ public bool Check(Vector3 origin, Vector3 direction, float length,
 `hitThreshold` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
  <br>
 
+<a name="CheckPosition"></a>
+
 ### `CheckPosition(Collider2D, Vector2)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -53,6 +57,8 @@ public bool CheckPosition(Collider2D collider, Vector2 position)
 **Parameters** <br>
 `collider` [Collider2D](https://docs.unity3d.com/ScriptReference/Collider2D.html) <br>
 `position` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+
+<a name="TryGetHit"></a>
 
 ### `TryGetHit(Vector3, Vector3, float, LayerMask, CollisionCheckMethod, out Vector3&)`
 <!-- tc:scope public -->
@@ -75,6 +81,8 @@ public bool TryGetHit(Vector3 origin, Vector3 direction, float length,
 `method` [CollisionCheckMethod](/noir/reference/Noir/CollisionCheckMethod/) <br>
 `hitPosition` [Vector3&](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
 
+<a name="GetContactPointFast"></a>
+
 ### `GetContactPointFast(Bounds, Bounds)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -89,6 +97,8 @@ public Vector2 GetContactPointFast(Bounds attackBounds, Bounds defenseBounds)
 `attackBounds` [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) <br>
 `defenseBounds` [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) <br>
 
+<a name="GetRandomPointWithinCollider"></a>
+
 ### `GetRandomPointWithinCollider(BoxCollider2D)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -101,6 +111,8 @@ public Vector2 GetRandomPointWithinCollider(BoxCollider2D collider)
 
 **Parameters** <br>
 `collider` [BoxCollider2D](https://docs.unity3d.com/ScriptReference/BoxCollider2D.html) <br>
+
+<a name="GetRandomPointWithinCollider"></a>
 
 ### `GetRandomPointWithinCollider(CircleCollider2D)`
 <!-- tc:scope public -->

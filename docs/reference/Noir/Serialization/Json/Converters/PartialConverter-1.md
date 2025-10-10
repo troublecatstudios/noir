@@ -13,6 +13,8 @@ public abstract class PartialConverter<T> : JsonConverter
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ protected PartialConverter<T>()
 
 ## Properties
 
+<a name="CanRead"></a>
+
 ### `CanRead`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -33,6 +37,8 @@ protected PartialConverter<T>()
 public virtual bool CanRead { get; }
 
 ```
+
+<a name="CanWrite"></a>
 
 ### `CanWrite`
 <!-- tc:scope public -->
@@ -45,6 +51,8 @@ public virtual bool CanWrite { get; }
 ```
 
 ## Methods
+
+<a name="ReadValue"></a>
 
 ### `ReadValue(T&, string, JsonReader, JsonSerializer)`
 <!-- tc:scope private -->
@@ -63,6 +71,8 @@ protected abstract void ReadValue(T& value, string name, JsonReader reader,
 `reader` [JsonReader](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
+<a name="WriteJsonProperties"></a>
+
 ### `WriteJsonProperties(JsonWriter, T, JsonSerializer)`
 <!-- tc:scope private -->
 <!-- tc:version 1.0.0 -->
@@ -79,6 +89,8 @@ protected abstract void WriteJsonProperties(JsonWriter writer, T value,
 `value` [T](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
 
+<a name="CanConvert"></a>
+
 ### `CanConvert(Type)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -94,6 +106,8 @@ public virtual bool CanConvert(Type objectType)
 **Parameters** <br>
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
  <br>
+
+<a name="ReadJson"></a>
 
 ### `ReadJson(JsonReader, Type, Object, JsonSerializer)`
 <!-- tc:scope public -->
@@ -118,6 +132,8 @@ public virtual Object ReadJson(JsonReader reader, Type objectType,
  <br>
 `serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference//noir/reference/) <br>
  <br>
+
+<a name="WriteJson"></a>
 
 ### `WriteJson(JsonWriter, Object, JsonSerializer)`
 <!-- tc:scope public -->

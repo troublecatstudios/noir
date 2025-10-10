@@ -13,6 +13,8 @@ sealed enum SoundEffectPlayStyle : Enum, IComparable, ISpanFormattable, IFormatt
 
 ## Properties
 
+<a name="Random"></a>
+
 ### `Random`
 <!-- tc:scope private -->
 <!-- tc:return_type SoundEffectPlayStyle /noir/reference//noir/reference/Noir/Audio/SoundEffectPlayStyle/ -->
@@ -22,6 +24,8 @@ sealed enum SoundEffectPlayStyle : Enum, IComparable, ISpanFormattable, IFormatt
 public static const SoundEffectPlayStyle Random;
 
 ```
+
+<a name="Sequential"></a>
 
 ### `Sequential`
 <!-- tc:scope private -->

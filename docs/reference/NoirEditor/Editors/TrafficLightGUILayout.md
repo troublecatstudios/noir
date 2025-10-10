@@ -11,6 +11,8 @@ public static class TrafficLightGUILayout
 
 ## Methods
 
+<a name="BoolLight"></a>
+
 ### `BoolLight(bool, TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -23,6 +25,8 @@ public void BoolLight(bool val, TrafficLightColor color)
 **Parameters** <br>
 `val` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `color` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+
+<a name="BoolLightLarge"></a>
 
 ### `BoolLightLarge(bool, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -40,6 +44,8 @@ public void BoolLightLarge(bool val, TrafficLightColor colorA,
 `colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 `colorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
+<a name="DrawTrafficLightDouble"></a>
+
 ### `DrawTrafficLightDouble(TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -54,6 +60,8 @@ public void DrawTrafficLightDouble(TrafficLightColor colorA,
 **Parameters** <br>
 `colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 `ccolorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+
+<a name="DrawTrafficLightQuad"></a>
 
 ### `DrawTrafficLightQuad(TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
@@ -74,6 +82,8 @@ public void DrawTrafficLightQuad(TrafficLightColor colorA,
 `colorC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 `colorD` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
+<a name="DrawTrafficLightSingle"></a>
+
 ### `DrawTrafficLightSingle(TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -85,6 +95,8 @@ public void DrawTrafficLightSingle(TrafficLightColor colorA)
 
 **Parameters** <br>
 `colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+
+<a name="DrawTrafficLightTriple"></a>
 
 ### `DrawTrafficLightTriple(TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->

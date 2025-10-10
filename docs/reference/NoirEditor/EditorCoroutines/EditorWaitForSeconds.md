@@ -34,6 +34,8 @@ public class EditorWaitForSeconds
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(float)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -50,6 +52,8 @@ public EditorWaitForSeconds(float time)
  <br>
 
 ## Properties
+
+<a name="WaitTime"></a>
 
 ### `WaitTime`
 <!-- tc:scope public -->

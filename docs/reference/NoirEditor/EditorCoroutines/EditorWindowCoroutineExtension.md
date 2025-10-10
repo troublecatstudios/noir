@@ -11,6 +11,8 @@ public static class EditorWindowCoroutineExtension
 
 ## Methods
 
+<a name="StartCoroutine"></a>
+
 ### `StartCoroutine(EditorWindow, IEnumerator)`
 <!-- tc:scope public -->
 <!-- tc:return_type EditorCoroutine /noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/ -->
@@ -50,6 +52,8 @@ public EditorCoroutine StartCoroutine(EditorWindow window, IEnumerator routine)
 `window` [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) <br>
 `routine` [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator?view=net-7.0) <br>
  <br>
+
+<a name="StopCoroutine"></a>
 
 ### `StopCoroutine(EditorWindow, EditorCoroutine)`
 <!-- tc:scope public -->

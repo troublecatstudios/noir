@@ -11,6 +11,8 @@ public static class StringAssertions
 
 ## Methods
 
+<a name="Contains"></a>
+
 ### `Contains(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -27,6 +29,8 @@ public void Contains(IAssertionContext<T> context, string expected)
  <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
+
+<a name="EndsWith"></a>
 
 ### `EndsWith(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
@@ -45,6 +49,8 @@ public void EndsWith(IAssertionContext<T> context, string expected)
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="IsExactly"></a>
+
 ### `IsExactly(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -61,6 +67,8 @@ public void IsExactly(IAssertionContext<T> context, string expected)
  <br>
 `expected` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
+
+<a name="StartsWith"></a>
 
 ### `StartsWith(IAssertionContext<T>, string)`
 <!-- tc:scope public -->

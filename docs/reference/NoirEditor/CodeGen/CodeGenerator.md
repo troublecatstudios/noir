@@ -11,6 +11,8 @@ public class CodeGenerator
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -24,6 +26,8 @@ public CodeGenerator(string outputFolder)
 `outputFolder` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 ## Methods
+
+<a name="Generate"></a>
 
 ### `Generate(bool, bool)`
 <!-- tc:scope public -->
@@ -39,6 +43,8 @@ public CodeGenReport Generate(bool force, bool dryRun)
 `force` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 `dryRun` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+<a name="AddTask"></a>
+
 ### `AddTask(CodeGenTask)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -50,6 +56,8 @@ public void AddTask(CodeGenTask task)
 
 **Parameters** <br>
 `task` [CodeGenTask](/noir/reference//noir/reference/NoirEditor/CodeGen/CodeGenTask/) <br>
+
+<a name="AddTasks"></a>
 
 ### `AddTasks(IEnumerable<T>)`
 <!-- tc:scope public -->

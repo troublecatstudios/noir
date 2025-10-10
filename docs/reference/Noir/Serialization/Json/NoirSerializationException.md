@@ -13,6 +13,8 @@ public class NoirSerializationException : JsonSerializationException, ISerializa
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public NoirSerializationException()
 
 ## Properties
 
+<a name="Data"></a>
+
 ### `Data`
 <!-- tc:scope public -->
 <!-- tc:return_type IDictionary https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IDictionary?view=net-7.0 -->
@@ -33,6 +37,8 @@ public NoirSerializationException()
 public virtual IDictionary Data { get; }
 
 ```
+
+<a name="HelpLink"></a>
 
 ### `HelpLink`
 <!-- tc:scope public -->
@@ -44,6 +50,8 @@ public virtual string HelpLink { get; public set; }
 
 ```
 
+<a name="HResult"></a>
+
 ### `HResult`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -53,6 +61,8 @@ public virtual string HelpLink { get; public set; }
 public int HResult { get; public set; }
 
 ```
+
+<a name="InnerException"></a>
 
 ### `InnerException`
 <!-- tc:scope public -->
@@ -64,6 +74,8 @@ public Exception InnerException { get; }
 
 ```
 
+<a name="LineNumber"></a>
+
 ### `LineNumber`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -73,6 +85,8 @@ public Exception InnerException { get; }
 public int LineNumber { get; }
 
 ```
+
+<a name="LinePosition"></a>
 
 ### `LinePosition`
 <!-- tc:scope public -->
@@ -84,6 +98,8 @@ public int LinePosition { get; }
 
 ```
 
+<a name="Message"></a>
+
 ### `Message`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -93,6 +109,8 @@ public int LinePosition { get; }
 public virtual string Message { get; }
 
 ```
+
+<a name="Path"></a>
 
 ### `Path`
 <!-- tc:scope public -->
@@ -104,6 +122,8 @@ public string Path { get; }
 
 ```
 
+<a name="Source"></a>
+
 ### `Source`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -114,6 +134,8 @@ public virtual string Source { get; public set; }
 
 ```
 
+<a name="StackTrace"></a>
+
 ### `StackTrace`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -123,6 +145,8 @@ public virtual string Source { get; public set; }
 public virtual string StackTrace { get; }
 
 ```
+
+<a name="TargetSite"></a>
 
 ### `TargetSite`
 <!-- tc:scope public -->
@@ -135,6 +159,8 @@ public MethodBase TargetSite { get; }
 ```
 
 ## Methods
+
+<a name="CreateSerializationException"></a>
 
 ### `CreateSerializationException(JsonReader, string, Exception)`
 <!-- tc:scope public -->
@@ -154,6 +180,8 @@ public NoirSerializationException CreateSerializationException(JsonReader reader
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `innerException` [Exception](https://learn.microsoft.com/en-us/dotnet/api/System.Exception?view=net-7.0) <br>
 
+<a name="GetType"></a>
+
 ### `GetType()`
 <!-- tc:scope public -->
 <!-- tc:return_type Type https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0 -->
@@ -163,6 +191,8 @@ public NoirSerializationException CreateSerializationException(JsonReader reader
 public Type GetType()
 
 ```
+
+<a name="GetBaseException"></a>
 
 ### `GetBaseException()`
 <!-- tc:scope public -->
@@ -174,6 +204,8 @@ public virtual Exception GetBaseException()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -183,6 +215,8 @@ public virtual Exception GetBaseException()
 public virtual string ToString()
 
 ```
+
+<a name="GetObjectData"></a>
 
 ### `GetObjectData(SerializationInfo, StreamingContext)`
 <!-- tc:scope public -->

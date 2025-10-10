@@ -13,6 +13,8 @@ public class FileLogWriter : INoirLogger
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(IPlatformPaths)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -26,6 +28,8 @@ public FileLogWriter(IPlatformPaths paths)
 `paths` [IPlatformPaths](/noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
 
 ## Methods
+
+<a name="Debug"></a>
 
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
@@ -41,6 +45,8 @@ public virtual void Debug(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="DisableSubsystem"></a>
+
 ### `DisableSubsystem(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -52,6 +58,8 @@ public virtual void DisableSubsystem(string system)
 
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="EnableSubsystem"></a>
 
 ### `EnableSubsystem(string)`
 <!-- tc:scope public -->
@@ -65,6 +73,8 @@ public virtual void EnableSubsystem(string system)
 **Parameters** <br>
 `system` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="EndAllTraces"></a>
+
 ### `EndAllTraces()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -73,6 +83,8 @@ public virtual void EnableSubsystem(string system)
 public virtual void EndAllTraces()
 
 ```
+
+<a name="EndTrace"></a>
 
 ### `EndTrace(string)`
 <!-- tc:scope public -->
@@ -85,6 +97,8 @@ public virtual void EndTrace(string traceName)
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Error"></a>
 
 ### `Error(string, Object, string)`
 <!-- tc:scope public -->
@@ -100,6 +114,8 @@ public virtual void Error(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Info"></a>
+
 ### `Info(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -114,6 +130,8 @@ public virtual void Info(string message, Object context, string subsystem)
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="StartTrace"></a>
+
 ### `StartTrace(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -125,6 +143,8 @@ public virtual void StartTrace(string traceName)
 
 **Parameters** <br>
 `traceName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Trace"></a>
 
 ### `Trace(string, string, Object, string)`
 <!-- tc:scope public -->
@@ -143,6 +163,8 @@ public virtual void Trace(string trace, string message, Object context,
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Verify"></a>
+
 ### `Verify(bool, string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -159,6 +181,8 @@ public virtual void Verify(bool condition, string label, Object context,
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Verify"></a>
 
 ### `Verify(Func<TResult>, string, Object, string)`
 <!-- tc:scope public -->
@@ -177,6 +201,8 @@ public virtual void Verify(Func<TResult> condition, string label, Object context
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="Warn"></a>
+
 ### `Warn(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -190,6 +216,8 @@ public virtual void Warn(string message, Object context, string subsystem)
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="WriteLog"></a>
 
 ### `WriteLog(string, LogLevel, Object, string, string)`
 <!-- tc:scope public -->

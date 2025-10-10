@@ -15,6 +15,8 @@ public class FakeGameTime : IGameTime
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -26,6 +28,8 @@ public FakeGameTime()
 
 ## Properties
 
+<a name="deltaTime"></a>
+
 ### `deltaTime`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -35,6 +39,8 @@ public FakeGameTime()
 public virtual float deltaTime { get; public set; }
 
 ```
+
+<a name="fixedDeltaTime"></a>
 
 ### `fixedDeltaTime`
 <!-- tc:scope public -->
@@ -46,6 +52,8 @@ public virtual float fixedDeltaTime { get; public set; }
 
 ```
 
+<a name="frameCount"></a>
+
 ### `frameCount`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -56,6 +64,8 @@ public virtual int frameCount { get; public set; }
 
 ```
 
+<a name="realtimeSinceStartup"></a>
+
 ### `realtimeSinceStartup`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -65,6 +75,8 @@ public virtual int frameCount { get; public set; }
 public virtual float realtimeSinceStartup { get; public set; }
 
 ```
+
+<a name="time"></a>
 
 ### `time`
 <!-- tc:scope public -->
@@ -78,6 +90,8 @@ public virtual float time { get; public set; }
 
 ## Methods
 
+<a name="StepFrame"></a>
+
 ### `StepFrame()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -86,6 +100,8 @@ public virtual float time { get; public set; }
 public void StepFrame()
 
 ```
+
+<a name="StepFrames"></a>
 
 ### `StepFrames(int)`
 <!-- tc:scope public -->
@@ -101,4 +117,4 @@ public void StepFrames(int frames)
 
 ## More information
 
-* [](T:Noir.Abstractions.IGameTime)
+* [Noir.Abstractions.IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/)

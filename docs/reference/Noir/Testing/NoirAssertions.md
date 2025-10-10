@@ -11,6 +11,8 @@ public class NoirAssertions
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -21,6 +23,8 @@ public NoirAssertions()
 ```
 
 ## Methods
+
+<a name="That"></a>
 
 ### `That(T)`
 <!-- tc:scope public -->

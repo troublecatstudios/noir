@@ -15,6 +15,8 @@ public sealed enum PerpendicularDirections : Enum, IComparable, ISpanFormattable
 
 ## Properties
 
+<a name="Backward"></a>
+
 ### `Backward`
 <!-- tc:scope private -->
 <!-- tc:return_type PerpendicularDirections /noir/reference/Noir/PerpendicularDirections/ -->
@@ -25,6 +27,8 @@ public static const PerpendicularDirections Backward;
 
 ```
 
+<a name="Forward"></a>
+
 ### `Forward`
 <!-- tc:scope private -->
 <!-- tc:return_type PerpendicularDirections /noir/reference/Noir/PerpendicularDirections/ -->
@@ -34,6 +38,8 @@ public static const PerpendicularDirections Backward;
 public static const PerpendicularDirections Forward;
 
 ```
+
+<a name="None"></a>
 
 ### `None`
 <!-- tc:scope private -->

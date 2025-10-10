@@ -11,6 +11,8 @@ public sealed struct SeparatedGuid
 
 ## Properties
 
+<a name="A"></a>
+
 ### `A`
 <!-- tc:scope private -->
 <!-- tc:return_type short https://learn.microsoft.com/en-us/dotnet/api/System.Int16?view=net-7.0 -->
@@ -20,6 +22,8 @@ public sealed struct SeparatedGuid
 public short A;
 
 ```
+
+<a name="B"></a>
 
 ### `B`
 <!-- tc:scope private -->
@@ -31,6 +35,8 @@ public short B;
 
 ```
 
+<a name="Prefix"></a>
+
 ### `Prefix`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -40,6 +46,8 @@ public short B;
 public int Prefix;
 
 ```
+
+<a name="Suffix"></a>
 
 ### `Suffix`
 <!-- tc:scope private -->

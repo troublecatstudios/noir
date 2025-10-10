@@ -11,6 +11,8 @@ public static class GuidExtensions
 
 ## Methods
 
+<a name="ToInt"></a>
+
 ### `ToInt(Guid)`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->

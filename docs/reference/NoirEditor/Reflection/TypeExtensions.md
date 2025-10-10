@@ -11,6 +11,8 @@ public static class TypeExtensions
 
 ## Methods
 
+<a name="GetAllMembers"></a>
+
 ### `GetAllMembers(Type, string, BindingFlags)`
 <!-- tc:scope public -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->

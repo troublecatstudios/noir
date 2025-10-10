@@ -11,6 +11,8 @@ public static class IEnumerableExtensions
 
 ## Methods
 
+<a name="ContainsAny"></a>
+
 ### `ContainsAny(IEnumerable<T>, string, StringComparison)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -28,6 +30,8 @@ public bool ContainsAny(IEnumerable<T> sequence, string element,
 `element` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `comparisonType` [StringComparison](https://learn.microsoft.com/en-us/dotnet/api/System.StringComparison?view=net-7.0) <br>
 
+<a name="IsEmptySafe"></a>
+
 ### `IsEmptySafe(IEnumerable)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -44,6 +48,8 @@ public bool IsEmptySafe(IEnumerable enumerable)
 `enumerable` [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) <br>
  <br>
 
+<a name="IndexWhere"></a>
+
 ### `IndexWhere(IEnumerable<T>, Func<T, TResult>)`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -58,6 +64,8 @@ public int IndexWhere(IEnumerable<T> source, Func<T, TResult> predicate)
 `source` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 `predicate` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
+<a name="Random"></a>
+
 ### `Random(IEnumerable<T>)`
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
@@ -70,6 +78,8 @@ public T Random(IEnumerable<T> sequence)
 
 **Parameters** <br>
 `sequence` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
+
+<a name="RandomElementByWeight"></a>
 
 ### `RandomElementByWeight(IEnumerable<T>, Func<T, TResult>)`
 <!-- tc:scope public -->

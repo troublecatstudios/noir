@@ -13,6 +13,8 @@ sealed enum ColorBlendMode : Enum, IComparable, ISpanFormattable, IFormattable, 
 
 ## Properties
 
+<a name="Additive"></a>
+
 ### `Additive`
 <!-- tc:scope private -->
 <!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
@@ -22,6 +24,8 @@ sealed enum ColorBlendMode : Enum, IComparable, ISpanFormattable, IFormattable, 
 public static const ColorBlendMode Additive;
 
 ```
+
+<a name="Darken"></a>
 
 ### `Darken`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const ColorBlendMode Darken;
 
 ```
 
+<a name="Divide"></a>
+
 ### `Divide`
 <!-- tc:scope private -->
 <!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
@@ -42,6 +48,8 @@ public static const ColorBlendMode Darken;
 public static const ColorBlendMode Divide;
 
 ```
+
+<a name="Lighten"></a>
 
 ### `Lighten`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public static const ColorBlendMode Lighten;
 
 ```
 
+<a name="Multiply"></a>
+
 ### `Multiply`
 <!-- tc:scope private -->
 <!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
@@ -63,6 +73,8 @@ public static const ColorBlendMode Multiply;
 
 ```
 
+<a name="Overlay"></a>
+
 ### `Overlay`
 <!-- tc:scope private -->
 <!-- tc:return_type ColorBlendMode /noir/reference/Noir/ColorBlendMode/ -->
@@ -72,6 +84,8 @@ public static const ColorBlendMode Multiply;
 public static const ColorBlendMode Overlay;
 
 ```
+
+<a name="Subtract"></a>
 
 ### `Subtract`
 <!-- tc:scope private -->

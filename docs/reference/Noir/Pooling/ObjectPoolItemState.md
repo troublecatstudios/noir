@@ -15,6 +15,8 @@ public sealed enum ObjectPoolItemState : Enum, IComparable, ISpanFormattable, IF
 
 ## Properties
 
+<a name="Active"></a>
+
 ### `Active`
 <!-- tc:scope private -->
 <!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
@@ -27,6 +29,8 @@ public static const ObjectPoolItemState Active;
 
 ```
 
+<a name="Inactive"></a>
+
 ### `Inactive`
 <!-- tc:scope private -->
 <!-- tc:return_type ObjectPoolItemState /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemState/ -->
@@ -38,6 +42,8 @@ The item is not currently in use
 public static const ObjectPoolItemState Inactive;
 
 ```
+
+<a name="Returning"></a>
 
 ### `Returning`
 <!-- tc:scope private -->
@@ -53,5 +59,5 @@ public static const ObjectPoolItemState Returning;
 
 ## More information
 
-* [](T:Noir.Pooling.ObjectPoolItemSystem)
-* [](T:Noir.Pooling.ObjectPoolSystem)
+* [Noir.Pooling.ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/)
+* [Noir.Pooling.ObjectPoolSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolSystem/)

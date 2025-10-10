@@ -11,6 +11,8 @@ public class CodeGenTask
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -22,6 +24,8 @@ public CodeGenTask()
 
 ## Properties
 
+<a name="CodeClassName"></a>
+
 ### `CodeClassName`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -31,6 +35,8 @@ public CodeGenTask()
 public string CodeClassName { get; public set; }
 
 ```
+
+<a name="CodeNamespace"></a>
 
 ### `CodeNamespace`
 <!-- tc:scope public -->
@@ -42,6 +48,8 @@ public string CodeNamespace { get; public set; }
 
 ```
 
+<a name="ContentBuilder"></a>
+
 ### `ContentBuilder`
 <!-- tc:scope public -->
 <!-- tc:return_type Func\<TResult\> https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0 -->
@@ -51,6 +59,8 @@ public string CodeNamespace { get; public set; }
 public Func<TResult> ContentBuilder { get; public set; }
 
 ```
+
+<a name="FileExtension"></a>
 
 ### `FileExtension`
 <!-- tc:scope public -->
@@ -62,6 +72,8 @@ public string FileExtension { get; public set; }
 
 ```
 
+<a name="HashTargetBuilder"></a>
+
 ### `HashTargetBuilder`
 <!-- tc:scope public -->
 <!-- tc:return_type Func\<TResult\> https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0 -->
@@ -71,6 +83,8 @@ public string FileExtension { get; public set; }
 public Func<TResult> HashTargetBuilder { get; public set; }
 
 ```
+
+<a name="ImportNamespaces"></a>
 
 ### `ImportNamespaces`
 <!-- tc:scope public -->

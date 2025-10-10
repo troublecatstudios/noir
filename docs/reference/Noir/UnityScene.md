@@ -11,6 +11,8 @@ public class UnityScene
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -21,6 +23,8 @@ public UnityScene()
 ```
 
 ## Methods
+
+<a name="Find"></a>
 
 ### `Find(List<T>)`
 <!-- tc:scope public -->

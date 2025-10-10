@@ -11,6 +11,8 @@ public static class GameObjectAssertions
 
 ## Methods
 
+<a name="HasComponent"></a>
+
 ### `HasComponent(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:return_type IAssertionContext\<T\> /noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/ -->
@@ -31,6 +33,8 @@ public IAssertionContext<T> HasComponent(IAssertionContext<T> context,
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="IsActive"></a>
+
 ### `IsActive(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -48,6 +52,8 @@ public void IsActive(IAssertionContext<T> context, string message)
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="IsEnabled"></a>
+
 ### `IsEnabled(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -60,6 +66,8 @@ public void IsEnabled(IAssertionContext<T> context, string message)
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="IsNotActive"></a>
 
 ### `IsNotActive(IAssertionContext<T>, string)`
 <!-- tc:scope public -->

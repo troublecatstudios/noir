@@ -11,6 +11,8 @@ public static class FirstTimeSetup
 
 ## Methods
 
+<a name="SetupValidation"></a>
+
 ### `SetupValidation()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -20,6 +22,8 @@ public static class FirstTimeSetup
 public bool SetupValidation()
 
 ```
+
+<a name="Setup"></a>
 
 ### `Setup()`
 <!-- tc:scope public -->

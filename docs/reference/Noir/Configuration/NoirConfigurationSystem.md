@@ -13,6 +13,8 @@ public class NoirConfigurationSystem : INoirProjectConfigurationAccessor
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -23,6 +25,8 @@ public NoirConfigurationSystem()
 ```
 
 ## Methods
+
+<a name="GetProjectConfiguration"></a>
 
 ### `GetProjectConfiguration()`
 <!-- tc:scope public -->

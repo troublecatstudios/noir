@@ -11,6 +11,8 @@ public static class ObjectAssertions
 
 ## Methods
 
+<a name="IsNotNull"></a>
+
 ### `IsNotNull(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -24,6 +26,8 @@ public void IsNotNull(IAssertionContext<T> context, string message)
 `context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+<a name="IsNull"></a>
+
 ### `IsNull(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -36,6 +40,8 @@ public void IsNull(IAssertionContext<T> context, string message)
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="IsSameAs"></a>
 
 ### `IsSameAs(IAssertionContext<T>, T, string)`
 <!-- tc:scope public -->

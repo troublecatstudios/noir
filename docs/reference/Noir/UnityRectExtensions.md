@@ -11,6 +11,8 @@ public static class UnityRectExtensions
 
 ## Methods
 
+<a name="GetRandomPositionInside"></a>
+
 ### `GetRandomPositionInside(Rect, Vector2)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -25,6 +27,8 @@ public Vector2 GetRandomPositionInside(Rect rect, Vector2 padding)
 `rect` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
 `padding` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
 
+<a name="GetRandomPositionInside"></a>
+
 ### `GetRandomPositionInside(Rect)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -37,6 +41,8 @@ public Vector2 GetRandomPositionInside(Rect rect)
 
 **Parameters** <br>
 `rect` [Rect](https://docs.unity3d.com/ScriptReference/Rect.html) <br>
+
+<a name="TopLeft"></a>
 
 ### `TopLeft(Rect)`
 <!-- tc:scope public -->

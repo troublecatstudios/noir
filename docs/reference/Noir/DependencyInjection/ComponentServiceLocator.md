@@ -11,6 +11,8 @@ public class ComponentServiceLocator
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(GameObject)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -25,6 +27,8 @@ public ComponentServiceLocator(GameObject container)
 
 ## Methods
 
+<a name="TryGetService"></a>
+
 ### `TryGetService(out T&)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -37,6 +41,8 @@ public bool TryGetService(T& instance)
 
 **Parameters** <br>
 `instance` [T&](/noir/reference//noir/reference/) <br>
+
+<a name="GetService"></a>
 
 ### `GetService()`
 <!-- tc:scope public -->

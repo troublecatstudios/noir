@@ -13,6 +13,8 @@ public class NoirEvent : ScriptableObject
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public NoirEvent()
 
 ## Properties
 
+<a name="hideFlags"></a>
+
 ### `hideFlags`
 <!-- tc:scope public -->
 <!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
@@ -33,6 +37,8 @@ public NoirEvent()
 public HideFlags hideFlags { get; public set; }
 
 ```
+
+<a name="IsSubscribed"></a>
 
 ### `IsSubscribed`
 <!-- tc:scope public -->
@@ -44,6 +50,8 @@ public bool IsSubscribed { get; }
 
 ```
 
+<a name="name"></a>
+
 ### `name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -54,6 +62,8 @@ public string name { get; public set; }
 
 ```
 
+<a name="Name"></a>
+
 ### `Name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -63,6 +73,8 @@ public string name { get; public set; }
 public string Name { get; }
 
 ```
+
+<a name="SubscriberCount"></a>
 
 ### `SubscriberCount`
 <!-- tc:scope public -->
@@ -76,6 +88,8 @@ public int SubscriberCount { get; }
 
 ## Methods
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -85,6 +99,8 @@ public int SubscriberCount { get; }
 public int GetInstanceID()
 
 ```
+
+<a name="Equals"></a>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
@@ -99,6 +115,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -108,6 +126,8 @@ public virtual bool Equals(Object other)
 public virtual int GetHashCode()
 
 ```
+
+<a name="ToString"></a>
 
 ### `ToString()`
 <!-- tc:scope public -->
@@ -119,6 +139,8 @@ public virtual string ToString()
 
 ```
 
+<a name="Invoke"></a>
+
 ### `Invoke()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -127,6 +149,8 @@ public virtual string ToString()
 public void Invoke()
 
 ```
+
+<a name="Invoke"></a>
 
 ### `Invoke(Object)`
 <!-- tc:scope public -->
@@ -139,6 +163,8 @@ public void Invoke(Object context)
 
 **Parameters** <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+
+<a name="Register"></a>
 
 ### `Register(MonoBehaviour, Action)`
 <!-- tc:scope public -->
@@ -153,6 +179,8 @@ public void Register(MonoBehaviour behaviour, Action callback)
 `behaviour` [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) <br>
 `callback` [Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action?view=net-7.0) <br>
 
+<a name="Register"></a>
+
 ### `Register(MonoBehaviour, Action<T>)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -166,6 +194,8 @@ public void Register(MonoBehaviour behaviour, Action<T> callback)
 `behaviour` [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) <br>
 `callback` [Action\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Action-1?view=net-7.0) <br>
 
+<a name="SetDirty"></a>
+
 ### `SetDirty()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -174,6 +204,8 @@ public void Register(MonoBehaviour behaviour, Action<T> callback)
 public void SetDirty()
 
 ```
+
+<a name="Unregister"></a>
 
 ### `Unregister(MonoBehaviour, Action)`
 <!-- tc:scope public -->
@@ -187,6 +219,8 @@ public void Unregister(MonoBehaviour behaviour, Action callback)
 **Parameters** <br>
 `behaviour` [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) <br>
 `callback` [Action](https://learn.microsoft.com/en-us/dotnet/api/System.Action?view=net-7.0) <br>
+
+<a name="Unregister"></a>
 
 ### `Unregister(MonoBehaviour, Action<T>)`
 <!-- tc:scope public -->

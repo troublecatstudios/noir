@@ -13,6 +13,8 @@ sealed enum CellularReturnType : Enum, IComparable, ISpanFormattable, IFormattab
 
 ## Properties
 
+<a name="CellValue"></a>
+
 ### `CellValue`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
@@ -22,6 +24,8 @@ sealed enum CellularReturnType : Enum, IComparable, ISpanFormattable, IFormattab
 public static const CellularReturnType CellValue;
 
 ```
+
+<a name="Distance"></a>
 
 ### `Distance`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const CellularReturnType Distance;
 
 ```
 
+<a name="Distance2"></a>
+
 ### `Distance2`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
@@ -42,6 +48,8 @@ public static const CellularReturnType Distance;
 public static const CellularReturnType Distance2;
 
 ```
+
+<a name="Distance2Add"></a>
 
 ### `Distance2Add`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public static const CellularReturnType Distance2Add;
 
 ```
 
+<a name="Distance2Div"></a>
+
 ### `Distance2Div`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
@@ -63,6 +73,8 @@ public static const CellularReturnType Distance2Div;
 
 ```
 
+<a name="Distance2Mul"></a>
+
 ### `Distance2Mul`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularReturnType /noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
@@ -72,6 +84,8 @@ public static const CellularReturnType Distance2Div;
 public static const CellularReturnType Distance2Mul;
 
 ```
+
+<a name="Distance2Sub"></a>
 
 ### `Distance2Sub`
 <!-- tc:scope private -->

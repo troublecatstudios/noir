@@ -13,6 +13,8 @@ public sealed enum LogLevel : Enum, IComparable, ISpanFormattable, IFormattable,
 
 ## Properties
 
+<a name="Debug"></a>
+
 ### `Debug`
 <!-- tc:scope private -->
 <!-- tc:return_type LogLevel /noir/reference//noir/reference/Noir/Logging/LogLevel/ -->
@@ -22,6 +24,8 @@ public sealed enum LogLevel : Enum, IComparable, ISpanFormattable, IFormattable,
 public static const LogLevel Debug;
 
 ```
+
+<a name="Error"></a>
 
 ### `Error`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const LogLevel Error;
 
 ```
 
+<a name="Info"></a>
+
 ### `Info`
 <!-- tc:scope private -->
 <!-- tc:return_type LogLevel /noir/reference//noir/reference/Noir/Logging/LogLevel/ -->
@@ -43,6 +49,8 @@ public static const LogLevel Info;
 
 ```
 
+<a name="Verbose"></a>
+
 ### `Verbose`
 <!-- tc:scope private -->
 <!-- tc:return_type LogLevel /noir/reference//noir/reference/Noir/Logging/LogLevel/ -->
@@ -52,6 +60,8 @@ public static const LogLevel Info;
 public static const LogLevel Verbose;
 
 ```
+
+<a name="Warn"></a>
 
 ### `Warn`
 <!-- tc:scope private -->

@@ -11,6 +11,8 @@ public static class StringExtensions
 
 ## Methods
 
+<a name="ToCamelCase"></a>
+
 ### `ToCamelCase(string)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -26,6 +28,8 @@ public string ToCamelCase(string source)
 **Parameters** <br>
 `source` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
+
+<a name="ToSnakeCase"></a>
 
 ### `ToSnakeCase(string)`
 <!-- tc:scope public -->

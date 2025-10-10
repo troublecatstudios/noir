@@ -13,6 +13,8 @@ public class ToggleButtonsAttribute : Attribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(string, string, bool, float, string, string, string, string, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -53,6 +55,8 @@ public ToggleButtonsAttribute(string trueText, string falseText,
 
 ## Properties
 
+<a name="FalseColor"></a>
+
 ### `FalseColor`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -64,6 +68,8 @@ Color of false button
 public string FalseColor;
 
 ```
+
+<a name="FalseIcon"></a>
 
 ### `FalseIcon`
 <!-- tc:scope private -->
@@ -77,6 +83,8 @@ public string FalseIcon;
 
 ```
 
+<a name="FalseText"></a>
+
 ### `FalseText`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -88,6 +96,8 @@ Text for false button. Can be resolved string
 public string FalseText;
 
 ```
+
+<a name="FalseTooltip"></a>
 
 ### `FalseTooltip`
 <!-- tc:scope private -->
@@ -101,6 +111,8 @@ public string FalseTooltip;
 
 ```
 
+<a name="IsSingleButton"></a>
+
 ### `IsSingleButton`
 <!-- tc:scope private -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -112,6 +124,8 @@ If set to true, only one button matching bool value will be shown
 public bool IsSingleButton;
 
 ```
+
+<a name="SizeCompensation"></a>
 
 ### `SizeCompensation`
 <!-- tc:scope private -->
@@ -127,6 +141,8 @@ public float SizeCompensation;
 
 ```
 
+<a name="TrueColor"></a>
+
 ### `TrueColor`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -138,6 +154,8 @@ Color of true button
 public string TrueColor;
 
 ```
+
+<a name="TrueIcon"></a>
 
 ### `TrueIcon`
 <!-- tc:scope private -->
@@ -151,6 +169,8 @@ public string TrueIcon;
 
 ```
 
+<a name="TrueText"></a>
+
 ### `TrueText`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -163,6 +183,8 @@ public string TrueText;
 
 ```
 
+<a name="TrueTooltip"></a>
+
 ### `TrueTooltip`
 <!-- tc:scope private -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -174,6 +196,8 @@ Tooltip for true button. Can be resolved string
 public string TrueTooltip;
 
 ```
+
+<a name="TypeId"></a>
 
 ### `TypeId`
 <!-- tc:scope public -->

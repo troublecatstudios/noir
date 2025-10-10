@@ -11,6 +11,8 @@ public abstract IAssertionContext<T>
 
 ## Properties
 
+<a name="AdditionalContexts"></a>
+
 ### `AdditionalContexts`
 <!-- tc:scope public -->
 <!-- tc:return_type Object[] https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
@@ -22,6 +24,8 @@ Gets any additional contexts that will be used by the assertions.
 public abstract virtual Object[] AdditionalContexts { get; }
 
 ```
+
+<a name="Target"></a>
 
 ### `Target`
 <!-- tc:scope public -->

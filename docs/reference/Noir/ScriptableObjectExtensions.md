@@ -11,6 +11,8 @@ public static class ScriptableObjectExtensions
 
 ## Methods
 
+<a name="ToLogStringSafe"></a>
+
 ### `ToLogStringSafe(ScriptableObject)`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->

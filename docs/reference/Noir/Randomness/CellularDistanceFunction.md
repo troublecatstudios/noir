@@ -13,6 +13,8 @@ sealed enum CellularDistanceFunction : Enum, IComparable, ISpanFormattable, IFor
 
 ## Properties
 
+<a name="Euclidean"></a>
+
 ### `Euclidean`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
@@ -22,6 +24,8 @@ sealed enum CellularDistanceFunction : Enum, IComparable, ISpanFormattable, IFor
 public static const CellularDistanceFunction Euclidean;
 
 ```
+
+<a name="EuclideanSq"></a>
 
 ### `EuclideanSq`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const CellularDistanceFunction EuclideanSq;
 
 ```
 
+<a name="Hybrid"></a>
+
 ### `Hybrid`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
@@ -42,6 +48,8 @@ public static const CellularDistanceFunction EuclideanSq;
 public static const CellularDistanceFunction Hybrid;
 
 ```
+
+<a name="Manhattan"></a>
 
 ### `Manhattan`
 <!-- tc:scope private -->

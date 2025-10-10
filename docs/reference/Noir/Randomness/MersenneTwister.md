@@ -13,6 +13,8 @@ public class MersenneTwister
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -23,6 +25,8 @@ Initializes a new instance of the <see cref="T:SharpTwister.MersenneTwister"></s
 public MersenneTwister()
 
 ```
+
+<a name=".ctor"></a>
 
 ### `.ctor(uint)`
 <!-- tc:scope public -->
@@ -41,6 +45,8 @@ public MersenneTwister(uint seed)
 
 ## Methods
 
+<a name="NextDouble"></a>
+
 ### `NextDouble()`
 <!-- tc:scope public -->
 <!-- tc:return_type double https://learn.microsoft.com/en-us/dotnet/api/System.Double?view=net-7.0 -->
@@ -53,6 +59,8 @@ public double NextDouble()
 
 ```
 
+<a name="Next"></a>
+
 ### `Next()`
 <!-- tc:scope public -->
 <!-- tc:return_type uint https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0 -->
@@ -64,6 +72,8 @@ Returns a non-negative random integer.
 public uint Next()
 
 ```
+
+<a name="Next"></a>
 
 ### `Next(uint)`
 <!-- tc:scope public -->
@@ -80,6 +90,8 @@ public uint Next(uint maxValue)
 **Parameters** <br>
 `maxValue` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
+
+<a name="Seed"></a>
 
 ### `Seed(uint)`
 <!-- tc:scope public -->

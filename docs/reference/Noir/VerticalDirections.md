@@ -15,6 +15,8 @@ public sealed enum VerticalDirections : Enum, IComparable, ISpanFormattable, IFo
 
 ## Properties
 
+<a name="Down"></a>
+
 ### `Down`
 <!-- tc:scope private -->
 <!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
@@ -25,6 +27,8 @@ public static const VerticalDirections Down;
 
 ```
 
+<a name="None"></a>
+
 ### `None`
 <!-- tc:scope private -->
 <!-- tc:return_type VerticalDirections /noir/reference/Noir/VerticalDirections/ -->
@@ -34,6 +38,8 @@ public static const VerticalDirections Down;
 public static const VerticalDirections None;
 
 ```
+
+<a name="Up"></a>
 
 ### `Up`
 <!-- tc:scope private -->

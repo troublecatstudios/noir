@@ -13,6 +13,8 @@ public class NoirDataLibrary : ScriptableObject
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public NoirDataLibrary()
 
 ## Properties
 
+<a name="hideFlags"></a>
+
 ### `hideFlags`
 <!-- tc:scope public -->
 <!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
@@ -33,6 +37,8 @@ public NoirDataLibrary()
 public HideFlags hideFlags { get; public set; }
 
 ```
+
+<a name="Instance"></a>
 
 ### `Instance`
 <!-- tc:scope public -->
@@ -44,6 +50,8 @@ public static NoirDataLibrary Instance { get; }
 
 ```
 
+<a name="name"></a>
+
 ### `name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -54,6 +62,8 @@ public string name { get; public set; }
 
 ```
 
+<a name="SoundEffects"></a>
+
 ### `SoundEffects`
 <!-- tc:scope private -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
@@ -63,6 +73,8 @@ public string name { get; public set; }
 public List<T> SoundEffects;
 
 ```
+
+<a name="Variables"></a>
 
 ### `Variables`
 <!-- tc:scope private -->
@@ -76,6 +88,8 @@ public List<T> Variables;
 
 ## Methods
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -85,6 +99,8 @@ public List<T> Variables;
 public int GetInstanceID()
 
 ```
+
+<a name="GetSoundEffectByName"></a>
 
 ### `GetSoundEffectByName(string)`
 <!-- tc:scope public -->
@@ -98,6 +114,8 @@ public SoundEffect GetSoundEffectByName(string name)
 
 **Parameters** <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="GetVariableByName"></a>
 
 ### `GetVariableByName(string)`
 <!-- tc:scope public -->
@@ -115,6 +133,8 @@ public T GetVariableByName(string name)
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="Equals"></a>
+
 ### `Equals(Object)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -128,6 +148,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -138,6 +160,8 @@ public virtual int GetHashCode()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -147,6 +171,8 @@ public virtual int GetHashCode()
 public virtual string ToString()
 
 ```
+
+<a name="SetDirty"></a>
 
 ### `SetDirty()`
 <!-- tc:scope public -->

@@ -11,6 +11,8 @@ public static class DeterministicRandom
 
 ## Methods
 
+<a name="InRange"></a>
+
 ### `InRange(int, int)`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->

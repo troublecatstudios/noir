@@ -11,6 +11,8 @@ public abstract IDataVariable
 
 ## Methods
 
+<a name="ToObject"></a>
+
 ### `ToObject()`
 <!-- tc:scope public -->
 <!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->

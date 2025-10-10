@@ -11,6 +11,8 @@ public static class Maths
 
 ## Properties
 
+<a name="MaxVector2"></a>
+
 ### `MaxVector2`
 <!-- tc:scope private -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
@@ -20,6 +22,8 @@ public static class Maths
 public static Vector2 MaxVector2;
 
 ```
+
+<a name="MinVector2"></a>
 
 ### `MinVector2`
 <!-- tc:scope private -->
@@ -32,6 +36,8 @@ public static Vector2 MinVector2;
 ```
 
 ## Methods
+
+<a name="Scale"></a>
 
 ### `Scale(float, float)`
 <!-- tc:scope public -->

@@ -11,6 +11,8 @@ public static class DictionaryAssertions
 
 ## Methods
 
+<a name="Entry"></a>
+
 ### `Entry(IAssertionContext<T>, TKey)`
 <!-- tc:scope public -->
 <!-- tc:return_type IAssertionContext\<T\> /noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/ -->

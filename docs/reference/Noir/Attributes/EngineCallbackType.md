@@ -15,6 +15,8 @@ public sealed enum EngineCallbackType : Enum, IComparable, ISpanFormattable, IFo
 
 ## Properties
 
+<a name="ConfigureServices"></a>
+
 ### `ConfigureServices`
 <!-- tc:scope private -->
 <!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
@@ -27,6 +29,8 @@ public static const EngineCallbackType ConfigureServices;
 
 ```
 
+<a name="Initialize"></a>
+
 ### `Initialize`
 <!-- tc:scope private -->
 <!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
@@ -38,6 +42,8 @@ Initialize occurs as soon as the engine starts up.
 public static const EngineCallbackType Initialize;
 
 ```
+
+<a name="Start"></a>
 
 ### `Start`
 <!-- tc:scope private -->

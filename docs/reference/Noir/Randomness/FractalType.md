@@ -13,6 +13,8 @@ sealed enum FractalType : Enum, IComparable, ISpanFormattable, IFormattable, ICo
 
 ## Properties
 
+<a name="DomainWarpIndependent"></a>
+
 ### `DomainWarpIndependent`
 <!-- tc:scope private -->
 <!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
@@ -22,6 +24,8 @@ sealed enum FractalType : Enum, IComparable, ISpanFormattable, IFormattable, ICo
 public static const FractalType DomainWarpIndependent;
 
 ```
+
+<a name="DomainWarpProgressive"></a>
 
 ### `DomainWarpProgressive`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public static const FractalType DomainWarpProgressive;
 
 ```
 
+<a name="FBm"></a>
+
 ### `FBm`
 <!-- tc:scope private -->
 <!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
@@ -42,6 +48,8 @@ public static const FractalType DomainWarpProgressive;
 public static const FractalType FBm;
 
 ```
+
+<a name="None"></a>
 
 ### `None`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public static const FractalType None;
 
 ```
 
+<a name="PingPong"></a>
+
 ### `PingPong`
 <!-- tc:scope private -->
 <!-- tc:return_type FractalType /noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
@@ -62,6 +72,8 @@ public static const FractalType None;
 public static const FractalType PingPong;
 
 ```
+
+<a name="Ridged"></a>
 
 ### `Ridged`
 <!-- tc:scope private -->

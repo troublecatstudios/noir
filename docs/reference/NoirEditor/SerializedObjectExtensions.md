@@ -11,6 +11,8 @@ public static class SerializedObjectExtensions
 
 ## Methods
 
+<a name="TryFindProperty"></a>
+
 ### `TryFindProperty(SerializedObject, string, out SerializedProperty&)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->

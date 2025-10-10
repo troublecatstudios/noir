@@ -11,6 +11,8 @@ public abstract INoirEventListener
 
 ## Methods
 
+<a name="RaiseEvent"></a>
+
 ### `RaiseEvent(Object)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->

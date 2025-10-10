@@ -11,6 +11,8 @@ public abstract IPlatformPathsFactory
 
 ## Methods
 
+<a name="GetPlatformPaths"></a>
+
 ### `GetPlatformPaths()`
 <!-- tc:scope public -->
 <!-- tc:return_type IPlatformPaths /noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/ -->

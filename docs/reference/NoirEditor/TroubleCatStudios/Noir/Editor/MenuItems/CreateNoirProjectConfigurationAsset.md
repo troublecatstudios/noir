@@ -11,6 +11,8 @@ public static class CreateNoirProjectConfigurationAsset
 
 ## Methods
 
+<a name="CreateAssetValidation"></a>
+
 ### `CreateAssetValidation()`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -20,6 +22,8 @@ public static class CreateNoirProjectConfigurationAsset
 public bool CreateAssetValidation()
 
 ```
+
+<a name="CreateAsset"></a>
 
 ### `CreateAsset()`
 <!-- tc:scope public -->

@@ -15,6 +15,8 @@ public class NoirVariableAttribute : Attribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -32,6 +34,8 @@ public NoirVariableAttribute(string variableName)
 
 ## Properties
 
+<a name="TypeId"></a>
+
 ### `TypeId`
 <!-- tc:scope public -->
 <!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
@@ -41,6 +45,8 @@ public NoirVariableAttribute(string variableName)
 public virtual Object TypeId { get; }
 
 ```
+
+<a name="VariableName"></a>
 
 ### `VariableName`
 <!-- tc:scope public -->

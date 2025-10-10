@@ -11,6 +11,8 @@ public static class EnumerableAssertions
 
 ## Methods
 
+<a name="Contains"></a>
+
 ### `Contains(IAssertionContext<T>, T)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -23,6 +25,8 @@ public void Contains(IAssertionContext<T> context, T item)
 **Parameters** <br>
 `context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `item` [T](/noir/reference//noir/reference//noir/reference/) <br>
+
+<a name="HasLength"></a>
 
 ### `HasLength(IAssertionContext<T>, int)`
 <!-- tc:scope public -->
@@ -40,6 +44,8 @@ public void HasLength(IAssertionContext<T> context, int length)
  <br>
 `length` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
  <br>
+
+<a name="HasSameContents"></a>
 
 ### `HasSameContents(IAssertionContext<T>, IEnumerable)`
 <!-- tc:scope public -->

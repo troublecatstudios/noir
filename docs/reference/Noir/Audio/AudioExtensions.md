@@ -11,6 +11,8 @@ public static class AudioExtensions
 
 ## Methods
 
+<a name="IsAudioPaused"></a>
+
 ### `IsAudioPaused(AudioSource)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -27,6 +29,8 @@ public bool IsAudioPaused(AudioSource source)
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
  <br>
 
+<a name="IsClipReadyToPlay"></a>
+
 ### `IsClipReadyToPlay(AudioClip)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -42,6 +46,8 @@ public bool IsClipReadyToPlay(AudioClip clip)
 **Parameters** <br>
 `clip` [AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html) <br>
  <br>
+
+<a name="GetAudioPlayedPercentage"></a>
 
 ### `GetAudioPlayedPercentage(AudioSource)`
 <!-- tc:scope public -->

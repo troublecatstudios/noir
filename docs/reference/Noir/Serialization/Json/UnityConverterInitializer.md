@@ -11,6 +11,8 @@ public static class UnityConverterInitializer
 
 ## Properties
 
+<a name="defaultUnityConvertersSettings"></a>
+
 ### `defaultUnityConvertersSettings`
 <!-- tc:scope public -->
 <!-- tc:return_type JsonSerializerSettings -->

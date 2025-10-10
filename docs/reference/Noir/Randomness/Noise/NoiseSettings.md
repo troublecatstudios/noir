@@ -13,6 +13,8 @@ public sealed struct NoiseSettings : IEquatable<T>
 
 ## Properties
 
+<a name="CellularDistance"></a>
+
 ### `CellularDistance`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
@@ -22,6 +24,8 @@ public sealed struct NoiseSettings : IEquatable<T>
 public CellularDistanceFunction CellularDistance;
 
 ```
+
+<a name="CellularJitter"></a>
 
 ### `CellularJitter`
 <!-- tc:scope private -->
@@ -33,6 +37,8 @@ public float CellularJitter;
 
 ```
 
+<a name="CellularReturnType"></a>
+
 ### `CellularReturnType`
 <!-- tc:scope private -->
 <!-- tc:return_type CellularReturnType /noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
@@ -42,6 +48,8 @@ public float CellularJitter;
 public CellularReturnType CellularReturnType;
 
 ```
+
+<a name="DomainWarp"></a>
 
 ### `DomainWarp`
 <!-- tc:scope private -->
@@ -53,6 +61,8 @@ public DomainWarpType DomainWarp;
 
 ```
 
+<a name="DomainWarpAmplitude"></a>
+
 ### `DomainWarpAmplitude`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -62,6 +72,8 @@ public DomainWarpType DomainWarp;
 public float DomainWarpAmplitude;
 
 ```
+
+<a name="Empty"></a>
 
 ### `Empty`
 <!-- tc:scope private -->
@@ -73,6 +85,8 @@ public readonly static NoiseSettings Empty;
 
 ```
 
+<a name="FractalGain"></a>
+
 ### `FractalGain`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -82,6 +96,8 @@ public readonly static NoiseSettings Empty;
 public float FractalGain;
 
 ```
+
+<a name="FractalLacunarity"></a>
 
 ### `FractalLacunarity`
 <!-- tc:scope private -->
@@ -93,6 +109,8 @@ public float FractalLacunarity;
 
 ```
 
+<a name="FractalOctaves"></a>
+
 ### `FractalOctaves`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -102,6 +120,8 @@ public float FractalLacunarity;
 public int FractalOctaves;
 
 ```
+
+<a name="FractalPingPongStrength"></a>
 
 ### `FractalPingPongStrength`
 <!-- tc:scope private -->
@@ -113,6 +133,8 @@ public float FractalPingPongStrength;
 
 ```
 
+<a name="FractalType"></a>
+
 ### `FractalType`
 <!-- tc:scope private -->
 <!-- tc:return_type FractalType /noir/reference//noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
@@ -122,6 +144,8 @@ public float FractalPingPongStrength;
 public FractalType FractalType;
 
 ```
+
+<a name="FractalWeightedStrength"></a>
 
 ### `FractalWeightedStrength`
 <!-- tc:scope private -->
@@ -133,6 +157,8 @@ public float FractalWeightedStrength;
 
 ```
 
+<a name="Frequency"></a>
+
 ### `Frequency`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -142,6 +168,8 @@ public float FractalWeightedStrength;
 public int Frequency;
 
 ```
+
+<a name="FrequencyCalc"></a>
 
 ### `FrequencyCalc`
 <!-- tc:scope public -->
@@ -153,6 +181,8 @@ public float FrequencyCalc { get; }
 
 ```
 
+<a name="NoiseType"></a>
+
 ### `NoiseType`
 <!-- tc:scope private -->
 <!-- tc:return_type NoiseType /noir/reference//noir/reference//noir/reference/Noir/Randomness/NoiseType/ -->
@@ -162,6 +192,8 @@ public float FrequencyCalc { get; }
 public NoiseType NoiseType;
 
 ```
+
+<a name="Offset"></a>
 
 ### `Offset`
 <!-- tc:scope private -->
@@ -173,6 +205,8 @@ public float Offset;
 
 ```
 
+<a name="Scale"></a>
+
 ### `Scale`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -183,6 +217,8 @@ public float Scale;
 
 ```
 
+<a name="Seed"></a>
+
 ### `Seed`
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -192,6 +228,8 @@ public float Scale;
 public int Seed;
 
 ```
+
+<a name="Weight"></a>
 
 ### `Weight`
 <!-- tc:scope private -->
@@ -204,6 +242,8 @@ public int Weight;
 ```
 
 ## Methods
+
+<a name="Equals"></a>
 
 ### `Equals(NoiseSettings)`
 <!-- tc:scope public -->
@@ -218,6 +258,8 @@ public virtual bool Equals(NoiseSettings other)
 **Parameters** <br>
 `other` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
+<a name="Equals"></a>
+
 ### `Equals(Object)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -231,6 +273,8 @@ public virtual bool Equals(Object obj)
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -240,6 +284,8 @@ public virtual bool Equals(Object obj)
 public virtual int GetHashCode()
 
 ```
+
+<a name="ToString"></a>
 
 ### `ToString()`
 <!-- tc:scope public -->

@@ -11,6 +11,8 @@ public class PoissonSampler
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(PoissonSettings, PoissonBags)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -26,6 +28,8 @@ public PoissonSampler(PoissonSettings settings, PoissonBags bags)
 
 ## Properties
 
+<a name="ActivePoints"></a>
+
 ### `ActivePoints`
 <!-- tc:scope public -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
@@ -36,6 +40,8 @@ public List<T> ActivePoints { get; }
 
 ```
 
+<a name="Points"></a>
+
 ### `Points`
 <!-- tc:scope public -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
@@ -45,6 +51,8 @@ public List<T> ActivePoints { get; }
 public List<T> Points { get; }
 
 ```
+
+<a name="StartingPoint"></a>
 
 ### `StartingPoint`
 <!-- tc:scope public -->
@@ -57,6 +65,8 @@ public T? StartingPoint { get; private set; }
 ```
 
 ## Methods
+
+<a name="Next"></a>
 
 ### `Next(out Int32&)`
 <!-- tc:scope public -->

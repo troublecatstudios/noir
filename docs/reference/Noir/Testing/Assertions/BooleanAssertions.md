@@ -11,6 +11,8 @@ public static class BooleanAssertions
 
 ## Methods
 
+<a name="IsFalse"></a>
+
 ### `IsFalse(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
@@ -27,6 +29,8 @@ public void IsFalse(IAssertionContext<T> context, string message)
  <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
+
+<a name="IsTrue"></a>
 
 ### `IsTrue(IAssertionContext<T>, string)`
 <!-- tc:scope public -->

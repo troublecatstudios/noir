@@ -11,6 +11,8 @@ public static class GameObjectExtensions
 
 ## Methods
 
+<a name="GetGameObjectHierarchy"></a>
+
 ### `GetGameObjectHierarchy(GameObject)`
 <!-- tc:scope public -->
 <!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
@@ -26,6 +28,8 @@ public IEnumerable<T> GetGameObjectHierarchy(GameObject gameObject)
 **Parameters** <br>
 `gameObject` [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) <br>
  <br>
+
+<a name="GetGameObjectHierarchyPath"></a>
 
 ### `GetGameObjectHierarchyPath(GameObject)`
 <!-- tc:scope public -->

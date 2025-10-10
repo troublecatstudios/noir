@@ -13,6 +13,8 @@ public class GameTime : IGameTime
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public GameTime()
 
 ## Properties
 
+<a name="deltaTime"></a>
+
 ### `deltaTime`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -33,6 +37,8 @@ public GameTime()
 public virtual float deltaTime { get; }
 
 ```
+
+<a name="fixedDeltaTime"></a>
 
 ### `fixedDeltaTime`
 <!-- tc:scope public -->
@@ -44,6 +50,8 @@ public virtual float fixedDeltaTime { get; }
 
 ```
 
+<a name="FPS12"></a>
+
 ### `FPS12`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -53,6 +61,8 @@ public virtual float fixedDeltaTime { get; }
 public static const float FPS12;
 
 ```
+
+<a name="FPS12L"></a>
 
 ### `FPS12L`
 <!-- tc:scope private -->
@@ -64,6 +74,8 @@ public static const long FPS12L;
 
 ```
 
+<a name="FPS24"></a>
+
 ### `FPS24`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -73,6 +85,8 @@ public static const long FPS12L;
 public static const float FPS24;
 
 ```
+
+<a name="FPS24L"></a>
 
 ### `FPS24L`
 <!-- tc:scope private -->
@@ -84,6 +98,8 @@ public static const long FPS24L;
 
 ```
 
+<a name="FPS30"></a>
+
 ### `FPS30`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -93,6 +109,8 @@ public static const long FPS24L;
 public static const float FPS30;
 
 ```
+
+<a name="FPS30L"></a>
 
 ### `FPS30L`
 <!-- tc:scope private -->
@@ -104,6 +122,8 @@ public static const long FPS30L;
 
 ```
 
+<a name="FPS60"></a>
+
 ### `FPS60`
 <!-- tc:scope private -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -113,6 +133,8 @@ public static const long FPS30L;
 public static const float FPS60;
 
 ```
+
+<a name="FPS60L"></a>
 
 ### `FPS60L`
 <!-- tc:scope private -->
@@ -124,6 +146,8 @@ public static const long FPS60L;
 
 ```
 
+<a name="frameCount"></a>
+
 ### `frameCount`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -133,6 +157,8 @@ public static const long FPS60L;
 public virtual int frameCount { get; }
 
 ```
+
+<a name="Instance"></a>
 
 ### `Instance`
 <!-- tc:scope private -->
@@ -144,6 +170,8 @@ public readonly static GameTime Instance;
 
 ```
 
+<a name="realtimeSinceStartup"></a>
+
 ### `realtimeSinceStartup`
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
@@ -153,6 +181,8 @@ public readonly static GameTime Instance;
 public virtual float realtimeSinceStartup { get; }
 
 ```
+
+<a name="time"></a>
 
 ### `time`
 <!-- tc:scope public -->

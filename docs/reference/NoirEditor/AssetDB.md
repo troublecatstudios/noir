@@ -13,6 +13,8 @@ public static class AssetDB
 
 ## Methods
 
+<a name="Mkdirp"></a>
+
 ### `Mkdirp(string)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -29,6 +31,8 @@ public bool Mkdirp(string path)
 `path` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="TryGetReferencesToObject"></a>
+
 ### `TryGetReferencesToObject(Object, out IEnumerable`1&)`
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
@@ -43,6 +47,8 @@ public bool TryGetReferencesToObject(Object asset, IEnumerable`1& assetPaths)
 `asset` [Object](https://docs.unity3d.com/ScriptReference/Object.html) <br>
 `assetPaths` [IEnumerable\<T\>&](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 
+<a name="Load"></a>
+
 ### `Load(Func<T, TResult>, String[])`
 <!-- tc:scope public -->
 <!-- tc:return_type List\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=net-7.0 -->
@@ -56,6 +62,8 @@ public List<T> Load(Func<T, TResult> filter, String[] searchPaths)
 **Parameters** <br>
 `filter` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="Load"></a>
 
 ### `Load(string, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
@@ -75,6 +83,8 @@ public List<T> Load(string query, Func<T, TResult> filter, String[] searchPaths)
 `filter` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
+
+<a name="Load"></a>
 
 ### `Load(Type, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
@@ -96,6 +106,8 @@ public List<T> Load(Type type, Func<T, TResult> criteria, String[] searchPaths)
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
  <br>
 
+<a name="LoadSingle"></a>
+
 ### `LoadSingle(Type, Func<T, TResult>, String[])`
 <!-- tc:scope public -->
 <!-- tc:return_type Object https://docs.unity3d.com/ScriptReference/Object.html -->
@@ -112,6 +124,8 @@ public Object LoadSingle(Type objectType, Func<T, TResult> filter,
 `objectType` [Type](https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0) <br>
 `filter` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 `searchPaths` [string[]](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+
+<a name="LoadSingle"></a>
 
 ### `LoadSingle(string, Func<T, TResult>, String[])`
 <!-- tc:scope public -->

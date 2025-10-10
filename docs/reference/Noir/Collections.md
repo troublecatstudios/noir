@@ -11,6 +11,8 @@ public static class Collections
 
 ## Methods
 
+<a name="Sort"></a>
+
 ### `Sort(T[], int)`
 <!-- tc:scope public -->
 <!-- tc:return_type T[] -->

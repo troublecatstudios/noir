@@ -13,6 +13,8 @@ public class DataVariableCollection : ScriptableObject
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -24,6 +26,8 @@ public DataVariableCollection()
 
 ## Properties
 
+<a name="hideFlags"></a>
+
 ### `hideFlags`
 <!-- tc:scope public -->
 <!-- tc:return_type HideFlags https://docs.unity3d.com/ScriptReference/HideFlags.html -->
@@ -34,6 +38,8 @@ public HideFlags hideFlags { get; public set; }
 
 ```
 
+<a name="name"></a>
+
 ### `name`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -43,6 +49,8 @@ public HideFlags hideFlags { get; public set; }
 public string name { get; public set; }
 
 ```
+
+<a name="Variables"></a>
 
 ### `Variables`
 <!-- tc:scope private -->
@@ -56,6 +64,8 @@ public List<T> Variables;
 
 ## Methods
 
+<a name="GetInstanceID"></a>
+
 ### `GetInstanceID()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -65,6 +75,8 @@ public List<T> Variables;
 public int GetInstanceID()
 
 ```
+
+<a name="Equals"></a>
 
 ### `Equals(Object)`
 <!-- tc:scope public -->
@@ -79,6 +91,8 @@ public virtual bool Equals(Object other)
 **Parameters** <br>
 `other` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
+<a name="GetHashCode"></a>
+
 ### `GetHashCode()`
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
@@ -89,6 +103,8 @@ public virtual int GetHashCode()
 
 ```
 
+<a name="ToString"></a>
+
 ### `ToString()`
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
@@ -98,6 +114,8 @@ public virtual int GetHashCode()
 public virtual string ToString()
 
 ```
+
+<a name="SetDirty"></a>
 
 ### `SetDirty()`
 <!-- tc:scope public -->

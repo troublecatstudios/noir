@@ -11,6 +11,8 @@ public static class Vector2Extensions
 
 ## Methods
 
+<a name="Random"></a>
+
 ### `Random(Vector2)`
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->

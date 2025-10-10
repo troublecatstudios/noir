@@ -15,6 +15,8 @@ public class EngineCallbackAttribute : Attribute
 
 ## Constructors
 
+<a name=".ctor"></a>
+
 ### `.ctor(EngineCallbackType)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
@@ -29,6 +31,8 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 
 ## Properties
 
+<a name="CallbackType"></a>
+
 ### `CallbackType`
 <!-- tc:scope public -->
 <!-- tc:return_type EngineCallbackType /noir/reference//noir/reference/Noir/Attributes/EngineCallbackType/ -->
@@ -38,6 +42,8 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 public EngineCallbackType CallbackType { get; public set; }
 
 ```
+
+<a name="TypeId"></a>
 
 ### `TypeId`
 <!-- tc:scope public -->
