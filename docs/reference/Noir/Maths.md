@@ -9,7 +9,7 @@
 public static class Maths
 ```
 
-## Properties
+## Fields
 
 <a name="MaxVector2"></a>
 

@@ -20,7 +20,7 @@ public class ObjectPool : IDisposable
 ### `.ctor(ObjectPoolItemSystem, uint)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/) class.
+Initializes a new instance of the [ObjectPool](/noir/reference/Noir/Pooling/ObjectPool/) class.
 
 
 ```csharp
@@ -29,7 +29,7 @@ public ObjectPool(ObjectPoolItemSystem prefab, uint capacity)
 ```
 
 **Parameters** <br>
-`prefab` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
+`prefab` [ObjectPoolItemSystem](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
  <br>
 `capacity` [uint](https://learn.microsoft.com/en-us/dotnet/api/System.UInt32?view=net-7.0) <br>
  <br>
@@ -42,7 +42,7 @@ public ObjectPool(ObjectPoolItemSystem prefab, uint capacity)
 ### `.ctor(GameObject, uint)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the [ObjectPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/) class.
+Initializes a new instance of the [ObjectPool](/noir/reference/Noir/Pooling/ObjectPool/) class.
 
 
 ```csharp
@@ -60,30 +60,6 @@ public ObjectPool(GameObject prefab, uint capacity)
 [ArgumentNullException](https://learn.microsoft.com/en-us/dotnet/api/System.ArgumentNullException?view=net-7.0) <br>
  <br>
 ## Properties
-
-<a name="_disposedValue"></a>
-
-### `_disposedValue`
-<!-- tc:scope private -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-protected bool _disposedValue;
-
-```
-
-<a name="_prefab"></a>
-
-### `_prefab`
-<!-- tc:scope private -->
-<!-- tc:return_type ObjectPoolItemSystem /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/ -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-protected readonly ObjectPoolItemSystem _prefab;
-
-```
 
 <a name="ActiveCount"></a>
 
@@ -175,7 +151,7 @@ public uint TotalItems { get; }
 
 ### `OnPoolItemCreated`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemCreatedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemCreatedEvent/ -->
+<!-- tc:return_type OnPoolItemCreatedEvent /noir/reference/Noir/Pooling/OnPoolItemCreatedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -187,7 +163,7 @@ public event OnPoolItemCreatedEvent OnPoolItemCreated;
 
 ### `OnPoolItemRerieved`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemRetrievedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent/ -->
+<!-- tc:return_type OnPoolItemRetrievedEvent /noir/reference/Noir/Pooling/OnPoolItemRetrievedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -199,7 +175,7 @@ public event OnPoolItemRetrievedEvent OnPoolItemRerieved;
 
 ### `OnPoolItemResetToDefaults`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemResetToDefaultsEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemResetToDefaultsEvent/ -->
+<!-- tc:return_type OnPoolItemResetToDefaultsEvent /noir/reference/Noir/Pooling/OnPoolItemResetToDefaultsEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -211,7 +187,7 @@ public event OnPoolItemResetToDefaultsEvent OnPoolItemResetToDefaults;
 
 ### `OnPoolItemReturned`
 <!-- tc:scope private -->
-<!-- tc:return_type OnPoolItemReturnedEvent /noir/reference//noir/reference/Noir/Pooling/OnPoolItemReturnedEvent/ -->
+<!-- tc:return_type OnPoolItemReturnedEvent /noir/reference/Noir/Pooling/OnPoolItemReturnedEvent/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -220,122 +196,6 @@ public event OnPoolItemReturnedEvent OnPoolItemReturned;
 ```
 
 ## Methods
-
-<a name="CreateNewPoolItem"></a>
-
-### `CreateNewPoolItem()`
-<!-- tc:scope private -->
-<!-- tc:return_type ObjectPoolItemSystem /noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/ -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-protected virtual ObjectPoolItemSystem CreateNewPoolItem()
-
-```
-
-<a name="Dispose"></a>
-
-### `Dispose(bool)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-protected virtual void Dispose(bool disposing)
-
-```
-
-**Parameters** <br>
-`disposing` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-
-<a name="OnItemCreated"></a>
-
-### `OnItemCreated(ObjectPoolItemSystem, bool)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-Called when an item has been created for the first time.
-
-
-```csharp
-protected virtual void OnItemCreated(ObjectPoolItemSystem item, bool isPreWarm)
-
-```
-
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
- <br>
-`isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
-
-<a name="OnItemRetrieved"></a>
-
-### `OnItemRetrieved(ObjectPoolItemSystem)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-Called when an inactive item is retrieved from the pool.
-
-
-```csharp
-protected virtual void OnItemRetrieved(ObjectPoolItemSystem item)
-
-```
-
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
- <br>
-
-<a name="OnItemReturned"></a>
-
-### `OnItemReturned(ObjectPoolItemSystem, bool)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-Called when an active item is returned to the pool.
-
-
-```csharp
-protected virtual void OnItemReturned(ObjectPoolItemSystem item, bool isPreWarm)
-
-```
-
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
- <br>
-`isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
- <br>
-
-<a name="OnResetToDefaults"></a>
-
-### `OnResetToDefaults(ObjectPoolItemSystem)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-Called when the item should be reset to its default state.
-This method can be called when the pool is being pre-warmed, when an item is created for the first time or when an item is returned to the pool. <br />
-            The returned item from this method is then stored in the internal active or inactive collections depending on the action being taken. <br />
-            This method is always called before [ObjectPool.OnItemReturned(Noir.Pooling.ObjectPoolItemSystem,System.Boolean)](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/#onitemreturned(objectpoolitemsystem,).
-
-
-```csharp
-protected virtual void OnResetToDefaults(ObjectPoolItemSystem item)
-
-```
-
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
- <br>
-
-<a name="ReturnToPool"></a>
-
-### `ReturnToPool(ObjectPoolItemSystem, bool)`
-<!-- tc:scope private -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-protected virtual void ReturnToPool(ObjectPoolItemSystem item, bool isPreWarm)
-
-```
-
-**Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
-`isPreWarm` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
 <a name="TryGet"></a>
 
@@ -350,7 +210,7 @@ public bool TryGet(ObjectPoolItemSystem& item)
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem&](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
+`item` [ObjectPoolItemSystem&](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
 
 <a name="GetActiveItems"></a>
 
@@ -358,7 +218,7 @@ public bool TryGet(ObjectPoolItemSystem& item)
 <!-- tc:scope public -->
 <!-- tc:return_type IEnumerable\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Returns an [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) objects in the pool.
+Returns an [ObjectPoolItemSystem](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) objects in the pool.
 
 
 ```csharp
@@ -385,7 +245,7 @@ public virtual void Dispose()
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
 Prewarms the object pool.
-This can cause stutters if the [ObjectPool.MaxCapacity](/noir/reference//noir/reference/Noir/Pooling/ObjectPool/#maxcapacity) is large.
+This can cause stutters if the [ObjectPool.MaxCapacity](/noir/reference/Noir/Pooling/ObjectPool/#maxcapacity) is large.
 
 
 ```csharp
@@ -407,7 +267,7 @@ public void Return(ObjectPoolItemSystem item)
 ```
 
 **Parameters** <br>
-`item` [ObjectPoolItemSystem](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
+`item` [ObjectPoolItemSystem](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/) <br>
  <br>
 
 <a name="ReturnAll"></a>
@@ -415,7 +275,7 @@ public void Return(ObjectPoolItemSystem item)
 ### `ReturnAll()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Iterates through all the active objects, calling [ObjectPoolItemSystem.ReturnToPool](/noir/reference//noir/reference/Noir/Pooling/ObjectPoolItemSystem/#returntopool) on each.
+Iterates through all the active objects, calling [ObjectPoolItemSystem.ReturnToPool](/noir/reference/Noir/Pooling/ObjectPoolItemSystem/#returntopool) on each.
 
 
 ```csharp

@@ -9,7 +9,7 @@
 public static class Reflector
 ```
 
-## Properties
+## Fields
 
 <a name="DefaultFlags"></a>
 
@@ -150,7 +150,7 @@ public bool SetValue(SerializedProperty property, T value)
 
 **Parameters** <br>
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
-`value` [T](/noir/reference//noir/reference/) <br>
+`value` [T](/noir/reference/) <br>
 
 <a name="GetField"></a>
 

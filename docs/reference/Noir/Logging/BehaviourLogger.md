@@ -9,7 +9,7 @@
 public class BehaviourLogger : ILogWriter
 ```
 
-**Implements:** _[ILogWriter](/noir/reference//noir/reference/Noir/Logging/ILogWriter/)_
+**Implements:** _[ILogWriter](/noir/reference/Noir/Logging/ILogWriter/)_
 
 ## Constructors
 
@@ -154,7 +154,7 @@ public virtual void WriteLog(string message, LogLevel level, string subsystem,
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
-`level` [LogLevel](/noir/reference//noir/reference/Noir/Logging/LogLevel/) <br>
+`level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 

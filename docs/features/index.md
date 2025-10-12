@@ -12,11 +12,11 @@ The following features make creating game mechanics or adding polish easier.
 
     ---
 
-    _TODO: add a description here.._
+    Procedural generation is a method of creating data algorithmically instead of manually, combining human-generated content with computer-generated randomness and processing power.
 
     ---
 
-    __Add a one sentence description__
+    __Use math to create vast and diverse worlds, enemy behaviors and interactable objects for your games.__
 
 -   :material-flash-outline: &nbsp; __[Events][events]__
 

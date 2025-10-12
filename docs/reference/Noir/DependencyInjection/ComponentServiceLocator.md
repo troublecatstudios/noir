@@ -40,7 +40,7 @@ public bool TryGetService(T& instance)
 ```
 
 **Parameters** <br>
-`instance` [T&](/noir/reference//noir/reference/) <br>
+`instance` [T&](/noir/reference/) <br>
 
 <a name="GetService"></a>
 

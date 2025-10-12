@@ -9,7 +9,7 @@
 public static class MenuConstants
 ```
 
-## Properties
+## Fields
 
 <a name="BASE_MENU_PATH_TOOLS"></a>
 

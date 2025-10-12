@@ -24,8 +24,8 @@ public T ReadViaSerializer(JsonReader reader, JsonSerializer serializer)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
-`serializer` [JsonSerializer](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
+`serializer` [JsonSerializer](/noir/reference/) <br>
 
 <a name="ReadAsFloat"></a>
 
@@ -40,7 +40,7 @@ public T? ReadAsFloat(JsonReader reader)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 
 <a name="ReadAsInt8"></a>
 
@@ -55,5 +55,5 @@ public T? ReadAsInt8(JsonReader reader)
 ```
 
 **Parameters** <br>
-`reader` [JsonReader](/noir/reference//noir/reference//noir/reference/) <br>
+`reader` [JsonReader](/noir/reference/) <br>
 

@@ -30,7 +30,7 @@ public Vector4Int(int x, int y, int z, int w)
 `z` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 `w` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
 
-## Properties
+## Fields
 
 <a name="down"></a>
 
@@ -65,18 +65,6 @@ public readonly static Vector4Int left;
 
 ```csharp
 public readonly static Vector4Int right;
-
-```
-
-<a name="sqrMagnitude"></a>
-
-### `sqrMagnitude`
-<!-- tc:scope public -->
-<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public int sqrMagnitude { get; }
 
 ```
 
@@ -149,6 +137,20 @@ public int z;
 
 ```csharp
 public readonly static Vector4Int zero;
+
+```
+
+## Properties
+
+<a name="sqrMagnitude"></a>
+
+### `sqrMagnitude`
+<!-- tc:scope public -->
+<!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public int sqrMagnitude { get; }
 
 ```
 

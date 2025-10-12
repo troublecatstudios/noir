@@ -4,7 +4,7 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
-A handle to an EditorCoroutine, can be passed to <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutineUtility">EditorCoroutineUtility</see> methods to control lifetime.
+A handle to an EditorCoroutine, can be passed to [EditorCoroutineUtility](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutineUtility/) methods to control lifetime.
 
 
 ```csharp
@@ -13,4 +13,4 @@ public class EditorCoroutine
 
 ## More information
 
-* [EditorCoroutineUtility](T:NoirEditor.EditorCoroutines.EditorCoroutineUtility)
+* [EditorCoroutineUtility](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutineUtility/)

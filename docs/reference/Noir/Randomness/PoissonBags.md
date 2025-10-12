@@ -22,7 +22,7 @@ public PoissonBags()
 
 ```
 
-## Properties
+## Fields
 
 <a name="ActivePoints"></a>
 

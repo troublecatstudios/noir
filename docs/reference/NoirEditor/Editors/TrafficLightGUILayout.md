@@ -24,7 +24,7 @@ public void BoolLight(bool val, TrafficLightColor color)
 
 **Parameters** <br>
 `val` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-`color` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`color` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 <a name="BoolLightLarge"></a>
 
@@ -41,8 +41,8 @@ public void BoolLightLarge(bool val, TrafficLightColor colorA,
 
 **Parameters** <br>
 `val` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
-`colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorA` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorB` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 <a name="DrawTrafficLightDouble"></a>
 
@@ -58,8 +58,8 @@ public void DrawTrafficLightDouble(TrafficLightColor colorA,
 ```
 
 **Parameters** <br>
-`colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`ccolorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorA` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`ccolorB` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 <a name="DrawTrafficLightQuad"></a>
 
@@ -77,10 +77,10 @@ public void DrawTrafficLightQuad(TrafficLightColor colorA,
 ```
 
 **Parameters** <br>
-`colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorD` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorA` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorB` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorC` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorD` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 <a name="DrawTrafficLightSingle"></a>
 
@@ -94,7 +94,7 @@ public void DrawTrafficLightSingle(TrafficLightColor colorA)
 ```
 
 **Parameters** <br>
-`colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorA` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 
 <a name="DrawTrafficLightTriple"></a>
 
@@ -111,7 +111,7 @@ public void DrawTrafficLightTriple(TrafficLightColor colorA,
 ```
 
 **Parameters** <br>
-`colorA` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorB` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
-`colorC` [TrafficLightColor](/noir/reference//noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorA` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorB` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
+`colorC` [TrafficLightColor](/noir/reference/Noir/Attributes/TrafficLightColor/) <br>
 

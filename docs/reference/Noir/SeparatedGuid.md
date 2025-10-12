@@ -9,7 +9,7 @@
 public sealed struct SeparatedGuid
 ```
 
-## Properties
+## Fields
 
 <a name="A"></a>
 

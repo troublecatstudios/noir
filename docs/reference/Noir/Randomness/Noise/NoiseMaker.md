@@ -23,7 +23,7 @@ public NoiseMaker(NoiseSettings settings)
 ```
 
 **Parameters** <br>
-`settings` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
+`settings` [NoiseSettings](/noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
 ## Methods
 

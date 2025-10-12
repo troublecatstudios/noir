@@ -9,7 +9,7 @@
 public class PlatformHelper
 ```
 
-## Properties
+## Fields
 
 <a name="Instance"></a>
 
@@ -17,8 +17,6 @@ public class PlatformHelper
 <!-- tc:scope private -->
 <!-- tc:return_type PlatformHelper /noir/reference/NoirEditor/PlatformHelper/ -->
 <!-- tc:version 0.0.0 -->
-Gets a singleton instance of the [PlatformHelper](/noir/reference/NoirEditor/PlatformHelper/).
-
 
 ```csharp
 public readonly static PlatformHelper Instance;

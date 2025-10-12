@@ -9,7 +9,7 @@
 public class EnvironmentVariablePaths : IPlatformPaths
 ```
 
-**Implements:** _[IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/)_
+**Implements:** _[IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/)_
 
 ## Constructors
 
@@ -27,8 +27,8 @@ public EnvironmentVariablePaths(IPlatformPaths fallback,
 ```
 
 **Parameters** <br>
-`fallback` [IPlatformPaths](/noir/reference//noir/reference//noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
-`environment` [AbstractEnvironment](/noir/reference//noir/reference//noir/reference/Noir/Abstractions/AbstractEnvironment/) <br>
+`fallback` [IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
+`environment` [AbstractEnvironment](/noir/reference/Noir/Abstractions/AbstractEnvironment/) <br>
 
 ## Properties
 

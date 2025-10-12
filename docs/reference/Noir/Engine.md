@@ -5,23 +5,22 @@
 <!-- tc:assembly Noir.dll -->
 
 Initializes core features of the Noir Library
-<para>
+<br />
             The Noir engine can invoke methods within developer's game code at specific points during the startup lifecycle.
-            </para>
-  <para>
-            Initialize is invoked during the <see cref="F:UnityEngine.RuntimeInitializeLoadType.SubsystemRegistration">SubSystemRegistration</see> phase of the UnityEngine initialization lifecycle.
-            </para>
-  <para>
+            
+  <br />
+            Initialize is invoked during the [SubSystemRegistration](https://docs.unity3d.com/ScriptReference/RuntimeInitializeLoadType.html) phase of the UnityEngine initialization lifecycle.
+            
+  <br />
             ConfigureServices is invoked after all the assemblies have been loaded by the UnityEngine. Developer's can utilize
             this callback to register types and instances with Noir's [ServiceLocator](/noir/reference/Noir/ServiceLocator/).
-            </para>
-  <para>
+            
+  <br />
             Start is invoked after all the first Scene has been loaded by Unity.
-            </para>
-  <para>
+            
+  <br />
             Noir engine callbacks are global, the library performs a scan of the loaded assemblies at startup, looking for
             all the static members that are decorated with a [EngineCallbackAttribute](/noir/reference/Noir/Attributes/EngineCallbackAttribute/).
-            </para>
 
 
 ```csharp
@@ -43,6 +42,6 @@ public Engine()
 
 ## More information
 
-* [SubSystemRegistration](F:UnityEngine.RuntimeInitializeLoadType.SubsystemRegistration)
+* [SubSystemRegistration](https://docs.unity3d.com/ScriptReference/RuntimeInitializeLoadType.html#SubsystemRegistration)
 * [Noir.ServiceLocator](/noir/reference/Noir/ServiceLocator/)
-* [Noir.Attributes.EngineCallbackAttribute](/noir/reference//noir/reference/Noir/Attributes/EngineCallbackAttribute/)
+* [Noir.Attributes.EngineCallbackAttribute](/noir/reference/Noir/Attributes/EngineCallbackAttribute/)

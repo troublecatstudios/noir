@@ -25,8 +25,8 @@ public void IsEqualTo(IAssertionContext<T> context, T expectedValue,
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 <a name="IsGreaterThan"></a>
@@ -41,8 +41,8 @@ public void IsGreaterThan(IAssertionContext<T> context, T expectedValue)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference/) <br>
 
 <a name="IsLessThan"></a>
 
@@ -56,8 +56,8 @@ public void IsLessThan(IAssertionContext<T> context, T expectedValue)
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference/) <br>
 
 <a name="IsNotEqualTo"></a>
 
@@ -73,8 +73,8 @@ public void IsNotEqualTo(IAssertionContext<T> context, T expectedValue,
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`expectedValue` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`expectedValue` [T](/noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
 <a name="IsWithinRange"></a>
@@ -91,8 +91,8 @@ public void IsWithinRange(IAssertionContext<T> context, T min, T max,
 ```
 
 **Parameters** <br>
-`context` [IAssertionContext\<T\>](/noir/reference//noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/) <br>
-`min` [T](/noir/reference//noir/reference//noir/reference/) <br>
-`max` [T](/noir/reference//noir/reference//noir/reference/) <br>
+`context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
+`min` [T](/noir/reference/) <br>
+`max` [T](/noir/reference/) <br>
 `inclusive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 

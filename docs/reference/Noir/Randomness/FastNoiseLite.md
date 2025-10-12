@@ -110,7 +110,7 @@ public void SetCellularDistanceFunction(CellularDistanceFunction cellularDistanc
 ```
 
 **Parameters** <br>
-`cellularDistanceFunction` [CellularDistanceFunction](/noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/) <br>
+`cellularDistanceFunction` [CellularDistanceFunction](/noir/reference/Noir/Randomness/CellularDistanceFunction/) <br>
 
 <a name="SetCellularJitter"></a>
 
@@ -142,7 +142,7 @@ public void SetCellularReturnType(CellularReturnType cellularReturnType)
 ```
 
 **Parameters** <br>
-`cellularReturnType` [CellularReturnType](/noir/reference//noir/reference/Noir/Randomness/CellularReturnType/) <br>
+`cellularReturnType` [CellularReturnType](/noir/reference/Noir/Randomness/CellularReturnType/) <br>
 
 <a name="SetDomainWarpAmp"></a>
 
@@ -173,7 +173,7 @@ public void SetDomainWarpType(DomainWarpType domainWarpType)
 ```
 
 **Parameters** <br>
-`domainWarpType` [DomainWarpType](/noir/reference//noir/reference/Noir/Randomness/DomainWarpType/) <br>
+`domainWarpType` [DomainWarpType](/noir/reference/Noir/Randomness/DomainWarpType/) <br>
 
 <a name="SetFractalGain"></a>
 
@@ -255,7 +255,7 @@ public void SetFractalType(FractalType fractalType)
 ```
 
 **Parameters** <br>
-`fractalType` [FractalType](/noir/reference//noir/reference/Noir/Randomness/FractalType/) <br>
+`fractalType` [FractalType](/noir/reference/Noir/Randomness/FractalType/) <br>
 
 <a name="SetFractalWeightedStrength"></a>
 
@@ -304,7 +304,7 @@ public void SetNoiseType(NoiseType noiseType)
 ```
 
 **Parameters** <br>
-`noiseType` [NoiseType](/noir/reference//noir/reference/Noir/Randomness/NoiseType/) <br>
+`noiseType` [NoiseType](/noir/reference/Noir/Randomness/NoiseType/) <br>
 
 <a name="SetRotationType3D"></a>
 
@@ -318,7 +318,7 @@ public void SetRotationType3D(RotationType3D rotationType3D)
 ```
 
 **Parameters** <br>
-`rotationType3D` [RotationType3D](/noir/reference//noir/reference/Noir/Randomness/RotationType3D/) <br>
+`rotationType3D` [RotationType3D](/noir/reference/Noir/Randomness/RotationType3D/) <br>
 
 <a name="SetSeed"></a>
 

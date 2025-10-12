@@ -4,14 +4,14 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
-A fake or stubbed instance of [IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/) for use within tests.
+A fake or stubbed instance of [IGameTime](/noir/reference/Noir/Abstractions/IGameTime/) for use within tests.
 
 
 ```csharp
 public class FakeGameTime : IGameTime
 ```
 
-**Implements:** _[IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/)_
+**Implements:** _[IGameTime](/noir/reference/Noir/Abstractions/IGameTime/)_
 
 ## Constructors
 
@@ -117,4 +117,4 @@ public void StepFrames(int frames)
 
 ## More information
 
-* [Noir.Abstractions.IGameTime](/noir/reference//noir/reference/Noir/Abstractions/IGameTime/)
+* [Noir.Abstractions.IGameTime](/noir/reference/Noir/Abstractions/IGameTime/)

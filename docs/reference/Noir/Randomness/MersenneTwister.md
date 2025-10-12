@@ -18,7 +18,7 @@ public class MersenneTwister
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the <see cref="T:SharpTwister.MersenneTwister"></see> class, using a time-dependent default seed value.
+Initializes a new instance of the [SharpTwister.MersenneTwister]() class, using a time-dependent default seed value.
 
 
 ```csharp
@@ -31,7 +31,7 @@ public MersenneTwister()
 ### `.ctor(uint)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Initializes a new instance of the <see cref="T:SharpTwister.MersenneTwister"></see> class, using the specified seed value.
+Initializes a new instance of the [SharpTwister.MersenneTwister]() class, using the specified seed value.
 
 
 ```csharp

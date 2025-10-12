@@ -34,18 +34,6 @@ public NoirVariableAttribute(string variableName)
 
 ## Properties
 
-<a name="TypeId"></a>
-
-### `TypeId`
-<!-- tc:scope public -->
-<!-- tc:return_type Object https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public virtual Object TypeId { get; }
-
-```
-
 <a name="VariableName"></a>
 
 ### `VariableName`

@@ -9,7 +9,7 @@
 public sealed struct PoissonSettings
 ```
 
-## Properties
+## Fields
 
 <a name="BottomLeft"></a>
 

@@ -11,13 +11,13 @@ public sealed struct NoiseSettings : IEquatable<T>
 
 **Implements:** _[IEquatable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0)_
 
-## Properties
+## Fields
 
 <a name="CellularDistance"></a>
 
 ### `CellularDistance`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularDistanceFunction /noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
+<!-- tc:return_type CellularDistanceFunction /noir/reference/Noir/Randomness/CellularDistanceFunction/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -41,7 +41,7 @@ public float CellularJitter;
 
 ### `CellularReturnType`
 <!-- tc:scope private -->
-<!-- tc:return_type CellularReturnType /noir/reference//noir/reference//noir/reference/Noir/Randomness/CellularReturnType/ -->
+<!-- tc:return_type CellularReturnType /noir/reference/Noir/Randomness/CellularReturnType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -53,7 +53,7 @@ public CellularReturnType CellularReturnType;
 
 ### `DomainWarp`
 <!-- tc:scope private -->
-<!-- tc:return_type DomainWarpType /noir/reference//noir/reference//noir/reference/Noir/Randomness/DomainWarpType/ -->
+<!-- tc:return_type DomainWarpType /noir/reference/Noir/Randomness/DomainWarpType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -77,7 +77,7 @@ public float DomainWarpAmplitude;
 
 ### `Empty`
 <!-- tc:scope private -->
-<!-- tc:return_type NoiseSettings /noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/ -->
+<!-- tc:return_type NoiseSettings /noir/reference/Noir/Randomness/Noise/NoiseSettings/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -137,7 +137,7 @@ public float FractalPingPongStrength;
 
 ### `FractalType`
 <!-- tc:scope private -->
-<!-- tc:return_type FractalType /noir/reference//noir/reference//noir/reference/Noir/Randomness/FractalType/ -->
+<!-- tc:return_type FractalType /noir/reference/Noir/Randomness/FractalType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -169,23 +169,11 @@ public int Frequency;
 
 ```
 
-<a name="FrequencyCalc"></a>
-
-### `FrequencyCalc`
-<!-- tc:scope public -->
-<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public float FrequencyCalc { get; }
-
-```
-
 <a name="NoiseType"></a>
 
 ### `NoiseType`
 <!-- tc:scope private -->
-<!-- tc:return_type NoiseType /noir/reference//noir/reference//noir/reference/Noir/Randomness/NoiseType/ -->
+<!-- tc:return_type NoiseType /noir/reference/Noir/Randomness/NoiseType/ -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
@@ -241,6 +229,20 @@ public int Weight;
 
 ```
 
+## Properties
+
+<a name="FrequencyCalc"></a>
+
+### `FrequencyCalc`
+<!-- tc:scope public -->
+<!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public float FrequencyCalc { get; }
+
+```
+
 ## Methods
 
 <a name="Equals"></a>
@@ -256,7 +258,7 @@ public virtual bool Equals(NoiseSettings other)
 ```
 
 **Parameters** <br>
-`other` [NoiseSettings](/noir/reference//noir/reference//noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
+`other` [NoiseSettings](/noir/reference/Noir/Randomness/Noise/NoiseSettings/) <br>
 
 <a name="Equals"></a>
 

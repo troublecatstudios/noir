@@ -15,9 +15,9 @@ public static class EditorWindowCoroutineExtension
 
 ### `StartCoroutine(EditorWindow, IEnumerator)`
 <!-- tc:scope public -->
-<!-- tc:return_type EditorCoroutine /noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/ -->
+<!-- tc:return_type EditorCoroutine /noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/ -->
 <!-- tc:version 0.0.0 -->
-Start an <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see>, owned by the calling <see cref="T:UnityEditor.EditorWindow">EditorWindow</see> instance.
+Start an [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) instance.
              <code>
              using System.Collections;
              using Unity.EditorCoroutines.Editor;
@@ -58,7 +58,7 @@ public EditorCoroutine StartCoroutine(EditorWindow window, IEnumerator routine)
 ### `StopCoroutine(EditorWindow, EditorCoroutine)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
-Immediately stop an [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) instance. This method is safe to call on an already completed <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see>.
+Immediately stop an [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) instance. This method is safe to call on an already completed [EditorCoroutine](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/).
              <code>
              using System.Collections;
              using Unity.EditorCoroutines.Editor;
@@ -97,6 +97,6 @@ public void StopCoroutine(EditorWindow window, EditorCoroutine coroutine)
 
 **Parameters** <br>
 `window` [EditorWindow](https://docs.unity3d.com/ScriptReference/EditorWindow.html) <br>
-`coroutine` [EditorCoroutine](/noir/reference//noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/) <br>
+`coroutine` [EditorCoroutine](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/) <br>
  <br>
 

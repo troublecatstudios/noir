@@ -51,6 +51,20 @@ public Direction(Vector3 vector)
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
  <br>
 
+## Fields
+
+<a name="None"></a>
+
+### `None`
+<!-- tc:scope private -->
+<!-- tc:return_type Direction /noir/reference/Noir/Direction/ -->
+<!-- tc:version 1.0.0 -->
+
+```csharp
+public readonly static Direction None;
+
+```
+
 ## Properties
 
 <a name="Horizontal"></a>
@@ -64,18 +78,6 @@ Gets the horizontal axis.
 
 ```csharp
 public HorizontalDirections Horizontal { get; private set; }
-
-```
-
-<a name="None"></a>
-
-### `None`
-<!-- tc:scope private -->
-<!-- tc:return_type Direction /noir/reference/Noir/Direction/ -->
-<!-- tc:version 1.0.0 -->
-
-```csharp
-public readonly static Direction None;
 
 ```
 

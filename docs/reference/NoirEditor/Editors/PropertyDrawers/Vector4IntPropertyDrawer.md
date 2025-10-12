@@ -24,48 +24,7 @@ public Vector4IntPropertyDrawer()
 
 ```
 
-## Properties
-
-<a name="attribute"></a>
-
-### `attribute`
-<!-- tc:scope public -->
-<!-- tc:return_type PropertyAttribute https://docs.unity3d.com/ScriptReference/PropertyAttribute.html -->
-<!-- tc:version 0.0.0 -->
-
-```csharp
-public PropertyAttribute attribute { get; }
-
-```
-
-<a name="fieldInfo"></a>
-
-### `fieldInfo`
-<!-- tc:scope public -->
-<!-- tc:return_type FieldInfo https://learn.microsoft.com/en-us/dotnet/api/System.Reflection.FieldInfo?view=net-7.0 -->
-<!-- tc:version 0.0.0 -->
-
-```csharp
-public FieldInfo fieldInfo { get; }
-
-```
-
 ## Methods
-
-<a name="CanCacheInspectorGUI"></a>
-
-### `CanCacheInspectorGUI(SerializedProperty)`
-<!-- tc:scope public -->
-<!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
-<!-- tc:version 0.0.0 -->
-
-```csharp
-public virtual bool CanCacheInspectorGUI(SerializedProperty property)
-
-```
-
-**Parameters** <br>
-`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
 <a name="GetPropertyHeight"></a>
 
@@ -84,21 +43,6 @@ public virtual float GetPropertyHeight(SerializedProperty property,
 **Parameters** <br>
 `property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 `label` [GUIContent](https://docs.unity3d.com/ScriptReference/GUIContent.html) <br>
-
-<a name="CreatePropertyGUI"></a>
-
-### `CreatePropertyGUI(SerializedProperty)`
-<!-- tc:scope public -->
-<!-- tc:return_type VisualElement https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html -->
-<!-- tc:version 0.0.0 -->
-
-```csharp
-public virtual VisualElement CreatePropertyGUI(SerializedProperty property)
-
-```
-
-**Parameters** <br>
-`property` [SerializedProperty](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) <br>
 
 <a name="OnGUI"></a>
 

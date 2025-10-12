@@ -53,7 +53,7 @@ public abstract bool TryPlaySoundEffect(SoundEffect effect, T? origin,
 ```
 
 **Parameters** <br>
-`effect` [SoundEffect](/noir/reference//noir/reference/Noir/Audio/SoundEffect/) <br>
+`effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
 `origin` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>

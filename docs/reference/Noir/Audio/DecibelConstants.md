@@ -9,7 +9,7 @@
 public static class DecibelConstants
 ```
 
-## Properties
+## Fields
 
 <a name="Concert"></a>
 
@@ -17,8 +17,6 @@ public static class DecibelConstants
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Also: jet aircraft engine during takeoff from 200ft
-
 
 ```csharp
 public static const int Concert;
@@ -31,8 +29,6 @@ public static const int Concert;
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Conversation at 3ft distance
-
 
 ```csharp
 public static const int Conversation;
@@ -57,8 +53,6 @@ public static const int Discomfort;
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Also: A jackhammer at 50ft
-
 
 ```csharp
 public static const int LoudRadio;
@@ -83,8 +77,6 @@ public static const int Pain;
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Ambient noise of a perfectly quiet night, in a suburban neighborhood
-
 
 ```csharp
 public static const int Rain;
@@ -97,8 +89,6 @@ public static const int Rain;
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Also: construction site
-
 
 ```csharp
 public static const int SubwayTrain;
@@ -111,8 +101,6 @@ public static const int SubwayTrain;
 <!-- tc:scope private -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Ambient noise of a perfectly quiet night in the countryside
-
 
 ```csharp
 public static const int Whisper;

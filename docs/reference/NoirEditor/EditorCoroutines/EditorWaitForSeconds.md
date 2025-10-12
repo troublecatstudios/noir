@@ -4,7 +4,7 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
-Suspends the <see cref="T:NoirEditor.EditorCoroutines.EditorCoroutine">EditorCoroutine</see> execution for the given amount of seconds, using unscaled time.
+Suspends the [EditorCoroutine](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/) execution for the given amount of seconds, using unscaled time.
              The coroutine execution continues after the specified time has elapsed.
              <code>
              using System.Collections;
@@ -69,4 +69,4 @@ public float WaitTime { get; }
 
 ## More information
 
-* [EditorCoroutine](T:NoirEditor.EditorCoroutines.EditorCoroutine)
+* [EditorCoroutine](/noir/reference/NoirEditor/EditorCoroutines/EditorCoroutine/)

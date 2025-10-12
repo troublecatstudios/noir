@@ -9,7 +9,7 @@
 public class AssertionContext<T> : IAssertionContext<T>
 ```
 
-**Implements:** _[IAssertionContext\<T\>](/noir/reference//noir/reference/Noir/Testing/IAssertionContext-1/)_
+**Implements:** _[IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/)_
 
 ## Constructors
 
@@ -38,7 +38,7 @@ public AssertionContext<T>(T target, Object[] additionalContexts)
 ```
 
 **Parameters** <br>
-`target` [T](/noir/reference//noir/reference/) <br>
+`target` [T](/noir/reference/) <br>
 `additionalContexts` [Object[]](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
 
 ## Properties
