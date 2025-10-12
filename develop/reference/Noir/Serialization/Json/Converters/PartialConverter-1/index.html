@@ -7037,63 +7037,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Constructors
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ctor" class="md-nav__link">
-    <span class="md-ellipsis">
-      .ctor()
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#canread" class="md-nav__link">
-    <span class="md-ellipsis">
-      CanRead
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#canwrite" class="md-nav__link">
-    <span class="md-ellipsis">
-      CanWrite
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
       Methods
@@ -7102,24 +7045,6 @@
   
     <nav class="md-nav" aria-label="Methods">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#readvaluet-string-jsonreader-jsonserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReadValue(T&amp;, string, JsonReader, JsonSerializer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#writejsonpropertiesjsonwriter-t-jsonserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      WriteJsonProperties(JsonWriter, T, JsonSerializer)
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#canconverttype" class="md-nav__link">
@@ -7190,60 +7115,15 @@
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#package_name" title="package name"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span></a></span><span class="tcx-badge__text">Noir.dll</span></span></p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PartialConverter</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JsonConverter</span>
 </code></pre></div>
-<p><strong>Implements:</strong> <em><a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonConverter</a></em></p>
-<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
-<p><a name=".ctor"></a></p>
-<h3 id="ctor"><code>.ctor()</code><a class="headerlink" href="#ctor" title="Permanent link">&para;</a></h3>
-<p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private"><code>private</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">protected</span><span class="w"> </span><span class="n">PartialConverter</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
-<p><a name="CanRead"></a></p>
-<h3 id="canread"><code>CanRead</code><a class="headerlink" href="#canread" title="Permanent link">&para;</a></h3>
-<p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">CanRead</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-<p><a name="CanWrite"></a></p>
-<h3 id="canwrite"><code>CanWrite</code><a class="headerlink" href="#canwrite" title="Permanent link">&para;</a></h3>
-<p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">CanWrite</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
+<p><strong>Implements:</strong> <em><a href="/noir/reference/">JsonConverter</a></em></p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
-<p><a name="ReadValue"></a></p>
-<h3 id="readvaluet-string-jsonreader-jsonserializer"><code>ReadValue(T&amp;, string, JsonReader, JsonSerializer)</code><a class="headerlink" href="#readvaluet-string-jsonreader-jsonserializer" title="Permanent link">&para;</a></h3>
-<p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private"><code>private</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">protected</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ReadValue</span><span class="p">(</span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="k">value</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">JsonReader</span><span class="w"> </span><span class="n">reader</span><span class="p">,</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">                                   </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Parameters</strong> <br>
-<code>value</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">T&amp;</a> <br>
-<code>name</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0">string</a> <br>
-<code>reader</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonReader</a> <br>
-<code>serializer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonSerializer</a> <br></p>
-<p><a name="WriteJsonProperties"></a></p>
-<h3 id="writejsonpropertiesjsonwriter-t-jsonserializer"><code>WriteJsonProperties(JsonWriter, T, JsonSerializer)</code><a class="headerlink" href="#writejsonpropertiesjsonwriter-t-jsonserializer" title="Permanent link">&para;</a></h3>
-<p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private"><code>private</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">protected</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">WriteJsonProperties</span><span class="p">(</span><span class="n">JsonWriter</span><span class="w"> </span><span class="n">writer</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="k">value</span><span class="p">,</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">                                             </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Parameters</strong> <br>
-<code>writer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonWriter</a> <br>
-<code>value</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">T</a> <br>
-<code>serializer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonSerializer</a> <br></p>
 <p><a name="CanConvert"></a></p>
 <h3 id="canconverttype"><code>CanConvert(Type)</code><a class="headerlink" href="#canconverttype" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
 Determine if the object type is <typeparamref name="T" /></p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">CanConvert</span><span class="p">(</span><span class="n">Type</span><span class="w"> </span><span class="n">objectType</span><span class="p">)</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">CanConvert</span><span class="p">(</span><span class="n">Type</span><span class="w"> </span><span class="n">objectType</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>objectType</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0">Type</a> <br>
@@ -7254,32 +7134,32 @@ Determine if the object type is <typeparamref name="T" /></p>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0"><code>Object</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
 Read the specified properties to the object.</p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">ReadJson</span><span class="p">(</span><span class="n">JsonReader</span><span class="w"> </span><span class="n">reader</span><span class="p">,</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">objectType</span><span class="p">,</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">                                </span><span class="n">Object</span><span class="w"> </span><span class="n">existingValue</span><span class="p">,</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">ReadJson</span><span class="p">(</span><span class="n">JsonReader</span><span class="w"> </span><span class="n">reader</span><span class="p">,</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">objectType</span><span class="p">,</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">                                </span><span class="n">Object</span><span class="w"> </span><span class="n">existingValue</span><span class="p">,</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
-<code>reader</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonReader</a> <br>
+<code>reader</code> <a href="/noir/reference/">JsonReader</a> <br>
  <br>
 <code>objectType</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Type?view=net-7.0">Type</a> <br>
  <br>
 <code>existingValue</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0">Object</a> <br>
  <br>
-<code>serializer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonSerializer</a> <br>
+<code>serializer</code> <a href="/noir/reference/">JsonSerializer</a> <br>
  <br></p>
 <p><a name="WriteJson"></a></p>
 <h3 id="writejsonjsonwriter-object-jsonserializer"><code>WriteJson(JsonWriter, Object, JsonSerializer)</code><a class="headerlink" href="#writejsonjsonwriter-object-jsonserializer" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
 Write the specified properties of the object.</p>
-<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">WriteJson</span><span class="p">(</span><span class="n">JsonWriter</span><span class="w"> </span><span class="n">writer</span><span class="p">,</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="k">value</span><span class="p">,</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">                               </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
+<div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">WriteJson</span><span class="p">(</span><span class="n">JsonWriter</span><span class="w"> </span><span class="n">writer</span><span class="p">,</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="k">value</span><span class="p">,</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">                               </span><span class="n">JsonSerializer</span><span class="w"> </span><span class="n">serializer</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
-<code>writer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonWriter</a> <br>
+<code>writer</code> <a href="/noir/reference/">JsonWriter</a> <br>
  <br>
 <code>value</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0">Object</a> <br>
  <br>
-<code>serializer</code> <a href="/noir/reference//noir/reference//noir/reference//noir/reference/">JsonSerializer</a> <br>
+<code>serializer</code> <a href="/noir/reference/">JsonSerializer</a> <br>
  <br></p>
 
 
@@ -7303,7 +7183,7 @@ Write the specified properties of the object.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 10, 2025 11:31:16 UTC"><span class="timeago" datetime="2025-10-10T11:31:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 10, 2025 11:31:16 UTC">2025-10-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2025 13:41:48 UTC"><span class="timeago" datetime="2025-10-12T13:41:48+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2025 13:41:48 UTC">2025-10-12</span>
   </span>
 
     
