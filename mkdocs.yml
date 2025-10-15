@@ -107,8 +107,9 @@ nav:
       - features/index.md
       - Gameplay:
         - features/procedural_generation.md
+        - features/events.md
       - Editor:
-        - features/variables.md
+        - features/data_variables.md
         - features/attributes.md
   - Contributing:
       - contributing/developing.md

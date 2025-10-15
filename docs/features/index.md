@@ -12,38 +12,40 @@ The following features make creating game mechanics or adding polish easier.
 
     ---
 
-    Procedural generation is a method of creating data algorithmically instead of manually, combining human-generated content with computer-generated randomness and processing power.
+    Procedural generation is a method of creating data algorithmically instead of manually, combining human-generated
+    content with computer-generated randomness and processing power.
 
     ---
 
-    __Use math to create vast and diverse worlds, enemy behaviors and interactable objects for your games.__
+    __Use math to create vast and diverse worlds, enemy behaviors and interactable objects for your games__
 
 -   :material-flash-outline: &nbsp; __[Events][events]__
 
     ---
 
-    _TODO: add a description here.._
+    Events allow you to publish and subscribe to messages within your game, creating dynamic and reactive experiences
+    while allowing you to more easily refactor and extend your code.
 
     ---
 
     __Easily connect multiple bahaviours together without tight coupling__
 
--   :material-circle-multiple-outline: &nbsp; __[Object pooling][pool]__
+-   :material-circle-multiple-outline: &nbsp; __Object pooling__
 
     ---
 
-    Object pooling enables efficient spawning and management of hundreds or thousands
-    of objects using prefabs and a simple MonoBehaviour definition.
+    **Coming soon.** Object pooling enables efficient spawning and management of hundreds or thousands
+    of objects using prefabs and a simple MonoBehaviour.
 
     ---
 
     __Create hectic and exciting gameplay without over taxing your players machines__
 
--   :material-cast-audio: &nbsp; __[Sound Effects][sfx]__
+-   :material-cast-audio: &nbsp; __Sound Effects__
 
     ---
 
-    Sound effects are data objects that reference mulitple [AudioClip]() and decouple
+    **Documentation coming soon.** Sound effects are data objects that reference mulitple [AudioClip][unity_audioclip] and decouple
     asset references from code, allowing game code and animations to play sounds easily.
 
     ---
@@ -53,9 +55,10 @@ The following features make creating game mechanics or adding polish easier.
 </div>
 
   [procgen]: procedural_generation.md
-  [events]: info.md
-  [pool]: meta.md
-  [sfx]: projects.md
+  [events]: events.md
+  [pool]: object_pooling.md
+  [sfx]: sound_effects.md
+  [unity_audioclip]: https://docs.unity3d.com/ScriptReference/AudioClip.html
 
 ### Editor
 
@@ -63,25 +66,27 @@ The following features greatly improve the authoring experience when working on 
 
 <div class="grid cards" markdown>
 
--   :material-code-brackets: &nbsp; __[Attributes][attributes]__
+-   :material-code-brackets: &nbsp; __Attributes__
 
     ---
 
-    _TODO: add a description here.._
+    **Documentation coming soon.** Save time and keystrokes by using built-in decorators to automatically create ScriptableObjects,
+    bind input actions, automatically populate component references and more.
 
     ---
 
-    __Add a one sentence description__
+    __Attributes reduce the amount of code you have to write to take advantage of powerful editor shortcuts__
 
--   :material-code-block-braces: &nbsp; __[Code Generation][codegen]__
-
-    ---
-
-    _TODO: add a description here.._
+-   :material-code-block-braces: &nbsp; __Code Generation__
 
     ---
 
-    __Add a one sentence description__
+    **Documentation coming soon.** Noir generates and automatically updates C# code that allows you to access your scenes, sorting layers,
+    collision layers, tags and more directly from your scripts.
+
+    ---
+
+    __Easily access Unity constructs and receive build errors if they are removed/renamed__
 
 -   :material-variable-box: &nbsp; __[Data Variables][variables]__
 
@@ -92,21 +97,22 @@ The following features greatly improve the authoring experience when working on 
 
     ---
 
-    __Simpler organization and management of data__
+    __Simpler organization, management and sharing of data across your game objects__
 
--   :material-robot-happy-outline: &nbsp; __[NoirBehaviour][noirbehaviour]__
-
-    ---
-
-    _TODO: add a description here.._
+-   :material-robot-happy-outline: &nbsp; __NoirBehaviour__
 
     ---
 
-    __Add a one sentence description__
+    **Documentation coming soon.** Noir inlcudes a base behaviour class that provides easy access to the Noir event system, service location,
+    and logging.
+
+    ---
+
+    __No need to roll your own bootstrap class or copy and paste blocks of code to each behaviour__
 
 </div>
 
   [attributes]: attributes.md
-  [codegen]: info.md
-  [variables]: variables.md
-  [noirbehaviour]: projects.md
+  [codegen]: codegen.md
+  [variables]: data_variables.md
+  [noirbehaviour]: noirbehaviour.md
