@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Base class for Noir MonoBehaviour scripts, providing easy access to logging, time, services, and event dispatching.
+
 
 ```csharp
 public class NoirBehaviour : MonoBehaviour
@@ -32,6 +34,8 @@ public NoirBehaviour()
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a string representation of this behaviour, including its unique identifier.
+
 
 ```csharp
 public virtual string ToString()
