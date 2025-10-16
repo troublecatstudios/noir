@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace Noir {
-    public sealed class NoirGameManager : NoirSingletonBehaviour<NoirGameManager> {
+    internal sealed class NoirGameManager : NoirSingletonBehaviour<NoirGameManager> {
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void OnFirstSceneLoad() {
             if (!_instance) {

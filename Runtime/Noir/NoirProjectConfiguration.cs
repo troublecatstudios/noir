@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 namespace Noir {
+    /// <summary>
+    /// Scriptable object that holds Noir project configuration settings and provides runtime access to them.
+    /// </summary>
     public class NoirProjectConfiguration : ScriptableObject {
         internal const string DefineDisableCodeGeneration = "NOIR_CODE_GEN_DISABLED";
         internal const string PackageName = "Noir Library";
@@ -13,6 +16,10 @@ namespace Noir {
 
         private static readonly object _lock = new();
         private static NoirProjectConfiguration _instance = null;
+
+        /// <summary>
+        /// Gets the singleton instance of the NoirProjectConfiguration from project resources.
+        /// </summary>
         public static NoirProjectConfiguration Instance {
             get {
                 if (!_instance) {
@@ -85,14 +92,41 @@ namespace Noir {
         [SerializeField]
         private AudioMixerGroup _defaultAudioMixerGroup;
 
+        /// <summary>
+        /// Gets the frame rate to lock the application to, if framerate locking is enabled.
+        /// </summary>
         public int LockedFrameRate => _lockedFrameRate;
+
+        /// <summary>
+        /// Gets a value indicating whether the framerate is locked.
+        /// </summary>
         public bool IsFramerateLocked => _lockFrameRate;
+
+        /// <summary>
+        /// Gets a value indicating whether automatic spawning of game managers is enabled.
+        /// </summary>
         public bool IsAutomaticSpawnEnabled => _automaticallySpawnGameManagers;
+
+        /// <summary>
+        /// Gets a value indicating whether code generation is enabled.
+        /// </summary>
         public bool IsCodeGenerationEnabled => _enableCodeGeneration;
-        public NoirGameManager GameManagerPrefab => _gameManagerPrefab;
+
+        /// <summary>
+        /// Gets the prefab to use for the Noir game manager.
+        /// </summary>
+        internal NoirGameManager GameManagerPrefab => _gameManagerPrefab;
+
+        /// <summary>
+        /// Gets the default audio mixer group for the Noir project.
+        /// </summary>
         public AudioMixerGroup DefaultAudioMixerGroup => _defaultAudioMixerGroup;
 
 #if UNITY_EDITOR
+        /// <summary>
+        /// Called by Unity when the scriptable object is validated in the editor.
+        /// Updates scripting define symbols based on code generation settings.
+        /// </summary>
         private void OnValidate() {
             // TODO: figure out a way to not have this code in two places (here and in ActiveBuildTargetChangedHandler)
             var platform = UnityEditor.EditorUserBuildSettings.selectedBuildTargetGroup;
