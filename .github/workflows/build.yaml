@@ -135,7 +135,7 @@ jobs:
         global-json-file: .github/build/global.json
     - name: Run Cranky
       id: docblocks
-      run: dotnet tool update cranky -g && cranky --project ./.github/build/${{ matrix.project }} --github --set-exit-code --percentages 65,95
+      run: dotnet tool update cranky -g && cranky --project .github/build/${{ matrix.project }} --github --set-exit-code --percentages 65,95
     - uses: mshick/add-pr-comment@v2
       if: always()
       with:
