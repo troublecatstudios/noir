@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Specifies the different types of easing functions for interpolation.
+
 
 ```csharp
 public sealed enum EaseType : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible
