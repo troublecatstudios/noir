@@ -127,6 +127,12 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Mark repository as safe
+      shell: bash
+      run: git config --global --add safe.directory $GITHUB_WORKSPACE
+    - uses: actions/setup-dotnet@v4
+      with:
+        global-json-file: .github/build/global.json
     - name: Run Cranky
       id: docblocks
       run: dotnet tool update cranky -g && cranky --project ./.github/build/${{ matrix.project }} --github --set-exit-code --percentages 65,95
