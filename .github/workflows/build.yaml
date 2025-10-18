@@ -120,7 +120,7 @@ jobs:
       image: unityci/editor:ubuntu-${{ needs.prep.outputs.unity_version }}-base-3.1.0
     strategy:
       matrix:
-        project: ['Noir.csproj', 'NoirEditor.csproj']
+        project: ['Noir', 'NoirEditor']
     permissions:
       checks: write
       statuses: write
@@ -143,12 +143,15 @@ jobs:
         dotnet build ./NoirEditor.csproj
     - name: Run Cranky
       id: docblocks
-      run: dotnet tool update cranky -g && cranky --project .github/build/${{ matrix.project }} --github --set-exit-code --percentages 65,95
+      shell: bash
+      run: |
+        dotnet tool update cranky -g
+        dotnet tool run cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages 65,95
     - uses: mshick/add-pr-comment@v2
       if: always()
       with:
-        message-id: api_doc_cov
-        message: "Public API documentation coverage: ${{ steps.docblocks.outputs.percent }}%"
+        message-id: api_doc_cov-${{ matrix.project }}
+        message: "Public API documentation coverage for ${{ matrix.project }}: ${{ steps.docblocks.outputs.percent }}%"
 
   # Deploy NuGet
   # --------------------------------------------------------------------------------
