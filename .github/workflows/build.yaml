@@ -135,18 +135,13 @@ jobs:
     - uses: actions/setup-dotnet@v4
       with:
         global-json-file: .github/build/global.json
-    - name: Build code and create NuGet packages
-      shell: bash
-      run: |
-        cd ./.github/build
-        dotnet build ./Noir.csproj
-        dotnet build ./NoirEditor.csproj
     - name: Run Cranky
       id: docblocks
       shell: bash
       run: |
         dotnet tool update cranky -g
-        dotnet tool run cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages 65,95
+        export PATH="$PATH:/github/home/.dotnet/tools"
+        cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages 65,95
     - uses: mshick/add-pr-comment@v2
       if: always()
       with:
