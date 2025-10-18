@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides extension methods and utilities for working with GameObjects.
+
 
 ```csharp
 public static class GameObjectExtensions
