@@ -119,6 +119,7 @@ jobs:
     container:
       image: unityci/editor:ubuntu-${{ needs.prep.outputs.unity_version }}-base-3.1.0
     strategy:
+      fail-fast: false
       matrix:
         project: ['Noir', 'NoirEditor']
     permissions:
@@ -135,6 +136,11 @@ jobs:
     - uses: actions/setup-dotnet@v4
       with:
         global-json-file: .github/build/global.json
+    - name: Build ${{ matrix.project }}.csproj
+      shell: bash
+      run: |
+        cd ./.github/build
+        dotnet build ./${{ matrix.project }}.csproj
     - name: Run Cranky
       id: docblocks
       shell: bash
