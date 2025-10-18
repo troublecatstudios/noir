@@ -19,16 +19,16 @@
 
   <ItemGroup>
     <!-- include supporting package files -->
-    <None Include="$(RepoRoot)README.md" Pack="true" PackagePath=""/>
-    <None Include="$(RepoRoot)package/LICENSE.md" Pack="true" PackagePath=""/>
+    <None Include="../../README.md" Pack="true" PackagePath=""/>
+    <None Include="../../package/LICENSE.md" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="$(RepoRoot)package/Runtime/Noir/**/*.cs" />
+    <Compile Include="../../package/Runtime/Noir/**/*.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>$(RepoRoot)package/Vendor/Newtonsoft.Json.dll</HintPath>
+      <HintPath>../../package/Vendor/Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
