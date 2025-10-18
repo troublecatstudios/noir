@@ -2,6 +2,9 @@
 using UnityEngine;
 
 namespace Noir {
+    /// <summary>
+    /// Provides extension methods and utilities for working with GameObjects.
+    /// </summary>
     public static class GameObjectExtensions {
         /// <summary>
         /// Gets the current GameObjects hierarchy as a path expression.

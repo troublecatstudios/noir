@@ -1,14 +1,17 @@
 ﻿using System;
 
 namespace Noir {
+    /// <summary>
+    /// Provides extension methods and utilities for working with collections.
+    /// </summary>
     public static class Collections {
         /// <summary>
-        /// Performs an insertion sort on the given collection.
+        /// Performs an insertion sort on the given array up to the specified length.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="array"></param>
-        /// <param name="length"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">The type of elements in the array. Must implement <see cref="IComparable{T}"/> and <see cref="IEquatable{T}"/>.</typeparam>
+        /// <param name="array">The array to sort.</param>
+        /// <param name="length">The number of elements to sort from the start of the array.</param>
+        /// <returns>The sorted array.</returns>
         public static T[] Sort<T>(T[] array, int length) where T : IComparable<T>, IEquatable<T> {
             for (int i = 1; i < length; i++) {
                 var key = array[i];
