@@ -150,7 +150,7 @@ jobs:
         export PATH="$PATH:/github/home/.dotnet/tools"
         cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages ${{ env.CRANKY_MIN_COVERAGE }},95
     - uses: mshick/add-pr-comment@v2
-      if: steps.cranky.outcome == failure()
+      if: always() && steps.cranky.outcome == failure()
       with:
         message-id: api_doc_cov-${{ matrix.project }}
         message: |
@@ -160,7 +160,7 @@ jobs:
           **Documented API Members**: ${{ steps.cranky.outputs.documented }}
           **Undocumented API Members**: ${{ steps.cranky.outputs.undocumented }}
     - uses: mshick/add-pr-comment@v2
-      if: steps.cranky.outcome == success()
+      if: always() && steps.cranky.outcome == success()
       with:
         message-id: api_doc_cov-${{ matrix.project }}
         message: |
