@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides extension methods and utilities for working with collections.
+
 
 ```csharp
 public static class Collections

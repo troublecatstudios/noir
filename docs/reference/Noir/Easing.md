@@ -4,7 +4,7 @@
 
 <!-- tc:assembly Noir.dll -->
 
-Easing functions to be used for interpolation
+Provides easing functions for interpolation of various types.
 
 
 ```csharp
@@ -19,6 +19,8 @@ public static class Easing
 <!-- tc:scope public -->
 <!-- tc:return_type Color https://docs.unity3d.com/ScriptReference/Color.html -->
 <!-- tc:version 1.0.0 -->
+Interpolates between two [Color](https://docs.unity3d.com/ScriptReference/Color.html) values using the specified easing type.
+
 
 ```csharp
 public Color Ease(EaseType type, Color from, Color to, float t)
@@ -27,9 +29,13 @@ public Color Ease(EaseType type, Color from, Color to, float t)
 
 **Parameters** <br>
 `type` [EaseType](/noir/reference/Noir/EaseType/) <br>
+ <br>
 `from` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+ <br>
 `to` [Color](https://docs.unity3d.com/ScriptReference/Color.html) <br>
+ <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 
 <a name="BackIn"></a>
 
@@ -37,6 +43,8 @@ public Color Ease(EaseType type, Color from, Color to, float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Back in easing.
+
 
 ```csharp
 public float BackIn(float t)
@@ -52,6 +60,8 @@ public float BackIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Back in-out easing.
+
 
 ```csharp
 public float BackInOut(float t)
@@ -67,6 +77,8 @@ public float BackInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Back out easing.
+
 
 ```csharp
 public float BackOut(float t)
@@ -82,6 +94,8 @@ public float BackOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Bounce in easing.
+
 
 ```csharp
 public float BounceIn(float t)
@@ -97,6 +111,8 @@ public float BounceIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Bounce in-out easing.
+
 
 ```csharp
 public float BounceInOut(float t)
@@ -112,6 +128,8 @@ public float BounceInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Bounce out easing.
+
 
 ```csharp
 public float BounceOut(float t)
@@ -127,6 +145,8 @@ public float BounceOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Circular in easing.
+
 
 ```csharp
 public float CircularIn(float t)
@@ -142,6 +162,8 @@ public float CircularIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Circular in-out easing.
+
 
 ```csharp
 public float CircularInOut(float t)
@@ -157,6 +179,8 @@ public float CircularInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Circular out easing.
+
 
 ```csharp
 public float CircularOut(float t)
@@ -172,6 +196,8 @@ public float CircularOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Cubic in easing (accelerating from zero velocity).
+
 
 ```csharp
 public float CubicIn(float t)
@@ -187,6 +213,8 @@ public float CubicIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Cubic in-out easing (acceleration until halfway, then deceleration).
+
 
 ```csharp
 public float CubicInOut(float t)
@@ -202,6 +230,8 @@ public float CubicInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Cubic out easing (decelerating to zero velocity).
+
 
 ```csharp
 public float CubicOut(float t)
@@ -217,6 +247,8 @@ public float CubicOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Interpolates between two float values using the specified easing type.
+
 
 ```csharp
 public float Ease(EaseType type, float from, float to, float t)
@@ -225,9 +257,13 @@ public float Ease(EaseType type, float from, float to, float t)
 
 **Parameters** <br>
 `type` [EaseType](/noir/reference/Noir/EaseType/) <br>
+ <br>
 `from` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `to` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 
 <a name="ElasticIn"></a>
 
@@ -235,6 +271,8 @@ public float Ease(EaseType type, float from, float to, float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Elastic in easing.
+
 
 ```csharp
 public float ElasticIn(float t)
@@ -250,6 +288,8 @@ public float ElasticIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Elastic in-out easing.
+
 
 ```csharp
 public float ElasticInOut(float t)
@@ -265,6 +305,8 @@ public float ElasticInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Elastic out easing.
+
 
 ```csharp
 public float ElasticOut(float t)
@@ -280,6 +322,8 @@ public float ElasticOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Exponential in easing.
+
 
 ```csharp
 public float ExponentialIn(float t)
@@ -295,6 +339,8 @@ public float ExponentialIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Exponential in-out easing.
+
 
 ```csharp
 public float ExponentialInOut(float t)
@@ -310,6 +356,8 @@ public float ExponentialInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Exponential out easing.
+
 
 ```csharp
 public float ExponentialOut(float t)
@@ -325,6 +373,8 @@ public float ExponentialOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Linear easing (no acceleration).
+
 
 ```csharp
 public float Linear(float t)
@@ -340,6 +390,8 @@ public float Linear(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quadratic in easing (accelerating from zero velocity).
+
 
 ```csharp
 public float QuadraticIn(float t)
@@ -355,6 +407,8 @@ public float QuadraticIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quadratic in-out easing (acceleration until halfway, then deceleration).
+
 
 ```csharp
 public float QuadraticInOut(float t)
@@ -370,6 +424,8 @@ public float QuadraticInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quadratic out easing (decelerating to zero velocity).
+
 
 ```csharp
 public float QuadraticOut(float t)
@@ -385,6 +441,8 @@ public float QuadraticOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quartic in easing (accelerating from zero velocity).
+
 
 ```csharp
 public float QuarticIn(float t)
@@ -400,6 +458,8 @@ public float QuarticIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quartic in-out easing (acceleration until halfway, then deceleration).
+
 
 ```csharp
 public float QuarticInOut(float t)
@@ -415,6 +475,8 @@ public float QuarticInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quartic out easing (decelerating to zero velocity).
+
 
 ```csharp
 public float QuarticOut(float t)
@@ -430,6 +492,8 @@ public float QuarticOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quintic in easing (accelerating from zero velocity).
+
 
 ```csharp
 public float QuinticIn(float t)
@@ -445,6 +509,8 @@ public float QuinticIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quintic in-out easing (acceleration until halfway, then deceleration).
+
 
 ```csharp
 public float QuinticInOut(float t)
@@ -460,6 +526,8 @@ public float QuinticInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Quintic out easing (decelerating to zero velocity).
+
 
 ```csharp
 public float QuinticOut(float t)
@@ -475,6 +543,8 @@ public float QuinticOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Sinusoidal in easing.
+
 
 ```csharp
 public float SinusoidalIn(float t)
@@ -490,6 +560,8 @@ public float SinusoidalIn(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Sinusoidal in-out easing.
+
 
 ```csharp
 public float SinusoidalInOut(float t)
@@ -505,6 +577,8 @@ public float SinusoidalInOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Sinusoidal out easing.
+
 
 ```csharp
 public float SinusoidalOut(float t)
@@ -520,6 +594,8 @@ public float SinusoidalOut(float t)
 <!-- tc:scope public -->
 <!-- tc:return_type Func\<T, TResult\> https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the easing function delegate for the specified [EaseType](/noir/reference/Noir/EaseType/).
+
 
 ```csharp
 public Func<T, TResult> Function(EaseType type)
@@ -528,6 +604,7 @@ public Func<T, TResult> Function(EaseType type)
 
 **Parameters** <br>
 `type` [EaseType](/noir/reference/Noir/EaseType/) <br>
+ <br>
 
 <a name="Ease"></a>
 
@@ -535,6 +612,8 @@ public Func<T, TResult> Function(EaseType type)
 <!-- tc:scope public -->
 <!-- tc:return_type Quaternion https://docs.unity3d.com/ScriptReference/Quaternion.html -->
 <!-- tc:version 1.0.0 -->
+Interpolates between two [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html) values using the specified easing type.
+
 
 ```csharp
 public Quaternion Ease(EaseType type, Quaternion from, Quaternion to, float t)
@@ -543,9 +622,13 @@ public Quaternion Ease(EaseType type, Quaternion from, Quaternion to, float t)
 
 **Parameters** <br>
 `type` [EaseType](/noir/reference/Noir/EaseType/) <br>
+ <br>
 `from` [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html) <br>
+ <br>
 `to` [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html) <br>
+ <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 
 <a name="Ease"></a>
 
@@ -553,6 +636,8 @@ public Quaternion Ease(EaseType type, Quaternion from, Quaternion to, float t)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
+Interpolates between two [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) values using the specified easing type.
+
 
 ```csharp
 public Vector3 Ease(EaseType type, Vector3 from, Vector3 to, float t)
@@ -561,7 +646,11 @@ public Vector3 Ease(EaseType type, Vector3 from, Vector3 to, float t)
 
 **Parameters** <br>
 `type` [EaseType](/noir/reference/Noir/EaseType/) <br>
+ <br>
 `from` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+ <br>
 `to` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+ <br>
 `t` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 

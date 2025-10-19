@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides extension methods for performing upsert operations on [Dictionary<TKey, TValue>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0).
+
 
 ```csharp
 public static class DictionaryExtensions
@@ -61,3 +63,6 @@ public void Upsert(Dictionary<TKey, TValue> target, IDictionary<TKey,
 `target` [Dictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0) <br>
 `source` [IDictionary\<TKey, TValue\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0) <br>
 
+## More information
+
+* [System.Collections.Generic.Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=net-7.0)
