@@ -107,14 +107,13 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: ${{ needs.prep.outputs.unity_version }}
 
-
   #
-  # Best Practices
+  # API Docs Coverage
   # --------------------------------------------------------------------------------
-  # this handles ensuring that the PR and the repository are meeting our project
-  # standards.
+  # this check verifies that the publicly accessible classes and members within our
+  # libraries have documentation comments added to them.
   #
-  best_practices:
+  api_docs_coverage:
     runs-on: ubuntu-latest
     needs: [prep]
     container:
