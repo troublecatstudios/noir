@@ -117,6 +117,8 @@ public VerticalDirections Vertical { get; private set; }
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether this instance and another [Direction](/noir/reference/Noir/Direction/) are equal.
+
 
 ```csharp
 public virtual bool Equals(Direction other)
@@ -125,6 +127,7 @@ public virtual bool Equals(Direction other)
 
 **Parameters** <br>
 `other` [Direction](/noir/reference/Noir/Direction/) <br>
+ <br>
 
 <a name="Equals"></a>
 
@@ -132,6 +135,8 @@ public virtual bool Equals(Direction other)
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether this instance and a specified object are equal.
+
 
 ```csharp
 public virtual bool Equals(Object obj)
@@ -140,6 +145,7 @@ public virtual bool Equals(Object obj)
 
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+ <br>
 
 <a name="GetHashCode"></a>
 
@@ -147,6 +153,8 @@ public virtual bool Equals(Object obj)
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns the hash code for this instance.
+
 
 ```csharp
 public virtual int GetHashCode()
