@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Defines which dimensional method should be used when performing collision checks.
+
 
 ```csharp
 public sealed enum CollisionCheckMethod : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible

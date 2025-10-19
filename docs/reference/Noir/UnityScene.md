@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides utility methods for working with the Unity scene hierarchy.
+
 
 ```csharp
 public class UnityScene

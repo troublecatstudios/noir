@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Represents a [Guid](https://learn.microsoft.com/en-us/dotnet/api/System.Guid?view=net-7.0) split into its component parts,
+            allowing for more granular manipulation or inspection of its binary segments.
+
 
 ```csharp
 public sealed struct SeparatedGuid
@@ -59,3 +62,6 @@ public Byte[] Suffix;
 
 ```
 
+## More information
+
+* [System.Guid](https://learn.microsoft.com/en-us/dotnet/api/System.Guid?view=net-7.0)

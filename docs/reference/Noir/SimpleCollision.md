@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides simple and efficient utility methods for performing 2D and 3D collision checks
+            and working with colliders in Unity.
+
 
 ```csharp
 public static class SimpleCollision
@@ -48,6 +51,8 @@ public bool Check(Vector3 origin, Vector3 direction, float length,
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether a 2D collider contains a specified position.
+
 
 ```csharp
 public bool CheckPosition(Collider2D collider, Vector2 position)
@@ -56,7 +61,9 @@ public bool CheckPosition(Collider2D collider, Vector2 position)
 
 **Parameters** <br>
 `collider` [Collider2D](https://docs.unity3d.com/ScriptReference/Collider2D.html) <br>
+ <br>
 `position` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+ <br>
 
 <a name="TryGetHit"></a>
 
@@ -87,6 +94,8 @@ public bool TryGetHit(Vector3 origin, Vector3 direction, float length,
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
+Calculates a fast approximation of the contact point between two bounds.
+
 
 ```csharp
 public Vector2 GetContactPointFast(Bounds attackBounds, Bounds defenseBounds)
@@ -95,7 +104,9 @@ public Vector2 GetContactPointFast(Bounds attackBounds, Bounds defenseBounds)
 
 **Parameters** <br>
 `attackBounds` [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) <br>
+ <br>
 `defenseBounds` [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) <br>
+ <br>
 
 <a name="GetRandomPointWithinCollider"></a>
 
@@ -103,6 +114,8 @@ public Vector2 GetContactPointFast(Bounds attackBounds, Bounds defenseBounds)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
+Returns a random point inside a [BoxCollider2D](https://docs.unity3d.com/ScriptReference/BoxCollider2D.html).
+
 
 ```csharp
 public Vector2 GetRandomPointWithinCollider(BoxCollider2D collider)
@@ -111,6 +124,7 @@ public Vector2 GetRandomPointWithinCollider(BoxCollider2D collider)
 
 **Parameters** <br>
 `collider` [BoxCollider2D](https://docs.unity3d.com/ScriptReference/BoxCollider2D.html) <br>
+ <br>
 
 <a name="GetRandomPointWithinCollider"></a>
 
@@ -118,6 +132,8 @@ public Vector2 GetRandomPointWithinCollider(BoxCollider2D collider)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
+Returns a random point inside a [CircleCollider2D](https://docs.unity3d.com/ScriptReference/CircleCollider2D.html).
+
 
 ```csharp
 public Vector2 GetRandomPointWithinCollider(CircleCollider2D collider)
@@ -126,4 +142,5 @@ public Vector2 GetRandomPointWithinCollider(CircleCollider2D collider)
 
 **Parameters** <br>
 `collider` [CircleCollider2D](https://docs.unity3d.com/ScriptReference/CircleCollider2D.html) <br>
+ <br>
 

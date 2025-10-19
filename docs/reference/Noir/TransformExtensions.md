@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides extension methods for working with [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) instances in Unity.
+
 
 ```csharp
 public static class TransformExtensions
@@ -28,3 +30,6 @@ public bool TryFind(Transform transform, string name, T& component)
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `component` [T&](/noir/reference/) <br>
 
+## More information
+
+* [UnityEngine.Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
