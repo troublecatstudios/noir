@@ -155,7 +155,7 @@ jobs:
         message-id: api_doc_cov-${{ matrix.project }}
         message: |
           > [!WARNING]
-          > ${{ steps.cranky.outputs.health }} The public API documentation coverage for ${{ matrix.project }} (${{ steps.cranky.outputs.percent }}%) is below the minimum threshold ${{ env.CRANKY_MIN_COVERAGE }}%
+          > ${{ steps.cranky.outputs.health }} The public API documentation coverage for ${{ matrix.project }} (${{ steps.cranky.outputs.percent }}%) is below the minimum threshold of ${{ env.CRANKY_MIN_COVERAGE }}%
 
           **Documented API Members**: ${{ steps.cranky.outputs.documented }}
           **Undocumented API Members**: ${{ steps.cranky.outputs.undocumented }}
@@ -165,7 +165,7 @@ jobs:
         message-id: api_doc_cov-${{ matrix.project }}
         message: |
           > [!TIP]
-          > ${{ steps.cranky.outputs.health }} The public API documentation coverage for ${{ matrix.project }} (${{ steps.cranky.outputs.percent }}%) is above the minimum threshold ${{ env.CRANKY_MIN_COVERAGE }}%
+          > ${{ steps.cranky.outputs.health }} The public API documentation coverage for ${{ matrix.project }} (${{ steps.cranky.outputs.percent }}%) is above the minimum threshold of ${{ env.CRANKY_MIN_COVERAGE }}%
 
           **Documented API Members**: ${{ steps.cranky.outputs.documented }}
           **Undocumented API Members**: ${{ steps.cranky.outputs.undocumented }}
