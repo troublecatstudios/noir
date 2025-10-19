@@ -7349,68 +7349,95 @@
 <h1 id="noirgizmos">NoirGizmos<a class="headerlink" href="#noirgizmos" title="Permanent link">&para;</a></h1>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#namespace" title="namespace"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3a2 2 0 0 0-2 2h2m2-2v2h2V3m2 0v2h2V3m2 0v2h2V3m2 0v2h2a2 2 0 0 0-2-2M3 7v2h2V7m2 0v4h4V7m2 0v4h4V7m2 0v2h2V7M3 11v2h2v-2m14 0v2h2v-2M7 13v4h4v-4m2 0v4h4v-4M3 15v2h2v-2m14 0v2h2v-2M3 19a2 2 0 0 0 2 2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2a2 2 0 0 0 2-2Z"/></svg></span></a></span><span class="tcx-badge__text">Noir</span></span></p>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#package_name" title="package name"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span></a></span><span class="tcx-badge__text">Noir.dll</span></span></p>
+<p>Provides helper methods for drawing gizmos and handles in Unity editor and runtime.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">NoirGizmos</span>
 </code></pre></div>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
 <p><a name="DrawArrow"></a></p>
 <h3 id="drawarrowvector3-vector3-float-float"><code>DrawArrow(Vector3, Vector3, float, float)</code><a class="headerlink" href="#drawarrowvector3-vector3-float-float" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws an arrow gizmo at the given position and direction using the current Gizmos color.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawArrow</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">direction</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">arrowHeadLength</span><span class="p">,</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">                       </span><span class="kt">float</span><span class="w"> </span><span class="n">arrowHeadAngle</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>pos</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>direction</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>arrowHeadLength</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
-<code>arrowHeadAngle</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br></p>
+ <br>
+<code>arrowHeadAngle</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
+ <br></p>
 <p><a name="DrawArrow"></a></p>
 <h3 id="drawarrowvector3-vector3-color-float-float"><code>DrawArrow(Vector3, Vector3, Color, float, float)</code><a class="headerlink" href="#drawarrowvector3-vector3-color-float-float" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws an arrow gizmo at the given position and direction, with a specified color.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawArrow</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">direction</span><span class="p">,</span><span class="w"> </span><span class="n">Color</span><span class="w"> </span><span class="n">color</span><span class="p">,</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">                       </span><span class="kt">float</span><span class="w"> </span><span class="n">arrowHeadLength</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">arrowHeadAngle</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>pos</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>direction</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>color</code> <a href="https://docs.unity3d.com/ScriptReference/Color.html">Color</a> <br>
+ <br>
 <code>arrowHeadLength</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
-<code>arrowHeadAngle</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br></p>
+ <br>
+<code>arrowHeadAngle</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
+ <br></p>
 <p><a name="DrawBezierCurve"></a></p>
 <h3 id="drawbeziercurvevector3-beziercurve-int-float-t"><code>DrawBezierCurve(Vector3, BezierCurve, int, float, T?)</code><a class="headerlink" href="#drawbeziercurvevector3-beziercurve-int-float-t" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws a quadratic Bezier curve using the specified origin and curve definition.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawBezierCurve</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">origin</span><span class="p">,</span><span class="w"> </span><span class="n">BezierCurve</span><span class="w"> </span><span class="n">curve</span><span class="p">,</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">                             </span><span class="kt">int</span><span class="w"> </span><span class="n">numberOfPoints</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">pointRadius</span><span class="p">,</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">                             </span><span class="n">T</span><span class="o">?</span><span class="w"> </span><span class="n">direction</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>origin</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>curve</code> <a href="/noir/reference/Noir/BezierCurve/">BezierCurve</a> <br>
+ <br>
 <code>numberOfPoints</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br>
 <code>pointRadius</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
-<code>direction</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0">T?</a> <br></p>
+ <br>
+<code>direction</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0">T?</a> <br>
+ <br></p>
 <p><a name="DrawLinesToTargets"></a></p>
 <h3 id="drawlinestotargetsgameobject-unityevent-vector3"><code>DrawLinesToTargets(GameObject, UnityEvent, Vector3)</code><a class="headerlink" href="#drawlinestotargetsgameobject-unityevent-vector3" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws dotted lines from a parent GameObject to the targets of a UnityEvent in the Unity Editor.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawLinesToTargets</span><span class="p">(</span><span class="n">GameObject</span><span class="w"> </span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="n">UnityEvent</span><span class="w"> </span><span class="n">ev</span><span class="p">,</span><span class="w"> </span><span class="n">Vector3</span><span class="w"> </span><span class="n">offset</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>parent</code> <a href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a> <br>
+ <br>
 <code>ev</code> <a href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a> <br>
-<code>offset</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br></p>
+ <br>
+<code>offset</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br></p>
 <p><a name="DrawTypeIcon"></a></p>
 <h3 id="drawtypeiconvector3-string-float"><code>DrawTypeIcon(Vector3, string, float)</code><a class="headerlink" href="#drawtypeiconvector3-string-float" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws an icon and label for the specified type at the given position in the scene view.
+            Only works in the Unity Editor.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawTypeIcon</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">label</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">iconSize</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>position</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>label</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0">string</a> <br>
-<code>iconSize</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br></p>
+ <br>
+<code>iconSize</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
+ <br></p>
 <p><a name="DrawWireArc"></a></p>
 <h3 id="drawwirearcvector3-vector3-float-float-float"><code>DrawWireArc(Vector3, Vector3, float, float, float)</code><a class="headerlink" href="#drawwirearcvector3-vector3-float-float-float" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
@@ -7433,35 +7460,47 @@ Draws a wire arc.</p>
 <p><a name="DrawWireCircle"></a></p>
 <h3 id="drawwirecirclevector3-float-int"><code>DrawWireCircle(Vector3, float, int)</code><a class="headerlink" href="#drawwirecirclevector3-float-int" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws a wireframe circle at the specified center and radius, oriented upwards.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawWireCircle</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">circleCenter</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">circleRadius</span><span class="p">,</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">                            </span><span class="kt">int</span><span class="w"> </span><span class="n">segments</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>circleCenter</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>circleRadius</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
-<code>segments</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br></p>
+ <br>
+<code>segments</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br></p>
 <p><a name="DrawWireCircle"></a></p>
 <h3 id="drawwirecirclevector3-float-vector3-int"><code>DrawWireCircle(Vector3, float, Vector3, int)</code><a class="headerlink" href="#drawwirecirclevector3-float-vector3-int" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws a wireframe circle at the specified center, radius, and normal direction.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawWireCircle</span><span class="p">(</span><span class="n">Vector3</span><span class="w"> </span><span class="n">circleCenter</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">circleRadius</span><span class="p">,</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">                            </span><span class="n">Vector3</span><span class="w"> </span><span class="n">circleNormal</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">segments</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>circleCenter</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
+ <br>
 <code>circleRadius</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
+ <br>
 <code>circleNormal</code> <a href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a> <br>
-<code>segments</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br></p>
+ <br>
+<code>segments</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br></p>
 <p><a name="DrawX"></a></p>
 <h3 id="drawxvector2-float"><code>DrawX(Vector2, float)</code><a class="headerlink" href="#drawxvector2-float" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Draws an 'X' shape wireframe at a given 2D point.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DrawX</span><span class="p">(</span><span class="n">Vector2</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">size</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>point</code> <a href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a> <br>
-<code>size</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br></p>
+ <br>
+<code>size</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0">float</a> <br>
+ <br></p>
 
 
 
@@ -7484,7 +7523,7 @@ Draws a wire arc.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 10, 2025 11:31:16 UTC"><span class="timeago" datetime="2025-10-10T11:31:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 10, 2025 11:31:16 UTC">2025-10-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 19, 2025 10:09:08 UTC"><span class="timeago" datetime="2025-10-19T10:09:08+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 19, 2025 10:09:08 UTC">2025-10-19</span>
   </span>
 
     
