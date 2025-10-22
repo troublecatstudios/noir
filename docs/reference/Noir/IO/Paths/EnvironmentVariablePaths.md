@@ -15,20 +15,20 @@ public class EnvironmentVariablePaths : IPlatformPaths
 
 <a name=".ctor"></a>
 
-### `.ctor(IPlatformPaths, AbstractEnvironment)`
+### `.ctor(IPlatformPaths, IEnvironment)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
 
 ```csharp
 public EnvironmentVariablePaths(IPlatformPaths fallback,
-                                 AbstractEnvironment environment)
+                                 IEnvironment environment)
 
 
 ```
 
 **Parameters** <br>
 `fallback` [IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
-`environment` [AbstractEnvironment](/noir/reference/Noir/Abstractions/AbstractEnvironment/) <br>
+`environment` [IEnvironment](/noir/reference/Noir/Abstractions/IEnvironment/) <br>
 
 ## Properties
 

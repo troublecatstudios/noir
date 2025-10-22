@@ -4,6 +4,11 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides an abstraction layer over Unity's [Time](https://docs.unity3d.com/ScriptReference/Time.html) API,
+            exposing commonly used time-related properties such as [IGameTime.time](/noir/reference/Noir/Abstractions/IGameTime/#time).
+            This interface allows game systems to access time values without directly depending on Unity's static [Time](https://docs.unity3d.com/ScriptReference/Time.html) class,
+            making it easier to create deterministic simulations, mock time in tests, or implement custom time sources.
+
 
 ```csharp
 public abstract IGameTime
@@ -71,3 +76,9 @@ public abstract virtual float time { get; }
 
 ```
 
+## More information
+
+* [UnityEngine.Time](https://docs.unity3d.com/ScriptReference/Time.html)
+* [Noir.Abstractions.IGameTime.deltaTime](/noir/reference/Noir/Abstractions/IGameTime/#deltaTime)
+* [Noir.Abstractions.IGameTime.time](/noir/reference/Noir/Abstractions/IGameTime/#time)
+* [UnityEngine.Time](https://docs.unity3d.com/ScriptReference/Time.html)
