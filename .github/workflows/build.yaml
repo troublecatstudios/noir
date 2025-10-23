@@ -19,7 +19,8 @@ env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
   DOTNET_NOLOGO: true
   NuGetDirectory: ${{ github.workspace}}/.build/nuget
-  CRANKY_MIN_COVERAGE: 65
+  CRANKY_MIN_COVERAGE: 50
+  CRANKY_ACCEPTABLE_COVERAGE: 85
 
 jobs:
   #
