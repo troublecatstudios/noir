@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace NoirEditor.Reflection {
-    public static partial class Reflector {
+    internal static partial class Reflector {
         public static IEnumerable<MethodInfo> GetAllMethods(object target, Func<MethodInfo, bool> predicate) {
             IEnumerable<MethodInfo> methodInfos = target.GetType()
                 .GetMethods(BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public)

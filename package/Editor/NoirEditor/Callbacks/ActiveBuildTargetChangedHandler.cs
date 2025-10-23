@@ -4,7 +4,7 @@ using UnityEditor.Build;
 
 namespace NoirEditor.Callbacks {
     [InitializeOnLoad]
-    public class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged {
+    internal class ActiveBuildTargetChangedHandler : IActiveBuildTargetChanged {
 
         private static void AddDefines() {
             var platform = EditorUserBuildSettings.selectedBuildTargetGroup;

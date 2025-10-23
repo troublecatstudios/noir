@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 namespace NoirEditor.Editors.PropertyDrawers {
     [CustomPropertyDrawer(typeof(Vector4Int), true)]
-    public class Vector4IntPropertyDrawer : PropertyDrawer {
+    internal class Vector4IntPropertyDrawer : PropertyDrawer {
         private SerializedProperty _x, _y, _z, _w;
         private bool _cache = false;
         private string _name;

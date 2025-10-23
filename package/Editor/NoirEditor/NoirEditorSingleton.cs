@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+// ReSharper disable InconsistentNaming
 
 namespace NoirEditor {
     /// <summary>
@@ -10,7 +11,13 @@ namespace NoirEditor {
     /// </remarks>
     public abstract class EditorSingleton<T> : ScriptableObject
         where T : EditorSingleton<T> {
-        // The singleton instance. (Not thread safe but fine for ScriptableObjects.)
+
+        /// <summary>
+        /// The singleton instance of type <typeparamref name="T"/>.
+        /// </summary>
+        /// <remarks>
+        /// This is not thread safe, but should be fine for use within ScriptableObjects within the Unity Editor.
+        /// </remarks>
         public static T instance => _instance != null ? _instance : Initialize();
 
         private static T _instance;

@@ -4,7 +4,7 @@ using Noir.Attributes;
 
 namespace NoirEditor.Editors.PropertyDrawers {
     [CustomPropertyDrawer(typeof(TrafficLightAttribute), true)]
-    public class TrafficLightDrawer : PropertyDrawer {
+    internal class TrafficLightDrawer : PropertyDrawer {
         TrafficLightAttribute trafficLight;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {

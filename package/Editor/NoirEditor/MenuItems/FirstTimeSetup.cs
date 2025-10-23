@@ -2,7 +2,7 @@
 using UnityEditor;
 
 namespace NoirEditor.MenuItems {
-    public static class FirstTimeSetup {
+    internal static class FirstTimeSetup {
         private const string MENU_PATH = MenuConstants.BASE_MENU_PATH_TOOLS + "/Setup/First Time Setup";
 
         [MenuItem(MENU_PATH, priority = 111)]

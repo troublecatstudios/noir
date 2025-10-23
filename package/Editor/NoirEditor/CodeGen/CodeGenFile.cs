@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 namespace NoirEditor.CodeGen {
-    public static class CodeGenFile {
+    internal static class CodeGenFile {
         public static string GetClassWrapper(string @namespace, string className, string contents, string[] usings = null, string header = null, string footer = null) {
             var output = $"namespace {@namespace} {{\n";
             output += "    using System.Collections.Generic;\n";

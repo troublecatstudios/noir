@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEditor;
 
 namespace NoirEditor.Reflection {
-    public partial class Reflector {
+    internal partial class Reflector {
         public static bool IsDecoratedWithAttribute<TAttr>(this Type type) where TAttr : Attribute {
             var attributeUsage = Attribute.GetCustomAttribute(typeof(TAttr), typeof(AttributeUsageAttribute)) as AttributeUsageAttribute;
             var inherited = attributeUsage?.Inherited ?? false;
