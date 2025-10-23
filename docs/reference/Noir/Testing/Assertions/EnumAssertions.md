@@ -4,6 +4,8 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for working with [Enum](https://learn.microsoft.com/en-us/dotnet/api/System.Enum?view=net-7.0) types.
+
 
 ```csharp
 public static class EnumAssertions
@@ -42,3 +44,6 @@ public void IsFlag(IAssertionContext<T> context, string message)
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [System.Enum](https://learn.microsoft.com/en-us/dotnet/api/System.Enum?view=net-7.0)

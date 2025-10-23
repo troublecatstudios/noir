@@ -4,6 +4,8 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for validating general object states, including nullability and reference equality.
+
 
 ```csharp
 public static class ObjectAssertions

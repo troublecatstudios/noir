@@ -4,6 +4,8 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for working with [IDictionary<TKey, TValue>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0) instances.
+
 
 ```csharp
 public static class DictionaryAssertions
@@ -27,3 +29,6 @@ public IAssertionContext<T> Entry(IAssertionContext<T> context, TKey key)
 `context` [IAssertionContext\<T\>](/noir/reference/Noir/Testing/IAssertionContext-1/) <br>
 `key` [TKey](/noir/reference/) <br>
 
+## More information
+
+* [System.Collections.Generic.IDictionary`2](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=net-7.0)

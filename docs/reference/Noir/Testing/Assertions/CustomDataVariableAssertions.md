@@ -4,6 +4,8 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for verifying the state and contents of [DataVariable<T>](/noir/reference/Noir/Variables/DataVariable-1/) instances.
+
 
 ```csharp
 public static class CustomDataVariableAssertions
@@ -27,3 +29,6 @@ public void HasValue(IAssertionContext<T> context, T value, string message)
 `value` [T](/noir/reference/) <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [Noir.Variables.DataVariable`1](/noir/reference/Noir/Variables/DataVariable-1/)

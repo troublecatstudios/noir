@@ -4,6 +4,8 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for validating string values.
+
 
 ```csharp
 public static class StringAssertions
@@ -16,7 +18,7 @@ public static class StringAssertions
 ### `Contains(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
-Asserts that the string contains the given string.
+Asserts that the target string contains the specified expected substring.
 
 
 ```csharp
@@ -35,7 +37,7 @@ public void Contains(IAssertionContext<T> context, string expected)
 ### `EndsWith(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
-Asserts that the string ends with the given string.
+Asserts that the target string ends with the specified expected string.
 
 
 ```csharp
@@ -54,7 +56,7 @@ public void EndsWith(IAssertionContext<T> context, string expected)
 ### `IsExactly(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
-Asserts that the string matches the given expected string.
+Asserts that the target string is exactly equal to the expected string.
 
 
 ```csharp
@@ -73,7 +75,7 @@ public void IsExactly(IAssertionContext<T> context, string expected)
 ### `StartsWith(IAssertionContext<T>, string)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
-Asserts that the string starts with the given string.
+Asserts that the target string starts with the specified expected string.
 
 
 ```csharp
