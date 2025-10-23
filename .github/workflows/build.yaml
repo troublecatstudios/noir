@@ -148,7 +148,7 @@ jobs:
       run: |
         dotnet tool update cranky -g
         export PATH="$PATH:/github/home/.dotnet/tools"
-        cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages ${{ env.CRANKY_MIN_COVERAGE }},95
+        cranky --project .github/build/${{ matrix.project }}.csproj --github --set-exit-code --percentages ${{ env.CRANKY_MIN_COVERAGE }},${{ env.CRANKY_ACCEPTABLE_COVERAGE }}
     - uses: mshick/add-pr-comment@v2
       if: failure()
       with:
