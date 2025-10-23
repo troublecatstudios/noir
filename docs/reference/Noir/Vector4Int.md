@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Represents a four-dimensional vector with integer components.
+            Provides basic arithmetic operations, conversions, and equality comparisons.
+
 
 ```csharp
 public sealed struct Vector4Int : IEquatable<T>
@@ -18,6 +21,8 @@ public sealed struct Vector4Int : IEquatable<T>
 ### `.ctor(int, int, int, int)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Initializes a new instance of the [Vector4Int](/noir/reference/Noir/Vector4Int/) struct with the specified components.
+
 
 ```csharp
 public Vector4Int(int x, int y, int z, int w)
@@ -26,9 +31,13 @@ public Vector4Int(int x, int y, int z, int w)
 
 **Parameters** <br>
 `x` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 `y` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 `z` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 `w` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 
 ## Fields
 
@@ -148,6 +157,8 @@ public readonly static Vector4Int zero;
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the squared magnitude of the vector.
+
 
 ```csharp
 public int sqrMagnitude { get; }
@@ -162,6 +173,8 @@ public int sqrMagnitude { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether this vector is equal to another [Vector4Int](/noir/reference/Noir/Vector4Int/).
+
 
 ```csharp
 public virtual bool Equals(Vector4Int other)
@@ -170,6 +183,7 @@ public virtual bool Equals(Vector4Int other)
 
 **Parameters** <br>
 `other` [Vector4Int](/noir/reference/Noir/Vector4Int/) <br>
+ <br>
 
 <a name="Equals"></a>
 
@@ -177,6 +191,8 @@ public virtual bool Equals(Vector4Int other)
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether this instance is equal to another object.
+
 
 ```csharp
 public virtual bool Equals(Object obj)
@@ -185,6 +201,7 @@ public virtual bool Equals(Object obj)
 
 **Parameters** <br>
 `obj` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
+ <br>
 
 <a name="GetHashCode"></a>
 
@@ -192,6 +209,8 @@ public virtual bool Equals(Object obj)
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a hash code for the current [Vector4Int](/noir/reference/Noir/Vector4Int/) instance.
+
 
 ```csharp
 public virtual int GetHashCode()
@@ -204,6 +223,8 @@ public virtual int GetHashCode()
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a string representation of the vector in the format "(x=..., y=..., z=..., w=...)".
+
 
 ```csharp
 public virtual string ToString()
