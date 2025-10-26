@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace NoirEditor.Reflection {
-    public static class TypeExtensions {
+    internal static class TypeExtensions {
         /// <summary>
         /// Retrieves all members (fields and properties) of a specified type that match a given name and binding flags.
         /// </summary>

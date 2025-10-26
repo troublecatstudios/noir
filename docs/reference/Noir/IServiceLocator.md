@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Defines a contract for a service locator that provides registration,
+            retrieval, and management of services by type.
+
 
 ```csharp
 public abstract IServiceLocator
@@ -17,6 +20,8 @@ public abstract IServiceLocator
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Determines whether a service of the specified type is registered.
+
 
 ```csharp
 public abstract bool IsServiceRegistered()
@@ -44,6 +49,8 @@ public abstract bool TryGetService(T& instance)
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
 <!-- tc:version 1.0.0 -->
+Retrieves a registered service of the specified type.
+
 
 ```csharp
 public abstract T GetService()
@@ -83,6 +90,8 @@ public abstract void RegisterService(T instance)
 ### `UnregisterService()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Unregisters a previously registered service of the specified type.
+
 
 ```csharp
 public abstract void UnregisterService()

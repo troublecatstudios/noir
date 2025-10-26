@@ -8,7 +8,7 @@ namespace NoirEditor.EditorCoroutines {
     /// <summary>
     /// A handle to an EditorCoroutine, can be passed to <see cref="EditorCoroutineUtility">EditorCoroutineUtility</see> methods to control lifetime.
     /// </summary>
-    public class EditorCoroutine {
+    internal class EditorCoroutine {
         private struct YieldProcessor {
             enum DataType : byte {
                 None = 0,

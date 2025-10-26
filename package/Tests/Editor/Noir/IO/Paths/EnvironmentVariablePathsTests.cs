@@ -8,7 +8,7 @@ using static NExpect.Expectations;
 
 namespace NoirEditModeTests.Noir.IO.Paths {
     public class EnvironmentVariablePathsTests : NoirTestCase {
-        private readonly Mock<AbstractEnvironment> _environment = new Mock<AbstractEnvironment>(MockBehavior.Strict);
+        private readonly Mock<IEnvironment> _environment = new Mock<IEnvironment>(MockBehavior.Strict);
         private readonly Mock<IPlatformPaths> _paths = new Mock<IPlatformPaths>(MockBehavior.Strict);
 
         private const string DEFAULT_LOG_DIRECTORY = "/Mock/Log/Path";

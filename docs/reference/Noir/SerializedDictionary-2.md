@@ -40,6 +40,8 @@ public SerializedDictionary<TKey, TValue>()
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the number of key-value pairs contained in the dictionary.
+
 
 ```csharp
 public virtual int Count { get; }
@@ -52,6 +54,8 @@ public virtual int Count { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets a value indicating whether the dictionary is read-only.
+
 
 ```csharp
 public virtual bool IsReadOnly { get; }
@@ -76,6 +80,8 @@ public virtual TValue Item { get; public set; }
 <!-- tc:scope public -->
 <!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets a collection containing the keys in the dictionary.
+
 
 ```csharp
 public virtual ICollection<T> Keys { get; }
@@ -88,6 +94,8 @@ public virtual ICollection<T> Keys { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type ICollection\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets a collection containing the values in the dictionary.
+
 
 ```csharp
 public virtual ICollection<T> Values { get; }
@@ -195,6 +203,8 @@ public virtual bool TryGetValue(TKey key, TValue& value)
 <!-- tc:scope public -->
 <!-- tc:return_type IEnumerator\<T\> https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerator-1?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns an enumerator that iterates through the dictionary.
+
 
 ```csharp
 public virtual IEnumerator<T> GetEnumerator()
@@ -235,6 +245,8 @@ public virtual void Add(TKey key, TValue value)
 ### `Clear()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Removes all elements from the dictionary.
+
 
 ```csharp
 public virtual void Clear()

@@ -10,7 +10,7 @@ using Noir.Abstractions.Unity;
 
         private readonly IPlatformPaths _fallback;
 
-        public EnvironmentVariablePaths(IPlatformPaths fallback, AbstractEnvironment environment = null) {
+        public EnvironmentVariablePaths(IPlatformPaths fallback, IEnvironment environment = null) {
             _fallback = fallback;
             environment ??= new UnityEnvironment();
 

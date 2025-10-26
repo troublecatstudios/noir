@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace NoirEditor.EditorCoroutines {
-    public static class EditorCoroutineUtility {
+    internal static class EditorCoroutineUtility {
         /// <summary>
         /// Starts an <see cref ="EditorCoroutine">EditorCoroutine</see> with the specified owner object.
         /// If the garbage collector collects the owner object, while the resulting coroutine is still executing, the coroutine will stop running.

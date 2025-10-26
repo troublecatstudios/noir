@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Extension methods for Unity Vector types.
+
 
 ```csharp
 public static class VectorExtensions
@@ -17,6 +19,8 @@ public static class VectorExtensions
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a formatted string representing the components of a [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html).
+
 
 ```csharp
 public string ToLogString(Vector2 vector)
@@ -25,6 +29,7 @@ public string ToLogString(Vector2 vector)
 
 **Parameters** <br>
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+ <br>
 
 <a name="ToLogString"></a>
 
@@ -32,6 +37,8 @@ public string ToLogString(Vector2 vector)
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a formatted string representing the components of a [Vector2Int](https://docs.unity3d.com/ScriptReference/Vector2Int.html).
+
 
 ```csharp
 public string ToLogString(Vector2Int vector)
@@ -40,6 +47,7 @@ public string ToLogString(Vector2Int vector)
 
 **Parameters** <br>
 `vector` [Vector2Int](https://docs.unity3d.com/ScriptReference/Vector2Int.html) <br>
+ <br>
 
 <a name="ToLogString"></a>
 
@@ -47,6 +55,8 @@ public string ToLogString(Vector2Int vector)
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a formatted string representing the components of a [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html).
+
 
 ```csharp
 public string ToLogString(Vector3 vector)
@@ -55,6 +65,7 @@ public string ToLogString(Vector3 vector)
 
 **Parameters** <br>
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+ <br>
 
 <a name="ToLogString"></a>
 
@@ -62,6 +73,8 @@ public string ToLogString(Vector3 vector)
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Returns a formatted string representing the components of a [Vector3Int](https://docs.unity3d.com/ScriptReference/Vector3Int.html).
+
 
 ```csharp
 public string ToLogString(Vector3Int vector)
@@ -70,6 +83,7 @@ public string ToLogString(Vector3Int vector)
 
 **Parameters** <br>
 `vector` [Vector3Int](https://docs.unity3d.com/ScriptReference/Vector3Int.html) <br>
+ <br>
 
 <a name="Abs"></a>
 
@@ -77,6 +91,8 @@ public string ToLogString(Vector3Int vector)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
+Returns a new [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) with each component replaced by its absolute value.
+
 
 ```csharp
 public Vector2 Abs(Vector2 vector)
@@ -85,6 +101,7 @@ public Vector2 Abs(Vector2 vector)
 
 **Parameters** <br>
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+ <br>
 
 <a name="DirectionTo"></a>
 
@@ -114,6 +131,8 @@ public Vector2 DirectionTo(Vector2 vector, Vector2 other, bool normalize)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector2 https://docs.unity3d.com/ScriptReference/Vector2.html -->
 <!-- tc:version 1.0.0 -->
+Returns a new [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) with each component replaced by its sign (-1, 0, or 1).
+
 
 ```csharp
 public Vector2 Sign(Vector2 vector, bool ignoreZeros)
@@ -122,7 +141,9 @@ public Vector2 Sign(Vector2 vector, bool ignoreZeros)
 
 **Parameters** <br>
 `vector` [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) <br>
+ <br>
 `ignoreZeros` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 
 <a name="Abs"></a>
 
@@ -130,6 +151,8 @@ public Vector2 Sign(Vector2 vector, bool ignoreZeros)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
+Returns a new [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) with each component replaced by its absolute value.
+
 
 ```csharp
 public Vector3 Abs(Vector3 vector)
@@ -138,6 +161,7 @@ public Vector3 Abs(Vector3 vector)
 
 **Parameters** <br>
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+ <br>
 
 <a name="DirectionTo"></a>
 
@@ -167,6 +191,8 @@ public Vector3 DirectionTo(Vector3 vector, Vector3 other, bool normalize)
 <!-- tc:scope public -->
 <!-- tc:return_type Vector3 https://docs.unity3d.com/ScriptReference/Vector3.html -->
 <!-- tc:version 1.0.0 -->
+Returns a new [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) with each component replaced by its sign (-1, 0, or 1).
+
 
 ```csharp
 public Vector3 Sign(Vector3 vector, bool ignoreZeros)
@@ -175,5 +201,7 @@ public Vector3 Sign(Vector3 vector, bool ignoreZeros)
 
 **Parameters** <br>
 `vector` [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html) <br>
+ <br>
 `ignoreZeros` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 

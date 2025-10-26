@@ -7,7 +7,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace NoirEditor.Reflection {
-    public static partial class Reflector {
+    internal static partial class Reflector {
 
         public static PropertyInfo GetProperty(object target, string propertyName, BindingFlags flags = DefaultFlags) {
             return GetAllProperties(target, p => p.Name.Equals(propertyName, StringComparison.InvariantCulture), flags).FirstOrDefault();

@@ -4,12 +4,15 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides access to environment variables using the standard
+            [Environment](https://learn.microsoft.com/en-us/dotnet/api/System.Environment?view=net-7.0) API within the Unity runtime environment.
+
 
 ```csharp
-public class UnityEnvironment : AbstractEnvironment
+public class UnityEnvironment : IEnvironment
 ```
 
-**Implements:** _[AbstractEnvironment](/noir/reference/Noir/Abstractions/AbstractEnvironment/)_
+**Implements:** _[IEnvironment](/noir/reference/Noir/Abstractions/IEnvironment/)_
 
 ## Constructors
 
@@ -34,10 +37,13 @@ public UnityEnvironment()
 <!-- tc:version 1.0.0 -->
 
 ```csharp
-public virtual string GetEnvironmentVariable(string variableName)
+public virtual string GetEnvironmentVariable(string name)
 
 ```
 
 **Parameters** <br>
-`variableName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+`name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [System.Environment](https://learn.microsoft.com/en-us/dotnet/api/System.Environment?view=net-7.0)

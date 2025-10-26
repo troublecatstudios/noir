@@ -1,5 +1,5 @@
 ﻿namespace NoirEditor.MenuItems {
-    public static class MenuConstants {
+    internal static class MenuConstants {
         public const string BASE_MENU_PATH_TOOLS = "Tools/Trouble Cat Studios/Noir";
     }
 }

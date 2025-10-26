@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Represents a wrapper for Unity's [Time](https://docs.unity3d.com/ScriptReference/Time.html) class, providing
+            convenient access to frame timing values and constants for common frame rates.
+
 
 ```csharp
 public class GameTime : IGameTime
@@ -142,6 +145,8 @@ public readonly static GameTime Instance;
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the time in seconds it took to complete the last frame.
+
 
 ```csharp
 public virtual float deltaTime { get; }
@@ -154,6 +159,8 @@ public virtual float deltaTime { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the fixed time step in seconds between physics updates.
+
 
 ```csharp
 public virtual float fixedDeltaTime { get; }
@@ -166,6 +173,8 @@ public virtual float fixedDeltaTime { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type int https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the total number of frames that have been rendered since the start of the game.
+
 
 ```csharp
 public virtual int frameCount { get; }
@@ -178,6 +187,8 @@ public virtual int frameCount { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the real time in seconds since the game started, unaffected by time scale.
+
 
 ```csharp
 public virtual float realtimeSinceStartup { get; }
@@ -190,9 +201,14 @@ public virtual float realtimeSinceStartup { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the time in seconds since the start of the game.
+
 
 ```csharp
 public virtual float time { get; }
 
 ```
 
+## More information
+
+* [UnityEngine.Time](https://docs.unity3d.com/ScriptReference/Time.html)

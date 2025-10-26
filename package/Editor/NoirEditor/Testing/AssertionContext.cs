@@ -14,8 +14,11 @@
             Target = target;
             AdditionalContexts = additionalContexts;
         }
+
+        /// <inheritdoc />
         public T Target { get; internal set; }
 
+        /// <inheritdoc />
         public object[] AdditionalContexts { get; internal set; }
     }
 }

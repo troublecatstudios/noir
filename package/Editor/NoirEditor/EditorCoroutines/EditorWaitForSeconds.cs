@@ -23,7 +23,7 @@
     /// }
     /// </code>
     /// </summary>
-    public class EditorWaitForSeconds {
+    internal class EditorWaitForSeconds {
         /// <summary>
         /// The time to wait in seconds.
         /// </summary>

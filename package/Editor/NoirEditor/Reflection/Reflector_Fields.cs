@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace NoirEditor.Reflection {
-    public static partial class Reflector {
+    internal static partial class Reflector {
         private static readonly Func<FieldInfo, bool> IncludeAllFields = _ => true;
 
         public static FieldInfo GetField(object target, string fieldName) {

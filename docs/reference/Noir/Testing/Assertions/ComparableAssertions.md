@@ -4,6 +4,9 @@
 
 <!-- tc:assembly NoirEditor.dll -->
 
+Provides assertion extensions for objects implementing [IComparable](https://learn.microsoft.com/en-us/dotnet/api/System.IComparable?view=net-7.0),
+            enabling expressive tests for value comparisons such as ranges, equality, and ordering.
+
 
 ```csharp
 public static class ComparableAssertions
@@ -96,3 +99,6 @@ public void IsWithinRange(IAssertionContext<T> context, T min, T max,
 `max` [T](/noir/reference/) <br>
 `inclusive` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
 
+## More information
+
+* [System.IComparable](https://learn.microsoft.com/en-us/dotnet/api/System.IComparable?view=net-7.0)

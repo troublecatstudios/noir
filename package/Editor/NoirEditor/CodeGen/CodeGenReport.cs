@@ -2,7 +2,7 @@
 using System.Text;
 
 namespace NoirEditor.CodeGen {
-    public class CodeGenReport {
+    internal class CodeGenReport {
         public (string FileName, string Hash)[] GeneratedFiles { get; set; } = Array.Empty<(string FileName, string Hash)>();
         public TimeSpan TimeTaken { get; set; } = TimeSpan.Zero;
         public DateTime StartTime { get; set; } = DateTime.MinValue;

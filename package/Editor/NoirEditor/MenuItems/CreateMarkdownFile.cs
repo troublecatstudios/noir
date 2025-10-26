@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace NoirEditor.MenuItems {
-    public class CreateMarkdownFile {
+    internal class CreateMarkdownFile {
         [MenuItem("Assets/Create/Noir/Markdown File", false, 101)]
         public static void CreateMarkdown() {
             var path = AssetDatabase.GUIDToAssetPath(Selection.assetGUIDs[0]);

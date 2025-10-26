@@ -3,14 +3,14 @@ using UnityEditor;
 using UnityEngine;
 
 namespace NoirEditor.Editors {
-    public enum TrafficLightSize {
+    internal enum TrafficLightSize {
         Single,
         Double,
         Triple,
         Quad
     }
 
-    public static class TrafficLightGUI {
+    internal static class TrafficLightGUI {
         private static Texture[] lightArray;
         private static Texture[] frameArray;
 

@@ -22,6 +22,9 @@ public abstract class EditorSingleton<T> : ScriptableObject
 <!-- tc:scope public -->
 <!-- tc:return_type T -->
 <!-- tc:version 0.0.0 -->
+The singleton instance of type <typeparamref name="T" />.
+This is not thread safe, but should be fine for use within ScriptableObjects within the Unity Editor.
+
 
 ```csharp
 public static T instance { get; }

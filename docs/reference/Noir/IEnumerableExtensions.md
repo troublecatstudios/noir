@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides extension methods for working with [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0) sequences.
+
 
 ```csharp
 public static class IEnumerableExtensions
@@ -36,7 +38,7 @@ public bool ContainsAny(IEnumerable<T> sequence, string element,
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Determines if the enumerable has any items without throwing a NullReferenceException.
+Determines if the enumerable has any items without throwing a [NullReferenceException](https://learn.microsoft.com/en-us/dotnet/api/System.NullReferenceException?view=net-7.0).
 
 
 ```csharp
@@ -97,3 +99,6 @@ public T RandomElementByWeight(IEnumerable<T> sequence, Func<T,
 `sequence` [IEnumerable\<T\>](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=net-7.0) <br>
 `weightSelector` [Func\<T, TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-2?view=net-7.0) <br>
 
+## More information
+
+* [System.Collections.IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerable?view=net-7.0)

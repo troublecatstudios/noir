@@ -95,6 +95,8 @@ public virtual float time { get; public set; }
 ### `StepFrame()`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Increments the frame count by 1 and advances the internal time by the [FakeGameTime.deltaTime](/noir/reference/Noir/Testing/FakeGameTime/#deltatime) value.
+
 
 ```csharp
 public void StepFrame()
@@ -106,6 +108,9 @@ public void StepFrame()
 ### `StepFrames(int)`
 <!-- tc:scope public -->
 <!-- tc:version 0.0.0 -->
+Increments the frame count by the given number of frames. The internal time is advanced by the
+            [FakeGameTime.deltaTime](/noir/reference/Noir/Testing/FakeGameTime/#deltatime) value multiplied by the given number of frames.
+
 
 ```csharp
 public void StepFrames(int frames)
@@ -114,6 +119,7 @@ public void StepFrames(int frames)
 
 **Parameters** <br>
 `frames` [int](https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0) <br>
+ <br>
 
 ## More information
 

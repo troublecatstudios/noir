@@ -6,6 +6,7 @@ using NoirEditor.Editors.SettingsProviders;
 // using Noir.Editing.Editors;
 
 namespace NoirEditor.Callbacks {
+    // ReSharper disable once ClassNeverInstantiated.Global
     internal class DidReloadScriptsCallbackHandler {
 
         [UnityEditor.Callbacks.DidReloadScripts]

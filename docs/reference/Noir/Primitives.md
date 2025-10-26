@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides utility methods for working with various UnityEngine structures.
+
 
 ```csharp
 public static class Primitives
