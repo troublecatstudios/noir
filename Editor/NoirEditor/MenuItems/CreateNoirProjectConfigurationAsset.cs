@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace NoirEditor.TroubleCatStudios.Noir.Editor.MenuItems {
-    public static class CreateNoirProjectConfigurationAsset {
+    internal static class CreateNoirProjectConfigurationAsset {
         private const string MENU_PATH = MenuConstants.BASE_MENU_PATH_TOOLS + "/Setup/Create Project Configuration";
 
         [MenuItem(MENU_PATH, priority = 100)]

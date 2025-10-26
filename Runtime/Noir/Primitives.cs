@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
 namespace Noir {
+    /// <summary>
+    /// Provides utility methods for working with various UnityEngine structures.
+    /// </summary>
     public static class Primitives {
         /// <summary>
         /// Creates a <see cref="Rect"/> offset down and to the left by half the size, so it can use the same values we use for literally

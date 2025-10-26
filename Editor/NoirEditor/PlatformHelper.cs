@@ -5,7 +5,6 @@ namespace NoirEditor {
         /// <summary>
         /// Gets a singleton instance of the <see cref="PlatformHelper"/>.
         /// </summary>
-
         public static readonly PlatformHelper Instance = new();
 
         private readonly char _separator = Path.DirectorySeparatorChar;

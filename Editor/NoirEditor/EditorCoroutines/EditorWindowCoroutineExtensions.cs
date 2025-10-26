@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace NoirEditor.EditorCoroutines {
-    public static class EditorWindowCoroutineExtension {
+    internal static class EditorWindowCoroutineExtension {
         /// <summary>
         /// Start an <see cref="EditorCoroutine">EditorCoroutine</see>, owned by the calling <see cref="EditorWindow">EditorWindow</see> instance.
         /// <code>

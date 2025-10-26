@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 
 namespace NoirEditor.Reflection {
-    public static partial class Reflector {
+    internal static partial class Reflector {
         public static IEnumerable<Type> GetTypes(Func<Type, bool> predicate) {
             foreach (var assemb in AppDomain.CurrentDomain.GetAssemblies()) {
                 foreach (var tp in assemb.GetTypes()) {

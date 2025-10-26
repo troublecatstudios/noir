@@ -1,6 +1,9 @@
 ﻿using System;
 
 namespace Noir {
+    /// <summary>
+    /// Provides extension methods for working with <see cref="Guid"/> values.
+    /// </summary>
     public static class GuidExtensions {
         private static int ToInt(string str) {
             return ToInt(str.ToCharArray());
@@ -18,6 +21,12 @@ namespace Noir {
             }
             return result;
         }
+
+        /// <summary>
+        /// Converts a <see cref="Guid"/> to an integer representation by hashing its character values.
+        /// </summary>
+        /// <param name="guid">The <see cref="Guid"/> to convert.</param>
+        /// <returns>An integer value derived from the <see cref="Guid"/>.</returns>
         public static int ToInt(this Guid guid) => ToInt(guid.ToString().ToLower());
     }
 }

@@ -7,7 +7,7 @@ using System.Text;
 using Noir.Logging;
 
 namespace NoirEditor.CodeGen {
-    public class CodeGenerator {
+    internal class CodeGenerator {
         private readonly string _outputFolder;
 
         private readonly List<CodeGenTask> _tasks = new();

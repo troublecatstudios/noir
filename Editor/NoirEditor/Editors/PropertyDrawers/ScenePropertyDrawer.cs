@@ -8,7 +8,7 @@ using Unity.Properties;
 
 namespace NoirEditor.Editors.PropertyDrawers {
     [CustomPropertyDrawer(typeof(SceneAttribute), true)]
-    public class SceneAssetPropertyDrawer : PropertyDrawer {
+    internal class SceneAssetPropertyDrawer : PropertyDrawer {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
             if (property.propertyType != SerializedPropertyType.String && property.propertyType != SerializedPropertyType.Integer) {
                 EditorGUI.LabelField(position, label.text, "You can only use the [SceneAsset] attribute with string or integer types.");

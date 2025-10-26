@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace NoirEditor.Reflection {
-    public static partial class Reflector {
+    internal static partial class Reflector {
         public const BindingFlags DefaultFlags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.DeclaredOnly;
 
         private static bool NotObsolete<T>(T member) where T : MemberInfo {
