@@ -2393,6 +2393,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../Abstractions/IEnvironment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IEnvironment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Abstractions/IGameTime/" class="md-nav__link">
         
   
@@ -2429,10 +2452,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_44_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_44_4" >
         
           
-          <label class="md-nav__link" for="__nav_5_3_44_3" id="__nav_5_3_44_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_3_44_4" id="__nav_5_3_44_4_label" tabindex="0">
             
   
   
@@ -2445,8 +2468,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_3_44_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3_44_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_3_44_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_44_4">
             <span class="md-nav__icon md-icon"></span>
             Unity
           </label>
@@ -7547,6 +7570,8 @@
 <h1 id="vector4int">Vector4Int<a class="headerlink" href="#vector4int" title="Permanent link">&para;</a></h1>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#namespace" title="namespace"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3a2 2 0 0 0-2 2h2m2-2v2h2V3m2 0v2h2V3m2 0v2h2V3m2 0v2h2a2 2 0 0 0-2-2M3 7v2h2V7m2 0v4h4V7m2 0v4h4V7m2 0v2h2V7M3 11v2h2v-2m14 0v2h2v-2M7 13v4h4v-4m2 0v4h4v-4M3 15v2h2v-2m14 0v2h2v-2M3 19a2 2 0 0 0 2 2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2a2 2 0 0 0 2-2Z"/></svg></span></a></span><span class="tcx-badge__text">Noir</span></span></p>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#package_name" title="package name"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span></a></span><span class="tcx-badge__text">Noir.dll</span></span></p>
+<p>Represents a four-dimensional vector with integer components.
+            Provides basic arithmetic operations, conversions, and equality comparisons.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">Vector4Int</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IEquatable</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span>
 </code></pre></div>
 <p><strong>Implements:</strong> <em><a href="https://learn.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=net-7.0">IEquatable&lt;T&gt;</a></em></p>
@@ -7554,14 +7579,19 @@
 <p><a name=".ctor"></a></p>
 <h3 id="ctorint-int-int-int"><code>.ctor(int, int, int, int)</code><a class="headerlink" href="#ctorint-int-int-int" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Initializes a new instance of the <a href="/noir/reference/Noir/Vector4Int/">Vector4Int</a> struct with the specified components.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="nf">Vector4Int</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
 <code>x</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br>
 <code>y</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br>
 <code>z</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
-<code>w</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br></p>
+ <br>
+<code>w</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0">int</a> <br>
+ <br></p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
 <p><a name="down"></a></p>
 <h3 id="down"><code>down</code><a class="headerlink" href="#down" title="Permanent link">&para;</a></h3>
@@ -7631,7 +7661,8 @@
 <h3 id="sqrmagnitude"><code>sqrMagnitude</code><a class="headerlink" href="#sqrmagnitude" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0"><code>int</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Gets the squared magnitude of the vector.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">sqrMagnitude</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
@@ -7639,32 +7670,38 @@
 <h3 id="equalsvector4int"><code>Equals(Vector4Int)</code><a class="headerlink" href="#equalsvector4int" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Determines whether this vector is equal to another <a href="/noir/reference/Noir/Vector4Int/">Vector4Int</a>.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">Equals</span><span class="p">(</span><span class="n">Vector4Int</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
-<code>other</code> <a href="/noir/reference/Noir/Vector4Int/">Vector4Int</a> <br></p>
+<code>other</code> <a href="/noir/reference/Noir/Vector4Int/">Vector4Int</a> <br>
+ <br></p>
 <p><a name="Equals"></a></p>
 <h3 id="equalsobject"><code>Equals(Object)</code><a class="headerlink" href="#equalsobject" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0"><code>bool</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Determines whether this instance is equal to another object.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">Equals</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">obj</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong> <br>
-<code>obj</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0">Object</a> <br></p>
+<code>obj</code> <a href="https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0">Object</a> <br>
+ <br></p>
 <p><a name="GetHashCode"></a></p>
 <h3 id="gethashcode"><code>GetHashCode()</code><a class="headerlink" href="#gethashcode" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.Int32?view=net-7.0"><code>int</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Returns a hash code for the current <a href="/noir/reference/Noir/Vector4Int/">Vector4Int</a> instance.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">GetHashCode</span><span class="p">()</span>
 </code></pre></div>
 <p><a name="ToString"></a></p>
 <h3 id="tostring"><code>ToString()</code><a class="headerlink" href="#tostring" title="Permanent link">&para;</a></h3>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#scope" title="access modifier"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 1c-2.76 0-5 2.24-5 5v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12c1.11 0 2-.89 2-2V10a2 2 0 0 0-2-2h-1V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h2V6c0-2.76-2.24-5-5-5m-8 12a2 2 0 0 1 2 2c0 1.11-.89 2-2 2a2 2 0 1 1 0-4"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public"><code>public</code></a></span></span>
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#return_type" title="return type"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span></a></span><span class="tcx-badge__text"><a href="https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0"><code>string</code></a></span></span>
-<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
+<span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span>
+Returns a string representation of the vector in the format "(x=..., y=..., z=..., w=...)".</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">ToString</span><span class="p">()</span>
 </code></pre></div>
 
@@ -7689,7 +7726,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 12, 2025 13:41:48 UTC"><span class="timeago" datetime="2025-10-12T13:41:48+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 12, 2025 13:41:48 UTC">2025-10-12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 26, 2025 14:47:47 UTC"><span class="timeago" datetime="2025-10-26T14:47:47+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 26, 2025 14:47:47 UTC">2025-10-26</span>
   </span>
 
     

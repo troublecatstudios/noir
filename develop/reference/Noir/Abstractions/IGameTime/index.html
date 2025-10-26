@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://troublecat.io/noir/develop/reference/Noir/Abstractions/IGameTime/">
       
       
-        <link rel="prev" href="../AbstractEnvironment/">
+        <link rel="prev" href="../IEnvironment/">
       
       
         <link rel="next" href="../Unity/UnityEnvironment/">
@@ -2153,6 +2153,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../IEnvironment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IEnvironment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2267,6 +2290,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      More information
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2296,10 +2328,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_44_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_44_4" >
         
           
-          <label class="md-nav__link" for="__nav_5_3_44_3" id="__nav_5_3_44_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_3_44_4" id="__nav_5_3_44_4_label" tabindex="0">
             
   
   
@@ -2312,8 +2344,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_3_44_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3_44_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_3_44_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_44_4">
             <span class="md-nav__icon md-icon"></span>
             Unity
           </label>
@@ -7244,6 +7276,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      More information
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7279,6 +7320,10 @@
 <h1 id="igametime">IGameTime<a class="headerlink" href="#igametime" title="Permanent link">&para;</a></h1>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../conventions/#namespace" title="namespace"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3a2 2 0 0 0-2 2h2m2-2v2h2V3m2 0v2h2V3m2 0v2h2V3m2 0v2h2a2 2 0 0 0-2-2M3 7v2h2V7m2 0v4h4V7m2 0v4h4V7m2 0v2h2V7M3 11v2h2v-2m14 0v2h2v-2M7 13v4h4v-4m2 0v4h4v-4M3 15v2h2v-2m14 0v2h2v-2M3 19a2 2 0 0 0 2 2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2h2v-2m2 0v2a2 2 0 0 0 2-2Z"/></svg></span></a></span><span class="tcx-badge__text">Noir.Abstractions</span></span></p>
 <p><span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../conventions/#package_name" title="package name"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span></a></span><span class="tcx-badge__text">Noir.dll</span></span></p>
+<p>Provides an abstraction layer over Unity's <a href="https://docs.unity3d.com/ScriptReference/Time.html">Time</a> API,
+            exposing commonly used time-related properties such as <a href="/noir/reference/Noir/Abstractions/IGameTime/#time">IGameTime.time</a>.
+            This interface allows game systems to access time values without directly depending on Unity's static <a href="https://docs.unity3d.com/ScriptReference/Time.html">Time</a> class,
+            making it easier to create deterministic simulations, mock time in tests, or implement custom time sources.</p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="n">IGameTime</span>
 </code></pre></div>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
@@ -7317,6 +7362,13 @@
 <span class="tcx-badge"><span class="tcx-badge__icon"><a href="../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="tcx-badge__text"><a href="../../../../getting_started/changelog/#1.0.0">1.0.0</a></span></span></p>
 <div class="language-csharp highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div>
+<h2 id="more-information">More information<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.unity3d.com/ScriptReference/Time.html">UnityEngine.Time</a></li>
+<li><a href="/noir/reference/Noir/Abstractions/IGameTime/#deltaTime">Noir.Abstractions.IGameTime.deltaTime</a></li>
+<li><a href="/noir/reference/Noir/Abstractions/IGameTime/#time">Noir.Abstractions.IGameTime.time</a></li>
+<li><a href="https://docs.unity3d.com/ScriptReference/Time.html">UnityEngine.Time</a></li>
+</ul>
 
 
 
@@ -7339,7 +7391,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 10, 2025 11:31:16 UTC"><span class="timeago" datetime="2025-10-10T11:31:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 10, 2025 11:31:16 UTC">2025-10-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="October 26, 2025 14:47:47 UTC"><span class="timeago" datetime="2025-10-26T14:47:47+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="October 26, 2025 14:47:47 UTC">2025-10-26</span>
   </span>
 
     
