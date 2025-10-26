@@ -3,6 +3,8 @@ Noir is our helper library for unity-based games.
 
 [![release][release-badge]][release]
 [![license][license-badge]][license]
+![unity][unity-badge]
+![GitHub Actions Workflow Status][build-badge]
 
 [Docs](./docs/index.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/LICENSE.md)
 
@@ -33,6 +35,7 @@ For more info, see our [contribution guidelines](./CONTRIBUTING.md).
 
 [release]: https://github.com/troublecatstudios/noir/releases
 [release-badge]: https://img.shields.io/github/v/release/troublecatstudios/noir?style=for-the-badge&logo=github
-
-[license]: ./../../../package/LICENSE.md
-[license-badge]: https://img.shields.io/github/license/troublecatstudios/noir?style=for-the-badge
+[unity-badge]: https://img.shields.io/badge/Unity-v2023.3%2B-blue?style=for-the-badge
+[license]: ./package/LICENSE.md
+[license-badge]: https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge
+[build-badge]: https://img.shields.io/github/actions/workflow/status/troublecatstudios/noir/build.yaml?style=for-the-badge
