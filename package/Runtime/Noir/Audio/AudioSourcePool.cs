@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Noir.Audio {
+    /// <summary>
+    /// A pool for <see cref="AudioSource"/> components, allowing efficient reuse of audio sources.
+    /// </summary>
     public class AudioSourcePool : BehaviourPoolBase<AudioSource> {
         [SerializeField] private string _itemNamePrefix = "";
 
         private readonly List<AudioSource> _readyToReturn = new();
 
+        /// <summary>
+        /// Creates a new <see cref="AudioSource"/> instance for the pool.
+        /// </summary>
+        /// <returns>A freshly created <see cref="AudioSource"/> component.</returns>
         protected override AudioSource CreateNewPoolItem() {
             var itemName = $"{_itemNamePrefix}AudioSource.{TotalItems + 1}";
             var go = new GameObject(itemName);
@@ -16,6 +23,11 @@ namespace Noir.Audio {
             return sfxSource;
         }
 
+        /// <summary>
+        /// Resets the given <see cref="AudioSource"/> to default values before returning it to the pool.
+        /// </summary>
+        /// <param name="item">The <see cref="AudioSource"/> to reset.</param>
+        /// <returns>The reset <see cref="AudioSource"/>.</returns>
         protected override AudioSource ResetItemToDefaults(AudioSource item) {
             item.loop = false;
             item.playOnAwake = false;
