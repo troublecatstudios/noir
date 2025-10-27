@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Extension methods for Unity audio components.
+
 
 ```csharp
 public static class AudioExtensions
@@ -53,6 +55,9 @@ public bool IsClipReadyToPlay(AudioClip clip)
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Calculates the percentage of the current audio clip that has been played by the specified [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html).
+This method is useful for determining playback progress for UI updates, such as progress bars or debugging information.
+
 
 ```csharp
 public float GetAudioPlayedPercentage(AudioSource source)
@@ -61,4 +66,5 @@ public float GetAudioPlayedPercentage(AudioSource source)
 
 **Parameters** <br>
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
+ <br>
 

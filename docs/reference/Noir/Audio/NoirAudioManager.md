@@ -4,6 +4,10 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Central audio manager for playing sound effects and audio clips within the game.
+            Handles pooling of [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html)s and spatialized audio playback.
+            Implements [PlaySoundEffectEvent](/noir/reference/Noir/Audio/Events/PlaySoundEffectEvent/).
+
 
 ```csharp
 public class NoirAudioManager : NoirSingletonBehaviour<T>, INoirAudioManager, INoirEventListener<T>, IEventSystemHandler, INoirEventListener<T>
@@ -32,6 +36,8 @@ public NoirAudioManager()
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Attempts to play a sound effect by name.
+
 
 ```csharp
 public bool TryPlaySoundEffect(SoundEffect effect, Transform sourceObject,
@@ -43,12 +49,19 @@ public bool TryPlaySoundEffect(SoundEffect effect, Transform sourceObject,
 
 **Parameters** <br>
 `effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
+ <br>
 `sourceObject` [Transform](https://docs.unity3d.com/ScriptReference/Transform.html) <br>
+ <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `pitch` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `loop` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 `mixerGroup` [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) <br>
+ <br>
 
 <a name="TryPlaySoundEffect"></a>
 
@@ -56,6 +69,8 @@ public bool TryPlaySoundEffect(SoundEffect effect, Transform sourceObject,
 <!-- tc:scope public -->
 <!-- tc:return_type bool https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Attempts to play a sound effect by name.
+
 
 ```csharp
 public bool TryPlaySoundEffect(string effectName, T? origin, float delay,
@@ -67,12 +82,19 @@ public bool TryPlaySoundEffect(string effectName, T? origin, float delay,
 
 **Parameters** <br>
 `effectName` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `origin` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
+ <br>
 `delay` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `volume` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `pitch` [float](https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0) <br>
+ <br>
 `loop` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 `mixerGroup` [AudioMixerGroup](https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html) <br>
+ <br>
 
 <a name="TryPlayClip"></a>
 
@@ -172,3 +194,9 @@ public virtual void StopEffect(string name)
 **Parameters** <br>
 `name` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [UnityEngine.AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html)
+* [Noir.Audio.INoirAudioManager](/noir/reference/Noir/Audio/INoirAudioManager/)
+* [Noir.Audio.Events.PlayAudioClipEvent](/noir/reference/Noir/Audio/Events/PlayAudioClipEvent/)
+* [Noir.Audio.Events.PlaySoundEffectEvent](/noir/reference/Noir/Audio/Events/PlaySoundEffectEvent/)
