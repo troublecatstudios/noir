@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+A pool for [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) components, allowing efficient reuse of audio sources.
+
 
 ```csharp
 public class AudioSourcePool : BehaviourPoolBase<T>
@@ -24,3 +26,6 @@ public AudioSourcePool()
 
 ```
 
+## More information
+
+* [UnityEngine.AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html)

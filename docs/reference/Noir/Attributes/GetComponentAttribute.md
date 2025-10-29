@@ -21,6 +21,8 @@ public class GetComponentAttribute : PropertyAttribute
 ### `.ctor(GetComponentSearchArea)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a new [GetComponentAttribute](/noir/reference/Noir/Attributes/GetComponentAttribute/) with the specified search area.
+
 
 ```csharp
 public GetComponentAttribute(GetComponentSearchArea searchArea)
@@ -29,6 +31,7 @@ public GetComponentAttribute(GetComponentSearchArea searchArea)
 
 **Parameters** <br>
 `searchArea` [GetComponentSearchArea](/noir/reference/Noir/Attributes/GetComponentSearchArea/) <br>
+ <br>
 
 ## Properties
 
@@ -38,6 +41,8 @@ public GetComponentAttribute(GetComponentSearchArea searchArea)
 <!-- tc:scope public -->
 <!-- tc:return_type GetComponentSearchArea /noir/reference/Noir/Attributes/GetComponentSearchArea/ -->
 <!-- tc:version 1.0.0 -->
+Specifies where the component should be searched for (e.g., on the same GameObject, parent, or children).
+
 
 ```csharp
 public GetComponentSearchArea SearchArea { get; private set; }

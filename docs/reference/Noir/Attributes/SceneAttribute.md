@@ -4,6 +4,10 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Indicates that the annotated field represents a Unity scene reference.
+This attribute can be used to customize how scene fields are displayed in the Unity Inspector,
+            typically allowing developers to select scenes from the project’s build settings or asset list.
+
 
 ```csharp
 public class SceneAttribute : PropertyAttribute

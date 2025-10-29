@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Represents a configurable sound effect that can play multiple audio clips
+            with randomized pitch, volume, and optional delays.
+
 
 ```csharp
 public class SoundEffect : ScriptableObject
@@ -106,6 +109,9 @@ public SoundEffectPlayStyle Style;
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Randomly calculated delay in seconds based on [SoundEffect.DelayRange](/noir/reference/Noir/Audio/SoundEffect/#delayrange).
+            Returns 0 if [SoundEffect.DelayStart](/noir/reference/Noir/Audio/SoundEffect/#delaystart) is false.
+
 
 ```csharp
 public float Delay { get; }
@@ -118,6 +124,8 @@ public float Delay { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Maximum distance at which the sound is audible.
+
 
 ```csharp
 public float MaxAudibleDistance { get; }
@@ -130,6 +138,8 @@ public float MaxAudibleDistance { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Randomized pitch between the configured min and max.
+
 
 ```csharp
 public float Pitch { get; }
@@ -142,6 +152,8 @@ public float Pitch { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+The spatial blend of the sound (0 = 2D, 1 = 3D).
+
 
 ```csharp
 public float SpatialBlend { get; }
@@ -154,6 +166,8 @@ public float SpatialBlend { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Randomized volume between the configured min and max.
+
 
 ```csharp
 public float VolumeScale { get; }
@@ -168,6 +182,9 @@ public float VolumeScale { get; }
 <!-- tc:scope public -->
 <!-- tc:return_type AudioClip https://docs.unity3d.com/ScriptReference/AudioClip.html -->
 <!-- tc:version 1.0.0 -->
+Returns an audio clip according to the [SoundEffect.Style](/noir/reference/Noir/Audio/SoundEffect/#style).
+            Sequentially cycles through clips or selects a random clip.
+
 
 ```csharp
 public AudioClip GetClip()
@@ -179,6 +196,8 @@ public AudioClip GetClip()
 ### `Play(SoundEffect, AudioSource, T?, bool)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Plays this sound effect on a given [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html).
+
 
 ```csharp
 public void Play(SoundEffect effect, AudioSource source, T? volumeScale,
@@ -189,7 +208,11 @@ public void Play(SoundEffect effect, AudioSource source, T? volumeScale,
 
 **Parameters** <br>
 `effect` [SoundEffect](/noir/reference/Noir/Audio/SoundEffect/) <br>
+ <br>
 `source` [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) <br>
+ <br>
 `volumeScale` [T?](https://learn.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=net-7.0) <br>
+ <br>
 `interrupt` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 

@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Displays a double traffic light indicator in the Unity Inspector.
+
 
 ```csharp
 public class DoubleTrafficLight : TrafficLightAttribute
@@ -18,6 +20,8 @@ public class DoubleTrafficLight : TrafficLightAttribute
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a red and green traffic light indicator.
+
 
 ```csharp
 public DoubleTrafficLight()
@@ -29,6 +33,8 @@ public DoubleTrafficLight()
 ### `.ctor(TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a two-light indicator with specified colors.
+
 
 ```csharp
 public DoubleTrafficLight(TrafficLightColor a, TrafficLightColor b)

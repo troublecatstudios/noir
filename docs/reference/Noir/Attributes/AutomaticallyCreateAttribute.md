@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Declare that this ScriptableObject should be automatically created at build time.
+
 
 ```csharp
 public class AutomaticallyCreateAttribute : Attribute
@@ -42,6 +44,9 @@ public AutomaticallyCreateAttribute(string customPathPrefix,
 <!-- tc:scope public -->
 <!-- tc:return_type string https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
+Gets the file name of the asset, without the extension.
+Defaults to the class name, ex: "MyDataObject".
+
 
 ```csharp
 public string AssetNameOverride { get; private set; }

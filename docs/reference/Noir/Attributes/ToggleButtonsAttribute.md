@@ -4,6 +4,10 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Displays a group of toggle buttons in the Unity Inspector for the annotated field or property.
+This attribute is typically used to improve the visual layout of boolean or enum fields,
+            allowing selection through button-style toggles instead of standard checkboxes or dropdowns.
+
 
 ```csharp
 public class ToggleButtonsAttribute : Attribute

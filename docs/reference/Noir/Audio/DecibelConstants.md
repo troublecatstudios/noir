@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides common decibel (dB) values for various sounds and utility methods for working with sound intensity.
+
 
 ```csharp
 public static class DecibelConstants
@@ -115,7 +117,8 @@ public static const int Whisper;
 <!-- tc:scope public -->
 <!-- tc:return_type float https://learn.microsoft.com/en-us/dotnet/api/System.Single?view=net-7.0 -->
 <!-- tc:version 1.0.0 -->
-Estimates the distance based on the principle that sound intensity decreases by 6 decibels each time the distance from the source doubles
+Estimates the distance at which a sound is "hearable" based on the principle that
+            sound intensity decreases by 6 decibels each time the distance from the source doubles.
 
 
 ```csharp

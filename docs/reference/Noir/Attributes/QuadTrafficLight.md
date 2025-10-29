@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Displays a quad traffic light indicator in the Unity Inspector.
+
 
 ```csharp
 public class QuadTrafficLight : TrafficLightAttribute
@@ -18,6 +20,8 @@ public class QuadTrafficLight : TrafficLightAttribute
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a four-light indicator with blue, green, yellow, and pink lights.
+
 
 ```csharp
 public QuadTrafficLight()
@@ -29,6 +33,8 @@ public QuadTrafficLight()
 ### `.ctor(TrafficLightColor, TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a four-light indicator with specified colors.
+
 
 ```csharp
 public QuadTrafficLight(TrafficLightColor a, TrafficLightColor b,

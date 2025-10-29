@@ -20,6 +20,8 @@ public class EngineCallbackAttribute : Attribute
 ### `.ctor(EngineCallbackType)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a new [EngineCallbackAttribute](/noir/reference/Noir/Attributes/EngineCallbackAttribute/) with the specified callback type.
+
 
 ```csharp
 public EngineCallbackAttribute(EngineCallbackType callbackType)
@@ -28,6 +30,7 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 
 **Parameters** <br>
 `callbackType` [EngineCallbackType](/noir/reference/Noir/Attributes/EngineCallbackType/) <br>
+ <br>
 
 ## Properties
 
@@ -37,6 +40,8 @@ public EngineCallbackAttribute(EngineCallbackType callbackType)
 <!-- tc:scope public -->
 <!-- tc:return_type EngineCallbackType /noir/reference/Noir/Attributes/EngineCallbackType/ -->
 <!-- tc:version 1.0.0 -->
+Gets or sets a value indicating when the decorated method should be invoked by the Noir library.
+
 
 ```csharp
 public EngineCallbackType CallbackType { get; public set; }
