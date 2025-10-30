@@ -1,39 +1,17 @@
-# VisualElementLogger
+# ILoggingComponent
 
 <!-- tc:namespace Noir.Logging -->
 
 <!-- tc:assembly Noir.dll -->
 
-Provides a logging interface for UI Toolkit ([VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)) components.
-This logger wraps the [LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/) system and associates log messages
-            with a specific [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) context for improved debugging and traceability.
+Defines a unified interface for components that can produce structured log output.
+The [ILoggingComponent](/noir/reference/Noir/Logging/ILoggingComponent/) interface standardizes logging methods across Noir systems,
+            providing a consistent set of operations for verification, diagnostics, and subsystem-level tracing.
 
 
 ```csharp
-public class VisualElementLogger : ILoggingComponent
+public abstract ILoggingComponent
 ```
-
-**Implements:** _[ILoggingComponent](/noir/reference/Noir/Logging/ILoggingComponent/)_
-
-## Constructors
-
-<a name=".ctor"></a>
-
-### `.ctor(VisualElement)`
-<!-- tc:scope public -->
-<!-- tc:version 1.0.0 -->
-Initializes a new instance of the [VisualElementLogger](/noir/reference/Noir/Logging/VisualElementLogger/) class,
-            associating it with the specified [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) context.
-
-
-```csharp
-public VisualElementLogger(VisualElement context)
-
-```
-
-**Parameters** <br>
-`context` [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) <br>
- <br>
 
 ## Methods
 
@@ -42,132 +20,167 @@ public VisualElementLogger(VisualElement context)
 ### `Debug(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes a debug-level message to the log, typically used for development or testing.
+
 
 ```csharp
-public virtual void Debug(string message, string subsystem)
+public abstract void Debug(string message, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Error"></a>
 
 ### `Error(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes an error message to the log, indicating a critical or unrecoverable problem.
+
 
 ```csharp
-public virtual void Error(string message, string subsystem)
+public abstract void Error(string message, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Info"></a>
 
 ### `Info(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes an informational message to the log.
+
 
 ```csharp
-public virtual void Info(string message, string subsystem)
+public abstract void Info(string message, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Trace"></a>
 
 ### `Trace(string, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes a trace message associated with a named trace context.
+
 
 ```csharp
-public virtual void Trace(string trace, string message, string subsystem)
+public abstract void Trace(string trace, string message, string subsystem)
 
 ```
 
 **Parameters** <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Verify"></a>
 
 ### `Verify(bool, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Verifies that a condition is true, logging a failure if it evaluates to false.
+
 
 ```csharp
-public virtual void Verify(bool condition, string label, string subsystem)
+public abstract void Verify(bool condition, string label, string subsystem)
 
 ```
 
 **Parameters** <br>
 `condition` [bool](https://learn.microsoft.com/en-us/dotnet/api/System.Boolean?view=net-7.0) <br>
+ <br>
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Verify"></a>
 
 ### `Verify(Func<TResult>, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Verifies that a condition is true, logging a failure if the delegate returns false.
+
 
 ```csharp
-public virtual void Verify(Func<TResult> condition, string label,
-                            string subsystem)
+public abstract void Verify(Func<TResult> condition, string label,
+                             string subsystem)
 
 
 ```
 
 **Parameters** <br>
 `condition` [Func\<TResult\>](https://learn.microsoft.com/en-us/dotnet/api/System.Func-1?view=net-7.0) <br>
+ <br>
 `label` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="Warn"></a>
 
 ### `Warn(string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes a warning message to the log, indicating potential issues or unexpected states.
+
 
 ```csharp
-public virtual void Warn(string message, string subsystem)
+public abstract void Warn(string message, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 <a name="WriteLog"></a>
 
 ### `WriteLog(string, LogLevel, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Writes a log message with a specified severity, optionally scoped to a subsystem or trace.
+
 
 ```csharp
-public virtual void WriteLog(string message, LogLevel level, string subsystem,
-                              string trace)
+public abstract void WriteLog(string message, LogLevel level, string subsystem,
+                               string trace)
 
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
+ <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
+ <br>
 
 ## More information
 
-* [UnityEngine.UIElements.VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)
-* [Noir.Logging.LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/)
-* [UnityEngine.UIElements.VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)
+* [Noir.Logging.ILoggingComponent](/noir/reference/Noir/Logging/ILoggingComponent/)

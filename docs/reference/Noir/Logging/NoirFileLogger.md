@@ -1,18 +1,41 @@
-# INoirLogger
+# NoirFileLogger
 
 <!-- tc:namespace Noir.Logging -->
 
 <!-- tc:assembly Noir.dll -->
 
-Defines the contract for Noir's logging backend, providing structured, subsystem-aware log output.
-Implementations of [INoirLogger](/noir/reference/Noir/Logging/INoirLogger/) handle core logging responsibilities across all systems,
-            including verification, tracing, and dynamic subsystem control. Typical implementations include
-            in-memory loggers, Unity console output, or file-based logging systems.
+Writes log messages to both Unity’s console (in the Editor) and a persistent log file.
+[NoirFileLogger](/noir/reference/Noir/Logging/NoirFileLogger/) is the primary backend for persistent log output in Noir.
+             It captures runtime messages, trace sequences, and subsystem-specific logs, storing them
+             in a structured log file under the platform’s configured log directory.
+            
+             In Editor mode, messages are also echoed to the Unity Console for immediate visibility.
 
 
 ```csharp
-public abstract INoirLogger
+public class NoirFileLogger : INoirLogger
 ```
+
+**Implements:** _[INoirLogger](/noir/reference/Noir/Logging/INoirLogger/)_
+
+## Constructors
+
+<a name=".ctor"></a>
+
+### `.ctor(IPlatformPaths)`
+<!-- tc:scope public -->
+<!-- tc:version 1.0.0 -->
+Creates a new instance of the [NoirFileLogger](/noir/reference/Noir/Logging/NoirFileLogger/) using the specified platform paths.
+
+
+```csharp
+public NoirFileLogger(IPlatformPaths paths)
+
+```
+
+**Parameters** <br>
+`paths` [IPlatformPaths](/noir/reference/Noir/IO/Paths/IPlatformPaths/) <br>
+ <br>
 
 ## Methods
 
@@ -21,32 +44,27 @@ public abstract INoirLogger
 ### `Debug(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes a debug-level message to the log, typically used for detailed diagnostics during development.
-
 
 ```csharp
-public abstract void Debug(string message, Object context, string subsystem)
+public virtual void Debug(string message, Object context, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 <a name="DisableSubsystem"></a>
 
 ### `DisableSubsystem(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Disables logging for a specific subsystem.
+Disables logging for the specified subsystem.
 
 
 ```csharp
-public abstract void DisableSubsystem(string system)
+public virtual void DisableSubsystem(string system)
 
 ```
 
@@ -59,11 +77,11 @@ public abstract void DisableSubsystem(string system)
 ### `EnableSubsystem(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Enables logging for a specific subsystem.
+Enables logging for the specified subsystem.
 
 
 ```csharp
-public abstract void EnableSubsystem(string system)
+public virtual void EnableSubsystem(string system)
 
 ```
 
@@ -76,11 +94,12 @@ public abstract void EnableSubsystem(string system)
 ### `EndAllTraces()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Ends all active trace contexts and disables trace mode.
+Ends all currently active trace sessions.
+This also disables trace mode globally until a new trace is started.
 
 
 ```csharp
-public abstract void EndAllTraces()
+public virtual void EndAllTraces()
 
 ```
 
@@ -89,11 +108,11 @@ public abstract void EndAllTraces()
 ### `EndTrace(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Ends an active trace context by name.
+Ends a specific trace sequence by name.
 
 
 ```csharp
-public abstract void EndTrace(string traceName)
+public virtual void EndTrace(string traceName)
 
 ```
 
@@ -106,53 +125,43 @@ public abstract void EndTrace(string traceName)
 ### `Error(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes an error message to the log, indicating a critical or unrecoverable problem.
-
 
 ```csharp
-public abstract void Error(string message, Object context, string subsystem)
+public virtual void Error(string message, Object context, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 <a name="Info"></a>
 
 ### `Info(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes an informational message to the log.
-
 
 ```csharp
-public abstract void Info(string message, Object context, string subsystem)
+public virtual void Info(string message, Object context, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 <a name="StartTrace"></a>
 
 ### `StartTrace(string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Starts a new trace context for fine-grained debugging and performance tracking.
+Begins a new trace sequence with the specified name.
 
 
 ```csharp
-public abstract void StartTrace(string traceName)
+public virtual void StartTrace(string traceName)
 
 ```
 
@@ -165,37 +174,31 @@ public abstract void StartTrace(string traceName)
 ### `Trace(string, string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes a trace message associated with a named trace context.
-
 
 ```csharp
-public abstract void Trace(string trace, string message, Object context,
-                            string subsystem)
+public virtual void Trace(string trace, string message, Object context,
+                           string subsystem)
 
 
 ```
 
 **Parameters** <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 <a name="Verify"></a>
 
 ### `Verify(bool, string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Verifies that a condition is true, logging a failure if it evaluates to false.
+Performs a verification check and logs a failure if the condition is false.
 
 
 ```csharp
-public abstract void Verify(bool condition, string label, Object context,
-                             string subsystem)
+public virtual void Verify(bool condition, string label, Object context,
+                            string subsystem)
 
 
 ```
@@ -215,12 +218,12 @@ public abstract void Verify(bool condition, string label, Object context,
 ### `Verify(Func<TResult>, string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Verifies that a condition is true, logging a failure if the delegate returns false.
+Performs a verification check using a delegate and logs a failure if it returns false.
 
 
 ```csharp
-public abstract void Verify(Func<TResult> condition, string label,
-                             Object context, string subsystem)
+public virtual void Verify(Func<TResult> condition, string label, Object context,
+                            string subsystem)
 
 
 ```
@@ -240,49 +243,37 @@ public abstract void Verify(Func<TResult> condition, string label,
 ### `Warn(string, Object, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes a warning message to the log, indicating potential issues or unexpected behavior.
-
 
 ```csharp
-public abstract void Warn(string message, Object context, string subsystem)
+public virtual void Warn(string message, Object context, string subsystem)
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 <a name="WriteLog"></a>
 
 ### `WriteLog(string, LogLevel, Object, string, string)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
-Writes a log message with a specified severity, optionally scoped to a subsystem or trace.
-
 
 ```csharp
-public abstract void WriteLog(string message, LogLevel level, Object context,
-                               string subsystem, string trace)
+public virtual void WriteLog(string message, LogLevel level, Object context,
+                              string subsystem, string trace)
 
 
 ```
 
 **Parameters** <br>
 `message` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `level` [LogLevel](/noir/reference/Noir/Logging/LogLevel/) <br>
- <br>
 `context` [Object](https://learn.microsoft.com/en-us/dotnet/api/System.Object?view=net-7.0) <br>
- <br>
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
- <br>
 
 ## More information
 
-* [Noir.Logging.INoirLogger](/noir/reference/Noir/Logging/INoirLogger/)
+* [Noir.Logging.NoirFileLogger](/noir/reference/Noir/Logging/NoirFileLogger/)
