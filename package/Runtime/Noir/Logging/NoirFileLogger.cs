@@ -5,7 +5,17 @@ using Noir.IO.Paths;
 using UnityEngine;
 
 namespace Noir.Logging {
-    public class FileLogWriter : INoirLogger {
+    /// <summary>
+    /// Writes log messages to both Unity’s console (in the Editor) and a persistent log file.
+    /// </summary>
+    /// <remarks>
+    /// <see cref="NoirFileLogger"/> is the primary backend for persistent log output in Noir.
+    /// It captures runtime messages, trace sequences, and subsystem-specific logs, storing them
+    /// in a structured log file under the platform’s configured log directory.
+    ///
+    /// In Editor mode, messages are also echoed to the Unity Console for immediate visibility.
+    /// </remarks>
+    public class NoirFileLogger : INoirLogger {
         private readonly Dictionary<string, bool> _subsystemDictionary = new Dictionary<string, bool>();
         private bool _isTraceMode = false;
         private readonly List<string> _activeTraces = new List<string>();
@@ -19,15 +29,26 @@ namespace Noir.Logging {
         private static string LogMessageTime => $"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}";
 #endif
 
-
-        public FileLogWriter(IPlatformPaths paths) {
+        /// <summary>
+        /// Creates a new instance of the <see cref="NoirFileLogger"/> using the specified platform paths.
+        /// </summary>
+        /// <param name="paths">An object providing directory paths for the current platform.</param>
+        public NoirFileLogger(IPlatformPaths paths) {
             _absoluteLogFilePath = $"{paths.LogDirectory}/{LogFileName}";
         }
 
+        /// <summary>
+        /// Disables logging for the specified subsystem.
+        /// </summary>
+        /// <param name="system">The name of the subsystem to disable.</param>
         public void DisableSubsystem(string system) {
             _subsystemDictionary.Remove(system);
         }
 
+        /// <summary>
+        /// Enables logging for the specified subsystem.
+        /// </summary>
+        /// <param name="system">The name of the subsystem to enable.</param>
         public void EnableSubsystem(string system) {
             if (!_subsystemDictionary.ContainsKey(system)) {
                 _subsystemDictionary.Add(system, true);
@@ -35,12 +56,22 @@ namespace Noir.Logging {
             _subsystemDictionary[system] = true;
         }
 
+        /// <summary>
+        /// Ends all currently active trace sessions.
+        /// </summary>
+        /// <remarks>
+        /// This also disables trace mode globally until a new trace is started.
+        /// </remarks>
         public void EndAllTraces() {
             WriteLog($"Ending all traces", LogLevel.Debug);
             _activeTraces.Clear();
             _isTraceMode = false;
         }
 
+        /// <summary>
+        /// Ends a specific trace sequence by name.
+        /// </summary>
+        /// <param name="traceName">The name of the trace to end.</param>
         public void EndTrace(string traceName) {
             _activeTraces.Remove(traceName);
             WriteLog($"Ending trace: {traceName}", LogLevel.Debug);
@@ -49,6 +80,10 @@ namespace Noir.Logging {
             }
         }
 
+        /// <summary>
+        /// Begins a new trace sequence with the specified name.
+        /// </summary>
+        /// <param name="traceName">The name of the trace to start.</param>
         public void StartTrace(string traceName) {
             if (!_activeTraces.Contains(traceName)) {
                 _activeTraces.Add(traceName);
@@ -57,6 +92,13 @@ namespace Noir.Logging {
             }
         }
 
+        /// <summary>
+        /// Performs a verification check and logs a failure if the condition is false.
+        /// </summary>
+        /// <param name="condition">The condition to evaluate.</param>
+        /// <param name="label">A label identifying the verification.</param>
+        /// <param name="context">Optional object or Unity context associated with the log entry.</param>
+        /// <param name="subsystem">Optional name of the subsystem performing the check.</param>
         public void Verify(bool condition, string label, object context = null, string subsystem = null) {
             if (condition) {
                 // Debug($"[VERIFY] [PASS] {label}", context, subsystem);
@@ -65,13 +107,31 @@ namespace Noir.Logging {
             Error($"[VERIFY] [FAIL] {label}", context, subsystem);
         }
 
+        /// <summary>
+        /// Performs a verification check using a delegate and logs a failure if it returns false.
+        /// </summary>
+        /// <param name="condition">A delegate that evaluates a condition at runtime.</param>
+        /// <param name="label">A label identifying the verification.</param>
+        /// <param name="context">Optional object or Unity context associated with the log entry.</param>
+        /// <param name="subsystem">Optional name of the subsystem performing the check.</param>
         public void Verify(Func<bool> condition, string label, object context = null, string subsystem = null) => Verify(condition(), label, context, subsystem);
 
+        /// <inheritdoc/>
         public void Debug(string message, object context = null, string subsystem = null) => WriteLog(message, level: LogLevel.Debug, context: context, subsystem: subsystem);
+
+        /// <inheritdoc/>
         public void Error(string message, object context = null, string subsystem = null) => WriteLog(message, level: LogLevel.Error, context: context, subsystem: subsystem);
+
+        /// <inheritdoc/>
         public void Info(string message, object context = null, string subsystem = null) => WriteLog(message, level: LogLevel.Info, context: context, subsystem: subsystem);
+
+        /// <inheritdoc/>
         public void Trace(string trace, string message, object context = null, string subsystem = null) => WriteLog(message, level: LogLevel.Verbose, context: context, subsystem: subsystem, trace: trace);
+
+        /// <inheritdoc/>
         public void Warn(string message, object context = null, string subsystem = null) => WriteLog(message, level: LogLevel.Warn, context: context, subsystem: subsystem);
+
+        /// <inheritdoc/>
         public void WriteLog(string message, LogLevel level = LogLevel.Info, object context = null, string subsystem = null, string trace = null) {
             var traceHasValue = !string.IsNullOrEmpty(trace);
             if (_isTraceMode && (traceHasValue && !IsTraceActive(trace))) {
@@ -89,16 +149,16 @@ namespace Noir.Logging {
                 component = context?.GetType()?.Name ?? "UNKNOWN";
             }
 
-            UnityEngine.Object contextObject = null;
-            if (context is UnityEngine.Object obj) {
-                contextObject = obj;
-            }
             var sub = string.IsNullOrEmpty(subsystem) ? "" : $"[{subsystem}]";
             var trc = string.IsNullOrEmpty(trace) ? "" : $" TRACE={trace}";
             var log = $"{LogMessageTime} {ConvertLogLevel(level)} {Time.frameCount} [{component}]{sub}{trc} {message}";
 
 #if UNITY_EDITOR
             if (!Application.isBatchMode) {
+                UnityEngine.Object contextObject = null;
+                if (context is UnityEngine.Object obj) {
+                    contextObject = obj;
+                }
                 switch (level) {
                     case LogLevel.Verbose:
                     case LogLevel.Debug:
