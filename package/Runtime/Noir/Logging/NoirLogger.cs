@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Noir.Logging {
-    public class NoirLogger<T> {
+    internal class NoirLogger<T> {
         public void Verify(bool condition, string label, string subsystem = null) => LoggerSingleton.Verify<T>(condition, label, subsystem);
         public void Verify(Func<bool> condition, string label, string subsystem = null) => LoggerSingleton.Verify<T>(condition, label, subsystem);
         public void Info(string message, string subsystem = null) => LoggerSingleton.Info<T>(message, subsystem);

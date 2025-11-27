@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Displays a triple traffic light indicator in the Unity Inspector.
+
 
 ```csharp
 public class TripleTrafficLight : TrafficLightAttribute
@@ -18,6 +20,8 @@ public class TripleTrafficLight : TrafficLightAttribute
 ### `.ctor()`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a red, amber, and green traffic light indicator.
+
 
 ```csharp
 public TripleTrafficLight()
@@ -29,6 +33,8 @@ public TripleTrafficLight()
 ### `.ctor(TrafficLightColor, TrafficLightColor, TrafficLightColor)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Creates a three-light indicator with specified colors.
+
 
 ```csharp
 public TripleTrafficLight(TrafficLightColor a, TrafficLightColor b,

@@ -1,6 +1,13 @@
 ﻿using System;
 
 namespace Noir.Attributes {
+    /// <summary>
+    /// Displays a group of toggle buttons in the Unity Inspector for the annotated field or property.
+    /// </summary>
+    /// <remarks>
+    /// This attribute is typically used to improve the visual layout of boolean or enum fields,
+    /// allowing selection through button-style toggles instead of standard checkboxes or dropdowns.
+    /// </remarks>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class ToggleButtonsAttribute : Attribute
     {

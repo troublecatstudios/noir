@@ -36,8 +36,15 @@ namespace Noir.Attributes {
     /// <seealso href="https://gist.github.com/LotteMakesStuff/d6a9a4944fc667e557083108606b7d22">Original implementation of AutohookAttribute by Lotte</seealso>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public class GetComponentAttribute : PropertyAttribute {
+        /// <summary>
+        /// Specifies where the component should be searched for (e.g., on the same GameObject, parent, or children).
+        /// </summary>
         public GetComponentSearchArea SearchArea { get; private set; }
 
+        /// <summary>
+        /// Creates a new <see cref="GetComponentAttribute"/> with the specified search area.
+        /// </summary>
+        /// <param name="searchArea">The region in which to search for the component.</param>
         public GetComponentAttribute(GetComponentSearchArea searchArea = GetComponentSearchArea.SelfOnly) {
             SearchArea = searchArea;
         }

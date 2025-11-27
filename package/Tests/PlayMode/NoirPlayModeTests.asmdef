@@ -1,0 +1,48 @@
+{
+    "name": "NoirPlayModeTests",
+    "rootNamespace": "NoirPlayModeTests",
+    "references": [
+        "GUID:5ebb14b6c50f1404795c484c3c61ae5c",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:5dc0275e01ab8244980ada96fe7e13de"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Android",
+        "EmbeddedLinux",
+        "GameCoreScarlett",
+        "GameCoreXboxOne",
+        "iOS",
+        "LinuxStandalone64",
+        "CloudRendering",
+        "Lumin",
+        "macOSStandalone",
+        "PS4",
+        "PS5",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WSA",
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Castle.Core.dll",
+        "Moq.dll",
+        "Newtonsoft.Json.dll",
+        "NExpect.dll",
+        "YamlDotNet.dll",
+        "ExCSS.dll",
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -4,12 +4,23 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides a contextual logging interface for Unity [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) instances.
+[BehaviourLogger](/noir/reference/Noir/Logging/BehaviourLogger/) serves as a thin wrapper around the global
+             [LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/) instance, automatically attaching a specific
+             [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) as the logging context.
+            
+             This allows log entries to include precise scene and GameObject references,
+             which improves traceability during runtime debugging and diagnostics.
+            
+             Typically, components create a [BehaviourLogger](/noir/reference/Noir/Logging/BehaviourLogger/) in <c>Awake</c> or <c>Start</c>
+             and use it instead of directly calling [LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/) methods.
+
 
 ```csharp
-public class BehaviourLogger : ILogWriter
+public class BehaviourLogger : ILoggingComponent
 ```
 
-**Implements:** _[ILogWriter](/noir/reference/Noir/Logging/ILogWriter/)_
+**Implements:** _[ILoggingComponent](/noir/reference/Noir/Logging/ILoggingComponent/)_
 
 ## Constructors
 
@@ -18,6 +29,8 @@ public class BehaviourLogger : ILogWriter
 ### `.ctor(MonoBehaviour)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Initializes a new instance of the [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html).
+
 
 ```csharp
 public BehaviourLogger(MonoBehaviour context)
@@ -26,6 +39,7 @@ public BehaviourLogger(MonoBehaviour context)
 
 **Parameters** <br>
 `context` [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) <br>
+ <br>
 
 ## Methods
 
@@ -158,3 +172,11 @@ public virtual void WriteLog(string message, LogLevel level, string subsystem,
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [UnityEngine.MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
+* [Noir.Logging.BehaviourLogger](/noir/reference/Noir/Logging/BehaviourLogger/)
+* [Noir.Logging.LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/)
+* [UnityEngine.MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
+* [Noir.Logging.BehaviourLogger](/noir/reference/Noir/Logging/BehaviourLogger/)
+* [Noir.Logging.LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/)

@@ -4,6 +4,9 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Base class for attributes that draw traffic light indicators in the Unity Inspector.
+Inherit from this class to create custom traffic light indicators of different sizes and color arrangements.
+
 
 ```csharp
 public abstract class TrafficLightAttribute : PropertyAttribute

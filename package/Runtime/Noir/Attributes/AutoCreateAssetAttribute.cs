@@ -1,10 +1,10 @@
 ﻿using System;
 
 namespace Noir.Attributes {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     /// <summary>
     /// Declare that this ScriptableObject should be automatically created at build time.
     /// </summary>
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     public class AutomaticallyCreateAttribute : Attribute {
 
         /// <summary>
@@ -12,6 +12,10 @@ namespace Noir.Attributes {
         /// </summary>
         public string CreatePathPrefix { get; private set; }
 
+        /// <summary>
+        /// Gets the file name of the asset, without the extension.
+        /// </summary>
+        /// <remarks>Defaults to the class name, ex: "MyDataObject".</remarks>
         public string AssetNameOverride { get; private set; }
 
         /// <summary>

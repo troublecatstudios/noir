@@ -4,12 +4,16 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Provides a logging interface for UI Toolkit ([VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)) components.
+This logger wraps the [LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/) system and associates log messages
+            with a specific [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) context for improved debugging and traceability.
+
 
 ```csharp
-public class VisualElementLogger : ILogWriter
+public class VisualElementLogger : ILoggingComponent
 ```
 
-**Implements:** _[ILogWriter](/noir/reference/Noir/Logging/ILogWriter/)_
+**Implements:** _[ILoggingComponent](/noir/reference/Noir/Logging/ILoggingComponent/)_
 
 ## Constructors
 
@@ -18,6 +22,9 @@ public class VisualElementLogger : ILogWriter
 ### `.ctor(VisualElement)`
 <!-- tc:scope public -->
 <!-- tc:version 1.0.0 -->
+Initializes a new instance of the [VisualElementLogger](/noir/reference/Noir/Logging/VisualElementLogger/) class,
+            associating it with the specified [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) context.
+
 
 ```csharp
 public VisualElementLogger(VisualElement context)
@@ -26,6 +33,7 @@ public VisualElementLogger(VisualElement context)
 
 **Parameters** <br>
 `context` [VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html) <br>
+ <br>
 
 ## Methods
 
@@ -158,3 +166,8 @@ public virtual void WriteLog(string message, LogLevel level, string subsystem,
 `subsystem` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 `trace` [string](https://learn.microsoft.com/en-us/dotnet/api/System.String?view=net-7.0) <br>
 
+## More information
+
+* [UnityEngine.UIElements.VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)
+* [Noir.Logging.LoggerSingleton](/noir/reference/Noir/Logging/LoggerSingleton/)
+* [UnityEngine.UIElements.VisualElement](https://docs.unity3d.com/ScriptReference/UIElements.VisualElement.html)

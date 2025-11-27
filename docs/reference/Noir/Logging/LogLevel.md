@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Defines the severity or verbosity level for log messages within the Noir logging system.
+
 
 ```csharp
 public sealed enum LogLevel : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible

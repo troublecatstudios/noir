@@ -4,6 +4,8 @@
 
 <!-- tc:assembly Noir.dll -->
 
+Represents the color of an individual light in a traffic light display.
+
 
 ```csharp
 public sealed enum TrafficLightColor : Enum, IComparable, ISpanFormattable, IFormattable, IConvertible
