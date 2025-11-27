@@ -1,0 +1,22 @@
+{
+    "name": "Noir.Testing",
+    "rootNamespace": "Noir.Testing",
+    "references": [
+        "GUID:5ebb14b6c50f1404795c484c3c61ae5c",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Moq.dll",
+        "nunit.framework.dll",
+        "NExpect.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

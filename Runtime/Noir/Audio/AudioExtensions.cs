@@ -1,7 +1,21 @@
 ﻿using UnityEngine;
 
 namespace Noir.Audio {
+    /// <summary>
+    /// Extension methods for Unity audio components.
+    /// </summary>
     public static class AudioExtensions {
+        /// <summary>
+        /// Calculates the percentage of the current audio clip that has been played by the specified <see cref="AudioSource"/>.
+        /// </summary>
+        /// <param name="source">The <see cref="AudioSource"/> whose playback progress is being measured.</param>
+        /// <returns>
+        /// A value between <c>0</c> and <c>100</c> representing the percentage of the clip that has been played.
+        /// Returns <c>0</c> if no clip is assigned or playback has not started.
+        /// </returns>
+        /// <remarks>
+        /// This method is useful for determining playback progress for UI updates, such as progress bars or debugging information.
+        /// </remarks>
         public static float GetAudioPlayedPercentage(this AudioSource source) {
             if (source.clip == null || source.time == 0f) {
                 return 0f;
