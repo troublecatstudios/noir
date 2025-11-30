@@ -6,7 +6,7 @@ Noir is our helper library for unity-based games.
 ![unity][unity-badge]
 ![GitHub Actions Workflow Status][build-badge]
 
-[Docs](./docs/index.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/LICENSE.md)
+[Docs](./docs/README.md) | [Changelog](./package/CHANGELOG.md) | [License](./package/LICENSE.md)
 
 > [!Note]
 > This library includes DLLs for several open source libraries. Their license information as well as instructions for removing them if you encounter conflicts when installing can be found in the [Package README](./package/README.md).
@@ -15,11 +15,7 @@ Noir is our helper library for unity-based games.
 
 ## Installation
 
-Noir can [be installed as a unity package](https://docs.unity3d.com/Manual/upm-ui-giturl.html) using this url:
-
-```
-https://github.com/troublecatstudios/noir-unity.git?path=/package#v1.0.0
-```
+Noir can [be installed as a unity package](https://docs.unity3d.com/Manual/upm-ui-giturl.html), follow our [getting started guide][installing] for instructions on how to add Noir to your project.
 
 
 ## Contributing
@@ -31,8 +27,10 @@ The project is broken out into two main directories:
 
 For more info, see our [contribution guidelines](./CONTRIBUTING.md).
 
-<!-- badge links -->
 
+[installing]: ./docs/getting_started/installing.md
+
+<!-- badge links -->
 [release]: https://github.com/troublecatstudios/noir/releases
 [release-badge]: https://img.shields.io/github/v/release/troublecatstudios/noir?style=for-the-badge&logo=github
 [unity-badge]: https://img.shields.io/badge/Unity-v2023.3%2B-blue?style=for-the-badge
