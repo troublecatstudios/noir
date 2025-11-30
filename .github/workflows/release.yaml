@@ -61,6 +61,11 @@ jobs:
       with:
         version: ${{ steps.versioning.outputs.new_version_tag }}
 
+    - name: Sync changelog to documentation
+      if: steps.changelog.outcome == 'success'
+      run: |
+        cat ./package/CHANGELOG.md > ./docs/getting_started/changelog.md
+
     - name: Commit changelog updates
       if: steps.versioning.outcome == 'success'
       shell: bash
