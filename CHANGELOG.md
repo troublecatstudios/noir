@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+<!--begin_changelog-->
+
+## [v1.0.0-alpha.bdad565b.19798922564] - 2025-11-30
+
+
 Noir has been updated to follow the new patterns and practices for Unity Packages.
 
 ### Added
@@ -35,7 +41,8 @@ Noir has been updated to follow the new patterns and practices for Unity Package
 - dev: The Unity Test Framework in the development Unity project has been upgraded to v1.4.6, see the [Changelog](https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/changelog/CHANGELOG.html) for details.
 
 
-<!--begin_changelog-->
+
+
 
 ## [v0.0.1] 2022-04-28
 
